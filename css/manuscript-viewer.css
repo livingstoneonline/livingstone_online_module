@@ -1,0 +1,321 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height:100%;
+  margin: 0px;
+}
+
+#toolbar {
+  background-color: white;
+  height: 50px;
+}
+
+#toolbar * {
+  z-index: 0;
+}
+
+#toolbar a.icon {
+  background: none repeat scroll 0 0 #eee;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin: 0 20px;
+  padding: 3px 6px;
+  top: 17px;
+}
+#toolbar a,
+#toolbar i,
+#toolbar a:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#toolbar .logo, #toolbar .share {
+  position: relative;
+  top: 10px;
+}
+
+#toolbar .share {
+  margin: 30px;
+}
+
+#toolbar #zoom-slider {
+  display: inline-block;
+  width: 150px;
+  top: 3px;
+}
+
+#toolbar .item-details.icon, #toolbar .transcription.icon {
+  font-size: .9em;
+  text-align: center;
+  vertical-align: baseline;
+  margin: 0;
+}
+
+.icon.disabled {
+ color: darkgray !important;
+}
+
+#toolbar span.page-select {
+  margin: 0 30px;
+}
+
+#toolbar span.search {
+  display: inline-block;
+}
+#toolbar span.search input[type=text] {
+  background: url('../images/search-button.png') no-repeat 1px 1px #F0ECEC;
+  border: 1px solid #d0d0d0;
+}
+#toolbar span.search .rounded {
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+#toolbar span.search .search {
+  margin-top: 8px;
+  padding: 5px 15px 5px 30px;
+  background: url('../images/search-button.png') no-repeat 1px 1px;
+}
+
+#toolbar a.close.icon {
+  background: none repeat scroll 0 0 #eee;
+  color: #000;
+  display: inline-block;
+  font-family: Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  padding: 1px 4px;
+  position: absolute;
+  right: 20px;
+  text-decoration: none;
+  top: 16px;
+}
+
+div.referencestrip {
+  min-width: 100vw;
+}
+
+div.hover {
+  opacity: 1 !important;
+}
+
+div.referencestrip,
+div.referencestrip > div {
+  background: rgba(255, 255, 255, 0.5) !important;
+  padding: 0 !important;
+  opacity: 0.5 !important;
+}
+
+div.referencestrip.hover {
+  background: rgba(255, 255, 255, 0.8) !important;
+  opacity: 1 !important;
+}
+
+div.referencestrip > div.hover {
+  background: rgba(255, 255, 255, 1) !important;
+  opacity: 1 !important;
+}
+
+div.referencestrip > div.hover canvas {
+  background: rgba(255, 255, 255, 1) !important;
+}
+
+div.referencestrip div.page-num {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+div.referencestrip textarea {
+  z-index: 0 !important;
+}
+
+#side-nav {
+   position: fixed;
+   top: 40%;
+   z-index: 10;
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
+ }
+
+#side-nav .prev-icon {
+  height: 60px;
+  width: 30px;
+  background-color: #252525;
+  float: left;
+}
+
+#side-nav .next-icon {
+  height: 60px;
+  width: 30px;
+  background-color: #252525;
+  float: right;
+}
+
+#side-nav .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid white;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 15px;
+}
+
+#side-nav .arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid white;
+  margin: auto;
+  margin-top: 15px;
+  left: 0;
+  right: 0;
+}
+
+#reference-nav .prev-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  height: 30px;
+  width: 15px;
+  background-color: #252525;
+  z-index: 100;
+}
+
+#reference-nav .next-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  height: 30px;
+  width: 15px;
+  background-color: #252525;
+  z-index: 100;
+}
+
+#reference-nav .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 7.5px solid transparent;
+  border-bottom: 7.5px solid transparent;
+  border-left: 7.5px solid white;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 7.5px;
+}
+
+#reference-nav .arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 7.5px solid transparent;
+  border-bottom: 7.5px solid transparent;
+  border-right: 7.5px solid white;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 7.5px;
+}
+
+#item-details {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 10;
+  height: 550px;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 40%;
+  margin: 20px;
+  padding: 30px;
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+}
+
+#item-details h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#item-details h2 {
+  font-size: 24px;
+  font-style: italic;
+  margin: 20px 0;
+}
+#item-details dl {
+  margin: 10px;
+}
+#item-details dl.inline dd {
+  display: inline;
+  margin: 0;
+}
+#item-details dl.inline dd:after {
+  display: block;
+  content: '';
+}
+#item-details dl.inline dt {
+  display: inline-block;
+}
+#item-details dt {
+  font-weight: bold;
+  margin-top: 0.25em;
+}
+#item-details dt::after {
+  content: ":";
+}
+
+#transcription {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 10;
+  height: 550px;
+  float: right;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 40%;
+  margin: 20px;
+  padding: 30px;
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+}
+
+#openseadragon {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+/* Used for 'loading' icon. */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, 1)
+                url('../images/loading.gif')
+                50% 50%
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn the scrollbar off with
+   overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}

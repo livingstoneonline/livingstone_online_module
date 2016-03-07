@@ -1,0 +1,167 @@
+<?php
+
+/**
+ * @file
+ * An viewer for manuscripts with a TEI datastream.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function livingstone_menu() {
+  return array(
+    'livingstone-viewer/%' => array(
+      'title' => 'Manuscript Viewer Test',
+      'access arguments' => array('access content'),
+      'type' => MENU_NORMAL_ITEM,
+      'page callback' => 'livingstone_manuscript_viewer',
+      'page arguments' => array(1),
+    ),
+    'livingstone-tei/%' => array(
+      'title' => 'Manuscript Viewer TEI',
+      'access arguments' => array('access content'),
+      'type' => MENU_NORMAL_ITEM,
+      'page callback' => 'livingstone_manuscript_viewer_transcript',
+      'page arguments' => array(1),
+    )
+  );
+}
+
+/**
+ * Implements hook_menu
+ */
+function livingstone_menu_alter(&$items) {
+  if (isset($items['islandora/search'])) {
+    $search_item = &$items['islandora/search'];
+    $search_item['page callback'] = 'livingstone_standard_catalogue';
+  }
+}
+
+/**
+ * Custom Solr Search Results page for the standard catalogue.
+ *
+ */
+function livingstone_standard_catalogue($query = NULL, $params = NULL) {
+  $path = drupal_get_path('module', 'livingstone');
+  drupal_add_css($path . '/css/manuscript-launcher.css');
+  drupal_add_js($path . '/js/URI.js');
+  drupal_add_js($path . '/js/livingstone-manuscript-launcher.js');
+  return islandora_solr($query, $params);
+}
+
+/**
+ * Callback to render the viewer.
+ */
+function livingstone_manuscript_viewer($manuscript = "liv:000490", $display_page = 0) {
+  global $language;
+  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
+  drupal_add_http_header('Content-Language', $language->language);
+  return array(
+    '#type' => 'page',
+    '#theme_wrappers' => array('livingstone_manuscript_html'),
+    'content' => array(
+      '#theme' => 'livingstone_manuscript_viewer',
+      '#manuscript' => $manuscript,
+      '#display_page' => isset($display_page) ? $display_page : 0,
+    ),
+  );
+}
+
+/**
+ * Callback to render the TEI transcription as HTML.
+ *
+ * @todo Remove? or make as a separate iframe.
+ *
+ * @param string $manuscript
+ *   The PID of the manuscript.
+ * @param int $page
+ *   The page of the transcription to render.
+ */
+function livingstone_manuscript_viewer_transcript($manuscript, $display_page = 0) {
+  global $language;
+  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
+  drupal_add_http_header('Content-Language', $language->language);
+  return array(
+    '#theme' => 'livingstone_manuscript_transcript',
+    '#manuscript' => $manuscript,
+    '#display_page' => isset($display_page) ? $display_page : 0,
+  );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function livingstone_theme() {
+  // Solution packs using this as a viewer need to set these variables.
+  return array(
+    'livingstone_manuscript_html' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-html',
+      'render element' => 'page',
+    ),
+    'livingstone_manuscript_viewer' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-viewer',
+      'variables' => array(
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+        // Page to display (Required).
+        'display_page' => NULL,
+      ),
+    ),
+    'livingstone_manuscript_item_details' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-item-details',
+      'variables' => array(
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+      ),
+    ),
+    'livingstone_manuscript_transcript' => array(
+      'file' => 'theme/theme.inc',
+      'variables' => array(
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+        // Page to render out (Required).
+        'display_page' => NULL,
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_preprocess_theme().
+ *
+ * Inserts logic for opening the viewer from the standard browse by catalog.
+ */
+function livingstone_preprocess_islandora_solr_table(array &$variables) {
+  global $user;
+  module_load_include('inc', 'livingstone', 'includes/utilities');
+  $viewable_manuscripts = in_array('administrator', $user->roles) ?
+    livingstone_all_viewable_manuscripts() :
+    livingstone_public_viewable_manuscripts();
+  $path = current_path();
+  foreach($variables['rows'] as &$row) {
+    $element = simplexml_load_string($row['#']);
+    $url = (string) $element->attributes()->{'href'};
+    $pid = preg_replace('/^.*((liv)%3A([0-9]*))$/', '\2:\3', $url);
+    $attributes = array(
+      'external' => FALSE,
+      'query' => drupal_get_query_parameters() + array(
+          'view_pid' => $pid,
+          'view_page' => 1,
+        ),
+      //'fragment' => $pid,
+      'attributes' => array(
+        'data-pid' => $pid,
+        'class' => array('livingstone-manuscript-launcher'),
+      ),
+    );
+    if (in_array($pid, $viewable_manuscripts)) {
+      $row['#'] = l(t('view'), $path, $attributes);
+    }
+    else {
+      $row['#'] = '';
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted from a TEI P4 XML file to the LEAP TEI P5 Schema by James Cummings on 2015-03-02-->
+<?xml-model href="http://jamescummings.github.io/LEAP/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://jamescummings.github.io/LEAP/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- <?xml-stylesheet type="text/xsl" href="http://jamescummings.github.io/LEAP/transcription.xsl"?> -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000043">
+	<teiHeader xmlns:tei="http://www.tei-c.org/ns/1.0">
+		<fileDesc>
+			<titleStmt>
+				<title>Handwritten Copy of a Medical Oath</title>
+				<author xml:id="DL">David Livingstone</author>
+			</titleStmt>
+			<publicationStmt>
+				<authority>Livingstone Online</authority>
+				<pubPlace>London</pubPlace>
+				<date>2006-11-08</date>
+				<publisher>Wellcome Centre for the History of Medicine, UCL</publisher>
+				<idno type="LEAP-ID">liv_000043</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl xml:id="shelfmark">David Livingstone Centre, Ms. 696</bibl>
+				<bibl xml:id="ccnumber">Sup, Sect 4.C.2.5</bibl>
+				<bibl xml:id="recipient">David Livingstone</bibl>
+				<bibl xml:id="date">[1840]</bibl>
+				<bibl xml:id="where">Unknown</bibl>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change>
+				<date>DATE</date>
+				<name xml:id="CO">Caroline Overy</name>Transcribed by Caroline Overy
+			</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text xmlns:tei="http://www.tei-c.org/ns/1.0">
+		<body xml:lang="en">
+			<div>
+
+	<pb n="0001" facs="liv_000043_0001"/><!--pb/@n='1r'-->
+<lb/><p>Form of the oath taken on being 
+<lb/>admitted into the medical profession -</p>
+<lb/><p>I swear by God that I will exercise 
+<lb/>the several parts of my profession to the 
+<lb/>best of my knowledge and abilities for the 
+<lb/>good, safety, and welfare of all persons 
+<lb/>committing themselves, or committed to 
+<lb/>my care and direction; And that I will 
+<lb/>not knowingly or intentionally do anything 
+<lb/>or administer anything to their hurt or 
+<lb/>prejudice for any consideration or 
+<lb/>from any motive whatever. - so help 
+<lb/>me God. -</p>
+<lb/><p rend="right">David Livingston</p>
+<lb/><p rend="right">(To which signature is required after repeating it<supplied reason="obscured">)</supplied></p>
+
+	<pb n="0002" facs="liv_000043_0002"/><!--pb/@n='1v'-->
+			
+</div>
+		</body>
+	</text></TEI>

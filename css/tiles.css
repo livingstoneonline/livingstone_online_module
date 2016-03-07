@@ -1,0 +1,384 @@
+#block-menu-menu-topmenu ul,
+#block-menu-menu-topmenu ol {
+  margin: 0;
+}
+#block-menu-menu-topmenu ul.menu { /* all pages except for front  */
+  border: none;
+  list-style: outside none none;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/** External menu & Search bar **/
+
+.region.region-header {
+  float: right;
+}
+.front #search-block-form {
+    margin-right: 10px;
+}
+
+.block ul#externalmenu li.leaf {
+  display: inline-block;
+  list-style-image: none;
+  list-style-type: none;
+  padding: 0.2em 0.5em 0 !important;
+}
+.slideout-menu.open .block ul#externalmenu li.leaf {
+  display: block;
+  list-style-image: none;
+  list-style-type: none;
+  padding: 0.2em 0.5em 0 !important;
+}
+
+/* Menu */
+
+.fa.fa-envelope {
+  color: #506777;
+  font-size: 24px;
+  position: relative;
+  top: -1px;
+}
+.fa.fa-home,
+.fa.fa-wordpress {
+  color: #3e5b97;
+  font-size: 24px;
+}
+.fa.fa-wordpress {
+  margin-right: 10px;
+  font-size: 24px;
+}
+.fa.fa-twitter {
+  color: #00abf2;
+  font-size: 24px;
+}
+
+#search-block-form--2 input[type=text],
+#search-block-form input[type=text] {
+background: url('../images/search-button.png') no-repeat 1px 1px #F0ECEC;
+border: 1px solid #d0d0d0;
+height:25px;
+}
+#search-block-form--2 input[type=text],
+#search-block-form input[type=text] {
+/*color: #bcbcbc;*/
+}
+#search-block-form--2 .rounded,
+#search-block-form .rounded {
+border-radius: 7px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+}
+#search-block-form--2 .search,
+#search-block-form .search {
+margin-top: 8px;
+padding: 3px 15px 3px 30px;
+background: url('../images/search-button.png') no-repeat 1px 1px;
+}
+
+#block-search-form { padding-bottom: 7px; }
+
+#block-search-form .content { margin-top: 0; }
+
+#search-form .form-item-keys label { display: block; }
+
+/* colored menu links */
+.topmenu li.leaf {
+  display: inline-block;
+  line-height: 20px;
+  margin: 10px 0 10px 5px;
+  max-width: 120px;
+  min-width: 120px;
+  padding: 0 0 1px;
+  text-align: center;
+  vertical-align: middle;
+  width: 120px;
+}
+.topmenu li a {
+    color: #000;
+    font-family: 'Oxygen',sans-serif;
+    font-size: 12.4px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.topmenu li.leaf:hover {
+  /*opacity: .3;*/
+  background: #ccc;
+}
+.topmenu li:nth-child(1){
+   background-color:#99cc99;
+}
+
+.topmenu li:nth-child(2){
+   background-color:#F7C983;
+}
+
+.topmenu li:nth-child(3){
+   background-color:#a48bc2;
+}
+
+.topmenu li:nth-child(4){
+   background-color:#99ccff;
+}
+
+.topmenu li:nth-child(5){
+   background-color:#cc9999;
+}
+
+.topmenu li:nth-child(6){
+   background-color:#cccc99;
+}
+
+/* social links */
+.block.footershare .stLarge {
+  background-repeat: no-repeat;
+}
+.footershare .stButton .stLarge,
+.footershare .stButton .stLarge:hover {
+  background-position: 0px center !important;
+}
+.block.footershare .st_twitter_large .stLarge {background-image: url("../images/social/twitter_28.png") !important;}
+.block.footershare .st_twitter_large .stLarge:hover {background-image: url("../images/social/twitter_28.png") !important;}
+
+.block.footershare .st_linkedin_large .stLarge {background-image: url("../images/social/linkedin_28.png") !important;}
+.block.footershare .st_linkedin_large .stLarge:hover {background-image: url("../images/social/linkedin_28.png") !important;}
+
+.block.footershare .st_googleplus_large .stLarge {background-image: url("../images/social/googleplus_28.png") !important;}
+.block.footershare .st_googleplus_large .stLarge:hover {background-image: url("../images/social/googleplus_28.png") !important;}
+
+.block.footershare .st_pinterest_large .stLarge {background-image: url("../images/social/pinterest_28.png") !important;}
+.block.footershare .st_pinterest_large .stLarge:hover {background-image: url("../images/social/pinterest_28.png") !important;}
+
+.block.footershare .st_email_large .stLarge {background-image: url("../images/social/email_28.png") !important;}
+.block.footershare .st_email_large .stLarge:hover {background-image: url("../images/social/email_28.png") !important;}
+
+.block.footershare .st_facebook_large .stLarge {background-image: url("../images/social/facebook_28.png") !important;}
+.block.footershare .st_facebook_large .stLarge:hover {background-image: url("../images/social/facebook_28.png") !important;}
+
+.block.footershare .st_print_large .stLarge {background-image: url("../images/social/print_28.png") !important;}
+.block.footershare .st_print_large .stLarge:hover {background-image: url("../images/social/print_28.png") !important;}
+
+.block.footershare .st_pdf_large .stLarge.pdf {background-image: url("../images/social/28x28-pdf.png") !important;}
+.block.footershare .st_pdf_large .stLarge.pdf:hover {background-image: url("../images/social/28x28-pdf.png") !important;}
+
+.tftextinput4 {
+margin-top: 8px;
+padding: 0;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 14px;
+color: #666;
+border: 1px solid #0076a3;
+border-right: 0px;
+border-top-left-radius: 5px 5px;
+border-bottom-left-radius: 5px 5px;
+height:25px;
+}
+
+.sectionPageImage{
+    outline: none;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+.page-livingstone-online h1.page-title,
+.page-about-this-site h1.page-title,
+.page-about-site h1.page-title,
+.page-in-his-own-words- h1.page-title,
+.page-in-his-own-words h1.page-title,
+.page-his-own-words h1.page-title,
+.page-spectral-imaging h1.page-title,
+.page-behind-the-scenes h1.page-title,
+.page-behind-the-scenes- h1.page-title,
+.page-life-and-times h1.page-title,
+.page-resources h1.page-title {
+    display: none;
+}
+.leveltwo .view-content {
+  text-align: center;
+}
+.leveltwo .view-id-l .views-row {
+    display: inline-block;
+    margin: 1%;
+    max-width: 90%;
+}
+.leveltwo .view-id-l .views-row img {
+    height: auto;
+    width: 100%;
+}
+.page-about-site .views-row .views-field.views-field-nothing,
+.page-about-this-site .views-row .views-field.views-field-nothing,
+.page-livingstone-online .views-row .views-field.views-field-nothing {
+    border: 6px solid #99cc99;
+    overflow: hidden;
+}
+.page-in-his-own-words- .views-row .views-field.views-field-nothing,
+.page-his-own-words .views-row .views-field.views-field-nothing{
+    border: 6px solid #F7C983;
+    overflow: hidden;
+}
+.page-spectral-imaging .views-row .views-field.views-field-nothing {
+    border: 6px solid #a48bc2;;
+    overflow: hidden;
+}
+.page-behind-the-scenes- .views-row .views-field.views-field-nothing,
+.page-behind-the-scenes .views-row .views-field.views-field-nothing {
+    border: 6px solid #cc9999;
+    overflow: hidden;
+}
+.page-life-and-times .views-row .views-field.views-field-nothing {
+    border: 6px solid #99ccff;
+    overflow: hidden;
+}
+.page-resources .views-row .views-field.views-field-nothing {
+    border: 6px solid #cccc99;
+    overflow: hidden;
+}
+
+
+.project.Yes, .project.No {
+    position: relative;
+    margin-bottom: 0;
+}
+.project p {
+    color: #fff;
+    font-family: 'Source Sans Pro', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0 20px 0;
+    text-transform: none;
+}
+.project a, .project a:hover {
+  color: #fff;
+}
+.project .lev2-photocredit {
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 6%;
+  padding: 0 20px;
+}
+.project.Yes img {
+    display: block;
+
+}
+.project.No img {
+    display: block; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+  /*  -webkit-transform: scale(1);
+    transform: scale(1);  */
+}
+.project.No:hover img {
+    opacity: 0.5;
+ /*   -webkit-transform: scale(1.3);
+    transform: scale(1.3); */
+}
+.project h3 { color: #fff; font-size: 28px; font-family: 'Crimson Text', serif;}
+.project.No .hover {
+    background-color: rgba(63, 73, 83, 0.70);
+    font-size: 28px;
+    height: 100%; left: 0;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    text-align: center;
+    width: 100%;
+}
+.project.No .hover.Yes {
+    background-color: rgba(63, 73, 83, 0.70);
+    height: 100%; left: 0;
+    opacity: 1;
+    position: absolute;
+    top:0;
+    text-align: center;
+    width: 100%;
+}
+.project.No:hover img {
+    opacity: 0.5;
+}
+.project.No .hover.Yes:hover {
+     background-color: rgba(63, 73, 83, 0.70);
+    opacity: 1;
+}
+.project .hover .info {
+    position: absolute;
+    padding: 0 5% 0 4%;
+    text-align: center;
+    top: 13%;
+    width: 100%;
+}
+.project.No .hover:hover {
+    opacity: 1;
+}
+
+.project.No .field.field-name-field-section-page-tag-line .field-item.even {
+    padding: 0px;
+}
+a .info > em {
+  color: #fff;
+  font-family: "crimson text",serif;
+  font-size: 24px;
+}
+/** browse by repository page  **/
+#block-views-repository-list-block {
+  z-index: 60;
+}
+.node-type-section-page.his-own-words.repository .pane-node-content h2.pane-title:before {
+  content: "Browse by";
+  font-style: italic;
+  font-size: 32px;
+  padding-right: 7px;
+}
+#primary .view-repository-list table {
+  font-size: 14px;
+  width: 70%;
+  z-index: 80;
+  position: relative;
+}
+#primary .view-repository-list .view-repository-list table thead{
+
+}
+#primary .view-repository-list th {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  color: #428bca;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#primary .view-repository-list th a {
+    color: #428bca;
+}
+#primary .views-field.views-field-field-repo-link,
+#primary .views-field.views-field-field-repo-repository {
+  width: 400px;
+}
+#primary .view-repository-list tr.even, #primary .view-repository-list tr.odd {
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+}
+#primary .view-repository-list td {
+  border-left: 1px solid #ccc;
+}
+#primary .view-repository-list td.active {
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+
+    .leveltwo .view-id-l .views-row {
+        display: inline-block;
+        margin: 1%;
+        width: 45%;
+    }
+
+}
+@media screen and (min-width: 769px) {
+
+    .leveltwo .view-id-l .views-row {
+        display: inline-block;
+        margin: 1%;
+        width: 31%;
+    }
+}
