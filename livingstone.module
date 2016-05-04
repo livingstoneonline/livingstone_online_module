@@ -28,25 +28,27 @@ function livingstone_menu() {
 }
 
 /**
- * Implements hook_menu
+ * Implements hook_menu_alter().
  */
 function livingstone_menu_alter(&$items) {
   if (isset($items['islandora/search'])) {
     $search_item = &$items['islandora/search'];
-    $search_item['page callback'] = 'livingstone_standard_catalogue';
+    $search_item['page callback'] = 'livingstone_browse_catalogue';
   }
 }
 
 /**
  * Custom Solr Search Results page for the standard catalogue.
  *
+ * @param string|null $query
+ *   The search query.
+ *
+ * @return array
+ *   The search form and results.
  */
-function livingstone_standard_catalogue($query = NULL, $params = NULL) {
-  $path = drupal_get_path('module', 'livingstone');
-  drupal_add_css($path . '/css/manuscript-launcher.css');
-  drupal_add_js($path . '/js/URI.js');
-  drupal_add_js($path . '/js/livingstone-manuscript-launcher.js');
-  return islandora_solr($query, $params);
+function livingstone_browse_catalogue($query = NULL) {
+  module_load_include('inc', 'livingstone', 'includes/browse.catalogue');
+  return drupal_get_form('livingstone_browse_catalogue_form', $query);
 }
 
 /**
