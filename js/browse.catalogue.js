@@ -174,7 +174,7 @@
         query = $('input[name="query"]'),
         submit = $('input[type="submit"].search-button'),
         sort = new Param('input[name="sort"]', 'sort', 'asc'),
-        order = new Param('input[name="order"]', 'order', 'Date'),
+        order = new Param('input[name="order"]', 'order', 'Date(s)'),
         page = new Param('input[name="page"]', 'page', 0),
         year = new Facet('select[name="year"]', settings.facets.date),
         range = new RangeFacet('select[name="from"]', 'select[name="to"]', settings.facets.date),

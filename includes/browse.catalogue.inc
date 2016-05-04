@@ -138,7 +138,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
         ),
         'order' => array(
           '#type' => 'hidden',
-          '#default_value' => livingstone_browse_catalogue_default_value('order', 'Date', $form_state),
+          '#default_value' => livingstone_browse_catalogue_default_value('order', 'Date(s)', $form_state),
         ),
         'clear' => array(
           '#type' => 'submit',
@@ -200,7 +200,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
 function livingstone_browse_catalogue_form_ajax_hacks(array &$form_state, $query) {
   $_GET['page'] = livingstone_browse_catalogue_default_value('page', 0, $form_state);
   $_GET['sort'] = livingstone_browse_catalogue_default_value('sort', 'asc', $form_state);
-  $_GET['order'] = livingstone_browse_catalogue_default_value('order', 'Date', $form_state);
+  $_GET['order'] = livingstone_browse_catalogue_default_value('order', 'Date(s)', $form_state);
   $form_state['build_info']['args'][0] = $query;
 }
 
@@ -629,7 +629,7 @@ function livingstone_browse_catalogue_start_search_parameter(array $form_state) 
  */
 function livingstone_browse_catalogue_sort_search_parameter(array $form_state) {
   $direction = livingstone_browse_catalogue_default_value('sort', 'asc', $form_state);
-  $order = livingstone_browse_catalogue_default_value('order', 'Date', $form_state);
+  $order = livingstone_browse_catalogue_default_value('order', 'Date(s)', $form_state);
   if ($order != NULL) {
     $fields = livingstone_browse_catalogue_display_fields();
     foreach ($fields as $field) {
@@ -663,26 +663,26 @@ function livingstone_browse_catalogue_display_fields() {
       'classes' => array('title-column'),
     ),
     array(
-      'label' => t('Date'),
+      'label' => t('Date(s)'),
       'field' => 'dates_ms',
       'sort' => 'mods_dateCreated_start_dt',
       'default_sort' => TRUE,
       'classes' => array('date-column'),
     ),
     array(
-      'label' => t('Creator'),
+      'label' => t('Creator(s)'),
       'field' => 'creators_ms',
       'sort' => 'creator_s',
       'classes' => array('creator-column'),
     ),
     array(
-      'label' => t('Addressee'),
+      'label' => t('Addressee(s)'),
       'field' => 'addressees_ms',
       'sort' => 'addressee_s',
       'classes' => array('addressee-column', 'collapsible-column'),
     ),
     array(
-      'label' => t('Place Created'),
+      'label' => t('Place(s) Created'),
       'field' => 'mods_originInfo_place_placeTerm_text_s',
       'sort' => 'mods_originInfo_place_placeTerm_text_s',
       'classes' => array('place-created-column', 'collapsible-column'),
@@ -700,7 +700,7 @@ function livingstone_browse_catalogue_display_fields() {
       'classes' => array('size-column', 'collapsible-column'),
     ),
     array(
-      'label' => t('Genre'),
+      'label' => t('Genre(s)'),
       'field' => 'genres_ms',
       'sort' => 'genre_s',
       'classes' => array('genre-column', 'collapsible-column'),
@@ -718,7 +718,7 @@ function livingstone_browse_catalogue_display_fields() {
       'classes' => array('copy-column', 'collapsible-column'),
     ),
     array(
-      'label' => t('Other Versions'),
+      'label' => t('Other Version(s)'),
       'field' => 'otherVersions_ms',
       'delimiter' => '</br>',
       'sort' => 'otherVersion_s',
