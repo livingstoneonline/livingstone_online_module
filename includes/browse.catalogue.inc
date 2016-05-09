@@ -437,7 +437,7 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
       $data = '&nbsp;';
       if ($solr_field == 'PID') {
         $data = livingstone_browse_catalogue_view_link($doc[$solr_field]);
-        $data .= livingstone_browse_catalogue_download_link($doc[$solr_field]);
+        //$data .= livingstone_browse_catalogue_download_link($doc[$solr_field]);
       }
       else if (is_array($doc[$solr_field])) {
         $delimiter = isset($field['delimiter']) ? $field['delimiter'] : ';<br/>';
