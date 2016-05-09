@@ -59,13 +59,13 @@
     // Private Members.
 
     // Set fixed high before init so reference strip works.
-    $('#openseadragon').height(500);
-    $('#item-details').height($(window).height() - 150);
+    //$('#openseadragon').height(500);
+    //$('#item-details').height($(window).height() - 150);
     $('#item-details').mCustomScrollbar({
       autoHideScrollbar:true,
 			theme:"rounded-dark"
     });
-    $('#transcription').height($(window).height() - 150);
+    //$('#transcription').height($(window).height() - 150);
     $('#transcription').mCustomScrollbar({
       autoHideScrollbar:true,
 			theme:"rounded-dark"
@@ -108,15 +108,15 @@
           showRotationControl: false,
           showFullPageControl: false,
           showSequenceControl: false,
-          toolbar: "toolbar",
+          //toolbar: "toolbar",
           imageLoaderLimit: 5,
         }, settings.openSeaDragon.options));
 
     // Set default height dynamically.
     $(window).resize(function () {
-      $('#openseadragon').height(window.innerHeight - $('#toolbar').height());
-      $('#item-details').height(window.innerHeight - 150);
-      $('#transcription').height(window.innerHeight - 150);
+//      $('#openseadragon').height(window.innerHeight - $('#toolbar').height());
+     // $('#item-details').height(window.innerHeight - 150);
+     // $('#transcription').height(window.innerHeight - 150);
     });
 
     // Public Members.
@@ -299,12 +299,14 @@
       // Item Details.
       $('.item-details.icon').click(function () {
         $('#item-details').toggle();
+        $('#openseadragon').toggleClass('item-details-open');
       });
 
       // Transcription.
       if (hasTranscription) {
         $('.transcription.icon').click(function () {
           $('#transcription').toggle();
+          $('#openseadragon').toggleClass('transcription-open');
           setTimeout(function () {
             $('#transcription').mCustomScrollbar("scrollTo", $("span.pb-title:eq(" + viewer.currentPage() + ")"));
           }, 1000);
@@ -463,8 +465,8 @@
     // Set GUI.
     setToolbarPage(initialPage);
 
-    // Set default height dynamically 50px for the toolbar.
-    $('#openseadragon').height($(window).height() - 50);
+    // Set default height dynamically.
+    //$('#openseadragon').height($(window).height());
 
     /**
      * Wait to display.

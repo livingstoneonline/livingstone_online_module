@@ -134,11 +134,6 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
 function theme_livingstone_manuscript_transcript(array &$variables) {
   $manuscript = $variables['manuscript'];
   module_load_include('inc', 'livingstone', 'includes/utilities');
-  // Debug info.
-  /*
-  $sample = drupal_get_path('module', 'livingstone') . '/test/liv_000875_TEI_sample.xml';
-  $content = file_get_contents($sample);
-  */
   $manuscript = islandora_object_load($manuscript);
   if ($manuscript === FALSE || !isset($manuscript['TEI'])) {
     return '<div>' . t('No Transcript available.') . '</div>';
@@ -147,5 +142,5 @@ function theme_livingstone_manuscript_transcript(array &$variables) {
   if ($markup === FALSE) {
     return '<div>' . t('Failed to generate transcript.') . '</div>';
   }
-  return $markup;
+  return "<div class='viewer-sidebar'>{$markup}</div>";
 }

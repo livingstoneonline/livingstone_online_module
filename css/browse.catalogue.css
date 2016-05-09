@@ -1,7 +1,6 @@
 #livingstone-browse-catalogue-form .search-fields {
   padding: 21px 5px;
 }
-
 #livingstone-browse-catalogue-form input[type="text"] {
   background: #f0ecec url("/sites/all/themes/nexus/images/search-button.png") no-repeat scroll right 1px;
   background-repeat: no-repeat;
@@ -58,6 +57,9 @@
 }
 #livingstone-browse-catalogue-form .search-results {
   overflow-x: auto;
+}
+#livingstone-browse-catalogue-form td.access-column a {
+  margin: 0 0.5em;
 }
 #livingstone-browse-catalogue-form th {
   background: #ddd none repeat scroll 0 0;

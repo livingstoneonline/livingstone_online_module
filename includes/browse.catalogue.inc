@@ -437,6 +437,7 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
       $data = '&nbsp;';
       if ($solr_field == 'PID') {
         $data = livingstone_browse_catalogue_view_link($doc[$solr_field]);
+        $data .= livingstone_browse_catalogue_download_link($doc[$solr_field]);
       }
       else if (is_array($doc[$solr_field])) {
         $delimiter = isset($field['delimiter']) ? $field['delimiter'] : ';<br/>';
@@ -489,11 +490,39 @@ function livingstone_browse_catalogue_view_link($pid) {
       ),
     'attributes' => array(
       'data-pid' => $pid,
-      'class' => array('livingstone-manuscript-launcher'),
+      'class' => array('livingstone-manuscript-launcher fa fa-eye'),
     ),
   );
   if (in_array($pid, $viewable_manuscripts)) {
-    return l(t('view'), $path, $attributes);
+    return l((''), $path, $attributes);
+  }
+  return '&nbsp;';
+}
+
+/**
+ * Gets a link to download the given objects ZIP datastream.
+ *
+ * @param $pid
+ *   The object ID in which to potentially view.
+ *
+ * @return string
+ *   The link if one is generated.
+ */
+function livingstone_browse_catalogue_download_link($pid) {
+  global $user;
+  module_load_include('inc', 'livingstone', 'includes/utilities');
+  $viewable_manuscripts = in_array('administrator', $user->roles) ?
+                        livingstone_all_downloadable_manuscripts() :
+                        livingstone_public_downloadable_manuscripts();
+  $path = "islandora/objects/$pid/datastream/ZIP/download";
+  $attributes = array(
+    'external' => FALSE,
+    'attributes' => array(
+      'class' => array('fa fa-download'),
+    ),
+  );
+  if (in_array($pid, $viewable_manuscripts)) {
+    return l((''), $path, $attributes);
   }
   return '&nbsp;';
 }
@@ -649,13 +678,12 @@ function livingstone_browse_catalogue_sort_search_parameter(array $form_state) {
  */
 function livingstone_browse_catalogue_display_fields() {
   return array(
-    /*
     array(
       'label' => t('Access'),
       'field' => 'PID',
       'sort' => 'PID',
       'classes' => array('access-column'),
-    ),*/
+    ),
     array(
       'label' => t('Title'),
       'field' => 'mods_titleInfo_title_s',

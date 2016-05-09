@@ -300,3 +300,64 @@ EOT;
   }
   return $manuscripts;
 }
+
+
+/**
+ * Gets a list of public viewable manuscripts.
+ *
+ * @return array
+ *   An array containing viewable manuscripts which are available to the public.
+ */
+function livingstone_public_downloadable_manuscripts() {
+  $manuscripts = &drupal_static(__FUNCTION__);
+  if (!isset($manuscripts)) {
+    if ($cache = cache_get('livingstone_public_viewable_manuscripts')) {
+      $manuscripts = $cache->data;
+    }
+    else {
+      // Select all manuscripts which have pages, that lack POLCY datastreams.
+      $query = <<<EOT
+PREFIX fedora-model: <info:fedora/fedora-system:def/model#>
+PREFIX fedora-view: <info:fedora/fedora-system:def/view#>
+PREFIX islandora: <http://islandora.ca/ontology/relsext#>
+SELECT DISTINCT ?manuscript FROM <#ri>
+WHERE {
+    ?manuscript <fedora-model:state> <fedora-model:Active> .
+    OPTIONAL {
+      ?manuscript <fedora-view:disseminates> ?disseminates .
+      ?disseminates <fedora-view:disseminationType>  <info:fedora/*/ZIP> .
+    }
+    FILTER (BOUND(?disseminates))
+}
+EOT;
+      $tuque = islandora_get_tuque_connection();
+      $results = $tuque->repository->ri->sparqlQuery($query);
+      $map = function($o) {
+        return $o['manuscript']['value'];
+      };
+      $manuscripts = array_map($map, $results);
+      cache_set('livingstone_public_viewable_manuscripts', $manuscripts, 'cache');
+    }
+  }
+  return $manuscripts;
+}
+
+/**
+ * Gets a list of hidden viewable manuscripts.
+ *
+ * @return array
+ *   An array containing viewable manuscripts which are hidden from the public.
+ */
+function livingstone_private_downloadable_manuscripts() {
+  return livingstone_public_downloadable_manuscripts();
+}
+
+/**
+ * Gets a list of all viewable manuscripts.
+ *
+ * @return array
+ *   An array containing manuscripts which can be viewed (assuming permission).
+ */
+function livingstone_all_downloadable_manuscripts() {
+  return livingstone_public_downloadable_manuscripts();
+}
