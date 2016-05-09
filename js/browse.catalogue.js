@@ -328,7 +328,7 @@
       });
     });
 
-    sort_links.click(function () {
+    sort_links.click(function (event) {
       event.preventDefault();
       var uri = new URI($(this).attr('href'));
       sort.field.val(uri.search(true).sort);
@@ -336,7 +336,7 @@
       rebuild(false);
     });
 
-    pager_links.click(function () {
+    pager_links.click(function (event) {
       event.preventDefault();
       var uri = new URI($(this).attr('href'));
       page.field.val(uri.search(true).page);
