@@ -247,9 +247,11 @@
      */
     function toggleCollapsibleColumns(show) {
       if (show) {
+        $('.search-results').addClass('full-record');
         $('.collapsible-column').show();
       }
       else {
+        $('.search-results').removeClass('full-record');
         $('.collapsible-column').hide();
       }
     }
@@ -342,6 +344,8 @@
       page.field.val(uri.search(true).page);
       rebuild(false);
     });
+
+    toggleCollapsibleColumns(full_record.field.is(':checked'));
   };
 
 }(jQuery));
