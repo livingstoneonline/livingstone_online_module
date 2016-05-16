@@ -182,7 +182,8 @@
         addressee = new Facet('select[name="addressee"]', settings.facets.addressee),
         repository = new Facet('select[name="repository"]', settings.facets.repository),
         genre = new Facet('select[name="genre"]', settings.facets.genre),
-        params = [ full_record, sort, order, page],
+        access = new Param('select[name="access"]', 'access', 'all'),
+        params = [ full_record, sort, order, page, access ],
         facets = [ year, range, creator, addressee, repository, genre ];
 
     /**
@@ -193,7 +194,7 @@
     function buildURL() {
       var uri = new URI(top.location);
       // Unset page & facets query arguments.
-      uri.removeSearch(['sort', 'order', 'page', 'full_record']);
+      uri.removeSearch(['access', 'sort', 'order', 'page', 'full_record']);
       uri.removeSearch(/f\[*/);
       params.map(function (param) { return param.query() })
           .filter(function (param) { return param != null; })
@@ -328,6 +329,10 @@
       facet.fields.change(function () {
         rebuild();
       });
+    });
+
+    access.field.change(function (event) {
+      rebuild();
     });
 
     sort_links.click(function (event) {

@@ -26,7 +26,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
   livingstone_browse_catalogue_form_ajax_hacks($form_state, $query);
   $full_record = livingstone_browse_catalogue_default_value('full_record', 0, $form_state);
   $results = livingstone_browse_catalogue_search($query, $form_state);
-  list($creator, $addressee, $repository, $genre) = livingstone_browse_catalogue_facet_elements($results, $form_state);
+  list($access, $creator, $addressee, $repository, $genre) = livingstone_browse_catalogue_facet_elements($results, $form_state);
   $table = livingstone_browse_catalogue_table($results, !$full_record);
   list($year, $from, $to) = livingstone_browse_catalogue_facet_range_elements($query, $form_state);
   $pager = livingstone_browse_catalogue_pager($results);
@@ -128,6 +128,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
         'addressee' => $addressee,
         'repository' => $repository,
         'genre' => $genre,
+        'access' => $access,
         'page' => array(
           '#type' => 'hidden',
           '#default_value' => livingstone_browse_catalogue_default_value('page', 0, $form_state),
@@ -182,8 +183,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
           '#markup' => $pager,
         ),
       ),
-    ),
-  ) + $form;
+    )) + $form;
 }
 
 /**
@@ -276,6 +276,9 @@ function livingstone_browse_catalogue_build_query(array $values) {
   if ($values['full_record']) {
     $query['full_record'] = 1;
   }
+  if (isset($values['access'])) {
+    $query['access'] = $values['access'];
+  }
   $filter_query = livingstone_browse_catalogue_build_filter_query($values);
   if (!empty($filter_query)) {
     $query['f'] = $filter_query;
@@ -366,6 +369,23 @@ function livingstone_browse_catalogue_build_facet_range_filter_query($facet, $va
  */
 function livingstone_browse_catalogue_facet_elements(array $results, array &$form_state) {
   $elements = array();
+  // Exceptional case for View / Download.
+  $elements[] = array(
+    '#type' => 'select',
+    '#default_value' => livingstone_browse_catalogue_default_value('access', 'all', $form_state),
+    '#options' => array(
+      'all' => t('Access'),
+      'view' => t('View'),
+      'download' => t('Download'),
+      'both' => t('View & Download'),
+      'neither' => t('No access available'),
+    ),
+    '#attributes' => array(
+      'class' => array(
+        'img-rounded'
+      ),
+    ),
+  );
   foreach (livingstone_browse_catalogue_facet_fields() as $facet => $facet_field) {
     $label = t(ucfirst($facet));
     $default = livingstone_browse_catalogue_facet_default($facet, $form_state);
@@ -436,8 +456,8 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
       $collapse = $collapsible && $collapsed;
       $data = '&nbsp;';
       if ($solr_field == 'PID') {
-        $data = livingstone_browse_catalogue_view_link($doc[$solr_field]);
-        //$data .= livingstone_browse_catalogue_download_link($doc[$solr_field]);
+        $data = livingstone_browse_catalogue_view_link($doc);
+        $data .= livingstone_browse_catalogue_download_link($doc);
       }
       else if (is_array($doc[$solr_field])) {
         $delimiter = isset($field['delimiter']) ? $field['delimiter'] : ';<br/>';
@@ -468,18 +488,17 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
 /**
  * Gets a link to view the given object.
  *
- * @param $pid
- *   The object ID in which to potentially view.
+ * @param array $doc
+ *   A single Solr result doc.
  *
  * @return string
  *   The link if one is generated.
  */
-function livingstone_browse_catalogue_view_link($pid) {
+function livingstone_browse_catalogue_view_link($doc) {
   global $user;
-  module_load_include('inc', 'livingstone', 'includes/utilities');
-  $viewable_manuscripts = in_array('administrator', $user->roles) ?
-    livingstone_all_viewable_manuscripts() :
-    livingstone_public_viewable_manuscripts();
+  $pid = $doc['PID'];
+  $viewable = $doc['viewable_b'];
+  $hidden = $doc['hidden_b'] && !in_array('administrator', $user->roles);
   $path = current_path();
   $attributes = array(
     'external' => FALSE,
@@ -493,7 +512,7 @@ function livingstone_browse_catalogue_view_link($pid) {
       'class' => array('livingstone-manuscript-launcher fa fa-eye'),
     ),
   );
-  if (in_array($pid, $viewable_manuscripts)) {
+  if ($viewable && !$hidden) {
     return l((''), $path, $attributes);
   }
   return '&nbsp;';
@@ -508,20 +527,18 @@ function livingstone_browse_catalogue_view_link($pid) {
  * @return string
  *   The link if one is generated.
  */
-function livingstone_browse_catalogue_download_link($pid) {
+function livingstone_browse_catalogue_download_link($doc) {
   global $user;
-  module_load_include('inc', 'livingstone', 'includes/utilities');
-  $viewable_manuscripts = in_array('administrator', $user->roles) ?
-                        livingstone_all_downloadable_manuscripts() :
-                        livingstone_public_downloadable_manuscripts();
-  $path = "islandora/objects/$pid/datastream/ZIP/download";
+  $pid = $doc['PID'];
+  $downloadable = $doc['downloadable_b'];
+  $path = "islandora/object/$pid/datastream/ZIP/download";
   $attributes = array(
     'external' => FALSE,
     'attributes' => array(
       'class' => array('fa fa-download'),
     ),
   );
-  if (in_array($pid, $viewable_manuscripts)) {
+  if ($downloadable) {
     return l((''), $path, $attributes);
   }
   return '&nbsp;';
@@ -601,10 +618,37 @@ function livingstone_browse_catalogue_solr_search_without_facet($facet_field, ar
  *   The search parameters for Solr.
  */
 function livingstone_browse_catalogue_search_parameters(array &$form_state) {
+  global $user;
   $values = isset($form_state['values']) ? $form_state['values'] : array();
   $filter_query = livingstone_browse_catalogue_build_filter_query($values);
   if (empty($filter_query)) {
     $filter_query = isset($_GET['f']) ? $_GET['f'] : NULL;
+  }
+  $access = isset($values['access']) ? $values['access'] : (isset($_GET['access']) ? $_GET['access'] : 'all');
+  $hide = !in_array('administrator', $user->roles);
+  switch($access) {
+    case 'view':
+      $filter_query[] = "viewable_b:true";
+      if ($hide) {
+        $filter_query[] = "hidden_b:false";
+      }
+      break;
+    case 'download':
+      $filter_query[] = "viewable_b:true";
+      break;
+    case 'both':
+      $filter_query[] = "viewable_b:true";
+      $filter_query[] = "downloadable_b:true";
+      if ($hide) {
+        $filter_query[] = "hidden_b:false";
+      }
+      break;
+    case 'neither':
+      $filter_query[] = "viewable_b:false";
+      $filter_query[] = "downloadable_b:false";
+      break;
+    default:
+      break;
   }
   return array(
     'fl' => livingstone_browse_catalogue_fl_search_parameter(),
@@ -631,7 +675,7 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
  * @return array
  */
 function livingstone_browse_catalogue_fl_search_parameter() {
-  $fl = array('PID');
+  $fl = array('PID', 'viewable_b', 'downloadable_b', 'hidden_b');
   $fields = livingstone_browse_catalogue_display_fields();
   foreach($fields as $field) {
     $fl[] = $field['field'];
@@ -681,81 +725,80 @@ function livingstone_browse_catalogue_display_fields() {
     array(
       'label' => t('Access'),
       'field' => 'PID',
-      'sort' => 'PID',
       'classes' => array('access-column'),
     ),
     array(
       'label' => t('Title'),
-      'field' => 'mods_titleInfo_title_s',
-      'sort' => 'mods_titleInfo_title_s',
+      'field' => 'title_s',
+      'sort' => 'title_s',
       'classes' => array('title-column'),
     ),
     array(
       'label' => t('Date(s)'),
-      'field' => 'dates_ms',
-      'sort' => 'mods_dateCreated_start_dt',
+      'field' => 'date_ms',
+      'sort' => 'dateRangeStart_dt',
       'default_sort' => TRUE,
       'classes' => array('date-column'),
     ),
     array(
       'label' => t('Creator(s)'),
-      'field' => 'creators_ms',
+      'field' => 'creator_ms',
       'sort' => 'creator_s',
       'classes' => array('creator-column'),
     ),
     array(
       'label' => t('Addressee(s)'),
-      'field' => 'addressees_ms',
+      'field' => 'addressee_ms',
       'sort' => 'addressee_s',
       'classes' => array('addressee-column', 'collapsible-column'),
     ),
     array(
       'label' => t('Place(s) Created'),
-      'field' => 'mods_originInfo_place_placeTerm_text_s',
-      'sort' => 'mods_originInfo_place_placeTerm_text_s',
+      'field' => 'place_s',
+      'sort' => 'place_s',
       'classes' => array('place-created-column', 'collapsible-column'),
     ),
     array(
       'label' => t('Extent (pages)'),
-      'field' => 'mods_physicalDescription_extent_pages_s',
-      'sort' => 'mods_physicalDescription_extent_pages_s',
+      'field' => 'extent_pages_s',
+      'sort' => 'extent_pages_s',
       'classes' => array('pages-column', 'collapsible-column'),
     ),
     array(
       'label' => t('Extent (size)'),
-      'field' => 'mods_physicalDescription_extent_mm_s',
-      'sort' => 'mods_physicalDescription_extent_mm_s',
+      'field' => 'extent_size_s',
+      'sort' => 'extent_size_s',
       'classes' => array('size-column', 'collapsible-column'),
     ),
     array(
       'label' => t('Genre(s)'),
-      'field' => 'genres_ms',
+      'field' => 'genre_ms',
       'sort' => 'genre_s',
       'classes' => array('genre-column', 'collapsible-column'),
     ),
     array(
       'label' => t('Repository / Shelfmark'),
-      'field' => 'repositories_ms',
+      'field' => 'repository_s',
       'sort' => 'repository_s',
       'classes' => array('repository-column', 'collapsible-column'),
     ),
     array(
       'label' => t('Copy of Item'),
-      'field' => 'mods_identifier_local_NLS_copy_identifier_s',
-      'sort' => 'mods_identifier_local_NLS_copy_identifier_s',
+      'field' => 'copy_identifier_s',
+      'sort' => 'copy_identifier_s',
       'classes' => array('copy-column', 'collapsible-column'),
     ),
     array(
       'label' => t('Other Version(s)'),
-      'field' => 'otherVersions_ms',
-      'delimiter' => '</br>',
+      'field' => 'otherVersion_ms',
       'sort' => 'otherVersion_s',
+      'delimiter' => '</br>',
       'classes' => array('other-versions-column', 'collapsible-column'),
     ),
     array(
       'label' => t('C&C Catalogue Number'),
-      'field' => 'mods_identifier_local_Canonical_Catalog_Number_s',
-      'sort' => 'mods_identifier_local_Canonical_Catalog_Number_s',
+      'field' => 'catalog_identifier_s',
+      'sort' => 'catalog_identifier_s',
       'classes' => array('catalogue-number-column', 'collapsible-column'),
     ),
   );
@@ -770,11 +813,11 @@ function livingstone_browse_catalogue_display_fields() {
  */
 function livingstone_browse_catalogue_facet_fields() {
   return array(
-    'creator' => 'mods_name_personal_creator_namePart_ms',
-    'addressee' => 'mods_name_personal_addressee_namePart_ms',
-    'repository' => 'mods_relatedItem_original_name_corporate_repository_namePart_ms',
-    'genre' => 'mods_genre_ms',
-    'date' => 'mods_dateCreated_mi',
+    'creator' => 'creator_ms',
+    'addressee' => 'addressee_ms',
+    'repository' => 'repository_ms',
+    'genre' => 'genre_ms',
+    'date' => 'dateRangeYear_mi',
   );
 }
 
@@ -787,36 +830,8 @@ function livingstone_browse_catalogue_facet_fields() {
  */
 function livingstone_browse_catalogue_facet_range_fields() {
   return array(
-    'date' => 'mods_dateCreated_mi',
+    'date' => 'dateRangeYear_mi',
   );
-}
-
-/**
- * Gets the default facet value for the given facet.
- *
- * @param string $facet
- *   The facet to get the default for.
- * @param array $form_state
- *   The Drupal form state.
- *
- * @return int|string
- *   The default index for the given facet's options.
- */
-function livingstone_browse_catalogue_facet_default($facet, array $form_state) {
-  $facet_fields = livingstone_browse_catalogue_facet_fields();
-  $facet_field = $facet_fields[$facet];
-  if (isset($form_state['values'][$facet])) {
-    return $form_state['values'][$facet];
-  }
-  else if (isset($_GET['f'])) {
-    foreach($_GET['f'] as $facet) {
-      list($field, $value) = explode(':', $facet);
-      if ($field == $facet_field) {
-        return trim(stripslashes($value), " \t\n\r\0\x0B\'\"");
-      }
-    }
-  }
-  return 0;
 }
 
 /**
@@ -839,6 +854,7 @@ function livingstone_browse_catalogue_facet_options($facet, array $results) {
     $options = array_filter($options);
     ksort($options, SORT_NATURAL);
     foreach ($options as $value => &$count) {
+      $value = html_entity_decode($value);
       $count = "$value ($count)";
     }
     return $options;
@@ -938,7 +954,6 @@ function livingstone_browse_catalogue_facet_range_elements($query, array &$form_
   );
 }
 
-
 /**
  * Gets the default values for range facet related fields.
  *
@@ -1015,3 +1030,31 @@ function livingstone_browse_catalogue_default_value($element, $default, array $f
   }
   return $default;
 };
+
+/**
+ * Gets the default facet value for the given facet.
+ *
+ * @param string $facet
+ *   The facet to get the default for.
+ * @param array $form_state
+ *   The Drupal form state.
+ *
+ * @return int|string
+ *   The default index for the given facet's options.
+ */
+function livingstone_browse_catalogue_facet_default($facet, array $form_state) {
+  $facet_fields = livingstone_browse_catalogue_facet_fields();
+  $facet_field = $facet_fields[$facet];
+  if (isset($form_state['values'][$facet])) {
+    return $form_state['values'][$facet];
+  }
+  else if (isset($_GET['f'])) {
+    foreach($_GET['f'] as $facet) {
+      list($field, $value) = explode(':', $facet);
+      if ($field == $facet_field) {
+        return trim(stripslashes($value), " \t\n\r\0\x0B\'\"");
+      }
+    }
+  }
+  return 0;
+}

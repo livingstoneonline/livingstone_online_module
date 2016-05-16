@@ -25,7 +25,8 @@
 #livingstone-browse-catalogue-form select[name="creator"],
 #livingstone-browse-catalogue-form select[name="addressee"],
 #livingstone-browse-catalogue-form select[name="repository"],
-#livingstone-browse-catalogue-form select[name="genre"] {
+#livingstone-browse-catalogue-form select[name="genre"],
+#livingstone-browse-catalogue-form select[name="access"] {
   min-width: 100%;
 }
 #livingstone-browse-catalogue-form select[name="to"]{
@@ -48,38 +49,37 @@
 }
 
 /* Search Results Table */
-#livingstone-browse-catalogue-form .mock-pager {
+.mock-pager {
   height: 22px;
 }
-#livingstone-browse-catalogue-form table.sticky-header {
+.search-results {
+  overflow-x: auto;
+}
+.search-results table.sticky-header {
   top: 70px !important;
   clip: rect(auto, auto, auto, auto);
 }
-#livingstone-browse-catalogue-form .search-results {
-  overflow-x: auto;
-}
-#livingstone-browse-catalogue-form td.access-column a {
+.search-results td.access-column a {
   margin: 0 0.5em;
 }
-#livingstone-browse-catalogue-form th {
+body.page-islandora #livingstone-browse-catalogue-form .search-results th {
   background: #ddd none repeat scroll 0 0;
   border: 1px solid #999;
-  padding: 5px 10px;
-  color: #fff;
+  padding: 10px;
+  color: #428bca;
   font-size: 14px;
   font-weight: normal;
 }
-#livingstone-browse-catalogue-form td {
+.search-results td {
   border: 1px solid #ddd;
   background-color: rgb(255,255,255);
 }
-
 /* Columns Width's */
 .search-results th.access-column,
 .search-results td.access-column {
-  max-width: 60px !important;
-  min-width: 60px !important;
-  width: 60px !important;
+  max-width: 80px !important;
+  min-width: 80px !important;
+  width: 80px !important;
 }
 .search-results th.title-column,
 .search-results td.title-column {
