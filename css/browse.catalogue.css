@@ -2,25 +2,25 @@
   padding: 21px 5px;
 }
 #livingstone-browse-catalogue-form input[type="text"] {
-  background: #f0ecec url("/sites/all/themes/nexus/images/search-button.png") no-repeat scroll right 1px;
+  background: #f0ecec url("/sites/all/themes/nexus/images/search-button.png") no-repeat scroll left 1px;
   background-repeat: no-repeat;
   border: 1px solid #d0d0d0;
-  height: 30px;
+  height: 25px;
   width: 70%;
+  padding: 3px 15px 3px 30px;
   margin: 0 0.5em 0 0;
-  padding-left: 10px;
   display: inline;
 }
 #livingstone-browse-catalogue-form input[type="submit"].search-button {
-  margin-top: 0px;
+  margin-top: -2px;
+  padding: 0 0.5em;
+  min-width: 25%;
   max-width: 25%;
+  height: 25px;
 }
 #livingstone-browse-catalogue-form select {
   margin: 0.5em 0 0.5em;
-  max-width: 100%;
-}
-#livingstone-browse-catalogue-form .date-container select {
-  min-width: 40%;
+  width: 90%;
 }
 #livingstone-browse-catalogue-form select[name="creator"],
 #livingstone-browse-catalogue-form select[name="addressee"],
@@ -163,11 +163,9 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
 /* Select Fields */
 #livingstone-browse-catalogue-form select {
   background: transparent;
-  /*padding: 5px 35px 5px 5px;*/
-  padding-left: 1em;
+  padding: 0 2em 0 1em;
   font-size: 14px;
   border: 1px solid #ccc;
-  height: 34px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -182,6 +180,10 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
     background: none;
     padding: 5px;
   }
+}
+
+#livingstone-browse-catalogue-form input[type="submit"] {
+  padding: 0;
 }
 
 #livingstone-browse-catalogue-form input[type="submit"],
@@ -200,4 +202,20 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
   box-shadow: none;
   font-size: inherit;
   border: 1px solid #ccc;
+}
+
+#livingstone-browse-catalogue-form .btn:hover,
+#livingstone-browse-catalogue-form .btn:focus {
+  color: #999;
+}
+
+.date-container table,
+.date-container tr,
+.date-container td {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+.date-container td {
+  width: 33%;
 }

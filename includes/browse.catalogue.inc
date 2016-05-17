@@ -106,17 +106,15 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
               'date-container',
             ),
           ),
-          'single' => array(
-            '#type' => 'container',
-            'year' => $year,
-          ),
           'range' => array(
-            '#type' => 'container',
+            //'#type' => 'container',
+            '#theme' => 'livingstone_browse_catalogue_date_range',
             '#attributes' => array(
               'class' => array(
                 'range',
               ),
             ),
+            'year' => $year,
             'from' => $from,
             'to' => $to,
           ),
@@ -653,7 +651,10 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
   return array(
     'fl' => livingstone_browse_catalogue_fl_search_parameter(),
     'fq' => $filter_query,
+    'qt' => '/catalogue',
     'defType' => 'edismax',
+    'qf' => 'PID^1.0 title_t^1.0 date_mt creator_t addressee_t place_t genre_t repository_t copy_identifier_t otherVersion_t catalog_identifier_t',
+    //implode('^1.0 ', livingstone_browse_catalogue_fl_search_parameter()),
     'start' => livingstone_browse_catalogue_start_search_parameter($form_state),
     'rows' => LIVINGSTONE_BROWSE_CATALOGUE_LIMIT_RESULTS,
     'sort' => livingstone_browse_catalogue_sort_search_parameter($form_state),
@@ -1030,6 +1031,13 @@ function livingstone_browse_catalogue_default_value($element, $default, array $f
   }
   return $default;
 };
+
+
+function theme_livingstone_browse_catalogue_date_range(array &$variables) {
+  $element = $variables['element'];
+  dsm($variables);
+  return '';
+}
 
 /**
  * Gets the default facet value for the given facet.
