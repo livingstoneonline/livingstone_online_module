@@ -29,10 +29,11 @@
 .search-fields .full-record {
   margin: 10px 0;
 }
-#livingstone-browse-catalogue-form input[type="checkbox"] {
+#livingstone-browse-catalogue-form input[type="checkbox"],
+#livingstone-browse-catalogue-form input[type="checkbox"] + label{
   margin: 0;
   padding: 0;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 #livingstone-browse-catalogue-form input[type="radio"] {
   display: block;
@@ -42,6 +43,7 @@
 }
 #livingstone-browse-catalogue-form .clear-button {
   width: 100%;
+  margin: 0.5em 0 0.5em;
 }
 
 /* Search Results Table */
