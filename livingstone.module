@@ -128,6 +128,11 @@ function livingstone_theme() {
         'display_page' => NULL,
       ),
     ),
+    'livingstone_browse_catalogue_search' => array(
+      'file' => 'includes/browse.catalogue.inc',
+      'render element' => 'element',
+      'template' => 'theme/livingstone-browse-catalogue-search',
+    ),
     'livingstone_browse_catalogue_date_range' => array(
       'file' => 'includes/browse.catalogue.inc',
       'render element' => 'element',

@@ -70,25 +70,35 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
             'search-fields',
           ),
         ),
-        'query' => array(
-          '#type' => 'textfield',
-          '#default_value' => $query,
+        'search-block' => array(
+          '#type' => 'container',
           '#attributes' => array(
             'class' => array(
-              'img-rounded',
+              'search-block',
             ),
           ),
-        ),
-        'search' => array(
-          '#type' => 'submit',
-          '#value' => t('Search'),
-          '#attributes' => array(
-            'class' => array(
-              'search-button',
-              'img-rounded',
-              'btn',
-              'btn-small',
-              'btn-secondary',
+          '#theme' => 'livingstone_browse_catalogue_search',
+          'query' => array(
+            '#type' => 'textfield',
+            '#size' => NULL,
+            '#default_value' => $query,
+            '#attributes' => array(
+              'class' => array(
+                'img-rounded',
+              ),
+            ),
+          ),
+          'search' => array(
+            '#type' => 'submit',
+            '#value' => t('Search'),
+            '#attributes' => array(
+              'class' => array(
+                'search-button',
+                'img-rounded',
+                'btn',
+                'btn-small',
+                'btn-secondary',
+              ),
             ),
           ),
         ),
@@ -107,7 +117,6 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
             ),
           ),
           'range' => array(
-            //'#type' => 'container',
             '#theme' => 'livingstone_browse_catalogue_date_range',
             '#attributes' => array(
               'class' => array(
@@ -648,13 +657,12 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
     default:
       break;
   }
+  $filter_query[] = "RELS_EXT_hasModel_uri_s:\"info:fedora/islandora:manuscriptCModel\"";
   return array(
     'fl' => livingstone_browse_catalogue_fl_search_parameter(),
     'fq' => $filter_query,
-    'qt' => '/catalogue',
     'defType' => 'edismax',
     'qf' => 'PID^1.0 title_t^1.0 date_mt creator_t addressee_t place_t genre_t repository_t copy_identifier_t otherVersion_t catalog_identifier_t',
-    //implode('^1.0 ', livingstone_browse_catalogue_fl_search_parameter()),
     'start' => livingstone_browse_catalogue_start_search_parameter($form_state),
     'rows' => LIVINGSTONE_BROWSE_CATALOGUE_LIMIT_RESULTS,
     'sort' => livingstone_browse_catalogue_sort_search_parameter($form_state),

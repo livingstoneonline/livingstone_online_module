@@ -4,18 +4,15 @@
 #livingstone-browse-catalogue-form input[type="text"] {
   background: #f0ecec url("/sites/all/themes/nexus/images/search-button.png") no-repeat scroll left 1px;
   background-repeat: no-repeat;
+  padding: 0 0 0 30px;
   border: 1px solid #d0d0d0;
   height: 25px;
-  width: 70%;
-  padding: 3px 15px 3px 30px;
-  margin: 0 0.5em 0 0;
+  width: 100%;
   display: inline;
 }
 #livingstone-browse-catalogue-form input[type="submit"].search-button {
   margin-top: -2px;
   padding: 0 0.5em;
-  min-width: 25%;
-  max-width: 25%;
   height: 25px;
 }
 #livingstone-browse-catalogue-form select {
@@ -29,14 +26,13 @@
 #livingstone-browse-catalogue-form select[name="access"] {
   min-width: 100%;
 }
-#livingstone-browse-catalogue-form select[name="to"]{
-  /*margin-left: 0.25em;*/
-}
-#livingstone-browse-catalogue-form .full-record {
+.search-fields .full-record {
   margin: 10px 0;
 }
 #livingstone-browse-catalogue-form input[type="checkbox"] {
   margin: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
 #livingstone-browse-catalogue-form input[type="radio"] {
   display: block;
@@ -89,9 +85,9 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
 }
 .search-results.full-record th.title-column,
 .search-results.full-record td.title-column {
-  max-width: 600px !important;
-  min-width: 600px !important;
-  width: 600px !important;
+  max-width: 350px !important;
+  min-width: 350px !important;
+  width: 350px !important;
 }
 .search-results th.date-column,
 .search-results td.date-column {
@@ -125,21 +121,21 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
 }
 .search-results th.size-column,
 .search-results td.size-column {
-  max-width: 108px !important;
-  min-width: 108px !important;
-  width: 108px !important;
+  max-width: 95px !important;
+  min-width: 95px !important;
+  width: 95px !important;
 }
 .search-results th.genre-column,
 .search-results td.genre-column {
-  max-width: 200px !important;
-  min-width: 200px !important;
-  width: 200px !important;
+  max-width: 187px !important;
+  min-width: 187px !important;
+  width: 187px !important;
 }
 .search-results th.repository-column,
 .search-results td.repository-column {
-  max-width: 250px !important;
-  min-width: 250px !important;
-  width: 250px !important;
+  max-width: 300px !important;
+  min-width: 300px !important;
+  width: 300px !important;
 }
 .search-results th.copy-column,
 .search-results td.copy-column {
@@ -163,7 +159,7 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
 /* Select Fields */
 #livingstone-browse-catalogue-form select {
   background: transparent;
-  padding: 0 2em 0 1em;
+  padding: 0 3em 0 1em;
   font-size: 14px;
   border: 1px solid #ccc;
   -webkit-appearance: none;
@@ -204,18 +200,35 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
   border: 1px solid #ccc;
 }
 
-#livingstone-browse-catalogue-form .btn:hover,
-#livingstone-browse-catalogue-form .btn:focus {
-  color: #999;
+#livingstone-browse-catalogue-form input[type="submit"].btn:hover,
+#livingstone-browse-catalogue-form input[type="submit"].btn:focus {
+  color: black;
+  background-color: #999;
 }
 
-.date-container table,
-.date-container tr,
-.date-container td {
+.search-fields table,
+.search-fields tr,
+.search-fields td {
   margin: 0 !important;
   padding: 0 !important;
   border: 0 !important;
 }
 .date-container td {
   width: 33%;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.search-fields .date-range {
+  text-align: right;
+}
+
+#livingstone-browse-catalogue-form .search-fields select[name="year"] + span {
+  margin: 0 0.5em;
+}
+#livingstone-browse-catalogue-form .date-container select {
+   padding: 0 0 0 1em;
 }
