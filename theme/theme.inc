@@ -50,6 +50,7 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
   drupal_add_css("$css_path/reset.css");
   drupal_add_css("$css_path/manuscript-viewer.css");
   drupal_add_css("$css_path/slideout-menu.css");
+  drupal_add_css("$css_path/transcript/style.css");
   drupal_add_js("$js_path/slideout-menu.js");
 
   $manuscript = $variables['manuscript'];
@@ -110,17 +111,11 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
     $xpath->registerNamespace('mods', 'http://www.loc.gov/mods/v3');
     $results = $xpath->query("/mods:mods/mods:relatedItem[@type='original' and //mods:roleTerm[@type='text' and text()='repository']]");
     $repository = $results->length > 0 ? $results->item(0) : NULL;
-    $results = $xpath->evaluate("//mods:accessCondition[normalize-space()]", $repository);
-    foreach ($results as $result) {
-      $image_credits[] = "<p>{$result->textContent}</p>";
-    }
-    $image_credits = implode('<br/>', $image_credits);
     $fields = array(
       'title' => $xpath->evaluate('normalize-space(/mods:mods/mods:titleInfo[@type="alternative"]/mods:title/text())'),
       'authors' => $xpath->evaluate('normalize-space(/mods:mods/mods:name[@type="personal"][mods:role/mods:roleTerm[@type="text" and text() = "creator"]]/mods:namePart)'),
-      'repository' => $xpath->evaluate("normalize-space(//mods:namePart/text())", $repository),
+      'repository' => $xpath->evaluate("normalize-space(/mods:mods/mods:relatedItem//mods:namePart/text())", $repository),
       'shelfmark' => $xpath->evaluate("normalize-space(//mods:shelfLocator/text())", $repository),
-      'image_credits' => $image_credits,
       'created_date' => $manuscript->createdDate->format('Y'),
     ) + $fields;
   }

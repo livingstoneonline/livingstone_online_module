@@ -14,7 +14,10 @@
    */
   $(document).on('click', 'a', function(event) {
     var location = $(this).attr('href');
-    if (typeof(location) != "undefined" && location !== '#' ) {
+    var target = $(this).attr('target');
+    if (typeof(location) != "undefined" &&
+        location !== '#' &&
+        target != "_blank") {
       event.preventDefault();
       top.location.replace(location);
     }
@@ -282,6 +285,7 @@
       $('.item-details.icon').click(function () {
         $('#item-details').toggle();
         $('#openseadragon').toggleClass('item-details-open');
+        $(this).toggleClass('depressed');
       });
 
       // Transcription.
@@ -289,6 +293,7 @@
         $('.transcription.icon').click(function () {
           $('#transcription').toggle();
           $('#openseadragon').toggleClass('transcription-open');
+          $(this).toggleClass('depressed');
           setTimeout(function () {
             $('#transcription').mCustomScrollbar("scrollTo", $("span.pb-title:eq(" + viewer.currentPage() + ")"));
           }, 1000);
