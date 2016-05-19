@@ -214,28 +214,6 @@
       }, "*");
     }
 
-    function hideToolbar() {
-      $('#toolbar').animate({
-        opacity: 0.50,
-        height: "25px"
-      }, {
-        progress: function () {
-          $(window).trigger('resize');
-        }
-      });
-    }
-
-    function showToolbar() {
-      $('#toolbar').animate({
-        opacity: 1,
-        height: "50px"
-      }, {
-        progress: function () {
-          $(window).trigger('resize');
-        }
-      });
-    }
-
     function setToolbarPage(page) {
       $('select.page-select').val(page);
       // Set the next / prev icons.
@@ -330,26 +308,6 @@
       $('.close.icon').click(function () {
         parent.window.postMessage({ event: 'close'}, "*");
       });
-
-      // Bind hover events.
-      $('#toolbar').hover(
-        function () {
-          showToolbar();
-        },
-        function () {
-          setTimeout(function () {
-            if (!$('#toolbar').is(":hover")) {
-              hideToolbar();
-            }
-          }, 1000);
-        }
-      );
-      // First time, toggle hide after 5 seconds.
-      setTimeout(function () {
-        if (!$('#toolbar').is(":hover")) {
-          hideToolbar();
-        }
-      }, 5000);
 
       // Navigation prev.
       $('#side-nav .prev-icon').click(function () {
@@ -465,6 +423,9 @@
     // Set GUI.
     setToolbarPage(initialPage);
 
+    // Zoom Out.
+    viewer.viewport.zoomTo(viewer.viewport.getMinZoom());
+
     // Set default height dynamically.
     //$('#openseadragon').height($(window).height());
 
@@ -474,6 +435,11 @@
     setTimeout(function () {
       $('body').removeClass('loading');
     }, 3000);
+
+    viewer.addHandler('open', function() {
+      viewer.viewport.zoomTo(viewer.viewport.getMinZoom(), null, true);
+      viewer.viewport.applyConstraints();
+    });
   }
 
 }(jQuery));
