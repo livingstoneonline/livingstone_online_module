@@ -4,19 +4,19 @@
     <dl class="inline">
       <?php if (!empty($fields['title'])): ?>
         <dt>Title</dt>
-        <dd><?php print $fields['title']; ?></dd>
+        <dd><?php print implode(' ', $fields['title']); ?></dd>
       <?php endif; ?>
       <?php if (!empty($fields['authors'])): ?>
-        <dt>Author</dt>
-        <dd><?php print $fields['authors']; ?></dd>
+        <dt>Authors</dt>
+        <dd><?php print implode(', ', $fields['authors']); ?></dd>
       <?php endif; ?>
       <?php if (!empty($fields['repository'])): ?>
         <dt>Repository</dt>
-        <dd><?php print $fields['repository']; ?></dd>
+        <dd><?php print implode(' ', $fields['repository']); ?></dd>
       <?php endif; ?>
       <?php if (!empty($fields['shelfmark'])): ?>
         <dt>Shelfmark</dt>
-        <dd><?php print $fields['shelfmark']; ?></dd>
+        <dd><?php print implode(' ', $fields['shelfmark']); ?></dd>
       <?php endif; ?>
         <dt>Image Credits</dt>
         <dd>
@@ -28,30 +28,25 @@
     </dl>
     <h2>Digital Edition</h2>
     <dl class="inline">
-      <dt>Directors</dt>
-      <dd>Adrian S. Wisnicki, Christopher Lawrence</dd>
-      <dt>Publication Authority</dt>
-      <dd>Livingstone Online</dd>
       <dt>Publisher</dt>
-      <dd>University Libraries, University of Maryland</dd>
-      <dt>Publication Place</dt>
-      <dd>7649, Library Lane, College Park, MD 20742, United States</dd>
+      <dd>Livingstone Online</dd>
+      <dt>Directors</dt>
+      <dd>Adrian S. Wisnicki, Christopher Lawrence (emeritus), Megan Ward, Anne Martin</dd>
+      <dt>Project Host</dt>
+      <dd>University of Maryland Libraries</dd>
       <dt>Date</dt>
       <dd><?php echo date("Y"); ?></dd>
-      <dt>Transcription</dt>
-      <dd>Adrian S. Wisnicki, Christopher Lawrence, Megan Ward, Heather F. Ball, Kate Simpson, Angela Aliff, Ashanka Kumari</dd>
-      <dt>Text Credits</dt>
+      <?php if (!empty($transcript_team)): ?>
+        <dt>Transcription Team</dt>
+        <dd><?php print implode(', ', $fields['transcription_team']); ?>.</dd>
+      <?php endif; ?>
+      <dt>Cite Item (MLA)</dt>
       <dd>
-        All materials are licencsed for use under the <a href="https://creativecommons.org/licenses/by-nc/2.0/legalcode">Creative
-        Commons Attribution-Noncommercial 2.0 Unported License</a> © Dr. Niel Imray Livingstone Wilson, 2015.
-      </dd>
-      <dt>Cite Item</dt>
-      <dd>
-        <?php print $fields['title']?>.
-        <?php print $fields['repository']; ?>,
-        <?php print $fields['shelfmark']?>.
-        <i>Livingstone Online,</i> University Libraries, University of Maryland, MD, USA.
-        [accessed <?php print $fields['accessed_date']?>].
+        <?php print implode('; ', $fields['authors']); ?>.
+        "<?php print implode('', $fields['title-alt']); ?>".
+        Livingstone Online. Adrian S. Wisnicki, Christopher Lawrence, Megan Ward, and Anne Martin, dirs.
+        University of Maryland Libraries, 2016. Web.
+        <?php print $fields['accessed_date']?>
       </dd>
     </dl>
   </div>

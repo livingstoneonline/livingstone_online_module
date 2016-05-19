@@ -112,12 +112,33 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
     $xpath->registerNamespace('mods', 'http://www.loc.gov/mods/v3');
     $results = $xpath->query("/mods:mods/mods:relatedItem[@type='original' and //mods:roleTerm[@type='text' and text()='repository']]");
     $repository = $results->length > 0 ? $results->item(0) : NULL;
+    $fetch_fields = function($query, $context = NULL) use ($xpath) {
+      $fields = array();
+      $results = $xpath->query($query, $context);
+      foreach ($results as $result) {
+        $field = trim($result->nodeValue);
+        if (!empty($field)) {
+          $fields[] = $field;
+        }
+      }
+      return $fields;
+    };
     $fields = array(
-      'title' => $xpath->evaluate('normalize-space(/mods:mods/mods:titleInfo[@type="alternative"]/mods:title/text())'),
-      'authors' => $xpath->evaluate('normalize-space(/mods:mods/mods:name[@type="personal"][mods:role/mods:roleTerm[@type="text" and text() = "creator"]]/mods:namePart)'),
-      'repository' => $xpath->evaluate("normalize-space(/mods:mods/mods:relatedItem//mods:namePart/text())", $repository),
-      'shelfmark' => $xpath->evaluate("normalize-space(//mods:shelfLocator/text())", $repository),
+      'title' => $fetch_fields('/mods:mods/mods:titleInfo[not(@type)]/mods:title[normalize-space()]'),
+      'title-alt' => $fetch_fields('/mods:mods/mods:titleInfo[@type="alternative"]/mods:title[normalize-space()]'),
+      'authors' => $fetch_fields('/mods:mods/mods:name[@type="personal"][mods:role/mods:roleTerm[@type="text" and text() = "creator"]]/mods:namePart[normalize-space()]'),
+      'repository' => $fetch_fields("//mods:namePart[normalize-space()]", $repository),
+      'shelfmark' => $fetch_fields("//mods:shelfLocator[normalize-space()]", $repository),
       'created_date' => $manuscript->createdDate->format('Y'),
+    ) + $fields;
+  }
+  if ($manuscript && isset($manuscript['TEI'])) {
+    $dom = new DOMDocument();
+    $dom->loadXML($manuscript['TEI']->content);
+    $xpath = new DOMXPath($dom);
+    $xpath->registerNamespace('tei', 'http://www.tei-c.org/ns/1.0');
+    $fields = array(
+      'transcription_team' => array(),
     ) + $fields;
   }
   $fields['accessed_date'] = date('d F Y');
