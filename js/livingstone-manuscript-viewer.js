@@ -110,6 +110,10 @@
           showSequenceControl: false,
           //toolbar: "toolbar",
           imageLoaderLimit: 5,
+          zoomPerClick: 1.2,
+          zoomPerScroll: 1.2,
+          zoomPerSecond: 1.0,
+          springStiffness: 4.0
         }, settings.openSeaDragon.options));
 
     // Set default height dynamically.

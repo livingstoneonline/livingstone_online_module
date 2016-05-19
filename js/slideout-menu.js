@@ -5,7 +5,7 @@
       event.preventDefault();
       // create menu variables
       var slideoutMenu = $('.slideout-menu');
-      var slideoutMenuWidth = $('.slideout-menu').width();
+      var slideoutMenuWidth = $('.slideout-menu').width() + 2;
 
       // toggle open class
       slideoutMenu.toggleClass("open");
