@@ -30,19 +30,6 @@
           <xsl:value-of select="//teiHeader//title[1]"/>
         </title>
         <!--<link type="text/css" rel="stylesheet" href="http://jamescummings.github.io/LEAP/style.css"/>-->
-        <link type="text/css" rel="stylesheet" href="style.css"/>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"><xsl:comment> ... </xsl:comment></script>
-        <script type="text/javascript">
-          
-          $(document).ready(function(){
-          $('button#toggle').removeClass("hidden");
-          $('button#toggle').click(function(){
-          $('.diplomatic').toggleClass("hidden");
-          $('.edited').toggleClass("hidden");
-          });
-          });
-          
-        </script>
   </head>
   <body>
       <xsl:apply-templates select="TEI"/>
@@ -55,7 +42,7 @@
   
   
   <xsl:template match="TEI">
-      <div class="transcription"><button id="toggle" title="toggle" type="button" class="hidden">Toggle Diplomatic/Edited</button>
+      <div class="transcription"><button id="toggle" title="toggle" type="button" class="hidden">Show unedited text</button>
       <h2>
         <xsl:value-of select="//teiHeader//title[1]"/>
       </h2>

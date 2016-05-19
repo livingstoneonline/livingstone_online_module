@@ -51,6 +51,7 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
   drupal_add_css("$css_path/manuscript-viewer.css");
   drupal_add_css("$css_path/slideout-menu.css");
   drupal_add_css("$css_path/transcript/style.css");
+  drupal_add_js("$js_path/transcription.js");
   drupal_add_js("$js_path/slideout-menu.js");
 
   $manuscript = $variables['manuscript'];
