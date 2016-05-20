@@ -38,7 +38,7 @@
     <?php print $content; ?>
     <div class="slideout-menu">
       <h3>Sections <a class="slideout-menu-toggle">&times;</a></h3>
-      <ul><?php print render($page['section']); ?><?php print render($page['header']); ?></ul>
+      <ul><?php print render($page['section']); ?></ul>
     </div>
   </body>
 </html>

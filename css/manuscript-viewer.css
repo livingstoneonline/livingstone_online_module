@@ -355,3 +355,31 @@ body.loading {
 body.loading .modal {
     display: block;
 }
+
+
+/* social links */
+span.footlogo {
+  background: url("../images/viewer/social/trans-social-home-28.png") no-repeat scroll 0 0 transparent;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-right: 8px;
+}
+span.footlogo:hover {
+  background: url("../images/viewer/social/trans-over-social-home-28.png") no-repeat scroll 0 0 transparent;
+}
+.stLarge {
+  background-repeat: no-repeat;
+}
+.stButton .stLarge,
+.stButton .stLarge:hover {
+  background-position: 0px center !important;
+}
+.st_twitter_large .stLarge {background-image: url("../images/viewer/social/trans-social-twitter-28.png") !important;}
+.st_twitter_large .stLarge:hover {background-image: url("../images/viewer/social/trans-over-social-twitter-28.png") !important;}
+.st_pinterest_large .stLarge {background-image: url("../images/viewer/social/trans-social-pinterest-28.png") !important;}
+.st_pinterest_large .stLarge:hover {background-image: url("../images/viewer/social/trans-over-social-pinterest-28.png") !important;}
+.st_email_large .stLarge {background-image: url("../images/viewer/social/trans-social-email-28.png") !important;}
+.st_email_large .stLarge:hover {background-image: url("../images/viewer/social/trans-over-social-email-28.png") !important;}
+.st_facebook_large .stLarge {background-image: url("../images/viewer/social/trans-social-fb-28.png") !important;}
+.st_facebook_large .stLarge:hover {background-image: url("../images/viewer/social/trans-over-social-fb-28.png") !important;}

@@ -102,8 +102,7 @@ function template_process_livingstone_manuscript_viewer(array &$variables) {
  */
 function template_preprocess_livingstone_manuscript_item_details(array &$variables) {
   $manuscript = islandora_object_load($variables['manuscript']);
-  $fields = array(
-  );
+  $fields = array();
   // Check the TEI.
   if ($manuscript && isset($manuscript['MODS'])) {
     $dom = new DOMDocument();
