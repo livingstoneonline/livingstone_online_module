@@ -924,7 +924,7 @@ function livingstone_browse_catalogue_facet_range_elements($query, array &$form_
   });
   // Set default based on what's currently selected.
   $default_value = function ($default, $options) {
-    return in_array($default, $options) ? $default : 0;
+    return in_array($default, $options) ? preg_replace('/^([1-9]{4}).*/', '\1', $default) : 0;
   };
   $classes = array(
     'img-rounded'
