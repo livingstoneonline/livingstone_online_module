@@ -922,6 +922,10 @@ function livingstone_browse_catalogue_facet_range_elements($query, array &$form_
   $to_years = array_filter($from_years, function ($year) use ($from) {
     return $year >= $from || !$from;
   });
+  if (isset($years[$year])) {
+    // Remove facet count on the selected value.
+    $years[$year] = $year;
+  }
   // Set default based on what's currently selected.
   $default_value = function ($default, $options) {
     return in_array($default, $options) ? $default : 0;
@@ -932,7 +936,7 @@ function livingstone_browse_catalogue_facet_range_elements($query, array &$form_
   return array(
     array(
       '#type' => 'select',
-      '#default_value' => $default_value($year, $years),
+      '#default_value' => $year,
       '#options' => array(t('Year')) + $years,
       '#attributes' => array(
         'class' => $classes + array(
