@@ -21,10 +21,7 @@
       <?php endif; ?>
         <dt>Image Credits</dt>
         <dd>
-          Images © National Library of Scotland.
-          <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank">Creative Commons Share-alike 2.5 UK: Scotland</a>.
-          As relevant, © Dr. Neil Imray Livingstone Wilson.
-          <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.
+          Images <?php print implode(' ', $fields['credits']); ?>
         </dd>
     </dl>
     <h1>Digital Edition</h1>

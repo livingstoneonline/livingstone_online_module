@@ -115,7 +115,6 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
     $xpath->registerNamespace('mods', 'http://www.loc.gov/mods/v3');
     $results = $xpath->query("/mods:mods/mods:relatedItem[@type='original' and //mods:roleTerm[@type='text' and text()='repository']]");
     $repository = $results->length > 0 ? $results->item(0) : NULL;
-    dd($repository);
     $fetch_fields = function($query, $context = NULL) use ($xpath) {
       $fields = array();
       $results = $xpath->query($query, $context);
@@ -127,12 +126,14 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
       }
       return $fields;
     };
+    $credits = $fetch_fields("mods:accessCondition[@type='use and reproduction' and normalize-space()]", $repository);
     $fields = array(
       'title' => $fetch_fields('/mods:mods/mods:titleInfo[not(@type)]/mods:title[normalize-space()]'),
       'title-alt' => $fetch_fields('/mods:mods/mods:titleInfo[@type="alternative"]/mods:title[normalize-space()]'),
       'authors' => $fetch_fields('/mods:mods/mods:name[@type="personal"][mods:role/mods:roleTerm[@type="text" and text() = "creator"]]/mods:namePart[normalize-space()]'),
       'repository' => $fetch_fields("mods:name/mods:namePart[normalize-space()]", $repository),
       'shelfmark' => $fetch_fields("mods:location/mods:shelfLocator[normalize-space()]", $repository),
+      'credits' => $credits,
       'created_date' => $manuscript->createdDate->format('Y'),
     ) + $fields;
   }
