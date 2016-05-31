@@ -219,6 +219,23 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
   width: 33%;
 }
 
+@media only screen
+and (min-width : 768px)
+and (max-width : 1028px) {
+  .date-container td,
+  .date-container tr,
+  .date-container table,
+  .date-container tbody {
+    display: inline-block;
+    width: 100%;
+    text-align: left !important;
+    padding: 0;
+  }
+  .date-container td {
+    width: 50%;
+  }
+}
+
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
