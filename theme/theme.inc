@@ -14,7 +14,7 @@ function template_process_livingstone_manuscript_html(array &$variables) {
   // last as the other renders above may include some scripts.
   $filter = function($data) {
     $is_setting = $data['type'] == 'setting';
-    $is_needed = is_string($data['data']) &&  strpos($data['data'], "livingstone") !== FALSE;
+    $is_needed = is_string($data['data']) && (strpos($data['data'], "livingstone") !== FALSE);
     return $is_setting || $is_needed;
   };
   $css = drupal_add_css();
@@ -34,6 +34,7 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
   $module_path = drupal_get_path('module', 'livingstone');
   $js_path = "$module_path/js";
   $css_path = "$module_path/css";
+  $lib_path = "$module_path/lib";
   drupal_add_js("$js_path/jquery-1.12.2.min.js");
   drupal_add_js("$js_path/jquery.once.js");
   drupal_add_js("$js_path/jquery-ui/jquery-ui.js");
@@ -43,16 +44,19 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
   drupal_add_js("$js_path/djatoka-tile-source.js");
   //drupal_add_js("$js_path/jquery.history.js");
   drupal_add_js("$js_path/jquery.mCustomScrollbar.concat.min.js");
-  drupal_add_css("$css_path/jquery.mCustomScrollbar.min.css");
   drupal_add_js("$js_path/jquery.query-object.js");
   drupal_add_js("$js_path/URI.js");
   drupal_add_js("$js_path/livingstone-manuscript-viewer.js");
-  drupal_add_css("$css_path/reset.css");
-  drupal_add_css("$css_path/manuscript-viewer.css");
-  drupal_add_css("$css_path/slideout-menu.css");
-  drupal_add_css("$css_path/transcript/style.css");
   drupal_add_js("$js_path/transcription.js");
   drupal_add_js("$js_path/slideout-menu.js");
+  drupal_add_css("$css_path/jquery.mCustomScrollbar.min.css");
+  drupal_add_css("$lib_path/bootstrap/3.3.6/css/bootstrap.min.css");
+  drupal_add_css("$css_path/manuscript-viewer/manuscript-viewer.css", array(
+    'group' => CSS_THEME,
+  ));
+  drupal_add_css("$css_path/transcript/style.css", array(
+    'group' => CSS_THEME,
+  ));
 
   $manuscript = $variables['manuscript'];
   $manuscript_object = islandora_object_load($manuscript);
@@ -111,6 +115,7 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
     $xpath->registerNamespace('mods', 'http://www.loc.gov/mods/v3');
     $results = $xpath->query("/mods:mods/mods:relatedItem[@type='original' and //mods:roleTerm[@type='text' and text()='repository']]");
     $repository = $results->length > 0 ? $results->item(0) : NULL;
+    dd($repository);
     $fetch_fields = function($query, $context = NULL) use ($xpath) {
       $fields = array();
       $results = $xpath->query($query, $context);
@@ -126,8 +131,8 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
       'title' => $fetch_fields('/mods:mods/mods:titleInfo[not(@type)]/mods:title[normalize-space()]'),
       'title-alt' => $fetch_fields('/mods:mods/mods:titleInfo[@type="alternative"]/mods:title[normalize-space()]'),
       'authors' => $fetch_fields('/mods:mods/mods:name[@type="personal"][mods:role/mods:roleTerm[@type="text" and text() = "creator"]]/mods:namePart[normalize-space()]'),
-      'repository' => $fetch_fields("//mods:namePart[normalize-space()]", $repository),
-      'shelfmark' => $fetch_fields("//mods:shelfLocator[normalize-space()]", $repository),
+      'repository' => $fetch_fields("mods:name/mods:namePart[normalize-space()]", $repository),
+      'shelfmark' => $fetch_fields("mods:location/mods:shelfLocator[normalize-space()]", $repository),
       'created_date' => $manuscript->createdDate->format('Y'),
     ) + $fields;
   }

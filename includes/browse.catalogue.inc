@@ -810,6 +810,12 @@ function livingstone_browse_catalogue_display_fields() {
       'sort' => 'catalog_identifier_s',
       'classes' => array('catalogue-number-column', 'collapsible-column'),
     ),
+    array(
+      'label' => t('Project ID'),
+      'field' => 'master_id_s',
+      'sort' => 'master_id_s',
+      'classes' => array('master-id-column', 'collapsible-column'),
+    ),
   );
 }
 

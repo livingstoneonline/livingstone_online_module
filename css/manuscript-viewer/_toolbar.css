@@ -1,0 +1,170 @@
+#toolbar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px;
+  border-style: solid;
+  padding: 10px;
+  /*.icon-group {
+    display: inline;
+    margin: 5px 5px;
+    //&:nth-of-type(1){
+    //  @media only screen and (max-width : 768px) {
+    //    display: block;
+    //  }
+    //}
+    //&:nth-of-type(2){
+    //  @media only screen and (max-width : 768px) {
+    //    display: block;
+    //  }
+    //}
+    &:nth-of-type(3){
+      @media only screen and (max-width : 768px) {
+        display: block;
+      }
+    }
+    &:nth-of-type(4){
+      @media only screen and (max-width : 768px) {
+        display: inline;
+      }
+    }
+  }*/
+}
+#toolbar > span {
+  padding: 5px;
+}
+#toolbar a,
+#toolbar a:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+#toolbar .icon {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: none repeat scroll 0 0 #eee;
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  height: 25px;
+  line-height: normal;
+}
+#toolbar .disabled {
+  color: darkgray !important;
+}
+#toolbar .side-menu {
+  display: inline-block;
+}
+#toolbar .share {
+  padding-left: 10px;
+}
+#toolbar .share .home {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background: url("../../images/viewer/social/trans-social-home-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
+}
+#toolbar .share .home:hover {
+  background: url("../../images/viewer/social/trans-over-social-home-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
+}
+#toolbar .share span:empty:before {
+  content: "\200b";
+}
+#toolbar .share .stButton {
+  position: inherit;
+  z-index: inherit;
+  text-decoration: none;
+  color: black;
+  display: inherit;
+  cursor: inherit;
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+#toolbar .share .stButton .stLarge {
+  height: 25px;
+  width: 25px;
+}
+#toolbar .share .st_twitter_large .stLarge {
+  background: url("../../images/viewer/social/trans-social-twitter-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
+}
+#toolbar .share .st_twitter_large .stLarge:hover {
+  background: url("../../images/viewer/social/trans-over-social-twitter-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
+}
+#toolbar .share .st_pinterest_large .stLarge {
+  background: url("../../images/viewer/social/trans-social-pinterest-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
+}
+#toolbar .share .st_pinterest_large .stLarge:hover {
+  background: url("../../images/viewer/social/trans-over-social-pinterest-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
+}
+#toolbar .share .st_email_large .stLarge {
+  background: url("../../images/viewer/social/trans-social-email-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
+}
+#toolbar .share .st_email_large .stLarge:hover {
+  background: url("../../images/viewer/social/trans-over-social-email-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
+}
+#toolbar .share .st_facebook_large .stLarge {
+  background: url("../../images/viewer/social/trans-social-fb-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
+}
+#toolbar .share .st_facebook_large .stLarge:hover {
+  background: url("../../images/viewer/social/trans-over-social-fb-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
+}
+#toolbar .zoom .ui-slider {
+  display: inline-block;
+  width: 100px;
+  top: 3px;
+  margin: 0 10px;
+}
+#toolbar .item-details .icon,
+#toolbar .transcription .icon {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 25px;
+  font-size: 0.85em;
+}
+#toolbar .item-details .depressed,
+#toolbar .transcription .depressed {
+  background-color: #999;
+}
+#toolbar .search {
+  display: inline-block;
+}
+#toolbar .search input[type=text] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  background: url('../../images/search-button.png') no-repeat 1px 1px #F0ECEC;
+  padding: 5px 15px 5px 30px;
+  border: 1px solid #d0d0d0;
+  height: 25px;
+}
+#toolbar .close {
+  float: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-family: Arial, sans-serif;
+  padding: 1px 4px;
+  font-size: 0.8em;
+  font-weight: initial;
+  line-height: initial;
+  opacity: 1;
+  height: auto;
+}

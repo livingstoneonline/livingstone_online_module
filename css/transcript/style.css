@@ -1,280 +1,371 @@
+/* Extensive revisions by Adrian S. Wisnicki, May 2016*/
+/* Karin Dalziel's changes carried over by Adrian S. Wisnicki, May 2016*/
+
 div.transcription{
-    margin-left:auto;
-    margin-right:auto;
-    width:80%;
-    font-family:calibri, arial, helvetica, sans-serif;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	font-family:calibri, arial, helvetica, sans-serif;
 }
-
 .linenumber{
-    float:left;
-    color:#AAA;
-    margin-left: -3em;
-    font-size:80%;
-    width:3em;
+	float:left;
+	color:#AAA;
+	margin-left:-5em;
+	font-size:80%;
+	width:3em;
 }
-
-.expan {display:none;}
+p.ab .linenumber{
+	text-indent:1em; /*I'm sure this is a wonky solution, but it works and is the best I could come up with. AW*/
+}
+p.noindent .linenumber{
+	text-indent:1em; /*I'm sure this is a wonky solution, but it works and is the best I could come up with. AW*/
+}
+.expan{
+	display:none;
+}
 .abbr,
 .expan{
-    border-bottom:1px green dotted
+	border-bottom:1px blue dotted
 }
 .orig,
 .reg{
-    border-bottom:1px blue dotted
+	border-bottom:1px green dotted
 }
 .sic,
 .corr{
-    border-bottom:1px red dotted
+	border-bottom:1px red dotted
 }
-
+lb.center{
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	text-align:left; /*All this is a placeholder as currently the XSLT is not putting a span class on lb. AW*/
+}
 .pb-title{
-    font-weight:bold;
-    text-align:center;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+	/*font-weight:bold;
+    text-align:center;*/ /*No bold, no center. AW*/
+	display:block;
+	color:gray;
+	font-size:90%;
+	margin-left:7%;
+	margin-bottom:-1em;
+	margin-top:1.5em;
+	text-decoration:none !important;
 }
-p.center{
-    margin-left:auto;
-    margin-right:auto;
-    width:50%;
-    text-align:left;
+p span.pb-title{
+	margin-left:0;
+	text-indent:0;
+	text-decoration:none !important;
 }
-p.right{
-    float:right;
-    clear:both;
-    width:40%;
-    text-align:left;
+p.ab{
+	display:block;
+	text-indent:0;
+	margin-left:7%;
+	margin-top:0;
+	margin-bottom:0;
 }
-.TEI p{
-    margin-left:5%;
+p.ab.center{
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	text-align:left;
 }
-p.ab,
+/*p.center{
+	width:50%;
+	text-align:left;
+}*/ /*I'm making p.right and p.center the same as p. AW*/
 p.noindent{
-    margin-left:-5%;
+	display:inline-block;
+	text-indent:0;
+	margin-left:7%;
+	margin-top:0;
+	margin-bottom:0;
 }
-
+/*p.right{
+	float:right;
+	clear:both;
+	text-align:left;
+	text-indent:0;
+	margin-left:7%;
+	margin-top:0;
+	margin-bottom:0;
+}*/ /*I'm making p.right and p.center the same as p. AW*/
+.TEI p{
+}
 .TEI table,
 .TEI tr,
 .TEI td{
-    border-style:none;
+	border-style:none;
 }
-
-
-
-
 .hidden{
-    display:none;
+	display:none;
 }
-
 
 /** @rend classes */
 
 .caps{
-    font-variant:small-caps;
+	font-variant:small-caps;
 }
 .center{
-    margin-left:auto;
-    margin-right:auto;
-    width:70%;
+	text-indent:0;
+	margin-left:15%;
+	margin-bottom:0;
 }
 .doubleunderline{
-    border-bottom:3px double;
-}
-.quarterline{
-    border-bottom:1px solid;
-    display:block;
-    width:25% !important;
-    margin-left:0px !important;
-    text-align:left;
-}
-.doubleline{
-    border-bottom:3px double;
-    display:block;
-    width:50%;
-    margin-left:auto;
-    margin-right:auto;
-}
-.tripleline{
-    border-bottom:3px double;
-    line-height:1.9em;
-    display:block;
-    width:50%;
-    margin-left:auto;
-    margin-right:auto;
-}
-.halfline{
-    border-bottom:1px solid;
-    display:block;
-    width:50% !important;
-    margin-left:0px !important;
-    text-align:left;
+	border-bottom:3px double;
 }
 .line{
-    border-bottom:1px solid #d0d0d0;
-    display:block;
-    width:90%;
-    margin-left:auto;
-    margin-right:auto;
+	border-bottom:1px solid #d0d0d0;
+	display:block;
+	width:90% !important;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
 }
-
-
+.doubleline{
+	border-top: 4px double #8c8b8b;
+	display:block;
+	width:90% !important;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+.tripleline{
+	border-top: 4px double #8c8b8b;
+	line-height:1.9em;
+	display:block;
+	width:90% !important;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+.halfline{
+	border-bottom:1px solid #d0d0d0;
+	display:block;
+	width:40% !important;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+.quarterline{
+	border-bottom:1px solid #d0d0d0;
+	display:block;
+	width:20% !important;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
 .indent{
-    margin-left:+20%;
+	margin-left:+20%;
+}
+.inline{
+	color:gray;
 }
 .italic{
-    font-style:italic;
+	font-style:italic;
 }
 .large{
-    font-size:120%;
+	font-size:120%;
 }
 .left{
-    float:left;
-    margin-left:15%;
 }
-
 .noindent{
-    margin-left:0%;
 }
 .other{
 }
-
-.right{
-    float:right;
-    margin-right:15%;
-    width:50%;
-    text-align:left;
+.overtext{
+	color:gray;
 }
-
+.right{
+	text-indent:0;
+	margin-left:25%;
+	margin-bottom:0;
+}
+.right.margintop{
+	margin-left:0;
+	color:gray;
+	line-height:0;
+	position:relative;
+	vertical-align:baseline;
+	top:-1em;
+}
+.left.margintop{
+	margin-left:0;
+	color:gray;
+	line-height:0;
+	position:relative;
+	vertical-align:baseline;
+	top:-1em;
+}/*Needs to be sorted out once we have a good example. AW*/
 .above,
 .below,
 .sub,
 .sup{
-    /* Specified in % so that the sup/sup is the
+	/* Specified in % so that the sup/sup is the
      right size relative to the surrounding text */
-    font-size:75%;
+	font-size:75%;
 
-    /* Zero out the line-height so that it doesn't
+	/* Zero out the line-height so that it doesn't
      interfere with the positioning that follows */
-    line-height:0;
+	line-height:0;
 
-    /* Where the magic happens: makes all browsers position
+	/* Where the magic happens: makes all browsers position
      the sup/sup properly, relative to the surrounding text */
-    position:relative;
+	position:relative;
 
-    /* Note that if you're using Eric Meyer's reset.css, this
+	/* Note that if you're using Eric Meyer's reset.css, this
      is already set and you can remove this rule */
-    vertical-align:baseline;
+	vertical-align:baseline;
 }
-
 .above,
 .sup{
-    /* Move the superscripted text up */
-    top:-0.5em;
+	/* Move the superscripted text up */
+	top:-0.5em;
 }
-
 .below,
 .sub{
-    /* Move the subscripted text down, but only
+	/* Move the subscripted text down, but only
      half as far down as the superscript moved up */
-    bottom:-0.25em;
+	bottom:-0.25em;
 }
+
 
 /**place= above, below, bottom, end, inline, inspace, marginleft, margineright, margintop, marginbottom, top **/
 
-.marginLeft{
-    width:20%;
+/*.marginLeft{
+	width:20%;
     float:left;
-    margin-left:-25%;
-    margin-right:10px;
+	margin-left:-25%;
+	margin-right:10px;
     clear:left;
-    color:red;
-}
-.marginRight{
-    width:20%;
-    float:right;
-    margin-right:5%;
-    clear:right;
-    color:red;
-}
+	color:red;
+}*/ /* commented out for now, changes to the XSLT will need to be made to make margin left and right work -KMD*/
+/*.marginRight{
+	width:20%;
+	float:right;
+	margin-right:5%;
+	clear:right;
+	color:red;
+}*/ /* commented out for now, changes to the XSLT will need to be made to make margin left and right work -KMD*/
 /* Too difficult for now inside target framework*/
-.marginTop{
-}
 .marginBottom{
 }
 
 .small{
-    font-size:80%;
+	font-size:80%;
 }
 .smallcaps{
-    font-variant:small-caps;
+	font-variant:small-caps;
 }
 .underline{
-    text-decoration:underline;
+	text-decoration:underline;
 }
 .upsidedown{
-    -ms-transform:rotate(180deg); /* IE 9 */
-    -moz-transform:rotate(180deg); /* Firefox */
-    -webkit-transform:rotate(180deg); /* Safari and Chrome */
-    -o-transform:rotate(180deg); /* Opera */
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-moz-transform:rotate(180deg); /* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+	-o-transform:rotate(180deg); /* Opera */
 }
 span.vertical{
-    -ms-transform:rotate(90deg); /* IE 9 */
-    -moz-transform:rotate(90deg); /* Firefox */
-    -webkit-transform:rotate(90deg); /* Safari and Chrome */
-    -o-transform:rotate(90deg); /* Opera */
+	-ms-transform:rotate(90deg); /* IE 9 */
+	-moz-transform:rotate(90deg); /* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+	-o-transform:rotate(90deg); /* Opera */
 }
-
 
 .black{
-    color:black;
+	color:black;
 }
 .blue{
-    color:blue;
+	color:blue;
 }
 .brown{
-    color:brown;
+	color:brown;
 }
 .gray{
-    color:gray;
+	color:gray;
 }
 .green{
-    color:green;
+	color:green;
+}
+.orange{
+	color:orange;
+}
+.purple{
+	color:purple;
 }
 .red{
-    color:red;
+	color:red;
 }
-
-
-
+.yellow{
+	color:yellow;
+}
 
 
 /** elements **/
 
+.gap{
+	border-bottom:1px dotted black;
+}
 .space{
-    border-bottom:1px dotted black;
+	/*border-bottom:1px dotted black;*/
+}
+.space-other{
+	border-bottom:1px dotted black;
+	display:block;
+	margin-left:7%;
+}
+.verticalSpace{
+	display:inline-block;
+	margin-left:7%;
+	border-bottom:1px dotted black;
 }
 .del{
-    text-decoration:line-through;
+	text-decoration:line-through;
 }
-.cancelled, .strike-through, .strikethrough, .overwritten{
-    text-decoration:line-through;
-    border-bottom:1px solid black;
+.cancelled,
+.strike-through,
+.strikethrough,
+.overwritten{
+	text-decoration:line-through;
 }
-
-
 span.foreignItalic{
-    font-style:italic;
+	font-style:italic;
 }
-
-
 .w{
 }
-.add{
+.addmargin{
+	display:inline-block;
+	text-indent:0px;
+}
+.addSpan{
 }
 .address{
-    display:block;
+	display:block;
 }
+.catch{
+}
+.fw{
+	display:inline-block;
+	margin-left:7%;
+}
+.fw.pageno{
+	text-indent:0 !important;
+	margin-left:0 !important;
+}
+.catch.right{
+	margin-left:25%;
+	text-indent:0;
+}
+.metamark{
+	color:gray;
+}
+.unclear{
+	color:gray;
+	border-bottom:1px dotted gray;
+}
+
+/* Are these supposed to be seperate? When I added commas it messed up the display -KMD */
 .date
 .desc
 .editor
@@ -293,25 +384,40 @@ span.foreignItalic{
 .placeName
 .roleName
 .surname
-.fw
 .q
 .quote
-
 .term
-.note{display:block;}
-.gap {margin-left:5px; margin-right:5px;}
+.note{
+	display:block;
+}
+
+.gap{
+	margin-left:5px;
+	margin-right:5px;
+}
+
+/* Are these supposed to be seperate? When I added commas it messed up the display -KMD */
 .desc
 .gloss
 .seg
 .damage
-.unclear
-
 .monogr
-.addrLine
+.addrLine{
+	display:block;
+}
+.addrLine.center{
+	margin-left:15%;
+	margin-right:0;
+}
+.addrLine.right{
+	margin-left:25%;
+	margin-right:0;
+}
 .author
 .bibl{
-    display:block;
+	display:block;
 }
+/* Are these supposed to be seperate? When I added commas it messed up the display -KMD */
 .biblScope
 .date
 .pubPlace
@@ -319,81 +425,131 @@ span.foreignItalic{
 .title
 
 .quote{
-    display:block;
+	display:block;
 }
 .TEI{
-    display:block;
+	display:block;
 }
 .back{
-    display:block;
+	display:block;
 }
 .body{
-    display:block;
+	display:block;
 }
 .p{
-    display:block;
+	display:inline-block;
+	text-indent:20px;
+	margin-left:7%;
+	margin-top:0;
+	margin-bottom:0;
+	
+}
+.p.right,
+.dateline.right{
+	display:inline-block;
+	text-indent:0;
+	margin-left:25%;
+	margin-top:0;
+	margin-bottom:0;
+	
+}
+.p.center,
+.dateline.center{
+	display:inline-block;
+	text-indent:0;
+	margin-left:15%;
+	margin-top:0;
+	margin-bottom:0;
+	
 }
 .ab{
-    display:block;
+	display:block;
+	margin-left:7%;
+	margin-top:0;
+	margin-bottom:0;
 }
 .closer{
-    display:block;
+	display:block;
+	margin-left:7%;
+}
+.opener{
+	display:block;
+	margin-left:7%;
+	margin-bottom:0px;
+	margin-top:1em;
 }
 .dateline{
-    display:block;
+	display:inline-block;
 }
 .div{
-    display:block;
+	display:block;
 }
 .front{
-    display:block;
+	display:block;
 }
-
-
+.salute{
+	display:block;
+}
+.signed{
+	display:block;
+}
 .ref,
-.TEI a, .TEI a:visited{
-    text-decoration:none;
-    font-weight:bold;
-    color:#AAF;
+.TEI a,
+.TEI a:visited{
+	text-decoration:none;
+	font-weight:bold;
+	color:#AAF;
 }
-
-.head
-
-.item{
+.head{
+}
+.list{
+	display:block;
+	margin-left:7%;
+}
+.listitem{
 }
 .label{
 }
-
 .cb{
 }
 .gb{
 }
 .lb{
+	display:block; /* I think this is the correct way to display this, change if necessary -KMD */
 }
-/*.milestone {display:block; width:100%; background:#FFF; border-bottom:black 1px solid; height:1px; margin-left:auto; margin-right:auto; padding:2px;}*/
+.milestone{
+	display:block;
+	width:60%;
+	background:#FFF;
+	color:black;
+	height:0px;
+	margin-left:7%;
+	margin-right:7%;
+	padding:0px;
+}
 .pb{
-    display:block;
 }
-
 .graphic{
 }
 .figure{
 }
-.table,
-table{
+.figfigDesc{
+	color:gray;
 }
-.row,
-tr{
+.table{
+	margin-left:7%;
+	display:inline-block;
 }
-.cell,
-td{
+.row{
+}
+.cell{
 }
 .anchor{
 }
 .app{
 }
 .rdg{
-    display:block;
+	display:block;
 }
 .addSpan{
 }
@@ -424,14 +580,27 @@ td{
 .undo{
 }
 
-div.metadataContainer{
-    margin-left:auto;
-    margin-right:auto;
-    width:90%;
-    font-family:calibri, arial, helvetica, sans-serif;
+/*div.metadataContainer{
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+	font-family:calibri, arial, helvetica, sans-serif;
 }
-
-table.MODS_metadataTable {width:90%;}
-table.MODS_metadataTable, table.MODS_metadataTable tr td {border:1px black dotted}
-table.MODS_metadataTable tr td.metadataTableLabel {width:20%; text-align:right; padding-right:10px; font-weight:bold;}
-table.MODS_metadataTable tr td.metadataTableData {text-align:left; padding-right:10px; font-weight:normal;}
+table.MODS_metadataTable{
+	width:90%;
+}
+table.MODS_metadataTable,
+table.MODS_metadataTable tr td{
+	border:1px black dotted
+}
+table.MODS_metadataTable tr td.metadataTableLabel{
+	width:20%;
+	text-align:right;
+	padding-right:10px;
+	font-weight:bold;
+}
+table.MODS_metadataTable tr td.metadataTableData{
+	text-align:left;
+	padding-right:10px;
+	font-weight:normal;
+}*/ /*No longer needed. AW*/

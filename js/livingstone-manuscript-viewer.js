@@ -103,7 +103,7 @@
           }),
           initialPage: settings.initialPage,
           sequenceMode: true,
-          showReferenceStrip: true,
+          showReferenceStrip: false,
           referenceStripPosition: 'BOTTOM',
           referenceStripSizeRatio: 0.1,
           showZoomControl: false,
@@ -116,7 +116,7 @@
           zoomPerClick: 1.2,
           zoomPerScroll: 1.2,
           zoomPerSecond: 1.0,
-          springStiffness: 4.0
+          springStiffness: 0.01
         }, settings.openSeaDragon.options));
 
     // Set default height dynamically.
