@@ -319,6 +319,7 @@
 
     year.field.change(function (event) {
       range.clear();
+      $('option:selected', this).text($(this).val());
     });
 
     range.fields.change(function (event) {
