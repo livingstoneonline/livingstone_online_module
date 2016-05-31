@@ -461,6 +461,9 @@ body.loading .modal {
   background-color: black;
   z-index: 100;
 }
+#openseadragon.item-details-open.transcription-open {
+  display: none;
+}
 #openseadragon.item-details-open {
   width: 50%;
   right: 0px;
@@ -469,31 +472,27 @@ body.loading .modal {
   width: 50%;
   left: 0px;
 }
-#openseadragon.item-details-open.transcription-open {
-  display: none;
-}
-#side-nav {
+#openseadragon .prev-icon {
   position: absolute;
   top: 40%;
-  z-index: 10;
-  margin-left: auto;
-  margin-right: auto;
+  z-index: 200;
+  cursor: pointer;
   left: 0;
+  height: 60px;
+  width: 30px;
+  background-color: #252525;
+}
+#openseadragon .next-icon {
+  position: absolute;
+  top: 40%;
+  z-index: 200;
+  cursor: pointer;
   right: 0;
-}
-#side-nav .prev-icon {
   height: 60px;
   width: 30px;
   background-color: #252525;
-  float: left;
 }
-#side-nav .next-icon {
-  height: 60px;
-  width: 30px;
-  background-color: #252525;
-  float: right;
-}
-#side-nav .arrow-right {
+#openseadragon .arrow-right {
   width: 0;
   height: 0;
   border-top: 15px solid transparent;
@@ -504,7 +503,7 @@ body.loading .modal {
   right: 0;
   margin-top: 15px;
 }
-#side-nav .arrow-left {
+#openseadragon .arrow-left {
   width: 0;
   height: 0;
   border-top: 15px solid transparent;

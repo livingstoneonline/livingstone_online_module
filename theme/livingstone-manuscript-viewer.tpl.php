@@ -64,21 +64,11 @@
     </div>
   </div>
   <div id="openseadragon" unselectable="on" onselectstart="return false;">
-    <div id="side-nav">
-      <div class="prev-icon">
-        <div class="arrow-left"></div>
-      </div>
-      <div class="next-icon">
-        <div class="arrow-right"></div>
-      </div>
+    <div class="prev-icon">
+      <div class="arrow-left"></div>
     </div>
-    <div id="reference-nav" style="display:none">
-      <div class="prev-icon">
-        <div class="arrow-left"></div>
-      </div>
-      <div class="next-icon">
-        <div class="arrow-right"></div>
-      </div>
+    <div class="next-icon">
+      <div class="arrow-right"></div>
     </div>
   </div>
 </div>

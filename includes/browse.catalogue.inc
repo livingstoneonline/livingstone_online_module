@@ -36,7 +36,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
     '#suffix' => '</div>',
     '#attached' => array(
       'js' => array(
-        "$path/js/URI.js",
+        "$path/lib/URI.js",
         "$path/js/browse.catalogue.js",
         "$path/js/livingstone-manuscript-launcher.js",
         array(

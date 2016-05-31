@@ -61,9 +61,6 @@
   Drupal.LivingstoneManuscriptViewer = function (base, settings) {
     // Private Members.
 
-    // Set fixed high before init so reference strip works.
-    //$('#openseadragon').height(500);
-    //$('#item-details').height($(window).height() - 150);
     $('#item-details').mCustomScrollbar({
       autoHideScrollbar:true,
 			theme:"rounded-dark"
@@ -116,15 +113,8 @@
           zoomPerClick: 1.2,
           zoomPerScroll: 1.2,
           zoomPerSecond: 1.0,
-          springStiffness: 0.01
+          springStiffness: 1.0
         }, settings.openSeaDragon.options));
-
-    // Set default height dynamically.
-    $(window).resize(function () {
-//      $('#openseadragon').height(window.innerHeight - $('#toolbar').height());
-     // $('#item-details').height(window.innerHeight - 150);
-     // $('#transcription').height(window.innerHeight - 150);
-    });
 
     // Public Members.
     $.extend(this, {
@@ -225,16 +215,16 @@
       $('select.page-select').val(page);
       // Set the next / prev icons.
       if (page == 0) {
-        $('#side-nav .arrow-left').css('border-right-color', 'grey');
+        $('#openseadragon .arrow-left').css('border-right-color', 'grey');
       }
       else {
-        $('#side-nav .arrow-left').css('border-right-color', 'white');
+        $('#openseadragon .arrow-left').css('border-right-color', 'white');
       }
       if (page == pages.length - 1) {
-        $('#side-nav .arrow-right').css('border-left-color', 'grey');
+        $('#openseadragon .arrow-right').css('border-left-color', 'grey');
       }
       else {
-        $('#side-nav .arrow-right').css('border-left-color', 'white');
+        $('#openseadragon .arrow-right').css('border-left-color', 'white');
       }
     }
 
@@ -319,7 +309,7 @@
       });
 
       // Navigation prev.
-      $('#side-nav .prev-icon').click(function () {
+      $('#openseadragon .prev-icon').click(function () {
         var page = viewer.currentPage() - 1;
         if (validPageNumber(page)) {
           viewer.goToPage(page);
@@ -327,7 +317,7 @@
       });
 
       // Navigation next.
-      $('#side-nav .next-icon').click(function () {
+      $('#openseadragon .next-icon').click(function () {
         var page = viewer.currentPage() + 1;
         if (validPageNumber(page)) {
           viewer.goToPage(page);
@@ -427,16 +417,12 @@
 
     // Start up.
     initializeToolbar();
-    initializeReferenceStrip();
 
     // Set GUI.
     setToolbarPage(initialPage);
 
     // Zoom Out.
     viewer.viewport.zoomTo(viewer.viewport.getMinZoom());
-
-    // Set default height dynamically.
-    //$('#openseadragon').height($(window).height());
 
     /**
      * Wait to display.

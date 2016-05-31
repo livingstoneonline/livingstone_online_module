@@ -3,14 +3,14 @@
   $(document).ready(function ($) {
     $('.slideout-menu-toggle').on('click', function (event){
       event.preventDefault();
-      // create menu variables
+      // create menu variables.
       var slideoutMenu = $('.slideout-menu');
       var slideoutMenuWidth = $('.slideout-menu').width() + 2;
 
-      // toggle open class
+      // toggle open class.
       slideoutMenu.toggleClass("open");
 
-      // slide menu
+      // slide menu.
       if (slideoutMenu.hasClass("open")) {
 	      slideoutMenu.animate({
 		      left: "0px"
