@@ -108,12 +108,17 @@
           showRotationControl: false,
           showFullPageControl: false,
           showSequenceControl: false,
-          //toolbar: "toolbar",
           imageLoaderLimit: 5,
           zoomPerClick: 1.2,
           zoomPerScroll: 1.2,
           zoomPerSecond: 1.0,
-          springStiffness: 1.0
+          springStiffness: 1.0,
+          viewportMargins: {
+            left: 10,
+            right: 10,
+            top: 10,
+            bottom: 30
+          }
         }, settings.openSeaDragon.options));
 
     // Public Members.
@@ -424,6 +429,10 @@
     // Zoom Out.
     viewer.viewport.zoomTo(viewer.viewport.getMinZoom());
 
+    $(window).resize(function () {
+      $('#openseadragon').height(window.innerHeight - $('#toolbar').height());
+    });
+
     /**
      * Wait to display.
      */
@@ -432,7 +441,8 @@
     }, 3000);
 
     viewer.addHandler('open', function() {
-      viewer.viewport.zoomTo(viewer.viewport.getMinZoom(), null, true);
+      $('#openseadragon').height(window.innerHeight - $('#toolbar').height());
+      viewer.viewport.goHome();
       viewer.viewport.applyConstraints();
     });
   }
