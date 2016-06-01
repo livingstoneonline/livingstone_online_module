@@ -39,7 +39,9 @@
       <?php endif; ?>
       <dt>Cite Item (MLA)</dt>
       <dd>
-        <?php print implode('; ', $fields['authors']); ?>.
+        <?php if (!empty($fields['authors'])): ?>
+          <?php print implode('; ', $fields['authors']); ?>.
+        <?php endif; ?>
         "<?php print implode('', $fields['title-alt']); ?>."
         <i>Livingstone Online</i>. Adrian S. Wisnicki, Christopher Lawrence, Megan Ward, and Anne Martin, dirs.
         University of Maryland Libraries, 2016. Web.
