@@ -20,9 +20,7 @@
         <dd><?php print implode(' ', $fields['shelfmark']); ?></dd>
       <?php endif; ?>
         <dt>Image Credits</dt>
-        <dd>
-          Images <?php print implode(' ', $fields['credits']); ?>
-        </dd>
+        <dd><?php print implode(' ', $fields['credits']); ?></dd>
     </dl>
     <h1>Digital Edition</h1>
     <hr/>
@@ -30,7 +28,7 @@
       <dt>Publisher</dt>
       <dd>Livingstone Online</dd>
       <dt>Directors</dt>
-      <dd>Leadership: Adrian S. Wisnicki (director), Christopher Lawrence (director emeritus), Megan Ward (associate director), Anne Martin (associate director)</dd>
+      <dd>Adrian S. Wisnicki (director), Christopher Lawrence (director emeritus), Megan Ward (associate director), Anne Martin (associate director)</dd>
       <dt>Project Host</dt>
       <dd>University of Maryland Libraries</dd>
       <dt>Date</dt>
@@ -45,7 +43,7 @@
         "<?php print implode('', $fields['title-alt']); ?>."
         <i>Livingstone Online</i>. Adrian S. Wisnicki, Christopher Lawrence, Megan Ward, and Anne Martin, dirs.
         University of Maryland Libraries, 2016. Web.
-        <?php print $fields['accessed_date']?>
+        <?php print $fields['accessed_date']?>.
       </dd>
     </dl>
   </div>
