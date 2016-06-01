@@ -126,6 +126,10 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
       return $fields;
     };
     $credits = $fetch_fields("mods:accessCondition[@type='use and reproduction' and normalize-space()]", $repository);
+    // Add hyper links.
+    foreach($credits as &$credit) {
+      $credit = preg_replace('(https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*))', '<a href="\0" target="_blank">\0</a>', $credit);
+    }
     $fields = array(
       'title' => $fetch_fields('/mods:mods/mods:titleInfo[not(@type)]/mods:title[normalize-space()]'),
       'title-alt' => $fetch_fields('/mods:mods/mods:titleInfo[@type="alternative"]/mods:title[normalize-space()]'),
