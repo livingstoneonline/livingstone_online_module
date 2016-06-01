@@ -783,7 +783,7 @@ function livingstone_browse_catalogue_display_fields() {
     ),
     array(
       'label' => t('Genre(s)'),
-      'field' => 'genre_ms',
+      'field' => 'genre_s',
       'sort' => 'genre_s',
       'classes' => array('genre-column', 'collapsible-column'),
     ),
