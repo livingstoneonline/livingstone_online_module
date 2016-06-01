@@ -125,6 +125,10 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
       }
       return $fields;
     };
+    $authors = $fetch_fields('/mods:mods/mods:name[@type="personal"][mods:role/mods:roleTerm[@type="text" and text() = "creator"]]/mods:namePart[normalize-space()]');
+    if ($xpath->query('/mods:mods/mods:note[@displayLabel="creator"]')->length > 0) {
+      $authors[] = "Unknown creator";
+    }
     $credits = $fetch_fields("mods:accessCondition[@type='use and reproduction' and normalize-space()]", $repository);
     // Add hyper links.
     foreach($credits as &$credit) {
@@ -133,7 +137,7 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
     $fields = array(
       'title' => $fetch_fields('/mods:mods/mods:titleInfo[not(@type)]/mods:title[normalize-space()]'),
       'title-alt' => $fetch_fields('/mods:mods/mods:titleInfo[@type="alternative"]/mods:title[normalize-space()]'),
-      'authors' => $fetch_fields('/mods:mods/mods:name[@type="personal"][mods:role/mods:roleTerm[@type="text" and text() = "creator"]]/mods:namePart[normalize-space()]'),
+      'authors' => $authors,
       'repository' => $fetch_fields("mods:name/mods:namePart[normalize-space()]", $repository),
       'shelfmark' => $fetch_fields("mods:location/mods:shelfLocator[normalize-space()]", $repository),
       'credits' => $credits,
