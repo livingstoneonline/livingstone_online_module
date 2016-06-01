@@ -442,7 +442,7 @@
 
     viewer.addHandler('open', function() {
       $('#openseadragon').height(window.innerHeight - $('#toolbar').height());
-      viewer.viewport.goHome();
+      viewer.viewport.zoomTo(viewer.viewport.getMinZoom(), null, true);
       viewer.viewport.applyConstraints();
     });
   }
