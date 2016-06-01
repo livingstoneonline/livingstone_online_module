@@ -420,6 +420,14 @@
 
     }
 
+    /**
+     * Resize the viewer to fit the window.
+     */
+    function resize() {
+      var height = window.innerHeight - $('#toolbar').outerHeight();
+      $('#openseadragon, #item-details, #transcription').height(height);
+    }
+
     // Start up.
     initializeToolbar();
 
@@ -430,7 +438,7 @@
     viewer.viewport.zoomTo(viewer.viewport.getMinZoom());
 
     $(window).resize(function () {
-      $('#openseadragon').height(window.innerHeight - $('#toolbar').height());
+      resize();
     });
 
     /**
@@ -441,7 +449,7 @@
     }, 3000);
 
     viewer.addHandler('open', function() {
-      $('#openseadragon').height(window.innerHeight - $('#toolbar').height());
+      resize();
       viewer.viewport.zoomTo(viewer.viewport.getMinZoom(), null, true);
       viewer.viewport.applyConstraints();
     });
