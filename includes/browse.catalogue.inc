@@ -473,7 +473,13 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
         $data = implode($delimiter, array_unique($doc[$solr_field]));
       }
       else if (is_string($doc[$solr_field])) {
-        $data = $doc[$solr_field];
+        if (isset($field['split'])) {
+          $split = $field['split'];
+          $data = preg_replace("($split)", '\\1<br/>', $doc[$solr_field]);
+        }
+        else {
+          $data = $doc[$solr_field];
+        }
       }
       $row[] = array(
         'data' => $data,
@@ -785,6 +791,7 @@ function livingstone_browse_catalogue_display_fields() {
       'label' => t('Genre(s)'),
       'field' => 'genre_s',
       'sort' => 'genre_s',
+      'split' => ';',
       'classes' => array('genre-column', 'collapsible-column'),
     ),
     array(
