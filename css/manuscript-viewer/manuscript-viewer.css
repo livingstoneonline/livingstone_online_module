@@ -382,6 +382,7 @@ body.loading .modal {
   padding: 5px 15px 5px 30px;
   border: 1px solid #d0d0d0;
   height: 25px;
+  width: 200px;
 }
 #toolbar .close {
   float: none;
