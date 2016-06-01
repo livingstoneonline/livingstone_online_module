@@ -68,6 +68,7 @@
     //$('#transcription').height($(window).height() - 150);
     $('#transcription').mCustomScrollbar({
       autoHideScrollbar:true,
+      axis: "yx",
 			theme:"rounded-dark"
     });
 
