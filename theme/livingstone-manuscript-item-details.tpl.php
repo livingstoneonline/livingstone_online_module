@@ -9,7 +9,7 @@
       <?php endif; ?>
       <?php if (!empty($fields['authors'])): ?>
         <dt>Creator(s)</dt>
-        <dd><?php print implode(', ', $fields['authors']); ?></dd>
+        <dd><?php print implode('; ', $fields['authors']); ?></dd>
       <?php endif; ?>
       <?php if (!empty($fields['repository'])): ?>
         <dt>Repository</dt>
