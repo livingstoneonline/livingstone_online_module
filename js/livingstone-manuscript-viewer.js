@@ -421,6 +421,18 @@
     }
 
     /**
+     * Setup the reference strip and bound actions to it.
+     */
+    function initializeTranscription() {
+      $('.TEI span.pb-title').click(function () {
+        var page = parseInt($(this).text().replace(/[a-z-_.:]*/gi, '')) - 1;
+        if (validPageNumber(page)) {
+          viewer.goToPage(page);
+        }
+      });
+    }
+
+    /**
      * Resize the viewer to fit the window.
      */
     function resize() {
@@ -430,6 +442,7 @@
 
     // Start up.
     initializeToolbar();
+    initializeTranscription();
 
     // Set GUI.
     setToolbarPage(initialPage);
