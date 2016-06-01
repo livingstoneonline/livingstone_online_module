@@ -291,7 +291,7 @@
           $('#openseadragon').toggleClass('transcription-open');
           $(this).toggleClass('depressed');
           setTimeout(function () {
-            $('#transcription').mCustomScrollbar("scrollTo", $("span.pb-title:eq(" + viewer.currentPage() + ")"));
+            $('#transcription').mCustomScrollbar("scrollTo", [$("span.pb-title:eq(" + viewer.currentPage() + ")"), 0]);
           }, 1000);
         });
       } else {
@@ -306,7 +306,7 @@
       viewer.addHandler("page", function (data) {
         setToolbarPage(data.page);
         sendSetPageMessage(data.page);
-        $('#transcription').mCustomScrollbar("scrollTo", $("span.pb-title:eq(" + data.page + ")"));
+        $('#transcription').mCustomScrollbar("scrollTo", [$("span.pb-title:eq(" + data.page + ")"), 0]);
       });
 
       // Close
