@@ -228,11 +228,16 @@ and (max-width : 1028px) {
   .date-container tbody {
     display: inline-block;
     width: 100%;
-    text-align: left !important;
     padding: 0;
   }
   .date-container td {
     width: 50%;
+  }
+  .date-container td:nth-of-type(3) {
+    text-align: left !important;
+  }
+  .date-container td:nth-of-type(4) {
+    text-align: right !important;
   }
 }
 

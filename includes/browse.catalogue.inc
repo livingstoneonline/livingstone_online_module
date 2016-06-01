@@ -66,7 +66,8 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
         '#type' => 'container',
         '#attributes' => array(
           'class' => array(
-            'col-sm-3',
+            'col-sm-4',
+            'col-lg-3',
             'search-fields',
           ),
         ),
@@ -179,7 +180,8 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
         '#type' => 'container',
         '#attributes' => array(
           'class' => array(
-            'col-sm-9',
+            'col-sm-8',
+            'col-lg-9',
           ),
         ),
         'top_pager' => array(
