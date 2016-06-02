@@ -23,8 +23,9 @@
   cursor: pointer;
   background: url("../../images/bg_direction_nav-new.png") no-repeat #F2F2F2;
   border: 1px solid #eee;
-  height: 100px;
-  width: 50px;
+  height: 60px;
+  width: 30px;
+  background-size: 50px 120px;
   left: 0;
   background-position: 0 0;
   border-radius: 0px 6px 6px 0px;
@@ -36,8 +37,9 @@
   cursor: pointer;
   background: url("../../images/bg_direction_nav-new.png") no-repeat #F2F2F2;
   border: 1px solid #eee;
-  height: 100px;
-  width: 50px;
+  height: 60px;
+  width: 30px;
+  background-size: 50px 120px;
   right: 0;
   background-position: 100% 0;
   border-radius: 6px 0px 0px 6px;

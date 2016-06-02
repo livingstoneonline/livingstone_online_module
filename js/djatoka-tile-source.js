@@ -58,7 +58,7 @@
         tileWidth: parseInt(options.tileWidth) || 256,
         tileHeight: parseInt(options.tileHeight) || 256,
         tileOverlap: parseInt(options.tileOverlap) || 2,
-        minLevel: parseInt(options.minLevel) || 1,
+        minLevel: parseInt(options.minLevel) || 0,
         maxLevel: parseInt(options.maxLevel) || parseInt(options.levels),
       };
       if (typeof(data.identifier) == 'undefined' && typeof(options.pid) == 'string') {
