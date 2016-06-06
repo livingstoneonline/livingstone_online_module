@@ -42,13 +42,13 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
   drupal_add_js("$lib_path/drupal.js");
   drupal_add_js("$lib_path/openseadragon/2.2.0/openseadragon.min.js");
   drupal_add_js("$js_path/djatoka-tile-source.js");
-  drupal_add_js("$lib_path/jquery/plugins/jquery.mCustomScrollbar.concat.min.js");
+  drupal_add_js("$lib_path/jquery/plugins/malihu-custom-scrollbar/3.1.3/jquery.mCustomScrollbar.js");
   drupal_add_js("$lib_path/jquery/plugins/jquery.query-object.js");
   drupal_add_js("$lib_path/URI.js");
   drupal_add_js("$js_path/livingstone-manuscript-viewer.js");
   drupal_add_js("$js_path/transcription.js");
   drupal_add_js("$js_path/slideout-menu.js");
-  drupal_add_css("$css_path/jquery.mCustomScrollbar.min.css");
+  drupal_add_css("$lib_path/jquery/plugins/malihu-custom-scrollbar/3.1.3/jquery.mCustomScrollbar.css");
   drupal_add_css("$lib_path/bootstrap/3.3.6/css/bootstrap.min.css");
   drupal_add_css("$css_path/manuscript-viewer/manuscript-viewer.css", array(
     'group' => CSS_THEME,
@@ -171,5 +171,5 @@ function theme_livingstone_manuscript_transcript(array &$variables) {
   if ($markup === FALSE) {
     return '<div>' . t('Failed to generate transcript.') . '</div>';
   }
-  return "<div class='viewer-sidebar'>{$markup}</div>";
+  return "<div class='viewer-sidebar' style='font-size: initial;'>{$markup}</div>";
 }

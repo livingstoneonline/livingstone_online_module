@@ -59,18 +59,6 @@
    * @constructor
    */
   Drupal.LivingstoneManuscriptViewer = function (base, settings) {
-    // Private Members.
-
-    $('#item-details').mCustomScrollbar({
-      autoHideScrollbar:true,
-			theme:"rounded-dark"
-    });
-    //$('#transcription').height($(window).height() - 150);
-    $('#transcription').mCustomScrollbar({
-      autoHideScrollbar:true,
-      axis: "yx",
-			theme:"rounded-dark"
-    });
 
     /**
      * Checks if the given number is a valid page number.
@@ -235,6 +223,18 @@
     }
 
     /**
+     * Scroll to the given element in the transcription pane.
+     *
+     * @param {int} page
+     */
+    function transcriptionScrollTo(page) {
+      var element = $("span.pb-title:eq(" + page + ")");
+      $('#transcription').animate({
+        scrollTop: element[0].offsetTop + 'px'
+      }, 1000);
+    }
+
+    /**
      * Setup the toolbar and bound actions to it.
      */
     function initializeToolbar() {
@@ -291,7 +291,7 @@
           $('#openseadragon').toggleClass('transcription-open');
           $(this).toggleClass('depressed');
           setTimeout(function () {
-            $('#transcription').mCustomScrollbar("scrollTo", [$("span.pb-title:eq(" + viewer.currentPage() + ")"), 0]);
+            transcriptionScrollTo(viewer.currentPage());
           }, 1000);
         });
       } else {
@@ -306,7 +306,7 @@
       viewer.addHandler("page", function (data) {
         setToolbarPage(data.page);
         sendSetPageMessage(data.page);
-        $('#transcription').mCustomScrollbar("scrollTo", [$("span.pb-title:eq(" + data.page + ")"), 0]);
+        transcriptionScrollTo(data.page);
       });
 
       // Close
@@ -439,6 +439,8 @@
     function resize() {
       var height = window.innerHeight - $('#toolbar').outerHeight();
       $('#openseadragon, #item-details, #transcription').height(height);
+      var width = window.innerWidth / 2;
+      $('#item-details, #transcription').width(width);
     }
 
     // Start up.

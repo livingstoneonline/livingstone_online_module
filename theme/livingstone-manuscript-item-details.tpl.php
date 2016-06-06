@@ -1,5 +1,5 @@
 <div id="item-details" style="display:none;">
-  <div class="item-details-content">
+  <div class="item-details-content" style="font-size: initial;">
     <h1>Item Details</h1>
     <hr/>
     <dl>

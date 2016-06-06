@@ -1,107 +1,308 @@
-/* Extensive revisions by Adrian S. Wisnicki, May 2016*/
-/* Karin Dalziel's changes carried over by Adrian S. Wisnicki, May 2016*/
+/* 
+
+Table of Contents
+-----------------
+1. Textual divisions 
+2. Letters 
+3. pb, lb, linenumber 
+4. Milestone and lines 
+5. p, ab, note, fw 
+6. Additions and Deletions 
+7. Editorial 
+8. @rend classes (except lines, page placement, colors) 
+9. Page placement 
+10. Colors 
+11. Lists and Tables 
+12. Misc 
+
+* /
+
+
+
+/* 1. Textual divisions */
 
 div.transcription{
 	margin-left:auto;
 	margin-right:auto;
 	width:100%;
-	font-family:calibri, arial, helvetica, sans-serif;
+	font-family:"source sans pro", calibri, arial, helvetica, sans-serif;
+	font-size:.9em;
+	white-space: nowrap;
+}
+.TEI{
+	display:block;
+}
+.text{
+}
+.body{
+	display:block;
+	padding-bottom:2.4em;
+}
+.front,
+.back{
+	display:block;
+}
+.div{
+}
+
+
+/* 2. Letters */
+
+.opener,
+.closer{
+	margin-left:9%;
+	margin-bottom:0px;
+}
+.opener{
+	display:inline;
+	margin-top:1em;
+}
+.closer{
+	display:block;
+}
+.dateline{
+	display:inline;
+	text-indent:0;
+}
+.dateline.center{
+	display:inline-block;
+	margin-left:15%;
+}
+.dateline.right{
+	display:block;
+	margin-left:25%;
+}
+.opener-salute{
+	margin-left:9% !important;
+}
+.closer-salute{
+	margin-left:0 !important;
+}
+.signed{
+	display:inline-block;
+}
+.address{
+	display:block;
+}
+.addrLine.center{
+	margin-left:15%;
+}
+.addrLine.right{
+	margin-left:25%;
+}
+
+
+/* 3. pb, lb, linenumber */
+
+.pb-title{
+	display:block;
+	color:#428bca;
+	text-decoration:underline;
+	font-size:90%;
+	margin-left:9%;
+	margin-top:1.5em;
+	margin-bottom:-1em;
+}
+.pb-title:hover{
+	color:#AAA;
+}
+.pb-title:first-of-type {
+  margin-top: 0;
+}/*This is to prevent scrolling up when the first image opens. AW*/
+p span.pb-title{
+	margin-left:0;
+	text-indent:0;
+}
+.del-pb{
+}
+/*We need a solution. See 2672-3 for an example or 875 for multiple examples.*/
+.lb{
+	display:block;
+}
+.lb.center{
+	margin-left:15%;
+}
+.lb.right{
+	margin-right:25%;
 }
 .linenumber{
 	float:left;
 	color:#AAA;
-	margin-left:-5em;
+	margin-left:-4em !important;
+	text-indent:0;
 	font-size:80%;
 	width:3em;
 }
-p.ab .linenumber{
-	text-indent:1em; /*I'm sure this is a wonky solution, but it works and is the best I could come up with. AW*/
+.p.noindent.linenumber{
+	text-indent:1em;
 }
-p.noindent .linenumber{
-	text-indent:1em; /*I'm sure this is a wonky solution, but it works and is the best I could come up with. AW*/
+
+
+/* 4. Milestone and lines */
+
+.milestone{
+	display:block;
+	width:60%;
+	background:#FFF;
+	color:black;
+	height:0px;
+	margin-left:9%;
+	margin-right:9%;
+	padding:0px;
 }
-.expan{
-	display:none;
+.line{
+	border-bottom:1px solid #d0d0d0;
+	display:block;
+	width:75% !important;
+	margin-left:9%;
+	text-align:left;
 }
-.abbr,
-.expan{
-	border-bottom:1px blue dotted
+.doubleline{
+	border-top: 4px double #8c8b8b;
+	display:block;
+	width:75% !important;
+	margin-left:9%;
+	text-align:left;
+}
+.tripleline{
+	border-top: 4px double #8c8b8b;
+	line-height:1.9em;
+	display:block;
+	width:75% !important;
+	margin-left:9%;
+	text-align:left;
+}
+.halfline{
+	border-bottom:1px solid #d0d0d0;
+	display:block;
+	width:40% !important;
+	margin-left:9%;
+	text-align:left;
+}
+.quarterline{
+	border-bottom:1px solid #d0d0d0;
+	display:block;
+	width:20% !important;
+	margin-left:9%;
+	text-align:left;
+}
+
+
+/* 5. p, ab, note, fw */
+
+.p{
+	display:inline-block;
+	text-indent:25px;
+	margin-left:9%;
+	margin-top:0;
+	margin-bottom:0;	
+}
+.p.noindent{
+	text-indent:0 !important;
+}
+.p.center{
+	text-indent:0 !important;
+	margin-left:15%;
+}
+.p.right{
+	text-indent:0 !important;
+	margin-left:25%;
+}
+.ab{
+	text-indent:0;
+	margin-left:9%;
+	margin-top:0;
+	margin-bottom:0;
+}
+.ab.center{
+	margin-left:15%;
+}
+.head{
+	font-weight:normal;
+}
+.note{
+	display:inline;
+}
+.fw{
+	display:inline-block;
+	margin-left:9%;
+}
+.fw.pageno{
+	text-indent:0 !important;
+}
+.fw.catch.left{
+	margin-left:0;/*AW revisit*/
+	text-indent:0;
+}
+.fw.catch.right{
+	margin-left:80%;/*AW revisit*/
+	text-indent:0;
+}
+
+
+/* 6. Additions and Deletions */
+
+.opener-add{
+}
+/*Needs to be sorted out. See 1340-1. AW*/
+.addmargin{
+	text-indent:0px;
+}
+.del,
+.cancelled,
+.strikethrough,
+.overwritten{
+	text-decoration:line-through;
+}
+
+
+/* 7. Unclear, gap, space */
+.unclear{
+	color:gray;
+	border-bottom:1px dotted gray;
+}
+.gap{
+	border-bottom:1px dotted black;
+}
+.space-other{
+	border-bottom:1px dotted black;
+	display:block;
+	margin-left:9%;
+}
+.verticalSpace{
+	display:inline-block;
+	margin-left:9%;
+	border-bottom:1px dotted black;
+}
+
+
+
+/* 7. Editorial */
+
+.sic,
+.corr{
+	border-bottom:1px red dotted
 }
 .orig,
 .reg{
 	border-bottom:1px green dotted
 }
-.sic,
-.corr{
-	border-bottom:1px red dotted
+.abbr,
+.expan{
+	border-bottom:1px blue dotted
 }
-lb.center{
-	margin-left:auto;
-	margin-right:auto;
-	width:50%;
-	text-align:left; /*All this is a placeholder as currently the XSLT is not putting a span class on lb. AW*/
-}
-.pb-title{
-	/*font-weight:bold;
-    text-align:center;*/ /*No bold, no center. AW*/
-	display:block;
-	color:gray;
-	font-size:90%;
-	margin-left:7%;
-	margin-bottom:-1em;
-	margin-top:1.5em;
-	text-decoration:none !important;
-}
-p span.pb-title{
-	margin-left:0;
-	text-indent:0;
-	text-decoration:none !important;
-}
-p.ab{
-	display:block;
-	text-indent:0;
-	margin-left:7%;
-	margin-top:0;
-	margin-bottom:0;
-}
-p.ab.center{
-	margin-left:auto;
-	margin-right:auto;
-	width:50%;
-	text-align:left;
-}
-/*p.center{
-	width:50%;
-	text-align:left;
-}*/ /*I'm making p.right and p.center the same as p. AW*/
-p.noindent{
-	display:inline-block;
-	text-indent:0;
-	margin-left:7%;
-	margin-top:0;
-	margin-bottom:0;
-}
-/*p.right{
-	float:right;
-	clear:both;
-	text-align:left;
-	text-indent:0;
-	margin-left:7%;
-	margin-top:0;
-	margin-bottom:0;
-}*/ /*I'm making p.right and p.center the same as p. AW*/
-.TEI p{
-}
-.TEI table,
-.TEI tr,
-.TEI td{
-	border-style:none;
+.expan{
+	display:none;
 }
 .hidden{
 	display:none;
 }
+.rdg{
+	display:block;
+}
 
-/** @rend classes */
+
+/* 8. @rend classes (except colors, lines, and up-down placement) */
 
 .caps{
 	font-variant:small-caps;
@@ -109,54 +310,9 @@ p.noindent{
 .center{
 	text-indent:0;
 	margin-left:15%;
-	margin-bottom:0;
 }
 .doubleunderline{
 	border-bottom:3px double;
-}
-.line{
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	width:90% !important;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:left;
-}
-.doubleline{
-	border-top: 4px double #8c8b8b;
-	display:block;
-	width:90% !important;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:left;
-}
-.tripleline{
-	border-top: 4px double #8c8b8b;
-	line-height:1.9em;
-	display:block;
-	width:90% !important;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:left;
-}
-.halfline{
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	width:40% !important;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:left;
-}
-.quarterline{
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	width:20% !important;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:left;
-}
-.indent{
-	margin-left:+20%;
 }
 .inline{
 	color:gray;
@@ -167,40 +323,44 @@ p.noindent{
 .large{
 	font-size:120%;
 }
-.left{
-}
-.noindent{
-}
-.other{
-}
 .overtext{
 	color:gray;
 }
 .right{
 	text-indent:0;
 	margin-left:25%;
-	margin-bottom:0;
 }
-.right.margintop{
-	margin-left:0;
-	color:gray;
-	line-height:0;
-	position:relative;
-	vertical-align:baseline;
-	top:-1em;
+.small{
+	font-size:85%;
 }
-.left.margintop{
-	margin-left:0;
-	color:gray;
-	line-height:0;
-	position:relative;
-	vertical-align:baseline;
-	top:-1em;
-}/*Needs to be sorted out once we have a good example. AW*/
+.smallcaps{
+	font-variant:small-caps;
+}
+.underline{
+	text-decoration:underline;
+}
+.upsidedown{
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-moz-transform:rotate(180deg); /* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+	-o-transform:rotate(180deg); /* Opera */
+}
+.vertical{
+	-ms-transform:rotate(90deg); /* IE 9 */
+	-moz-transform:rotate(90deg); /* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+	-o-transform:rotate(90deg); /* Opera */
+}
+
+
+/* 9. Page placement */
+
 .above,
 .below,
+.bottom,
 .sub,
-.sup{
+.sup,
+.top{
 	/* Specified in % so that the sup/sup is the
      right size relative to the surrounding text */
 	font-size:75%;
@@ -218,60 +378,40 @@ p.noindent{
 	vertical-align:baseline;
 }
 .above,
-.sup{
+.sup,
+.top{
 	/* Move the superscripted text up */
 	top:-0.5em;
 }
 .below,
+.bottom,
 .sub{
 	/* Move the subscripted text down, but only
      half as far down as the superscript moved up */
 	bottom:-0.25em;
 }
+.margintop{
+	margin-left:0;
+	color:gray;
+	line-height:0;
+	position:relative;
+	vertical-align:baseline;
+	top:-1em;
+}
+.margintop.left{
+	margin-left:9% !important;
+}
+.margintop.right{
+	margin-left:25% !important;
+}
+/*Needs to be revisited. See 2133-1. AW*/
+.true{
+	display:inline-block;
+	margin-left:9% !important; 
+}/*Goes with standalone <note>s*/
 
 
-/**place= above, below, bottom, end, inline, inspace, marginleft, margineright, margintop, marginbottom, top **/
-
-/*.marginLeft{
-	width:20%;
-    float:left;
-	margin-left:-25%;
-	margin-right:10px;
-    clear:left;
-	color:red;
-}*/ /* commented out for now, changes to the XSLT will need to be made to make margin left and right work -KMD*/
-/*.marginRight{
-	width:20%;
-	float:right;
-	margin-right:5%;
-	clear:right;
-	color:red;
-}*/ /* commented out for now, changes to the XSLT will need to be made to make margin left and right work -KMD*/
-/* Too difficult for now inside target framework*/
-.marginBottom{
-}
-
-.small{
-	font-size:80%;
-}
-.smallcaps{
-	font-variant:small-caps;
-}
-.underline{
-	text-decoration:underline;
-}
-.upsidedown{
-	-ms-transform:rotate(180deg); /* IE 9 */
-	-moz-transform:rotate(180deg); /* Firefox */
-	-webkit-transform:rotate(180deg); /* Safari and Chrome */
-	-o-transform:rotate(180deg); /* Opera */
-}
-span.vertical{
-	-ms-transform:rotate(90deg); /* IE 9 */
-	-moz-transform:rotate(90deg); /* Firefox */
-	-webkit-transform:rotate(90deg); /* Safari and Chrome */
-	-o-transform:rotate(90deg); /* Opera */
-}
+/* 10. Colors */
 
 .black{
 	color:black;
@@ -302,305 +442,31 @@ span.vertical{
 }
 
 
-/** elements **/
-
-.gap{
-	border-bottom:1px dotted black;
-}
-.space{
-	/*border-bottom:1px dotted black;*/
-}
-.space-other{
-	border-bottom:1px dotted black;
-	display:block;
-	margin-left:7%;
-}
-.verticalSpace{
-	display:inline-block;
-	margin-left:7%;
-	border-bottom:1px dotted black;
-}
-.del{
-	text-decoration:line-through;
-}
-.cancelled,
-.strike-through,
-.strikethrough,
-.overwritten{
-	text-decoration:line-through;
-}
-span.foreignItalic{
-	font-style:italic;
-}
-.w{
-}
-.addmargin{
-	display:inline-block;
-	text-indent:0px;
-}
-.addSpan{
-}
-.address{
-	display:block;
-}
-.catch{
-}
-.fw{
-	display:inline-block;
-	margin-left:7%;
-}
-.fw.pageno{
-	text-indent:0 !important;
-	margin-left:0 !important;
-}
-.catch.right{
-	margin-left:25%;
-	text-indent:0;
-}
-.metamark{
-	color:gray;
-}
-.unclear{
-	color:gray;
-	border-bottom:1px dotted gray;
-}
-
-/* Are these supposed to be seperate? When I added commas it messed up the display -KMD */
-.date
-.desc
-.editor
-.hi
-.imprint
-.label
-.measure
-.measureGrp
-.name
-.addName
-.forename
-.geogFeat
-.geogName
-.orgName
-.persName
-.placeName
-.roleName
-.surname
-.q
-.quote
-.term
-.note{
-	display:block;
-}
-
-.gap{
-	margin-left:5px;
-	margin-right:5px;
-}
-
-/* Are these supposed to be seperate? When I added commas it messed up the display -KMD */
-.desc
-.gloss
-.seg
-.damage
-.monogr
-.addrLine{
-	display:block;
-}
-.addrLine.center{
-	margin-left:15%;
-	margin-right:0;
-}
-.addrLine.right{
-	margin-left:25%;
-	margin-right:0;
-}
-.author
-.bibl{
-	display:block;
-}
-/* Are these supposed to be seperate? When I added commas it messed up the display -KMD */
-.biblScope
-.date
-.pubPlace
-.publisher
-.title
-
-.quote{
-	display:block;
-}
-.TEI{
-	display:block;
-}
-.back{
-	display:block;
-}
-.body{
-	display:block;
-}
-.p{
-	display:inline-block;
-	text-indent:20px;
-	margin-left:7%;
-	margin-top:0;
-	margin-bottom:0;
-	
-}
-.p.right,
-.dateline.right{
-	display:inline-block;
-	text-indent:0;
-	margin-left:25%;
-	margin-top:0;
-	margin-bottom:0;
-	
-}
-.p.center,
-.dateline.center{
-	display:inline-block;
-	text-indent:0;
-	margin-left:15%;
-	margin-top:0;
-	margin-bottom:0;
-	
-}
-.ab{
-	display:block;
-	margin-left:7%;
-	margin-top:0;
-	margin-bottom:0;
-}
-.closer{
-	display:block;
-	margin-left:7%;
-}
-.opener{
-	display:block;
-	margin-left:7%;
-	margin-bottom:0px;
-	margin-top:1em;
-}
-.dateline{
-	display:inline-block;
-}
-.div{
-	display:block;
-}
-.front{
-	display:block;
-}
-.salute{
-	display:block;
-}
-.signed{
-	display:block;
-}
-.ref,
-.TEI a,
-.TEI a:visited{
-	text-decoration:none;
-	font-weight:bold;
-	color:#AAF;
-}
-.head{
-}
+/* 11. Lists and Tables */
 .list{
 	display:block;
-	margin-left:7%;
+	margin-left:9%;
+	margin-top:12px;
 }
-.listitem{
+table{
+	margin-left:9%;
+	font-size:85%;
+	border-style:none;
 }
-.label{
+tr,
+td{
+	border-style:none;
+	margin-left:9%;
 }
-.cb{
-}
-.gb{
-}
-.lb{
-	display:block; /* I think this is the correct way to display this, change if necessary -KMD */
-}
-.milestone{
-	display:block;
-	width:60%;
-	background:#FFF;
-	color:black;
-	height:0px;
-	margin-left:7%;
-	margin-right:7%;
-	padding:0px;
-}
-.pb{
-}
-.graphic{
-}
-.figure{
-}
+
+
+/* 12. Misc */
 .figfigDesc{
 	color:gray;
 }
-.table{
-	margin-left:7%;
-	display:inline-block;
+.metamark{
+	color:gray;
 }
-.row{
-}
-.cell{
-}
-.anchor{
-}
-.app{
-}
-.rdg{
+.quote{
 	display:block;
 }
-.addSpan{
-}
-.damageSpan{
-}
-.delSpan{
-}
-.handShift{
-}
-.metamark{
-}
-.mod{
-}
-.redo{
-}
-.restore{
-}
-.retrace{
-}
-.subst{
-}
-.supplied{
-}
-.surplus{
-}
-.transpose{
-}
-.undo{
-}
-
-/*div.metadataContainer{
-	margin-left:auto;
-	margin-right:auto;
-	width:90%;
-	font-family:calibri, arial, helvetica, sans-serif;
-}
-table.MODS_metadataTable{
-	width:90%;
-}
-table.MODS_metadataTable,
-table.MODS_metadataTable tr td{
-	border:1px black dotted
-}
-table.MODS_metadataTable tr td.metadataTableLabel{
-	width:20%;
-	text-align:right;
-	padding-right:10px;
-	font-weight:bold;
-}
-table.MODS_metadataTable tr td.metadataTableData{
-	text-align:left;
-	padding-right:10px;
-	font-weight:normal;
-}*/ /*No longer needed. AW*/
