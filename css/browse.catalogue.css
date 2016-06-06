@@ -256,3 +256,7 @@ and (max-width : 1028px) {
 #livingstone-browse-catalogue-form .date-container select {
    padding: 0 0 0 1em;
 }
+
+.search-block td:first-of-type {
+  padding-right: 10px !important;
+}
