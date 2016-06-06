@@ -8,7 +8,7 @@
   <span class="close">
     <a class="close icon">×</a>
   </span>
-  <span class="col-xs-12 col-sm-4 col-md-3">
+  <span class="">
     <span class="side-menu">
       <a href="#" class="slideout-menu-toggle icon">
         <i class="fa fa-bars"></i>
@@ -27,7 +27,7 @@
       <script type="text/javascript">stLight.options({publisher: "eaee7a62-d3e0-4e7d-bb34-6eb5073f5839", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
     </span>
   </span>
-  <span class="col-xs-12 col-sm-8 col-md-4">
+  <span class="">
     <span class="zoom">
       <a class="zoom-out icon"><i class="fa fa-search-minus"></i></a>
       <span id="zoom-slider"></span>
@@ -36,6 +36,8 @@
     <span class="rotate">
       <a class="rotate icon"><i class="fa fa-rotate-right"></i></a>
     </span>
+  </span>
+  <span class="">
     <span class="page-select">
       <select class="page-select" value="<?php print $display_page; ?>">
         <?php foreach ($pages as $num => $data): ?>
@@ -44,13 +46,15 @@
       </select>
     </span>
   </span>
-  <span class="col-xs-12 col-md-5">
+  <span class="">
     <span class="item-details">
       <input type="button" class="item-details icon" value="Item Details"/>
     </span>
     <span class="transcription">
       <input type="button" class="transcription icon" value="Transcription"/>
     </span>
+  </span>
+  <span class="">
     <span class="search">
       <?php print $search_form; ?>
     </span>

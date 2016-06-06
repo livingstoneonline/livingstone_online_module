@@ -236,36 +236,17 @@ body.loading .modal {
   border-bottom: 1px;
   border-style: solid;
   padding: 10px;
-  /*.icon-group {
-    display: inline;
-    margin: 5px 5px;
-    //&:nth-of-type(1){
-    //  @media only screen and (max-width : 768px) {
-    //    display: block;
-    //  }
-    //}
-    //&:nth-of-type(2){
-    //  @media only screen and (max-width : 768px) {
-    //    display: block;
-    //  }
-    //}
-    &:nth-of-type(3){
-      @media only screen and (max-width : 768px) {
-        display: block;
-      }
-    }
-    &:nth-of-type(4){
-      @media only screen and (max-width : 768px) {
-        display: inline;
-      }
-    }
-  }*/
+}
+#toolbar span {
+  display: inline-block;
 }
 #toolbar > span {
-  padding: 5px;
+  padding: 5px 30px;
+  text-align: center;
 }
 #toolbar a,
 #toolbar a:hover {
+  display: inline-block;
   color: black;
   cursor: pointer;
   text-decoration: none;
@@ -274,9 +255,10 @@ body.loading .modal {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  display: inline-block;
   background: none repeat scroll 0 0 #eee;
   border: 1px solid #ccc;
-  padding: 2px 4px;
+  padding: 3px 4px;
   height: 25px;
   line-height: normal;
 }
@@ -288,6 +270,10 @@ body.loading .modal {
 }
 #toolbar .share {
   padding-left: 10px;
+  display: inline-block;
+}
+#toolbar .share > * {
+  margin: 0 5px;
 }
 #toolbar .share .home {
   display: inline-block;
@@ -299,6 +285,9 @@ body.loading .modal {
 #toolbar .share .home:hover {
   background: url("../../images/viewer/social/trans-over-social-home-28.png") no-repeat scroll 0 0 transparent !important;
   background-size: 25px !important;
+}
+#toolbar .share span {
+  display: inline-block;
 }
 #toolbar .share span:empty:before {
   content: "\200b";
@@ -355,6 +344,9 @@ body.loading .modal {
   width: 100px;
   top: 3px;
   margin: 0 10px;
+}
+#toolbar .rotate {
+  margin-left: 10px;
 }
 #toolbar .item-details .icon,
 #toolbar .transcription .icon {

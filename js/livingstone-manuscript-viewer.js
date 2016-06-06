@@ -457,6 +457,10 @@
       resize();
     });
 
+    $(window).on("orientationchange", function(event) {
+      resize();
+    });
+
     /**
      * Wait to display.
      */

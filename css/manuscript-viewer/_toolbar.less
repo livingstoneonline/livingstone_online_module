@@ -29,55 +29,41 @@
   border-bottom: 1px;
   border-style: solid;
   padding: 10px;
+  span {
+    display: inline-block;
+  }
   &> span {
-    padding: 5px;
+    padding: 5px 30px;
+    text-align: center;
   }
   a,
   a:hover {
+    display: inline-block;
     color: black;
     cursor: pointer;
     text-decoration: none
   }
   .icon {
     .border-radius(6px);
+    display: inline-block;
     background: none repeat scroll 0 0 #eee;
     border: 1px solid #ccc;
-    padding: 2px 4px;
+    padding: 3px 4px;
     height: @icon-size;
     line-height: normal;
   }
   .disabled {
     color: darkgray !important;
   }
-  /*.icon-group {
-    display: inline;
-    margin: 5px 5px;
-    //&:nth-of-type(1){
-    //  @media only screen and (max-width : 768px) {
-    //    display: block;
-    //  }
-    //}
-    //&:nth-of-type(2){
-    //  @media only screen and (max-width : 768px) {
-    //    display: block;
-    //  }
-    //}
-    &:nth-of-type(3){
-      @media only screen and (max-width : 768px) {
-        display: block;
-      }
-    }
-    &:nth-of-type(4){
-      @media only screen and (max-width : 768px) {
-        display: inline;
-      }
-    }
-  }*/
   .side-menu {
     display: inline-block;
   }
   .share {
     padding-left: 10px;
+    display: inline-block;
+    &> * {
+      margin: 0 5px;
+    }
     .home {
       display: inline-block;
       height: @icon-size;
@@ -86,6 +72,9 @@
       &:hover {
         .share-icon("trans-over-social-home-28.png");
       }
+    }
+    span {
+      display: inline-block;
     }
     span:empty:before {
       content: "\200b"; // unicode zero width space character
@@ -138,6 +127,9 @@
       top: 3px;
       margin: 0 10px;
     }
+  }
+  .rotate {
+    margin-left: 10px;
   }
   .item-details,
   .transcription {
