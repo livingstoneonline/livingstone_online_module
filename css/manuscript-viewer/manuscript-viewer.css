@@ -237,12 +237,29 @@ body.loading .modal {
   border-style: solid;
   padding: 10px;
 }
+@media only screen and (min-width: 1025px) {
+  #toolbar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
 #toolbar span {
   display: inline-block;
 }
 #toolbar > span {
-  padding: 5px 30px;
   text-align: center;
+  flex-grow: 1;
+}
+@media only screen and (max-width: 1025px) {
+  #toolbar > span {
+    padding: 5px 5px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  #toolbar > span {
+    padding: 5px 5px;
+  }
 }
 #toolbar a,
 #toolbar a:hover {
@@ -377,18 +394,18 @@ body.loading .modal {
   width: 200px;
 }
 #toolbar .close {
-  float: none;
+  float: right;
   z-index: 1;
-  position: absolute;
   right: 5px;
   top: 5px;
   font-family: Arial, sans-serif;
   padding: 1px 4px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: initial;
   line-height: initial;
   opacity: 1;
   height: auto;
+  order: 99;
 }
 #item-details {
   -webkit-box-sizing: border-box;
