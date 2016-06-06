@@ -167,8 +167,9 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(../images/select-arrow.png) 95% / 5% no-repeat #eee;
-  background-size: 0.5em;
+  background: url(../images/select-arrow.png) no-repeat #eee;
+  background-size: 1em;
+  background-position: right;
   cursor: pointer;
   -webkit-appearance: button;
 }
