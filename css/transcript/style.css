@@ -31,6 +31,7 @@ div.transcription{
 }
 .TEI{
 	display:block;
+	padding-left: 1em;
 }
 .text{
 }
@@ -105,6 +106,7 @@ div.transcription{
 }
 .pb-title:hover{
 	color:#AAA;
+	cursor:pointer
 }
 .pb-title:first-of-type {
   margin-top: 0;
@@ -128,7 +130,7 @@ p span.pb-title{
 .linenumber{
 	float:left;
 	color:#AAA;
-	margin-left:-4em !important;
+	margin-left:-3em !important;
 	text-indent:0;
 	font-size:80%;
 	width:3em;
@@ -190,6 +192,9 @@ p span.pb-title{
 
 /* 5. p, ab, note, fw */
 
+p{
+	margin-right: 2em;
+}/*Needed so that the text doesn't run up against the right edge in the viewer.*/
 .p{
 	display:inline-block;
 	text-indent:25px;
@@ -452,6 +457,7 @@ table{
 	margin-left:9%;
 	font-size:85%;
 	border-style:none;
+	margin-right: 2em; /*Needed so that the text doesn't run up against the right edge in the viewer.*/
 }
 tr,
 td{
