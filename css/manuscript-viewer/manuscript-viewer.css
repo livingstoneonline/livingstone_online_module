@@ -231,35 +231,26 @@ body.loading .modal {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: white;
-  width: 100%;
+  width: calc(100% - 40px);
   overflow: hidden;
-  border-bottom: 1px;
-  border-style: solid;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-@media only screen and (min-width: 1025px) {
-  #toolbar {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-  }
+#toolbar span {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
 }
 #toolbar span {
   display: inline-block;
 }
 #toolbar > span {
   text-align: center;
-  flex-grow: 1;
-}
-@media only screen and (max-width: 1025px) {
-  #toolbar > span {
-    padding: 5px 5px;
-  }
-}
-@media only screen and (max-width: 1025px) {
-  #toolbar > span {
-    padding: 5px 5px;
-  }
 }
 #toolbar a,
 #toolbar a:hover {
@@ -275,7 +266,7 @@ body.loading .modal {
   display: inline-block;
   background: none repeat scroll 0 0 #eee;
   border: 1px solid #ccc;
-  padding: 3px 4px;
+  padding: 3px 7px;
   height: 25px;
   line-height: normal;
 }
@@ -284,6 +275,7 @@ body.loading .modal {
 }
 #toolbar .side-menu {
   display: inline-block;
+  padding-left: 2px;
 }
 #toolbar .share {
   padding-left: 10px;
@@ -291,6 +283,9 @@ body.loading .modal {
 }
 #toolbar .share > * {
   margin: 0 5px;
+}
+#toolbar .share a {
+  margin: 0 8px 0 5px;
 }
 #toolbar .share .home {
   display: inline-block;
@@ -351,6 +346,7 @@ body.loading .modal {
 #toolbar .share .st_facebook_large .stLarge {
   background: url("../../images/viewer/social/trans-social-fb-28.png") no-repeat scroll 0 0 transparent !important;
   background-size: 25px !important;
+  margin: 0 1px;
 }
 #toolbar .share .st_facebook_large .stLarge:hover {
   background: url("../../images/viewer/social/trans-over-social-fb-28.png") no-repeat scroll 0 0 transparent !important;
@@ -358,12 +354,23 @@ body.loading .modal {
 }
 #toolbar .zoom .ui-slider {
   display: inline-block;
-  width: 100px;
+  width: 150px;
   top: 3px;
   margin: 0 10px;
 }
+#toolbar .zoom .ui-state-hover,
+#toolbar .zoom .ui-widget-content .ui-state-hover,
+#toolbar .zoom .ui-widget-header .ui-state-hover,
+#toolbar .zoom .ui-state-focus,
+#toolbar .zoom .ui-widget-content .ui-state-focus,
+#toolbar .zoom .ui-widget-header .ui-state-focus {
+  border: 1px solid #386095;
+  background: #428bca url("images/ui-bg_glass_100_fdf5ce_1x400.png") 50% 50% repeat-x;
+  font-weight: bold;
+  color: #c77405;
+}
 #toolbar .rotate {
-  margin-left: 10px;
+  margin-left: 2px;
 }
 #toolbar .item-details .icon,
 #toolbar .transcription .icon {
@@ -377,6 +384,16 @@ body.loading .modal {
 #toolbar .transcription .depressed {
   background-color: #999;
 }
+#toolbar .transcription {
+  margin-left: 6px;
+}
+#toolbar span.page-select {
+  vertical-align: middle;
+  margin: auto;
+}
+#toolbar span.page-select select {
+  font-size: 0.95em;
+}
 #toolbar .search {
   display: inline-block;
 }
@@ -388,24 +405,40 @@ body.loading .modal {
   -moz-border-radius: 7px;
   border-radius: 7px;
   background: url('../../images/search-button.png') no-repeat 1px 1px #F0ECEC;
-  padding: 5px 15px 5px 30px;
+  padding: 5px 15px 5px 40px;
   border: 1px solid #d0d0d0;
   height: 25px;
-  width: 200px;
+  width: 250px;
+  font-size: 0.85em;
 }
 #toolbar .close {
   float: right;
+  position: absolute;
   z-index: 1;
-  right: 5px;
-  top: 5px;
-  font-family: Arial, sans-serif;
-  padding: 1px 4px;
   font-size: 0.9em;
   font-weight: initial;
   line-height: initial;
   opacity: 1;
-  height: auto;
+  height: 25px;
   order: 99;
+  top: 5px;
+  right: 8px;
+}
+@media only screen and (max-width: 1200px) {
+  .show-large {
+    display: none !important;
+  }
+  .show-small {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .show-large {
+    display: inline-block;
+  }
+  .show-small {
+    display: none !important;
+  }
 }
 #item-details {
   -webkit-box-sizing: border-box;

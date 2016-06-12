@@ -99,6 +99,7 @@
           showSequenceControl: false,
           imageLoaderLimit: 5,
           zoomPerClick: 1.2,
+          animationTime: 0,
           zoomPerScroll: 1.2,
           zoomPerSecond: 1.0,
           springStiffness: 1.0,
