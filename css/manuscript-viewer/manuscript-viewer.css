@@ -230,27 +230,46 @@ body.loading .modal {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: white;
-  width: calc(100% - 40px);
-  overflow: hidden;
-  padding: 10px;
-  display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-}
-#toolbar span {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-wrap: wrap;
+  width: calc(100% - 40px);
+  background-color: white;
+  overflow: hidden;
 }
-#toolbar span {
+@media only screen and (min-width: 320px) {
+  #toolbar {
+    padding: 6px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #toolbar {
+    padding: 6px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #toolbar {
+    padding: 10px;
+  }
+}
+#toolbar .icon-group {
   display: inline-block;
 }
-#toolbar > span {
-  text-align: center;
+@media only screen and (min-width: 320px) {
+  #toolbar .icon-group {
+    margin: 2px 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #toolbar .icon-group {
+    margin: 2px 3px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #toolbar .icon-group {
+    margin: 1px 6px;
+  }
 }
 #toolbar a,
 #toolbar a:hover {
@@ -263,7 +282,6 @@ body.loading .modal {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  display: inline-block;
   background: none repeat scroll 0 0 #eee;
   border: 1px solid #ccc;
   padding: 3px 7px;
@@ -272,10 +290,6 @@ body.loading .modal {
 }
 #toolbar .disabled {
   color: darkgray !important;
-}
-#toolbar .side-menu {
-  display: inline-block;
-  padding-left: 2px;
 }
 #toolbar .share {
   padding-left: 10px;
@@ -297,9 +311,6 @@ body.loading .modal {
 #toolbar .share .home:hover {
   background: url("../../images/viewer/social/trans-over-social-home-28.png") no-repeat scroll 0 0 transparent !important;
   background-size: 25px !important;
-}
-#toolbar .share span {
-  display: inline-block;
 }
 #toolbar .share span:empty:before {
   content: "\200b";
@@ -352,6 +363,9 @@ body.loading .modal {
   background: url("../../images/viewer/social/trans-over-social-fb-28.png") no-repeat scroll 0 0 transparent !important;
   background-size: 25px !important;
 }
+#toolbar .zoom {
+  display: inline-block;
+}
 #toolbar .zoom .ui-slider {
   display: inline-block;
   width: 150px;
@@ -370,7 +384,27 @@ body.loading .modal {
   color: #c77405;
 }
 #toolbar .rotate {
+  display: inline-block;
   margin-left: 2px;
+}
+@media only screen and (min-width: 320px) {
+  #toolbar .icon-group.page-select {
+    margin: auto 16px auto 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #toolbar .icon-group.page-select {
+    margin: auto 6px auto 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #toolbar .icon-group.page-select {
+    margin: auto 6px;
+  }
+}
+#toolbar .item-details,
+#toolbar .transcription {
+  display: inline-block;
 }
 #toolbar .item-details .icon,
 #toolbar .transcription .icon {
@@ -387,11 +421,7 @@ body.loading .modal {
 #toolbar .transcription {
   margin-left: 6px;
 }
-#toolbar span.page-select {
-  vertical-align: middle;
-  margin: auto;
-}
-#toolbar span.page-select select {
+#toolbar select.page-select {
   font-size: 0.95em;
 }
 #toolbar .search {
@@ -421,23 +451,17 @@ body.loading .modal {
   opacity: 1;
   height: 25px;
   order: 99;
-  top: 5px;
-  right: 8px;
 }
-@media only screen and (max-width: 1200px) {
-  .show-large {
-    display: none !important;
-  }
-  .show-small {
-    display: inline-block;
+@media only screen and (min-width: 320px) {
+  #toolbar .close {
+    top: 3px;
+    right: 3px;
   }
 }
-@media only screen and (min-width: 1201px) {
-  .show-large {
-    display: inline-block;
-  }
-  .show-small {
-    display: none !important;
+@media only screen and (min-width: 1024px) {
+  #toolbar .close {
+    top: 5.7px;
+    right: 8px;
   }
 }
 #item-details {
@@ -453,8 +477,20 @@ body.loading .modal {
   position: fixed;
   overflow: scroll;
 }
-#item-details .item-details-content {
-  padding: 1em 3em 3em;
+@media only screen and (min-width: 320px) {
+  #item-details .item-details-content {
+    padding: 1em 1em 1em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #item-details .item-details-content {
+    padding: 1em 2em 2em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #item-details .item-details-content {
+    padding: 1em 3em 3em;
+  }
 }
 #item-details h1 {
   font-family: Crimson Text, serif;
@@ -472,7 +508,7 @@ body.loading .modal {
 }
 #item-details dt,
 #item-details dd {
-  fonti-family: Source Sans Pro, sans-serif;
+  font-family: Source Sans Pro, sans-serif;
   font-size: 0.9em;
   padding: 0.5em 0 0 0;
 }
@@ -559,6 +595,9 @@ body {
   width: 100%;
   height: 100%;
   margin: 0px;
+}
+#livingstone-manuscript-viewer {
+  border-top: 1px solid black;
 }
 #text-overlay {
   position: absolute;

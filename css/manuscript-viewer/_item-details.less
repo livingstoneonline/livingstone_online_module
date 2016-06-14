@@ -1,14 +1,4 @@
-@header-font: Crimson Text, serif;
-@text-font: Source Sans Pro, sans-serif;
-.header() {
-  font-family: @header-font;
-}
-
-.box-sizing() {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+@import '_utilities';
 
 #item-details {
   .box-sizing;
@@ -21,10 +11,10 @@
   position: fixed;
   overflow: scroll;
   .item-details-content {
-    padding: 1em 3em 3em;
+    .responsive-padding(1em 1em 1em, 1em 2em 2em, 1em 3em 3em);
   }
   h1 {
-    .header;
+    font-family: Crimson Text, serif;
     font-size: 1.75em;
     font-weight: 600;
     margin: 0.5em 0 0;
@@ -39,7 +29,7 @@
   }
   dt,
   dd {
-    fonti-family: @text-font;
+    font-family: Source Sans Pro, sans-serif;
     font-size: 0.9em;
     padding: 0.5em 0 0 0;
   }

@@ -1,0 +1,60 @@
+.box-sizing() {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.border-radius(@radius: 6px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.flex() {
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.responsive-padding(@small-padding, @medium-padding, @large-padding) {
+  // iPhone.
+  @media only screen and (min-width: 320px){
+    & {
+      padding: @small-padding;
+    }
+  }
+  // iPad.
+  @media only screen and (min-width: 768px){
+    & {
+      padding: @medium-padding;
+    }
+  }
+  // Desktop.
+  @media only screen and (min-width: 1024px){
+    & {
+      padding: @large-padding;
+    }
+  }
+}
+
+.responsive-margin(@small-margin, @medium-margin, @large-margin) {
+  // iPhone.
+  @media only screen and (min-width: 320px){
+    & {
+      margin: @small-margin;
+    }
+  }
+  // iPad.
+  @media only screen and (min-width: 768px){
+    & {
+      margin: @medium-margin;
+    }
+  }
+  // Desktop.
+  @media only screen and (min-width: 1024px){
+    & {
+      margin: @large-margin;
+    }
+  }
+}

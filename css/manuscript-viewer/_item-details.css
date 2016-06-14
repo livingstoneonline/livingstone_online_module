@@ -11,8 +11,20 @@
   position: fixed;
   overflow: scroll;
 }
-#item-details .item-details-content {
-  padding: 1em 3em 3em;
+@media only screen and (min-width: 320px) {
+  #item-details .item-details-content {
+    padding: 1em 1em 1em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #item-details .item-details-content {
+    padding: 1em 2em 2em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #item-details .item-details-content {
+    padding: 1em 3em 3em;
+  }
 }
 #item-details h1 {
   font-family: Crimson Text, serif;
@@ -30,7 +42,7 @@
 }
 #item-details dt,
 #item-details dd {
-  fonti-family: Source Sans Pro, sans-serif;
+  font-family: Source Sans Pro, sans-serif;
   font-size: 0.9em;
   padding: 0.5em 0 0 0;
 }
