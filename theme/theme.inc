@@ -137,6 +137,7 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
     $fields = array(
       'title' => $fetch_fields('/mods:mods/mods:titleInfo[not(@type)]/mods:title[normalize-space()]'),
       'title-alt' => $fetch_fields('/mods:mods/mods:titleInfo[@type="alternative"]/mods:title[normalize-space()]'),
+      'date' => $fetch_fields('/mods:mods/mods:originInfo/mods:dateCreated[not(@encoding)]'),
       'authors' => $authors,
       'repository' => $fetch_fields("mods:name/mods:namePart[normalize-space()]", $repository),
       'shelfmark' => $fetch_fields("mods:location/mods:shelfLocator[normalize-space()]", $repository),

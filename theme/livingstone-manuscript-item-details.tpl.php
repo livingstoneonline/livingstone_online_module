@@ -7,6 +7,10 @@
         <dt>Title</dt>
         <dd><?php print implode(' ', $fields['title']); ?></dd>
       <?php endif; ?>
+      <?php if (!empty($fields['date'])): ?>
+        <dt>Date</dt>
+        <dd><?php print implode(' ', $fields['date']); ?></dd>
+      <?php endif; ?>
       <?php if (!empty($fields['authors'])): ?>
         <dt>Creator(s)</dt>
         <dd><?php print implode('; ', $fields['authors']); ?></dd>
