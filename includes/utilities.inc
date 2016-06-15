@@ -22,15 +22,20 @@ function livingstone_manuscript_pages($pid) {
   FROM <#ri>
   WHERE {
     ?pid <fedora-rels-ext:isMemberOf> <info:fedora/{$pid}> ;
-         islandora-rels-ext:isSequenceNumber ?page ;
+         <islandora-rels-ext:isSequenceNumber> ?page ;
          <fedora-model:state> <fedora-model:Active> .
     OPTIONAL {
       ?pid <fedora-view:disseminates> ?dss .
-      ?dss <fedora-view:disseminationType> <info:fedora/*/JP2> ;
-           islandora-rels-ext:width ?width ;
-           islandora-rels-ext:height ?height ;
-           islandora-rels-ext:levels ?levels .
+      ?dss <fedora-view:disseminationType> <info:fedora/*/JP2> .
+      ?pid  <islandora-rels-ext:width> ?width ;
+               <islandora-rels-ext:height> ?height ;
+               <islandora-rels-ext:levels> ?levels .
     }
+    OPTIONAL {
+      ?pid <fedora-view:disseminates> ?policy .
+      ?policy <fedora-view:disseminationType> <info:fedora/*/POLICY> .
+    }
+    FILTER (!BOUND(?policy))
   }
   ORDER BY ?page
 EOQ;

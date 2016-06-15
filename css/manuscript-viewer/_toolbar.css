@@ -2,22 +2,19 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
-  width: calc(100% - 40px);
+  padding: 2px 4px;
+  width: calc(100% - 25px);
+  text-align: center;
   background-color: white;
   overflow: hidden;
-}
-@media only screen and (min-width: 320px) {
-  #toolbar {
-    padding: 2px 6px;
-  }
+  justify-content: center;
 }
 @media only screen and (min-width: 768px) {
   #toolbar {
-    padding: 2px 6px;
+    padding: 2px 4px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -25,37 +22,17 @@
     padding: 2px 6px;
   }
 }
-@media screen and (orientation: portrait) {
+@media only screen and (max-width: 562px) {
   #toolbar {
-    text-align: left;
-  }
-}
-@media screen and (orientation: landscape) {
-  #toolbar {
-    text-align: center;
+    width: 100%;
   }
 }
 #toolbar .icon-group {
+  margin: 4px 3px;
   display: inline-block;
-}
-@media only screen and (min-width: 320px) {
-  #toolbar .icon-group {
-    margin: 4px 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #toolbar .icon-group {
-    margin: 4px 3px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #toolbar .icon-group {
-    margin: 4px 6px;
-  }
 }
 #toolbar a,
 #toolbar a:hover {
-  display: inline-block;
   color: black;
   cursor: pointer;
   text-decoration: none;
@@ -67,15 +44,16 @@
   background: none repeat scroll 0 0 #eee;
   border: 1px solid #ccc;
   padding: 3px 7px;
-  height: 25px;
+  margin: auto 4px;
   line-height: normal;
 }
 #toolbar .disabled {
   color: darkgray !important;
 }
 #toolbar .share {
-  padding-left: 10px;
   display: inline-block;
+  padding-left: 10px;
+  line-height: 26px;
 }
 #toolbar .share > * {
   margin: 0 5px;
@@ -84,11 +62,11 @@
   margin: 0 8px 0 5px;
 }
 #toolbar .share .home {
+  background: url("../../images/viewer/social/trans-social-home-28.png") no-repeat scroll 0 0 transparent !important;
+  background-size: 25px !important;
   display: inline-block;
   height: 25px;
   width: 25px;
-  background: url("../../images/viewer/social/trans-social-home-28.png") no-repeat scroll 0 0 transparent !important;
-  background-size: 25px !important;
 }
 #toolbar .share .home:hover {
   background: url("../../images/viewer/social/trans-over-social-home-28.png") no-repeat scroll 0 0 transparent !important;
@@ -145,34 +123,25 @@
   background: url("../../images/viewer/social/trans-over-social-fb-28.png") no-repeat scroll 0 0 transparent !important;
   background-size: 25px !important;
 }
-#toolbar .zoom {
-  display: inline-block;
-}
-#toolbar .zoom .ui-slider {
+#toolbar .ui-slider {
   display: inline-block;
   width: 150px;
   top: 3px;
   margin: 0 10px;
 }
-#toolbar .zoom .ui-state-hover,
-#toolbar .zoom .ui-widget-content .ui-state-hover,
-#toolbar .zoom .ui-widget-header .ui-state-hover,
-#toolbar .zoom .ui-state-focus,
-#toolbar .zoom .ui-widget-content .ui-state-focus,
-#toolbar .zoom .ui-widget-header .ui-state-focus {
+#toolbar .ui-state-hover,
+#toolbar .ui-widget-content .ui-state-hover,
+#toolbar .ui-widget-header .ui-state-hover,
+#toolbar .ui-state-focus,
+#toolbar .ui-widget-content .ui-state-focus,
+#toolbar .ui-widget-header .ui-state-focus {
   border: 1px solid #386095;
   background: #428bca url("images/ui-bg_glass_100_fdf5ce_1x400.png") 50% 50% repeat-x;
   font-weight: bold;
   color: #c77405;
 }
-#toolbar .rotate {
-  display: inline-block;
-  margin-left: 2px;
-}
-@media only screen and (min-width: 320px) {
-  #toolbar .icon-group.page-select {
-    margin: auto 16px auto 0;
-  }
+#toolbar .icon-group.page-select {
+  margin: auto 16px auto 0;
 }
 @media only screen and (min-width: 768px) {
   #toolbar .icon-group.page-select {
@@ -186,37 +155,26 @@
 }
 #toolbar .item-details,
 #toolbar .transcription {
-  display: inline-block;
-}
-#toolbar .item-details .icon,
-#toolbar .transcription .icon {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 25px;
   font-size: 0.85em;
 }
-#toolbar .item-details .depressed,
-#toolbar .transcription .depressed {
+#toolbar .depressed {
   background-color: #999;
-}
-#toolbar .transcription {
-  margin-left: 6px;
 }
 #toolbar select.page-select {
   font-size: 0.95em;
 }
-#toolbar .search {
-  display: inline-block;
-}
-#toolbar .search input[type=text] {
+#toolbar input[type=text] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
-  background: url('../../images/search-button.png') no-repeat 1px 1px #F0ECEC;
+  background: url('../../images/search-button.png') no-repeat 1px 1px white;
   padding: 5px 15px 5px 40px;
   border: 1px solid #d0d0d0;
   height: 25px;
@@ -224,7 +182,6 @@
   font-size: 0.85em;
 }
 #toolbar .close {
-  float: right;
   position: absolute;
   z-index: 1;
   font-size: 0.9em;
@@ -233,6 +190,6 @@
   opacity: 1;
   height: 25px;
   order: 99;
-  top: 3px;
-  right: 3px;
+  top: 6px;
+  right: 5px;
 }

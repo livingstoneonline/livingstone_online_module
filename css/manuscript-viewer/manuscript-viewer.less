@@ -24,3 +24,16 @@ body {
   position: absolute;
   overflow: hidden;
 }
+
+@media only screen and (max-width : 568px) {
+  #item-details,
+  #transcription {
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+  }
+  #openseadragon.item-details-open,
+  #openseadragon.transcription-open {
+    display: none;
+  }
+}

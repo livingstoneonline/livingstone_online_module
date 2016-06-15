@@ -514,7 +514,6 @@ function livingstone_browse_catalogue_view_link($doc) {
   $pid = $doc['PID'];
   $viewable = $doc['viewable_b'];
   $hidden = $doc['hidden_b'] && !in_array('administrator', $user->roles);
-  $path = current_path();
   $attributes = array(
     'external' => FALSE,
     'query' => drupal_get_query_parameters() +
@@ -524,11 +523,19 @@ function livingstone_browse_catalogue_view_link($doc) {
       ),
     'attributes' => array(
       'data-pid' => $pid,
-      'class' => array('livingstone-manuscript-launcher fa fa-eye'),
     ),
   );
   if ($viewable && !$hidden) {
-    return l((''), $path, $attributes);
+    $attributes['attributes']['class'] = array(
+      'livingstone-manuscript-launcher fa fa-eye'
+    );
+    return l((''), current_path(), $attributes);
+  }
+  else if ($viewable && $hidden) {
+    $attributes['attributes']['class'] = array(
+      'livingstone-manuscript-launcher fa fa-ban'
+    );
+    return l((''), '#', $attributes);
   }
   return '&nbsp;';
 }

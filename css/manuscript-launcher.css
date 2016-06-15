@@ -40,3 +40,11 @@ iframe.livingstone-manuscript-viewer {
   -o-box-shadow: none;
   box-shadow: none;
 }
+@media screen and (max-width: 568px) {
+  div.livingstone-manuscript-viewer-wrapper {
+    padding: 0em;
+  }
+  iframe.livingstone-manuscript-viewer {
+    border-width: 0px;
+  }
+}

@@ -261,3 +261,8 @@ and (max-width : 1028px) {
 .search-block td:first-of-type {
   padding-right: 10px !important;
 }
+
+a.fa-ban,
+a.fa-ban:hover {
+  color: red;
+}

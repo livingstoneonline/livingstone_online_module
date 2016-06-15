@@ -17,21 +17,40 @@
   display: flex;
 }
 
-.responsive-padding(@small-padding, @medium-padding, @large-padding) {
-  // iPhone.
-  @media only screen and (min-width: 320px){
+.responsive-width(@small-width, @medium-width, @large-width) {
+  // Desktop.
+  @media only screen and (min-width: 768px) {
     & {
-      padding: @small-padding;
+      width: @large-width;
     }
   }
   // iPad.
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-width : 320px) and (max-width : 768px) {
+    & {
+      width: @medium-width;
+    }
+  }
+  // iPhone
+  @media only screen and (max-width : 320px) {
+    & {
+      width: @small-width;
+    }
+  }
+}
+
+.responsive-padding(@small-padding, @medium-padding, @large-padding) {
+  // iPhone
+  & {
+    padding: @small-padding;
+  }
+  // iPad.
+  @media only screen and (min-width : 768px) {
     & {
       padding: @medium-padding;
     }
   }
   // Desktop.
-  @media only screen and (min-width: 1024px){
+  @media only screen and (min-width: 1024px) {
     & {
       padding: @large-padding;
     }
@@ -40,10 +59,8 @@
 
 .responsive-margin(@small-margin, @medium-margin, @large-margin) {
   // iPhone.
-  @media only screen and (min-width: 320px){
-    & {
-      margin: @small-margin;
-    }
+  & {
+    margin: @small-margin;
   }
   // iPad.
   @media only screen and (min-width: 768px){

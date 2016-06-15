@@ -3,8 +3,6 @@
 /**
  * @file
  * Defines the manuscript-viewer widget.
- *
- * @todo When small number of pages the reference strip doesn't go the full width of the viewer.
  */
 (function ($) {
   'use strict';
@@ -40,7 +38,7 @@
         });
       }
     },
-    detach: function (context) {
+    detach: function () {
       $(base).removeClass('livingstoneManuscriptViewer-processed');
       $(base).removeData();
       $(base).off();
@@ -49,37 +47,38 @@
   };
 
   /**
-   * Creates an instance of the Livingstone Manuscript Viewer widget.
+   * Resize the viewer to fit the window.
+   */
+  function resize() {
+    var height = window.innerHeight - $('#toolbar').outerHeight();
+    $('#openseadragon, #item-details, #transcription').height(height);
+    var width = window.innerWidth > 568 ? window.innerWidth / 2 : window.innerWidth;
+    $('#item-details, #transcription').width(width);
+  }
+
+  /**
+   * Scroll to the given element in the transcription pane.
    *
-   * @param {string} base
-   *   The element ID that this class is bound to.
-   * @param {object} settings
-   *   Drupal.settings for this object widget.
-   *
+   * @param {int} page
+   */
+  function transcriptionScrollTo(page) {
+    var element = $("span.pb-title:eq(" + page + ")");
+    if (element.length != 0) {
+      $('#transcription').animate({
+        scrollTop: element[0].offsetTop + 'px'
+      }, 1000);
+    }
+  }
+
+  /**
+   * Wrapper around OpenSeadragon.
    * @constructor
    */
-  Drupal.LivingstoneManuscriptViewer = function (base, settings) {
-
-    /**
-     * Checks if the given number is a valid page number.
-     *
-     * @param {int}
-     *   The page number to check.
-     *
-     * @return {bool}
-     */
-    function validPageNumber(num) {
-      return $.isNumeric(num) && num >= 0 && num < pages.length;
-    }
-
+  Drupal.LivingstoneManuscriptImageViewer = function (pid, initialPage, pages, options) {
     var that = this,
-        pid = settings.pid,
-        pages = settings.pages,
-        initialPage = settings.initialPage,
-        hasTranscription = settings.hasTranscription,
-        viewer = new OpenSeadragon($.extend({
+        openseadragon = new OpenSeadragon($.extend({
           element: $('#openseadragon', base).get(0),
-          tileSources: $.map(pages, function(page) {
+          tileSources: $.map(pages, function (page) {
             return {
               pid: page.pid,
               width: page.width,
@@ -87,7 +86,7 @@
               maxLevel: page.levels
             };
           }),
-          initialPage: settings.initialPage,
+          initialPage: initialPage,
           sequenceMode: true,
           showReferenceStrip: false,
           referenceStripPosition: 'BOTTOM',
@@ -109,67 +108,20 @@
             top: 10,
             bottom: 30
           }
-        }, settings.openSeaDragon.options));
-
-    // Public Members.
-    $.extend(this, {
-      viewer: viewer,
-    });
+        }, options));
 
     /**
-     * Zoom in a single unit.
-     */
-    function doSingleZoomIn() {
-      var viewport = viewer.viewport;
-      if ( viewport ) {
-        viewport.zoomBy(
-          viewer.zoomPerClick / 1.0
-        );
-        viewport.applyConstraints();
-      }
-    }
-
-    /**
-     * Zoom out a single unit.
-     */
-    function doSingleZoomOut() {
-      var viewport = viewer.viewport;
-      if ( viewport ) {
-        viewport.zoomBy(
-          1.0 / viewer.zoomPerClick
-        );
-        viewport.applyConstraints();
-      }
-    }
-
-    /**
-     * Get the current percentage of the zoom.
+     * Notifies the parent frame that we have changed pages.
      *
-     * @return {float}
+     * @param {number} page
+     *   The new page number.
      */
-    function getZoomPercentage() {
-      var viewport = viewer.viewport,
-          min = viewport.getMinZoom(),
-          max = viewport.getMaxZoom(),
-          range = max - min,
-          current = viewport.getZoom(true),
-          percent = (current - min) / range;
-      return percent;
-    }
-
-    /**
-     * Sets the given page without firing any events or setting the state.
-     */
-    function setPage(page) {
-      if (validPageNumber(page)) {
-        $('select.page-select').val(page);
-        viewer._sequenceIndex = page;
-        viewer._updateSequenceButtons( page );
-        viewer.open( viewer.tileSources[ page ] );
-        if( viewer.referenceStrip ){
-          viewer.referenceStrip.setFocus( page );
-        }
-      }
+    function sendSetPageMessage(page) {
+      parent.window.postMessage({
+        event: 'page',
+        pid: pid,
+        page: page
+      }, "*");
     }
 
     /**
@@ -182,70 +134,98 @@
       switch (event.data.event) {
         case 'page':
           if (typeof event.data.page != "undefined") {
-            setPage(event.data.page);
+            that.setPage(event.data.page);
           }
           else {
-            setPage(initialPage);
+            that.setPage(initialPage);
           }
           break;
       }
     }
-    window.addEventListener("message", receiveMessage, false);
 
     /**
-     * Notifies the parent frame that we have changed pages.
+     * Checks if the given number is a valid page number.
      *
-     * @param {int} page
-     *   The new page number.
+     * @param num {number}
+     *   The page number to check.
+     *
+     * @return {bool}
      */
-    function sendSetPageMessage(page) {
-      parent.window.postMessage({
-        event: 'page',
-        pid: pid,
-        page: page
-      }, "*");
+    function validPageNumber(num) {
+      return $.isNumeric(num) && num >= 0 && num < pages.length;
     }
 
+    /**
+     * Zoom in a single unit.
+     */
+    function doSingleZoomIn() {
+      var viewport = openseadragon.viewport;
+      if ( viewport ) {
+        viewport.zoomBy(
+            openseadragon.zoomPerClick / 1.0
+        );
+        viewport.applyConstraints();
+      }
+    }
+
+    /**
+     * Zoom out a single unit.
+     */
+    function doSingleZoomOut() {
+      var viewport = openseadragon.viewport;
+      if ( viewport ) {
+        viewport.zoomBy(
+            1.0 / openseadragon.zoomPerClick
+        );
+        viewport.applyConstraints();
+      }
+    }
+
+    /**
+     * Get the current percentage of the zoom.
+     *
+     * @return {number}
+     */
+    function getZoomPercentage() {
+      var viewport = openseadragon.viewport,
+          min = viewport.getMinZoom(),
+          max = viewport.getMaxZoom(),
+          range = max - min,
+          current = viewport.getZoom(true);
+      return (current - min) / range;
+    }
+
+    /**
+     * Sets the given page without firing any events or setting the state.
+     */
+    function setPage(page) {
+      if (validPageNumber(page)) {
+        $('select.page-select').val(page);
+        openseadragon._sequenceIndex = page;
+        openseadragon._updateSequenceButtons( page );
+        openseadragon.open( openseadragon.tileSources[ page ] );
+        if( openseadragon.referenceStrip ){
+          openseadragon.referenceStrip.setFocus( page );
+        }
+      }
+    }
+
+    /**
+     * Sets the value of the pager in the toolbar.
+     */
     function setToolbarPage(page) {
       $('select.page-select').val(page);
-      // Set the next / prev icons.
-      if (page == 0) {
-        $('#openseadragon .arrow-left').css('border-right-color', 'grey');
-      }
-      else {
-        $('#openseadragon .arrow-left').css('border-right-color', 'white');
-      }
-      if (page == pages.length - 1) {
-        $('#openseadragon .arrow-right').css('border-left-color', 'grey');
-      }
-      else {
-        $('#openseadragon .arrow-right').css('border-left-color', 'white');
-      }
-    }
-
-    /**
-     * Scroll to the given element in the transcription pane.
-     *
-     * @param {int} page
-     */
-    function transcriptionScrollTo(page) {
-      var element = $("span.pb-title:eq(" + page + ")");
-      $('#transcription').animate({
-        scrollTop: element[0].offsetTop + 'px'
-      }, 1000);
     }
 
     /**
      * Setup the toolbar and bound actions to it.
      */
     function initializeToolbar() {
-
-      // Zoom Slider.
-      $( "#zoom-slider" ).slider({
+      $('#zoom-slider').slider({
         min: 1,
         max: 100,
         slide: function( event, ui ) {
-          var viewport = viewer.viewport,
+          var viewport = openseadragon.viewport,
               min = viewport.getMinZoom(),
               max = viewport.getMaxZoom(),
               range = max - min,
@@ -254,172 +234,48 @@
         }
       });
 
-      viewer.addHandler("animation", function (data) {
+      openseadragon.addHandler("animation", function () {
         var value = getZoomPercentage();
         $('#zoom-slider').slider('value', value * 100);
       });
 
       // Zoom Out.
       $('a.zoom-out.icon').click(function () {
-        var viewport = viewer.viewport;
         doSingleZoomOut();
       });
 
       // Zoom In.
       $('a.zoom-in.icon').click(function () {
-        var viewport = viewer.viewport;
         doSingleZoomIn();
       });
 
       // Rotate.
       $('a.rotate.icon').click(function () {
-        var viewport = viewer.viewport,
+        var viewport = openseadragon.viewport,
             current = viewport.getRotation();
         viewport.setRotation((current + 90) % 360);
       });
 
-      // Item Details.
-      $('.item-details.icon').click(function () {
-        $('#item-details').toggle();
-        $('#openseadragon').toggleClass('item-details-open');
-        $(this).toggleClass('depressed');
-      });
-
-      // Transcription.
-      if (hasTranscription) {
-        $('.transcription.icon').click(function () {
-          $('#transcription').toggle();
-          $('#openseadragon').toggleClass('transcription-open');
-          $(this).toggleClass('depressed');
-          setTimeout(function () {
-            transcriptionScrollTo(viewer.currentPage());
-          }, 1000);
-        });
-      } else {
-        $('.transcription.icon').addClass('disabled');
-      }
-
       // Page.
       $('select.page-select').change(function () {
-        viewer.goToPage(parseInt($(this).val()));
-      });
-
-      viewer.addHandler("page", function (data) {
-        setToolbarPage(data.page);
-        sendSetPageMessage(data.page);
-        transcriptionScrollTo(data.page);
-      });
-
-      // Close
-      $('.close.icon').click(function () {
-        parent.window.postMessage({ event: 'close'}, "*");
+        openseadragon.goToPage(parseInt($(this).val()));
       });
 
       // Navigation prev.
       $('#openseadragon .prev-icon').click(function () {
-        var page = viewer.currentPage() - 1;
+        var page = openseadragon.currentPage() - 1;
         if (validPageNumber(page)) {
-          viewer.goToPage(page);
+          openseadragon.goToPage(page);
         }
       });
 
       // Navigation next.
       $('#openseadragon .next-icon').click(function () {
-        var page = viewer.currentPage() + 1;
+        var page = openseadragon.currentPage() + 1;
         if (validPageNumber(page)) {
-          viewer.goToPage(page);
+          openseadragon.goToPage(page);
         }
       })
-    }
-
-    /**
-     * Setup the reference strip and bound actions to it.
-     */
-    function initializeReferenceStrip() {
-      function zeroPad(num, places) {
-        var zero = places - num.toString().length + 1;
-        return Array(+(zero > 0 && zero)).join("0") + num;
-      }
-
-      function showReferenceStrip() {
-        var element = $('div.referencestrip');
-        element.addClass('hover');
-        element.parent().addClass('hover');
-        element.css('margin-bottom', '0px');
-        $('#reference-nav').show();
-      }
-
-      function hideReferenceStrip() {
-        var element = $('div.referencestrip');
-        element.removeClass('hover');
-        element.parent().removeClass('hover');
-        element.css('margin-bottom', '-' + (element.clientHeight / 2) + 'px');
-        $('#reference-nav').hide();
-      }
-
-      $('div.referencestrip').hover(function() {
-        showReferenceStrip();
-      }, function () {
-        hideReferenceStrip();
-      });
-
-      $('#reference-nav').hover(function() {
-        showReferenceStrip();
-      }, function () {
-        hideReferenceStrip();
-      });
-
-      // Add numbers on show.
-      $('div.referencestrip > div').hover(function() {
-        $(this).addClass('hover');
-        $(this).prepend('<div class="page-num">' + zeroPad($(this).index() + 1, 4) + '</div>');
-      }, function () {
-        $(this).removeClass('hover');
-        $('div.page-num', this).remove();
-      });
-
-      // Scroll left.
-      var scrollLeft;
-      $('#reference-nav .prev-icon').mousedown(function () {
-        scrollLeft = setInterval(function(){
-          var e = jQuery.Event( 'keydown', {
-            which: $.ui.keyCode.LEFT,
-            keyCode: $.ui.keyCode.LEFT
-          });
-          viewer.referenceStrip.innerTracker.keyDownHandler(e);
-        }, 50);
-        return false;
-      });
-      $('#reference-nav .prev-icon').mouseup(function() {
-        clearInterval(scrollLeft);
-        return false;
-      });
-      $('#reference-nav .prev-icon').mouseout(function() {
-        clearInterval(scrollLeft);
-        return false;
-      });
-
-      // Scroll right.
-      var scrollRight;
-      $('#reference-nav .next-icon').mousedown(function () {
-        scrollRight = setInterval(function(){
-          var e = jQuery.Event( 'keydown', {
-            which: $.ui.keyCode.RIGHT,
-            keyCode: $.ui.keyCode.RIGHT
-          });
-          viewer.referenceStrip.innerTracker.keyDownHandler(e);
-        }, 50);
-        return false;
-      });
-      $('#reference-nav .next-icon').mouseup(function() {
-        clearInterval(scrollRight);
-        return false;
-      });
-      $('#reference-nav .next-icon').mouseout(function() {
-        clearInterval(scrollRight);
-        return false;
-      });
-
     }
 
     /**
@@ -429,31 +285,120 @@
       $('.TEI span.pb-title').click(function () {
         var page = parseInt($(this).text().replace(/[a-z-_.:]*/gi, '')) - 1;
         if (validPageNumber(page)) {
-          viewer.goToPage(page);
+          openseadragon.goToPage(page);
         }
       });
     }
 
     /**
-     * Resize the viewer to fit the window.
+     * Public functions.
      */
-    function resize() {
-      var height = window.innerHeight - $('#toolbar').outerHeight();
-      $('#openseadragon, #item-details, #transcription').height(height);
-      var width = window.innerWidth / 2;
-      $('#item-details, #transcription').width(width);
-    }
+    this.currentPage = function () {
+      return openseadragon.currentPage();
+    };
 
     // Start up.
     initializeToolbar();
     initializeTranscription();
-
-    // Set GUI.
     setToolbarPage(initialPage);
 
     // Zoom Out.
-    viewer.viewport.zoomTo(viewer.viewport.getMinZoom());
+    openseadragon.viewport.zoomTo(openseadragon.viewport.getMinZoom());
 
+    /**
+     * Handle Events.
+     */
+    openseadragon.addHandler("page", function (data) {
+      setToolbarPage(data.page);
+      sendSetPageMessage(data.page);
+      transcriptionScrollTo(data.page);
+    });
+
+    openseadragon.addHandler('open', function() {
+      resize();
+      openseadragon.viewport.zoomTo(openseadragon.viewport.getMinZoom(), null, true);
+      openseadragon.viewport.applyConstraints();
+    });
+
+    window.addEventListener("message", receiveMessage, false);
+
+  };
+
+  /**
+   * Creates an instance of the Livingstone Manuscript Viewer widget.
+   *
+   * @param {string} base
+   *   The element ID that this class is bound to.
+   * @param {object} settings
+   *   Drupal.settings for this object widget.
+   *
+   * @constructor
+   */
+  Drupal.LivingstoneManuscriptViewer = function (base, settings) {
+
+    var that = this,
+        pid = settings.pid,
+        pages = settings.pages,
+        initialPage = settings.initialPage,
+        hasTranscription = settings.hasTranscription,
+        viewer = null;
+
+    // Only open the viewer if there are pages.
+    if (pages.length > 0) {
+      $('#restricted-message').remove();
+      viewer = new Drupal.LivingstoneManuscriptImageViewer(
+          pid,
+          initialPage,
+          pages,
+          settings.openSeaDragon.options
+      );
+    }
+    else {
+      // Hide the controls used with the viewer.
+      $('.zoom-out, .zoom-slider, .zoom-in, .rotate, .page-select, .prev-icon, .next-icon').hide();
+    }
+
+    /**
+     * Setup the toolbar and bound actions to it.
+     */
+    function initializeToolbar() {
+      // Item Details.
+      $('.item-details.icon').click(function () {
+        $('#item-details').toggle();
+        $('#openseadragon').toggleClass('item-details-open');
+        $(this).toggleClass('depressed');
+        resize();
+      });
+
+      // Transcription.
+      if (hasTranscription) {
+        $('.transcription.icon').click(function () {
+          $('#transcription').toggle();
+          $('#openseadragon').toggleClass('transcription-open');
+          $(this).toggleClass('depressed');
+          setTimeout(function () {
+            if (viewer) {
+              transcriptionScrollTo(viewer.currentPage());
+            }
+          }, 1000);
+          resize();
+        });
+      } else {
+        $('.transcription.icon').addClass('disabled');
+      }
+
+      // Close
+      $('.close.icon').click(function () {
+        parent.window.postMessage({ event: 'close'}, "*");
+      });
+    }
+
+    // Start up.
+    initializeToolbar();
+
+    /**
+     * Handle Events.
+     */
     $(window).resize(function () {
       resize();
     });
@@ -468,17 +413,6 @@
     setTimeout(function () {
       $('body').removeClass('loading');
     }, 3000);
-
-    viewer.addHandler('open', function() {
-      resize();
-      viewer.viewport.zoomTo(viewer.viewport.getMinZoom(), null, true);
-      viewer.viewport.applyConstraints();
-    });
   }
 
 }(jQuery));
-
-// This is how we're going to deal with authentication for Djatoka, Where
-// going to override the authentication function for the menu callback to
-// access the image, or we can let it take straight from Fedora (making a
-// global exception for localhost).
