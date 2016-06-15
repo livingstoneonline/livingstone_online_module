@@ -526,12 +526,14 @@ function livingstone_browse_catalogue_view_link($doc) {
     ),
   );
   if ($viewable && !$hidden) {
+    $attributes['attributes']['title'] = 'View';
     $attributes['attributes']['class'] = array(
       'livingstone-manuscript-launcher fa fa-eye'
     );
     return l((''), current_path(), $attributes);
   }
   else if ($viewable && $hidden) {
+    $attributes['attributes']['title'] = 'Restricted View';
     $attributes['attributes']['class'] = array(
       'livingstone-manuscript-launcher fa fa-ban'
     );
@@ -557,6 +559,7 @@ function livingstone_browse_catalogue_download_link($doc) {
   $attributes = array(
     'external' => FALSE,
     'attributes' => array(
+      'title' => 'Download',
       'class' => array('fa fa-download'),
     ),
   );
