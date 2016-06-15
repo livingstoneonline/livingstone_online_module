@@ -49,7 +49,9 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
   drupal_add_js("$js_path/transcription.js");
   drupal_add_js("$js_path/slideout-menu.js");
   drupal_add_css("$lib_path/jquery/plugins/malihu-custom-scrollbar/3.1.3/jquery.mCustomScrollbar.css");
-  drupal_add_css("$lib_path/bootstrap/3.3.6/css/bootstrap.min.css");
+  drupal_add_css("$lib_path/bootstrap/3.3.6/css/bootstrap.min.css", array(
+    'group' => CSS_THEME,
+  ));
   drupal_add_css("$css_path/manuscript-viewer/manuscript-viewer.css", array(
     'group' => CSS_THEME,
   ));

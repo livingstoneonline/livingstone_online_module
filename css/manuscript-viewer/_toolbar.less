@@ -55,7 +55,8 @@
   .share {
     display: inline-block;
     padding-left: 10px;
-    line-height: 26px;
+    vertical-align: middle;
+    //line-height: 26px;
     &> * {
       margin: 0 5px;
     }
@@ -65,8 +66,8 @@
     .home {
       .share-icon("trans-social-home-28.png", "trans-over-social-home-28.png");
       display: inline-block;
-      height: @icon-size;
-      width: @icon-size;
+      height: 28px;
+      width: 28px;
     }
     span:empty:before {
       content: "\200b"; // unicode zero width space character
@@ -118,9 +119,6 @@
     font-weight: bold;
     color: #c77405;
   }
-  .icon-group.page-select {
-    .responsive-margin(auto 16px auto 0, auto 6px auto 0, auto 6px);
-  }
   .item-details,
   .transcription {
     .box-sizing;
@@ -131,7 +129,20 @@
     background-color: #999;
   }
   select.page-select {
-    font-size: 0.95em;
+    .border-radius;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    height: 25px;
+    padding: 0 1.5em 0 1em;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    background: url(../../images/select-arrow.png) no-repeat #eee;
+    background-size: 1em;
+    background-position: right;
+    cursor: pointer;
+
   }
   // Search.
   input[type=text] {
