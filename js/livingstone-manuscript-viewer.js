@@ -439,7 +439,8 @@
 
     // Start up.
     initializeToolbar();
-
+    resize();
+    
     /**
      * Handle Events.
      */

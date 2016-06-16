@@ -545,22 +545,32 @@ body.loading .modal {
   background-position: 100% 0;
   border-radius: 6px 0px 0px 6px;
 }
-#restricted-message {
+#restricted-message-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+#restricted-message-wrapper #restricted-message {
   position: relative;
   background-color: white;
   margin: auto auto;
-  top: 20%;
-  width: 90%;
   max-width: 500px;
   padding: 1em;
 }
-#restricted-message h1 {
+#restricted-message-wrapper #restricted-message h1 {
   font-family: Crimson Text, serif;
   font-size: 1.75em;
   font-weight: 600;
-  margin: 0.5em 0 0;
+  margin: 0;
 }
-#restricted-message p {
+#restricted-message-wrapper #restricted-message hr {
+  border: solid rgba(0, 0, 0, 0.2);
+  border-width: 1px 0 0;
+  margin: 0.5em 0 0.5em;
+}
+#restricted-message-wrapper #restricted-message p {
   font-family: Source Sans Pro, sans-serif;
   font-size: 0.9em;
   padding: 0.5em 0 0 0;

@@ -48,16 +48,18 @@
     <div class="next-icon">
       <div class="arrow-right"></div>
     </div>
-    <div id="restricted-message">
-      <h1>Restricted Item</h1>
-      <hr/>
-      <p>
-        Livingstone Online has images of the item you have selected, but we do
-        not have permission to post them online or otherwise share them.
-        Time permitting, we may be able to consult the item for individuals with
-        legitimate research needs or questions. Please
-        <a href="mailto:awisnicki@yahoo.com">email us</a> to inquire further.
-      </p>
+    <div id="restricted-message-wrapper">
+      <div id="restricted-message">
+        <h1>Restricted Item</h1>
+        <hr/>
+        <p>
+          Livingstone Online has images of the item you have selected, but we do
+          not have permission to post them online or otherwise share them.
+          Time permitting, we may be able to consult the item for individuals with
+          legitimate research needs or questions. Please
+          <a href="mailto:awisnicki@yahoo.com">email us</a> to inquire further.
+        </p>
+      </div>
     </div>
   </div>
 </div>
