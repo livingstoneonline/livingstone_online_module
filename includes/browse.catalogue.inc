@@ -734,7 +734,7 @@ function livingstone_browse_catalogue_sort_search_parameter(array $form_state) {
     $fields = livingstone_browse_catalogue_display_fields();
     foreach ($fields as $field) {
       if ($field['label'] == $order) {
-        return "{$field['sort']} $direction";
+        return "{$field['sort']} $direction, date_s asc, creator_s asc, title_s asc";
       }
     }
   }
