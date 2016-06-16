@@ -557,7 +557,7 @@ body.loading .modal {
   background-color: white;
   margin: auto auto;
   max-width: 500px;
-  padding: 1em;
+  padding: 1.5em;
 }
 #restricted-message-wrapper #restricted-message h1 {
   font-family: Crimson Text, serif;
