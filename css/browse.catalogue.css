@@ -59,6 +59,7 @@
 }
 .search-results td.access-column a {
   margin: 0 0.5em;
+  vertical-align: middle;
 }
 body.page-islandora #livingstone-browse-catalogue-form .search-results th {
   background: #ddd none repeat scroll 0 0;
@@ -265,4 +266,11 @@ and (max-width : 1028px) {
 a.fa-ban,
 a.fa-ban:hover {
   color: #b22222;
+}
+
+.download-size {
+  display: inline-block;
+  color: #808080;
+  font-size:  0.8em;
+  vertical-align: middle;
 }

@@ -566,7 +566,7 @@ function livingstone_browse_catalogue_download_link($doc) {
   if ($downloadable) {
     $size = reset($doc['fedora_datastream_version_ZIP_SIZE_ms']);
     $size = number_format($size / 1024 / 1024, 1);
-    return l((''), $path, $attributes) . "<span style='display:inline-block;'>($size MB)<span>";
+    return l((''), $path, $attributes) . "<span class='download-size'>($size MB)<span>";
   }
   return '&nbsp;';
 }
