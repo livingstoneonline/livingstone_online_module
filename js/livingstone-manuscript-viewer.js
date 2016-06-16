@@ -358,31 +358,75 @@
       $('.zoom-out, .zoom-slider, .zoom-in, .rotate, .page-select, .prev-icon, .next-icon').hide();
     }
 
+    function toggleItemDetails() {
+      var open = $('#openseadragon').hasClass('item-details-open');
+      if (open) {
+        hideItemDetails();
+      }
+      else {
+        showItemDetails();
+        if (window.innerWidth <= 568) {
+          hideTranscription();
+        }
+      }
+    }
+
+    function showItemDetails() {
+      $('#item-details').show();
+      $('#openseadragon').addClass('item-details-open');
+      $('.item-details.icon').addClass('depressed');
+      resize();
+    }
+
+    function hideItemDetails() {
+      $('#item-details').hide();
+      $('#openseadragon').removeClass('item-details-open');
+      $('.item-details.icon').removeClass('depressed');
+      resize();
+    }
+
+    function toggleTranscription() {
+      var open = $('#openseadragon').hasClass('transcription-open');
+      if (open) {
+        hideTranscription();
+      }
+      else {
+        showTranscription();
+        if (window.innerWidth <= 568) {
+          hideItemDetails();
+        }
+      }
+    }
+
+    function showTranscription() {
+      $('#transcription').show();
+      $('#openseadragon').addClass('transcription-open');
+      $('.transcription.icon').addClass('depressed');
+      setTimeout(function () {
+        if (viewer) {
+          transcriptionScrollTo(viewer.currentPage());
+        }
+      }, 1000);
+      resize();
+    }
+
+    function hideTranscription() {
+      $('#transcription').hide();
+      $('#openseadragon').removeClass('transcription-open');
+      $('.transcription.icon').removeClass('depressed');
+      resize();
+    }
+
     /**
      * Setup the toolbar and bound actions to it.
      */
     function initializeToolbar() {
       // Item Details.
-      $('.item-details.icon').click(function () {
-        $('#item-details').toggle();
-        $('#openseadragon').toggleClass('item-details-open');
-        $(this).toggleClass('depressed');
-        resize();
-      });
+      $('.item-details.icon').click(toggleItemDetails);
 
       // Transcription.
       if (hasTranscription) {
-        $('.transcription.icon').click(function () {
-          $('#transcription').toggle();
-          $('#openseadragon').toggleClass('transcription-open');
-          $(this).toggleClass('depressed');
-          setTimeout(function () {
-            if (viewer) {
-              transcriptionScrollTo(viewer.currentPage());
-            }
-          }, 1000);
-          resize();
-        });
+        $('.transcription.icon').click(toggleTranscription);
       } else {
         $('.transcription.icon').addClass('disabled');
       }
