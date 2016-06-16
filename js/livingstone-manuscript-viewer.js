@@ -345,7 +345,7 @@
 
     // Only open the viewer if there are pages.
     if (pages.length > 0) {
-      $('#restricted-message').remove();
+      $('#restricted-message-wrapper').remove();
       viewer = new Drupal.LivingstoneManuscriptImageViewer(
           pid,
           initialPage,
@@ -440,7 +440,7 @@
     // Start up.
     initializeToolbar();
     resize();
-    
+
     /**
      * Handle Events.
      */

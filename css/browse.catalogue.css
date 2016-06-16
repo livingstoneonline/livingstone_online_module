@@ -75,9 +75,9 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
 /* Columns Width's */
 .search-results th.access-column,
 .search-results td.access-column {
-  max-width: 80px !important;
-  min-width: 80px !important;
-  width: 80px !important;
+  max-width: 100px !important;
+  min-width: 100px !important;
+  width: 100px !important;
 }
 .search-results th.title-column,
 .search-results td.title-column {
@@ -264,5 +264,5 @@ and (max-width : 1028px) {
 
 a.fa-ban,
 a.fa-ban:hover {
-  color: red;
+  color: #b22222;
 }

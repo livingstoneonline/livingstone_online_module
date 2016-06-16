@@ -528,12 +528,12 @@ function livingstone_browse_catalogue_view_link($doc) {
   if ($viewable && !$hidden) {
     $attributes['attributes']['title'] = 'View';
     $attributes['attributes']['class'] = array(
-      'livingstone-manuscript-launcher fa fa-eye'
+      'livingstone-manuscript-launcher fa fa-camera'
     );
     return l((''), current_path(), $attributes);
   }
   else if ($viewable && $hidden) {
-    $attributes['attributes']['title'] = 'Restricted View';
+    $attributes['attributes']['title'] = 'Restricted';
     $attributes['attributes']['class'] = array(
       'livingstone-manuscript-launcher fa fa-ban'
     );
@@ -560,11 +560,13 @@ function livingstone_browse_catalogue_download_link($doc) {
     'external' => FALSE,
     'attributes' => array(
       'title' => 'Download',
-      'class' => array('fa fa-download'),
+      'class' => array('fa fa-arrow-down'),
     ),
   );
   if ($downloadable) {
-    return l((''), $path, $attributes);
+    $size = reset($doc['fedora_datastream_version_ZIP_SIZE_ms']);
+    $size = number_format($size / 1024 / 1024, 1);
+    return l((''), $path, $attributes) . "<span style='display:inline-block;'>($size MB)<span>";
   }
   return '&nbsp;';
 }
@@ -702,7 +704,13 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
  * @return array
  */
 function livingstone_browse_catalogue_fl_search_parameter() {
-  $fl = array('PID', 'viewable_b', 'downloadable_b', 'hidden_b');
+  $fl = array(
+    'PID',
+    'viewable_b',
+    'downloadable_b',
+    'hidden_b',
+    'fedora_datastream_version_ZIP_SIZE_ms'
+  );
   $fields = livingstone_browse_catalogue_display_fields();
   foreach($fields as $field) {
     $fl[] = $field['field'];
