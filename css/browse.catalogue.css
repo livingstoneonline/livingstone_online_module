@@ -76,9 +76,9 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
 /* Columns Width's */
 .search-results th.access-column,
 .search-results td.access-column {
-  max-width: 100px !important;
-  min-width: 100px !important;
-  width: 100px !important;
+  max-width: 140px !important;
+  min-width: 140px !important;
+  width: 140px !important;
 }
 .search-results th.title-column,
 .search-results td.title-column {
