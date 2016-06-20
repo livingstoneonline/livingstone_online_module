@@ -16,6 +16,17 @@
  *   given manuscripts pages.
  */
 function livingstone_manuscript_pages($pid) {
+  global $user;
+  $filter_hidden = '';
+  if (!in_array('administrator', $user->roles)){
+    $filter_hidden = <<<EOT
+    OPTIONAL {
+      ?pid <fedora-view:disseminates> ?policy .
+      ?policy <fedora-view:disseminationType> <info:fedora/*/POLICY> .
+    }
+    FILTER (!BOUND(?policy))
+EOT;
+  }
   $query = <<<EOQ
   PREFIX islandora-rels-ext: <http://islandora.ca/ontology/relsext#>
   SELECT ?pid ?page ?width ?height ?levels
@@ -31,11 +42,7 @@ function livingstone_manuscript_pages($pid) {
                <islandora-rels-ext:height> ?height ;
                <islandora-rels-ext:levels> ?levels .
     }
-    OPTIONAL {
-      ?pid <fedora-view:disseminates> ?policy .
-      ?policy <fedora-view:disseminationType> <info:fedora/*/POLICY> .
-    }
-    FILTER (!BOUND(?policy))
+    $filter_hidden
   }
   ORDER BY ?page
 EOQ;
