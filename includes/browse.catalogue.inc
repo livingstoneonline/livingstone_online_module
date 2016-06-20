@@ -1077,13 +1077,6 @@ function livingstone_browse_catalogue_default_value($element, $default, array $f
   return $default;
 };
 
-
-function theme_livingstone_browse_catalogue_date_range(array &$variables) {
-  $element = $variables['element'];
-  dsm($variables);
-  return '';
-}
-
 /**
  * Gets the default facet value for the given facet.
  *

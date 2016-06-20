@@ -1,6 +1,6 @@
 <?php
 
-/**
+ /**
  * @file
  * An viewer for manuscripts with a TEI datastream.
  */
@@ -10,6 +10,14 @@
  */
 function livingstone_menu() {
   return array(
+    'admin/islandora/livingstone/importer' => array(
+      'title' => 'Import Drupal Manuscript Nodes',
+      'access arguments' => array('administer content'),
+      'type' => MENU_NORMAL_ITEM,
+      'file' => 'includes/node.import.form.inc',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_node_import_form'),
+    ),
     'livingstone-viewer/%' => array(
       'title' => 'Manuscript Viewer Test',
       'access arguments' => array('access content'),
@@ -35,6 +43,22 @@ function livingstone_menu_alter(&$items) {
     $search_item = &$items['islandora/search'];
     $search_item['page callback'] = 'livingstone_browse_catalogue';
   }
+}
+
+/**
+ * Implements hook_node_info().
+ */
+function livingstone_node_info() {
+  return array(
+    'manuscript' => array(
+      'name' => t('Manuscript'),
+      'base' => 'node_content',
+      'description' => t('Manuscript data synced from Fedora, do not create manually.'),
+      'has_title' => TRUE,
+      'title_label' => t('Title'),
+      'locked' => TRUE,
+    ),
+  );
 }
 
 /**
@@ -140,3 +164,20 @@ function livingstone_theme() {
     ),
   );
 }
+
+function livingstone_preprocess_search_result(array &$variables) {
+  $result = &$variables['result'];
+  if (isset($result['node'])) {
+    $node = $result['node'];
+    if ($node->type == 'manuscript') {
+      $pid = $node->pid[LANGUAGE_NONE][0]['value'];
+      $variables['url'] = $result['link'] = url("islandora/search/\"$pid\"", array(
+        'absolute' => TRUE,
+        'query' => array(
+          'view_pid' => $pid,
+        ),
+      ));
+    }
+  }
+}
+
