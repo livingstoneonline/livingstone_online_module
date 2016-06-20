@@ -481,6 +481,16 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
           $data = $doc[$solr_field];
         }
       }
+      if ($solr_field != 'PID') {
+        // Setup dummy filter object.
+        $filter = new stdClass();
+        $filter->callback = '_filter_url';
+        $filter->settings = array(
+          'filter_url_length' => 496,
+        );
+        $data = _filter_url($data, $filter);
+        $data = preg_replace('/>.*<\/a/', ' target="_blank">link</a', $data);
+      }
       $row[] = array(
         'data' => $data,
         'class' => $field['classes'],
