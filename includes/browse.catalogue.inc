@@ -692,7 +692,7 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
     'fl' => livingstone_browse_catalogue_fl_search_parameter(),
     'fq' => $filter_query,
     'defType' => 'edismax',
-    'qf' => 'PID^1.0 title_t^1.0 date_mt creator_t addressee_t place_t genre_t repository_t copy_identifier_t otherVersion_t catalog_identifier_t',
+    'qf' => 'PID^1.0 title_t^1.0 date_mt creator_t addressee_t place_t genre_t repository_t copy_identifier_t otherVersion_t catalog_identifier_t master_id_t',
     'start' => livingstone_browse_catalogue_start_search_parameter($form_state),
     'rows' => LIVINGSTONE_BROWSE_CATALOGUE_LIMIT_RESULTS,
     'sort' => livingstone_browse_catalogue_sort_search_parameter($form_state),
