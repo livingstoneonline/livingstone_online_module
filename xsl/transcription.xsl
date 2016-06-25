@@ -13,7 +13,7 @@
 		<xd:desc>
 			<xd:p><xd:b>Author:</xd:b> Adrian S. Wisnicki</xd:p>
 			<xd:p>Extensive revisions</xd:p>
-			<xd:p>Updated in Mary 2016.</xd:p>
+			<xd:p>Updated in May 2016.</xd:p>
 		</xd:desc>
 	</xd:doc>
 	<xsl:output method="xml" indent="yes"/>
