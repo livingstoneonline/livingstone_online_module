@@ -8,12 +8,12 @@
 		<xd:desc>
 			<xd:p><xd:b>Author:</xd:b> James Cummings</xd:p>
 			<xd:p>First attempt at LEAP to HTML conversion</xd:p>
-			<xd:p>Updated in Feb/Mar 2015.</xd:p>
+			<xd:p>Updated in Feb/Mar 2015</xd:p>
 		</xd:desc>
 		<xd:desc>
 			<xd:p><xd:b>Author:</xd:b> Adrian S. Wisnicki</xd:p>
 			<xd:p>Extensive revisions</xd:p>
-			<xd:p>Updated in May 2016.</xd:p>
+			<xd:p>Updated in May/June 2016</xd:p>
 		</xd:desc>
 	</xd:doc>
 	<xsl:output method="xml" indent="yes"/>
