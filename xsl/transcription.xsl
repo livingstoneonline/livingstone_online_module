@@ -260,6 +260,26 @@
 		</span>
 	</xsl:template>
 
+
+	<!-- Start of addSpan/anchor -->
+
+	<xsl:template match="tei:addSpan[preceding-sibling::node()[1][name()='p']]|tei:addSpan[preceding-sibling::node()[2][name()='p']]|p/addSpan">
+		<br/>
+		<xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template match="tei:addSpan|p/anchor">
+		<xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template match="tei:anchor">		
+		<xsl:apply-templates/>
+		<br/>
+	</xsl:template>
+
+	<!-- End of addSpan/anchor -->
+
+
 	<!-- app: show first rdg -->
 	<xsl:template match="app">
 		<span class="app">
