@@ -166,17 +166,29 @@ function livingstone_theme() {
 }
 
 function livingstone_preprocess_search_result(array &$variables) {
+  global $user;
   $result = &$variables['result'];
   if (isset($result['node'])) {
     $node = $result['node'];
     if ($node->type == 'manuscript') {
-      $pid = $node->pid[LANGUAGE_NONE][0]['value'];
-      $variables['url'] = $result['link'] = url("islandora/search/\"$pid\"", array(
-        'absolute' => TRUE,
-        'query' => array(
-          'view_pid' => $pid,
-        ),
-      ));
+      $get_value = function($field, $default) use ($node) {
+        return isset($node->{$field}[LANGUAGE_NONE][0]['value']) ?
+          $node->{$field}[LANGUAGE_NONE][0]['value'] :
+          $default;
+      };
+      $pid = $get_value('pid');
+      $viewable = $get_value('viewable');
+      if ($viewable) {
+        $variables['url'] = $result['link'] = url("islandora/search/\"$pid\"", array(
+          'absolute' => TRUE,
+          'query' => array(
+            'view_pid' => $pid,
+          ),
+        ));
+      }
+      else {
+        $variables['url'] = $result['link'] = url("islandora/search/\"$pid\"", array('absolute' => TRUE));
+      }
     }
   }
 }

@@ -77,10 +77,6 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
     foreach ($fields as $field_name => $value) {
       $type = $field_settings[$field_name]['type'];
       switch ($field_settings[$field_name]['type']) {
-        case 'text':
-        case 'text_long':
-          $wrapper->{$field_name}->set($value);
-          break;
         case 'date':
           $date = new DateTime($value);
           $wrapper->raw()->{$field_name}[LANGUAGE_NONE][0] = array(
@@ -88,6 +84,11 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
             'timezone' => 'UTC',
             'timezone_db' => 'UTC',
           );
+          break;
+        case 'text':
+        case 'text_long':
+        default:
+          $wrapper->{$field_name}->set($value);
           break;
       }
     }
@@ -283,6 +284,36 @@ function livingstone_node_import_field_settings() {
       'required' => FALSE,
       'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_ONE,
     ),
+    'viewable' => array(
+      'type' => 'list_boolean',
+      'title' => t('Viewable'),
+      'description' => t('Viewable'),
+      'required' => FALSE,
+      'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_ONE,
+      'solr' => array(
+        'field' => 'viewable_b',
+      ),
+    ),
+    'hidden' => array(
+      'type' => 'list_boolean',
+      'title' => t('Hidden'),
+      'description' => t('Hidden'),
+      'required' => FALSE,
+      'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_ONE,
+      'solr' => array(
+        'field' => 'hidden_b',
+      ),
+    ),
+    'downloadable' => array(
+      'type' => 'list_boolean',
+      'title' => t('Downloadable'),
+      'description' => t('Downloadable'),
+      'required' => FALSE,
+      'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_ONE,
+      'solr' => array(
+        'field' => 'downloadable_b',
+      ),
+    ),
     'dates' => array(
       'type' => 'text',
       'title' => t('Date(s)'),
@@ -411,7 +442,7 @@ function livingstone_node_import_field_settings() {
       'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_ONE,
       'solr' => array(
         'field' => 'tei',
-        'map' => 'livingstone_node_import_map_xml_to_text'
+          'map' => 'livingstone_node_import_map_xml_to_text'
       ),
     ),
     'date_range_start' => array(

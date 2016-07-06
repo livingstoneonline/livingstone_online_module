@@ -34,13 +34,20 @@ function livingstone_create_field($field_type, $field_name, $cardinality = 1) {
     'cardinality' => $cardinality,
     'entity_types' => array('node'),
   );
+  switch($field_type) {
+    case 'list_boolean':
+      $field['settings'] = array(
+        'allowed_values' => array(0 => 0, 1 => 1),
+      );
+      break;
+  }
   field_create_field($field);
 }
 
 /**
  * Creates a new text field instance.
  */
-function livingstone_create_field_instance($field_name, $node_type, $label, $description = NULL, $required = FALSE) {
+function livingstone_create_field_instance($field_name, $field_type, $node_type, $label, $description = NULL, $required = FALSE) {
   $instance = array(
     'field_name' => $field_name,
     'entity_type' => 'node',
@@ -49,6 +56,22 @@ function livingstone_create_field_instance($field_name, $node_type, $label, $des
     'description' => $description,
     'required' => $required,
   );
+  switch($field_type) {
+    case 'list_boolean':
+      $instance['widget'] = array(
+        'type'      => 'options_onoff',
+        'settings'  => array(
+          'display_label' => TRUE,
+        ),
+      );
+      $instance['display'] = array(
+        'default'   => array(
+          'label'   => 'hidden',
+          'type'    => 'hidden',
+        ),
+      );
+      break;
+  }
   field_create_instance($instance);
 }
 
@@ -62,6 +85,6 @@ function livingstone_add_field(stdClass $node_type, $field_type, $field_name, $l
     livingstone_create_field($field_type, $field_name, $cardinality);
   }
   if (empty($instance)) {
-    livingstone_create_field_instance($field_name, $node_type, $label, $description, $required);
+    livingstone_create_field_instance($field_name, $field_type, $node_type, $label, $description, $required);
   }
 }
