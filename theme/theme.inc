@@ -30,6 +30,7 @@ function template_process_livingstone_manuscript_html(array &$variables) {
  * Implements template_preprocess_livingstone_manuscript_transcript_iframe().
  */
 function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
+  module_load_include('inc', 'islandora', 'includes/authtokens');
   module_load_include('inc', 'livingstone', 'includes/utilities');
   $module_path = drupal_get_path('module', 'livingstone');
   $js_path = "$module_path/js";

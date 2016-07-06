@@ -62,7 +62,7 @@
         maxLevel: parseInt(options.maxLevel) || parseInt(options.levels),
       };
       if (typeof(data.identifier) == 'undefined' && typeof(options.pid) == 'string') {
-        data.identifier = getIdentifier(options.pid);
+        data.identifier = getIdentifier(options.pid, options.token);
       }
       // Identifier is required for fetching the meta-data and rendering.
       if (!data.identifier) {
@@ -118,12 +118,13 @@
    * Generates a URL to the given objects JP2 datastream.
    * @function
    * @param {string} pid - fedora object identifier.
+   * @param {string} token - token for administrative access.
    * @return {string} URL to the JP2 image for the given fedora object.
    */
-  function getIdentifier(pid) {
+  function getIdentifier(pid, token) {
     var baseURL = new URI().path(Drupal.settings.basePath).search(""),
-        template = new URITemplate(baseURL + "islandora/object/{pid}/datastream/JP2/view");
-    return template.expand({pid: pid});
+        template = new URITemplate(baseURL + "islandora/object/{pid}/datastream/JP2/view{?q,token}");
+    return template.expand({pid: pid, token: token});
   }
 
   /**

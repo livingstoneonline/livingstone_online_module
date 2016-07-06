@@ -56,7 +56,12 @@ EOQ;
     $o = array_filter($o);
     return $o;
   };
-  return array_map($map, $results);
+  $pages = array_map($map, $results);
+  // Add tokens for use in Djatoka viewer for administrative access.
+  foreach ($pages as &$page) {
+    $page['token'] = islandora_get_object_token($page['pid'], 'JP2', 2);
+  }
+  return $pages;
 }
 
 /**

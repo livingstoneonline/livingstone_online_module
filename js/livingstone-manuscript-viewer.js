@@ -81,6 +81,7 @@
           tileSources: $.map(pages, function (page) {
             return {
               pid: page.pid,
+              token: page.token,
               width: page.width,
               height: page.height,
               maxLevel: page.levels
