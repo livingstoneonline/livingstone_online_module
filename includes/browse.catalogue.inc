@@ -562,7 +562,6 @@ function livingstone_browse_catalogue_view_link($doc) {
  *   The link if one is generated.
  */
 function livingstone_browse_catalogue_download_link($doc) {
-  global $user;
   $pid = $doc['PID'];
   $downloadable = $doc['downloadable_b'];
   $path = "islandora/object/$pid/datastream/ZIP/download";
@@ -671,7 +670,10 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
       }
       break;
     case 'download':
-      $filter_query[] = "viewable_b:true";
+      $filter_query[] = "downloadable_b:true";
+      if ($hide) {
+        $filter_query[] = "hidden_b:false";
+      }
       break;
     case 'both':
       $filter_query[] = "viewable_b:true";
@@ -682,7 +684,6 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
       break;
     case 'neither':
       $filter_query[] = "viewable_b:false";
-      $filter_query[] = "downloadable_b:false";
       break;
     default:
       break;
