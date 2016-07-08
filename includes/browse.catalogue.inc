@@ -710,9 +710,6 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
       break;
     case 'download':
       $filter_query[] = "downloadable_b:true";
-      if ($hide) {
-        $filter_query[] = "hidden_b:false";
-      }
       break;
     case 'both':
       $filter_query[] = "viewable_b:true";
