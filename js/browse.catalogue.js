@@ -349,6 +349,9 @@
       var uri = new URI($(this).attr('href'));
       page.field.val(uri.search(true).page);
       rebuild(false);
+      $('body').animate({
+        scrollTop: '0px'
+      }, 1000);
     });
 
     toggleCollapsibleColumns(full_record.field.is(':checked'));
