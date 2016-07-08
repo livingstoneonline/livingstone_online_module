@@ -277,6 +277,16 @@ function livingstone_node_import_field_settings() {
         'field' => 'PID',
       ),
     ),
+    'alt_title' => array(
+      'type' => 'text',
+      'title' => t('Alternative Title'),
+      'description' => t('Alternative Title'),
+      'required' => FALSE,
+      'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_ONE,
+      'solr' => array(
+        'field' => 'alt_title_s',
+      ),
+    ),
     'image' => array(
       'type' => 'image',
       'title' => t('Image'),
