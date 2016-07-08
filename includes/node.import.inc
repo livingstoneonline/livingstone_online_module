@@ -444,6 +444,16 @@ function livingstone_node_import_field_settings() {
         'field' => 'master_id_s',
       ),
     ),
+    'coordinates' => array(
+      'type' => 'text',
+      'title' => t('Coordinates'),
+      'description' => t('Coordinates'),
+      'required' => FALSE,
+      'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_ONE,
+      'solr' => array(
+        'field' => 'coordinates_s',
+      ),
+    ),
     'tei' => array(
       'type' => 'text_long',
       'title' => t('TEI'),
