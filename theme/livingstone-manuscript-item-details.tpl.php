@@ -11,6 +11,10 @@
         <dt>Date</dt>
         <dd><?php print implode(' ', $fields['date']); ?></dd>
       <?php endif; ?>
+      <?php if (!empty($fields['download'])): ?>
+        <dt class="download">Download item</dt>
+        <dd class="download"><?php print $fields['download']; ?></dd>
+      <?php endif; ?>
       <?php if (!empty($fields['authors'])): ?>
         <dt>Creator(s)</dt>
         <dd><?php print implode('; ', $fields['authors']); ?></dd>

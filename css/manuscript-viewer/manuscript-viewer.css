@@ -468,6 +468,23 @@ body.loading .modal {
   font-size: 0.9em;
   padding: 0.5em 0 0 0;
 }
+#item-details dt.download a,
+#item-details dd.download a {
+  margin: 0 0.5em;
+  vertical-align: middle;
+  color: #428bca;
+}
+#item-details dt.download a:hover,
+#item-details dd.download a:hover {
+  color: #428bca;
+}
+#item-details dt.download span,
+#item-details dd.download span {
+  display: inline-block;
+  color: #808080;
+  font-size: 0.8em;
+  vertical-align: middle;
+}
 #item-details dt {
   font-weight: bold;
 }

@@ -137,10 +137,24 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
     foreach($credits as &$credit) {
       $credit = preg_replace('(https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*))', '<a href="\0" target="_blank">\0</a>', $credit);
     }
+    if (isset($manuscript['ZIP'])) {
+      $path = "islandora/object/{$manuscript->id}/datastream/ZIP/download";
+      $attributes = array(
+        'external' => FALSE,
+        'attributes' => array(
+          'title' => 'Download',
+          'class' => array('fa fa-arrow-down'),
+        ),
+      );
+      $size = $manuscript['ZIP']->size;
+      $size = number_format($size / 1024 / 1024, 1);
+      $download = l((''), $path, $attributes) . "<span class='download-size'>($size MB)<span>";
+    }
     $fields = array(
       'title' => $fetch_fields('/mods:mods/mods:titleInfo[not(@type)]/mods:title[normalize-space()]'),
       'title-alt' => $fetch_fields('/mods:mods/mods:titleInfo[@type="alternative"]/mods:title[normalize-space()]'),
       'date' => $fetch_fields('/mods:mods/mods:originInfo/mods:dateCreated[not(@encoding)]'),
+      'download' => $download,
       'authors' => $authors,
       'repository' => $fetch_fields("mods:name/mods:namePart[normalize-space()]", $repository),
       'shelfmark' => $fetch_fields("mods:location/mods:shelfLocator[normalize-space()]", $repository),
