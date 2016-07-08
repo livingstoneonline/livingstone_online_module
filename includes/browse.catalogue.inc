@@ -390,6 +390,7 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
     '#options' => array(
       'all' => t('Access'),
       'view' => t('View'),
+      'restricted' => t('Restricted'),
       'download' => t('Download'),
       'both' => t('View & Download'),
       'neither' => t('No access available'),
@@ -687,6 +688,9 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
       if ($hide) {
         $filter_query[] = "hidden_b:false";
       }
+      break;
+    case 'restricted':
+      $filter_query[] = "hidden_b:true";
       break;
     case 'download':
       $filter_query[] = "downloadable_b:true";
