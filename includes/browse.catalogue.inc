@@ -87,7 +87,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
               'class' => array(
                 'img-rounded',
               ),
-              'placeholder' => 'Search full catalogue',
+              'placeholder' => 'Search digital catalogue',
             ),
           ),
           'search' => array(
