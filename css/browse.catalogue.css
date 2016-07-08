@@ -274,3 +274,13 @@ a.fa-ban:hover {
   font-size:  0.8em;
   vertical-align: middle;
 }
+.catalogue-download-links {
+  padding: 2em;
+}
+.catalogue-download-links div:first-of-type {
+  text-align: center;
+  font-style: italic;
+}
+.catalogue-download-links a {
+  padding-right: 0.5em;
+}

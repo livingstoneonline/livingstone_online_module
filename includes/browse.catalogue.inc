@@ -177,6 +177,9 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
             'callback' => 'livingstone_browse_catalogue_form_ajax_callback',
           ),
         ),
+        'download_links' => array(
+          '#markup' => livingstone_browse_catalogue_form_download_markup(),
+        ),
       ),
       'results' => array(
         '#type' => 'container',
@@ -195,6 +198,19 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
         ),
       ),
     )) + $form;
+}
+
+function livingstone_browse_catalogue_form_download_markup() {
+  $pdf_files = file_create_url(file_build_uri('/Livingstone-Online-Complete-PDF-transcriptions.zip'));
+  $tei_files = file_create_url(file_build_uri('/Livingstone-Online-Complete-TEI-transcriptions.zip'));
+  $mods_files = file_create_url(file_build_uri('/Livingstone-Online-Complete-MODS-records.zip'));
+  return <<<EOT
+<div class="catalogue-download-links">
+  <div>Download complete:</div>
+  <div><a href="$pdf_files">PDF transcriptions</a> (general users)</div>
+  <div><a href="$tei_files">TEI transcriptions</a> <a href="$pdf_files">MODS Records</a></div>
+</div>
+EOT;
 }
 
 /**
