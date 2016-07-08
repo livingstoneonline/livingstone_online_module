@@ -183,7 +183,8 @@
         repository = new Facet('select[name="repository"]', settings.facets.repository),
         genre = new Facet('select[name="genre"]', settings.facets.genre),
         access = new Param('select[name="access"]', 'access', 'all'),
-        params = [ full_record, sort, order, page, access ],
+        limit = new Param('select[name="limit"]', 'limit', 'catalogue'),
+        params = [ full_record, sort, order, page, access, limit ],
         facets = [ year, range, creator, addressee, repository, genre ];
 
     /**
@@ -194,7 +195,7 @@
     function buildURL() {
       var uri = new URI(top.location);
       // Unset page & facets query arguments.
-      uri.removeSearch(['access', 'sort', 'order', 'page', 'full_record']);
+      uri.removeSearch(['access', 'sort', 'order', 'page', 'full_record', 'limit']);
       uri.removeSearch(/f\[*/);
       params.map(function (param) { return param.query() })
           .filter(function (param) { return param != null; })
@@ -333,6 +334,10 @@
     });
 
     access.field.change(function (event) {
+      rebuild();
+    });
+
+    limit.field.change(function (event) {
       rebuild();
     });
 

@@ -26,7 +26,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
   livingstone_browse_catalogue_form_ajax_hacks($form_state, $query);
   $full_record = livingstone_browse_catalogue_default_value('full_record', 0, $form_state);
   $results = livingstone_browse_catalogue_search($query, $form_state);
-  list($access, $creator, $addressee, $repository, $genre) = livingstone_browse_catalogue_facet_elements($results, $form_state);
+  list($access, $limit, $creator, $addressee, $repository, $genre) = livingstone_browse_catalogue_facet_elements($results, $form_state);
   $table = livingstone_browse_catalogue_table($results, !$full_record);
   list($year, $from, $to) = livingstone_browse_catalogue_facet_range_elements($query, $form_state);
   $pager = livingstone_browse_catalogue_pager($results);
@@ -87,6 +87,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
               'class' => array(
                 'img-rounded',
               ),
+              'placeholder' => 'Search full catalogue',
             ),
           ),
           'search' => array(
@@ -103,6 +104,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
             ),
           ),
         ),
+        'limit' => $limit,
         'full_record' => array(
           '#prefix' => '<div class="full-record">',
           '#suffix' => '</div>',
@@ -288,6 +290,9 @@ function livingstone_browse_catalogue_build_query(array $values) {
   if (isset($values['access'])) {
     $query['access'] = $values['access'];
   }
+  if (isset($values['limit'])) {
+    $query['limit'] = $values['limit'];
+  }
   $filter_query = livingstone_browse_catalogue_build_filter_query($values);
   if (!empty($filter_query)) {
     $query['f'] = $filter_query;
@@ -388,6 +393,20 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
       'download' => t('Download'),
       'both' => t('View & Download'),
       'neither' => t('No access available'),
+    ),
+    '#attributes' => array(
+      'class' => array(
+        'img-rounded'
+      ),
+    ),
+  );
+  $elements[] = array(
+    '#type' => 'select',
+    '#default_value' => livingstone_browse_catalogue_default_value('limit', 'catalogue', $form_state),
+    '#options' => array(
+      'catalogue' => t('Search catalogue only'),
+      'transcriptions' => t('Search transcriptions only'),
+      'both' => t('Search catalogue & transcriptions'),
     ),
     '#attributes' => array(
       'class' => array(
@@ -689,11 +708,24 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
       break;
   }
   $filter_query[] = "RELS_EXT_hasModel_uri_s:\"info:fedora/islandora:manuscriptCModel\"";
+  $limit = isset($values['limit']) ? $values['limit'] : (isset($_GET['limit']) ? $_GET['limit'] : 'catalogue');
+  switch($limit) {
+    case 'transcriptions':
+      $qf = 'tei^1.0';
+      break;
+    case 'both':
+      $qf = 'PID^1.0 title_t^1.0 date_mt creator_t addressee_t place_t genre_t repository_t copy_identifier_t otherVersion_t catalog_identifier_t master_id_t tei';
+      break;
+    case 'catalogue':
+    default:
+      $qf = 'PID^1.0 title_t^1.0 date_mt creator_t addressee_t place_t genre_t repository_t copy_identifier_t otherVersion_t catalog_identifier_t master_id_t';
+      break;
+  }
   return array(
     'fl' => livingstone_browse_catalogue_fl_search_parameter(),
     'fq' => $filter_query,
     'defType' => 'edismax',
-    'qf' => 'PID^1.0 title_t^1.0 date_mt creator_t addressee_t place_t genre_t repository_t copy_identifier_t otherVersion_t catalog_identifier_t master_id_t',
+    'qf' => $qf,
     'start' => livingstone_browse_catalogue_start_search_parameter($form_state),
     'rows' => LIVINGSTONE_BROWSE_CATALOGUE_LIMIT_RESULTS,
     'sort' => livingstone_browse_catalogue_sort_search_parameter($form_state),

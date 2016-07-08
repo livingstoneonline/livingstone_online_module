@@ -2,8 +2,7 @@
   padding: 21px 5px;
 }
 #livingstone-browse-catalogue-form input[type="text"] {
-  background: #f0ecec url("/sites/all/themes/nexus/images/search-button.png") no-repeat scroll left 1px;
-  background-repeat: no-repeat;
+  background: url('/sites/all/themes/lo/images/search-button.png') no-repeat 1px 1px #FFF;
   padding: 0 0 0 30px;
   border: 1px solid #d0d0d0;
   height: 25px;
@@ -19,6 +18,7 @@
   margin: 0.5em 0 0.5em;
   width: 90%;
 }
+#livingstone-browse-catalogue-form select[name="limit"],
 #livingstone-browse-catalogue-form select[name="creator"],
 #livingstone-browse-catalogue-form select[name="addressee"],
 #livingstone-browse-catalogue-form select[name="repository"],
