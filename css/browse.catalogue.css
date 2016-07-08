@@ -148,9 +148,9 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
 }
 .search-results th.other-versions-column,
 .search-results td.other-versions-column {
-  max-width: 240px !important;
-  min-width: 240px !important;
-  width: 240px !important;
+  max-width: 350px !important;
+  min-width: 350px !important;
+  width: 350px !important;
 }
 .search-results th.catalogue-number-column,
 .search-results td.catalogue-number-column {
