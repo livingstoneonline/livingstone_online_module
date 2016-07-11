@@ -275,7 +275,8 @@ a.fa-ban:hover {
   vertical-align: middle;
 }
 .catalogue-download-links {
-  padding: 2em;
+  padding: 2em 1em;
+  font-size: 0.80em;
 }
 .catalogue-download-links div:first-of-type {
   text-align: center;
