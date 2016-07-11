@@ -26,6 +26,9 @@
 #livingstone-browse-catalogue-form select[name="access"] {
   min-width: 100%;
 }
+#livingstone-browse-catalogue-form select[name="limit"] {
+  margin: 0.5em 0 0.25em;
+}
 .search-fields .full-record {
   margin: 10px 0;
 }
@@ -259,6 +262,9 @@ and (max-width : 1028px) {
    padding: 0 0 0 1em;
 }
 
+.search-block {
+  margin: 0 0 0.35em;
+}
 .search-block td:first-of-type {
   padding-right: 10px !important;
 }
