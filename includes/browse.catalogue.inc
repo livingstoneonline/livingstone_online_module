@@ -406,9 +406,9 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
     '#options' => array(
       'all' => t('Access'),
       'view' => t('View'),
-      'restricted' => t('Restricted'),
       'download' => t('Download'),
-      'both' => t('View & Download'),
+      'both' => t('View & download'),
+      'restricted' => t('Restricted'),
       'neither' => t('No access available'),
     ),
     '#attributes' => array(
