@@ -88,7 +88,15 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
         case 'text':
         case 'text_long':
         default:
-          $wrapper->{$field_name}->set($value);
+          if (is_array($value)) {
+            $wrapper->{$field_name} = array();
+            foreach ($value as $key => $val) {
+              $wrapper->{$field_name}->get($key)->set($val);
+            }
+          }
+          else {
+            $wrapper->{$field_name}->set($value);
+          }
           break;
       }
     }
@@ -449,9 +457,9 @@ function livingstone_node_import_field_settings() {
       'title' => t('Coordinates'),
       'description' => t('Coordinates'),
       'required' => FALSE,
-      'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_ONE,
+      'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_UNLIMITED,
       'solr' => array(
-        'field' => 'coordinates_s',
+        'field' => 'coordinates_ms',
       ),
     ),
     'tei' => array(
