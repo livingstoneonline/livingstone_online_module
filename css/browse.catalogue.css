@@ -165,7 +165,7 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
 /* Select Fields */
 #livingstone-browse-catalogue-form select {
   background: transparent;
-  padding: 0 3em 0 1em;
+  padding: 0 3em 0 0.5em;
   font-size: 14px;
   border: 1px solid #ccc;
   -webkit-appearance: none;
@@ -259,7 +259,7 @@ and (max-width : 1028px) {
   margin: 0 0.5em;
 }
 #livingstone-browse-catalogue-form .date-container select {
-   padding: 0 0 0 1em;
+   padding: 0 0 0 0.5em;
 }
 
 .search-block {
