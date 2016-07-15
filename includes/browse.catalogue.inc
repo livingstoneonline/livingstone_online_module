@@ -208,7 +208,7 @@ function livingstone_browse_catalogue_form_download_markup() {
   <div>Download complete:</div>
   <div><a href="$pdf_files">PDF transcriptions</a>(all users)</div>
   <div><a href="$tei_files">TEI transcriptions</a>(specialists)</div>
-  <div><a href="$pdf_files">MODS Records</a>(specialists)</div>
+  <div><a href="$mods_files">MODS Records</a>(specialists)</div>
 </div>
 EOT;
 }
