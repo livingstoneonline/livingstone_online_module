@@ -2,7 +2,7 @@
   padding: 21px 5px;
 }
 #livingstone-browse-catalogue-form input[type="text"] {
-  background: url('/sites/all/themes/lo/images/search-button.png') no-repeat 1px 1px #FFF;
+  background: url('../images/search-button.png') no-repeat 1px 1px #FFF;
   padding: 0 0 0 30px;
   border: 1px solid #d0d0d0;
   height: 25px;
