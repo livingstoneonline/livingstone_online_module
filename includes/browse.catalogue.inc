@@ -495,7 +495,7 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
     );
   }
   $rows = array();
-  $docs = $results['response']['docs'];
+  $docs = isset($results['response']['docs']) && is_array($results['response']['docs']) ? $results['response']['docs'] : array();
   foreach ($docs as $doc) {
     $row = array();
     foreach($fields as $field) {
