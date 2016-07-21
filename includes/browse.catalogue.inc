@@ -327,11 +327,14 @@ function livingstone_browse_catalogue_build_query(array $values) {
  */
 function livingstone_browse_catalogue_build_filter_query(array $values) {
   $filter_query = array();
-  $filter_query[] = livingstone_browse_catalogue_build_facet_field_filter_query('creator', $values['creator']);
-  $filter_query[] = livingstone_browse_catalogue_build_facet_field_filter_query('addressee', $values['addressee']);
-  $filter_query[] = livingstone_browse_catalogue_build_facet_field_filter_query('repository', $values['repository']);
-  $filter_query[] = livingstone_browse_catalogue_build_facet_field_filter_query('genre', $values['genre']);
-  $date_values = $values['year'] != 0 ? $values['year'] : array($values['from'], $values['to']);
+  $value = function($name) use ($values) {
+    return isset($values[$name]) ? $values[$name] : NULL;
+  };
+  $filter_query[] = livingstone_browse_catalogue_build_facet_field_filter_query('creator', $value('creator'));
+  $filter_query[] = livingstone_browse_catalogue_build_facet_field_filter_query('addressee', $value('addressee'));
+  $filter_query[] = livingstone_browse_catalogue_build_facet_field_filter_query('repository', $value('repository'));
+  $filter_query[] = livingstone_browse_catalogue_build_facet_field_filter_query('genre', $value('genre'));
+  $date_values = $value('year') ? $value('year') : array($value('from'), $value('to'));
   $filter_query[] = livingstone_browse_catalogue_build_facet_range_filter_query('date', $date_values);
   return array_filter($filter_query);
 }
@@ -504,11 +507,11 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
         $data = livingstone_browse_catalogue_view_link($doc);
         $data .= livingstone_browse_catalogue_download_link($doc);
       }
-      else if (is_array($doc[$solr_field])) {
+      else if (isset($doc[$solr_field]) && is_array($doc[$solr_field])) {
         $delimiter = isset($field['delimiter']) ? $field['delimiter'] : ';<br/>';
         $data = implode($delimiter, array_unique($doc[$solr_field]));
       }
-      else if (is_string($doc[$solr_field])) {
+      else if (isset($doc[$solr_field]) && is_string($doc[$solr_field])) {
         if (isset($field['split'])) {
           $split = $field['split'];
           $data = preg_replace("($split)", "$split<br/>", $doc[$solr_field]);
@@ -558,8 +561,9 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
 function livingstone_browse_catalogue_view_link($doc) {
   global $user;
   $pid = $doc['PID'];
-  $viewable = $doc['viewable_b'];
-  $hidden = $doc['hidden_b'] && !in_array('administrator', $user->roles);
+  $viewable = isset($doc['viewable_b']) ? $doc['viewable_b'] : FALSE;
+  $hidden = isset($doc['hidden_b']) ? $doc['hidden_b'] : TRUE;
+  $hidden = $hidden && !in_array('administrator', $user->roles);
   $attributes = array(
     'external' => FALSE,
     'query' => drupal_get_query_parameters() +
@@ -599,7 +603,7 @@ function livingstone_browse_catalogue_view_link($doc) {
  */
 function livingstone_browse_catalogue_download_link($doc) {
   $pid = $doc['PID'];
-  $downloadable = $doc['downloadable_b'];
+  $downloadable = isset($doc['downloadable_b']) ? $doc['downloadable_b'] : FALSE;
   $path = "islandora/object/$pid/datastream/ZIP/download";
   $attributes = array(
     'external' => FALSE,
@@ -820,6 +824,7 @@ function livingstone_browse_catalogue_display_fields() {
     array(
       'label' => t('Access'),
       'field' => 'PID',
+      'sort' => 'PID',
       'classes' => array('access-column'),
     ),
     array(
