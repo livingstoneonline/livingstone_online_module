@@ -60,14 +60,12 @@
     if (typeof page != "undefined") {
       url = url + '/' + page;
     }
-    $('body').prepend('<div class="livingstone-manuscript-viewer-wrapper"><iframe class="livingstone-manuscript-viewer" src="' + url + '"></iframe><div>');
-
-    $('body').addClass('viewer-open');
-    /*
-    $('.livingstone-manuscript-viewer-wrapper').bind('blur change click dblclick error focus focusin focusout hover keydown keypress keyup load mousedown mouseenter mouseleave mousemove mouseout mouseover mouseup resize scroll DOMMouseScroll select submit', function(event){
-      event.stopPropagation();
-    });*/
-
+    $.get('/livingstone-viewer-access/' + pid, function (data) {
+      if (data.viewable) {
+        $('body').prepend('<div class="livingstone-manuscript-viewer-wrapper"><iframe class="livingstone-manuscript-viewer" src="' + url + '"></iframe><div>');
+        $('body').addClass('viewer-open');
+      }
+    });
   }
 
   /**

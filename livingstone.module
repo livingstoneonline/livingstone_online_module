@@ -19,10 +19,17 @@ function livingstone_menu() {
       'page arguments' => array('livingstone_node_import_form'),
     ),
     'livingstone-viewer/%' => array(
-      'title' => 'Manuscript Viewer Test',
+      'title' => 'Manuscript Viewer',
       'access arguments' => array('access content'),
       'type' => MENU_NORMAL_ITEM,
       'page callback' => 'livingstone_manuscript_viewer',
+      'page arguments' => array(1),
+    ),
+    'livingstone-viewer-access/%' => array(
+      'title' => 'Manuscript Viewer',
+      'access arguments' => array('access content'),
+      'type' => MENU_NORMAL_ITEM,
+      'page callback' => 'livingstone_manuscript_viewer_access',
       'page arguments' => array(1),
     ),
     'livingstone-tei/%' => array(
@@ -193,3 +200,28 @@ function livingstone_preprocess_search_result(array &$variables) {
   }
 }
 
+
+function livingstone_manuscript_viewer_access($pid) {
+  $path_parts = parse_url(variable_get('islandora_solr_url', 'localhost:8080/solr'));
+  $solr = new Apache_Solr_Service($path_parts['host'], $path_parts['port'], $path_parts['path'] . '/');
+  $solr->setCreateDocuments(0);
+  $params = array(
+    'fl' => 'PID',
+    'defType' => 'edismax',
+    'fq' => array(
+      "viewable_b:true",
+      "RELS_EXT_hasModel_uri_s:\"info:fedora/islandora:manuscriptCModel\"",
+    ),
+    'start' => 0,
+    'rows' => 1,
+  );
+  try {
+    $results = $solr->search("PID:\"{$pid}\"", 0,1 , $params, 'GET');
+    $results = isset($results) ? json_decode($results->getRawResponse(), TRUE) : array();
+    $viewable = count($results['response']['docs']) == 1;
+    return drupal_json_output(array('viewable' => $viewable));
+  }
+  catch (Exception $e) {
+    return drupal_json_output(array('viewable' => FALSE));
+  }
+}
