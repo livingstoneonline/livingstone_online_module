@@ -25,6 +25,7 @@ function livingstone_fedora_import_overview_menu_task() {
     ),
     'ftp_settings_form' => drupal_get_form('livingstone_fedora_import_ftp_settings_form'),
     'update_tables_form' => drupal_get_form('livingstone_fedora_import_update_tables_form'),
+    'solr_reindex_form' => drupal_get_form('livingstone_fedora_import_solr_reindex_form'),
     'sync_form' => drupal_get_form('livingstone_fedora_import_sync_form'),
     'tables' => array(
       '#prefix' => '<div class="livingstone-import-fedora-tables">',
@@ -250,6 +251,46 @@ function livingstone_fedora_import_update_tables_form_submit(array $form, array 
 }
 
 /**
+ * Creates a form for updating the import tables.
+ *
+ * @param array $form
+ *   Drupal Form.
+ * @param array $form_state
+ *   Drupal Form state.
+ *
+ * @return array
+ *   Drupal form definition.
+ */
+function livingstone_fedora_import_solr_reindex_form(array $form, array &$form_state) {
+  return array(
+    'index' => array(
+      '#type' => 'fieldset',
+      '#title' => t('Re-Index Manuscripts in Solr'),
+      'last_modified' => array(
+        '#markup' => t('<p>The re-indexes manuscript objects in solr, needed for when pages get added to existing manuscripts.</p>'),
+      ),
+      'update' => array(
+        '#type' => 'submit',
+        '#value' => t('Re-Index'),
+      ),
+    ),
+  );
+}
+
+/**
+ * Submit the form.
+ *
+ * @param array $form
+ *   Drupal Form.
+ * @param array $form_state
+ *   Drupal Form state.
+ */
+function livingstone_fedora_import_solr_reindex_form_submit(array $form, array &$form_state) {
+  $batch = livingstone_fedora_import_reindex_manuscripts_batch();
+  batch_set($batch);
+}
+
+/**
  * Update the sync form.
  *
  * @param array $form
@@ -270,7 +311,7 @@ function livingstone_fedora_import_sync_form(array $form, array &$form_state) {
       ),
       'update' => array(
         '#type' => 'submit',
-        '#value' => t('Import Content'),
+        '#value' => t('Import All Content'),
       ),
     ),
   );
@@ -293,6 +334,10 @@ function livingstone_fedora_import_sync_form_submit(array $form, array &$form_st
   $batch = livingstone_fedora_import_update_objects_batch();
   batch_set($batch);
   $batch = livingstone_fedora_import_publish_objects_batch();
+  batch_set($batch);
+  $batch = livingstone_fedora_import_reindex_manuscripts_batch();
+  batch_set($batch);
+  $batch = livingstone_fedora_import_update_table_batch();
   batch_set($batch);
 }
 

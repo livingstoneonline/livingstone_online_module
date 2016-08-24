@@ -524,6 +524,7 @@ function livingstone_fedora_import_add_update_datastream_from_file(AbstractObjec
       $object[$dsid]->setContentFromFile($file_path, FALSE);
     }
   } catch (Exception $e){
+    watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
     return FALSE;
   }
   return TRUE;
@@ -660,7 +661,7 @@ function livingstone_fedora_import_add_manuscript($pid, $private, $files) {
   try {
     return $connection->repository->ingestObject($object);
   } catch (Exception $e) {
-    // No need to log the exception, the wrapper class handles that.
+    watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
     return FALSE;
   }
 }
@@ -711,7 +712,7 @@ function livingstone_fedora_import_add_manuscript_page($pid, $private, $files) {
   try {
     return $connection->repository->ingestObject($object);
   } catch (Exception $e) {
-    // No need to log the exception, the wrapper class handles that.
+    watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
     return FALSE;
   }
 }
@@ -757,7 +758,7 @@ function livingstone_fedora_import_add_manuscript_pdf($pid, $private, array $fil
   try {
     return $connection->repository->ingestObject($object);
   } catch (Exception $e) {
-    // No need to log the exception, the wrapper class handles that.
+    watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
     return FALSE;
   }
 }
@@ -803,7 +804,7 @@ function livingstone_fedora_import_add_illustrative($pid, $private, array $files
   try {
     return $connection->repository->ingestObject($object);
   } catch (Exception $e) {
-    // No need to log the exception, the wrapper class handles that.
+    watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
     return FALSE;
   }
 }
@@ -849,7 +850,7 @@ function livingstone_fedora_import_add_no_crop($pid, $private, array $files) {
   try {
     return $connection->repository->ingestObject($object);
   } catch (Exception $e) {
-    // No need to log the exception, the wrapper class handles that.
+    watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
     return FALSE;
   }
 }
@@ -891,6 +892,7 @@ function livingstone_fedora_import_make_private(AbstractObject $object) {
       $object['POLICY']->setContentFromFile($policy);
     }
   } catch(Exception $e) {
+    watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
     return FALSE;
   }
   return TRUE;
@@ -910,8 +912,29 @@ function livingstone_fedora_import_make_public(AbstractObject $object) {
     try {
       $object->purgeDatastream('POLICY');
     } catch (Exception $e) {
+      watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
       return FALSE;
     }
   }
   return TRUE;
+}
+
+/**
+ * Checks if the import tables are empty so that we don't run with empty data.
+ *
+ * @return bool
+ *   TRUE if tables are not empty FALSE otherwise.
+ */
+function livingstone_fedora_import_safe_to_run_batch() {
+  $local_count = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE, LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE_ALIAS)
+    ->countQuery()
+    ->execute()
+    ->fetchField();
+
+  $remote_count = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE, LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE_ALIAS)
+    ->countQuery()
+    ->execute()
+    ->fetchField();
+
+  return $local_count > 0 && $remote_count > 0;
 }

@@ -6,6 +6,33 @@
  */
 
 /**
+ * Gets an all the manuscript pids.
+ *
+ * @return array
+ *   An array of all manuscript pids.
+ */
+function livingstone_manuscripts() {
+  $query = <<<EOQ
+  PREFIX islandora-rels-ext: <http://islandora.ca/ontology/relsext#>
+  SELECT ?pid
+  FROM <#ri>
+  WHERE {
+    ?pid <fedora-model:state> <fedora-model:Active> ;
+         <fedora-model:hasModel> <info:fedora/islandora:manuscriptCModel> .
+  }
+  ORDER BY ?pid
+EOQ;
+  $tuque = islandora_get_tuque_connection();
+  $results = $tuque->repository->ri->sparqlQuery($query);
+  // Get rid of the "extra" info...
+  $map = function($result) {
+    return $result['pid']['value'];
+  };
+  $pids = array_map($map, $results);
+  return $pids;
+}
+
+/**
  * Gets an orderd list of all pages in the given manuscript.
  *
  * @param string $pid

@@ -5,8 +5,44 @@
  * Handles the importing of Fedora content from a FTP server.
  */
 
+require_once dirname(__FILE__) . '/utilities.inc';
 require_once dirname(__FILE__) . '/batch.inc';
 require_once dirname(__FILE__) . '/fedora.import.inc';
+
+/**
+ * Updates the import table.
+ *
+ * @return array
+ *   The batch definition.
+ */
+function livingstone_fedora_import_update_table_batch() {
+  return array(
+    'operations' => array(
+      array('livingstone_fedora_import_update_tables_batch_operation', array()),
+    ),
+    'finished' => 'livingstone_batch_finished',
+    'title' => t('Updating the Import table...'),
+    'init_message' => t('Preparing to update the import table...'),
+    'progress_message' => t('Time elapsed: @elapsed <br/>Estimated time remaining @estimate.'),
+    'error_message' => t('An error has occurred.'),
+    'file' => drupal_get_path('module', 'livingstone') . '/includes/fedora.import.batch.inc',
+  );
+}
+
+/**
+ * Updates the the import tables for both remote and local.
+ *
+ * @param array &$context
+ *   The batch context.
+ */
+function livingstone_fedora_import_update_tables_batch_operation(&$context) {
+  livingstone_start_batch_operation_iteration(range(0, 3), $context);
+  livingstone_set_progress_message($context, 'Waiting for Solr index to update...');
+  sleep(2);
+  if (livingstone_end_batch_operation_iteration($context, 1, 'Updated import table.')) {
+    livingstone_fedora_import_update_tables();
+  }
+}
 
 /**
  * Adds the given objects, or all missing objects if none given.
@@ -18,6 +54,9 @@ require_once dirname(__FILE__) . '/fedora.import.inc';
  *   The batch definition.
  */
 function livingstone_fedora_import_add_objects_batch(array $pids = NULL) {
+  if (!livingstone_fedora_import_safe_to_run_batch()) {
+    return array();
+  }
   $query = livingstone_fedora_import_add_objects_query();
   $filter_pids = !empty($pids);
   // Due to memory limitations we can only process 1000 at a time, the
@@ -104,7 +143,14 @@ function livingstone_fedora_import_add_object_batch_operation($pid, $type, $priv
           list($local_file) = $cache_info;
           $local_files[strtoupper($dsid)] = $local_file;
         }
-        if (livingstone_fedora_import_add_object($pid, $type, $private, $local_files)) {
+        $object_added = FALSE;
+        try {
+          $object_added = livingstone_fedora_import_add_object($pid, $type, $private, $local_files);
+        }
+        catch (Exception $e) {
+          watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
+        }
+        if ($object_added) {
           livingstone_exit_batch_operation($context, TRUE, 'Added object: @pid', array(
             '@pid' => $pid,
           ));
@@ -141,21 +187,6 @@ function livingstone_fedora_import_add_object_batch_operation($pid, $type, $priv
 }
 
 /**
- * Updates the the import tables for both remote and local.
- *
- * @param array &$context
- *   The batch context.
- */
-function livingstone_fedora_import_update_tables_batch_operation(&$context) {
-  livingstone_start_batch_operation_iteration(range(0, 3), $context);
-  livingstone_set_progress_message($context, 'Waiting for Solr index to update...');
-  sleep(2);
-  if (livingstone_end_batch_operation_iteration($context, 1, 'Updated import table.')) {
-    livingstone_fedora_import_update_tables();
-  }
-}
-
-/**
  * Removes the given objects, or all stale objects if none given.
  *
  * @param array $pids
@@ -165,6 +196,9 @@ function livingstone_fedora_import_update_tables_batch_operation(&$context) {
  *   The batch definition.
  */
 function livingstone_fedora_import_remove_objects_batch(array $pids = NULL) {
+  if (!livingstone_fedora_import_safe_to_run_batch()) {
+    return array();
+  }
   $query = livingstone_fedora_import_remove_objects_query(array('PID'));
   $removable_pids = $query->execute()->fetchCol(0);
   if (is_array($pids)) {
@@ -218,6 +252,9 @@ function livingstone_fedora_import_remove_object_batch_operation($pid, &$context
  *   The batch definition.
  */
 function livingstone_fedora_import_update_objects_batch(array $pids = NULL) {
+  if (!livingstone_fedora_import_safe_to_run_batch()) {
+    return array();
+  }
   $query = livingstone_fedora_import_update_objects_query(array('pid'));
   // we need to compare the datastreams checksums to determine what to update.
   foreach (livingstone_fedora_import_datastreams() as $dsid) {
@@ -296,7 +333,12 @@ function livingstone_fedora_import_update_object_batch_operation($pid, array $fi
     }
     // No download needed we are to remove the local datastream.
     if (empty($remote_file) && isset($object[$dsid])) {
-      $object->purgeDatastream($dsid);
+      try {
+        $object->purgeDatastream($dsid);
+      }
+      catch (Exception $e) {
+        watchdog(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
+      }
       livingstone_end_batch_operation_iteration($context, 1, 'Updated object: @pid', array(
         '@pid' => $pid
       ));
@@ -368,6 +410,9 @@ function livingstone_fedora_import_update_object_batch_operation($pid, array $fi
  *   The batch definition.
  */
 function livingstone_fedora_import_publish_objects_batch(array $pids = NULL) {
+  if (!livingstone_fedora_import_safe_to_run_batch()) {
+    return array();
+  }
   $query = livingstone_fedora_import_publish_objects_query(array('pid', 'private'));
   $filter_pids = !empty($pids);
   // Due to memory limitations we can only process 1000 at a time, the
@@ -432,4 +477,70 @@ function livingstone_fedora_import_publish_object_batch_operation($pid, $private
       livingstone_exit_batch_operation($context, FALSE, 'Failed to make Object: @pid public.', array('@pid' => $pid));
     }
   }
+}
+
+/**
+ * Re-index the manuscripts objects.
+ *
+ * @return array
+ *   The batch definition.
+ */
+function livingstone_fedora_import_reindex_manuscripts_batch() {
+  if (!livingstone_fedora_import_safe_to_run_batch()) {
+    return array();
+  }
+  $pids = livingstone_manuscripts();
+  $xml = simplexml_load_file('/opt/fedora/server/config/fedora-users.xml');
+  $info = array(
+    'url' => variable_get('islandora_base_url', 'http://localhost:8080/fedora') . 'gsearch/rest',
+    'user' => (string) $xml->user[0]->attributes()->name,
+    'password' => (string) $xml->user[0]->attributes()->password,
+  );
+  return array(
+    'operations' => array(
+      array('livingstone_fedora_import_reindex_manuscripts_batch_operation', array($pids, $info)),
+    ),
+    'finished' => 'livingstone_batch_finished',
+    'title' => t('Updating Objects indexes...'),
+    'init_message' => t('Preparing to update indexes...'),
+    'progress_message' => t('Time elapsed: @elapsed <br/>Estimated time remaining @estimate.'),
+    'error_message' => t('An error has occurred.'),
+    'file' => drupal_get_path('module', 'livingstone') . '/includes/fedora.import.batch.inc',
+  );
+}
+
+/**
+ * Batch operation for removing objects from Fedora.
+ *
+ * @param array $pids
+ *   The object identifiers to re-index.
+ * @param array $info
+ *   Connection information.
+ * @param array &$context
+ *   The batch context.
+ */
+function livingstone_fedora_import_reindex_manuscripts_batch_operation(array $pids, array $info, &$context) {
+  list($pos, $pid) = livingstone_start_batch_operation_iteration($pids, $context);
+  $group = array_slice($pids, $pos, 5);
+  foreach ($group as $pid) {
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_USERPWD, "{$info['user']}:{$info['password']}");
+    curl_setopt($ch, CURLOPT_URL, url($info['url'], array(
+      'absolute' => TRUE,
+      'query' => array(
+        'operation' => 'updateIndex',
+        'action' => 'fromPid',
+        'value' => $pid,
+      ),
+    )));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_exec($ch);
+    curl_close($ch);
+  }
+  livingstone_set_progress_message($context, 'Indexing @pid (@pos of @count)', array(
+    '@pid' => $pid,
+    '@pos' => $pos + count($group),
+    '@count' => count($pids),
+  ));
+  livingstone_end_batch_operation_iteration($context, count($group), 'Reindex Solr.');
 }
