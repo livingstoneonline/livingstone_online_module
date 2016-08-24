@@ -34,7 +34,8 @@ EOT;
   WHERE {
     ?pid <fedora-rels-ext:isMemberOf> <info:fedora/{$pid}> ;
          <islandora-rels-ext:isSequenceNumber> ?page ;
-         <fedora-model:state> <fedora-model:Active> .
+         <fedora-model:state> <fedora-model:Active> ;
+         <fedora-model:hasModel> <info:fedora/islandora:manuscriptPageCModel> .
     OPTIONAL {
       ?pid <fedora-view:disseminates> ?dss .
       ?dss <fedora-view:disseminationType> <info:fedora/*/JP2> .
@@ -100,6 +101,12 @@ function livingstone_saxon_transform_url(stdClass $source, $style, $params = arr
 
 /**
  * Pre-process the TEI prior to transformation.
+ *
+ * @param string $tei
+ *   The TEI Document to be transformed into HTML.
+ *
+ * @return string
+ *   The preprocessed TEI.
  */
 function livingstone_transform_preprocess_tei($tei) {
   $content = preg_replace('/<\?xml-model .*\?>/', '', $tei);

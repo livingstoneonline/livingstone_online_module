@@ -20,9 +20,48 @@ function livingstone_install() {
     $description = $settings['description'];
     $required = $settings['required'];
     $cardinality = $settings['cardinality'];
-    livingstone_add_field($manuscript, $field_type, $field_name, $title, $description, $required, $cardinality);
+    try {
+      livingstone_add_field($manuscript, $field_type, $field_name, $title, $description, $required, $cardinality);
+    }
+    catch (Exception $e) {
+      watchdog_exception('livingstone_install', $e);
+    }
   }
 }
+
+function livingstone_uninstall() {
+  module_load_include('inc', 'livingstone', 'includes/node.import');
+  node_types_rebuild();
+  $types = node_type_get_types();
+  $manuscript = $types['manuscript'];
+
+  $sql = 'SELECT nid FROM {node} n WHERE n.type = :type';
+  do {
+    set_time_limit(30);
+    $nids = db_select('node', 'n')
+      ->fields('n', array('nid'))
+      ->condition('n.type', 'manuscript')
+      ->extend('PagerDefault')
+      ->limit(500)
+      ->execute()
+      ->fetchCol(0);
+    node_delete_multiple($nids);
+  } while (!empty($nids));
+
+  set_time_limit(30);
+  $field_settings = livingstone_node_import_field_settings();
+  foreach (array_keys($field_settings) as $field_name) {
+    try {
+      livingstone_remove_field($manuscript, $field_name);
+    }
+    catch (Exception $e) {
+      watchdog_exception('livingstone_install', $e);
+    }
+  }
+  // Purge all field information.
+  field_purge_batch(1000);
+}
+
 
 /**
  * Creates a new text field.
@@ -42,6 +81,10 @@ function livingstone_create_field($field_type, $field_name, $cardinality = 1) {
       break;
   }
   field_create_field($field);
+}
+
+function livingstone_delete_field($field_name) {
+  field_delete_field($field_name);
 }
 
 /**
@@ -75,6 +118,15 @@ function livingstone_create_field_instance($field_name, $field_type, $node_type,
   field_create_instance($instance);
 }
 
+function livingstone_delete_field_instance($field_name, $node_type) {
+  $instance = array(
+    'field_name' => $field_name,
+    'entity_type' => 'node',
+    'bundle' => $node_type->type,
+  );
+  field_delete_instance($instance);
+}
+
 /**
  * Adds a text field to the given type, creating it if need be.
  */
@@ -86,5 +138,197 @@ function livingstone_add_field(stdClass $node_type, $field_type, $field_name, $l
   }
   if (empty($instance)) {
     livingstone_create_field_instance($field_name, $field_type, $node_type, $label, $description, $required);
+  }
+}
+
+function livingstone_remove_field(stdClass $node_type, $field_name) {
+  livingstone_delete_field($field_name);
+  livingstone_delete_field_instance($field_name, $node_type);
+}
+
+
+function livingstone_schema() {
+  module_load_include('inc', 'livingstone', 'includes/fedora.import');
+  $schema[LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE] = array(
+    'fields' => array(
+      'pid' => array(
+        'description' => 'The object identifier.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE
+      ),
+      'content_model' => array(
+        'description' => 'The content type to use when creating this object.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+      ),
+      'private' => array(
+        'description' => 'True if the image content is to be admin access only.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'type' => array(
+        'description' => "The type of object to create either ('manuscript','manuscript_page','no_crop','illustrative','additional_pdf')",
+        'type' => 'char',
+        'length' => 32,
+        'not null' => TRUE,
+      ),
+      'mods_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'mods_file' => array(
+        'description' => 'Full path to the file on remote ftp server.',
+        'type' => 'text',
+      ),
+      'obj_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'obj_file' => array(
+        'description' => 'Full path to the file on remote ftp server.',
+        'type' => 'text',
+      ),
+      'pdf_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'pdf_file' => array(
+        'description' => 'Full path to the file on remote ftp server.',
+        'type' => 'text',
+      ),
+      'tei_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'tei_file' => array(
+        'description' => 'Full path to the file on remote ftp server.',
+        'type' => 'text',
+      ),
+      'tn_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'tn_file' => array(
+        'description' => 'Full path to the file on remote ftp server.',
+        'type' => 'text',
+      ),
+      'txt_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'txt_file' => array(
+        'description' => 'Full path to the file on remote ftp server.',
+        'type' => 'text',
+      ),
+      'xmp_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'xmp_file' => array(
+        'description' => 'Full path to the file on remote ftp server.',
+        'type' => 'text',
+      ),
+      'zip_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'zip_file' => array(
+        'description' => 'Full path to the file on remote ftp server.',
+        'type' => 'text',
+      ),
+    ),
+    'primary key' => array('pid'),
+  );
+  $schema[LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE] = array(
+    'fields' => array(
+      'pid' => array(
+        'description' => 'The object identifier.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE
+      ),
+      'content_model' => array(
+        'description' => 'The content type to use when creating this object.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+      ),
+      'private' => array(
+        'description' => 'True if the image content is to be admin access only.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'type' => array(
+        'description' => "The type of object either ('manuscript','manuscript_page','no_crop','illustrative','additional_pdf')",
+        'type' => 'char',
+        'length' => 32,
+        'not null' => TRUE,
+      ),
+      'mods_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'obj_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'pdf_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'tei_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'tn_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'txt_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'xmp_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+      'zip_md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+      ),
+    ),
+    'primary key' => array('pid'),
+  );
+  return $schema;
+}
+
+function livingstone_update_7001() {
+  module_load_include('inc', 'livingstone', 'includes/fedora.import');
+  $schema = livingstone_schema();
+  if (!db_table_exists(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE)) {
+    db_create_table(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE, $schema[LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE]);
+  }
+  if (!db_table_exists(LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE)) {
+    db_create_table(LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE, $schema[LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE]);
   }
 }

@@ -10,13 +10,101 @@
  */
 function livingstone_menu() {
   return array(
-    'admin/islandora/livingstone/importer' => array(
-      'title' => 'Import Drupal Manuscript Nodes',
-      'access arguments' => array('administer content'),
+    'admin/islandora/livingstone/import/drupal' => array(
+      'title' => "Import Manuscript's into Drupal Nodes",
+      'description' => "Updates the Drupal content from Fedora, used by search and time line.",
+      'access arguments' => array('administer site configuration'),
       'type' => MENU_NORMAL_ITEM,
       'file' => 'includes/node.import.form.inc',
       'page callback' => 'drupal_get_form',
       'page arguments' => array('livingstone_node_import_form'),
+    ),
+    'admin/islandora/livingstone/import/fedora' => array(
+      'title' => 'Import content from Remote FTP into Local Fedora',
+      'description' => 'Updates and adds content from the FTP server into Fedora.',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_NORMAL_ITEM,
+      'file' => 'includes/fedora.import.form.overview.inc',
+      'page callback' => 'livingstone_fedora_import_overview_menu_task',
+    ),
+    'admin/islandora/livingstone/import/fedora/overview' => array(
+      'title' => 'Overview',
+      'description' => 'Updates and adds content from the FTP server into Fedora.',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_DEFAULT_LOCAL_TASK,
+      'file' => 'includes/fedora.import.form.overview.inc',
+      'page callback' => 'livingstone_fedora_import_overview_menu_task',
+      'weight' => -50,
+    ),
+    'admin/islandora/livingstone/import/fedora/local' => array(
+      'title' => 'Local objects',
+      'description' => 'Lists all the local objects.',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_LOCAL_TASK,
+      'file' => 'includes/fedora.import.form.local.inc',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_fedora_import_local_objects_form'),
+      'weight' => -40,
+    ),
+    'admin/islandora/livingstone/import/fedora/remote' => array(
+      'title' => 'Remote objects',
+      'description' => 'Lists all the remote objects.',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_LOCAL_TASK,
+      'file' => 'includes/fedora.import.form.remote.inc',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_fedora_import_remote_objects_form'),
+      'weight' => -30,
+    ),
+    'admin/islandora/livingstone/import/fedora/add' => array(
+      'title' => 'Add',
+      'description' => 'Allows the user to add new objects from the FTP.',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_LOCAL_TASK,
+      'file' => 'includes/fedora.import.form.add.inc',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_fedora_import_add_objects_form'),
+      'weight' => -20,
+    ),
+    'admin/islandora/livingstone/import/fedora/update' => array(
+      'title' => 'Update',
+      'description' => 'Allows the user to update existing objects from the FTP.',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_LOCAL_TASK,
+      'file' => 'includes/fedora.import.form.update.inc',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_fedora_import_update_objects_form'),
+      'weight' => 0,
+    ),
+    'admin/islandora/livingstone/import/fedora/remove' => array(
+      'title' => 'Remove',
+      'description' => 'Allows the user to remove stale objects from Fedora.',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_LOCAL_TASK,
+      'file' => 'includes/fedora.import.form.remove.inc',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_fedora_import_remove_objects_form'),
+      'weight' => 0,
+    ),
+    'admin/islandora/livingstone/import/fedora/publish' => array(
+      'title' => 'Publish / Conceal',
+      'description' => 'Allows the user to publish/hide objects in Fedora.',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_LOCAL_TASK,
+      'file' => 'includes/fedora.import.form.publish.inc',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_fedora_import_publish_objects_form'),
+      'weight' => 10,
+    ),
+    'admin/islandora/livingstone/import/fedora/errors' => array(
+      'title' => 'Error Log',
+      'description' => 'Lists any errors that have occurred during import.',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_LOCAL_TASK,
+      'file' => 'includes/fedora.import.form.error.inc',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_fedora_import_error_form'),
+      'weight' => 20,
     ),
     'livingstone-viewer/%' => array(
       'title' => 'Manuscript Viewer',
@@ -223,5 +311,18 @@ function livingstone_manuscript_viewer_access($pid) {
   }
   catch (Exception $e) {
     return drupal_json_output(array('viewable' => FALSE));
+  }
+}
+
+/**
+ * Implements hook_islandora_derivative_alter().
+ * @param array $derivatives
+ * @param AbstractObject $object
+ */
+function livingstone_islandora_derivative_alter(array &$derivatives, AbstractObject $object) {
+  foreach ($derivatives as $key => $derivative) {
+    if ($derivative['destination_dsid'] != 'JP2') {
+      unset($derivatives[$key]);
+    }
   }
 }

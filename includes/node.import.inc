@@ -11,6 +11,12 @@ define('LIVINGSTONE_NODE_IMPORT_SOLR_TIMESTAMP_FIELD', 'timestamp');
 
 /**
  * Works like node_load(), but takes a PID.
+ *
+ * @param string $pid
+ *   The Manuscript object's PID from which to load the node object.
+ *
+ * @return stdClass|bool
+ *   The node object if found, FALSE otherwise.
  */
 function livingstone_node_import_node_load($pid) {
   $query = new EntityFieldQuery();
@@ -26,6 +32,12 @@ function livingstone_node_import_node_load($pid) {
 
 /**
  * Works like node_load(), but takes a PID.
+ *
+ * @param string $pid
+ *   The Manuscript object's PID from which to load the node object.
+ *
+ * @return stdClass|bool
+ *   The node object if found, FALSE otherwise.
  */
 function livingstone_node_import_node_delete($pid) {
   $node = livingstone_node_import_node_load($pid);
@@ -36,15 +48,13 @@ function livingstone_node_import_node_delete($pid) {
 }
 
 /**
- */
-function livingstone_node_import_node_delete_all() {
-  $nids = db_query('SELECT nid FROM node WHERE type = :type', array(':type' => 'manuscript'))->fetchCol(0);
-  node_delete_multiple($nids);
-  return count($nids);
-}
-
-/**
  * Checks if the given $pid has already been imported.
+ *
+ * @param string $pid
+ *   The Manuscript object's PID from which to load the node object.
+ *
+ * @return bool
+ *   TRUE if the node identified by PID exists, FALSE otherwise.
  */
 function livingstone_node_import_node_imported($pid) {
   return livingstone_node_import_node_load($pid) != FALSE;
@@ -52,6 +62,16 @@ function livingstone_node_import_node_imported($pid) {
 
 /**
  * Creates a new node for the given attributes.
+ *
+ * @param string $type
+ *   The type of node to create.
+ * @param string $title
+ *   The title of the new node.
+ * @param array $fields
+ *   The properties to assign to the newly created node.
+ *
+ * @return stdClass|bool
+ *   The newly created node if successful, FALSE otherwise.
  */
 function livingstone_node_import_create_node($type, $title, array $fields) {
   $values = array(
@@ -68,39 +88,85 @@ function livingstone_node_import_create_node($type, $title, array $fields) {
 
 /**
  * Updates the given node with the given title and fields.
+ *
+ * @param stdClass $node
+ *   The node to update.
+ * @param string $title
+ *   The new title of the node.
+ * @param array $fields
+ *   The properties to update on the node.
+ *
+ * @return stdClass|bool
+ *   The updated node if successful, FALSE otherwise.
  */
 function livingstone_node_import_update_node($node, $title, array $fields) {
+  $save = FALSE;
   $wrapper = entity_metadata_wrapper('node', $node);
-  $wrapper->title->set($title);
+  if ($wrapper->title->value() != $title) {
+    $save = TRUE;
+    $wrapper->title->set($title);
+  }
   $field_settings = livingstone_node_import_field_settings();
   try {
     foreach ($fields as $field_name => $value) {
       $type = $field_settings[$field_name]['type'];
       switch ($field_settings[$field_name]['type']) {
+        case 'image':
+          $md5 = isset($value[0]) ? $value[0] : NULL;
+          $file = $wrapper->image->value();
+          if (!$file || md5_file($file['uri']) != $md5) {
+            $save = TRUE;
+            $object = islandora_object_load($fields['pid']);
+            if (isset($object['TN'])) {
+              $uri = file_create_filename($object['TN']->label, 'public://');
+              $object['TN']->getContent(drupal_realpath($uri));
+              $file = new stdClass();
+              $file->uid = 1;
+              $file->filename = $object['TN']->label;
+              $file->uri = $uri;
+              $file->filemime = $object['TN']->mimetype;
+              $file->filesize = filesize($uri);
+              $file->status = 1;
+              file_save($file);
+              $wrapper->image->file->set($file);
+            }
+          }
+          break;
         case 'date':
           $date = new DateTime($value);
-          $wrapper->raw()->{$field_name}[LANGUAGE_NONE][0] = array(
-            'value' => $date->format('Y-m-d\TH:i:s'),
-            'timezone' => 'UTC',
-            'timezone_db' => 'UTC',
-          );
+          $current_value = $wrapper->raw()->{$field_name}[LANGUAGE_NONE][0]['value'];
+          $new_value = $date->format('Y-m-d\TH:i:s');
+          if ($current_value != $new_value) {
+            $save = TRUE;
+            $wrapper->raw()->{$field_name}[LANGUAGE_NONE][0] = array(
+              'value' => $new_value,
+              'timezone' => 'UTC',
+              'timezone_db' => 'UTC',
+            );
+          }
           break;
         case 'text':
         case 'text_long':
         default:
           if (is_array($value)) {
-            $wrapper->{$field_name} = array();
-            foreach ($value as $key => $val) {
-              $wrapper->{$field_name}->get($key)->set($val);
+            $current_value = $wrapper->{$field_name}->raw();
+            if ($current_value != $value) {
+              $save = TRUE;
+              $wrapper->{$field_name}->set($value);
             }
           }
           else {
-            $wrapper->{$field_name}->set($value);
+            $current_value = $wrapper->{$field_name}->value();
+            if ($current_value != $value) {
+              $save = TRUE;
+              $wrapper->{$field_name}->set($value);
+            }
           }
           break;
       }
     }
-    return $wrapper->save()->raw();
+    // Return TRUE if saving was not needed.
+    return ($save) ? $wrapper->save()->raw() : $node;
   }
   catch(Exception $e) {
     watchdog_exception('livingstone', $e);
@@ -111,6 +177,9 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
 
 /**
  * Deletes the node identified by the given PID.
+ *
+ * @param string $pid
+ *   The Manuscript object's PID from which to identifier the node to delete.
  */
 function livingstone_node_import_delete_node($pid) {
   $node = livingstone_node_import_node_load($pid);
@@ -120,7 +189,14 @@ function livingstone_node_import_delete_node($pid) {
 }
 
 /**
- * Gets an associative list of nodes and their PID's.
+ * Gets an list of PID's which have nodes of the given type.
+ *
+ * @param string $type
+ *   The type of nodes to fetch the PID's from.
+ *
+ * @return array
+ *   An associative list of nodes where the keys are NID's and the values are
+ *   PID'S.
  */
 function livingstone_node_import_list_nodes($type = 'manuscript') {
   $results = db_query(
@@ -140,6 +216,10 @@ function livingstone_node_import_list_nodes($type = 'manuscript') {
 
 /**
  * Gets an associative list of nodes keyed by PID.
+ *
+ * @return array
+ *   A list of PID tha
+ *   PID'S.
  */
 function livingstone_node_import_list_pids() {
   $query = '*:*';
@@ -155,6 +235,13 @@ function livingstone_node_import_list_pids() {
 }
 
 /**
+ * Imports the given PID as a manuscript node.
+ *
+ * @param string $pid
+ *   The Manuscript object's PID.
+ *
+ * @return stdClass|bool
+ *   The node object if created, FALSE otherwise.
  */
 function livingstone_node_import($pid) {
   if (!islandora_object_load($pid)) {
@@ -168,6 +255,13 @@ function livingstone_node_import($pid) {
 }
 
 /**
+ * Update an existing node.
+ *
+ * @param string $pid
+ *   The Manuscript object's PID.
+ *
+ * @return stdClass|bool
+ *   The node object if created, FALSE otherwise.
  */
 function livingstone_node_import_update($pid) {
   if (!islandora_object_load($pid)) {
@@ -184,6 +278,15 @@ function livingstone_node_import_update($pid) {
   return livingstone_node_import_update_node($node, $title, $fields);
 }
 
+/**
+ * Queries Solr for import data and maps it to format in which can be imported.
+ *
+ * @param string $pid
+ *   The Manuscript object's PID.
+ *
+ * @return array|bool
+ *   The solr data prepared for import if successful, FALSE otherwise.
+ */
 function livingstone_node_import_solr_fetch_data($pid) {
   $query = isset($pid) ? "PID:\"$pid\"" : '*:*';
   $params = livingstone_node_import_query_solr_parameters();
@@ -200,6 +303,12 @@ function livingstone_node_import_solr_fetch_data($pid) {
 
 /**
  * Gets the title for a node from the given Solr result doc.
+ *
+ * @param array $doc
+ *   A solr result document.
+ *
+ * @return string
+ *   The title of object.
  */
 function livingstone_node_import_map_solr_doc_to_node_title(array $doc) {
   return isset($doc[LIVINGSTONE_NODE_IMPORT_SOLR_TITLE_FIELD]) ?
@@ -207,6 +316,13 @@ function livingstone_node_import_map_solr_doc_to_node_title(array $doc) {
 }
 
 /**
+ * Maps the given solr results to node fields.
+ *
+ * @param array $doc
+ *   A solr result document.
+ *
+ * @return array
+ *   The solr result values mapped to node fields.
  */
 function livingstone_node_import_map_solr_doc_to_node_fields(array $doc) {
   $fields = array();
@@ -227,6 +343,15 @@ function livingstone_node_import_map_solr_doc_to_node_fields(array $doc) {
 }
 
 /**
+ * Query solr for import data.
+ *
+ * @param string $query
+ *   The search query.
+ * @param array $params
+ *   The solr search parameters.
+ *
+ * @return array
+ *   The solr search results.
  */
 function livingstone_node_import_query_solr($query, $params) {
   $path_parts = parse_url(variable_get('islandora_solr_url', 'localhost:8080/solr'));
@@ -243,6 +368,15 @@ function livingstone_node_import_query_solr($query, $params) {
 }
 
 /**
+ * The solr search parameters to be used to fetch import data.
+ *
+ * @param int $start
+ *   The offset from which to return results.
+ * @param int $rows
+ *   The number of rows to return in the query.
+ *
+ * @return array
+ *   The solr search parameters.
  */
 function livingstone_node_import_query_solr_parameters($start = 0, $rows = 10000) {
   $fl = livingstone_node_import_solr_params_fl();
@@ -259,6 +393,9 @@ function livingstone_node_import_query_solr_parameters($start = 0, $rows = 10000
 
 /**
  * Gets the 'fl' parameter for solr searches when importing.
+ *
+ * @return string
+ *   The 'fl' parameter for solr searches used to import content into Drupal.
  */
 function livingstone_node_import_solr_params_fl() {
   $fl = array(LIVINGSTONE_NODE_IMPORT_SOLR_TITLE_FIELD);
@@ -272,6 +409,11 @@ function livingstone_node_import_solr_params_fl() {
 }
 
 /**
+ * Settings for importing data, maps solr content to node fields.
+ *
+ * @return array
+ *   An associative array where the keys correspond to fields and the values,
+ *   are settings for creating / populating that field.
  */
 function livingstone_node_import_field_settings() {
   return array(
@@ -301,6 +443,9 @@ function livingstone_node_import_field_settings() {
       'description' => t('Image'),
       'required' => FALSE,
       'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_ONE,
+      'solr' => array(
+        'field' => 'fedora_datastream_version_TN_MD5_ms',
+      ),
     ),
     'viewable' => array(
       'type' => 'list_boolean',
@@ -497,6 +642,13 @@ function livingstone_node_import_field_settings() {
 }
 
 /**
+ * Converts the given XML string to a plain string of only the XML text content.
+ *
+ * @param string $value
+ *   An XML document as a string.
+ *
+ * @return string
+ *   The extracted text from given XML document.
  */
 function livingstone_node_import_map_xml_to_text($value) {
   $value = is_array($value) ? reset($value) : $value;

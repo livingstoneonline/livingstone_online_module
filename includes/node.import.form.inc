@@ -2,9 +2,22 @@
 
 /**
  * @file
+ * Defines the form for importing content into Drupal from Fedora / Solr.
  */
 
+require_once dirname(__FILE__) . '/node.import.inc';
+require_once dirname(__FILE__) . '/node.import.batch.inc';
+
 /**
+ * The form for importing / removing nodes.
+ *
+ * @param array $form
+ *   Drupal Form.
+ * @param array $form_state
+ *   Drupal Form state.
+ *
+ * @return array
+ *   Drupal form definition.
  */
 function livingstone_node_import_form(array $form, array &$form_state) {
   return array(
@@ -51,7 +64,12 @@ function livingstone_node_import_form(array $form, array &$form_state) {
 }
 
 /**
- * @todo Document
+ * Validates that the given values are valid.
+ *
+ * @param array $form
+ *   Drupal Form.
+ * @param array $form_state
+ *   Drupal Form state.
  */
 function livingstone_node_import_form_validate(array $form, array &$form_state) {
   module_load_include('inc', 'livingstone', 'includes/node.import');
@@ -88,7 +106,12 @@ function livingstone_node_import_form_validate(array $form, array &$form_state) 
 }
 
 /**
- * @todo Document
+ * Deletes the given node identified by the given PID.
+ *
+ * @param array $form
+ *   Drupal Form.
+ * @param array $form_state
+ *   Drupal Form state.
  */
 function livingstone_node_import_form_remove_submit(array $form, array &$form_state) {
   module_load_include('inc', 'livingstone', 'includes/node.import');
@@ -98,21 +121,26 @@ function livingstone_node_import_form_remove_submit(array $form, array &$form_st
 }
 
 /**
- * @todo Document
+ * Deletes all the imported nodes.
+ *
+ * @param array $form
+ *   Drupal Form.
+ * @param array $form_state
+ *   Drupal Form state.
  */
 function livingstone_node_import_form_remove_all_submit(array $form, array &$form_state) {
   module_load_include('inc', 'livingstone', 'includes/node.import');
-  $count = livingstone_node_import_node_delete_all();
-  if (!$count) {
-    drupal_set_message(t('No nodes to delete.'), 'warning');
-  }
-  else {
-    drupal_set_message(t('Deleted %count nodes', array('%count' => $count)));
-  }
+  $batch = livingstone_node_import_remove_all_manuscript_nodes_batch();
+  batch_set($batch);
 }
 
 /**
- * @todo Document
+ * Import form submission handler creates / updates a single node.
+ *
+ * @param array $form
+ *   Drupal Form.
+ * @param array $form_state
+ *   Drupal Form state.
  */
 function livingstone_node_import_form_import_submit(array $form, array &$form_state) {
   module_load_include('inc', 'livingstone', 'includes/node.import');
@@ -145,7 +173,12 @@ function livingstone_node_import_form_import_submit(array $form, array &$form_st
 }
 
 /**
- * @todo Document
+ * Import form submission handler creates / updates a all nodes.
+ *
+ * @param array $form
+ *   Drupal Form.
+ * @param array $form_state
+ *   Drupal Form state.
  */
 function livingstone_node_import_form_import_all_submit(array $form, array &$form_state) {
   module_load_include('inc', 'livingstone', 'includes/node.import');

@@ -1,0 +1,12 @@
+.form-type-checkbox {
+  display: inline-block;
+  padding: 0.5em !important;
+}
+
+.form-type-textfield, .form-type-select {
+  display: inline-block;
+}
+
+.form-type-textfield {
+  margin-left: 1em !important;
+}
