@@ -138,6 +138,21 @@ function livingstone_menu_alter(&$items) {
     $search_item = &$items['islandora/search'];
     $search_item['page callback'] = 'livingstone_browse_catalogue';
   }
+  if (isset($items['islandora/object/%islandora_object'])) {
+    $view_object = &$items['islandora/object/%islandora_object'];
+    $view_object['page callback'] = 'livingstone_menu_object_view_redirect';
+    $view_object['page arguments'] = array(2);
+  }
+}
+
+/**
+ * Redirects islandora object to the catalogue page.
+ *
+ * @param AbstractObject $object
+ */
+function livingstone_menu_object_view_redirect(AbstractObject $object) {
+  $pid = preg_replace('/:/', '_', $object->id);
+  drupal_goto("islandora/search/{$pid}");
 }
 
 /**
