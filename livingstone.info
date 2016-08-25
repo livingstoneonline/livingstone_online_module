@@ -6,5 +6,6 @@ dependencies[] = islandora_basic_collection
 dependencies[] = islandora_solr
 dependencies[] = entity
 dependencies[] = date
+dependencies[] = apachesolr_search
 version = 7.x-dev
 core = 7.x

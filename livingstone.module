@@ -341,3 +341,41 @@ function livingstone_islandora_derivative_alter(array &$derivatives, AbstractObj
     }
   }
 }
+
+/**
+ * Implements hook_apachesolr_index_document_build().
+ */
+function livingstone_apachesolr_index_document_build($document, $entity, $entity_type) {
+  if ($entity_type == 'node' && $entity->type == 'manuscript') {
+    if (isset($entity->repository_shelfmark['und'][0]['value'])) {
+      $document->addField('ts_repository_shelfmark', $entity->repository_shelfmark['und'][0]['value']);
+    }
+    if (isset($entity->other_versions['und'][0]['value'])) {
+      $document->addField('ts_other_versions', $entity->other_versions['und'][0]['value']);
+    }
+    if (isset($entity->tei['und'][0]['value'])) {
+      $document->addField('ts_tei', $entity->tei['und'][0]['value']);
+    }
+  }
+}
+
+/**
+ * Implements hook_livingstone_apachesolr_query_alter().
+ */
+function livingstone_apachesolr_query_alter(DrupalSolrQueryInterface $query) {
+  if (isset($_GET['type'])) {
+    switch ($_GET['type']) {
+      case 'web':
+        $query->addFilter('bundle', 'section_page');
+        break;
+      case 'catalogue':
+        $query->addFilter('bundle', 'manuscript');
+        $query->replaceParam('qf', 'label^1.0 sm_project_id^1.0 sm_pid^1.0 sm_dates sm_creators^0.5 sm_addressees^0.5 sm_places_created sm_extent_pages sm_extent_size sm_genres sm_copy_of_item sm_catalogue_number ts_repository_shelfmark ts_other_versions dm_date_range_start dm_date_range_end');
+        break;
+      case 'transcriptions':
+        $query->addFilter('bundle', 'manuscript');
+        $query->replaceParam('qf', 'ts_tei^1.0');
+        break;
+    }
+  }
+}
