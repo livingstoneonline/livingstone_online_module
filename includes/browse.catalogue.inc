@@ -408,9 +408,11 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
     '#default_value' => livingstone_browse_catalogue_default_value('access', 'all', $form_state),
     '#options' => array(
       'all' => t('Access'),
-      'view' => t('View'),
+      'view' => t('View (any)'),
+      'transcription' => t('View (w/ Transcription)'),
+      'wo_transcription' => t('View (w/o Transcription)'),
       'download' => t('Download'),
-      'both' => t('View & download'),
+      'both' => t('View (any) & download'),
       'restricted' => t('Restricted'),
       'neither' => t('No access available'),
     ),
@@ -708,6 +710,20 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
       if ($hide) {
         $filter_query[] = "hidden_b:false";
       }
+      break;
+    case 'transcription':
+      $filter_query[] = "viewable_b:true";
+      if ($hide) {
+        $filter_query[] = "hidden_b:false";
+      }
+      $filter_query[] = "fedora_datastreams_ms:TEI";
+      break;
+    case 'wo_transcription':
+      $filter_query[] = "viewable_b:true";
+      if ($hide) {
+        $filter_query[] = "hidden_b:false";
+      }
+      $filter_query[] = "-fedora_datastreams_ms:TEI";
       break;
     case 'restricted':
       $filter_query[] = "hidden_b:true";
