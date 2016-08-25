@@ -430,6 +430,23 @@
         $('.transcription.icon').click(toggleTranscription);
       } else {
         $('.transcription.icon').addClass('disabled');
+        $('.transcription.icon').wrap("<span class='viewer-tooltip'></span>");
+        $('.transcription.icon').before("<span class='viewer-tooltip-text'>There is no transcription<br/> available for this item.</span>");
+        $('.viewer-tooltip').hover(function () {
+          var isTouch =  !!("ontouchstart" in window) || window.navigator.msMaxTouchPoints > 0;
+          if( !isTouch ){
+            $('.viewer-tooltip').addClass('hover');
+          }
+        }, function () {
+          $('.viewer-tooltip').removeClass('hover');
+        });
+        $('.viewer-tooltip').click(function () {
+          $('.viewer-tooltip').addClass('hover');
+          setTimeout(function () {
+            $('.viewer-tooltip').removeClass('hover');
+            $('.viewer-tooltip').blur();
+          }, 3000);
+        });
       }
 
       // Close
