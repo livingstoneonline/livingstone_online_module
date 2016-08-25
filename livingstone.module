@@ -279,6 +279,36 @@ function livingstone_theme() {
   );
 }
 
+function livingstone_apachesolr_process_results(&$results) {
+  global $user;
+  foreach ($results as &$result) {
+    if (isset($result['node'])) {
+      $node = $result['node'];
+      if ($node->bundle == 'manuscript') {
+        $node = node_load($node->entity_id);
+        $get_value = function ($field, $default) use ($node) {
+          return isset($node->{$field}[LANGUAGE_NONE][0]['value']) ?
+            $node->{$field}[LANGUAGE_NONE][0]['value'] :
+            $default;
+        };
+        $pid = $get_value('pid');
+        $viewable = $get_value('viewable');
+        if ($viewable) {
+          $result['link'] = url("islandora/search/\"$pid\"", array(
+            'absolute' => TRUE,
+            'query' => array(
+              'view_pid' => $pid,
+            ),
+          ));
+        }
+        else {
+          $result['link'] = url("islandora/search/\"$pid\"", array('absolute' => TRUE));
+        }
+      }
+    }
+  }
+}
+
 function livingstone_preprocess_search_result(array &$variables) {
   global $user;
   $result = &$variables['result'];
