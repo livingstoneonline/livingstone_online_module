@@ -118,7 +118,7 @@ function livingstone_skip_batch_operation_iteration(&$context, $count = 1, $mess
 /**
  * Continue working the current operation, do no increment progress indicator.
  *
- * @param array &$context
+ * @param &$context
  *   The context of this batch operation.
  * @param string $message
  *   The message to display to the user.
@@ -126,7 +126,7 @@ function livingstone_skip_batch_operation_iteration(&$context, $count = 1, $mess
  *   Values are used as parameters to t() and drupal_set_message() that will be
  *   displayed immediately.
  */
-function livingstone_continue_batch_operation(array &$context, $message = "", array $params = array()) {
+function livingstone_continue_batch_operation(&$context, $message = "", array $params = array()) {
   if (!empty($message)) {
     livingstone_set_progress_message($context, $message, $params);
   }
@@ -136,7 +136,7 @@ function livingstone_continue_batch_operation(array &$context, $message = "", ar
 /**
  * Quit the batch operation.
  *
- * @param array &$context
+ * @param &$context
  *   The context of this batch operation.
  * @param bool $success
  *   TRUE if the operation as a whole was successful, FALSE otherwise.
@@ -146,7 +146,7 @@ function livingstone_continue_batch_operation(array &$context, $message = "", ar
  *   Values are used as parameters to t() and drupal_set_message() that will be
  *   displayed when the batch is finished.
  */
-function livingstone_exit_batch_operation(array &$context, $success = FALSE, $message = "", $params = array()) {
+function livingstone_exit_batch_operation(&$context, $success = FALSE, $message = "", $params = array()) {
   $context['finished'] = 1;
   $success ?
     livingstone_log_batch_operation_success($context) :
@@ -159,20 +159,20 @@ function livingstone_exit_batch_operation(array &$context, $success = FALSE, $me
 /**
  * Logs that the current batch operation was successful.
  *
- * @param array &$context
+ * @param &$context
  *   The context of this batch operation.
  */
-function livingstone_log_batch_operation_success(array &$context) {
+function livingstone_log_batch_operation_success(&$context) {
   $context['results']['successful'] += 1;
 }
 
 /**
  * Logs that the current batch operation failed.
  *
- * @param array &$context
+ * @param &$context
  *   The context of this batch operation.
  */
-function livingstone_log_batch_operation_failed(array &$context) {
+function livingstone_log_batch_operation_failed(&$context) {
   $context['results']['failed'] += 1;
 }
 
@@ -185,7 +185,7 @@ function livingstone_log_batch_operation_failed(array &$context) {
  * @param array $context
  *   The batch context.
  */
-function &livingstone_batch_operation_cache(array &$context) {
+function &livingstone_batch_operation_cache(&$context) {
   return $context['sandbox']['cache'];
 }
 
@@ -197,14 +197,14 @@ function &livingstone_batch_operation_cache(array &$context) {
  * @param array $context
  *   The context of this batch operation.
  */
-function livingstone_batch_track_file(stdClass $file, array &$context) {
+function livingstone_batch_track_file(stdClass $file, &$context) {
   $context['results']['files'][$file->fid] = $file;
 }
 
 /**
  * Set the progress message to display to the user.
  *
- * @param array &$context
+ * @param &$context
  *   The context of this batch operation.
  * @param string $message
  *   The message to display to the user.
@@ -212,7 +212,7 @@ function livingstone_batch_track_file(stdClass $file, array &$context) {
  *   Values are used as parameters to t() and drupal_set_message() that will be
  *   displayed immediately.
  */
-function livingstone_set_progress_message(array &$context, $message, array $params = array()) {
+function livingstone_set_progress_message(&$context, $message, array $params = array()) {
   $place_holders = array(
     '@progress' => $context['sandbox']['progress'],
     '@total' => $context['sandbox']['total'],
@@ -232,7 +232,7 @@ function livingstone_set_progress_message(array &$context, $message, array $para
  * @param array $context
  *   The context of this batch operation.
  */
-function livingstone_append_result_message(array &$context, $message, array $params = array()) {
+function livingstone_append_result_message(&$context, $message, array $params = array()) {
   $context['results']['messages'][] = array($message, $params);
 }
 

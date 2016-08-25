@@ -32,7 +32,7 @@ function livingstone_fedora_import_update_table_batch() {
 /**
  * Updates the the import tables for both remote and local.
  *
- * @param array &$context
+ * @param &$context
  *   The batch context.
  */
 function livingstone_fedora_import_update_tables_batch_operation(&$context) {
@@ -103,7 +103,7 @@ function livingstone_fedora_import_add_objects_batch(array $pids = NULL) {
  *   If the new object should be private or not.
  * @param array $files
  *   Description of files on the remote server to be downloaded.
- * @param array &$context
+ * @param &$context
  *   The batch context.
  */
 function livingstone_fedora_import_add_object_batch_operation($pid, $type, $private, array $files, &$context) {
@@ -225,7 +225,7 @@ function livingstone_fedora_import_remove_objects_batch(array $pids = NULL) {
  * @param string $pid
  *   The object identifier.
 
- * @param array &$context
+ * @param &$context
  *   The batch context.
  */
 function livingstone_fedora_import_remove_object_batch_operation($pid, &$context) {
@@ -314,7 +314,7 @@ function livingstone_fedora_import_update_objects_batch(array $pids = NULL) {
  *   The object identifier.
  * @param array $files
  *   The datastreams to update.
- * @param array &$context
+ * @param &$context
  *   The batch context.
  */
 function livingstone_fedora_import_update_object_batch_operation($pid, array $files, &$context) {
@@ -447,7 +447,7 @@ function livingstone_fedora_import_publish_objects_batch(array $pids = NULL) {
  *   The object identifier.
  * @param bool $private
  *   TRUE to change the the object to private, FALSE to change it to public.
- * @param array &$context
+ * @param &$context
  *   The batch context.
  */
 function livingstone_fedora_import_publish_object_batch_operation($pid, $private, &$context) {
@@ -516,7 +516,7 @@ function livingstone_fedora_import_reindex_manuscripts_batch() {
  *   The object identifiers to re-index.
  * @param array $info
  *   Connection information.
- * @param array &$context
+ * @param &$context
  *   The batch context.
  */
 function livingstone_fedora_import_reindex_manuscripts_batch_operation(array $pids, array $info, &$context) {
