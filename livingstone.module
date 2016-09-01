@@ -403,6 +403,14 @@ function livingstone_apachesolr_query_alter(DrupalSolrQueryInterface $query) {
   $transcriptions = in_array('transcriptions', $types);
   $web_only = $web && !$catalogue && !$transcriptions;
   $manuscript_only = !$web && ($catalogue || $transcriptions);
+  $none = !$web && !$catalogue && !$transcriptions;
+  if ($none) {
+    // Using abort_search causes Apache Solr to error, so we give an impossible
+    // query to prevent results.
+    // $query->abort_search = TRUE;
+    $query->addFilter('bundle', 'section_page');
+    $query->addFilter('bundle', 'manuscript');
+  }
   if ($web_only) {
     $query->addFilter('bundle', 'section_page');
   }
@@ -498,3 +506,4 @@ function theme_livingstone_form_search_block_search_type($variables) {
   }
   return '<div' . drupal_attributes($attributes) . '>' . (!empty($element['#children']) ? $element['#children'] : '') . '</div>';
 }
+
