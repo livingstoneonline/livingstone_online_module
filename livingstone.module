@@ -286,6 +286,9 @@ function livingstone_apachesolr_process_results(&$results) {
       $node = $result['node'];
       if ($node->bundle == 'manuscript') {
         $node = node_load($node->entity_id);
+        if (isset($node->alt_title[LANGUAGE_NONE][0]['value'])) {
+          $result['title'] = $node->alt_title[LANGUAGE_NONE][0]['value'];
+        }
         $get_value = function ($field, $default) use ($node) {
           return isset($node->{$field}[LANGUAGE_NONE][0]['value']) ?
             $node->{$field}[LANGUAGE_NONE][0]['value'] :
