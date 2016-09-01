@@ -128,6 +128,40 @@
   .depressed {
     background-color: #999;
   }
+  .viewer-tooltip .viewer-tooltip-text {
+    visibility: hidden;
+    font-size: 0.85em;
+    color: black;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1em;
+    position: absolute;
+    z-index: 1000;
+    box-sizing: initial;
+    border-color: black;
+    background: none repeat scroll 0 0 #eee;
+    top: 50px;
+    @media only screen and (max-width: 1146px) {
+      & {
+        top: 75px;
+      }
+    }
+    @media only screen and (max-width: 605px) {
+      & {
+        top: 110px;
+      }
+    }
+    @media only screen and (max-width: 583px) {
+      & {
+        top: 140px;
+      }
+    }
+  }
+
+  .viewer-tooltip.hover .viewer-tooltip-text {
+    visibility: visible;
+  }
+
   select.page-select {
     .border-radius;
     -webkit-appearance: none;
@@ -167,24 +201,4 @@
     top: 6px;
     right: 5px;
   }
-}
-
-.viewer-tooltip {
-}
-
-.viewer-tooltip .viewer-tooltip-text {
-  visibility: hidden;
-  background-color: slategray;
-  color: white;
-  text-align: center;
-  border-radius: 8px;
-  padding: 1em;
-  position: absolute;
-  z-index: 1000;
-  box-sizing: initial;
-  border-color: black;
-}
-
-.viewer-tooltip.hover .viewer-tooltip-text {
-  visibility: visible;
 }

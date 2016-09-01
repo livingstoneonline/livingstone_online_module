@@ -151,6 +151,38 @@
 #toolbar .depressed {
   background-color: #999;
 }
+#toolbar .viewer-tooltip .viewer-tooltip-text {
+  visibility: hidden;
+  font-size: 0.85em;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1em;
+  position: absolute;
+  z-index: 1000;
+  box-sizing: initial;
+  border-color: black;
+  background: none repeat scroll 0 0 #eee;
+  top: 50px;
+}
+@media only screen and (max-width: 1146px) {
+  #toolbar .viewer-tooltip .viewer-tooltip-text {
+    top: 75px;
+  }
+}
+@media only screen and (max-width: 605px) {
+  #toolbar .viewer-tooltip .viewer-tooltip-text {
+    top: 110px;
+  }
+}
+@media only screen and (max-width: 583px) {
+  #toolbar .viewer-tooltip .viewer-tooltip-text {
+    top: 140px;
+  }
+}
+#toolbar .viewer-tooltip.hover .viewer-tooltip-text {
+  visibility: visible;
+}
 #toolbar select.page-select {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -193,19 +225,4 @@
   order: 99;
   top: 6px;
   right: 5px;
-}
-.viewer-tooltip .viewer-tooltip-text {
-  visibility: hidden;
-  background-color: slategray;
-  color: white;
-  text-align: center;
-  border-radius: 8px;
-  padding: 1em;
-  position: absolute;
-  z-index: 1000;
-  box-sizing: initial;
-  border-color: black;
-}
-.viewer-tooltip.hover .viewer-tooltip-text {
-  visibility: visible;
 }
