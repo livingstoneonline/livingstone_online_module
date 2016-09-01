@@ -409,10 +409,14 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
     '#options' => array(
       'all' => t('Access'),
       'view' => t('View (any)'),
-      'transcription' => t('View (w/ Transcription)'),
-      'wo_transcription' => t('View (w/o Transcription)'),
-      'download' => t('Download'),
-      'both' => t('View (any) & download'),
+      'view_transcription' => t('View (w/ transcriptions)'),
+      'view_wo_transcription' => t('View (w/o transcriptions)'),
+      'download' => t('Download (any)'),
+      'download_transcription' => t('Download (w/ transcriptions)'),
+      'download_wo_transcription' => t('Download (w/o transcriptions)'),
+      'both' => t('View & download (any)'),
+      'both_transcription' => t('View & download (w/ transcriptions)'),
+      'both_wo_transcription' => t('View & download (w/o transcriptions)'),
       'restricted' => t('Restricted'),
       'neither' => t('No access available'),
     ),
@@ -711,14 +715,14 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
         $filter_query[] = "hidden_b:false";
       }
       break;
-    case 'transcription':
+    case 'view_transcription':
       $filter_query[] = "viewable_b:true";
       if ($hide) {
         $filter_query[] = "hidden_b:false";
       }
       $filter_query[] = "fedora_datastreams_ms:TEI";
       break;
-    case 'wo_transcription':
+    case 'view_wo_transcription':
       $filter_query[] = "viewable_b:true";
       if ($hide) {
         $filter_query[] = "hidden_b:false";
@@ -731,12 +735,36 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
     case 'download':
       $filter_query[] = "downloadable_b:true";
       break;
+    case 'download_transcription':
+      $filter_query[] = "downloadable_b:true";
+      $filter_query[] = "fedora_datastreams_ms:TEI";
+      break;
+    case 'download_wo_transcription':
+      $filter_query[] = "downloadable_b:true";
+      $filter_query[] = "-fedora_datastreams_ms:TEI";
+      break;
     case 'both':
       $filter_query[] = "viewable_b:true";
       $filter_query[] = "downloadable_b:true";
       if ($hide) {
         $filter_query[] = "hidden_b:false";
       }
+      break;
+    case 'both_transcription':
+      $filter_query[] = "viewable_b:true";
+      $filter_query[] = "downloadable_b:true";
+      if ($hide) {
+        $filter_query[] = "hidden_b:false";
+      }
+      $filter_query[] = "fedora_datastreams_ms:TEI";
+      break;
+    case 'both_wo_transcription':
+      $filter_query[] = "viewable_b:true";
+      $filter_query[] = "downloadable_b:true";
+      if ($hide) {
+        $filter_query[] = "hidden_b:false";
+      }
+      $filter_query[] = "-fedora_datastreams_ms:TEI";
       break;
     case 'neither':
       $filter_query[] = "viewable_b:false";
