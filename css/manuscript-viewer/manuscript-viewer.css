@@ -482,6 +482,25 @@ body.loading .modal {
   top: 6px;
   right: 5px;
 }
+.search-type {
+  text-align: left;
+  margin-top: 32px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.5em;
+  padding-left: 0.8em;
+  position: absolute;
+  width: 250px;
+  z-index: 1000;
+  box-sizing: border-box;
+  border-color: black;
+  border: 1px solid #d0d0d0;
+  color: #333;
+  font-size: 14px;
+}
+.search-type input {
+  margin: 0.5em;
+}
 #item-details {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

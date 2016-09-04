@@ -11,7 +11,7 @@
      * Represents the search form.
      * @type {string}
      */
-    var base = '#edit-search-block-form--2';
+    var base = 'form input[name="search_block_form"]';
 
     /**
      * Initialize the Livingstone Manuscript Viewer.
@@ -22,6 +22,9 @@
             $(base, document).once('livingstoneSearchForm', function () {
                 $(this).click(function() {
                     $('.search-type').show();
+                    setTimeout(function () {
+                        $('.search-type').hide();
+                    }, 10000);
                 });
                 $(document).click(function(event) {
                     if (!$(event.target).closest(base).length &&
