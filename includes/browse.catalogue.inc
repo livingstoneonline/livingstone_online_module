@@ -407,7 +407,7 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
     '#type' => 'select',
     '#default_value' => livingstone_browse_catalogue_default_value('access', 'all', $form_state),
     '#options' => array(
-      'all' => t('Access'),
+      'all' => t('Access options'),
       'view' => t('View (any)'),
       'view_transcription' => t('View (w/ transcriptions)'),
       'view_wo_transcription' => t('View (w/o transcriptions)'),
