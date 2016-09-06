@@ -444,7 +444,7 @@ function livingstone_node_import_field_settings() {
       'required' => FALSE,
       'cardinality' => LIVINGSTONE_FIELD_CARDINALITY_ONE,
       'solr' => array(
-        'field' => 'fedora_datastream_version_TN_MD5_ms',
+        'field' => 'fedora_datastream_latest_TN_MD5_ms',
       ),
     ),
     'viewable' => array(
