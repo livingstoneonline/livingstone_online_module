@@ -189,7 +189,9 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
           ),
         ),
         'top_pager' => array(
+          '#prefix' => '<div class="alt-scroll-instructions"><span class="scroll-instructions-left">‹ Left arrow key to scroll left</span><span class="scroll-instructions-right">Right arrow key to scroll right ›</span><div style="clear:both"></div></div><div class="pager-wrapper"><span class="scroll-instructions-left">‹ Left arrow key to scroll left</span>',
           '#markup' => $pager,
+          '#suffix' => '<span class="scroll-instructions-right">Right arrow key to scroll right ›</span><div style="clear:both"></div></div>',
         ),
         'table' => $table,
         'bottom_pager' => array(
