@@ -297,14 +297,21 @@ a.fa-ban:hover {
 .pager-wrapper .item-list {
   display: inline-block;
 }
-.scroll-instructions-left {
+.pager-wrapper .scroll-instructions-left {
   float: left;
 }
-.scroll-instructions-right {
+.pager-wrapper .scroll-instructions-right {
   float: right;
 }
 
+.alt-scroll-instructions {
+  text-align: center;
+}
 
+.alt-scroll-instructions span {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 
 @media screen and (max-width: 768px) {
   .scroll-instructions-left,
