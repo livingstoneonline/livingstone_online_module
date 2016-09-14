@@ -31,8 +31,8 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
   list($year, $from, $to) = livingstone_browse_catalogue_facet_range_elements($query, $form_state);
   $pager = livingstone_browse_catalogue_pager($results);
   $path = drupal_get_path('module', 'livingstone');
-  $scroll_left_msg = t('&larr; scroll in table: left arrow key');
-  $scroll_right_msg = t('scroll in table: right arrow key &rarr;');
+  $scroll_left_msg = t('&larr; click in table, left arrow key');
+  $scroll_right_msg = t('click in table, right arrow key &rarr;');
   return array(
     '#prefix' => '<div id="form_wrapper">',
     '#suffix' => '</div>',
@@ -191,9 +191,9 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
           ),
         ),
         'top_pager' => array(
-          '#prefix' => "<div class='pager-wrapper'><span class='scroll-instructions-left'>{$scroll_left_msg}</span>",
+          '#prefix' => "<div id='scroll-instructions'><div class='pager-wrapper'><span class='scroll-instructions-left'>{$scroll_left_msg}</span>",
           '#markup' => $pager,
-          '#suffix' => "<span class='scroll-instructions-right'>{$scroll_right_msg}</span><div style='clear:both'></div></div><div class='alt-scroll-instructions'><span class='scroll-instructions-left'>{$scroll_left_msg}</span><span class='scroll-instructions-right'>{$scroll_right_msg}</span><div style='clear:both'></div></div>",
+          '#suffix' => "<span class='scroll-instructions-right'>{$scroll_right_msg}</span><div style='clear:both'></div></div><div class='alt-scroll-instructions'><span class='scroll-instructions-left'>{$scroll_left_msg}</span><span class='scroll-instructions-right'>{$scroll_right_msg}</span><div style='clear:both'></div></div></div>",
         ),
         'table' => $table,
         'bottom_pager' => array(

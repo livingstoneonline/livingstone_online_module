@@ -342,3 +342,8 @@ a.fa-ban:hover {
     display: inline-block;
   }
 }
+
+.hide-instructions .scroll-instructions-left,
+.hide-instructions .scroll-instructions-right {
+  display: none !important;
+}

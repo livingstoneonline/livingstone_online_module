@@ -269,8 +269,43 @@
     }
 
     /**
+     * Checks if the search results table has overflowed.
+     *
+     * @returns {boolean}
+     */
+    function isSearchResultsOverflowed() {
+      var search_results = $('.search-results');
+      var scrollWidth = search_results.get(0).scrollWidth;
+      var width = search_results.width();
+      return width < scrollWidth;
+    }
+
+    /**
+     * Toggle the display of the scroll instructions.
+     */
+    function toggleScrollInstructionsDisplay() {
+      if (!isSearchResultsOverflowed()) {
+        $('#scroll-instructions').addClass('hide-instructions');
+      }
+      else {
+        $('#scroll-instructions').removeClass('hide-instructions');
+      }
+    }
+
+    /**
      * Initialization.
      */
+
+    // Toggle the display of scroll instructions depending.
+    toggleScrollInstructionsDisplay();
+
+    $(window).resize(function () {
+      toggleScrollInstructionsDisplay();
+    });
+
+    $(window).on("orientationchange", function(event) {
+      toggleScrollInstructionsDisplay();
+    });
 
     // Rebuild sort links (Ajax rebuild's can lead to an incorrect URL).
     sort_links.each(function () {
@@ -315,6 +350,7 @@
     full_record.field.change(function (event) {
       var checked = $(this).is(':checked');
       toggleCollapsibleColumns(checked);
+      toggleScrollInstructionsDisplay();
       updateURL('full_record', checked ? 1 : 0);
     });
 
