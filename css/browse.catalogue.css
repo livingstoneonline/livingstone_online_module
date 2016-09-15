@@ -50,7 +50,7 @@
 }
 
 /* Search Results Table */
-.mock-pager {
+.hide-instructions .mock-pager {
   height: 22px;
 }
 .search-results {
