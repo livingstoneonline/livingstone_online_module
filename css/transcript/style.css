@@ -150,19 +150,21 @@ p span.pb-title{
 	height:0px;
 	margin-left:9%;
 	margin-right:9%;
+	margin-top:-.5em;
+	margin-bottom:-.5em;
 	padding:0px;
 }
 .line{
 	border-bottom:1px solid #d0d0d0;
 	display:block;
-	width:75% !important;
+	width:65% !important;
 	margin-left:9%;
 	text-align:left;
 }
 .doubleline{
 	border-top: 4px double #8c8b8b;
 	display:block;
-	width:75% !important;
+	width:65% !important;
 	margin-left:9%;
 	text-align:left;
 }
@@ -170,7 +172,7 @@ p span.pb-title{
 	border-top: 4px double #8c8b8b;
 	line-height:1.9em;
 	display:block;
-	width:75% !important;
+	width:65% !important;
 	margin-left:9%;
 	text-align:left;
 }
@@ -259,6 +261,10 @@ p{
 .overwritten{
 	text-decoration:line-through;
 }
+.del-by-over-text{
+	color:gray;
+	text-decoration:line-through;
+}
 
 
 /* 7. Unclear, gap, space */
@@ -286,15 +292,15 @@ p{
 
 .sic,
 .corr{
-	border-bottom:1px red dotted
+	border-bottom:2px #B33B24 dotted
 }
 .orig,
 .reg{
-	border-bottom:1px green dotted
+	/*border-bottom:1px green dotted*/
 }
 .abbr,
 .expan{
-	border-bottom:1px blue dotted
+	border-bottom:1px green dotted
 }
 .expan{
 	display:none;
@@ -329,7 +335,7 @@ p{
 	font-size:120%;
 }
 .overtext{
-	color:gray;
+	/*color:gray;*/
 }
 .right{
 	text-indent:0;
@@ -345,16 +351,16 @@ p{
 	text-decoration:underline;
 }
 .upsidedown{
-	-ms-transform:rotate(180deg); /* IE 9 */
-	-moz-transform:rotate(180deg); /* Firefox */
-	-webkit-transform:rotate(180deg); /* Safari and Chrome */
-	-o-transform:rotate(180deg); /* Opera */
+	/*-ms-transform:rotate(180deg);*/ /* IE 9 */
+	/*-moz-transform:rotate(180deg);*/ /* Firefox */
+	/*-webkit-transform:rotate(180deg);*/ /* Safari and Chrome */
+	/*-o-transform:rotate(180deg);*/ /* Opera */
 }
 .vertical{
-	-ms-transform:rotate(90deg); /* IE 9 */
-	-moz-transform:rotate(90deg); /* Firefox */
-	-webkit-transform:rotate(90deg); /* Safari and Chrome */
-	-o-transform:rotate(90deg); /* Opera */
+	/*-ms-transform:rotate(90deg);*/ /* IE 9 */
+	/*-moz-transform:rotate(90deg);*/ /* Firefox */
+	/*-webkit-transform:rotate(90deg);*/ /* Safari and Chrome */
+	/*-o-transform:rotate(90deg);*/ /* Opera */
 }
 
 
@@ -440,7 +446,7 @@ p{
 	color:purple;
 }
 .red{
-	color:red;
+	color:#B33B24;
 }
 .yellow{
 	color:yellow;
@@ -469,10 +475,27 @@ td{
 /* 12. Misc */
 .figfigDesc{
 	color:gray;
+	font-style:italic;
+	font-size:.8em;
+}
+.figure{
+	margin-left:9%;
+}
+.figHead{
+	display:inline-block;
+}
+.p .figure,
+.p.noindent .figure,
+.ab .figure{
+	margin-left:0px !important;
 }
 .metamark{
 	color:gray;
+	margin-left:9%;
+	border-bottom:1px gray dotted;
 }
-.quote{
-	display:block;
+p .metamark{
+	margin-left:0px !important;
+	text-indent:0px !important;
 }
+
