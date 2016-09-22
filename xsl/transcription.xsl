@@ -188,6 +188,7 @@
 				<xsl:when test="../corr/app/rdg">
 					<xsl:value-of select="../corr/app/rdg[1]"/> [or] <xsl:value-of select="../corr/app/rdg[2]"/>
 				</xsl:when>
+				<xsl:when test="../corr[not(text())]">[no text]</xsl:when>
 				<xsl:otherwise>
 					<xsl:value-of select="../corr"/>
 				</xsl:otherwise>
