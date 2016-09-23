@@ -57,7 +57,6 @@
 			<!--<h2>
         <xsl:value-of select="//teiHeader//title[2]"/>
 			</h2>-->
-		<span class="idno"><xsl:value-of select="//idno[@type='LEAP-ID']"/> - project id</span><br/><br/>
 			<div class="TEI">
 				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 				<xsl:choose>
@@ -481,10 +480,6 @@
 		<xsl:element name="{concat('h', $num)}">
 			<xsl:apply-templates select="@*|node()"/>
 		</xsl:element>
-	</xsl:template>
-
-	<xsl:template match="idno[@type='LEAP-ID']">
-		<span class="idno"><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="list/item">
