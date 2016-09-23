@@ -17,6 +17,8 @@ Table of Contents
 
 * /
 
+
+
 /* 1. Textual divisions */
 
 div.transcription{
@@ -36,6 +38,7 @@ div.transcription{
 .body{
 	display:block;
 	padding-bottom:2.4em;
+	padding-top:.5em;
 }
 .front,
 .back{
@@ -46,7 +49,7 @@ div.transcription{
 .idno{
 	font-size:.9em;
 	color:gray;
-	margin-left:50%;
+	margin-left:60%;
 }
 
 /* 2. Letters */
