@@ -55,7 +55,8 @@ div.transcription{
 /* 2. Letters */
 
 .opener,
-.closer{
+.closer,
+.trailer{
 	margin-left:9%;
 	margin-bottom:0px;
 }
