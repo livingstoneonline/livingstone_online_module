@@ -198,10 +198,8 @@
 			<!--<xsl:if test="../corr">
 				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="../corr"/></xsl:attribute>
 			</xsl:if>-->
-			<xsl:copy>
-			<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
-			</xsl:copy>
-		<span class="sic diplomatic">	
+		<span class="sic diplomatic">
+			<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>	
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
