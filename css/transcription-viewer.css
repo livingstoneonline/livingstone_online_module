@@ -1,0 +1,89 @@
+/* Debug */
+
+@media only screen
+and (min-width : 1080px) {
+  #transcription-viewer {
+    width: 120%;
+    margin: 0 0 0 -10%;
+  }
+}
+@media only screen
+and (min-width : 1200px) {
+  #transcription-viewer {
+    width: 140%;
+    margin: 0 0 0 -20%;
+  }
+}
+
+#transcription-viewer div {
+  box-sizing: border-box;
+}
+
+#transcription-viewer div.pane {
+  border: 1px solid black;
+}
+
+#transcription-viewer div.transcription-viewer-content div {
+  border: none;
+}
+
+#transcription-viewer div.pane {
+  display: inline-block;
+  width: 50%;
+}
+
+#transcription-viewer div.pane:last-of-type {
+  left: 50%;
+}
+
+@media only screen
+and (max-width : 766px) {
+  #transcription-viewer div.pane:first-child {
+    width: 100%;
+  }
+  #transcription-viewer div.pane:last-child {
+    display: none;
+  }
+}
+
+.transcription-viewer-toolbar {
+  display: block;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 0.5em;
+}
+
+.transcription-viewer-toolbar select.form-select {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 25px;
+  padding: 0 1.5em 0 1em;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  background: url(../images/select-arrow.png) no-repeat #eee;
+  background-size: 1em;
+  background-position: right;
+  cursor: pointer;
+}
+
+.transcription-viewer-toolbar select.transcript {
+  margin-right: 20px;
+}
+
+.transcription-viewer-content {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.transcription-viewer-content iframe {
+  display: block;
+  width: 100%;
+  height: 600px;
+}

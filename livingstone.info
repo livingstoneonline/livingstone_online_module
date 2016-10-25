@@ -8,5 +8,6 @@ dependencies[] = entity
 dependencies[] = date
 dependencies[] = apachesolr_search
 dependencies[] = leap_xslt
+dependencies[] = double_field
 version = 7.x-dev
 core = 7.x

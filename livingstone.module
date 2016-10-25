@@ -1,6 +1,6 @@
 <?php
 
- /**
+/**
  * @file
  * An viewer for manuscripts with a TEI datastream.
  */
@@ -710,4 +710,108 @@ function livingstone_spectral_create_jp2_derivative(AbstractObject $object, $for
     file_unmanaged_delete($derivative_file);
     return $to_return;
   }
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function livingstone_field_formatter_info() {
+  return array(
+    'transcript_formatter' => array(
+      'label' => t('Transcript Display'),
+      'field types' => array('double_field'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function livingstone_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  module_load_include('inc', 'livingstone', 'includes/utilities');
+  $transcriptions = array(
+    '#prefix' => '<div id="transcripts">',
+    '#suffix' => '</div>',
+  );
+  $documents = array();
+  foreach ($items as $item) {
+    $value = preg_replace('/liv_/', 'liv:', $item['first']);
+    $documents[$value] = $item['second'];
+  }
+  $module_path = drupal_get_path('module', 'livingstone');
+  drupal_add_css("$module_path/css/transcription-viewer.css");
+  drupal_add_js("$module_path/js/livingstone-transcriptions.js");
+  list($document) = each($documents);
+  list($second_document) = each($documents);
+  reset($documents);
+  $transcription_url = url("livingstone-tei/{$document}");
+  $second_transcription_url = isset($second_document) ?
+    url("livingstone-tei/{$second_document}") :
+    $transcription_url;
+  return array(
+    array(
+      'viewer' => array(
+        '#prefix' => '<div id="transcription-viewer">',
+        '#suffix' => '</div>',
+        'panels' => array(
+          array(
+            '#prefix' => '<div class="pane">',
+            '#suffix' => '</div>',
+            'toolbar' => array(
+              '#prefix' => '<div class="transcription-viewer-toolbar">',
+              '#suffix' => '</div>',
+              'transcription' => array(
+                '#type' => 'select',
+                '#attributes' => array(
+                  'class' => array('transcript')
+                ),
+                '#options' => $documents,
+                '#value' => $document,
+              ),
+              'page' => array(
+                '#type' => 'select',
+                '#attributes' => array(
+                  'class' => array('page')
+                ),
+                '#options' => array('Select a Date'),
+              ),
+            ),
+            'content' => array(
+              '#prefix' => '<div class="transcription-viewer-content">',
+              '#markup' => "<iframe src=\"{$transcription_url}\"></iframe>",
+              '#suffix' => '</div>',
+            ),
+          ),
+          array(
+            '#prefix' => '<div class="pane">',
+            '#suffix' => '</div>',
+            'toolbar' => array(
+              '#prefix' => '<div class="transcription-viewer-toolbar">',
+              '#suffix' => '</div>',
+              'transcription' => array(
+                '#type' => 'select',
+                '#attributes' => array(
+                  'class' => array('transcript')
+                ),
+                '#options' => $documents,
+                '#value' => isset($second_document) ? $second_document : $document,
+              ),
+              'page' => array(
+                '#type' => 'select',
+                '#attributes' => array(
+                  'class' => array('page')
+                ),
+                '#options' => array('Select a Date'),
+              ),
+            ),
+            'content' => array(
+              '#prefix' => '<div class="transcription-viewer-content">',
+              '#markup' => "<iframe src=\"{$second_transcription_url}\"></iframe>",
+              '#suffix' => '</div>',
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
 }
