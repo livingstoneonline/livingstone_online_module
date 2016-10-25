@@ -12,7 +12,7 @@ function template_process_livingstone_manuscript_html(array &$variables) {
   // Render out only those resources which are required for the transcript. Note
   // that only specific CSS / JS files will get loaded. Note that this must be
   // last as the other renders above may include some scripts.
-  $filter = function($data) {
+  $filter = function ($data) {
     $is_setting = $data['type'] == 'setting';
     $is_needed = is_string($data['data']) && (strpos($data['data'], "livingstone") !== FALSE);
     return $is_setting || $is_needed;
@@ -118,7 +118,7 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
     $xpath->registerNamespace('mods', 'http://www.loc.gov/mods/v3');
     $results = $xpath->query("/mods:mods/mods:relatedItem[@type='original' and //mods:roleTerm[@type='text' and text()='repository']]");
     $repository = $results->length > 0 ? $results->item(0) : NULL;
-    $fetch_fields = function($query, $context = NULL) use ($xpath) {
+    $fetch_fields = function ($query, $context = NULL) use ($xpath) {
       $fields = array();
       $results = $xpath->query($query, $context);
       foreach ($results as $result) {
@@ -135,7 +135,7 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
     }
     $credits = $fetch_fields("mods:accessCondition[@type='use and reproduction' and normalize-space()]", $repository);
     // Add hyper links.
-    foreach($credits as &$credit) {
+    foreach ($credits as &$credit) {
       $credit = preg_replace('(https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*))', '<a href="\0" target="_blank">\0</a>', $credit);
     }
     if (isset($manuscript['ZIP'])) {

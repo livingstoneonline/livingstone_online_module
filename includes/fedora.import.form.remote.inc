@@ -26,24 +26,8 @@ function livingstone_fedora_import_remote_objects_form(array $form, array &$form
     'TYPE',
     'PRIVATE',
     'CONTENT_MODEL',
-    'MODS_MD5',
-    'MODS_FILE',
-    'OBJ_MD5',
-    'OBJ_FILE',
-    'PDF_MD5',
-    'PDF_FILE',
-    'TEI_MD5',
-    'TEI_FILE',
-    'TN_MD5',
-    'TN_FILE',
-    'TXT_MD5',
-    'TXT_FILE',
-    'XMP_MD5',
-    'XMP_FILE',
-    'ZIP_MD5',
-    'ZIP_FILE',
   );
   $form = livingstone_fedora_import_objects_form($form, $form_state, $columns, LIVINGSTONE_REMOTE_OBJECT_FORM_SETTINGS);
-  $form['table'] = livingstone_fedora_import_objects_table(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE, LIVINGSTONE_REMOTE_OBJECT_FORM_SETTINGS);
+  $form['table'] = livingstone_fedora_import_objects_table(LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE, LIVINGSTONE_REMOTE_OBJECT_FORM_SETTINGS);
   return $form;
 }

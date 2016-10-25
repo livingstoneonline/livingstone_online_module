@@ -1,14 +1,18 @@
 <?php
 
 /**
- * @remote_file_path
+ * @file
+ * Helper functions for importing content into Fedora.
  */
 
-define('LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE', 'livingstone_fedora_remote_files');
-define('LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE', 'livingstone_fedora_local_files');
+define('LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE', 'livingstone_fedora_remote_objects');
+define('LIVINGSTONE_FEDORA_IMPORT_LOCAL_OBJECT_TABLE', 'livingstone_fedora_local_objects');
+define('LIVINGSTONE_FEDORA_IMPORT_REMOTE_DATASTREAM_TABLE', 'livingstone_fedora_remote_datastreams');
+define('LIVINGSTONE_FEDORA_IMPORT_LOCAL_DATASTREAM_TABLE', 'livingstone_fedora_local_datastreams');
 define('LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE_ALIAS', 'r');
 define('LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE_ALIAS', 'l');
 define('LIVINGSTONE_FEDORA_IMPORT_ERROR', 'livingstone_fedora_import');
+define('LIVINGSTONE_DATASTREAM_GENERATION_ERROR', 'livingstone_datastream_generation');
 
 /**
  * Returns the types of content which can be imported into Fedora from FTP.
@@ -47,6 +51,18 @@ function livingstone_fedora_import_types() {
       'title' => t('Manuscript Additional PDF(s)'),
       'content_model' => 'islandora:sp_pdf',
       'required_datastreams' => array('OBJ'),
+    ),
+    'spectral_manuscript' => array(
+      'title' => t('Spectral Manuscript(s)'),
+      'content_model' => 'livingstone:spectralManuscriptCModel',
+      'required_datastreams' => array('MODS'),
+      'optional_datastreams' => array('TEI', 'TN'),
+    ),
+    'spectral_manuscript_page' => array(
+      'title' => t('Spectral Manuscript Page(s)'),
+      'content_model' => 'livingstone:spectralManuscriptPageCModel',
+      'required_datastreams' => array(),
+      'optional_datastreams' => array('GIF', 'CROPPED_GIF', 'ZIP'),
     ),
   );
 }
@@ -90,6 +106,40 @@ function livingstone_fedora_import_datastream_info() {
       ),
       'POLICY' => array(
         'mime_type' => 'application/xml',
+      ),
+    ),
+    'livingstone:spectralManuscriptCModel' => array(
+      'DC' => array(
+        'mime_type' => 'application/xml',
+      ),
+      'MODS' => array(
+        'mime_type' => 'application/xml',
+      ),
+      'TN' => array(
+        'mime_type' => 'image/jpeg',
+      ),
+      'TEI' => array(
+        'mime_type' => 'application/xml',
+      ),
+    ),
+    'livingstone:spectralManuscriptPageCModel' => array(
+      'OBJ' => array(
+        'mime_type' => 'image/tiff',
+      ),
+      'JP2' => array(
+        'mime_type' => 'image/jp2',
+      ),
+      'TXT' => array(
+        'mime_type' => 'text/plain',
+      ),
+      'XMP' => array(
+        'mime_type' => 'application/xml',
+      ),
+      'ZIP' => array(
+        'mime_type' => 'application/zip',
+      ),
+      'GIF' => array(
+        'mime_type' => 'image/gif',
       ),
     ),
     'islandora:sp_large_image_cmodel' => array(
@@ -253,7 +303,8 @@ function livingstone_fedora_import_start_ftp_download($remote_file_path) {
   $ftp_server = variable_get('livingstone_ftp_server', 'agnes.unl.edu');
   $ftp_user = variable_get('livingstone_ftp_user', 'nbanks');
   $ftp_password = variable_get('livingstone_ftp_password', '');
-  $process_id = exec("curl -u '{$ftp_user}:{$ftp_password}' 'ftp://{$ftp_server}{$remote_file_path}' -o '$local_file_path' -# > '$output_file_path' 2>&1 & echo $!", $output);
+  $output = array();
+  $process_id = exec('curl -u ' . escapeshellarg("{$ftp_user}:{$ftp_password}") . ' ' . escapeshellarg("ftp://{$ftp_server}{$remote_file_path}") . ' -o ' . escapeshellarg("$local_file_path") . ' -# > ' . escapeshellarg($output_file_path) . ' 2>&1 & echo $!', $output);
 
   $local_file = new stdClass;
   $local_file->uid = $user->uid;
@@ -286,7 +337,7 @@ function livingstone_fedora_import_start_ftp_download($remote_file_path) {
 function livingstone_fedora_import_ftp_download_progress(stdClass $output_file) {
   $output_file_path = drupal_realpath($output_file->uri);
   $progress = exec("cat {$output_file_path} | stdbuf -oL tr '\r' '\n' | grep -o '[0-9]*\\.[0-9]'");
-  if (filter_var($progress, FILTER_VALIDATE_FLOAT)) {
+  if (filter_var($progress, FILTER_VALIDATE_FLOAT) !== FALSE) {
     return $progress;
   }
   return 0.0;
@@ -333,6 +384,77 @@ function livingstone_fedora_import_successful_ftp_download(stdClass $local_file,
 }
 
 /**
+ * Fetches the information required to add/update an object.
+ *
+ * @param string $pid
+ *   The PID of the object.
+ *
+ * @return array
+ *   An associative array of information.
+ */
+function livingstone_fedora_import_object_information($pid) {
+  $results = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE, 'r')
+    ->condition('r.PID', $pid, '=')
+    ->fields('r', array('pid', 'content_model', 'private', 'type'))
+    ->execute();
+  $info = $results->fetchAssoc();
+  $info['private'] = $info['private'] == '1' ? TRUE : FALSE;
+  $results = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_DATASTREAM_TABLE, 'r')
+    ->condition('r.PID', $pid, '=')
+    ->fields('r', array('pid', 'dsid', 'md5', 'file'))
+    ->execute();
+  foreach($results as $result) {
+    $info['datastreams'][$result->dsid] = array(
+      'md5' => $result->md5,
+      'file' => $result->file,
+    );
+  }
+  return $info;
+}
+
+/**
+ * Fetches the information required to add/update an object.
+ *
+ * @param string $pid
+ *   The PID of the object.
+ *
+ * @return array
+ *   An associative array of information.
+ */
+function livingstone_fedora_import_update_object_information($pid) {
+  $results = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE, 'r')
+    ->condition('r.PID', $pid, '=')
+    ->fields('r', array('pid', 'content_model', 'private', 'type'))
+    ->execute();
+  $info = $results->fetchAssoc();
+  $info['private'] = $info['private'] == '1' ? TRUE : FALSE;
+  $query = <<<EOT
+SELECT r.DSID AS dsid, r.MD5 AS md5, r.FILE AS file
+  FROM {livingstone_fedora_remote_datastreams} r
+  LEFT OUTER JOIN {livingstone_fedora_local_datastreams} AS l
+  ON l.PID = r.PID AND l.DSID = r.DSID
+  WHERE (l.MD5 <> r.MD5 AND r.PID = :pid)
+UNION ALL
+SELECT r.DSID AS dsid, r.MD5 AS md5, r.FILE AS file
+FROM {livingstone_fedora_remote_datastreams} r
+  WHERE r.DSID NOT IN (
+    SELECT l.DSID FROM {livingstone_fedora_local_datastreams} l WHERE l.PID = r.PID
+  )
+  AND r.PID IN (
+    SELECT l.PID FROM {livingstone_fedora_local_datastreams} l WHERE l.PID = r.PID
+  ) AND  r.PID = :pid;
+EOT;
+  $results = db_query($query, array(':pid' => $pid));
+  foreach($results as $result) {
+    $info['datastreams'][$result->dsid] = array(
+      'md5' => $result->md5,
+      'file' => $result->file,
+    );
+  }
+  return $info;
+}
+
+/**
  * Gets a list of all the objects which are missing from Fedora.
  *
  * @param array $fields.
@@ -351,10 +473,10 @@ function livingstone_fedora_import_add_objects_query(array $fields = array()) {
     $fields = array_unique($fields);
   }
 
-  $sub_query = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE, $local_table_alias);
+  $sub_query = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_OBJECT_TABLE, $local_table_alias);
   $sub_query->fields($local_table_alias, array('PID'));
 
-  $query = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE, $remote_table_alias);
+  $query = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE, $remote_table_alias);
   $query->fields($remote_table_alias, $fields);
   $query->condition("{$remote_table_alias}.PID", $sub_query, 'NOT IN');
   return $query;
@@ -379,10 +501,10 @@ function livingstone_fedora_import_remove_objects_query(array $fields = array())
     $fields = array_unique($fields);
   }
 
-  $sub_query = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE, $remote_table_alias);
+  $sub_query = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE, $remote_table_alias);
   $sub_query->fields($remote_table_alias, array('PID'));
 
-  $query = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE, $local_table_alias);
+  $query = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_OBJECT_TABLE, $local_table_alias);
   $query->fields($local_table_alias, $fields);
   $query->condition("$local_table_alias.PID", $sub_query, 'NOT IN');
 
@@ -407,11 +529,10 @@ function livingstone_fedora_import_update_objects_query(array $fields = array())
     array_push($fields, 'PID');
     $fields = array_unique($fields);
   }
-
-  $query = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE, $local_table_alias);
-  $query->leftJoin(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE, $remote_table_alias, "$local_table_alias.PID = $remote_table_alias.PID");
+  $query = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_OBJECT_TABLE, $local_table_alias);
+  $query->leftJoin(LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE, $remote_table_alias, "$local_table_alias.PID = $remote_table_alias.PID");
   $query->fields($remote_table_alias, $fields);
-  $query->where('NOT l.MODS_MD5 <=> r.MODS_MD5 OR NOT l.OBJ_MD5 <=> r.OBJ_MD5 OR NOT l.PDF_MD5 <=> r.PDF_MD5 OR NOT l.TEI_MD5 <=> r.TEI_MD5 OR NOT l.TN_MD5 <=> r.TN_MD5 OR NOT l.TXT_MD5 <=> r.TXT_MD5 OR NOT l.XMP_MD5 <=> r.XMP_MD5 OR NOT l.ZIP_MD5 <=> r.ZIP_MD5');
+  $query->where('NOT l.MD5 <=> r.MD5');
   return $query;
 }
 
@@ -433,8 +554,8 @@ function livingstone_fedora_import_publish_objects_query(array $fields = array()
     array_push($fields, 'PID');
     $fields = array_unique($fields);
   }
-  $query = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE, $local_table_alias);
-  $query->leftJoin(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE, $remote_table_alias, "$local_table_alias.PID = $remote_table_alias.PID");
+  $query = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_OBJECT_TABLE, $local_table_alias);
+  $query->leftJoin(LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE, $remote_table_alias, "$local_table_alias.PID = $remote_table_alias.PID");
   $query->fields($remote_table_alias, $fields);
   $query->where("$local_table_alias.PRIVATE != $remote_table_alias.PRIVATE");
   return $query;
@@ -512,9 +633,10 @@ function livingstone_fedora_import_add_update_datastream_from_file(AbstractObjec
   $datastream_info = $datastream_info[$content_model];
   try {
     if (empty($object[$dsid])) {
+      $dsid_suffix = preg_replace('/^.*_?([^_]*)$/U', '$1', $dsid);
       $datastream = $object->constructDatastream($dsid, 'M');
       $datastream->label = $filename;
-      $datastream->mimetype = $datastream_info[$dsid]['mime_type'];
+      $datastream->mimetype = $datastream_info[$dsid_suffix]['mime_type'];
       $datastream->checksumType = 'MD5';
       $datastream->versionable = TRUE;
       $datastream->setContentFromFile($file_path, FALSE);
@@ -523,7 +645,7 @@ function livingstone_fedora_import_add_update_datastream_from_file(AbstractObjec
     elseif ($object[$dsid]->checksum != $md5) {
       $object[$dsid]->setContentFromFile($file_path, FALSE);
     }
-  } catch (Exception $e){
+  } catch (Exception $e) {
     watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
     return FALSE;
   }
@@ -569,7 +691,7 @@ function livingstone_fedora_import_crosswalk_mods_to_dc($mods) {
 
 /**
  * Update the Dublin Core from the MODS.
- * 
+ *
  * @param AbstractObject $object
  *   The object to update.
  * @param mixed $mods
@@ -605,7 +727,7 @@ function livingstone_fedora_import_add_update_dublin_core($object, $mods) {
  *   TRUE if successful FALSE otherwise.
  */
 function livingstone_fedora_import_add_object($pid, $type, $private, array $files) {
-  switch($type) {
+  switch ($type) {
     case 'manuscript':
       return livingstone_fedora_import_add_manuscript($pid, $private, $files);
 
@@ -614,6 +736,12 @@ function livingstone_fedora_import_add_object($pid, $type, $private, array $file
 
     case 'manuscript_additional_pdf':
       return livingstone_fedora_import_add_manuscript_pdf($pid, $private, $files);
+
+    case 'spectral_manuscript':
+      return livingstone_fedora_import_add_spectral_manuscript($pid, $private, $files);
+
+    case 'spectral_manuscript_page':
+      return livingstone_fedora_import_add_spectral_manuscript_page($pid, $private, $files);
 
     case 'illustrative':
       return livingstone_fedora_import_add_illustrative($pid, $private, $files);
@@ -764,6 +892,95 @@ function livingstone_fedora_import_add_manuscript_pdf($pid, $private, array $fil
 }
 
 /**
+ * Adds a new spectral_manuscript object if possible.
+ *
+ * @param string $pid
+ *   The PID of the new object to create.
+ * @param $private
+ *   TRUE if the new object should be private or not.
+ * @param $files
+ *   An associative array where the keys are DSID's and the files are the
+ *   datastream content.
+ *
+ * @return mixed
+ *   The newly created object if successful, FALSE otherwise.
+ */
+function livingstone_fedora_import_add_spectral_manuscript($pid, $private, $files) {
+  $type = 'spectral_manuscript';
+  if (!livingstone_fedora_import_guard_add_object_does_not_exist($pid)) {
+    return FALSE;
+  }
+  if (!livingstone_fedora_import_guard_add_object_has_required_files('spectral_manuscript', $files)) {
+    return FALSE;
+  }
+  $types = livingstone_fedora_import_types();
+  $type_info = $types[$type];
+  $connection = islandora_get_tuque_connection();
+  $object = $connection->repository->constructObject($pid);
+  $object->owner = 'fedoraAdmin';
+  $object->models = $type_info['content_model'];
+  $object->label = livingstone_fedora_import_get_label($files['MODS']);
+  $object->relationships->add(FEDORA_RELS_EXT_URI, 'isMemberOfCollection', 'liv:root');
+  livingstone_fedora_import_add_update_dublin_core($object, $files['MODS']);
+  foreach ($files as $dsid => $file) {
+    livingstone_fedora_import_add_update_datastream_from_file($object, $dsid, $file);
+  }
+  try {
+    return $connection->repository->ingestObject($object);
+  } catch (Exception $e) {
+    watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
+    return FALSE;
+  }
+}
+
+/**
+ * Adds a new spectral_manuscript_page object if possible.
+ *
+ * @param string $pid
+ *   The PID of the new object to create.
+ * @param $private
+ *   TRUE if the new object should be private or not.
+ * @param $files
+ *   An associative array where the keys are DSID's and the files are the
+ *   datastream content.
+ *
+ * @return mixed
+ *   The newly created object if successful, FALSE otherwise.
+ */
+function livingstone_fedora_import_add_spectral_manuscript_page($pid, $private, $files) {
+  $type = 'spectral_manuscript_page';
+  if (!livingstone_fedora_import_guard_add_object_does_not_exist($pid)) {
+    return FALSE;
+  }
+  if (!livingstone_fedora_import_guard_add_object_has_required_files($type, $files)) {
+    return FALSE;
+  }
+  $types = livingstone_fedora_import_types();
+  $type_info = $types[$type];
+  $parent_pid = preg_replace('/^(liv:[0-9]{6})_[0-9]{4}$/', '\1', $pid);
+  $page = (int) preg_replace('/^liv:[0-9]{6}_([0-9]{4})$/', '\1', $pid);
+  $connection = islandora_get_tuque_connection();
+  $object = $connection->repository->constructObject($pid);
+  $object->owner = 'fedoraAdmin';
+  $object->models = $type_info['content_model'];
+  $object->label = $pid;
+  $object->relationships->add(FEDORA_RELS_EXT_URI, 'isMemberOf', $parent_pid);
+  $object->relationships->add(ISLANDORA_RELS_EXT_URI, 'isPageOf', $parent_pid);
+  $object->relationships->add(ISLANDORA_RELS_EXT_URI, 'isSequenceNumber', $page, TRUE);
+  $object->relationships->add(ISLANDORA_RELS_EXT_URI, 'isPageNumber', $page, TRUE);
+  $object->relationships->add(ISLANDORA_RELS_EXT_URI, 'isSection', '1', TRUE);
+  foreach ($files as $dsid => $file) {
+    livingstone_fedora_import_add_update_datastream_from_file($object, $dsid, $file);
+  }
+  try {
+    return $connection->repository->ingestObject($object);
+  } catch (Exception $e) {
+    watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
+    return FALSE;
+  }
+}
+
+/**
  * Adds a new illustrative object if possible.
  *
  * @param string $pid
@@ -891,7 +1108,7 @@ function livingstone_fedora_import_make_private(AbstractObject $object) {
     elseif (md5_file($policy) != $object['POLICY']->checksum) {
       $object['POLICY']->setContentFromFile($policy);
     }
-  } catch(Exception $e) {
+  } catch (Exception $e) {
     watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
     return FALSE;
   }
@@ -926,15 +1143,28 @@ function livingstone_fedora_import_make_public(AbstractObject $object) {
  *   TRUE if tables are not empty FALSE otherwise.
  */
 function livingstone_fedora_import_safe_to_run_batch() {
-  $local_count = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE, LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE_ALIAS)
+  $local_object_count = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_OBJECT_TABLE, LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE_ALIAS)
     ->countQuery()
     ->execute()
     ->fetchField();
 
-  $remote_count = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE, LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE_ALIAS)
+  $remote_object_count = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE, LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE_ALIAS)
     ->countQuery()
     ->execute()
     ->fetchField();
 
-  return $local_count > 0 && $remote_count > 0;
+  $local_datastream_count = db_select(LIVINGSTONE_FEDORA_IMPORT_LOCAL_OBJECT_TABLE, LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE_ALIAS)
+    ->countQuery()
+    ->execute()
+    ->fetchField();
+
+  $remote_datastream_count = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE, LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE_ALIAS)
+    ->countQuery()
+    ->execute()
+    ->fetchField();
+
+  return $local_object_count > 0 &&
+    $remote_object_count > 0 &&
+    $local_datastream_count > 0 &&
+    $remote_datastream_count > 0;
 }

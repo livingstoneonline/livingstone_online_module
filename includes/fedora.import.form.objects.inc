@@ -153,7 +153,7 @@ function livingstone_fedora_import_objects_form_reset_submit(array $form, array 
  *   A renderable array.
  */
 function livingstone_fedora_import_objects_table($table_identifier, $settings_identifier) {
-  $table_alias = 'r';
+  $table_alias = 't';
   $query = db_select($table_identifier, $table_alias);
   $header = livingstone_fedora_import_objects_query_apply_settings($query, $table_alias, $settings_identifier);
   $rows = $query->execute()->fetchAll(PDO::FETCH_NUM);

@@ -57,28 +57,16 @@ function livingstone_fedora_import_add_objects_batch(array $pids = NULL) {
   if (!livingstone_fedora_import_safe_to_run_batch()) {
     return array();
   }
-  $query = livingstone_fedora_import_add_objects_query();
-  $filter_pids = !empty($pids);
-  // Due to memory limitations we can only process 1000 at a time, the
-  // operations array becomes to large.
-  if (!$filter_pids) {
-    $query = $query->extend('PagerDefault')->limit(1000);
+  if (empty($pids)) {
+    $query = livingstone_fedora_import_add_objects_query();
+    $results = $query->execute();
+    $pids = $results->fetchCol(0);
   }
-  $results = $query->execute();
-  $operations = array();
-  while ($row = $results->fetchAssoc()) {
-    if ($filter_pids && !in_array($row['pid'], $pids)) {
-      continue;
-    }
-    $files = array();
-    foreach (array_filter($row) as $key => $value) {
-      $matches = array();
-      if (preg_match('/^(.*)_(FILE|MD5)$/i', $key, $matches)) {
-        list(, $dsid, $field) = $matches;
-        $files[$dsid][$field] = $value;
-      }
-    }
-    $operations[] = array('livingstone_fedora_import_add_object_batch_operation', array($row['pid'], $row['type'], $row['private'], $files));
+  foreach($pids as $pid) {
+    $operations[] = array(
+      'livingstone_fedora_import_add_object_batch_operation',
+      array($pid)
+    );
   }
   $operations[] = array('livingstone_fedora_import_update_tables_batch_operation', array());
   return array(
@@ -97,17 +85,12 @@ function livingstone_fedora_import_add_objects_batch(array $pids = NULL) {
  *
  * @param string $pid
  *   The object identifier.
- * @param string $type
- *   The type of object to add.
- * @param bool $private
- *   If the new object should be private or not.
- * @param array $files
- *   Description of files on the remote server to be downloaded.
  * @param &$context
  *   The batch context.
  */
-function livingstone_fedora_import_add_object_batch_operation($pid, $type, $private, array $files, &$context) {
-  list($dsid, $datastream_info) = livingstone_start_batch_operation_iteration($files, $context);
+function livingstone_fedora_import_add_object_batch_operation($pid, &$context) {
+  $info = livingstone_fedora_import_object_information($pid);
+  list($dsid, $datastream_info) = livingstone_start_batch_operation_iteration($info['datastreams'], $context);
   $remote_file = $datastream_info['file'];
   $md5 = $datastream_info['md5'];
   $cache = &livingstone_batch_operation_cache($context);
@@ -145,10 +128,18 @@ function livingstone_fedora_import_add_object_batch_operation($pid, $type, $priv
         }
         $object_added = FALSE;
         try {
-          $object_added = livingstone_fedora_import_add_object($pid, $type, $private, $local_files);
+          $object_added = livingstone_fedora_import_add_object($pid, $info['type'], $info['private'], $local_files);
         }
         catch (Exception $e) {
           watchdog_exception(LIVINGSTONE_FEDORA_IMPORT_ERROR, $e);
+        }
+        // Cleanup temporary files.
+        foreach ($cache as $dsid => $cache_info) {
+          list($local_file, $output_file) = $cache_info;
+          livingstone_batch_untrack_file($local_file, $context);
+          livingstone_batch_untrack_file($output_file, $context);
+          file_delete($local_file);
+          file_delete($output_file);
         }
         if ($object_added) {
           livingstone_exit_batch_operation($context, TRUE, 'Added object: @pid', array(
@@ -175,9 +166,9 @@ function livingstone_fedora_import_add_object_batch_operation($pid, $type, $priv
   }
   else {
     $progress = livingstone_fedora_import_ftp_download_progress($output_file);
-    livingstone_continue_batch_operation($context, 'Downloading @file (@progress%)...', array(
+    livingstone_continue_batch_operation($context, 'Downloading @file (@download%)...', array(
       '@file' => $remote_file,
-      '@progress' => $progress,
+      '@download' => $progress,
     ));
     $batch = batch_get();
     if ($batch['progressive']) {
@@ -255,45 +246,16 @@ function livingstone_fedora_import_update_objects_batch(array $pids = NULL) {
   if (!livingstone_fedora_import_safe_to_run_batch()) {
     return array();
   }
-  $query = livingstone_fedora_import_update_objects_query(array('pid'));
-  // we need to compare the datastreams checksums to determine what to update.
-  foreach (livingstone_fedora_import_datastreams() as $dsid) {
-    $dsid = strtolower($dsid);
-    $query->addField(LIVINGSTONE_FEDORA_IMPORT_LOCAL_TABLE_ALIAS, "{$dsid}_md5", "dest_{$dsid}_md5");
-    $query->addField(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE_ALIAS, "{$dsid}_md5", "src_{$dsid}_md5");
-    $query->addField(LIVINGSTONE_FEDORA_IMPORT_REMOTE_TABLE_ALIAS, "{$dsid}_file");
+  if (empty($pids)) {
+    $pids = livingstone_fedora_import_update_objects_query()
+      ->execute()
+      ->fetchCol(0);
   }
-  $filter_pids = !empty($pids);
-  // Due to memory limitations we can only process 1000 at a time, the
-  // operations array becomes to large.
-  if (!$filter_pids) {
-    $query = $query->extend('PagerDefault')->limit(1000);
-  }
-  $results = $query->execute();
-  $operations = array();
-  while ($row = $results->fetchAssoc()) {
-    if ($filter_pids && !in_array($row['pid'], $pids)) {
-      continue;
-    }
-    $files = array();
-    foreach ($row as $key => $value) {
-      $matches = array();
-      if (preg_match('/^(.*)_FILE$/i', $key, $matches)) {
-        list(, $dsid) = $matches;
-        $files[strtoupper($dsid)]['file']= $value;
-      }
-      else if (preg_match('/^(SRC|DEST)_(.*)_MD5$/i', $key, $matches)) {
-        list(, $location, $dsid) = $matches;
-          $files[strtoupper($dsid)]["{$location}_md5"] = $value;
-      }
-    }
-    // Remove file info for files that match.
-    foreach ($files as $dsid => $properties) {
-      if ($properties['src_md5'] == $properties['dest_md5']) {
-        unset($files[strtoupper($dsid)]);
-      }
-    }
-    $operations[] = array('livingstone_fedora_import_update_object_batch_operation', array($row['pid'], $files));
+  foreach ($pids as $pid) {
+    $operations[] = array(
+      'livingstone_fedora_import_update_object_batch_operation',
+      array($pid),
+    );
   }
   $operations[] = array('livingstone_fedora_import_update_tables_batch_operation', array());
   return array(
@@ -312,15 +274,14 @@ function livingstone_fedora_import_update_objects_batch(array $pids = NULL) {
  *
  * @param string $pid
  *   The object identifier.
- * @param array $files
- *   The datastreams to update.
  * @param &$context
  *   The batch context.
  */
-function livingstone_fedora_import_update_object_batch_operation($pid, array $files, &$context) {
-  list($dsid, $datastream_info) = livingstone_start_batch_operation_iteration($files, $context);
+function livingstone_fedora_import_update_object_batch_operation($pid, &$context) {
+  $info = livingstone_fedora_import_update_object_information($pid);
+  list($dsid, $datastream_info) = livingstone_start_batch_operation_iteration($info['datastreams'], $context);
   $remote_file = $datastream_info['file'];
-  $md5 = $datastream_info['src_md5'];
+  $md5 = $datastream_info['md5'];
   $cache = &livingstone_batch_operation_cache($context);
   if (!isset($cache[$dsid])) {
     // Check that the object doesn't exist to save time.
@@ -362,7 +323,13 @@ function livingstone_fedora_import_update_object_batch_operation($pid, array $fi
     if (livingstone_fedora_import_successful_ftp_download($local_file, $remote_file, $md5)) {
       $object = islandora_object_load($pid);
       // Add / Update the datastream.
-      if (livingstone_fedora_import_add_update_datastream_from_file($object, strtoupper($dsid), $local_file, $md5)) {
+      $success = livingstone_fedora_import_add_update_datastream_from_file($object, strtoupper($dsid), $local_file, $md5);
+      // Clean up temporary files.
+      livingstone_batch_untrack_file($local_file, $context);
+      livingstone_batch_untrack_file($output_file, $context);
+      file_delete($local_file);
+      file_delete($output_file);
+      if ($success) {
         livingstone_end_batch_operation_iteration($context, 1, 'Updated object: @pid', array(
           '@pid' => $pid
         ));
@@ -388,9 +355,9 @@ function livingstone_fedora_import_update_object_batch_operation($pid, array $fi
   }
   else {
     $progress = livingstone_fedora_import_ftp_download_progress($output_file);
-    livingstone_continue_batch_operation($context, 'Downloading @file (@progress%)...', array(
+    livingstone_continue_batch_operation($context, 'Downloading @file (@download%)...', array(
       '@file' => $remote_file,
-      '@progress' => $progress,
+      '@download' => $progress,
     ));
     $batch = batch_get();
     if ($batch['progressive']) {

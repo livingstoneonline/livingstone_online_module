@@ -110,10 +110,12 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
   try {
     foreach ($fields as $field_name => $value) {
       $type = $field_settings[$field_name]['type'];
-      switch ($field_settings[$field_name]['type']) {
+      switch ($type) {
         case 'image':
           $md5 = isset($value[0]) ? $value[0] : NULL;
-          $file = $wrapper->image->value();
+          $file = isset($wrapper->image) ?
+            $wrapper->image->value() :
+            FALSE;
           if (!$file || md5_file($file['uri']) != $md5) {
             $save = TRUE;
             $object = islandora_object_load($fields['pid']);
@@ -134,7 +136,9 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
           break;
         case 'date':
           $date = new DateTime($value);
-          $current_value = $wrapper->raw()->{$field_name}[LANGUAGE_NONE][0]['value'];
+          $current_value = isset($wrapper->raw()->{$field_name}) ?
+            $wrapper->raw()->{$field_name}[LANGUAGE_NONE][0]['value'] :
+            FALSE;
           $new_value = $date->format('Y-m-d\TH:i:s');
           if ($current_value != $new_value) {
             $save = TRUE;
@@ -149,14 +153,18 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
         case 'text_long':
         default:
           if (is_array($value)) {
-            $current_value = $wrapper->{$field_name}->raw();
+            $current_value = isset($wrapper->{$field_name}) ?
+              $wrapper->{$field_name}->raw() :
+              FALSE;
             if ($current_value != $value) {
               $save = TRUE;
               $wrapper->{$field_name}->set($value);
             }
           }
           else {
-            $current_value = $wrapper->{$field_name}->value();
+            $current_value = isset($wrapper->{$field_name}) ?
+              $wrapper->{$field_name}->value() :
+              FALSE;
             if ($current_value != $value) {
               $save = TRUE;
               $wrapper->{$field_name}->set($value);
@@ -168,7 +176,7 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
     // Return TRUE if saving was not needed.
     return ($save) ? $wrapper->save()->raw() : $node;
   }
-  catch(Exception $e) {
+  catch (Exception $e) {
     watchdog_exception('livingstone', $e);
     drupal_set_message($e->getMessage(), 'error');
   }
@@ -228,7 +236,7 @@ function livingstone_node_import_list_pids() {
   $response = livingstone_node_import_query_solr($query, $params);
   $docs = isset($response['response']['docs']) ? $response['response']['docs'] : array();
   $pids = array();
-  foreach($docs as $doc) {
+  foreach ($docs as $doc) {
     $pids[] = $doc['PID'];
   }
   return $pids;
@@ -383,7 +391,7 @@ function livingstone_node_import_query_solr_parameters($start = 0, $rows = 10000
   return array(
     'fl' => $fl,
     'fq' => array(
-      'RELS_EXT_hasModel_uri_s:"info:fedora/islandora:manuscriptCModel"',
+      'RELS_EXT_hasModel_uri_s:("info:fedora/islandora:manuscriptCModel" OR "info:fedora/livingstone:spectralManuscriptCModel")',
     ),
     'start' => $start,
     'rows' => $rows,

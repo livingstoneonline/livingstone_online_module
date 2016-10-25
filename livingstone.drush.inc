@@ -4,6 +4,7 @@
  * @file
  * Implementation of Drush hooks.
  */
+
 /**
  * Implements hook_drush_command().
  */
@@ -20,6 +21,13 @@ function livingstone_drush_command() {
     ),
     'livingstone_import_objects' => array(
       'description' => 'Imports files from FTP server into Fedora.',
+      'drupal dependencies' => array(
+        'livingstone',
+      ),
+      'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_LOGIN,
+    ),
+    'livingstone_generate_derivatives' => array(
+      'description' => 'Generates missing derivatives.',
       'drupal dependencies' => array(
         'livingstone',
       ),
@@ -56,6 +64,14 @@ function drush_livingstone_import_objects() {
   $batch['progressive'] = FALSE;
   batch_set($batch);
   $batch = livingstone_fedora_import_update_table_batch();
+  $batch['progressive'] = FALSE;
+  batch_set($batch);
+  drush_backend_batch_process();
+}
+
+function drush_livingstone_generate_derivatives() {
+  module_load_include('inc', 'livingstone', 'includes/derivatives.batch');
+  $batch = livingstone_generate_derivatives_batch();
   $batch['progressive'] = FALSE;
   batch_set($batch);
   drush_backend_batch_process();

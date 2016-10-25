@@ -134,7 +134,7 @@ function livingstone_node_import_remove_nodes_batch_operation(array $pids, &$con
  *   The batch context.
  */
 function livingstone_node_import_import_nodes_batch_operation(array $pids, &$context) {
-  list(,$pid) = livingstone_start_batch_operation_iteration($pids, $context);
+  list(, $pid) = livingstone_start_batch_operation_iteration($pids, $context);
   livingstone_set_progress_message($context, 'Importing @progress of @total Manuscript Nodes.');
   if ($pid) {
     livingstone_node_import($pid);
@@ -154,7 +154,7 @@ function livingstone_node_import_import_nodes_batch_operation(array $pids, &$con
  *   The batch context.
  */
 function livingstone_node_import_update_nodes_batch_operation(array $pids, &$context) {
-  list(,$pid) = livingstone_start_batch_operation_iteration($pids, $context);
+  list(, $pid) = livingstone_start_batch_operation_iteration($pids, $context);
   livingstone_set_progress_message($context, 'Updating @progress of @total Manuscript Nodes.');
   if ($pid) {
     livingstone_node_import_update($pid);

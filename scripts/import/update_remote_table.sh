@@ -6,6 +6,8 @@ readonly ARGS="$@"
 
 source ${PROGDIR}/utilities.sh
 
+readonly INFILE_DIR=/var/lib/mysql-files
+
 # Print command usage.
 function usage() {
   cat <<- EOF
@@ -65,26 +67,44 @@ function cmdline() {
 }
 
 # Down load the given file from the FTP server.
-function download_import_csv() {
-  local output="${SCRATCH}/import.csv"
-  lftp ftp://${HOST} -u ${USER},${PASS} -e "pget -n 2 /Livingstone-Directors/0_Core-Data/import.csv -o ${output}; bye" 1>&2
+function download_import_objects_csv() {
+  local output="${INFILE_DIR}/import.objects.csv"
+  rm ${output}
+  lftp ftp://${HOST} -u ${USER},${PASS} -e "pget -n 2 /Livingstone-Directors/0_Core-Data/import.objects.csv -o ${output}; bye" 1>&2
+  sed -i -e ':a; s/NULL/\\N/g; ta' ${output}
+  echo ${output}
+}
+
+# Down load the given file from the FTP server.
+function download_import_datastreams_csv() {
+  local output="${INFILE_DIR}/import.datastreams.csv"
+  rm ${output}
+  lftp ftp://${HOST} -u ${USER},${PASS} -e "pget -n 2 /Livingstone-Directors/0_Core-Data/import.datastreams.csv -o ${output}; bye" 1>&2
   sed -i -e ':a; s/NULL/\\N/g; ta' ${output}
   echo ${output}
 }
 
 # Updates the remote table.
-function update_remote_table() {
-  local file=$(download_import_csv)
-  local headers=$(head -n 1 ${file})
+function update_remote_tables() {
+  local objects_file=$(download_import_objects_csv)
+  local objects_headers=$(head -n 1 ${objects_file})
+  local datastreams_file=$(download_import_datastreams_csv)
+  local datastreams_headers=$(head -n 1 ${datastreams_file})
   # Empty the table first.
-  mysql -e "TRUNCATE TABLE livingstone.livingstone_fedora_remote_files;"
-  # Import the CSV file.
-  mysql --local-infile=1 -e "LOAD DATA INFILE '${file}' INTO TABLE livingstone.livingstone_fedora_remote_files FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES (${headers});"
+  mysql -e "TRUNCATE TABLE livingstone.livingstone_fedora_remote_objects;"
+  mysql -e "TRUNCATE TABLE livingstone.livingstone_fedora_remote_datastreams;"
+  # Import the objects CSV file.
+  mysql --local-infile=1 -e "LOAD DATA INFILE '${objects_file}' INTO TABLE livingstone.livingstone_fedora_remote_objects FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES (${objects_headers});"
+  # Import the datastreams CSV file.
+  mysql --local-infile=1 -e "LOAD DATA INFILE '${datastreams_file}' INTO TABLE livingstone.livingstone_fedora_remote_datastreams FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES (${datastreams_headers});"
+  # Update the checksums in the table.
+  mysql livingstone  -e "UPDATE livingstone_fedora_remote_objects o SET MD5 = (SELECT MD5(GROUP_CONCAT(MD5 SEPARATOR '')) FROM livingstone_fedora_remote_datastreams d WHERE d.PID = o.PID ORDER BY DSID)";
 }
 
 # Entry Point.
 function main() {
   cmdline ${ARGS}
-  update_remote_table
+  mkdir -p ${INFILE_DIR}
+  update_remote_tables
 }
 main

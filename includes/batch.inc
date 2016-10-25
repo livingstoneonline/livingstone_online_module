@@ -202,6 +202,18 @@ function livingstone_batch_track_file(stdClass $file, &$context) {
 }
 
 /**
+ * Tracks files so they are cleaned up upon exit.
+ *
+ * @param stdClass $file
+ *   The file to track.
+ * @param array $context
+ *   The context of this batch operation.
+ */
+function livingstone_batch_untrack_file(stdClass $file, &$context) {
+  unset($context['results']['files'][$file->fid]);
+}
+
+/**
  * Set the progress message to display to the user.
  *
  * @param &$context

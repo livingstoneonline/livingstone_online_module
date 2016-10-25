@@ -17,8 +17,14 @@ function livingstone_manuscripts() {
   SELECT ?pid
   FROM <#ri>
   WHERE {
-    ?pid <fedora-model:state> <fedora-model:Active> ;
-         <fedora-model:hasModel> <info:fedora/islandora:manuscriptCModel> .
+    {
+      ?pid <fedora-model:state> <fedora-model:Active> ;
+           <fedora-model:hasModel> <info:fedora/islandora:manuscriptCModel> .
+    }
+    UNION {
+      ?pid <fedora-model:state> <fedora-model:Active> ;
+           <fedora-model:hasModel> <info:fedora/livingstone:spectralManuscriptCModel> .
+    }
   }
   ORDER BY ?pid
 EOQ;
@@ -45,7 +51,7 @@ EOQ;
 function livingstone_manuscript_pages($pid) {
   global $user;
   $filter_hidden = '';
-  if (!in_array('administrator', $user->roles)){
+  if (!in_array('administrator', $user->roles)) {
     $filter_hidden = <<<EOT
     OPTIONAL {
       ?pid <fedora-view:disseminates> ?policy .
@@ -150,6 +156,7 @@ function livingstone_transform_preprocess_tei($tei) {
  *   The transformed TEI as HTML if successful FALSE otherwise.
  */
 function livingstone_saxon_transform($tei) {
+  $transform = livingstone_get_transform($tei);
   $tei = livingstone_transform_preprocess_tei($tei);
   $source = file_save_data($tei, file_default_scheme() . '://');
   // File is temporary and will linger if the transform fails for debug
@@ -163,7 +170,7 @@ function livingstone_saxon_transform($tei) {
       '!tei' => file_create_url($source->uri),
       '!url' => $url,
     );
-	watchdog('livingstone-viewer', $message, $variables, WATCHDOG_ERROR);
+    watchdog('livingstone-viewer', $message, $variables, WATCHDOG_ERROR);
     return FALSE;
   }
   file_delete($source);

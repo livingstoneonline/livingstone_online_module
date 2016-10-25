@@ -5,6 +5,9 @@
  * An viewer for manuscripts with a TEI datastream.
  */
 
+const LIVINGSTONE_SPECTRAL_MANUSCRIPT_CMODEL = "livingstone:spectralManuscriptCModel";
+const LIVINGSTONE_SPECTRAL_PAGE_CMODEL = "livingstone:spectralPageCModel";
+
 /**
  * Implements hook_menu().
  */
@@ -318,7 +321,7 @@ function livingstone_preprocess_search_result(array &$variables) {
   if (isset($result['node'])) {
     $node = $result['node'];
     if ($node->type == 'manuscript') {
-      $get_value = function($field, $default) use ($node) {
+      $get_value = function ($field, $default) use ($node) {
         return isset($node->{$field}[LANGUAGE_NONE][0]['value']) ?
           $node->{$field}[LANGUAGE_NONE][0]['value'] :
           $default;
@@ -356,7 +359,7 @@ function livingstone_manuscript_viewer_access($pid) {
     'rows' => 1,
   );
   try {
-    $results = $solr->search("PID:\"{$pid}\"", 0,1 , $params, 'GET');
+    $results = $solr->search("PID:\"{$pid}\"", 0, 1, $params, 'GET');
     $results = isset($results) ? json_decode($results->getRawResponse(), TRUE) : array();
     $viewable = count($results['response']['docs']) == 1;
     return drupal_json_output(array('viewable' => $viewable));
@@ -373,7 +376,7 @@ function livingstone_manuscript_viewer_access($pid) {
  */
 function livingstone_islandora_derivative_alter(array &$derivatives, AbstractObject $object) {
   foreach ($derivatives as $key => $derivative) {
-    if ($derivative['destination_dsid'] != 'JP2') {
+    if (strpos($derivative['destination_dsid'], 'JP2') === FALSE) {
       unset($derivatives[$key]);
     }
   }
@@ -510,3 +513,180 @@ function theme_livingstone_form_search_block_search_type($variables) {
   return '<div' . drupal_attributes($attributes) . '>' . (!empty($element['#children']) ? $element['#children'] : '') . '</div>';
 }
 
+/**
+ * Implements hook_islandora_required_objects().
+ */
+function livingstone_islandora_required_objects(IslandoraTuque $connection) {
+  $module_path = drupal_get_path('module', 'livingstone');
+  // Spectral manuscript content model.
+  $spectral_manuscript_cmodel = $connection->repository->constructObject(LIVINGSTONE_SPECTRAL_MANUSCRIPT_CMODEL);
+  $spectral_manuscript_cmodel->owner = 'fedoraAdmin';
+  $spectral_manuscript_cmodel->label = 'Spectral Manuscript Content Model';
+  $spectral_manuscript_cmodel->models = 'fedora-system:ContentModel-3.0';
+  $ds_composite = $spectral_manuscript_cmodel->constructDatastream('DS-COMPOSITE-MODEL', 'M');
+  $ds_composite->label = 'DS-COMPOSITE-MODEL';
+  $ds_composite->mimetype = 'application/xml';
+  $ds_composite->setContentFromFile("$module_path/xml/livingstone_spectralManuscriptCModel_ds_composite_model.xml", FALSE);
+  $spectral_manuscript_cmodel->ingestDatastream($ds_composite);
+  // Spectral page content model.
+  $spectral_page_cmodel = $connection->repository->constructObject(LIVINGSTONE_SPECTRAL_PAGE_CMODEL);
+  $spectral_page_cmodel->owner = 'fedoraAdmin';
+  $spectral_page_cmodel->label = 'Spectral Page Content Model';
+  $spectral_page_cmodel->models = 'fedora-system:ContentModel-3.0';
+  $ds_composite = $spectral_page_cmodel->constructDatastream('DS-COMPOSITE-MODEL', 'M');
+  $ds_composite->label = 'DS-COMPOSITE-MODEL';
+  $ds_composite->mimetype = 'application/xml';
+  $ds_composite->setContentFromFile("$module_path/xml/livingstone_spectralPageCModel_ds_composite_model.xml", FALSE);
+  $spectral_page_cmodel->ingestDatastream($ds_composite);
+  return array(
+    'livingstone' => array(
+      'title' => t('Livingstone'),
+      'objects' => array(
+        $spectral_manuscript_cmodel,
+        $spectral_page_cmodel,
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_islandora_derivative().
+ */
+function livingstone_livingstone_spectralManuscriptPageCModel_islandora_derivative() {
+  module_load_include('inc', 'livingstone', 'includes/fedora.import');
+  $large_image_module_path = drupal_get_path('module', 'islandora_large_image');
+  $derivatives = array();
+  $dsids = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_DATASTREAM_TABLE, 'r')
+    ->distinct()
+    ->fields('r', array('DSID'))
+    ->condition('r.DSID', '%OBJ', 'LIKE')
+    ->execute()
+    ->fetchCol(0);
+  foreach ($dsids as $dsid) {
+    $format = preg_replace('/_OBJ$/', '', $dsid);
+    $format = strtoupper($format);
+    $derivatives[] = array(
+      'source_dsid' => "{$format}_OBJ",
+      'destination_dsid' => "${format}_JP2",
+      'function' => array('livingstone_spectral_create_jp2_derivative'),
+    );
+  }
+  return $derivatives;
+}
+
+function livingstone_spectral_get_uploaded_file(AbstractObject $object, $src_dsid) {
+  $base_name = str_replace(':', '-', $object->id);
+  $mime_detector = new MimeDetect();
+  $ext = $mime_detector->getExtension($object[$src_dsid]->mimeType);
+  $filename = file_create_filename("{$base_name}_{$src_dsid}.{$ext}", 'temporary://');
+  $object[$src_dsid]->getContent($filename);
+  return $filename;
+}
+
+/**
+ *
+ */
+function livingstone_spectral_create_jp2_derivative(AbstractObject $object, $force, array $derivative) {
+  module_load_include('inc', 'islandora_large_image', 'includes/derivatives');
+  module_load_include('inc', 'islandora_large_image', 'includes/utilities');
+  $base_name = str_replace(':', '-', $object->id);
+  $src_dsid = $derivative['source_dsid'];
+  $dest_dsid = $derivative['destination_dsid'];
+  if ($force || !isset($object[$dest_dsid])) {
+    $to_return = array(
+      'success' => FALSE,
+      'messages' => array(),
+    );
+    $uploaded_file = livingstone_spectral_get_uploaded_file($object, $src_dsid);
+    $lossless = variable_get('islandora_lossless', FALSE);
+    if (islandora_large_image_is_jp2($uploaded_file) && !$lossless) {
+      $derivative_file = $uploaded_file;
+    }
+    else {
+
+      $depth = islandora_large_image_get_bit_depth($uploaded_file);
+
+      // Create JP2 with kakadu.
+      $kakadu = variable_get('islandora_use_kakadu', !islandora_large_image_check_imagemagick_for_jpeg2000());
+      $mime = strtolower($object[$src_dsid]->mimetype);
+      if ($mime == 'image/jpeg' || $mime == 'image/jpg' || $depth < 8) {
+        $kakadu = FALSE;
+      }
+      // Use lossless if the image would look too bad with compression.
+      if (!$lossless) {
+        $identify = islandora_large_image_get_identify();
+        // Define all these variables in one call for a large performance gain.
+        $file_path = drupal_realpath($uploaded_file);
+        list($height, $width, $y_resolution, $x_resolution) = explode(
+          ',',
+          exec(escapeshellcmd("$identify -format \"%h,%W,%y,%x\" $file_path"))
+        );
+        if (((int) $x_resolution < 300 || (int) $y_resolution < 300) ||
+          ($height < 1024 || $width < 1024)) {
+          $lossless = TRUE;
+        }
+      }
+
+      if ($kakadu) {
+        // Create JP2.
+        if (!$lossless) {
+          $derivative_file = islandora_large_image_kdu_compress($uploaded_file, "temporary://{$base_name}_JP2.jp2");
+        }
+        else {
+          $derivative_file = islandora_large_image_kdu_compress(
+            $uploaded_file,
+            "temporary://{$base_name}_JP2.jp2",
+            'Creversible=yes -rate -,1,0.5,0.25 Clevels=5'
+          );
+        }
+        if ($derivative_file === FALSE) {
+          $to_return['messages'][] = array(
+            'message' => t("Kakadu failed. Trying ImageMagick ..."),
+            'type' => 'dsm',
+            'severity' => 'status',
+          );
+          // Force retry with ImageMagick if Kakadu has failed.
+          $kakadu = FALSE;
+        }
+      }
+      if (!$kakadu) {
+        $args = islandora_large_image_get_args($lossless);
+        if ($depth < 8) {
+          $args = array_merge($args, array("-depth 8"));
+        }
+        $derivative_file = islandora_large_image_imagemagick_convert(
+          $uploaded_file,
+          "temporary://{$base_name}_JP2.jp2",
+          $args);
+      }
+    }
+    if ($derivative_file === FALSE) {
+      $to_return['messages'][] = array(
+        'message' => t('Failed to create JP2 derivative.'),
+        'type' => 'watchdog',
+        'severity' => WATCHDOG_ERROR,
+      );
+    }
+    else {
+      $added_successfully = islandora_large_image_add_datastream($object, $dest_dsid, $derivative_file, 'image/jp2', t('JPEG 2000'));
+      if (TRUE === $added_successfully) {
+        $to_return['messages'][] = array(
+          'message' => t('Created JP2 derivative.'),
+          'type' => 'dsm',
+          'severity' => 'status',
+        );
+        $to_return['success'] = TRUE;
+      }
+      else {
+        $to_return['messages'][] = array(
+          'message' => t('Failed to add JP2 derivative to the object. Error message: @message', array('@message' => $added_successfully)),
+          'type' => 'dsm',
+          'severity' => 'warning',
+        );
+      }
+    }
+    file_unmanaged_delete($uploaded_file);
+    file_unmanaged_delete($derivative_file);
+    return $to_return;
+  }
+}

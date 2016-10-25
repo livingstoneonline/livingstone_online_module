@@ -6,6 +6,8 @@ readonly ARGS="$@"
 
 source ${PROGDIR}/utilities.sh
 
+readonly INFILE_DIR=/var/lib/mysql-files
+
 # Print command usage.
 function usage() {
   cat <<- EOF
@@ -64,28 +66,25 @@ function cmdline() {
 # The list of fields to fetch form Solr.
 function solr_fl_parameter() {
   # PID, CONTENT_MODEL, PRIVATE, DSID_MD5, ...
-  local fl='PID%2CRELS_EXT_hasModel_uri_s%2Chidden_b'
-  for datastream in MODS OBJ PDF TEI TN TXT XMP ZIP; do
-    fl+="%2Cfedora_datastream_latest_${datastream}_MD5_ms";
-  done
-  echo ${fl}
+  echo 'PID%2CRELS_EXT_hasModel_uri_s%2Chidden_b,checksum_s,fedora_datastream_latest_*_MD5_ms'
 }
 
 # Filter only those content model in which we copy from the FTP.
 function solr_fq_parameter() {
-  echo "RELS_EXT_hasModel_uri_s%3A(*manuscript*%20OR%20*sp_pdf%20OR%20*sp_large_image_cmodel)"
+  echo "RELS_EXT_hasModel_uri_s%3A(*manuscript*%20OR%20*spectral*%20OR%20*sp_pdf%20OR%20*sp_large_image_cmodel)"
 }
 
 # Query solr for all all datastream checksums.
 function solr_query() {
   local fl=$(solr_fl_parameter)
   local fq=$(solr_fq_parameter)
-  local host="http://livingstoneonline.org"
-  local url="${HOST}/collection1/select?q=*%3A*&rows=100000&fq=${fq}&fl=${fl}&wt=csv&indent=true%27"
+  local host="http://localhost"
+  local url="${HOST}/collection1/select?q=*%3A*&rows=100000&fq=${fq}&fl=${fl}&wt=csv&indent=true%27&sort=PID%20asc"
   local output=${SCRATCH}/solr_results.csv
   curl -L "${url}" -o ${output}
   sed -i -e '1,1s/RELS_EXT_hasModel_uri_s/CONTENT_MODEL/g' ${output}
   sed -i -e '1,1s/hidden_b/PRIVATE/g' ${output}
+  sed -i -e '1,1s/checksum_s/MD5/g' ${output}
   sed -i -e '1,1s/fedora_datastream_latest_//g' ${output}
   sed -i -e '1,1s/_MD5_ms/_MD5/g' ${output}
   sed -i -e 's/info:fedora\///g' ${output}
@@ -101,29 +100,74 @@ function solr_query() {
   echo ${output}
 }
 
+# Create import csv for local objects table.
+function objects_file() {
+  local file=${1};
+  local output=${INFILE_DIR}/local_object_table.csv
+  /usr/local/bin/csvcut ${file} -c PID,CONTENT_MODEL,PRIVATE,TYPE,MD5 > ${output}
+  chmod a+r ${output}
+  echo ${output}
+}
+
+# Create import csv for local objects table.
+function datastreams_file() {
+  local file=${1};
+  local tmp=${SCRATCH}/local_datastream_table.tmp.csv
+  local output=${INFILE_DIR}/local_datastream_table.csv
+  /usr/local/bin/csvcut ${file} -C PRIVATE,CONTENT_MODEL,TYPE,MD5 > ${tmp}
+  echo 'PID,DSID,MD5' > ${output}
+  local columns=$(head -n 1 ${tmp} | sed "s/PID//g" | sed "s/,/ /g")
+  for column in ${columns[@]};
+  do
+    local DSID=$(echo ${column} | sed "s/_MD5//g")
+    /usr/local/bin/csvcut -c PID,${column} ${tmp} | grep -v '\\N' | grep -v ',$' | tail -n +2 | awk 'BEGIN{FS=OFS=","} {$2="'${DSID}',"$2""; $0=$0""} 1' > ${SCRATCH}/local_datastream_table.${DSID}.csv &
+  done
+  wait
+  for column in ${columns[@]};
+  do
+    local DSID=$(echo ${column} | sed "s/_MD5//g")
+    cat ${SCRATCH}/local_datastream_table.${DSID}.csv >> ${output}
+  done
+  chmod a+r ${output}
+  echo ${output}
+}
+
 # Gather information about existing data and insert it into the batch_import.existing table.
-function update_local_table() {
+function update_local_tables() {
   local file=$(solr_query)
-  local headers=$(head -n 1 ${file})
+  local objects_file=$(objects_file ${file})
+  local objects_headers=$(head -n 1 ${objects_file})
+  local datastreams_file=$(datastreams_file ${file})
+  local datastreams_headers=$(head -n 1 ${datastreams_file})
   # Empty the table first.
-  mysql -e "TRUNCATE TABLE livingstone.livingstone_fedora_local_files;"
+  mysql -e "TRUNCATE TABLE livingstone.livingstone_fedora_local_objects;"
   # Import the CSV file.
-  mysql --local-infile=1 -e "LOAD DATA INFILE '${file}' INTO TABLE livingstone.livingstone_fedora_local_files FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES (${headers});"
+  mysql --local-infile=1 -e "LOAD DATA INFILE '${objects_file}' INTO TABLE livingstone.livingstone_fedora_local_objects FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES (${objects_headers});"
   # In Solr we use hidden_b on manuscripts, to represent if the pages are hidden, but we should never have a policy on
   # islandora:manuscriptCModel.
-  mysql livingstone -e "UPDATE livingstone_fedora_local_files SET PRIVATE=false WHERE CONTENT_MODEL = 'islandora:manuscriptCModel';";
+  mysql livingstone -e "UPDATE livingstone_fedora_local_objects SET PRIVATE=false WHERE CONTENT_MODEL = 'islandora:manuscriptCModel';";
   # We don't track type in Solr so we must add it here.
   # islandora:manuscriptCModel.
-  mysql livingstone -e "UPDATE livingstone_fedora_local_files SET TYPE='manuscript' WHERE CONTENT_MODEL = 'islandora:manuscriptCModel';";
-  mysql livingstone -e "UPDATE livingstone_fedora_local_files SET TYPE='manuscript_page' WHERE CONTENT_MODEL = 'islandora:manuscriptPageCModel';";
-  mysql livingstone -e "UPDATE livingstone_fedora_local_files SET TYPE='manuscript_additional_pdf' WHERE CONTENT_MODEL = 'islandora:sp_pdf';";
-  mysql livingstone -e "UPDATE livingstone_fedora_local_files SET TYPE='illustrative' WHERE CONTENT_MODEL = 'islandora:sp_large_image_cmodel';";
-  mysql livingstone -e "UPDATE livingstone_fedora_local_files SET TYPE='no_crop' WHERE CONTENT_MODEL = 'islandora:sp_large_image_cmodel' AND PID LIKE '%_noCrop';";
+  mysql livingstone -e "UPDATE livingstone_fedora_local_objects SET TYPE='manuscript' WHERE CONTENT_MODEL = 'islandora:manuscriptCModel';";
+  mysql livingstone -e "UPDATE livingstone_fedora_local_objects SET TYPE='manuscript_page' WHERE CONTENT_MODEL = 'islandora:manuscriptPageCModel';";
+  mysql livingstone -e "UPDATE livingstone_fedora_local_objects SET TYPE='manuscript_additional_pdf' WHERE CONTENT_MODEL = 'islandora:sp_pdf';";
+  mysql livingstone -e "UPDATE livingstone_fedora_local_objects SET TYPE='spectral_manuscript' WHERE CONTENT_MODEL = 'livingstone:spectralManuscriptCModel';";
+  mysql livingstone -e "UPDATE livingstone_fedora_local_objects SET TYPE='spectral_manuscript_page' WHERE CONTENT_MODEL = 'livingstone:spectralManuscriptPageCModel';";
+  mysql livingstone -e "UPDATE livingstone_fedora_local_objects SET TYPE='illustrative' WHERE CONTENT_MODEL = 'islandora:sp_large_image_cmodel';";
+  mysql livingstone -e "UPDATE livingstone_fedora_local_objects SET TYPE='no_crop' WHERE CONTENT_MODEL = 'islandora:sp_large_image_cmodel' AND PID LIKE '%_noCrop';";
+  # Empty the table first.
+  mysql -e "TRUNCATE TABLE livingstone.livingstone_fedora_local_datastreams;"
+  # Import the CSV file.
+  mysql --local-infile=1 -e "LOAD DATA INFILE '${datastreams_file}' INTO TABLE livingstone.livingstone_fedora_local_datastreams FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES (${datastreams_headers});"
+  mysql livingstone -e "DELETE FROM livingstone_fedora_local_datastreams WHERE DSID='DC' OR DSID='RELS-EXT' OR DSID='RELS-INT' OR DSID='POLICY' OR DSID LIKE '%JP2';";
+  # Update the checksums in the table.
+  mysql livingstone  -e "UPDATE livingstone_fedora_local_objects o SET MD5 = (SELECT MD5(GROUP_CONCAT(MD5 SEPARATOR '')) FROM livingstone_fedora_local_datastreams d WHERE d.PID = o.PID ORDER BY DSID)";
 }
 
 # Entry Point.
 function main() {
   cmdline ${ARGS}
-  update_local_table
+  mkdir -p ${INFILE_DIR}
+  update_local_tables
 }
 main

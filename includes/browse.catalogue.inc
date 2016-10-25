@@ -331,7 +331,7 @@ function livingstone_browse_catalogue_build_query(array $values) {
  */
 function livingstone_browse_catalogue_build_filter_query(array $values) {
   $filter_query = array();
-  $value = function($name) use ($values) {
+  $value = function ($name) use ($values) {
     return isset($values[$name]) ? $values[$name] : NULL;
   };
   $filter_query[] = livingstone_browse_catalogue_build_facet_field_filter_query('creator', $value('creator'));
@@ -493,7 +493,7 @@ function livingstone_browse_catalogue_pager(array $results) {
 function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
   $fields = livingstone_browse_catalogue_display_fields();
   $headers = array();
-  foreach($fields as $field) {
+  foreach ($fields as $field) {
     $collapsible = in_array('collapsible-column', $field['classes']);
     $collapse = $collapsible && $collapsed;
     $headers[] = array(
@@ -508,7 +508,7 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
   $docs = isset($results['response']['docs']) && is_array($results['response']['docs']) ? $results['response']['docs'] : array();
   foreach ($docs as $doc) {
     $row = array();
-    foreach($fields as $field) {
+    foreach ($fields as $field) {
       $solr_field = $field['field'];
       $collapsible = in_array('collapsible-column', $field['classes']);
       $collapse = $collapsible && $collapsed;
@@ -517,11 +517,11 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
         $data = livingstone_browse_catalogue_view_link($doc);
         $data .= livingstone_browse_catalogue_download_link($doc);
       }
-      else if (isset($doc[$solr_field]) && is_array($doc[$solr_field])) {
+      elseif (isset($doc[$solr_field]) && is_array($doc[$solr_field])) {
         $delimiter = isset($field['delimiter']) ? $field['delimiter'] : ';<br/>';
         $data = implode($delimiter, array_unique($doc[$solr_field]));
       }
-      else if (isset($doc[$solr_field]) && is_string($doc[$solr_field])) {
+      elseif (isset($doc[$solr_field]) && is_string($doc[$solr_field])) {
         if (isset($field['split'])) {
           $split = $field['split'];
           $data = preg_replace("($split)", "$split<br/>", $doc[$solr_field]);
@@ -592,7 +592,7 @@ function livingstone_browse_catalogue_view_link($doc) {
     );
     return l((''), current_path(), $attributes);
   }
-  else if ($viewable && $hidden) {
+  elseif ($viewable && $hidden) {
     $attributes['attributes']['title'] = 'Restricted';
     $attributes['attributes']['class'] = array(
       'livingstone-manuscript-launcher fa fa-ban'
@@ -618,7 +618,7 @@ function livingstone_browse_catalogue_download_link($doc) {
   $attributes = array(
     'external' => FALSE,
     'attributes' => array(
-      'title' => 'Download',
+      'title' => t('Download'),
       'class' => array('fa fa-arrow-down'),
     ),
   );
@@ -689,7 +689,7 @@ function livingstone_browse_catalogue_solr_search_without_facet($facet_field, ar
   // We perform an additional query with no date(s) set so we can appropriately
   // populate the date ranges and single value date fields.
   $params = livingstone_browse_catalogue_search_parameters($form_state);
-  foreach($params['fq'] as $key => $filter_query) {
+  foreach ($params['fq'] as $key => $filter_query) {
     if (strpos($filter_query, $facet_field) !== FALSE) {
       unset($params['fq'][$key]);
     }
@@ -712,7 +712,7 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
   }
   $access = isset($values['access']) ? $values['access'] : (isset($_GET['access']) ? $_GET['access'] : 'all');
   $hide = !in_array('administrator', $user->roles);
-  switch($access) {
+  switch ($access) {
     case 'view':
       $filter_query[] = "viewable_b:true";
       if ($hide) {
@@ -776,9 +776,9 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
     default:
       break;
   }
-  $filter_query[] = "RELS_EXT_hasModel_uri_s:\"info:fedora/islandora:manuscriptCModel\"";
+  $filter_query[] = "RELS_EXT_hasModel_uri_s:(\"info:fedora/islandora:manuscriptCModel\" OR \"info:fedora/livingstone:spectralManuscriptCModel\")";
   $limit = isset($values['limit']) ? $values['limit'] : (isset($_GET['limit']) ? $_GET['limit'] : 'catalogue');
-  switch($limit) {
+  switch ($limit) {
     case 'transcriptions':
       $qf = 'tei^1.0';
       break;
@@ -824,7 +824,7 @@ function livingstone_browse_catalogue_fl_search_parameter() {
     'fedora_datastream_version_ZIP_SIZE_ms'
   );
   $fields = livingstone_browse_catalogue_display_fields();
-  foreach($fields as $field) {
+  foreach ($fields as $field) {
     $fl[] = $field['field'];
   }
   return $fl;
@@ -1133,7 +1133,7 @@ function livingstone_browse_catalogue_facet_range_defaults(array $form_state) {
     $from = $values['from'];
     $to = $values['to'];
   }
-  else if ($value) {
+  elseif ($value) {
     $matches = array();
     preg_match_all("/[0-9]{4}|\*/", $value, $matches);
     $num_matches = isset($matches[0]) ? count($matches[0]) : 0;
@@ -1184,7 +1184,7 @@ function livingstone_browse_catalogue_default_value($element, $default, array $f
   if (isset($values[$element])) {
     return $values[$element];
   }
-  else if (isset($_GET[$element])) {
+  elseif (isset($_GET[$element])) {
     return $_GET[$element];
   }
   return $default;
@@ -1207,8 +1207,8 @@ function livingstone_browse_catalogue_facet_default($facet, array $form_state) {
   if (isset($form_state['values'][$facet])) {
     return $form_state['values'][$facet];
   }
-  else if (isset($_GET['f'])) {
-    foreach($_GET['f'] as $facet) {
+  elseif (isset($_GET['f'])) {
+    foreach ($_GET['f'] as $facet) {
       list($field, $value) = explode(':', $facet);
       if ($field == $facet_field) {
         return trim(stripslashes($value), " \t\n\r\0\x0B\'\"");

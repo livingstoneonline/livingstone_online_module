@@ -78,9 +78,9 @@ function main() {
     echo "Merging manifest files ..."
     # We must delete the old merged manifest file before merging existing.
     ${PROGDIR}/merge_manifests.sh ${EXEC_DIR} > "${EXEC_DIR}/merged_manifest.csv"
-    echo "Processing merged manifest file ..."
-    perl -I ${PROGDIR}/perl5/lib/perl5 ${PROGDIR}/process_merged_manifest.pl < ${EXEC_DIR}/merged_manifest.csv > ${EXEC_DIR}/processed_merged_manifest.csv
-    echo "Generating import.csv file ..."
-    perl -I ${PROGDIR}/perl5/lib/perl5 ${PROGDIR}/generate_import.pl < ${EXEC_DIR}/processed_merged_manifest.csv > ${EXEC_DIR}/import.csv
+    echo "Generating import.datastreams.csv file ..."
+    perl -I ${PROGDIR}/perl5/lib/perl5 ${PROGDIR}/generate_datastream_import.pl < ${EXEC_DIR}/merged_manifest.csv > ${EXEC_DIR}/import.datastreams.csv
+    echo "Generating import.objects.csv file ..."
+    perl -I ${PROGDIR}/perl5/lib/perl5 ${PROGDIR}/generate_object_import.pl < ${EXEC_DIR}/import.datastreams.csv > ${EXEC_DIR}/import.objects.csv
 }
 main

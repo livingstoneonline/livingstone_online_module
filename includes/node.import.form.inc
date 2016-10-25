@@ -96,7 +96,8 @@ function livingstone_node_import_form_validate(array $form, array &$form_state) 
               '%pid' => $values['import_pid'],
             )));
       }
-      elseif (!in_array('islandora:manuscriptCModel', $object->models)) {
+      elseif (!in_array('islandora:manuscriptCModel', $object->models) &&
+              !in_array('islandora:spectralManuscriptCModel', $object->models)) {
         form_error($form['import_fieldset']['import_pid'], t('%pid is not a Manuscript.', array(
               '%pid' => $values['import_pid'],
             )));
@@ -148,8 +149,9 @@ function livingstone_node_import_form_import_submit(array $form, array &$form_st
   $node = livingstone_node_import_node_load($pid);
   if ($node) {
     if ($node = livingstone_node_import_update($pid)) {
-      drupal_set_message(t('Updated !link.', array(
-        '!link' => l($pid, "node/{$node->nid}", array()),
+      drupal_set_message(t('Updated <a href="@url">@pid</a>.', array(
+        '@url' => url("node/{$node->nid}"),
+        '@pid' => $pid,
       )));
     }
     else {
@@ -160,8 +162,9 @@ function livingstone_node_import_form_import_submit(array $form, array &$form_st
   }
   else {
     if ($node = livingstone_node_import($pid)) {
-      drupal_set_message(t('Imported !link.', array(
-        '!link' => l($pid, "node/{$node->nid}", array()),
+      drupal_set_message(t('Imported <a href="@url">@pid</a>.', array(
+        '@url' => url("node/{$node->nid}"),
+        '@pid' => $pid,
       )));
     }
     else {

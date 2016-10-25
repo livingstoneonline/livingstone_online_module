@@ -111,7 +111,7 @@ function livingstone_fedora_import_ftp_settings_form(array $form, array &$form_s
         '#title' => t('URL'),
         '#required' => TRUE,
         '#default_value' => $server,
-        '#description' => t('!message', array('!message' => $access_message)),
+        '#description' => filter_xss(t('!message', array('!message' => $access_message)), array('a', 'img')),
       ),
       'livingstone_ftp_user' => array(
         '#type' => 'textfield',
@@ -215,10 +215,10 @@ function livingstone_fedora_import_update_tables_form(array $form, array &$form_
   $symbols = array('B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB');
   $bytes = disk_total_space("/opt/fedora/data");
   $exp = floor(log($bytes)/log(1024));
-  $total_disk_space = sprintf('%.2f '.$symbols[$exp], ($bytes/pow(1024, floor($exp))));
+  $total_disk_space = sprintf('%.2f ' . $symbols[$exp], ($bytes/pow(1024, floor($exp))));
   $bytes = disk_free_space("/opt/fedora/data");
   $exp = floor(log($bytes)/log(1024));
-  $disk_free_space = sprintf('%.2f '.$symbols[$exp], ($bytes/pow(1024, floor($exp))));
+  $disk_free_space = sprintf('%.2f ' . $symbols[$exp], ($bytes/pow(1024, floor($exp))));
   return array(
     'import' => array(
       '#type' => 'fieldset',
@@ -349,7 +349,7 @@ function livingstone_fedora_import_sync_form_submit(array $form, array &$form_st
  */
 function livingstone_fedora_import_remote_stats_table() {
   $header = array('Remote Objects (<strong>On FTP Server</strong>)', 'Count');
-  $results = db_query("SELECT DISTINCT type, count(type) as count FROM {livingstone_fedora_remote_files} GROUP by type ORDER BY count DESC;");
+  $results = db_query("SELECT DISTINCT type, count(type) as count FROM {livingstone_fedora_remote_objects} GROUP by type ORDER BY count DESC;");
   return livingstone_fedora_import_count_table($results, $header, t('No remote files (<strong>Something is wrong</strong>).'));
 }
 
@@ -361,7 +361,7 @@ function livingstone_fedora_import_remote_stats_table() {
  */
 function livingstone_fedora_import_local_stats_table() {
   $header = array('Local Objects (<strong>In Fedora</strong>)', 'Count');
-  $results = db_query("SELECT DISTINCT type, count(type) as count FROM {livingstone_fedora_local_files} GROUP by type ORDER BY count DESC;");
+  $results = db_query("SELECT DISTINCT type, count(type) as count FROM {livingstone_fedora_local_objects} GROUP by type ORDER BY count DESC;");
   return livingstone_fedora_import_count_table($results, $header, t('No local files (<strong>Something is wrong</strong>).'));
 }
 
@@ -373,7 +373,7 @@ function livingstone_fedora_import_local_stats_table() {
  */
 function livingstone_fedora_import_up_to_date_stats_table() {
   $header = array('Local Objects that are <strong>up to date</strong>', 'Count');
-  $results = db_query("SELECT DISTINCT l.TYPE, count(l.TYPE) as count FROM {livingstone_fedora_local_files} as l LEFT OUTER JOIN {livingstone_fedora_remote_files} as r on l.PID = r.PID WHERE (l.MODS_MD5 <=> r.MODS_MD5 AND l.OBJ_MD5 <=> r.OBJ_MD5 AND l.PDF_MD5 <=> r.PDF_MD5 AND l.TEI_MD5 <=> r.TEI_MD5 AND l.TN_MD5 <=> r.TN_MD5 AND l.TXT_MD5 <=> r.TXT_MD5 AND l.XMP_MD5 <=> r.XMP_MD5 AND l.ZIP_MD5 <=> r.ZIP_MD5) GROUP by l.TYPE ORDER BY count DESC;");
+  $results = db_query("SELECT DISTINCT l.TYPE, count(l.TYPE) as count FROM {livingstone_fedora_local_objects} as l LEFT OUTER JOIN {livingstone_fedora_remote_objects} as r on l.PID = r.PID WHERE (l.MD5 <=> r.MD5) GROUP by l.TYPE ORDER BY count DESC;");
   return livingstone_fedora_import_count_table($results, $header, t('No objects are up to date (<strong>Something is wrong</strong>).'));
 }
 
@@ -385,7 +385,7 @@ function livingstone_fedora_import_up_to_date_stats_table() {
  */
 function livingstone_fedora_import_out_of_date_stats_table() {
   $header = array('Local Objects that are <strong>out to date</strong>', 'Count');
-  $results = db_query("SELECT DISTINCT l.TYPE, count(l.TYPE) as count FROM {livingstone_fedora_local_files} as l LEFT OUTER JOIN {livingstone_fedora_remote_files} as r on l.PID = r.PID WHERE (NOT l.MODS_MD5 <=> r.MODS_MD5 OR NOT l.OBJ_MD5 <=> r.OBJ_MD5 OR NOT l.PDF_MD5 <=> r.PDF_MD5 OR NOT l.TEI_MD5 <=> r.TEI_MD5 OR NOT l.TN_MD5 <=> r.TN_MD5 OR NOT l.TXT_MD5 <=> r.TXT_MD5 OR NOT l.XMP_MD5 <=> r.XMP_MD5 OR NOT l.ZIP_MD5 <=> r.ZIP_MD5) GROUP by l.TYPE ORDER BY count DESC;");
+  $results = db_query("SELECT DISTINCT l.TYPE, count(l.TYPE) as count FROM {livingstone_fedora_local_objects} as l LEFT OUTER JOIN {livingstone_fedora_remote_objects} as r on l.PID = r.PID WHERE (NOT l.MD5 <=> r.MD5) GROUP by l.TYPE ORDER BY count DESC;");
   return livingstone_fedora_import_count_table($results, $header, t('No objects are out of date.'));
 }
 
@@ -397,7 +397,7 @@ function livingstone_fedora_import_out_of_date_stats_table() {
  */
 function livingstone_fedora_import_add_stats_table() {
   $header = array('Missing Objects (<strong>To be Added</strong>)', 'Count');
-  $results = db_query("SELECT DISTINCT r.type, count(r.type) as count FROM {livingstone_fedora_remote_files} as r WHERE PID NOT IN (SELECT DISTINCT PID from {livingstone_fedora_local_files}) GROUP by r.type ORDER BY count DESC;");
+  $results = db_query("SELECT DISTINCT r.type, count(r.type) as count FROM {livingstone_fedora_remote_objects} as r WHERE PID NOT IN (SELECT DISTINCT PID from {livingstone_fedora_local_objects}) GROUP by r.type ORDER BY count DESC;");
   return livingstone_fedora_import_count_table($results, $header, t('No objects to add.'));
 }
 
@@ -409,7 +409,7 @@ function livingstone_fedora_import_add_stats_table() {
  */
 function livingstone_fedora_import_public_stats_table() {
   $header = array('Local Objects to be <strong>made public</strong>', 'Count');
-  $results = db_query("SELECT DISTINCT l.TYPE, count(l.TYPE) as count FROM {livingstone_fedora_local_files} as l LEFT OUTER JOIN {livingstone_fedora_local_files} as r on l.PID = r.PID WHERE (l.PRIVATE != r.PRIVATE AND l.PRIVATE=true) GROUP by l.TYPE ORDER BY count DESC;");
+  $results = db_query("SELECT DISTINCT l.TYPE, count(l.TYPE) as count FROM {livingstone_fedora_local_objects} as l LEFT OUTER JOIN {livingstone_fedora_local_objects} as r on l.PID = r.PID WHERE (l.PRIVATE <> r.PRIVATE AND l.PRIVATE=true) GROUP by l.TYPE ORDER BY count DESC;");
   return livingstone_fedora_import_count_table($results, $header, t('No local files are to be made public.'));
 }
 
@@ -421,7 +421,7 @@ function livingstone_fedora_import_public_stats_table() {
  */
 function livingstone_fedora_import_private_stats_table() {
   $header = array('Local Objects to be <strong>made private</strong>', 'Count');
-  $results = db_query("SELECT DISTINCT l.TYPE, count(l.TYPE) as count FROM {livingstone_fedora_local_files} as l LEFT OUTER JOIN {livingstone_fedora_remote_files} as r on l.PID = r.PID WHERE (l.PRIVATE != r.PRIVATE AND l.PRIVATE=false) GROUP by l.TYPE ORDER BY count DESC;");
+  $results = db_query("SELECT DISTINCT l.TYPE, count(l.TYPE) as count FROM {livingstone_fedora_local_objects} as l LEFT OUTER JOIN {livingstone_fedora_remote_objects} as r on l.PID = r.PID WHERE (l.PRIVATE <> r.PRIVATE AND l.PRIVATE=false) GROUP by l.TYPE ORDER BY count DESC;");
   return livingstone_fedora_import_count_table($results, $header, t('No local files are to be made private.'));
 }
 
@@ -433,7 +433,7 @@ function livingstone_fedora_import_private_stats_table() {
  */
 function livingstone_fedora_import_remove_stats_table() {
   $header = array('Stale Objects (<strong>To be Removed</strong>)', 'Count');
-  $results = db_query("SELECT DISTINCT l.type, count(l.type) as count FROM {livingstone_fedora_local_files} as l WHERE PID NOT IN (SELECT DISTINCT PID from {livingstone_fedora_remote_files}) GROUP by l.type ORDER BY count DESC;");
+  $results = db_query("SELECT DISTINCT l.type, count(l.type) as count FROM {livingstone_fedora_local_objects} as l WHERE PID NOT IN (SELECT DISTINCT PID from {livingstone_fedora_remote_objects}) GROUP by l.type ORDER BY count DESC;");
   return livingstone_fedora_import_count_table($results, $header, t('No objects to be removed.'));
 }
 
