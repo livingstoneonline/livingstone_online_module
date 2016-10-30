@@ -1,25 +1,67 @@
-#openseadragon {
+#main-image .spectral-image-toolbar,
+#compare-image .spectral-image-toolbar {
+  position: absolute;
+  z-index: 1;
+  padding: 20px 60px;
   width: 100%;
-  height: 100%;
-  position: fixed !important;
-  background-color: black;
-  z-index: 100;
 }
-#openseadragon.item-details-open.transcription-open {
-  display: none;
+#main-image .spectral-image-toolbar select,
+#compare-image .spectral-image-toolbar select {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 25px;
+  padding: 0 1.5em 0 1em;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  background: url(../../images/select-arrow.png) no-repeat #eee;
+  background-size: 1em;
+  background-position: right;
+  cursor: pointer;
 }
-#openseadragon.item-details-open {
-  width: 50%;
-  right: 0px;
+#main-image .spectral-image-toolbar span:first-of-type,
+#compare-image .spectral-image-toolbar span:first-of-type {
+  float: left;
 }
-#openseadragon.transcription-open {
-  width: 50%;
-  left: 0px;
+#main-image .spectral-image-toolbar span:last-of-type,
+#compare-image .spectral-image-toolbar span:last-of-type {
+  float: right;
 }
-#openseadragon .prev-icon {
+#main-image .spectral-image-toolbar .page-download a,
+#compare-image .spectral-image-toolbar .page-download a {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: none repeat scroll 0 0 #eee;
+  border: 1px solid #ccc;
+  padding: 3px 7px;
+  margin: auto 4px;
+  line-height: normal;
+  box-sizing: border-box;
+  font-size: 0.85em;
+  color: black;
+  height: 25px;
+  display: inline-block;
+}
+#main-image .spectral-image-toolbar .page-download a:hover,
+#compare-image .spectral-image-toolbar .page-download a:hover,
+#main-image .spectral-image-toolbar .page-download a:active,
+#compare-image .spectral-image-toolbar .page-download a:active {
+  color: black;
+}
+#main-image .spectral-image-toolbar:after,
+#compare-image .spectral-image-toolbar:after {
+  clear: both;
+}
+#main-image .prev-icon,
+#compare-image .prev-icon {
   position: absolute;
   top: 40%;
-  z-index: 200;
+  z-index: 1;
   cursor: pointer;
   background: url("../../images/bg_direction_nav-new.png") no-repeat #F2F2F2;
   border: 1px solid #eee;
@@ -30,10 +72,11 @@
   background-position: 0 0;
   border-radius: 0px 6px 6px 0px;
 }
-#openseadragon .next-icon {
+#main-image .next-icon,
+#compare-image .next-icon {
   position: absolute;
   top: 40%;
-  z-index: 200;
+  z-index: 1;
   cursor: pointer;
   background: url("../../images/bg_direction_nav-new.png") no-repeat #F2F2F2;
   border: 1px solid #eee;
@@ -43,6 +86,18 @@
   right: 0;
   background-position: 100% 0;
   border-radius: 6px 0px 0px 6px;
+}
+#viewer.compare #main-image .next-icon {
+  display: none;
+}
+#viewer.compare #compare-image .prev-icon {
+  display: none;
+}
+#viewer.compare #compare-image span:first-of-type {
+  float: right;
+}
+#viewer.compare .page-download {
+  display: none;
 }
 #restricted-message-wrapper {
   width: 100%;

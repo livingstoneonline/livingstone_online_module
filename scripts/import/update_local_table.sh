@@ -66,7 +66,7 @@ function cmdline() {
 # The list of fields to fetch form Solr.
 function solr_fl_parameter() {
   # PID, CONTENT_MODEL, PRIVATE, DSID_MD5, ...
-  echo 'PID%2CRELS_EXT_hasModel_uri_s%2Chidden_b,checksum_s,fedora_datastream_latest_*_MD5_ms'
+  echo 'PID%2CRELS_EXT_hasModel_uri_s%2Chidden_b%2Cfedora_datastream_latest_*_MD5_ms'
 }
 
 # Filter only those content model in which we copy from the FTP.
@@ -84,7 +84,6 @@ function solr_query() {
   curl -L "${url}" -o ${output}
   sed -i -e '1,1s/RELS_EXT_hasModel_uri_s/CONTENT_MODEL/g' ${output}
   sed -i -e '1,1s/hidden_b/PRIVATE/g' ${output}
-  sed -i -e '1,1s/checksum_s/MD5/g' ${output}
   sed -i -e '1,1s/fedora_datastream_latest_//g' ${output}
   sed -i -e '1,1s/_MD5_ms/_MD5/g' ${output}
   sed -i -e 's/info:fedora\///g' ${output}
@@ -92,6 +91,9 @@ function solr_query() {
   sed -i -e 's/false/0/g' ${output}
   sed -i -e ':a; s/,,/,\\N,/g; ta' ${output}
   sed -i -e 's/,$/,\\N/g' ${output}
+  # Insert 'MD5' column.
+  awk 'BEGIN{FS=OFS=","} {$4="MD5,"$4""; $0=$0""} 1' ${output} > ${SCRATCH}/solr_results.csv.tmp
+  cp ${SCRATCH}/solr_results.csv.tmp ${output}
   # Insert 'TYPE' column.
   awk 'BEGIN{FS=OFS=","} {$4="TYPE,"$4""; $0=$0""} 1' ${output} > ${SCRATCH}/solr_results.csv.tmp
   cp ${SCRATCH}/solr_results.csv.tmp ${output}

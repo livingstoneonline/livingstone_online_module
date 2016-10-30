@@ -4,12 +4,6 @@
   box-sizing: border-box;
   display: inline-block;
   background-color: #ffffff;
-  border-right: solid 1px;
-  left: 0px;
-  z-index: 1;
-  width: 50%;
-  position: fixed;
-  overflow: scroll;
 }
 #item-details .item-details-content {
   padding: 1em 1em 1em;
@@ -45,17 +39,22 @@
   padding: 0.5em 0 0 0;
 }
 #item-details dt.download a,
-#item-details dd.download a {
+#item-details dd.download a,
+#item-details dt.download .open-download-model,
+#item-details dd.download .open-download-model {
   margin: 0 0.5em;
   vertical-align: middle;
   color: #428bca;
+  cursor: pointer;
 }
 #item-details dt.download a:hover,
-#item-details dd.download a:hover {
+#item-details dd.download a:hover,
+#item-details dt.download .open-download-model:hover,
+#item-details dd.download .open-download-model:hover {
   color: #428bca;
 }
-#item-details dt.download span,
-#item-details dd.download span {
+#item-details dt.download .download-size,
+#item-details dd.download .download-size {
   display: inline-block;
   color: #808080;
   font-size: 0.8em;

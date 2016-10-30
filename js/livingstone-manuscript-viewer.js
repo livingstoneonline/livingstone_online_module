@@ -14,8 +14,8 @@
     var location = $(this).attr('href');
     var target = $(this).attr('target');
     if (typeof(location) != "undefined" &&
-        location !== '#' &&
-        target != "_blank") {
+    location !== '#' &&
+    target != "_blank") {
       event.preventDefault();
       top.location.replace(location);
     }
@@ -25,69 +25,510 @@
    * The DOM element that represents the Singleton Instance of this class.
    * @type {string}
    */
-  var base = '#livingstone-manuscript-viewer';
+  var base = '#viewer';
 
   /**
    * Initialize the Livingstone Manuscript Viewer.
    */
   Drupal.behaviors.livingstoneManuscriptViewer = {
     attach: function (context, settings) {
-      if (Drupal.LivingstoneManuscriptViewer[base] === undefined) {
-        $(base, document).once('livingstoneManuscriptViewer', function () {
-          Drupal.LivingstoneManuscriptViewer[base] = new Drupal.LivingstoneManuscriptViewer(base, settings.livingstoneManuscriptViewer);
-        });
-      }
+      settings = settings.livingstoneManuscriptViewer;
+      $(base, document).once('livingstoneManuscriptViewer', function () {
+         new Viewer(base, settings);
+      });
     },
     detach: function () {
       $(base).removeClass('livingstoneManuscriptViewer-processed');
       $(base).removeData();
       $(base).off();
-      delete Drupal.LivingstoneManuscriptViewer[base];
     }
   };
 
   /**
-   * Resize the viewer to fit the window.
-   */
-  function resize() {
-    var height = window.innerHeight - $('#toolbar').outerHeight();
-    $('#openseadragon, #item-details, #transcription').height(height);
-    var width = window.innerWidth > 568 ? window.innerWidth / 2 : window.innerWidth;
-    $('#item-details, #transcription').width(width);
-  }
-
-  /**
-   * Scroll to the given element in the transcription pane.
-   *
-   * @param {int} page
-   */
-  function transcriptionScrollTo(page) {
-    var element = $("span.pb-title:eq(" + page + ")");
-    if (element.length != 0) {
-      $('#transcription').animate({
-        scrollTop: element[0].offsetTop + 'px'
-      }, 1000);
-    }
-  }
-
-  /**
-   * Wrapper around OpenSeadragon.
+   * Models a Manuscript.
    * @constructor
    */
-  Drupal.LivingstoneManuscriptImageViewer = function (pid, initialPage, pages, options) {
+  var Manuscript = function (settings) {
     var that = this,
-        openseadragon = new OpenSeadragon($.extend({
-          element: $('#openseadragon', base).get(0),
-          tileSources: $.map(pages, function (page) {
-            return {
-              pid: page.pid,
-              token: page.token,
-              width: page.width,
-              height: page.height,
-              maxLevel: page.levels
+        pages = settings.pages,
+        tile_sources = [],
+        tile_source_mapping = {};
+
+    // Build the list of tile sources, and mapping over them.
+    $.each(pages, function (pid, page) {
+      tile_source_mapping[pid] = {};
+      $.each(page.token, function (dsid, token) {
+        tile_source_mapping[pid][dsid] = tile_sources.length;
+        tile_sources.push({
+          pid: page.pid,
+          dsid: dsid,
+          token: token,
+          width: page.width,
+          height: page.height,
+          maxlevel: page.levels
+        });
+      });
+    });
+
+    /**
+     * Gets a list of tile sources from the manuscript pages data.
+     */
+    this.getTileSources = function () {
+      return tile_sources;
+    };
+
+    /**
+     * Checks if access to this manuscript is restricted.
+     */
+    this.getInitialTileSource = function () {
+      return settings.initialPage;
+    };
+
+    /**
+     * Checks if access to this manuscript is restricted.
+     */
+    this.getInitialSpectralTileSource = function () {
+      var index = settings.initialPage;
+      var page = that.getPage(index);
+      var found = undefined;
+      $.each(page.dsid, function (i, dsid) {
+        if (!dsid.match("^COLOR")) {
+          found = dsid;
+          return false;
+        }
+      });
+      return that.getTileSourceIndex(page.pid, found);
+    };
+
+    /**
+     * Gets the tile source of the given pid and dsid.
+     */
+    this.getTileSourceIndex = function (pid, dsid) {
+      if (pid in tile_source_mapping) {
+        if (dsid in tile_source_mapping[pid]) {
+          return tile_source_mapping[pid][dsid];
+        }
+        dsid = pages[pid]['dsid'][0];
+        return tile_source_mapping[pid][dsid];
+      }
+      return false;
+    };
+
+    /**
+     * Gets the tile source mapping for the given tile source index.
+     */
+    this.getTileSourceMapping = function (index) {
+      var found = false;
+      var searching = true;
+      $.each(tile_source_mapping, function (pid, datastreams) {
+        $.each(datastreams, function (dsid, tile_source_index) {
+          if (index == tile_source_index) {
+            found = {
+              pid: pid,
+              dsid: dsid
             };
-          }),
-          initialPage: initialPage,
+            searching = false;
+          }
+          return searching;
+        });
+        return searching;
+      });
+      return found;
+    };
+
+    /**
+     * Gets the tile source mapping for the given tile source index.
+     */
+    this.getPrevTileSourceMapping = function (index) {
+      var prev_index = that.getPrevPageTileSource(index);
+      return prev_index !== false ? that.getTileSourceMapping(prev_index) : false;
+    };
+
+    /**
+     * Gets the tile source mapping for the given tile source index.
+     */
+    this.getNextTileSourceMapping = function (index) {
+      var next_index = that.getNextPageTileSource(index);
+      return next_index !== false ? that.getTileSourceMapping(next_index) : false;
+    };
+
+    /**
+     * Gets the tile source index of the next page with the same dsid.
+     */
+    this.getPrevPageTileSource = function (index) {
+      var current = that.getTileSourceMapping(index);
+      if (current) {
+        var prev = false;
+        $.each(tile_source_mapping, function (pid) {
+          if (pid == current.pid) {
+            return false;
+          }
+          prev = pid;
+        });
+        if (prev !== false) {
+          return that.getTileSourceIndex(prev, current.dsid);
+        }
+      }
+      return false;
+    };
+
+    /**
+     * Gets the tile source index of the previous page with the same dsid.
+     */
+    this.getNextPageTileSource = function (index) {
+      var current = that.getTileSourceMapping(index);
+      if (current) {
+        var next = false;
+        var return_next = false;
+        $.each(tile_source_mapping, function (pid) {
+          if (return_next) {
+            next = pid;
+            return false;
+          }
+          if (pid == current.pid) {
+            return_next  = true;
+          }
+        });
+        if (next !== false) {
+          return that.getTileSourceIndex(next, current.dsid);
+        }
+      }
+      return false;
+    };
+
+    /**
+     * Fetches the given page from the tile source index.
+     */
+    this.getPage = function (index) {
+      var mapping = that.getTileSourceMapping(index);
+      return pages[mapping.pid];
+    };
+
+    /**
+     * Fetches the given page from the tile source index.
+     */
+    this.getPageByPid = function (pid) {
+      return pid in pages ? pages[pid] : false;
+    };
+
+    /**
+     * Fetches the given page from the tile source index.
+     */
+    this.getPageByLabel = function (label) {
+      var found = false;
+      $.each(pages, function(pid, page) {
+        if (page.label == label) {
+          found = page;
+          return false;
+        }
+      });
+      return found;
+    };
+
+    /**
+     * Checks if access to this manuscript is restricted.
+     */
+    this.hasTranscription = function () {
+      return settings.hasTranscription;
+    };
+
+    /**
+     * Checks if access to this manuscript is restricted.
+     */
+    this.isRestricted = function () {
+      return tile_sources.length == 0;
+    };
+
+  };
+
+  /**
+   * Main object that manages all others.
+   * @constructor
+   */
+  var Viewer = function (base, settings) {
+    var that = this,
+        element = $(base),
+        manuscript = new Manuscript(settings),
+        toolbar = new Toolbar('#toolbar', manuscript),
+        item_details = new ItemDetails('#item-details'),
+        transcription = new Transcription('#transcription', manuscript),
+        main_image = $('#main-image').length ?
+          new Image('#main-image', manuscript, settings.openSeaDragon.options) :
+          null,
+        comparison_image = $('#compare-image').length ?
+          new Image('#compare-image', manuscript, settings.openSeaDragon.options) :
+          null,
+        images = [main_image, comparison_image].filter(function (value) { return value !== null; }),
+        item_details_pane = $('.pane.item-details'),
+        transcription_pane = $('.pane.transcription'),
+        main_image_pane = $('.pane.main-image'),
+        compare_image_pane = $('.pane.compare-image'),
+        restricted_pane = $('.pane.restricted'),
+        panes = [
+          item_details_pane,
+          transcription_pane,
+          main_image_pane,
+          compare_image_pane,
+          restricted_pane
+        ],
+        center_panes = [
+          main_image_pane,
+          restricted_pane
+        ];
+
+    function setPage(event) {
+      toolbar.setPage(event.pid);
+      transcription.setPage(event.pid);
+      $.each(images, function () {
+        this.setPage(event.pid);
+      })
+    }
+
+    function zoomTo(event) {
+      toolbar.setZoomPercentage(event.zoom);
+      $.each(images, function () {
+        this.setZoomPercentage(event.zoom);
+      });
+    }
+
+    // Zoom out.
+    toolbar.on('zoom-out', function () {
+      $.each(images, function () {
+        this.doSingleZoomOut();
+      })
+    });
+
+    // Zoom to.
+    toolbar.on('zoom-to', zoomTo);
+    $.each(images, function () {
+      this.on('zoom-to', zoomTo);
+    });
+
+    // Zoom in.
+    toolbar.on('zoom-in', function () {
+      $.each(images, function () {
+        this.doSingleZoomIn();
+      })
+    });
+
+    // Rotate.
+    toolbar.on('rotate', function () {
+      $.each(images, function () {
+        this.rotate();
+      })
+    });
+
+    // Page change.
+    toolbar.on('page-change', setPage);
+    transcription.on('page-change', setPage);
+    $.each(images, function () {
+      this.on('page-change', setPage);
+    });
+
+    // Open Pane.
+    toolbar.on('open-pane', function (event) {
+      // Close and reset everything.
+      $.each(panes, function () {
+        this.removeClass('pane-open');
+        this.removeClass('pane-left');
+        this.removeClass('pane-right');
+      });
+      element.removeClass('compare');
+
+      switch (event.pane) {
+        case 'item details':
+          item_details_pane.addClass('pane-open').addClass('pane-left');
+          $.each(center_panes, function () {
+            this.addClass('pane-open');
+            this.addClass('pane-right');
+          });
+          break;
+        case 'transcription':
+          transcription_pane.addClass('pane-open').addClass('pane-right');
+          $.each(center_panes, function () {
+            this.addClass('pane-open');
+            this.addClass('pane-left');
+          });
+          break;
+        case 'compare':
+          // Special case as showing both changes each.
+          element.addClass('compare');
+          compare_image_pane.addClass('pane-open').addClass('pane-right');
+          $.each(center_panes, function () {
+            this.addClass('pane-open');
+            this.addClass('pane-left');
+          });
+          break;
+      }
+    });
+
+    // Close pane.
+    toolbar.on('close-pane', function (event) {
+      // Close and reset everything.
+      $.each(panes, function () {
+        this.removeClass('pane-open');
+        this.removeClass('pane-left');
+        this.removeClass('pane-right');
+      });
+      $.each(center_panes, function () {
+        this.addClass('pane-open');
+      });
+      element.removeClass('compare');
+    });
+
+    /**
+     * Resize the viewer.
+     */
+    function resize() {
+      var height = window.innerHeight - $('#toolbar').outerHeight();
+      element.height(height);
+      // Hack to get around sudden switch to mobile when displaying compare.
+      if (window.innerWidth <= 568) {
+        if (compare_image_pane.hasClass('pane-open')) {
+          $('#toolbar .icon.compare').removeClass('depressed');
+          toolbar.trigger('close-pane', { pane:'compare' });
+        }
+      }
+    }
+
+    $(window).resize(resize);
+    $(window).on("orientationchange", resize);
+    resize();
+
+    // Show the compare pane by default.
+    toolbar.togglePane('compare');
+
+    // Remove the loading modal.
+    setTimeout(function () {
+      $('body').removeClass('loading');
+    }, 3000);
+
+  };
+
+  /**
+   * Wrapper for the toolbar.
+   * @constructor
+   */
+  var Toolbar = function (selector, manuscript) {
+    var that = this,
+        element = $(selector),
+        slider = $('.zoom-slider', element),
+        zoom_out = $('.icon.zoom-out', element),
+        zoom_in = $('.icon.zoom-in'),
+        rotate = $('.icon.rotate'),
+        pager = $('select.page-select'),
+        item_details = $('.icon.item-details'),
+        transcription = $('.icon.transcription'),
+        compare = $('.icon.compare'),
+        radios = [item_details, transcription, compare].filter(function (value) {
+          return value.length > 0;
+        });
+
+    if (!manuscript.hasTranscription()) {
+      transcription.addClass('disabled');
+      radios = radios.filter(function (value) {
+        return !transcription.is(value);
+      })
+    }
+
+    // Setup Zoom.
+    slider.slider({
+      min: 1,
+      max: 100,
+      slide: function( event, ui ) {
+        element.trigger(jQuery.Event('zoom-to', { zoom: ui.value / 100 }));
+      }
+    });
+
+    // Zoom Out.
+    zoom_out.click(function () {
+      element.trigger(jQuery.Event('zoom-out'));
+    });
+
+    // Zoom In.
+    zoom_in.click(function () {
+      element.trigger(jQuery.Event('zoom-in'));
+    });
+
+    // Rotate.
+    rotate.click(function () {
+      element.trigger(jQuery.Event('rotate'));
+    });
+
+    // Page Select.
+    pager.change(function () {
+      element.trigger(jQuery.Event('page-change', { pid: $(this).val() }));
+    });
+
+    // Toggle the button, and send an open or close event.
+    this.togglePane = function (pane) {
+      var button = false;
+      var was_depressed = false;
+      $.each(radios, function () {
+        if (this.val().toLowerCase() == pane) {
+          button = this;
+          was_depressed = button.hasClass('depressed');
+        }
+        this.removeClass('depressed');
+      });
+      if (button) {
+        if (!was_depressed) {
+          button.addClass('depressed');
+          element.trigger(jQuery.Event('open-pane', { pane: pane }));
+        }
+        else {
+          element.trigger(jQuery.Event('close-pane', { pane: pane }));
+        }
+      }
+    };
+
+    // Radio toggle pane buttons.
+    function click_pane_radio() {
+      that.togglePane($(this).val().toLowerCase());
+    }
+    $.each(radios, function () {
+      this.click(click_pane_radio);
+    });
+
+    // Close
+    $('.icon.close', element).click(function () {
+      parent.window.postMessage({ event: 'close' }, "*");
+    });
+
+    /**
+     * Set the tool bar zoom slider to the given zoom percentage.
+     */
+    this.setZoomPercentage = function (value) {
+      slider.slider('value', value * 100);
+    };
+
+    /**
+     * Updates the pager with the correct value for the current page.
+     */
+    this.setPage = function (pid) {
+      pager.val(pid);
+    };
+
+    // Expose some jQuery functions via a proxy.
+    this.on = $.proxy(element.on, element);
+    this.trigger = $.proxy(element.trigger, element);
+  };
+
+  /**
+   * Wrapper for an image viewer.
+   * @constructor
+   */
+  var Image = function (selector, manuscript, options) {
+    var that = this,
+        element = $(selector),
+        prev = $('.prev-icon', element),
+        next = $('.next-icon', element),
+        image_selector = $('select.spectral-image', element),
+        page_download = $('span.page-download'),
+        openseadragon = new OpenSeadragon($.extend({
+          element: element.get(0),
+          tileSources: manuscript.getTileSources(),
+          initialPage:  selector == '#main-image' ? manuscript.getInitialTileSource() : manuscript.getInitialSpectralTileSource(),
           sequenceMode: true,
           showReferenceStrip: false,
           referenceStripPosition: 'BOTTOM',
@@ -109,373 +550,238 @@
             top: 10,
             bottom: 30
           }
-        }, options));
+        }, options || {}));
 
     /**
-     * Notifies the parent frame that we have changed pages.
-     *
-     * @param {number} page
-     *   The new page number.
+     * Checks if the given number is a valid tile source index.
      */
-    function sendSetPageMessage(page) {
-      parent.window.postMessage({
-        event: 'page',
-        pid: pid,
-        page: page
-      }, "*");
+    function validTileSourceIndex(index) {
+      return $.isNumeric(index) && index >= 0 && index < openseadragon.tileSources.length;
     }
 
     /**
-     * Listen for page events.
+     * Updates the page download link.
      */
-    function receiveMessage(event) {
-      if (typeof event.data.event == "undefined") {
-        return;
-      }
-      switch (event.data.event) {
-        case 'page':
-          if (typeof event.data.page != "undefined") {
-            that.setPage(event.data.page);
-          }
-          else {
-            that.setPage(initialPage);
-          }
-          break;
+    function updatePageDownload(index) {
+      var page = manuscript.getPage(index);
+      page_download.html('');
+      if ($.isNumeric(page.size) && page.size > 0) {
+        var size = page.size / 1024 / 1024;
+        var text = 'Download archival packet (' + size.toFixed(2) + ' MB)';
+        var url = Drupal.settings.basePath + 'islandora/object/' + page.pid + '/datastream/ZIP/download';
+        page_download.html('<a href="' + url + '">' + text + '</a>');
       }
     }
 
     /**
-     * Checks if the given number is a valid page number.
-     *
-     * @param num {number}
-     *   The page number to check.
-     *
-     * @return {bool}
+     * Updates the page download link.
      */
-    function validPageNumber(num) {
-      return $.isNumeric(num) && num >= 0 && num < pages.length;
+    function updateImageSelect(index) {
+      var mapping = manuscript.getTileSourceMapping(index);
+      if (mapping) {
+        image_selector.val(mapping.dsid);
+      }
     }
 
     /**
      * Zoom in a single unit.
      */
-    function doSingleZoomIn() {
+    this.doSingleZoomIn = function () {
       var viewport = openseadragon.viewport;
-      if ( viewport ) {
+      if (viewport) {
         viewport.zoomBy(
-            openseadragon.zoomPerClick / 1.0
+        openseadragon.zoomPerClick / 1.0
         );
         viewport.applyConstraints();
       }
-    }
+    };
 
     /**
      * Zoom out a single unit.
      */
-    function doSingleZoomOut() {
+    this.doSingleZoomOut = function () {
       var viewport = openseadragon.viewport;
-      if ( viewport ) {
+      if (viewport) {
         viewport.zoomBy(
-            1.0 / openseadragon.zoomPerClick
+        1.0 / openseadragon.zoomPerClick
         );
         viewport.applyConstraints();
       }
-    }
+    };
 
     /**
      * Get the current percentage of the zoom.
-     *
-     * @return {number}
      */
-    function getZoomPercentage() {
+    this.getZoomPercentage = function () {
       var viewport = openseadragon.viewport,
           min = viewport.getMinZoom(),
           max = viewport.getMaxZoom(),
           range = max - min,
           current = viewport.getZoom(true);
       return (current - min) / range;
-    }
-
-    /**
-     * Sets the given page without firing any events or setting the state.
-     */
-    function setPage(page) {
-      if (validPageNumber(page)) {
-        $('select.page-select').val(page);
-        openseadragon._sequenceIndex = page;
-        openseadragon._updateSequenceButtons( page );
-        openseadragon.open( openseadragon.tileSources[ page ] );
-        if( openseadragon.referenceStrip ){
-          openseadragon.referenceStrip.setFocus( page );
-        }
-      }
-    }
-
-    /**
-     * Sets the value of the pager in the toolbar.
-     */
-    function setToolbarPage(page) {
-      $('select.page-select').val(page);
-    }
-
-    /**
-     * Setup the toolbar and bound actions to it.
-     */
-    function initializeToolbar() {
-      $('#zoom-slider').slider({
-        min: 1,
-        max: 100,
-        slide: function( event, ui ) {
-          var viewport = openseadragon.viewport,
-              min = viewport.getMinZoom(),
-              max = viewport.getMaxZoom(),
-              range = max - min,
-              zoom = range * ( ui.value / 100);
-          viewport.zoomTo(min + zoom);
-        }
-      });
-
-      openseadragon.addHandler("animation", function () {
-        var value = getZoomPercentage();
-        $('#zoom-slider').slider('value', value * 100);
-      });
-
-      // Zoom Out.
-      $('a.zoom-out.icon').click(function () {
-        doSingleZoomOut();
-      });
-
-      // Zoom In.
-      $('a.zoom-in.icon').click(function () {
-        doSingleZoomIn();
-      });
-
-      // Rotate.
-      $('a.rotate.icon').click(function () {
-        var viewport = openseadragon.viewport,
-            current = viewport.getRotation();
-        viewport.setRotation((current + 90) % 360);
-      });
-
-      // Page.
-      $('select.page-select').change(function () {
-        openseadragon.goToPage(parseInt($(this).val()));
-      });
-
-      // Navigation prev.
-      $('#openseadragon .prev-icon').click(function () {
-        var page = openseadragon.currentPage() - 1;
-        if (validPageNumber(page)) {
-          openseadragon.goToPage(page);
-        }
-      });
-
-      // Navigation next.
-      $('#openseadragon .next-icon').click(function () {
-        var page = openseadragon.currentPage() + 1;
-        if (validPageNumber(page)) {
-          openseadragon.goToPage(page);
-        }
-      })
-    }
-
-    /**
-     * Setup the reference strip and bound actions to it.
-     */
-    function initializeTranscription() {
-      $('.TEI span.pb-title').click(function () {
-        var page = parseInt($(this).text().replace(/[a-z-_.:]*/gi, '')) - 1;
-        if (validPageNumber(page)) {
-          openseadragon.goToPage(page);
-        }
-      });
-    }
-
-    /**
-     * Public functions.
-     */
-    this.currentPage = function () {
-      return openseadragon.currentPage();
     };
 
-    // Start up.
-    initializeToolbar();
-    initializeTranscription();
-    setToolbarPage(initialPage);
-
-    // Zoom Out.
-    openseadragon.viewport.zoomTo(openseadragon.viewport.getMinZoom());
+    /**
+     * Sets the zoom to the given percentage.
+     */
+    this.setZoomPercentage = function (percentage) {
+      var viewport = openseadragon.viewport,
+          min = viewport.getMinZoom(),
+          max = viewport.getMaxZoom(),
+          range = max - min,
+          zoom = range * percentage;
+      viewport.zoomTo(min + zoom);
+    };
 
     /**
-     * Handle Events.
+     * Rotates the image 90 degrees from its current rotation.
      */
-    openseadragon.addHandler("page", function (data) {
-      setToolbarPage(data.page);
-      sendSetPageMessage(data.page);
-      transcriptionScrollTo(data.page);
+    this.rotate = function () {
+      var viewport = openseadragon.viewport,
+          current = viewport.getRotation();
+      viewport.setRotation((current + 90) % 360);
+    };
+
+    /**
+     * Sets the tile source based on the given PID.
+     */
+    this.setPage = function (pid, dsid) {
+      var current_mapping = manuscript.getTileSourceMapping(openseadragon.currentPage());
+      var index = manuscript.getTileSourceIndex(pid, dsid || current_mapping.dsid);
+      that.showTileSource(index);
+    };
+
+    /**
+     * Shows the given tile source.
+     */
+    this.showTileSource = function (index) {
+      if (!validTileSourceIndex(index)) {
+        return;
+      }
+      openseadragon._sequenceIndex = index;
+      openseadragon._updateSequenceButtons( index );
+      openseadragon.open( openseadragon.tileSources[ index ] );
+      if( openseadragon.referenceStrip ){
+        openseadragon.referenceStrip.setFocus( index );
+      }
+      updatePageDownload(index);
+      updateImageSelect(index);
+    };
+
+    // Navigation previous page.
+    prev.click(function () {
+      var index = openseadragon.currentPage();
+      var prev = manuscript.getPrevTileSourceMapping(index);
+      if (prev !== false) {
+        element.trigger(jQuery.Event( "page-change", { pid: prev.pid } ));
+      }
     });
 
-    openseadragon.addHandler('open', function() {
-      resize();
+    // Navigation next page.
+    next.click(function () {
+      var index = openseadragon.currentPage();
+      var next = manuscript.getNextTileSourceMapping(index);
+      if (next !== false) {
+        element.trigger(jQuery.Event( "page-change", { pid: next.pid } ));
+      }
+    });
+
+    // Change the current image being displayed.
+    image_selector.change(function () {
+      var current_index = openseadragon.currentPage(),
+          mapping = manuscript.getTileSourceMapping(current_index),
+          pid = mapping.pid,
+          dsid = $(this).val(),
+          index = manuscript.getTileSourceIndex(pid, dsid);
+      that.showTileSource(index);
+      element.trigger(jQuery.Event( "image-change", { pid: pid, dsid: dsid, index: index }));
+    });
+
+    // Notify the viewer the zoom level has changed.
+    openseadragon.addHandler("animation", function () {
+      var value = that.getZoomPercentage();
+      element.trigger(jQuery.Event("zoom-to", { zoom: value }));
+    });
+
+    // Adjust the zoom when opening an new image.
+    openseadragon.addHandler('open', function () {
       openseadragon.viewport.zoomTo(openseadragon.viewport.getMinZoom(), null, true);
       openseadragon.viewport.applyConstraints();
     });
 
-    window.addEventListener("message", receiveMessage, false);
+    // Zoom out before opening.
+    openseadragon.viewport.zoomTo(openseadragon.viewport.getMinZoom());
 
+    // Update the download link before display.
+    updatePageDownload(openseadragon.currentPage());
+    updateImageSelect(openseadragon.currentPage());
+
+    // Expose some jQuery functions via a proxy.
+    this.on = $.proxy(element.on, element);
   };
 
   /**
-   * Creates an instance of the Livingstone Manuscript Viewer widget.
-   *
-   * @param {string} base
-   *   The element ID that this class is bound to.
-   * @param {object} settings
-   *   Drupal.settings for this object widget.
-   *
+   * Wrapper for the item details pane.
    * @constructor
    */
-  Drupal.LivingstoneManuscriptViewer = function (base, settings) {
-
+  var ItemDetails = function (selector) {
     var that = this,
-        pid = settings.pid,
-        pages = settings.pages,
-        initialPage = settings.initialPage,
-        hasTranscription = settings.hasTranscription,
-        viewer = null;
+        element = $(selector),
+        downloads_modal = $('#downloads');
 
-    // Only open the viewer if there are pages.
-    if (pages.length > 0) {
-      $('#restricted-message-wrapper').remove();
-      viewer = new Drupal.LivingstoneManuscriptImageViewer(
-          pid,
-          initialPage,
-          pages,
-          settings.openSeaDragon.options
-      );
-    }
-    else {
-      // Hide the controls used with the viewer.
-      $('.zoom-out, .zoom-slider, .zoom-in, .rotate, .page-select, .prev-icon, .next-icon').hide();
-    }
-
-    function toggleItemDetails() {
-      var open = $('#openseadragon').hasClass('item-details-open');
-      if (open) {
-        hideItemDetails();
-      }
-      else {
-        showItemDetails();
-        if (window.innerWidth <= 568) {
-          hideTranscription();
-        }
-      }
-    }
-
-    function showItemDetails() {
-      $('#item-details').show();
-      $('#openseadragon').addClass('item-details-open');
-      $('.item-details.icon').addClass('depressed');
-      resize();
-    }
-
-    function hideItemDetails() {
-      $('#item-details').hide();
-      $('#openseadragon').removeClass('item-details-open');
-      $('.item-details.icon').removeClass('depressed');
-      resize();
-    }
-
-    function toggleTranscription() {
-      var open = $('#openseadragon').hasClass('transcription-open');
-      if (open) {
-        hideTranscription();
-      }
-      else {
-        showTranscription();
-        if (window.innerWidth <= 568) {
-          hideItemDetails();
-        }
-      }
-    }
-
-    function showTranscription() {
-      $('#transcription').show();
-      $('#openseadragon').addClass('transcription-open');
-      $('.transcription.icon').addClass('depressed');
-      setTimeout(function () {
-        if (viewer) {
-          transcriptionScrollTo(viewer.currentPage());
-        }
-      }, 1000);
-      resize();
-    }
-
-    function hideTranscription() {
-      $('#transcription').hide();
-      $('#openseadragon').removeClass('transcription-open');
-      $('.transcription.icon').removeClass('depressed');
-      resize();
-    }
-
-    /**
-     * Setup the toolbar and bound actions to it.
-     */
-    function initializeToolbar() {
-      // Item Details.
-      $('.item-details.icon').click(toggleItemDetails);
-
-      // Transcription.
-      if (hasTranscription) {
-        $('.transcription.icon').click(toggleTranscription);
-      } else {
-        $('.transcription.icon').addClass('disabled');
-        $('.transcription.icon').wrap("<span class='viewer-tooltip'></span>");
-        $('.transcription.icon').before("<span class='viewer-tooltip-text'>There is no transcription<br/> available for this item.</span>");
-        $('.viewer-tooltip').hover(function () {
-          var isTouch =  !!("ontouchstart" in window) || window.navigator.msMaxTouchPoints > 0;
-          if( !isTouch ){
-            $('.viewer-tooltip').addClass('hover');
-          }
-        }, function () {
-          $('.viewer-tooltip').removeClass('hover');
-        });
-        $('.viewer-tooltip').click(function () {
-          $('.viewer-tooltip').addClass('hover');
-          setTimeout(function () {
-            $('.viewer-tooltip').removeClass('hover');
-            $('.viewer-tooltip').blur();
-          }, 3000);
-        });
-      }
-
-      // Close
-      $('.close.icon').click(function () {
-        parent.window.postMessage({ event: 'close'}, "*");
-      });
-    }
-
-    // Start up.
-    initializeToolbar();
-    resize();
-
-    /**
-     * Handle Events.
-     */
-    $(window).resize(function () {
-      resize();
+    // Close downloads modal.
+    $('.icon.close', downloads_modal).click(function () {
+      downloads_modal.hide();
     });
 
-    $(window).on("orientationchange", function(event) {
-      resize();
+    $('span.open-download-model', element).click(function (event) {
+      event.preventDefault();
+      downloads_modal.show();
+      return false;
     });
+  };
+
+  /**
+   * Wrapper for the transcription pane.
+   * @constructor
+   */
+  var Transcription = function (selector, manuscript) {
+    var that = this,
+        element = $(selector);
 
     /**
-     * Wait to display.
+     * Scrolls to the given page if possible.
      */
-    setTimeout(function () {
-      $('body').removeClass('loading');
-    }, 3000);
-  }
+    this.setPage = function (pid) {
+      var page = manuscript.getPageByPid(pid);
+      if (typeof page.label != "undefined") {
+        var iframe = jQuery('#transcription iframe');
+        if (iframe.length) {
+          iframe.get(0).contentWindow.postMessage({
+            event: 'page',
+            label: page.label
+          }, "*");
+        }
+      }
+    };
+
+    // Listen for page events.
+    function receiveMessage(event) {
+      if (typeof event.data.event == "undefined") {
+        return;
+      }
+      if (event.data.event == 'page' &&
+          typeof event.data.label != "undefined") {
+        var page = manuscript.getPageByLabel(event.data.label);
+        if (page) {
+          element.trigger(jQuery.Event('page-change', { pid: page.pid }));
+        }
+      }
+    }
+    window.addEventListener("message", receiveMessage, false);
+
+    // Expose some jQuery functions via a proxy.
+    this.on = $.proxy(element.on, element);
+  };
 
 }(jQuery));

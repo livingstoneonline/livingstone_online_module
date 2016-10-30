@@ -39,7 +39,41 @@ EOQ;
 }
 
 /**
- * Gets an orderd list of all pages in the given manuscript.
+ * Gets the zip datastream sizes from Solr.
+ */
+function livingstone_datastream_sizes($manuscript) {
+  $path_parts = parse_url(variable_get('islandora_solr_url', 'localhost:8080/solr'));
+  $solr = new Apache_Solr_Service($path_parts['host'], $path_parts['port'], $path_parts['path'] . '/');
+  $solr->setCreateDocuments(0);
+  try {
+    $results = $solr->search(
+      "RELS_EXT_isMemberOf_uri_s:\"info:fedora/$manuscript\"",
+      0,
+      10000,
+      array(
+        'fl' => 'PID,fedora_datastream_latest_ZIP_SIZE_ms',
+      ),
+      'GET'
+    );
+  }
+  catch (Exception $e) {
+    drupal_set_message($e->getMessage());
+  }
+  $results = isset($results) ? json_decode($results->getRawResponse(), TRUE) : array();
+  $docs = $results['response']['docs'];
+  $objects = array();
+  foreach ($docs as $doc) {
+    $pid = $doc['PID'];
+    $size = isset($doc['fedora_datastream_latest_ZIP_SIZE_ms']) ?
+      reset($doc['fedora_datastream_latest_ZIP_SIZE_ms']) :
+      FALSE;
+    $objects[$pid] = $size;
+  }
+  return $objects;
+}
+
+/**
+ * Gets an ordered list of all pages in the given manuscript.
  *
  * @param string $pid
  *   The PID of the manuscript.
@@ -49,6 +83,7 @@ EOQ;
  *   given manuscripts pages.
  */
 function livingstone_manuscript_pages($pid) {
+  module_load_include('inc', 'islandora', 'includes/authtokens');
   global $user;
   $filter_hidden = '';
   if (!in_array('administrator', $user->roles)) {
@@ -62,38 +97,58 @@ EOT;
   }
   $query = <<<EOQ
   PREFIX islandora-rels-ext: <http://islandora.ca/ontology/relsext#>
-  SELECT ?pid ?page ?width ?height ?levels
+  SELECT ?pid ?page ?dsid 
   FROM <#ri>
   WHERE {
-    ?pid <fedora-rels-ext:isMemberOf> <info:fedora/{$pid}> ;
+    {
+      ?pid <fedora-rels-ext:isMemberOf> <info:fedora/{$pid}> ;
          <islandora-rels-ext:isSequenceNumber> ?page ;
          <fedora-model:state> <fedora-model:Active> ;
-         <fedora-model:hasModel> <info:fedora/islandora:manuscriptPageCModel> .
-    OPTIONAL {
-      ?pid <fedora-view:disseminates> ?dss .
-      ?dss <fedora-view:disseminationType> <info:fedora/*/JP2> .
-      ?pid  <islandora-rels-ext:width> ?width ;
-               <islandora-rels-ext:height> ?height ;
-               <islandora-rels-ext:levels> ?levels .
+         <fedora-model:hasModel> <info:fedora/islandora:manuscriptPageCModel> ;
+         <fedora-view:disseminates> ?dsid .
+      ?dsid <fedora-view:mimeType> "image/jp2" .
+    } 
+    UNION {
+      ?pid <fedora-rels-ext:isMemberOf> <info:fedora/{$pid}> ;
+         <islandora-rels-ext:isSequenceNumber> ?page ;
+         <fedora-model:state> <fedora-model:Active> ;
+         <fedora-model:hasModel> <info:fedora/livingstone:spectralManuscriptPageCModel> ;
+         <fedora-view:disseminates> ?dsid .
+      ?dsid <fedora-view:mimeType> "image/jp2" .
     }
     $filter_hidden
   }
-  ORDER BY ?page
+  ORDER BY ?page ?dsid
 EOQ;
   $tuque = islandora_get_tuque_connection();
   $results = $tuque->repository->ri->sparqlQuery($query);
   // Get rid of the "extra" info...
   $map = function($o) {
     foreach ($o as $key => &$info) {
-      $info = $info['value'];
+      $info = ($key == 'dsid') ?
+        preg_replace('/^.*\/([^\/]*)$/u', '$1', $info['value']) :
+        $info['value'];
     }
     $o = array_filter($o);
     return $o;
   };
-  $pages = array_map($map, $results);
-  // Add tokens for use in Djatoka viewer for administrative access.
+  $results = array_map($map, $results);
+  // Collapse dsid field into an array.
+  $pages = array();
+  foreach ($results as $result) {
+    $page_pid = $result['pid'];
+    $pages[$page_pid]['pid'] = $page_pid;
+    $pages[$page_pid]['page'] = $result['page'];
+    $pages[$page_pid]['dsid'][] = $result['dsid'];
+  }
+  $sizes = livingstone_datastream_sizes($pid);
+  // Add tokens and sizes, for use in Djatoka viewer for administrative access.
   foreach ($pages as &$page) {
-    $page['token'] = islandora_get_object_token($page['pid'], 'JP2', 2);
+    $pid = $page['pid'];
+    $page['size'] = isset($sizes[$pid]) ? (int) $sizes[$pid] : FALSE;
+    foreach ($page['dsid'] as $dsid) {
+      $page['token'][$dsid] = islandora_get_object_token($pid, $dsid, 2);
+    }
   }
   return $pages;
 }
@@ -120,7 +175,7 @@ function livingstone_saxon_url() {
 function livingstone_saxon_transform_url(stdClass $source, $style, $params = array()) {
   $module_path = drupal_get_path('module', 'livingstone');
   $default_query = array(
-    'style' => file_create_url("$module_path/xsl/$style"),
+    'style' => file_create_url($style),
     'source' => file_create_url($source->uri),
     'clear-stylesheet-cache' => 'yes',
   );
@@ -130,6 +185,60 @@ function livingstone_saxon_transform_url(stdClass $source, $style, $params = arr
       'external' => TRUE,
       'query' => $query,
     ));
+}
+
+/**
+ * Fetches the style XSLT's given style if possible otherwise a default is used.
+ *
+ * @param string $tei
+ *   The TEI to transform.
+ *
+ * @return string
+ *   The full path to the XSLT used to style the TEI.
+ */
+function livingstone_transform_get_xslt($tei) {
+  $leap_path = drupal_get_path('module', 'leap_xslt');
+  $dom = new DOMDocument();
+  $dom->loadXML($tei);
+  $xpath = new DOMXpath($dom);
+  $results = $xpath->query('//processing-instruction()[name() = "xml-stylesheet"]');
+  foreach ($results as $result) {
+    if (preg_match('/type="text\/xsl"/', $result->nodeValue)) {
+      $stylesheet = preg_replace('/.*href="http:\/\/livingstoneonline.github.io\/LEAP-XSLT\/(.*)".*$/U', '$1', $result->nodeValue);
+      $full_path = "$leap_path/$stylesheet";
+      if (file_exists($full_path)) {
+        return $full_path;
+      }
+    }
+  }
+  return drupal_get_path('module', 'livingstone') . "/xsl/transcription.xsl";
+}
+
+/**
+ * Fetches the style XSLT's given style if possible otherwise a default is used.
+ *
+ * @param string $tei
+ *   The TEI to transform.
+ *
+ * @return string
+ *   The full path to the XSLT used to style the TEI.
+ */
+function livingstone_transform_get_css($tei) {
+  $leap_path = drupal_get_path('module', 'leap_xslt');
+  $dom = new DOMDocument();
+  $dom->loadXML($tei);
+  $xpath = new DOMXpath($dom);
+  $results = $xpath->query('//processing-instruction()[name() = "xml-stylesheet"]');
+  foreach ($results as $result) {
+    if (preg_match('/type="text\/css"/', $result->nodeValue)) {
+      $stylesheet = preg_replace('/.*href="http:\/\/livingstoneonline.github.io\/LEAP-XSLT\/(.*)".*$/U', '$1', $result->nodeValue);
+      $full_path = "$leap_path/$stylesheet";
+      if (file_exists($full_path)) {
+        return $full_path;
+      }
+    }
+  }
+  return drupal_get_path('module', 'livingstone') . "/css/transcript/style.css";
 }
 
 /**
@@ -156,13 +265,13 @@ function livingstone_transform_preprocess_tei($tei) {
  *   The transformed TEI as HTML if successful FALSE otherwise.
  */
 function livingstone_saxon_transform($tei) {
-  $transform = livingstone_get_transform($tei);
+  $transform = livingstone_transform_get_xslt($tei);
   $tei = livingstone_transform_preprocess_tei($tei);
   $source = file_save_data($tei, file_default_scheme() . '://');
   // File is temporary and will linger if the transform fails for debug
   // purposes, otherwise it's removed immediately.
   $source->status = 0;
-  $url = livingstone_saxon_transform_url($source, 'transcription.xsl');
+  $url = livingstone_saxon_transform_url($source, $transform);
   $result = drupal_http_request($url);
   if (isset($result->error) || !isset($result->data)) {
     $message = "Saxon Transform failed to transform <a href='!tei'>TEI</a>: !url.";

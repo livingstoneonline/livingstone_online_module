@@ -1,4 +1,4 @@
-<div id="item-details" style="display:none;">
+<div id="item-details">
   <div class="item-details-content" style="font-size: initial;">
     <h1>Item Details</h1>
     <hr/>

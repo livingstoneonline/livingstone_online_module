@@ -208,22 +208,19 @@ function livingstone_manuscript_viewer($manuscript = "liv:000490", $display_page
 
 /**
  * Callback to render the TEI transcription as HTML.
- *
- * @todo Remove? or make as a separate iframe.
- *
- * @param string $manuscript
- *   The PID of the manuscript.
- * @param int $page
- *   The page of the transcription to render.
  */
 function livingstone_manuscript_viewer_transcript($manuscript, $display_page = 0) {
   global $language;
   drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
   drupal_add_http_header('Content-Language', $language->language);
   return array(
-    '#theme' => 'livingstone_manuscript_transcript',
-    '#manuscript' => $manuscript,
-    '#display_page' => isset($display_page) ? $display_page : 0,
+    '#type' => 'page',
+    '#theme_wrappers' => array('livingstone_manuscript_transcript_html'),
+    'content' => array(
+      '#theme' => 'livingstone_manuscript_transcript',
+      '#manuscript' => $manuscript,
+      '#display_page' => isset($display_page) ? $display_page : 0,
+    ),
   );
 }
 
@@ -238,6 +235,11 @@ function livingstone_theme() {
       'template' => 'theme/livingstone-manuscript-html',
       'render element' => 'page',
     ),
+    'livingstone_manuscript_transcript_html' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-transcript-html',
+      'render element' => 'page',
+    ),
     'livingstone_manuscript_viewer' => array(
       'file' => 'theme/theme.inc',
       'template' => 'theme/livingstone-manuscript-viewer',
@@ -248,9 +250,29 @@ function livingstone_theme() {
         'display_page' => NULL,
       ),
     ),
+    'livingstone_manuscript_image' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-image',
+      'variables' => array(
+        // The HTML element the image will be bound to.
+        'identifier' => NULL,
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+        // Pages of the Manuscript object (Required).
+        'pages' => NULL,
+      ),
+    ),
     'livingstone_manuscript_item_details' => array(
       'file' => 'theme/theme.inc',
       'template' => 'theme/livingstone-manuscript-item-details',
+      'variables' => array(
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+      ),
+    ),
+    'livingstone_manuscript_downloads' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-downloads',
       'variables' => array(
         // PID of the Manuscript object (Required).
         'manuscript' => NULL,
@@ -353,7 +375,7 @@ function livingstone_manuscript_viewer_access($pid) {
     'defType' => 'edismax',
     'fq' => array(
       "viewable_b:true",
-      "RELS_EXT_hasModel_uri_s:\"info:fedora/islandora:manuscriptCModel\"",
+      "RELS_EXT_hasModel_uri_s:(\"info:fedora/islandora:manuscriptCModel\" OR \"info:fedora/livingstone:spectralManuscriptCModel\")",
     ),
     'start' => 0,
     'rows' => 1,
@@ -555,7 +577,6 @@ function livingstone_islandora_required_objects(IslandoraTuque $connection) {
 function livingstone_livingstone_spectralManuscriptPageCModel_islandora_derivative() {
   module_load_include('inc', 'livingstone', 'includes/fedora.import');
   $large_image_module_path = drupal_get_path('module', 'islandora_large_image');
-  $derivatives = array();
   $dsids = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_DATASTREAM_TABLE, 'r')
     ->distinct()
     ->fields('r', array('DSID'))

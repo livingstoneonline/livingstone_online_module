@@ -27,6 +27,37 @@ function template_process_livingstone_manuscript_html(array &$variables) {
 }
 
 /**
+ * Implements template_process_livingstone_manuscript_transcript_html().
+ */
+function template_process_livingstone_manuscript_transcript_html(array &$variables) {
+  $leap_path = drupal_get_path('module', 'leap_xslt');
+  // Don't render into a region.
+  unset($variables['page']['content']['#region']);
+  unset($variables['page']['content']['#theme_wrappers']);
+  $html = drupal_render($variables['page']['content']);
+  $dom = new DOMDocument();
+  $dom->loadXML($html);
+  $xpath = new DOMXPath($dom);
+  $results = $xpath->query('/html/head/link');
+  // Alter the includes to point to the local copy.
+  foreach ($results as $result) {
+    $style = str_replace('http://livingstoneonline.github.io/LEAP-XSLT/', '', $result->getAttribute('href'));
+    $result->setAttribute('href', url("$leap_path/$style"));
+  }
+  $js = drupal_add_js();
+  foreach ($js as $key => $data) {
+    if (!(preg_match('/.*\/jquery(\.min\.|\.)js$/', $key) ||
+        strpos($key, 'livingstone-manuscript-transcript.js') !== FALSE)) {
+      unset($js[$key]);
+    }
+  }
+  $scripts = $dom->createDocumentFragment();
+  $scripts->appendXML(drupal_get_js('header', $js));
+  $head = $xpath->query('/html/head')->item(0);
+  $head->appendChild($scripts);
+  $variables['content'] = $dom->saveHTML();
+}
+/**
  * Implements template_preprocess_livingstone_manuscript_transcript_iframe().
  */
 function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
@@ -57,17 +88,57 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
   drupal_add_css("$css_path/manuscript-viewer/manuscript-viewer.css", array(
     'group' => CSS_THEME,
   ));
-  drupal_add_css("$css_path/transcript/style.css", array(
-    'group' => CSS_THEME,
-  ));
 
   $manuscript = $variables['manuscript'];
   $manuscript_object = islandora_object_load($manuscript);
   $display_page = $variables['display_page'];
+  $variables['spectral'] = in_array('livingstone:spectralManuscriptCModel', $manuscript_object->models);
+  $variables['has_transcription'] = isset($manuscript_object['TEI']);
   $pages = livingstone_manuscript_pages($manuscript);
-  $variables['pages'] = $pages;
+  $variables['pages'] = &$pages;
+  $variables['select_pages'] = array();
+  if (isset($manuscript_object['TEI'])) {
+    $dom = new DOMDocument();
+    $dom->loadxml($manuscript_object['TEI']->content);
+    $xpath = new DOMXPath($dom);
+    $xpath->registerNamespace('tei', 'http://www.tei-c.org/ns/1.0');
+    $results = $xpath->query('//tei:pb[@facs and @n]');
+    foreach ($results as $result) {
+      $facs = $result->getAttribute('facs');
+      $pid = str_replace('liv_', 'liv:', $facs);
+      $variables['select_pages'][$pid] = $result->getattribute('n');
+    }
+    $variables['select_pages'] = array_intersect_key($variables['select_pages'], $pages);
+  }
+  else {
+    $index = 0;
+    foreach ($pages as $page) {
+      $pid = $page['pid'];
+      $variables['select_pages'][$pid] = sprintf('%04d', $index+=1);
+    }
+  }
+  // Add link between label and page data.
+  foreach ($variables['select_pages'] as $pid => $select_page) {
+    $pages[$pid]['label'] = $select_page;
+  }
+
   $variables['search_form'] = drupal_get_form('search_block_form');
   $variables['search_form']['#attributes'] = array('target' => '_top');
+  $variables['restricted'] = count($pages) == 0;
+  $variables['main_image'] = array(
+    '#theme' => 'livingstone_manuscript_image',
+    '#identifier' => 'main-image',
+    '#manuscript' => $manuscript,
+    '#pages' => $pages,
+  );
+  if ($variables['spectral']) {
+    $variables['compare_image'] = array(
+      '#theme' => 'livingstone_manuscript_image',
+      '#identifier' => 'compare-image',
+      '#manuscript' => $manuscript,
+      '#pages' => $pages,
+    );
+  }
   $variables['item_details'] = array(
     '#theme' => 'livingstone_manuscript_item_details',
     '#manuscript' => $manuscript,
@@ -77,12 +148,16 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
     '#manuscript' => $manuscript,
     '#display_page' => $display_page,
   );
+  $variables['downloads'] = array(
+    '#theme' => 'livingstone_manuscript_downloads',
+    '#manuscript' => $manuscript,
+  );
   drupal_add_js(
     array(
       'livingstoneManuscriptViewer' => array(
         'pid' => $manuscript,
         'pages' => $pages,
-        'initialPage' => $display_page,
+        'initialPage' => 0,//$display_page,
         'hasTranscription' => isset($manuscript_object['TEI']),
         'openSeaDragon' => array(
           'options' => array(
@@ -102,6 +177,18 @@ function template_process_livingstone_manuscript_viewer(array &$variables) {
   $variables['search_form'] = drupal_render($variables['search_form']);
   $variables['item_details'] = drupal_render($variables['item_details']);
   $variables['transcript'] = drupal_render($variables['transcript']);
+  $variables['main_image'] = drupal_render($variables['main_image']);
+  $variables['compare_image'] = drupal_render($variables['compare_image']);
+  $variables['downloads'] = drupal_render($variables['downloads']);
+}
+
+/**
+ * Implements template_process_livingstone_manuscript_transcript_item_details().
+ */
+function template_preprocess_livingstone_manuscript_image(array &$variables) {
+  $manuscript = $variables['manuscript'];
+  $object = islandora_object_load($manuscript);
+  $variables['spectral'] = in_array('livingstone:spectralManuscriptCModel', $object->models);
 }
 
 /**
@@ -138,7 +225,11 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
     foreach ($credits as &$credit) {
       $credit = preg_replace('(https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*))', '<a href="\0" target="_blank">\0</a>', $credit);
     }
-    if (isset($manuscript['ZIP'])) {
+    $download = FALSE;
+    if (in_array('livingstone:spectralManuscriptCModel', $manuscript->models)) {
+      $download = '<span class="fa fa-arrow-down open-download-model"></span>';
+    }
+    elseif (isset($manuscript['ZIP'])) {
       $path = "islandora/object/{$manuscript->id}/datastream/ZIP/download";
       $attributes = array(
         'external' => FALSE,
@@ -177,11 +268,44 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
 }
 
 /**
+ * Implements template_process_livingstone_manuscript_transcript_item_details().
+ */
+function template_preprocess_livingstone_manuscript_downloads(array &$variables) {
+  $manuscript = islandora_object_load($variables['manuscript']);
+  $variables['title'] = $manuscript->label;
+  if (isset($manuscript['MODS'])) {
+    $dom = new DOMDocument();
+    $dom->loadXML($manuscript['MODS']->content);
+    $xpath = new DOMXPath($dom);
+    $xpath->registerNamespace('mods', 'http://www.loc.gov/mods/v3');
+    $results = $xpath->query('/mods:mods/mods:titleInfo[@type="alternative"]/mods:title[normalize-space()][1]/text()');
+    $variables['title'] = ($results->length > 0) ?
+      $results->item(0)->textContent :
+      $variables['title'];
+  }
+  $variables['downloads'] = array();
+  $pages = livingstone_manuscript_pages($manuscript);
+  foreach ($pages as $page) {
+    if (!$page['size']) {
+      continue;
+    }
+    $variables['downloads'][] = array(
+      'size' => number_format($page['size'] / 1024 / 1024, 1),
+      'label' => str_replace(':', '_', $page['pid']),
+      'url' => url("islandora/object/{$page['pid']}/datastream/ZIP/download"),
+    );
+  }
+}
+
+/**
  * Implements hook_preprocess_theme().
  */
 function theme_livingstone_manuscript_transcript(array &$variables) {
-  $manuscript = $variables['manuscript'];
   module_load_include('inc', 'livingstone', 'includes/utilities');
+  $module_path = drupal_get_path('module', 'livingstone');
+  $js_path = "$module_path/js";
+  drupal_add_js("$js_path/livingstone-manuscript-transcript.js");
+  $manuscript = $variables['manuscript'];
   $manuscript = islandora_object_load($manuscript);
   if ($manuscript === FALSE || !isset($manuscript['TEI'])) {
     return '<div>' . t('No Transcript available.') . '</div>';
@@ -190,5 +314,5 @@ function theme_livingstone_manuscript_transcript(array &$variables) {
   if ($markup === FALSE) {
     return '<div>' . t('Failed to generate transcript.') . '</div>';
   }
-  return "<div class='viewer-sidebar' style='font-size: initial;'>{$markup}</div>";
+  return $markup; //"<div class='viewer-sidebar' style='font-size: initial;'>{$markup}</div>";
 }

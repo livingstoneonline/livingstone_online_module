@@ -1,11 +1,8 @@
 #transcription {
-  display: inline-block;
-  position: fixed;
-  right: 0px;
-  z-index: 1;
-  height: 300px;
-  width: 50%;
-  background-color: #ffffff;
-  white-space: nowrap;
-  overflow: scroll;
+  width: 100%;
+  height: 100%;
+}
+#transcription iframe {
+  width: 100%;
+  height: 100%;
 }

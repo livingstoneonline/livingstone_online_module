@@ -141,7 +141,8 @@
   color: #c77405;
 }
 #toolbar .item-details,
-#toolbar .transcription {
+#toolbar .transcription,
+#toolbar .compare {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

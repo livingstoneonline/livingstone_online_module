@@ -1,3 +1,8 @@
+@icon-size: 25px;
+@icon-padding: 3px 7px;
+@icon-margin: 6px;
+@icon-group-margin: 0 @icon-margin;
+
 .box-sizing() {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -73,5 +78,37 @@
     & {
       margin: @large-margin;
     }
+  }
+}
+
+.select() {
+  .border-radius();
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 25px;
+  padding: 0 1.5em 0 1em;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  background: url(../../images/select-arrow.png) no-repeat #eee;
+  background-size: 1em;
+  background-position: right;
+  cursor: pointer;
+}
+
+.button() {
+  .border-radius(6px);
+  background: none repeat scroll 0 0 #eee;
+  border: 1px solid #ccc;
+  padding: @icon-padding;
+  margin: auto 4px;
+  line-height: normal;
+  box-sizing: border-box;
+  height: 25px;
+  font-size: 0.85em;
+  color: black;
+  &:hover, &:active {
+    color: black;
   }
 }

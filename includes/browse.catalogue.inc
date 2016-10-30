@@ -413,6 +413,7 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
     '#options' => array(
       'all' => t('Access options'),
       'view' => t('View (any)'),
+      'view_spectral' => t('View (w/ spectral images only)'),
       'view_transcription' => t('View (w/ transcriptions)'),
       'view_wo_transcription' => t('View (w/o transcriptions)'),
       'download' => t('Download (any)'),
@@ -586,9 +587,12 @@ function livingstone_browse_catalogue_view_link($doc) {
     ),
   );
   if ($viewable && !$hidden) {
+    $viewer_icon = $doc['RELS_EXT_hasModel_uri_s'] == "info:fedora/islandora:manuscriptCModel" ?
+      'fa-camera' :
+      'fa-bolt';
     $attributes['attributes']['title'] = 'View';
     $attributes['attributes']['class'] = array(
-      'livingstone-manuscript-launcher fa fa-camera'
+      "livingstone-manuscript-launcher fa {$viewer_icon}",
     );
     return l((''), current_path(), $attributes);
   }
@@ -714,6 +718,7 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
   $hide = !in_array('administrator', $user->roles);
   switch ($access) {
     case 'view':
+    case 'view_spectral':
       $filter_query[] = "viewable_b:true";
       if ($hide) {
         $filter_query[] = "hidden_b:false";
@@ -776,7 +781,12 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
     default:
       break;
   }
-  $filter_query[] = "RELS_EXT_hasModel_uri_s:(\"info:fedora/islandora:manuscriptCModel\" OR \"info:fedora/livingstone:spectralManuscriptCModel\")";
+  if ($access == 'view_spectral') {
+    $filter_query[] = 'RELS_EXT_hasModel_uri_s:"info:fedora/livingstone:spectralManuscriptCModel"';
+  }
+  else {
+    $filter_query[] = 'RELS_EXT_hasModel_uri_s:("info:fedora/islandora:manuscriptCModel" OR "info:fedora/livingstone:spectralManuscriptCModel")';
+  }
   $limit = isset($values['limit']) ? $values['limit'] : (isset($_GET['limit']) ? $_GET['limit'] : 'catalogue');
   switch ($limit) {
     case 'transcriptions':
@@ -821,7 +831,8 @@ function livingstone_browse_catalogue_fl_search_parameter() {
     'viewable_b',
     'downloadable_b',
     'hidden_b',
-    'fedora_datastream_version_ZIP_SIZE_ms'
+    'fedora_datastream_version_ZIP_SIZE_ms',
+    'RELS_EXT_hasModel_uri_s',
   );
   $fields = livingstone_browse_catalogue_display_fields();
   foreach ($fields as $field) {

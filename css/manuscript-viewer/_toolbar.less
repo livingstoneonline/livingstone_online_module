@@ -2,10 +2,6 @@
 @root: "../..";
 @images: "@{root}/images";
 @social: "@{images}/viewer/social";
-@icon-size: 25px;
-@icon-padding: 3px 7px;
-@icon-margin: 6px;
-@icon-group-margin: 0 @icon-margin;
 
 .share-icon(@image, @over-image) {
   background: url("@{social}/@{image}") no-repeat scroll 0 0 transparent !important;
@@ -120,7 +116,8 @@
     color: #c77405;
   }
   .item-details,
-  .transcription {
+  .transcription,
+  .compare {
     .box-sizing;
     height: @icon-size;
     font-size: 0.85em;
