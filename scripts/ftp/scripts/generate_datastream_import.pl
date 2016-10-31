@@ -108,6 +108,7 @@ sub spectral_manuscript_page_info {
   my ($name, $path, $suffix) = @_;
   my %datastreams = (
      ".gif", "GIF",
+     ".zip", "ZIP",
      ".tif", "OBJ",
      ".txt", "TXT",
      ".xmp", "XMP",
@@ -117,7 +118,10 @@ sub spectral_manuscript_page_info {
      return ();
  }
  else {
-   if ($suffix eq '.gif') {
+   if ($suffix eq '.zip') {
+     $dsid = 'ZIP';
+   }
+   elsif ($suffix eq '.gif') {
      if (index($name, "cropped") != -1) {
        $dsid = 'CROPPED_GIF';
      }
