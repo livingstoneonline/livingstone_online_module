@@ -106,20 +106,26 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
     foreach ($results as $result) {
       $facs = $result->getAttribute('facs');
       $pid = str_replace('liv_', 'liv:', $facs);
-      $variables['select_pages'][$pid] = $result->getattribute('n');
+      $variables['select_pages'][] = array(
+        'value' => $pid,
+        'label' => $result->getattribute('n'),
+      );
     }
-    $variables['select_pages'] = array_intersect_key($variables['select_pages'], $pages);
   }
   else {
     $index = 0;
     foreach ($pages as $page) {
       $pid = $page['pid'];
-      $variables['select_pages'][$pid] = sprintf('%04d', $index+=1);
+      $variables['select_pages'][] = array(
+        'value' => $pid,
+        'label' => sprintf('%04d', $index+=1)
+      );
     }
   }
   // Add link between label and page data.
-  foreach ($variables['select_pages'] as $pid => $select_page) {
-    $pages[$pid]['label'] = $select_page;
+  foreach ($variables['select_pages'] as $select_page) {
+    $pid = $select_page['value'];
+    $pages[$pid]['labels'][] = $select_page['label'];
   }
 
   $variables['search_form'] = drupal_get_form('search_block_form');

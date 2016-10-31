@@ -163,7 +163,7 @@ function update_local_tables() {
   mysql --local-infile=1 -e "LOAD DATA INFILE '${datastreams_file}' INTO TABLE livingstone.livingstone_fedora_local_datastreams FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES (${datastreams_headers});"
   mysql livingstone -e "DELETE FROM livingstone_fedora_local_datastreams WHERE DSID='DC' OR DSID='RELS-EXT' OR DSID='RELS-INT' OR DSID='POLICY' OR DSID LIKE '%JP2';";
   # Update the checksums in the table.
-  mysql livingstone  -e "UPDATE livingstone_fedora_local_objects o SET MD5 = (SELECT MD5(GROUP_CONCAT(MD5 SEPARATOR '')) FROM livingstone_fedora_local_datastreams d WHERE d.PID = o.PID ORDER BY DSID)";
+  mysql livingstone  -e "set group_concat_max_len = 4096; UPDATE livingstone_fedora_local_objects o SET MD5 = (SELECT MD5(GROUP_CONCAT(MD5 SEPARATOR '')) FROM livingstone_fedora_local_datastreams d WHERE d.PID = o.PID ORDER BY DSID)";
 }
 
 # Entry Point.

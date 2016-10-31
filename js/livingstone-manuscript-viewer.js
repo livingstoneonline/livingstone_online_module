@@ -217,7 +217,7 @@
     this.getPageByLabel = function (label) {
       var found = false;
       $.each(pages, function(pid, page) {
-        if (page.label == label) {
+        if ($.inArray(label, page.labels) > -1) {
           found = page;
           return false;
         }
@@ -277,8 +277,8 @@
         ];
 
     function setPage(event) {
-      toolbar.setPage(event.pid);
-      transcription.setPage(event.pid);
+      toolbar.setPage(event.pid, event.label);
+      transcription.setPage(event.pid, event.label);
       $.each(images, function () {
         this.setPage(event.pid);
       })
@@ -457,7 +457,10 @@
 
     // Page Select.
     pager.change(function () {
-      element.trigger(jQuery.Event('page-change', { pid: $(this).val() }));
+      element.trigger(jQuery.Event('page-change', {
+        pid: $(this).val(),
+        label: $('option:selected', this).text()
+      }));
     });
 
     // Toggle the button, and send an open or close event.
@@ -505,8 +508,13 @@
     /**
      * Updates the pager with the correct value for the current page.
      */
-    this.setPage = function (pid) {
-      pager.val(pid);
+    this.setPage = function (pid, label) {
+      if (typeof label != "undefined") {
+        $('option:contains("' + label+ '")', pager)[0].selected = true;
+      }
+      else if (pager.val() != pid) {
+        pager.val(pid);
+      }
     };
 
     // Expose some jQuery functions via a proxy.
@@ -752,14 +760,15 @@
     /**
      * Scrolls to the given page if possible.
      */
-    this.setPage = function (pid) {
+    this.setPage = function (pid, label) {
       var page = manuscript.getPageByPid(pid);
-      if (typeof page.label != "undefined") {
+      label = label || page.labels[0];
+      if (typeof label != "undefined") {
         var iframe = jQuery('#transcription iframe');
         if (iframe.length) {
           iframe.get(0).contentWindow.postMessage({
             event: 'page',
-            label: page.label
+            label: label
           }, "*");
         }
       }
@@ -774,7 +783,7 @@
           typeof event.data.label != "undefined") {
         var page = manuscript.getPageByLabel(event.data.label);
         if (page) {
-          element.trigger(jQuery.Event('page-change', { pid: page.pid }));
+          element.trigger(jQuery.Event('page-change', { pid: page.pid, label: event.data.label }));
         }
       }
     }

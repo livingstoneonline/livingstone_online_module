@@ -98,7 +98,7 @@ function update_remote_tables() {
   # Import the datastreams CSV file.
   mysql --local-infile=1 -e "LOAD DATA INFILE '${datastreams_file}' INTO TABLE livingstone.livingstone_fedora_remote_datastreams FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES (${datastreams_headers});"
   # Update the checksums in the table.
-  mysql livingstone  -e "UPDATE livingstone_fedora_remote_objects o SET MD5 = (SELECT MD5(GROUP_CONCAT(MD5 SEPARATOR '')) FROM livingstone_fedora_remote_datastreams d WHERE d.PID = o.PID ORDER BY DSID)";
+  mysql livingstone  -e "set group_concat_max_len = 4096; UPDATE livingstone_fedora_remote_objects o SET MD5 = (SELECT MD5(GROUP_CONCAT(MD5 SEPARATOR '')) FROM livingstone_fedora_remote_datastreams d WHERE d.PID = o.PID ORDER BY DSID)";
 }
 
 # Entry Point.

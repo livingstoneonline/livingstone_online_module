@@ -31,8 +31,8 @@
     <span class="icon-group">
       <?php if (!$restricted): ?>
         <select class="page-select" value="<?php print $display_page; ?>">
-          <?php foreach ($select_pages as $value => $label): ?>
-            <option value="<?php print $value; ?>"><?php print $label; ?></option>
+          <?php foreach ($select_pages as $select_page): ?>
+            <option value="<?php print $select_page['value']; ?>"><?php print $select_page['label']; ?></option>
           <?php endforeach; ?>
         </select>
       <?php endif; ?>
