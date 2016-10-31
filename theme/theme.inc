@@ -314,11 +314,11 @@ function theme_livingstone_manuscript_transcript(array &$variables) {
   $manuscript = $variables['manuscript'];
   $manuscript = islandora_object_load($manuscript);
   if ($manuscript === FALSE || !isset($manuscript['TEI'])) {
-    return '<div>' . t('No Transcript available.') . '</div>';
+    return '<html><head></head><body><div>' . t('No Transcript available.') . '</div></body></html>';
   }
   $markup = livingstone_saxon_transform($manuscript['TEI']->content);
   if ($markup === FALSE) {
-    return '<div>' . t('Failed to generate transcript.') . '</div>';
+    return '<html><head></head><body><div>' . t('Failed to generate transcript.') . '</div></body></html>';
   }
   return $markup; //"<div class='viewer-sidebar' style='font-size: initial;'>{$markup}</div>";
 }
