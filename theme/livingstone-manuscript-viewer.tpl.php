@@ -42,6 +42,7 @@
       <input type="button" class="transcription icon" value="Transcription"/>
       <?php if ($spectral && !$restricted): ?>
         <input type="button" class="compare icon" value="Compare"/>
+        <span class="fa fa-bolt"></span>
       <?php endif; ?>
     </span>
     <span class="icon-group"><?php print $search_form; ?></span>

@@ -16,21 +16,25 @@
   .spectral-image-toolbar {
     position: absolute;
     z-index: 1;
-    padding: 20px 60px;
+    padding: 20px 10px;
     width: 100%;
+    text-align: center;
     select {
       .select();
     }
-    span:first-of-type {
-      float: left;
-    }
-    span:last-of-type {
-      float: right;
-    }
-    .page-download a {
+    .page-download a,
+    .processing-details a {
       .button();
       height: 25px;
       display: inline-block;
+      padding: 5px 7px;
+    }
+    .page-download a {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .processing-details a {
+      margin-top: 5px;
     }
     &:after {
       clear: both;
@@ -60,12 +64,6 @@
     .prev-icon {
       display: none;
     }
-    span:first-of-type {
-      float: right;
-    }
-  }
-  .page-download {
-    display: none;
   }
 }
 
@@ -100,4 +98,24 @@
       margin: 0;
     }
   }
+}
+
+.image-selector-tooltip .image-selector-tooltip-text {
+  visibility: hidden;
+  font-size: 0.85em;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1em;
+  position: absolute;
+  z-index: 1000;
+  box-sizing: initial;
+  border-color: black;
+  background: none repeat scroll 0 0 #eee;
+  top: 55px;
+}
+
+.image-selector-tooltip.hover .image-selector-tooltip-text,
+.image-selector-tooltip:hover {
+  visibility: visible;
 }

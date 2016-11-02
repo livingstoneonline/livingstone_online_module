@@ -405,10 +405,18 @@ body.loading .modal {
   height: 25px;
   font-size: 0.85em;
 }
+#toolbar .compare {
+  padding-right: 20px;
+}
+#toolbar .fa.fa-bolt {
+  position: relative;
+  left: -23px;
+  font-size: 0.80em;
+}
 #toolbar .depressed {
   background-color: #999;
 }
-#toolbar .viewer-tooltip .viewer-tooltip-text {
+#toolbar .transcription-tooltip .transcription-tooltip-text {
   visibility: hidden;
   font-size: 0.85em;
   color: black;
@@ -423,21 +431,21 @@ body.loading .modal {
   top: 43px;
 }
 @media only screen and (max-width: 1146px) {
-  #toolbar .viewer-tooltip .viewer-tooltip-text {
+  #toolbar .transcription-tooltip .transcription-tooltip-text {
     top: 75px;
   }
 }
 @media only screen and (max-width: 605px) {
-  #toolbar .viewer-tooltip .viewer-tooltip-text {
+  #toolbar .transcription-tooltip .transcription-tooltip-text {
     top: 110px;
   }
 }
 @media only screen and (max-width: 583px) {
-  #toolbar .viewer-tooltip .viewer-tooltip-text {
+  #toolbar .transcription-tooltip .transcription-tooltip-text {
     top: 140px;
   }
 }
-#toolbar .viewer-tooltip.hover .viewer-tooltip-text {
+#toolbar .transcription-tooltip.hover .transcription-tooltip-text {
   visibility: visible;
 }
 #toolbar select.page-select {
@@ -601,6 +609,8 @@ body.loading .modal {
 }
 #downloads .downloads-content {
   padding: 1em 1em 1em;
+  max-width: 800px;
+  margin: auto;
 }
 @media only screen and (min-width: 768px) {
   #downloads .downloads-content {
@@ -657,6 +667,7 @@ body.loading .modal {
 #downloads ul {
   margin: 0 auto;
   width: 50%;
+  list-style: none;
 }
 #downloads ul li {
   text-align: center;
@@ -668,6 +679,7 @@ body.loading .modal {
 #downloads ul li a:visited,
 #downloads ul li a:hover {
   color: #428bca;
+  text-decoration: none;
 }
 #downloads ul li span {
   color: #808080;
@@ -678,8 +690,9 @@ body.loading .modal {
 #compare-image .spectral-image-toolbar {
   position: absolute;
   z-index: 1;
-  padding: 20px 60px;
+  padding: 20px 10px;
   width: 100%;
+  text-align: center;
 }
 #main-image .spectral-image-toolbar select,
 #compare-image .spectral-image-toolbar select {
@@ -699,16 +712,10 @@ body.loading .modal {
   background-position: right;
   cursor: pointer;
 }
-#main-image .spectral-image-toolbar span:first-of-type,
-#compare-image .spectral-image-toolbar span:first-of-type {
-  float: left;
-}
-#main-image .spectral-image-toolbar span:last-of-type,
-#compare-image .spectral-image-toolbar span:last-of-type {
-  float: right;
-}
 #main-image .spectral-image-toolbar .page-download a,
-#compare-image .spectral-image-toolbar .page-download a {
+#compare-image .spectral-image-toolbar .page-download a,
+#main-image .spectral-image-toolbar .processing-details a,
+#compare-image .spectral-image-toolbar .processing-details a {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -722,12 +729,26 @@ body.loading .modal {
   color: black;
   height: 25px;
   display: inline-block;
+  padding: 5px 7px;
 }
 #main-image .spectral-image-toolbar .page-download a:hover,
 #compare-image .spectral-image-toolbar .page-download a:hover,
+#main-image .spectral-image-toolbar .processing-details a:hover,
+#compare-image .spectral-image-toolbar .processing-details a:hover,
 #main-image .spectral-image-toolbar .page-download a:active,
-#compare-image .spectral-image-toolbar .page-download a:active {
+#compare-image .spectral-image-toolbar .page-download a:active,
+#main-image .spectral-image-toolbar .processing-details a:active,
+#compare-image .spectral-image-toolbar .processing-details a:active {
   color: black;
+}
+#main-image .spectral-image-toolbar .page-download a,
+#compare-image .spectral-image-toolbar .page-download a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#main-image .spectral-image-toolbar .processing-details a,
+#compare-image .spectral-image-toolbar .processing-details a {
+  margin-top: 5px;
 }
 #main-image .spectral-image-toolbar:after,
 #compare-image .spectral-image-toolbar:after {
@@ -769,12 +790,6 @@ body.loading .modal {
 #viewer.compare #compare-image .prev-icon {
   display: none;
 }
-#viewer.compare #compare-image span:first-of-type {
-  float: right;
-}
-#viewer.compare .page-download {
-  display: none;
-}
 #restricted-message-wrapper {
   width: 100%;
   height: 100%;
@@ -806,6 +821,24 @@ body.loading .modal {
   font-size: 0.9em;
   padding: 0.5em 0 0 0;
   margin: 0;
+}
+.image-selector-tooltip .image-selector-tooltip-text {
+  visibility: hidden;
+  font-size: 0.85em;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1em;
+  position: absolute;
+  z-index: 1000;
+  box-sizing: initial;
+  border-color: black;
+  background: none repeat scroll 0 0 #eee;
+  top: 55px;
+}
+.image-selector-tooltip.hover .image-selector-tooltip-text,
+.image-selector-tooltip:hover {
+  visibility: visible;
 }
 html {
   height: 100%;
@@ -851,7 +884,8 @@ body {
   clear: both;
 }
 @media only screen and (max-width: 568px) {
-  #toolbar .icon.compare {
+  #toolbar .icon.compare,
+  #toolbar .fa.fa-bolt {
     display: none;
   }
 }
@@ -875,15 +909,19 @@ body {
 .pane.item-details {
   overflow: scroll;
 }
-.pane.pane-left.main-image .page-download,
-.pane.pane-right.main-image .page-download {
-  display: none;
-}
 .pane.main-image,
 .pane.compare-image,
 .pane.restricted {
   height: 100%;
   background-color: black;
+}
+.pane.compare-image {
+  border-left: 2px solid white;
+}
+@media only screen and (max-width: 850px) {
+  .pane .page-download {
+    display: none;
+  }
 }
 @media only screen and (max-width: 568px) {
   .pane.pane-left,
@@ -893,11 +931,5 @@ body {
   }
   .pane .spectral-image-toolbar {
     text-align: center;
-  }
-  .pane .spectral-image-toolbar span:first-of-type {
-    float: none !important;
-  }
-  .pane .spectral-image-toolbar .page-download {
-    display: none;
   }
 }

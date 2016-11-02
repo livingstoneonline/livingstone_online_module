@@ -8,6 +8,8 @@
 }
 #downloads .downloads-content {
   padding: 1em 1em 1em;
+  max-width: 800px;
+  margin: auto;
 }
 @media only screen and (min-width: 768px) {
   #downloads .downloads-content {
@@ -64,6 +66,7 @@
 #downloads ul {
   margin: 0 auto;
   width: 50%;
+  list-style: none;
 }
 #downloads ul li {
   text-align: center;
@@ -75,6 +78,7 @@
 #downloads ul li a:visited,
 #downloads ul li a:hover {
   color: #428bca;
+  text-decoration: none;
 }
 #downloads ul li span {
   color: #808080;

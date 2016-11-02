@@ -61,7 +61,7 @@ body {
 }
 #toolbar {
   @media only screen and (max-width : 568px) {
-    .icon.compare {
+    .icon.compare, .fa.fa-bolt {
       display: none;
     }
   }
@@ -85,20 +85,22 @@ body {
   &.item-details {
     overflow: scroll;
   }
-  &.pane-left,
-  &.pane-right {
-    &.main-image {
-      .page-download {
-        display: none;
-      }
-    }
-  }
   &.main-image,
   &.compare-image,
   &.restricted {
     height: 100%;
     background-color: black;
   }
+  &.compare-image {
+    border-left: 2px solid white;
+  }
+
+  @media only screen and (max-width : 850px) {
+    .page-download {
+      display: none;
+    }
+  }
+
   @media only screen and (max-width : 568px) {
     &.pane-left,
     &.pane-right {
@@ -108,12 +110,6 @@ body {
 
     .spectral-image-toolbar {
       text-align: center;
-      span:first-of-type {
-        float: none !important;
-      }
-      .page-download {
-        display: none;
-      }
     }
   }
 }

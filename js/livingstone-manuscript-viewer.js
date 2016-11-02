@@ -311,6 +311,17 @@
       })
     });
 
+    // Pan to.
+    if (images.length > 1) {
+      $.each(images, function (index) {
+        var opposite_image_index = (index + 1) % 2,
+            opposite_image = images[opposite_image_index];
+        this.on('pan-to', function (event) {
+          opposite_image.panTo(event.center);
+        });
+      });
+    }
+
     // Rotate.
     toolbar.on('rotate', function () {
       $.each(images, function () {
@@ -425,10 +436,29 @@
         });
 
     if (!manuscript.hasTranscription()) {
+      // Add tooltip to state no transcription is present.
+      transcription.wrap('<span class="transcription-tooltip"></span>');
+      transcription.before('<span class="transcription-tooltip-text">There is no transcription<br/> available for this item.</span>');
+      var transcription_tooltip = $('.transcription-tooltip');
+      transcription_tooltip.hover(function () {
+        var isTouch =  !!('ontouchstart' in window) || window.navigator.msMaxTouchPoints > 0;
+        if( !isTouch ){
+          transcription_tooltip.addClass('hover');
+        }
+      }, function () {
+        transcription_tooltip.removeClass('hover');
+      });
+      transcription_tooltip.click(function () {
+        transcription_tooltip.addClass('hover');
+        setTimeout(function () {
+          transcription_tooltip.removeClass('hover');
+          transcription_tooltip.blur();
+        }, 3000);
+      });
       transcription.addClass('disabled');
       radios = radios.filter(function (value) {
         return !transcription.is(value);
-      })
+      });
     }
 
     // Setup Zoom.
@@ -532,7 +562,7 @@
         prev = $('.prev-icon', element),
         next = $('.next-icon', element),
         image_selector = $('select.spectral-image', element),
-        page_download = $('span.page-download'),
+        page_download = $('span.page-download', element),
         openseadragon = new OpenSeadragon($.extend({
           element: element.get(0),
           tileSources: manuscript.getTileSources(),
@@ -575,7 +605,7 @@
       page_download.html('');
       if ($.isNumeric(page.size) && page.size > 0) {
         var size = page.size / 1024 / 1024;
-        var text = 'Download archival packet (' + size.toFixed(2) + ' MB)';
+        var text = 'Download (' + size.toFixed(2) + ' MB)';
         var url = Drupal.settings.basePath + 'islandora/object/' + page.pid + '/datastream/ZIP/download';
         page_download.html('<a href="' + url + '">' + text + '</a>');
       }
@@ -585,8 +615,66 @@
      * Updates the page download link.
      */
     function updateImageSelect(index) {
+      var page = manuscript.getPage(index);
       var mapping = manuscript.getTileSourceMapping(index);
       if (mapping) {
+        var labels = {
+          'COLOR_JP2': 'color',
+          'RATIO_BY_0940_JP2': 'spectral_ratio',
+          'PCA321R_PCOLOR_JP2': 'pca321r_pcolor',
+          'PCA421R_JP2': 'pca421r_pcolor',
+          'PCA621R_JP2': 'pca621r_pcolor',
+          'PCA721R_JP2': 'pca721r_pcolor',
+          'PSEUDORATIO_0505-0780_JP2': 'pseudoratio',
+          'PSEUDO_0505-0780_JP2': 'pseudo_v1',
+          'PSEUDO_0780_JP2': 'pseudo_v2',
+          'PSEUDO_0780_BY_0940_JP2': 'pseudo_v3',
+          'PSEUDO_940_BY_592_JP2': 'pseudo_v4',
+          'PSEUDOBY_940_BY_592_JP2': 'pseudo_v4_BY',
+          'RED_GREEN_JP2': 'red_green',
+          'PCA_PSEUDO_LIV_000205_0032_STATS_JP2': 'PCA_pseudo_32',
+          'PCA_PSEUDO_LIV_000205_0034_STATS_JP2': 'PCA_pseudo_34',
+          'ICA_PSEUDO_LIV_000204_0001_TRANS_JP2': 'ICA_pseudo_1',
+          'ICA_PSEUDO_LIV_000205_0032_TRANS_JP2': 'ICA_pseudo_32',
+          'PCA321R_ADAPTHRESH_JP2': 'pca321r_adapThresh',
+          'PCA321R_ADAPTHRESH_MULTIPLY_JP2': 'pca321r_multiply',
+          'PCA321R_JP2': 'pca321r',
+          'PCA321R_1_ADAPTHRESH_MULTIPLY_JP2': 'pca321r_1_multiply',
+          'PCA321R_1_JP2': 'pca321r_1',
+          'PCA321R_2_ADAPTHRESH_MULTIPLY_JP2': 'pca321r_2_multiply',
+          'PCA321R_2_JP2': 'pca321r_2',
+          'PCA421R_ADAPTHRESH_MULTIPLY_JP2': 'pca421r_multiply',
+          'PCA421R_PCOLOR_JP2': 'pca421r',
+          'PCA621R_ADAPTHRESH_MULTIPLY_JP2': 'pca621r_multiply',
+          'PCA621R_PCOLOR_JP2': 'pca621r',
+          'PCA721R_ADAPTHRESH_MULTIPLY_JP2': 'pca721r_multiply',
+          'PCA721R_PCOLOR_JP2': 'pca721r',
+          'INTERCEPT_JP2': 'intercept',
+          'RARR_JP2': 'RARR',
+          'RAPRRATIO_JP2': 'RAPRratio',
+          'RAIPRATIO_JP2': 'RAIPratio',
+          'RIRL_JP2': 'RIRL',
+          'COLOR_RAKING_JP2': 'color_raking',
+          'RAKING_IRDIFF_MOCKUP_OB': 'raking_mockup',
+          'RAKING_IRDIFF_JP2': 'raking',
+          'SHARPIE_0505-0780_JP2': 'sharpie',
+          'SHARPIERATIO_0505-0780_JP2': 'sharpieratio',
+          'IC1_LIV_000204_0001_TRANS_JP2': 'IC1',
+          'IC2_LIV_000204_0001_TRANS_JP2': 'IC2',
+          'IC3_LIV_000204_0001_TRANS_JP2': 'IC3',
+          'IC4_LIV_000204_0001_TRANS_JP2': 'IC4',
+          'IC5_LIV_000204_0001_TRANS_JP2': 'IC5'
+        };
+        var options = [];
+        $.each(labels, function (dsid, label) {
+          if (page.dsid.indexOf(dsid) != -1) {
+            options.push({ value: dsid, label: label });
+          }
+        });
+        image_selector.html('');
+        $.each(options, function(index, option) {
+          image_selector.append('<option value="' + option.value + '">' + option.label + '</option>');
+        });
         image_selector.val(mapping.dsid);
       }
     }
@@ -638,7 +726,19 @@
           max = viewport.getMaxZoom(),
           range = max - min,
           zoom = range * percentage;
-      viewport.zoomTo(min + zoom);
+      if (that.getZoomPercentage() != percentage) {
+        viewport.zoomTo(min + zoom);
+      }
+    };
+
+    /**
+     * Sets the zoom to the given percentage.
+     */
+    this.panTo = function (center) {
+      var viewport = openseadragon.viewport;
+      if (viewport.getCenter() != center) {
+        viewport.panTo(center);
+      }
     };
 
     /**
@@ -709,6 +809,7 @@
     openseadragon.addHandler("animation", function () {
       var value = that.getZoomPercentage();
       element.trigger(jQuery.Event("zoom-to", { zoom: value }));
+      element.trigger(jQuery.Event("pan-to", { center: openseadragon.viewport.getCenter() }));
     });
 
     // Adjust the zoom when opening an new image.
@@ -726,6 +827,26 @@
 
     // Expose some jQuery functions via a proxy.
     this.on = $.proxy(element.on, element);
+
+    // Add tooltip to describe images.
+    image_selector.wrap('<span class="image-selector-tooltip"></span>');
+    image_selector.before('<span class="image-selector-tooltip-text">Select a spectral image type.</span>');
+    var image_selector_tooltip = $('.image-selector-tooltip');
+    image_selector_tooltip.hover(function () {
+      var isTouch =  !!('ontouchstart' in window) || window.navigator.msMaxTouchPoints > 0;
+      if( !isTouch ){
+        image_selector_tooltip.addClass('hover');
+      }
+    }, function () {
+      image_selector_tooltip.removeClass('hover');
+    });
+    image_selector_tooltip.click(function () {
+      image_selector_tooltip.addClass('hover');
+      setTimeout(function () {
+        image_selector_tooltip.removeClass('hover');
+        image_selector_tooltip.blur();
+      }, 3000);
+    });
   };
 
   /**

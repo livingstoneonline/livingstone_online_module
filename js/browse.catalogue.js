@@ -293,6 +293,14 @@
     }
 
     /**
+     * Show the viewer for the given manuscript pid and page.
+     */
+    function download_modal(pid) {
+      var url = '/livingstone-download/' + pid;
+      $('body').prepend('<div class="livingstone-manuscript-viewer-wrapper"><iframe class="livingstone-manuscript-viewer" src="' + url + '"></iframe></div>');
+    }
+
+    /**
      * Initialization.
      */
 
@@ -305,6 +313,13 @@
 
     $(window).on("orientationchange", function(event) {
       toggleScrollInstructionsDisplay();
+    });
+
+    // Download links for spectral objects show a popup.
+    $('a.spectral', base).on('click', function(event) {
+      event.preventDefault();
+      download_modal($(this).data('pid'));
+      return false;
     });
 
     // Rebuild sort links (Ajax rebuild's can lead to an incorrect URL).

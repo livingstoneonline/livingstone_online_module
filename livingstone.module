@@ -129,7 +129,14 @@ function livingstone_menu() {
       'type' => MENU_NORMAL_ITEM,
       'page callback' => 'livingstone_manuscript_viewer_transcript',
       'page arguments' => array(1),
-    )
+    ),
+    'livingstone-download/%' => array(
+      'title' => 'Downloads',
+      'access arguments' => array('access content'),
+      'type' => MENU_NORMAL_ITEM,
+      'page callback' => 'livingstone_manuscript_viewer_downloads',
+      'page arguments' => array(1),
+    ),
   );
 }
 
@@ -235,6 +242,11 @@ function livingstone_theme() {
       'template' => 'theme/livingstone-manuscript-html',
       'render element' => 'page',
     ),
+    'livingstone_manuscript_downloads_html' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-downloads-html',
+      'render element' => 'page',
+    ),
     'livingstone_manuscript_transcript_html' => array(
       'file' => 'theme/theme.inc',
       'template' => 'theme/livingstone-manuscript-transcript-html',
@@ -301,6 +313,35 @@ function livingstone_theme() {
       'file' => 'theme/theme.inc',
       'render element' => 'element',
     )
+  );
+}
+
+/**
+ * Downloads.
+ */
+function livingstone_manuscript_viewer_downloads($manuscript) {
+  global $language;
+  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
+  drupal_add_http_header('Content-Language', $language->language);
+  $module_path = drupal_get_path('module', 'livingstone');
+  $css_path = "$module_path/css";
+  $js_path = "$module_path/js";
+  $lib_path = "$module_path/lib";
+  drupal_add_css("$lib_path/bootstrap/3.3.6/css/bootstrap.min.css", array(
+    'group' => CSS_THEME,
+  ));
+  drupal_add_css("$css_path/manuscript-viewer/_downloads.css");
+  drupal_add_js("$lib_path/jquery/1.12.4/dist/jquery.min.js");
+  drupal_add_js("$lib_path/jquery/plugins/jquery.once.js");
+  drupal_add_js("$lib_path/drupal.js");
+  drupal_add_js("$js_path/livingstone-downloads.js");
+  return array(
+    '#type' => 'page',
+    '#theme_wrappers' => array('livingstone_manuscript_downloads_html'),
+    'content' => array(
+      '#theme' => 'livingstone_manuscript_downloads',
+      '#manuscript' => $manuscript,
+    ),
   );
 }
 
@@ -773,7 +814,14 @@ function livingstone_field_formatter_view($entity_type, $entity, $field, $instan
                 '#attributes' => array(
                   'class' => array('page')
                 ),
-                '#options' => array('Select a Date'),
+                '#options' => array('Select page'),
+              ),
+              'date' => array(
+                '#type' => 'select',
+                '#attributes' => array(
+                  'class' => array('date')
+                ),
+                '#options' => array('Select date'),
               ),
             ),
             'content' => array(
@@ -801,7 +849,14 @@ function livingstone_field_formatter_view($entity_type, $entity, $field, $instan
                 '#attributes' => array(
                   'class' => array('page')
                 ),
-                '#options' => array('Select a Date'),
+                '#options' => array('Select page'),
+              ),
+              'date' => array(
+                '#type' => 'select',
+                '#attributes' => array(
+                  'class' => array('date')
+                ),
+                '#options' => array('Select date'),
               ),
             ),
             'content' => array(

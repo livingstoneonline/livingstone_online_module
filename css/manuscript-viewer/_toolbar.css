@@ -149,10 +149,18 @@
   height: 25px;
   font-size: 0.85em;
 }
+#toolbar .compare {
+  padding-right: 20px;
+}
+#toolbar .fa.fa-bolt {
+  position: relative;
+  left: -23px;
+  font-size: 0.80em;
+}
 #toolbar .depressed {
   background-color: #999;
 }
-#toolbar .viewer-tooltip .viewer-tooltip-text {
+#toolbar .transcription-tooltip .transcription-tooltip-text {
   visibility: hidden;
   font-size: 0.85em;
   color: black;
@@ -167,21 +175,21 @@
   top: 43px;
 }
 @media only screen and (max-width: 1146px) {
-  #toolbar .viewer-tooltip .viewer-tooltip-text {
+  #toolbar .transcription-tooltip .transcription-tooltip-text {
     top: 75px;
   }
 }
 @media only screen and (max-width: 605px) {
-  #toolbar .viewer-tooltip .viewer-tooltip-text {
+  #toolbar .transcription-tooltip .transcription-tooltip-text {
     top: 110px;
   }
 }
 @media only screen and (max-width: 583px) {
-  #toolbar .viewer-tooltip .viewer-tooltip-text {
+  #toolbar .transcription-tooltip .transcription-tooltip-text {
     top: 140px;
   }
 }
-#toolbar .viewer-tooltip.hover .viewer-tooltip-text {
+#toolbar .transcription-tooltip.hover .transcription-tooltip-text {
   visibility: visible;
 }
 #toolbar select.page-select {

@@ -27,6 +27,13 @@ function template_process_livingstone_manuscript_html(array &$variables) {
 }
 
 /**
+ * Implements template_process_livingstone_manuscript_downloads_html().
+ */
+function template_process_livingstone_manuscript_downloads_html(array &$variables) {
+  template_process_livingstone_manuscript_html($variables);
+}
+
+/**
  * Implements template_process_livingstone_manuscript_transcript_html().
  */
 function template_process_livingstone_manuscript_transcript_html(array &$variables) {
@@ -277,6 +284,7 @@ function template_preprocess_livingstone_manuscript_item_details(array &$variabl
  * Implements template_process_livingstone_manuscript_transcript_item_details().
  */
 function template_preprocess_livingstone_manuscript_downloads(array &$variables) {
+  module_load_include('inc', 'livingstone', 'includes/utilities');
   $manuscript = islandora_object_load($variables['manuscript']);
   $variables['title'] = $manuscript->label;
   if (isset($manuscript['MODS'])) {

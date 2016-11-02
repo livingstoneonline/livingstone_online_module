@@ -18,8 +18,11 @@
         $url = url("islandora/object/{$page->pid}/datastreams/ZIP/download");
         ?>
         <?php if ($size != FALSE): ?>
-          <a href="<?php print $url ?>">Download archival packet (<?php print $size; ?> MB)</a>
+          <a href="<?php print $url ?>">Download (<?php print $size; ?> MB)</a>
         <?php endif; ?>
+      </span>
+      <span class="processing-details">
+        <?php print l('Processing info', 'spectral-imaging/notes-processed-spectral-images'); ?>
       </span>
     </div>
   <?php endif; ?>

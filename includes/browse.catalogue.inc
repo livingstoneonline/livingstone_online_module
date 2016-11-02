@@ -572,6 +572,7 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
 function livingstone_browse_catalogue_view_link($doc) {
   global $user;
   $pid = $doc['PID'];
+  $spectral = $doc['RELS_EXT_hasModel_uri_s'] == "info:fedora/livingstone:spectralManuscriptCModel";
   $viewable = isset($doc['viewable_b']) ? $doc['viewable_b'] : FALSE;
   $hidden = isset($doc['hidden_b']) ? $doc['hidden_b'] : TRUE;
   $hidden = $hidden && !in_array('administrator', $user->roles);
@@ -587,9 +588,7 @@ function livingstone_browse_catalogue_view_link($doc) {
     ),
   );
   if ($viewable && !$hidden) {
-    $viewer_icon = $doc['RELS_EXT_hasModel_uri_s'] == "info:fedora/islandora:manuscriptCModel" ?
-      'fa-camera' :
-      'fa-bolt';
+    $viewer_icon = $spectral ? 'fa-bolt' : 'fa-camera';
     $attributes['attributes']['title'] = 'View';
     $attributes['attributes']['class'] = array(
       "livingstone-manuscript-launcher fa {$viewer_icon}",
@@ -617,16 +616,22 @@ function livingstone_browse_catalogue_view_link($doc) {
  */
 function livingstone_browse_catalogue_download_link($doc) {
   $pid = $doc['PID'];
+  $spectral = $doc['RELS_EXT_hasModel_uri_s'] == "info:fedora/livingstone:spectralManuscriptCModel";
   $downloadable = isset($doc['downloadable_b']) ? $doc['downloadable_b'] : FALSE;
   $path = "islandora/object/$pid/datastream/ZIP/download";
   $attributes = array(
     'external' => FALSE,
     'attributes' => array(
+      'data-pid' => $pid,
       'title' => t('Download'),
       'class' => array('fa fa-arrow-down'),
     ),
   );
-  if ($downloadable) {
+  if ($spectral) {
+    $attributes['attributes']['class'][0] .= ' spectral';
+    return l((''), '', $attributes);
+  }
+  elseif ($downloadable) {
     $size = reset($doc['fedora_datastream_version_ZIP_SIZE_ms']);
     $size = number_format($size / 1024 / 1024, 1);
     return l((''), $path, $attributes) . "<span class='download-size'>($size MB)<span>";

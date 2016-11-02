@@ -10,8 +10,8 @@ and (min-width : 1080px) {
 @media only screen
 and (min-width : 1200px) {
   #transcription-viewer {
-    width: 140%;
-    margin: 0 0 0 -20%;
+    width: 144%;
+    margin: 0 0 0 -22%;
   }
 }
 
@@ -20,7 +20,7 @@ and (min-width : 1200px) {
 }
 
 #transcription-viewer div.pane {
-  border: 1px solid black;
+
 }
 
 #transcription-viewer div.transcription-viewer-content div {
@@ -32,14 +32,18 @@ and (min-width : 1200px) {
   width: 50%;
 }
 
+#transcription-viewer div.pane:first-child {
+  padding-right: 0.25%
+}
 #transcription-viewer div.pane:last-of-type {
-  left: 50%;
+  padding-left: 0.25%
 }
 
 @media only screen
 and (max-width : 766px) {
   #transcription-viewer div.pane:first-child {
     width: 100%;
+    padding-right: 0;
   }
   #transcription-viewer div.pane:last-child {
     display: none;
@@ -50,8 +54,16 @@ and (max-width : 766px) {
   display: block;
   text-align: center;
   width: 100%;
-  border-bottom: 1px solid black;
-  padding: 0.5em;
+}
+
+.transcription-viewer-toolbar > select {
+  max-width: 32%;
+  box-sizing: content-box;
+  margin-bottom: 1.0em;
+}
+
+.transcription-viewer-toolbar > select.page {
+  margin: 0 1%;
 }
 
 .transcription-viewer-toolbar select.form-select {
@@ -72,10 +84,6 @@ and (max-width : 766px) {
   cursor: pointer;
 }
 
-.transcription-viewer-toolbar select.transcript {
-  margin-right: 20px;
-}
-
 .transcription-viewer-content {
   display: block;
   width: 100%;
@@ -85,5 +93,5 @@ and (max-width : 766px) {
 .transcription-viewer-content iframe {
   display: block;
   width: 100%;
-  height: 600px;
+  height: 540px;
 }
