@@ -14,30 +14,59 @@
     for (var i in dates) {
       output.push(format_date(dates[i]));
     }
-    return output.join('-');
+    return output.join(' - ');
   }
 
   function format_date(input) {
     var months = [
-      "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+      "Jan", "Feb", "Mar", "Apr", "May", "June",
+      "July", "Aug", "Sept", "Oct", "Nov", "Dec"
     ];
-    // Bug in javascript with BCE dates.
-    var date = new Date(input);
-    var day = date.getDate();
-    var month = date.getMonth();
-    var year = date.getFullYear();
+
+    var date = input.match(/(-?[0-9]{4})-?([0-9]{2})?-?([0-9]{2})?/);
+    var year = (typeof date[1] != 'undefined') ? date[1] : null;
+    var month = (typeof date[2] != 'undefined') ? months[parseInt(date[2])-1] : null;
+    var day = (typeof date[3] != 'undefined') ? date[3] : null;
+
     if (input.match(/^unknown$/i)) {
       return 'Unknown';
     }
-    else if (input.match(/^-?[0-9]{4}$/)) {
-      return year + (input.match(/^-/) ? ' BCE' : '');
+    else if (input.match(/^-/)) {
+      return Math.abs(parseInt(year)) + ' BCE';
     }
-    else if (input.match(/^-?[0-9]{4}-[0-9]{2}$/)) {
-      return months[month] + '. ' + year;
+    else if (!month && !day) {
+      return year;
+    }
+    else if (!day) {
+      return year + ' ' + month;
     }
     else {
-      return day + ' ' + months[month] + '. ' + year;
+      return year + ' ' + month + ' ' + day;
+    }
+  }
+
+  function TranscriptionDate(input) {
+    var date = input.match(/(-?[0-9]{4})-?([0-9]{2})?-?([0-9]{2})?/),
+        year = date[1] ? date[1] : '00',
+        month = date[2] ? date[2] : '00',
+        day = date[3] ? date[3] : '00';
+    this.value = input;
+    this.label = format_dates(input);
+    this.unknown = input.match(/^unknown$/i);
+    this.match = year + month + day;
+
+    // Compare two TranscriptionDate.
+    this.compare = function(b) {
+      if (this.unknown && b.unknown) {
+        return 0;
+      }
+      else if (this.unknown) {
+        return 1;
+      }
+      else if (b.unknown) {
+        return -1;
+      }
+      return this.match.localeCompare(b.match);
     }
   }
 
@@ -51,26 +80,20 @@
             content = $('.transcription-viewer-content', pane),
             iframe = $('iframe', content),
             transcription_select = $('select.transcript', toolbar),
-            page_select = $('select.page', toolbar),
             date_select = $('select.date', toolbar);
 
-        // Populate the page select.
         iframe.on('load', function() {
           var options = [];
           var totals = {};
-          page_select.html('<option value="null">Select page</option>');
-          iframe.contents().find("span.pb-title").each(function () {
-            var page = $(this).text();
-            page_select.append('<option value="' + page + '">' + page + '</option>')
-          });
           date_select.html('<option value="null">Select date</option>');
           iframe.contents().find("span.date[data-date]").each(function () {
             var date = $(this).attr('data-date');
             totals[date] = date in totals ? totals[date] + 1 : 1;
-            options.push({ value: date, label: format_dates(date) });
+            options.push(new TranscriptionDate(date));
           });
+          // Sort.
           options = options.sort(function(a, b) {
-            return new Date(a.value.split(' ')[0]) - new Date(b.value.split(' ')[0]);
+            return a.compare(b);
           });
           var counts = {};
           $.each(options, function(i, option) {
@@ -83,19 +106,11 @@
 
         // Change the displayed transcription.
         transcription_select.change(function(event) {
-          var src = Drupal.settings.basePath + 'livingstone-tei/' + $(this).val();
+          var src = Drupal.settings.basePath + 'livingstone/manuscript/' + $(this).val() + '/transcript';
           iframe.attr('src', src);
         });
 
-        // Scroll to the selected page.
-        page_select.change(function(event) {
-          iframe.get(0).contentWindow.postMessage({
-            event: 'page',
-            label: $(this).val()
-          }, "*");
-        });
-
-        // Scroll to the selected page.
+        // Scroll to the selected date.
         date_select.change(function(event) {
           var select = $(this);
           var selected = $("option:selected", this);
@@ -114,19 +129,6 @@
             offset: offset
           }, "*");
         });
-
-        // Listen for page change events in the child iframe.
-        function receiveMessage(event) {
-          var iframe_window = iframe.get(0).contentWindow;
-          var data = event.data;
-          if (event.source == iframe_window &&
-              typeof data.event != "undefined" &&
-              data.event == 'page' &&
-              typeof data.label != "undefined") {
-            page_select.val(data.label);
-          }
-        }
-        window.addEventListener("message", receiveMessage, false);
 
         // Remove Level 2 image.
         $('.field-name-field-section-page-image').remove();

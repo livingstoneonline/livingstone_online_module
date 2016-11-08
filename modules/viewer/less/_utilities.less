@@ -1,0 +1,131 @@
+@import "_variables";
+
+.box-sizing(@value: border-box) {
+  -webkit-box-sizing: @value;
+  -moz-box-sizing: @value;
+  box-sizing: @value;
+}
+
+.border-radius(@value) {
+  -webkit-border-radius: @value;
+  -moz-border-radius: @value;
+  border-radius: @value;
+}
+
+.box-shadow(@value) {
+  -moz-box-shadow: @value;
+  -webkit-box-shadow: @value;
+  -o-box-shadow: @value;
+  box-shadow: @value;
+}
+
+.appearance(@value) {
+  -webkit-appearance: @value;
+  -moz-appearance: @value;
+  appearance: @value;
+}
+
+.font-awesome() {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: inherit;
+  line-height: 1;
+  font-family: FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.icon() {
+  display: inline-block;
+  height: @icon-height;
+  line-height: @icon-height;
+  vertical-align: middle;
+  margin: @icon-margin;
+}
+
+.button() {
+  .border-radius(@button-radius);
+  background: none repeat scroll 0 0 #eee;
+  border: 1px solid #ccc;
+  padding: @button-padding;
+  // Line height should account for the border used in button display.
+  line-height: @icon-height - 2;
+}
+
+.select() {
+  .appearance(none);
+  padding-right: 20px !important;
+  background: url(../images/select-arrow.png) no-repeat #eee !important;
+  background-size: 1em !important;
+  background-position: right !important;
+  font-size: inherit;
+  font-style: inherit;
+}
+
+.responsive-width(@small-width, @medium-width, @large-width) {
+  // Desktop.
+  @media only screen and (min-width: 768px) {
+    & {
+      width: @large-width;
+    }
+  }
+  // iPad.
+  @media only screen and (min-width : 320px) and (max-width : 768px) {
+    & {
+      width: @medium-width;
+    }
+  }
+  // iPhone
+  @media only screen and (max-width : 320px) {
+    & {
+      width: @small-width;
+    }
+  }
+}
+
+.responsive-padding(@small-padding, @medium-padding, @large-padding) {
+  // iPhone
+  & {
+    padding: @small-padding;
+  }
+  // iPad.
+  @media only screen and (min-width : 768px) {
+    & {
+      padding: @medium-padding;
+    }
+  }
+  // Desktop.
+  @media only screen and (min-width: 1024px) {
+    & {
+      padding: @large-padding;
+    }
+  }
+}
+
+.responsive-margin(@small-margin, @medium-margin, @large-margin) {
+  // iPhone.
+  & {
+    margin: @small-margin;
+  }
+  // iPad.
+  @media only screen and (min-width: 768px){
+    & {
+      margin: @medium-margin;
+    }
+  }
+  // Desktop.
+  @media only screen and (min-width: 1024px){
+    & {
+      margin: @large-margin;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+body.modal-open {
+  overflow: hidden;
+}
+.livingstone-manuscript-viewer-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0.5em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.livingstone-manuscript-viewer-modal iframe {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 999999;
+  background-color: black;
+}
+@media screen and (max-width: 568px) {
+  .livingstone-manuscript-viewer-modal {
+    padding: 0;
+  }
+  .livingstone-manuscript-viewer-modal iframe {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-width: 0;
+  }
+}

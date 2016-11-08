@@ -1,0 +1,6 @@
+@ie6-7: screen\9;
+@ie8: \0screen;
+@oldIE: ~"@{ie8}\,@{ie6-7}";
+@ie9-10: ~"screen and (min-width:0\0)";
+@mobile: ~"screen and (min-width: 640px)";
+@mobile-with-oldIE: @mobile, @ie6-7;

@@ -1,0 +1,243 @@
+<?php
+
+/**
+ * @file
+ * Implements a custom manuscript viewer for the livingstone project.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function livingstone_manuscript_viewer_menu() {
+  return array(
+    'livingstone/manuscript/%/view' => array(
+      'access arguments' => array('access content'),
+      'type' => MENU_CALLBACK,
+      'page callback' => 'livingstone_manuscript_viewer_view',
+      'page arguments' => array(2),
+    ),
+    'livingstone/manuscript/%/transcript' => array(
+      'access arguments' => array('access content'),
+      'type' => MENU_CALLBACK,
+      'page callback' => 'livingstone_manuscript_viewer_transcript',
+      'page arguments' => array(2),
+    ),
+    'livingstone/manuscript/%/downloads' => array(
+      'access arguments' => array('access content'),
+      'type' => MENU_CALLBACK,
+      'page callback' => 'livingstone_manuscript_viewer_downloads',
+      'page arguments' => array(2),
+    ),
+    'livingstone/manuscript/%/access' => array(
+      'access arguments' => array('access content'),
+      'type' => MENU_CALLBACK,
+      'page callback' => 'livingstone_manuscript_viewer_access',
+      'page arguments' => array(2),
+    ),
+  );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function livingstone_manuscript_viewer_theme() {
+  return array(
+    'livingstone_manuscript_viewer_html' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-viewer-html',
+      'render element' => 'page',
+    ),
+    'livingstone_manuscript_viewer' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-viewer',
+      'variables' => array(
+        // PID of the Manuscript to display (Required).
+        'manuscript' => NULL,
+        // PID of the Page to display (Optional).
+        'page' => NULL,
+      ),
+    ),
+    'livingstone_manuscript_viewer_toolbar' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-viewer-toolbar',
+      'variables' => array(
+        // PID of the Manuscript to display (Required).
+        'manuscript' => NULL,
+        // Pages information, an associative array (Required).
+        // @see livingstone_manuscript_viewer_pages().
+        'pages' => array(),
+        // Display settings.
+        'is_viewable' => FALSE,
+        'is_spectral' => FALSE,
+        'has_transcription' => FALSE,
+      ),
+    ),
+    'livingstone_manuscript_viewer_pane' => array(
+      'file' => 'theme/theme.inc',
+      'render element' => 'element',
+    ),
+    'livingstone_manuscript_viewer_pane_item_details' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-viewer-pane-item-details',
+      'variables' => array(
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+      ),
+    ),
+    'livingstone_manuscript_viewer_pane_transcription' => array(
+      'file' => 'theme/theme.inc',
+      'variables' => array(
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+      ),
+    ),
+    'livingstone_manuscript_viewer_pane_image' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-viewer-pane-image',
+      'variables' => array(
+        // The HTML element the image will be bound to.
+        'identifier' => NULL,
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+        // Pages of the Manuscript object (Required).
+        'pages' => NULL,
+        // Display settings.
+        'is_spectral' => FALSE,
+      ),
+    ),
+    'livingstone_manuscript_viewer_pane_restricted' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-viewer-pane-restricted',
+      'variables' => array(
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+      ),
+    ),
+    'livingstone_manuscript_viewer_downloads_html' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-viewer-downloads-html',
+      'render element' => 'page',
+    ),
+    'livingstone_manuscript_viewer_downloads' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-viewer-downloads',
+      'variables' => array(
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+      ),
+    ),
+    'livingstone_manuscript_viewer_transcript_html' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-manuscript-viewer-transcript-html',
+      'render element' => 'page',
+    ),
+    'livingstone_manuscript_viewer_transcript' => array(
+      'file' => 'theme/theme.inc',
+      'variables' => array(
+        // PID of the Manuscript object (Required).
+        'manuscript' => NULL,
+      ),
+    ),
+  );
+}
+
+/**
+ * Menu callback to render the viewer.
+ *
+ * @param string $manuscript
+ *   The PID of the manuscript to display.
+ *
+ * @return array
+ *   A Drupal renderable array.
+ */
+function livingstone_manuscript_viewer_view($manuscript) {
+  global $language;
+  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
+  drupal_add_http_header('Content-Language', $language->language);
+  // @todo Get page, etc from $_GET params.
+  return array(
+    '#type' => 'page',
+    '#theme_wrappers' => array('livingstone_manuscript_viewer_html'),
+    'content' => array(
+      '#theme' => 'livingstone_manuscript_viewer',
+      '#manuscript' => $manuscript,
+    ),
+  );
+}
+
+/**
+ * Menu callback to render the manuscripts downloadable page archives.
+ *
+ * @param string $manuscript
+ *   The PID of the manuscript.
+ *
+ * @return array
+ *   A Drupal renderable array.
+ */
+function livingstone_manuscript_viewer_downloads($manuscript) {
+  global $language;
+  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
+  drupal_add_http_header('Content-Language', $language->language);
+  return array(
+    '#type' => 'page',
+    '#theme_wrappers' => array('livingstone_manuscript_viewer_downloads_html'),
+    'content' => array(
+      '#theme' => 'livingstone_manuscript_viewer_downloads',
+      '#manuscript' => $manuscript,
+    ),
+  );
+}
+
+/**
+ * Menu callback to render the manuscripts downloadable page archives.
+ *
+ * @param string $manuscript
+ *   The PID of the manuscript.
+ *
+ * @return array
+ *   A Drupal renderable array.
+ */
+function livingstone_manuscript_viewer_transcript($manuscript) {
+  global $language;
+  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
+  drupal_add_http_header('Content-Language', $language->language);
+  return array(
+    '#type' => 'page',
+    '#theme_wrappers' => array('livingstone_manuscript_viewer_transcript_html'),
+    'content' => array(
+      '#theme' => 'livingstone_manuscript_viewer_transcript',
+      '#manuscript' => $manuscript,
+    ),
+  );
+}
+
+/**
+ * Menu callback to check for access permissions.
+ *
+ * @param string $pid
+ *   The PID of the manuscript to check for access rights.
+ */
+function livingstone_manuscript_viewer_access($pid) {
+  $path_parts = parse_url(variable_get('islandora_solr_url', 'localhost:8080/solr'));
+  $solr = new Apache_Solr_Service($path_parts['host'], $path_parts['port'], $path_parts['path'] . '/');
+  $solr->setCreateDocuments(0);
+  $params = array(
+    'fl' => 'PID',
+    'defType' => 'edismax',
+    'fq' => array(
+      "viewable_b:true",
+      "RELS_EXT_hasModel_uri_s:(\"info:fedora/islandora:manuscriptCModel\" OR \"info:fedora/livingstone:spectralManuscriptCModel\")",
+    ),
+    'start' => 0,
+    'rows' => 1,
+  );
+  try {
+    $results = $solr->search("PID:\"{$pid}\"", 0, 1, $params, 'GET');
+    $results = isset($results) ? json_decode($results->getRawResponse(), TRUE) : array();
+    $viewable = count($results['response']['docs']) == 1;
+    return drupal_json_output(array('viewable' => $viewable));
+  }
+  catch (Exception $e) {
+    return drupal_json_output(array('viewable' => FALSE));
+  }
+}

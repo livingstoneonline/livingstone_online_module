@@ -1,0 +1,96 @@
+@import '_utilities';
+
+#main-image,
+#compare-image {
+  height: 100%;
+  .image-toolbar {
+    position: absolute;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    a,
+    a:hover {
+      color: black;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .icon {
+      .icon;
+    }
+    .button {
+      .button;
+    }
+    .select {
+      .select;
+    }
+    .download {
+      // Not enough room for the download icon.
+      @media only screen and (max-width : 900px) {
+        & {
+          display: none;
+        }
+      }
+      .fa {
+        font-size: 0.85em;
+      }
+    }
+  }
+  .side-nav() {
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    cursor: pointer;
+    background: url("../images/navigation.png") no-repeat #F2F2F2;
+    border: 1px solid #eee;
+    height: 60px;
+    width: 30px;
+    background-size: 50px 120px;
+  }
+  .prev-icon {
+    .side-nav;
+    left: 0;
+    background-position: 0 0;
+    border-radius: 0px 6px 6px 0px;
+  }
+  .next-icon {
+    .side-nav;
+    right: 0;
+    background-position: 100% 0;
+    border-radius: 6px 0px 0px 6px;
+  }
+}
+
+#panels.compare {
+  #main-image {
+    .next-icon {
+      display: none;
+    }
+  }
+  #compare-image {
+    .prev-icon {
+      display: none;
+    }
+  }
+}
+
+.image-selector-tooltip .image-selector-tooltip-text {
+  visibility: hidden;
+  font-size: 0.85em;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  padding: 4px 7px;
+  position: absolute;
+  z-index: 1000;
+  box-sizing: initial;
+  border-color: black;
+  background: none repeat scroll 0 0 #eee;
+  top: 40px;
+  margin-left: 4px;
+}
+
+.image-selector-tooltip.hover .image-selector-tooltip-text,
+.image-selector-tooltip:hover {
+  visibility: visible;
+}

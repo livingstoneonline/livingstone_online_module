@@ -109,60 +109,7 @@ function livingstone_menu() {
       'page arguments' => array('livingstone_fedora_import_error_form'),
       'weight' => 20,
     ),
-    'livingstone-viewer/%' => array(
-      'title' => 'Manuscript Viewer',
-      'access arguments' => array('access content'),
-      'type' => MENU_NORMAL_ITEM,
-      'page callback' => 'livingstone_manuscript_viewer',
-      'page arguments' => array(1),
-    ),
-    'livingstone-viewer-access/%' => array(
-      'title' => 'Manuscript Viewer',
-      'access arguments' => array('access content'),
-      'type' => MENU_NORMAL_ITEM,
-      'page callback' => 'livingstone_manuscript_viewer_access',
-      'page arguments' => array(1),
-    ),
-    'livingstone-tei/%' => array(
-      'title' => 'Manuscript Viewer TEI',
-      'access arguments' => array('access content'),
-      'type' => MENU_NORMAL_ITEM,
-      'page callback' => 'livingstone_manuscript_viewer_transcript',
-      'page arguments' => array(1),
-    ),
-    'livingstone-download/%' => array(
-      'title' => 'Downloads',
-      'access arguments' => array('access content'),
-      'type' => MENU_NORMAL_ITEM,
-      'page callback' => 'livingstone_manuscript_viewer_downloads',
-      'page arguments' => array(1),
-    ),
   );
-}
-
-/**
- * Implements hook_menu_alter().
- */
-function livingstone_menu_alter(&$items) {
-  if (isset($items['islandora/search'])) {
-    $search_item = &$items['islandora/search'];
-    $search_item['page callback'] = 'livingstone_browse_catalogue';
-  }
-  if (isset($items['islandora/object/%islandora_object'])) {
-    $view_object = &$items['islandora/object/%islandora_object'];
-    $view_object['page callback'] = 'livingstone_menu_object_view_redirect';
-    $view_object['page arguments'] = array(2);
-  }
-}
-
-/**
- * Redirects islandora object to the catalogue page.
- *
- * @param AbstractObject $object
- */
-function livingstone_menu_object_view_redirect(AbstractObject $object) {
-  $pid = preg_replace('/:/', '_', $object->id);
-  drupal_goto("islandora/search/{$pid}");
 }
 
 /**
@@ -182,166 +129,14 @@ function livingstone_node_info() {
 }
 
 /**
- * Custom Solr Search Results page for the standard catalogue.
- *
- * @param string|null $query
- *   The search query.
- *
- * @return array
- *   The search form and results.
- */
-function livingstone_browse_catalogue($query = NULL) {
-  module_load_include('inc', 'livingstone', 'includes/browse.catalogue');
-  return drupal_get_form('livingstone_browse_catalogue_form', $query);
-}
-
-/**
- * Callback to render the viewer.
- */
-function livingstone_manuscript_viewer($manuscript = "liv:000490", $display_page = 0) {
-  global $language;
-  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
-  drupal_add_http_header('Content-Language', $language->language);
-  return array(
-    '#type' => 'page',
-    '#theme_wrappers' => array('livingstone_manuscript_html'),
-    'content' => array(
-      '#theme' => 'livingstone_manuscript_viewer',
-      '#manuscript' => $manuscript,
-      '#display_page' => isset($display_page) ? $display_page : 0,
-    ),
-  );
-}
-
-/**
- * Callback to render the TEI transcription as HTML.
- */
-function livingstone_manuscript_viewer_transcript($manuscript, $display_page = 0) {
-  global $language;
-  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
-  drupal_add_http_header('Content-Language', $language->language);
-  return array(
-    '#type' => 'page',
-    '#theme_wrappers' => array('livingstone_manuscript_transcript_html'),
-    'content' => array(
-      '#theme' => 'livingstone_manuscript_transcript',
-      '#manuscript' => $manuscript,
-      '#display_page' => isset($display_page) ? $display_page : 0,
-    ),
-  );
-}
-
-/**
  * Implements hook_theme().
  */
 function livingstone_theme() {
-  // Solution packs using this as a viewer need to set these variables.
   return array(
-    'livingstone_manuscript_html' => array(
-      'file' => 'theme/theme.inc',
-      'template' => 'theme/livingstone-manuscript-html',
-      'render element' => 'page',
-    ),
-    'livingstone_manuscript_downloads_html' => array(
-      'file' => 'theme/theme.inc',
-      'template' => 'theme/livingstone-manuscript-downloads-html',
-      'render element' => 'page',
-    ),
-    'livingstone_manuscript_transcript_html' => array(
-      'file' => 'theme/theme.inc',
-      'template' => 'theme/livingstone-manuscript-transcript-html',
-      'render element' => 'page',
-    ),
-    'livingstone_manuscript_viewer' => array(
-      'file' => 'theme/theme.inc',
-      'template' => 'theme/livingstone-manuscript-viewer',
-      'variables' => array(
-        // PID of the Manuscript object (Required).
-        'manuscript' => NULL,
-        // Page to display (Required).
-        'display_page' => NULL,
-      ),
-    ),
-    'livingstone_manuscript_image' => array(
-      'file' => 'theme/theme.inc',
-      'template' => 'theme/livingstone-manuscript-image',
-      'variables' => array(
-        // The HTML element the image will be bound to.
-        'identifier' => NULL,
-        // PID of the Manuscript object (Required).
-        'manuscript' => NULL,
-        // Pages of the Manuscript object (Required).
-        'pages' => NULL,
-      ),
-    ),
-    'livingstone_manuscript_item_details' => array(
-      'file' => 'theme/theme.inc',
-      'template' => 'theme/livingstone-manuscript-item-details',
-      'variables' => array(
-        // PID of the Manuscript object (Required).
-        'manuscript' => NULL,
-      ),
-    ),
-    'livingstone_manuscript_downloads' => array(
-      'file' => 'theme/theme.inc',
-      'template' => 'theme/livingstone-manuscript-downloads',
-      'variables' => array(
-        // PID of the Manuscript object (Required).
-        'manuscript' => NULL,
-      ),
-    ),
-    'livingstone_manuscript_transcript' => array(
-      'file' => 'theme/theme.inc',
-      'variables' => array(
-        // PID of the Manuscript object (Required).
-        'manuscript' => NULL,
-        // Page to render out (Required).
-        'display_page' => NULL,
-      ),
-    ),
-    'livingstone_browse_catalogue_search' => array(
-      'file' => 'includes/browse.catalogue.inc',
-      'render element' => 'element',
-      'template' => 'theme/livingstone-browse-catalogue-search',
-    ),
-    'livingstone_browse_catalogue_date_range' => array(
-      'file' => 'includes/browse.catalogue.inc',
-      'render element' => 'element',
-      'template' => 'theme/livingstone-browse-catalogue-date-range',
-    ),
     'livingstone_form_search_block_search_type' => array(
       'file' => 'theme/theme.inc',
       'render element' => 'element',
     )
-  );
-}
-
-/**
- * Downloads.
- */
-function livingstone_manuscript_viewer_downloads($manuscript) {
-  global $language;
-  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
-  drupal_add_http_header('Content-Language', $language->language);
-  $module_path = drupal_get_path('module', 'livingstone');
-  $css_path = "$module_path/css";
-  $js_path = "$module_path/js";
-  $lib_path = "$module_path/lib";
-  drupal_add_css("$lib_path/bootstrap/3.3.6/css/bootstrap.min.css", array(
-    'group' => CSS_THEME,
-  ));
-  drupal_add_css("$css_path/manuscript-viewer/_downloads.css");
-  drupal_add_js("$lib_path/jquery/1.12.4/dist/jquery.min.js");
-  drupal_add_js("$lib_path/jquery/plugins/jquery.once.js");
-  drupal_add_js("$lib_path/drupal.js");
-  drupal_add_js("$js_path/livingstone-downloads.js");
-  return array(
-    '#type' => 'page',
-    '#theme_wrappers' => array('livingstone_manuscript_downloads_html'),
-    'content' => array(
-      '#theme' => 'livingstone_manuscript_downloads',
-      '#manuscript' => $manuscript,
-    ),
   );
 }
 
@@ -403,32 +198,6 @@ function livingstone_preprocess_search_result(array &$variables) {
         $variables['url'] = $result['link'] = url("islandora/search/\"$pid\"", array('absolute' => TRUE));
       }
     }
-  }
-}
-
-
-function livingstone_manuscript_viewer_access($pid) {
-  $path_parts = parse_url(variable_get('islandora_solr_url', 'localhost:8080/solr'));
-  $solr = new Apache_Solr_Service($path_parts['host'], $path_parts['port'], $path_parts['path'] . '/');
-  $solr->setCreateDocuments(0);
-  $params = array(
-    'fl' => 'PID',
-    'defType' => 'edismax',
-    'fq' => array(
-      "viewable_b:true",
-      "RELS_EXT_hasModel_uri_s:(\"info:fedora/islandora:manuscriptCModel\" OR \"info:fedora/livingstone:spectralManuscriptCModel\")",
-    ),
-    'start' => 0,
-    'rows' => 1,
-  );
-  try {
-    $results = $solr->search("PID:\"{$pid}\"", 0, 1, $params, 'GET');
-    $results = isset($results) ? json_decode($results->getRawResponse(), TRUE) : array();
-    $viewable = count($results['response']['docs']) == 1;
-    return drupal_json_output(array('viewable' => $viewable));
-  }
-  catch (Exception $e) {
-    return drupal_json_output(array('viewable' => FALSE));
   }
 }
 
@@ -554,26 +323,6 @@ function livingstone_search_block_submit(array $form, array &$form_state) {
       ),
     );
   }
-}
-
-function theme_livingstone_form_search_block_search_type($variables) {
-  $element = $variables['element'];
-  $attributes = array();
-  if (isset($element['#id'])) {
-    $attributes['id'] = $element['#id'];
-  }
-  $attributes['class'] = 'form-checkboxes';
-  if (!empty($element['#attributes']['class'])) {
-    $attributes['class'] .= ' ' . implode(' ', $element['#attributes']['class']);
-  }
-  if (isset($element['#attributes']['title'])) {
-    $attributes['title'] = $element['#attributes']['title'];
-  }
-  $element['#children'];
-  foreach (element_children($element) as $key) {
-    $element['#children'] .= '<div>' . drupal_render($element[$key]) . '</div>';
-  }
-  return '<div' . drupal_attributes($attributes) . '>' . (!empty($element['#children']) ? $element['#children'] : '') . '</div>';
 }
 
 /**
@@ -785,9 +534,9 @@ function livingstone_field_formatter_view($entity_type, $entity, $field, $instan
   list($document) = each($documents);
   list($second_document) = each($documents);
   reset($documents);
-  $transcription_url = url("livingstone-tei/{$document}");
+  $transcription_url = url("livingstone/manuscript/{$document}/transcript");
   $second_transcription_url = isset($second_document) ?
-    url("livingstone-tei/{$second_document}") :
+    url("livingstone/manuscript/{$second_document}/transcript") :
     $transcription_url;
   return array(
     array(
@@ -808,13 +557,6 @@ function livingstone_field_formatter_view($entity_type, $entity, $field, $instan
                 ),
                 '#options' => $documents,
                 '#value' => $document,
-              ),
-              'page' => array(
-                '#type' => 'select',
-                '#attributes' => array(
-                  'class' => array('page')
-                ),
-                '#options' => array('Select page'),
               ),
               'date' => array(
                 '#type' => 'select',
@@ -843,13 +585,6 @@ function livingstone_field_formatter_view($entity_type, $entity, $field, $instan
                 ),
                 '#options' => $documents,
                 '#value' => isset($second_document) ? $second_document : $document,
-              ),
-              'page' => array(
-                '#type' => 'select',
-                '#attributes' => array(
-                  'class' => array('page')
-                ),
-                '#options' => array('Select page'),
               ),
               'date' => array(
                 '#type' => 'select',

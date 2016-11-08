@@ -1,0 +1,169 @@
+@import "_variables";
+@import "_utilities";
+@import "_icons";
+
+#toolbar {
+  // Close icon position must match #toolbar padding.
+  padding: 2px @close-icon-width + 5;
+  // Once the tool bar is only the side-menu and share links.
+  @media (max-width : 500px) {
+    padding: 2px 2px;
+  }
+  @media only screen and (max-width : @split-pane-max-width) {
+    // Don't display compare when split screen is not usable.
+    .icon.compare {
+      display: none;
+    }
+  }
+  margin: 0 auto;
+  text-align: center;
+  a,
+  a:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .pager {
+    .select;
+  }
+  .pager-icon {
+    position: relative;
+    left: -20px;
+    font-size: 0.5em;
+  }
+  .links {
+    li {
+      margin: 0 5px;
+    }
+    a {
+      // Make the text the full size of the icon.
+      font-size: @icon-height;
+      line-height: @icon-height;
+      &:hover {
+        color: #666666;
+      }
+    }
+  }
+  .home {
+    color: #3E5B97;
+  }
+  .email {
+    color: #6E8C8C;
+  }
+  .facebook {
+    color: #2E5894;
+  }
+  .twitter {
+    color: #00ADCF;
+  }
+  .pinterest {
+    color: #CD1D20;
+  }
+  .depressed {
+    background-color: #999;
+  }
+  .ui-slider {
+    display: inline-block;
+    width: 150px;
+    top: 3px;
+    margin: 0 10px;
+  }
+  // Override the default to prevent highlighting.
+  .ui-state-hover,
+  .ui-widget-content .ui-state-hover,
+  .ui-widget-header .ui-state-hover,
+  .ui-state-focus,
+  .ui-widget-content .ui-state-focus,
+  .ui-widget-header .ui-state-focus {
+    border: 1px solid #386095;
+    background: #428bca;
+    font-weight: bold;
+    color: #c77405;
+  }
+
+  // Search form.
+  form {
+    display: inline-block;
+    &> div:before {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: translate(0, 0);
+      content: "\f002";
+      color: #323232;
+      position: relative;
+      right: -25px;
+    }
+    input[type=text] {
+      .box-sizing;
+      .border-radius(7px);
+      // @todo refactor out.
+      //background: url('@{images}/search-button.png') no-repeat 1px 1px white;
+      padding: 5px 15px 5px 40px;
+      border: 1px solid #d0d0d0;
+      height: @icon-height;
+      width: 250px;
+      font-size: 0.85em;
+    }
+  }
+}
+
+// Could be refactored out.
+.search-type {
+  text-align: left;
+  margin-top: 32px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.5em;
+  padding-left: 0.8em;
+  position: absolute;
+  width: 250px;
+  z-index: 1000;
+  box-sizing: border-box;
+  border-color: black;
+  border: 1px solid rgb(208, 208, 208);
+  color: #333;
+  font-size: 14px;
+}
+
+.search-type input {
+  margin: 0.5em;
+}
+
+// @todo refactor into tooltip / tooltip-text classes.
+.transcription-tooltip .transcription-tooltip-text {
+  visibility: hidden;
+  font-size: 0.85em;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1em;
+  position: absolute;
+  z-index: 1000;
+  box-sizing: initial;
+  border-color: black;
+  background: none repeat scroll 0 0 #eee;
+  top: 43px;
+  @media only screen and (max-width: 1146px) {
+    & {
+      top: 75px;
+    }
+  }
+  @media only screen and (max-width: 605px) {
+    & {
+      top: 110px;
+    }
+  }
+  @media only screen and (max-width: 583px) {
+    & {
+      top: 140px;
+    }
+  }
+}
+
+.transcription-tooltip.hover .transcription-tooltip-text {
+  visibility: visible;
+}

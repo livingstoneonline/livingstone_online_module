@@ -1,0 +1,62 @@
+@import "_variables";
+
+#panels {
+  border-top: 1px solid black;
+  // Customizations for when comparing.
+  &.compare {
+    .pane-right {
+      border-left: 1px solid white;
+    }
+    .pane-left {
+      border-left: 1px solid white;
+    }
+  }
+}
+
+.pane {
+  height: 100%;
+  &:not(.pane-open) {
+    display: none;
+  }
+  &.pane-left,
+  &.pane-right {
+    width: 50%;
+  }
+  &.pane-right {
+    float: right;
+    border-left: 1px solid black;
+  }
+  &.pane-left {
+    float: left;
+    border-left: 1px solid black;
+  }
+  &.item-details {
+    overflow: scroll;
+  }
+  &.main-image,
+  &.compare-image,
+  &.restricted {
+    height: 100%;
+    background-color: black;
+  }
+  &.compare-image {
+    border-left: @panel-border-width solid white;
+  }
+
+  @media only screen and (max-width: 850px) {
+    .page-download {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: @split-pane-max-width) {
+    &.pane-left,
+    &.pane-right {
+      width: 100%;
+      float: none;
+    }
+    .spectral-image-toolbar {
+      text-align: center;
+    }
+  }
+}

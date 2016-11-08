@@ -1,0 +1,7 @@
+name = "Livingstone Manuscript Viewer"
+description = "Custom manuscript viewer based on OpenSeadragon"
+package = Islandora Viewers
+dependencies[] = islandora
+dependencies[] = leap_xslt
+version = 7.x-dev
+core = 7.x

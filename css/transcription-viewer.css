@@ -57,14 +57,20 @@ and (max-width : 766px) {
 }
 
 .transcription-viewer-toolbar > select {
-  max-width: 32%;
-  box-sizing: content-box;
+  max-width: 48%;
+  box-sizing: border-box;
   margin-bottom: 1.0em;
+  color: #333;
 }
 
-.transcription-viewer-toolbar > select.page {
-  margin: 0 1%;
+.transcription-viewer-toolbar > select:first-of-type {
+  margin-right: 1%;
 }
+
+.transcription-viewer-toolbar > select:last-of-type {
+  margin-left: 1%;
+}
+
 
 .transcription-viewer-toolbar select.form-select {
   -webkit-border-radius: 6px;
@@ -93,5 +99,5 @@ and (max-width : 766px) {
 .transcription-viewer-content iframe {
   display: block;
   width: 100%;
-  height: 540px;
+  height: 600px;
 }

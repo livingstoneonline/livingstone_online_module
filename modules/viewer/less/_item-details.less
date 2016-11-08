@@ -1,0 +1,78 @@
+@import '_utilities';
+
+#item-details {
+  .box-sizing;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  //border-right: solid 1px;
+  //left: 0px;
+  //z-index: 1;
+  //width: 50%;
+  //position: fixed;
+  //overflow: scroll;
+  .item-details-content {
+    .responsive-padding(1em 1em 1em, 1em 2em 2em, 1em 3em 3em);
+  }
+  h1 {
+    font-family: Crimson Text, serif;
+    font-size: 1.75em;
+    font-weight: 600;
+    margin: 0.5em 0 0;
+  }
+  h1:nth-of-type(2) {
+    margin: 1.5em 0 0;
+  }
+  hr {
+    border: solid rgba(0,0,0,0.2);
+    border-width: 1px 0 0;
+    margin: 0.5em 0 0.5em;
+  }
+  dt,
+  dd {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 0.9em;
+    padding: 0.5em 0 0 0;
+    &.download {
+      a,
+      .open-download-model {
+        margin: 0 0.5em;
+        vertical-align: middle;
+        color: #428bca;
+        cursor: pointer;
+        &:hover {
+          color: #428bca;
+        }
+      }
+      .download-size {
+        display: inline-block;
+        color: #808080;
+        font-size:  0.8em;
+        vertical-align: middle;
+      }
+    }
+  }
+  dt {
+    font-weight: bold;
+    &::after {
+      content: ":";
+    }
+  }
+  dl {
+    dt {
+      display: inline-block;
+    }
+    dd {
+      display: inline;
+      &:after {
+        display: block;
+        content: '';
+      }
+    }
+  }
+  i {
+    font-style: italic;
+  }
+  a {
+    text-decoration: none;
+  }
+}
