@@ -104,7 +104,6 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
         'class' => array('item-details'),
       ),
       '#manuscript' => $manuscript,
-      '#side' => 'left',
       '#open' => FALSE,
     ),
     'transcription' => array(
@@ -115,7 +114,6 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
         'class' => array('transcription'),
       ),
       '#manuscript' => $manuscript,
-      '#side' => 'right',
       '#open' => FALSE,
     ),
     'main_image' => array(
@@ -129,7 +127,6 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
       '#manuscript' => $manuscript,
       '#pages' => $pages,
       '#is_spectral' => $is_spectral,
-      '#side' => 'left',
       '#open' => TRUE,
     ),
     'compare_image' => array(
@@ -143,7 +140,6 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
       '#manuscript' => $manuscript,
       '#pages' => $pages,
       '#is_spectral' => $is_spectral,
-      '#side' => 'right',
       '#open' => TRUE,
     ),
     'restricted' => array(
