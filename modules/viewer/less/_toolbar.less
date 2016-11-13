@@ -84,29 +84,15 @@
   // Search form.
   form {
     display: inline-block;
-    &> div:before {
-      display: inline-block;
-      font: normal normal normal 14px/1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      transform: translate(0, 0);
-      content: "\f002";
-      color: #323232;
-      position: relative;
-      right: -25px;
-    }
     input[type=text] {
       .box-sizing;
       .border-radius(7px);
-      // @todo refactor out.
-      //background: url('@{images}/search-button.png') no-repeat 1px 1px white;
-      padding: 5px 15px 5px 40px;
+      background: url('@{images}/search-button.png') no-repeat 1px 1px white;
+      padding: 5px 15px 5px 35px;
       border: 1px solid #d0d0d0;
       height: @icon-height;
       width: 250px;
-      font-size: 0.85em;
+      font-size: 14px;
     }
   }
 }

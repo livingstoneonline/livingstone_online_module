@@ -384,19 +384,6 @@ body.loading .loading-modal {
 #toolbar form {
   display: inline-block;
 }
-#toolbar form > div:before {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
-  content: "\f002";
-  color: #323232;
-  position: relative;
-  right: -25px;
-}
 #toolbar form input[type=text] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -404,11 +391,12 @@ body.loading .loading-modal {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
-  padding: 5px 15px 5px 40px;
+  background: url('../images/search-button.png') no-repeat 1px 1px white;
+  padding: 5px 15px 5px 35px;
   border: 1px solid #d0d0d0;
   height: 25px;
   width: 250px;
-  font-size: 0.85em;
+  font-size: 14px;
 }
 .search-type {
   text-align: left;
@@ -628,7 +616,7 @@ body.loading .loading-modal {
   margin: 4px;
   color: #333;
   font-size: 0.9em;
-  max-width: 30%;
+  max-width: 33%;
 }
 #main-image .image-toolbar .icon.rotate,
 #compare-image .image-toolbar .icon.rotate {
