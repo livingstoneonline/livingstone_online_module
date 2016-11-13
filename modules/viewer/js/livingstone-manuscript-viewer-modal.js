@@ -67,7 +67,7 @@
    */
   function closeModal() {
     $('body').removeClass('modal-open');
-    $('.livingstone-manuscript-viewer-modal').remove();
+    $('div.livingstone-manuscript-viewer-modal').remove();
   }
 
   /**
@@ -77,7 +77,7 @@
    *   TRUE if the viewer is defined FALSE otherwise.
    */
   function viewerExists() {
-    return $('.livingstone-manuscript-viewer-model > iframe').length > 0;
+    return $('div.livingstone-manuscript-viewer-model > iframe').length > 0;
   }
 
   /**
@@ -133,7 +133,7 @@
    * @param page
    */
   function sendMessage(event, pid, page) {
-    var targetFrame = $('.livingstone-manuscript-viewer-modal > iframe')[0];
+    var targetFrame = $('div.livingstone-manuscript-viewer-modal > iframe')[0];
     targetFrame.contentWindow.postMessage({
       event: 'page',
       pid: pid,
