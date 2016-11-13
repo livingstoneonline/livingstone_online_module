@@ -595,14 +595,14 @@ function livingstone_browse_catalogue_view_link($doc) {
     $viewer_icon = $spectral ? 'fa-bolt' : 'fa-camera';
     $attributes['attributes']['title'] = 'View';
     $attributes['attributes']['class'] = array(
-      "livingstone-manuscript-launcher fa {$viewer_icon}",
+      "livingstone-manuscript-viewer-modal fa {$viewer_icon}",
     );
     return l((''), current_path(), $attributes);
   }
   elseif ($viewable && $hidden) {
     $attributes['attributes']['title'] = 'Restricted';
     $attributes['attributes']['class'] = array(
-      'livingstone-manuscript-launcher fa fa-ban'
+      'livingstone-manuscript-viewer-modal fa fa-ban'
     );
     return l((''), '#', $attributes);
   }
