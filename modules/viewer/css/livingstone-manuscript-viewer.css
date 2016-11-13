@@ -273,6 +273,8 @@ body.loading .loading-modal {
   line-height: 25px;
   vertical-align: middle;
   margin: 4px;
+  color: #333;
+  font-size: 0.9em;
 }
 .icon.rotate {
   margin-left: 2px;
@@ -314,7 +316,7 @@ body.loading .loading-modal {
 }
 #toolbar a,
 #toolbar a:hover {
-  color: black;
+  color: #333;
   cursor: pointer;
   text-decoration: none;
 }
@@ -326,7 +328,7 @@ body.loading .loading-modal {
   background: url(../images/select-arrow.png) no-repeat #eee !important;
   background-size: 1em !important;
   background-position: right !important;
-  font-size: inherit;
+  font-size: 0.9em;
   font-style: inherit;
 }
 #toolbar .pager-icon {
@@ -624,6 +626,9 @@ body.loading .loading-modal {
   line-height: 25px;
   vertical-align: middle;
   margin: 4px;
+  color: #333;
+  font-size: 0.9em;
+  max-width: 30%;
 }
 #main-image .image-toolbar .icon.rotate,
 #compare-image .image-toolbar .icon.rotate {
@@ -661,7 +666,7 @@ body.loading .loading-modal {
   background: url(../images/select-arrow.png) no-repeat #eee !important;
   background-size: 1em !important;
   background-position: right !important;
-  font-size: inherit;
+  font-size: 0.9em;
   font-style: inherit;
 }
 @media only screen and (max-width: 900px) {
