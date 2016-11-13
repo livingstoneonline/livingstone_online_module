@@ -757,7 +757,7 @@ body.loading .loading-modal {
 body.modal-open {
   overflow: hidden;
 }
-.livingstone-manuscript-viewer-modal {
+div.livingstone-manuscript-viewer-modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -769,7 +769,7 @@ body.modal-open {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.livingstone-manuscript-viewer-modal iframe {
+div.livingstone-manuscript-viewer-modal iframe {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -790,10 +790,10 @@ body.modal-open {
   background-color: black;
 }
 @media screen and (max-width: 568px) {
-  .livingstone-manuscript-viewer-modal {
+  div.livingstone-manuscript-viewer-modal {
     padding: 0;
   }
-  .livingstone-manuscript-viewer-modal iframe {
+  div.livingstone-manuscript-viewer-modal iframe {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
