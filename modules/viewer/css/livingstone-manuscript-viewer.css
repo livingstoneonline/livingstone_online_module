@@ -816,18 +816,18 @@ body.modal-open {
   z-index: 200;
 }
 #downloads .downloads-content {
-  padding: 1em 1em 1em;
+  padding: 1.5em 1em 1em;
   max-width: 800px;
   margin: auto;
 }
 @media only screen and (min-width: 768px) {
   #downloads .downloads-content {
-    padding: 1em 2em 2em;
+    padding: 1.5em 2em 2em;
   }
 }
 @media only screen and (min-width: 1024px) {
   #downloads .downloads-content {
-    padding: 1em 4em 3em;
+    padding: 1.5em 4em 3em;
   }
 }
 #downloads h1,
@@ -861,7 +861,6 @@ body.modal-open {
 #downloads ul {
   margin: 0 auto;
   padding: 0;
-  width: 50%;
   list-style: none;
 }
 #downloads ul li {
