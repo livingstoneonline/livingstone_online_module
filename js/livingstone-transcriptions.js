@@ -24,9 +24,9 @@
     ];
 
     var date = input.match(/(-?[0-9]{4})-?([0-9]{2})?-?([0-9]{2})?/);
-    var year = (typeof date[1] != 'undefined') ? date[1] : null;
+    var year = (typeof date[1] != 'undefined') ? parseInt(date[1]) : null;
     var month = (typeof date[2] != 'undefined') ? months[parseInt(date[2])-1] : null;
-    var day = (typeof date[3] != 'undefined') ? date[3] : null;
+    var day = (typeof date[3] != 'undefined') ? parseInt(date[3]) : null;
 
     if (input.match(/^unknown$/i)) {
       return 'Unknown';
@@ -38,10 +38,10 @@
       return year;
     }
     else if (!day) {
-      return year + ' ' + month;
+      return month + ' ' + year;
     }
     else {
-      return year + ' ' + month + ' ' + day;
+      return day + ' ' + month + ' ' + year;
     }
   }
 
