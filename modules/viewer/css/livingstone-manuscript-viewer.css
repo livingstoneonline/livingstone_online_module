@@ -300,7 +300,7 @@ body.loading .loading-modal {
   line-height: 23px;
 }
 #toolbar {
-  padding: 2px 30px;
+  padding: 2px 30px 2px 5px;
   margin: 0 auto;
   text-align: center;
 }
@@ -329,7 +329,7 @@ body.loading .loading-modal {
   background-size: 1em !important;
   background-position: right !important;
   font-size: 0.9em;
-  font-style: inherit;
+  font-family: Source Sans Pro, sans-serif;
 }
 #toolbar .pager-icon {
   position: relative;
@@ -393,6 +393,7 @@ body.loading .loading-modal {
   border-radius: 7px;
   background: url('../images/search-button.png') no-repeat 1px 1px white;
   padding: 5px 15px 5px 35px;
+  margin: 4px;
   border: 1px solid #d0d0d0;
   height: 25px;
   width: 250px;
@@ -413,9 +414,6 @@ body.loading .loading-modal {
   border: 1px solid #d0d0d0;
   color: #333;
   font-size: 14px;
-}
-.search-type input {
-  margin: 0.5em;
 }
 .transcription-tooltip .transcription-tooltip-text {
   visibility: hidden;
@@ -655,7 +653,7 @@ body.loading .loading-modal {
   background-size: 1em !important;
   background-position: right !important;
   font-size: 0.9em;
-  font-style: inherit;
+  font-family: Source Sans Pro, sans-serif;
 }
 @media only screen and (max-width: 900px) {
   #main-image .image-toolbar .download,

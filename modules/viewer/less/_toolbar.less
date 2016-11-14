@@ -4,7 +4,7 @@
 
 #toolbar {
   // Close icon position must match #toolbar padding.
-  padding: 2px @close-icon-width + 5;
+  padding: 2px @close-icon-width + 5 2px 5px;
   // Once the tool bar is only the side-menu and share links.
   @media (max-width : 500px) {
     padding: 2px 2px;
@@ -89,6 +89,7 @@
       .border-radius(7px);
       background: url('@{images}/search-button.png') no-repeat 1px 1px white;
       padding: 5px 15px 5px 35px;
+      margin: @icon-margin;
       border: 1px solid #d0d0d0;
       height: @icon-height;
       width: 250px;
@@ -113,10 +114,6 @@
   border: 1px solid rgb(208, 208, 208);
   color: #333;
   font-size: 14px;
-}
-
-.search-type input {
-  margin: 0.5em;
 }
 
 // @todo refactor into tooltip / tooltip-text classes.
