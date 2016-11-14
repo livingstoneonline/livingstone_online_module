@@ -837,10 +837,12 @@ div.livingstone-manuscript-viewer-modal iframe {
   font-style: italic;
 }
 #downloads hr {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eee;
+  border: 0 solid rgba(0, 0, 0, 0.2);
+  border-top-width: 1px;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
 }
 #downloads p {
   font-family: "Crimson Text", serif;
