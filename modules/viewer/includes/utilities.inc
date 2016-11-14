@@ -94,7 +94,7 @@ function livingstone_manuscript_viewer_page_labels($pid, $pages) {
 /**
  * Gets an ordered list of all pages in the given manuscript.
  *
- * @param string $pid
+ * @param string $page
  *   The PID of the manuscript.
  *
  * @return array
@@ -165,11 +165,11 @@ EOQ;
   // Add tokens and sizes, for use in Djatoka viewer for administrative access.
   $index = 0;
   foreach ($pages as &$page) {
-    $pid = $page['pid'];
+    $page_pid = $page['pid'];
     $page['labels'] = array();
-    $page['size'] = isset($sizes[$pid]) ? (int) $sizes[$pid] : FALSE;
+    $page['size'] = isset($sizes[$page_pid]) ? (int) $sizes[$page_pid] : FALSE;
     foreach ($page['dsid'] as $dsid) {
-      $page['token'][$dsid] = islandora_get_object_token($pid, $dsid, 2);
+      $page['token'][$dsid] = islandora_get_object_token($page_pid, $dsid, 2);
     }
   }
   // Set the labels.
