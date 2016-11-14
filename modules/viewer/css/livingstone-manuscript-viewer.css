@@ -397,7 +397,8 @@ body.loading .loading-modal {
   border: 1px solid #d0d0d0;
   height: 25px;
   width: 250px;
-  font-size: 14px;
+  font-size: 14.4px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .search-type {
   text-align: left;
