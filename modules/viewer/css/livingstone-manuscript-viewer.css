@@ -615,7 +615,6 @@ body.loading .loading-modal {
   margin: 4px;
   color: #333;
   font-size: 0.9em;
-  max-width: 33%;
 }
 #main-image .image-toolbar .icon.rotate,
 #compare-image .image-toolbar .icon.rotate {
