@@ -285,6 +285,24 @@
       })
     }
 
+    function prevPage(event) {
+      var page = toolbar.getPrevPage();
+      if (page) {
+        event.pid = page.pid;
+        event.label = page.label;
+        setPage(event);
+      }
+    }
+
+    function nextPage(event) {
+      var page = toolbar.getNextPage();
+      if (page) {
+        event.pid = page.pid;
+        event.label = page.label;
+        setPage(event);
+      }
+    }
+
     function zoomTo(event) {
       toolbar.setZoomPercentage(event.zoom);
       $.each(images, function () {
@@ -335,6 +353,12 @@
     transcription.on('page-change', setPage);
     $.each(images, function () {
       this.on('page-change', setPage);
+    });
+
+    // Next / Prev Page.
+    $.each(images, function () {
+      this.on('next-page', nextPage);
+      this.on('prev-page', prevPage);
     });
 
     // Image change.
@@ -577,6 +601,34 @@
         pid: pager.val(),
         label: $('option:selected', pager).text()
       };
+    };
+
+    /**
+     * Gets the page after the next if available.
+     */
+    this.getPrevPage = function () {
+      var prev = $('option:selected', pager).prev();
+      if (prev.length) {
+        return {
+          pid: prev.val(),
+          label: prev.text()
+        };
+      }
+      return false;
+    };
+
+    /**
+     * Gets the page after the next if available.
+     */
+    this.getNextPage = function () {
+      var next = $('option:selected', pager).next();
+      if (next.length) {
+        return {
+          pid: next.val(),
+          label: next.text()
+        };
+      }
+      return false;
     };
 
     // Expose some jQuery functions via a proxy.
@@ -830,20 +882,12 @@
 
     // Navigation previous page.
     prev.click(function () {
-      var index = openseadragon.currentPage();
-      var prev = manuscript.getPrevTileSourceMapping(index);
-      if (prev !== false) {
-        element.trigger(jQuery.Event( "page-change", { pid: prev.pid } ));
-      }
+      element.trigger(jQuery.Event( "prev-page" ));
     });
 
     // Navigation next page.
     next.click(function () {
-      var index = openseadragon.currentPage();
-      var next = manuscript.getNextTileSourceMapping(index);
-      if (next !== false) {
-        element.trigger(jQuery.Event( "page-change", { pid: next.pid } ));
-      }
+      element.trigger(jQuery.Event( "next-page" ));
     });
 
     // Change the current image being displayed.
