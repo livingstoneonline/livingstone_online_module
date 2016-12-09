@@ -543,7 +543,7 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
           'filter_url_length' => 496,
         );
         $data = _filter_url($data, $filter);
-        $data = preg_replace('/>.*<\/a/', ' target="_blank">link</a', $data);
+        $data = preg_replace('/(href=".*")>.*<\/a/', '$1 target="_blank">link</a', $data);
       }
       $row[] = array(
         'data' => $data,
