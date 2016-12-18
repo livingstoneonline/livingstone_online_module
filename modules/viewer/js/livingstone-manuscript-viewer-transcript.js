@@ -64,5 +64,30 @@
     }
 
     window.addEventListener("message", receiveMessage, false);
+
+    /**
+     * Tool tips.
+     */
+    jQuery('[title!=""]').qtip({
+      style: {
+        tip: false,
+        classes: 'qtip-bootstrap'
+      },
+      position: {
+        at: 'top center',
+        viewport: true,
+        adjust: {
+          method: 'shift'
+        },
+        my: 'bottom center'
+      },
+      show: {
+        solo: true,
+        event: 'mouseenter'
+      },
+      hide:{
+        event: 'mouseleave'
+      }
+    });
   });
 }(jQuery));
