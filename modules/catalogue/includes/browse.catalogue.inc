@@ -496,6 +496,14 @@ function livingstone_browse_catalogue_pager(array $results) {
  *   A renderable array defining the search result table display.
  */
 function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
+  // We need to encode some characters to be able to display the content
+  // correctly.
+  $html_entities = get_html_translation_table(HTML_ENTITIES);
+  unset($html_entities['"']);
+  unset($html_entities['<']);
+  unset($html_entities['>']);
+  unset($html_entities['&']);
+
   $fields = livingstone_browse_catalogue_display_fields();
   $headers = array();
   foreach ($fields as $field) {
@@ -522,31 +530,42 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
         $data = livingstone_browse_catalogue_view_link($doc);
         $data .= livingstone_browse_catalogue_download_link($doc);
       }
-      elseif (isset($doc[$solr_field]) && is_array($doc[$solr_field])) {
-        $delimiter = isset($field['delimiter']) ? $field['delimiter'] : ';<br/>';
-        $data = implode($delimiter, array_unique($doc[$solr_field]));
-      }
-      elseif (isset($doc[$solr_field]) && is_string($doc[$solr_field])) {
-        if (isset($field['split'])) {
-          $split = $field['split'];
-          $data = preg_replace("($split)", "$split<br/>", $doc[$solr_field]);
+      elseif (isset($doc[$solr_field])) {
+        $result = $doc[$solr_field];
+        if (is_array($result)) {
+          $delimiter = isset($field['delimiter']) ? $field['delimiter'] : ';<br/>';
+          $data = implode($delimiter, array_unique($result));
         }
-        else {
-          $data = $doc[$solr_field];
+        elseif (is_string($result)) {
+          if (isset($field['split'])) {
+            $split = $field['split'];
+            $data = preg_replace("($split)", "$split<br/>", $result);
+          }
+          else {
+            $data = $result;
+          }
         }
-      }
-      if ($solr_field != 'PID') {
-        // Setup dummy filter object.
-        $filter = new stdClass();
-        $filter->callback = '_filter_url';
-        $filter->settings = array(
-          'filter_url_length' => 496,
-        );
-        $data = _filter_url($data, $filter);
-        $data = preg_replace('/(href=".*")>.*<\/a/', '$1 target="_blank">link</a', $data);
+        // Expand links if the field can contain links.
+        if (isset($field['expand_links']) && $field['expand_links'] && !empty($data)) {
+          // Setup dummy filter object.
+          $filter = new stdClass();
+          $filter->callback = '_filter_url';
+          $filter->settings = array(
+            'filter_url_length' => 2048,
+          );
+          $data = _filter_url($data, $filter);
+          $dom = new DOMDocument();
+          $dom->loadHTML('<html><body><span>' . $data . '</span></body></html>');
+          $links = $dom->getElementsByTagName('a');
+          foreach ($links as $link) {
+            $link->setAttribute('target', '_blank');
+            $link->nodeValue = 'link';
+          }
+          $data = $dom->saveHTML($dom->getElementsByTagName('span')->item(0));
+        }
       }
       $row[] = array(
-        'data' => $data,
+        'data' => strtr($data, $html_entities),
         'class' => $field['classes'],
         'style' => $collapse ? 'display:none;' : NULL,
       );
@@ -962,6 +981,7 @@ function livingstone_browse_catalogue_display_fields() {
       'field' => 'otherVersion_ms',
       'sort' => 'otherVersion_s',
       'delimiter' => '</br>',
+      'expand_links' => TRUE,
       'classes' => array('other-versions-column', 'collapsible-column'),
     ),
     array(
