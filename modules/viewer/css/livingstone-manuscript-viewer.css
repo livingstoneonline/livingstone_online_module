@@ -498,6 +498,9 @@ body.loading .loading-modal {
     width: 100%;
     float: none;
   }
+  .pane.pane-open:last-of-type {
+    display: none;
+  }
   .pane .spectral-image-toolbar {
     text-align: center;
   }

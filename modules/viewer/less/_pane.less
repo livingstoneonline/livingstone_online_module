@@ -55,6 +55,12 @@
       width: 100%;
       float: none;
     }
+    // When in low resolution we may have two panes open we can only display the
+    // first. This will usually be the transcription or item details as they are
+    // placed first in the DOM.
+    &.pane-open:last-of-type {
+      display: none;
+    }
     .spectral-image-toolbar {
       text-align: center;
     }
