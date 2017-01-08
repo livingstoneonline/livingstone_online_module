@@ -980,7 +980,7 @@ function livingstone_browse_catalogue_display_fields() {
       'label' => t('Other Version(s)'),
       'field' => 'otherVersion_ms',
       'sort' => 'otherVersion_s',
-      'delimiter' => '</br>',
+      'delimiter' => '<br/>',
       'expand_links' => TRUE,
       'classes' => array('other-versions-column', 'collapsible-column'),
     ),
