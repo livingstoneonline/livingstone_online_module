@@ -93,7 +93,8 @@ and (max-width : 766px) {
 .transcription-viewer-content {
   display: block;
   width: 100%;
-  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
 }
 
 .transcription-viewer-content iframe {
