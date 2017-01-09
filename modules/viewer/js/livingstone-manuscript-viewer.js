@@ -969,6 +969,14 @@
         element = $(selector);
 
     /**
+     * Detect when the transcript has loaded so that the parent frame of this
+     * one can attach tooltips.
+     */
+    element.load(function () {
+      element.attr('loaded', '1');
+    });
+
+    /**
      * Scrolls to the given page if possible.
      */
     this.setPage = function (pid, label) {

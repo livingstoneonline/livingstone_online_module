@@ -417,9 +417,9 @@ function theme_livingstone_manuscript_viewer_transcript(array &$variables) {
   drupal_add_js("$js_path/livingstone-manuscript-viewer-transcript.js");
   drupal_add_js("$lib_path/drupal.js");
   drupal_add_js("$lib_path/jquery/plugins/jquery.once.js");
-  drupal_add_js("$lib_path/qtip2/2.2.1/jquery.qtip.min.js");
+  drupal_add_js("$lib_path/qtip2/3.0.3/jquery.qtip.min.js");
   drupal_add_js("$lib_path/jquery/1.12.4/dist/jquery.min.js");
-  drupal_add_css("$lib_path/qtip2/2.2.1/jquery.qtip.min.css");
+  drupal_add_css("$lib_path/qtip2/3.0.3/jquery.qtip.min.css");
   drupal_add_css("$css_path/livingstone-manuscript-viewer-transcript.css");
   $manuscript = $variables['manuscript'];
   $manuscript = islandora_object_load($manuscript);

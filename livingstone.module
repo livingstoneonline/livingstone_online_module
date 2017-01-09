@@ -530,6 +530,9 @@ function livingstone_field_formatter_view($entity_type, $entity, $field, $instan
   }
   $module_path = drupal_get_path('module', 'livingstone');
   drupal_add_css("$module_path/css/transcription-viewer.css");
+  drupal_add_js("$module_path/modules/viewer/js/livingstone-manuscript-viewer-transcript-tooltips.js");
+  drupal_add_js("$module_path/modules/viewer/lib/qtip2/3.0.3/jquery.qtip.min.js");
+  drupal_add_css("$module_path/modules/viewer/lib/qtip2/3.0.3/jquery.qtip.min.css");
   drupal_add_js("$module_path/js/livingstone-transcriptions.js");
   list($document) = each($documents);
   list($second_document) = each($documents);

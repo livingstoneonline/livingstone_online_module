@@ -44,6 +44,9 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
         "$viewer_path/lib/URI.js",
         "$viewer_path/js/livingstone-manuscript-viewer-modal.js",
         "$viewer_path/js/livingstone-manuscript-viewer-downloads-modal.js",
+        "$viewer_path/js/livingstone-manuscript-viewer-transcript-tooltips.js",
+        "$viewer_path/lib/qtip2/3.0.3/jquery.qtip.min.css",
+        "$viewer_path/lib/qtip2/3.0.3/jquery.qtip.min.js",
         "$path/js/browse.catalogue.js",
         array(
           'type' => 'setting',

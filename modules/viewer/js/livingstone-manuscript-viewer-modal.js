@@ -58,6 +58,7 @@
       if (data.viewable) {
         $('body').prepend('<div class="livingstone-manuscript-viewer-modal"><iframe src="' + url + '"></iframe><div>');
         $('body').addClass('modal-open');
+        sendMessage('open', pid, page);
       }
     });
   }
@@ -115,7 +116,7 @@
       }
       else {
         // Viewer is open tell it to change it's page.
-        sendMessage('page', event.state.pid, event.state.page);
+        sendMessageToViewer('page', event.state.pid, event.state.page);
       }
     }
     else {
@@ -132,10 +133,25 @@
    * @param pid
    * @param page
    */
-  function sendMessage(event, pid, page) {
+  function sendMessageToViewer(event, pid, page) {
     var targetFrame = $('div.livingstone-manuscript-viewer-modal > iframe')[0];
     targetFrame.contentWindow.postMessage({
-      event: 'page',
+      event: event,
+      pid: pid,
+      page: page
+    }, '*');
+  }
+
+  /**
+   * Sends a message to global window.
+   *
+   * @param event
+   * @param pid
+   * @param page
+   */
+  function sendMessage(event, pid, page) {
+    window.postMessage({
+      event: event,
       pid: pid,
       page: page
     }, '*');
