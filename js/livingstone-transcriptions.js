@@ -102,6 +102,13 @@
             var count = (totals[date] > 1) ? ' (' + counts[date] + ')' : '';
             date_select.append('<option value="' + option.value + '">' + option.label + count + '</option>')
           });
+
+          // Resize.
+          function resizeIframe() {
+            iframe.height(iframe.get(0).contentWindow.document.body.scrollHeight + 'px');
+          }
+          resizeIframe();
+          $(window).resize(resizeIframe);
         });
 
         // Change the displayed transcription.

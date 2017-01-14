@@ -2,6 +2,7 @@
 
 body.modal-open {
   overflow: hidden;
+  position: fixed;
 }
 
 div.livingstone-manuscript-viewer-modal {
@@ -12,7 +13,6 @@ div.livingstone-manuscript-viewer-modal {
   padding: 0.5em;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   z-index: 1000;
   background-color: rgba(0,0,0,0.4);
   iframe {
@@ -27,12 +27,13 @@ div.livingstone-manuscript-viewer-modal {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    z-index: 999999;
+    z-index: 1000;
     background-color: black;
   }
   // Remove border on phones.
   @media screen and (max-width: 568px) {
     padding: 0;
+    height: 100vh;
     iframe {
       .border-radius(0);
       border-width: 0;

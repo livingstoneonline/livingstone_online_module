@@ -31,7 +31,12 @@
     border-left: 1px solid black;
   }
   &.item-details {
+    -webkit-overflow-scrolling: touch;
     overflow: scroll;
+  }
+  &.transcription {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
   }
   &.main-image,
   &.compare-image,
@@ -58,7 +63,7 @@
     // When in low resolution we may have two panes open we can only display the
     // first. This will usually be the transcription or item details as they are
     // placed first in the DOM.
-    &.pane-open:last-of-type {
+    &.pane-open ~ &.pane-open {
       display: none;
     }
     .spectral-image-toolbar {

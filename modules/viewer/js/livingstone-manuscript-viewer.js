@@ -432,7 +432,7 @@
      * Resize the viewer.
      */
     function resize() {
-      var height = window.innerHeight - $('#toolbar').outerHeight();
+      var height = $('body').height() - $('#toolbar').outerHeight();
       panels.height(height);
       // Hack to get around sudden switch to mobile when displaying compare.
       if (window.innerWidth <= 767) {
@@ -974,6 +974,11 @@
      */
     element.load(function () {
       element.attr('loaded', '1');
+      function resizeIframe() {
+        element.height(element.get(0).contentWindow.document.body.scrollHeight + 'px');
+      }
+      resizeIframe();
+      $(window).resize(resizeIframe);
     });
 
     /**

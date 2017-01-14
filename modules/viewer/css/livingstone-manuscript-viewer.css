@@ -476,7 +476,12 @@ body.loading .loading-modal {
   border-left: 1px solid black;
 }
 .pane.item-details {
+  -webkit-overflow-scrolling: touch;
   overflow: scroll;
+}
+.pane.transcription {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
 }
 .pane.main-image,
 .pane.compare-image,
@@ -498,7 +503,7 @@ body.loading .loading-modal {
     width: 100%;
     float: none;
   }
-  .pane.pane-open:last-of-type {
+  .pane.pane-open ~ .pane.pane-open {
     display: none;
   }
   .pane .spectral-image-toolbar {
@@ -757,6 +762,7 @@ body.loading .loading-modal {
 }
 body.modal-open {
   overflow: hidden;
+  position: fixed;
 }
 div.livingstone-manuscript-viewer-modal {
   position: fixed;
@@ -766,7 +772,6 @@ div.livingstone-manuscript-viewer-modal {
   padding: 0.5em;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -787,12 +792,13 @@ div.livingstone-manuscript-viewer-modal iframe {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  z-index: 999999;
+  z-index: 1000;
   background-color: black;
 }
 @media screen and (max-width: 568px) {
   div.livingstone-manuscript-viewer-modal {
     padding: 0;
+    height: 100vh;
   }
   div.livingstone-manuscript-viewer-modal iframe {
     -webkit-border-radius: 0;
@@ -880,6 +886,11 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
 }
 *,
 *:before,

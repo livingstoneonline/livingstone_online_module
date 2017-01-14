@@ -1,5 +1,6 @@
 body.modal-open {
   overflow: hidden;
+  position: fixed;
 }
 div.livingstone-manuscript-viewer-modal {
   position: fixed;
@@ -9,7 +10,6 @@ div.livingstone-manuscript-viewer-modal {
   padding: 0.5em;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -30,12 +30,13 @@ div.livingstone-manuscript-viewer-modal iframe {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  z-index: 999999;
+  z-index: 1000;
   background-color: black;
 }
 @media screen and (max-width: 568px) {
   div.livingstone-manuscript-viewer-modal {
     padding: 0;
+    height: 100vh;
   }
   div.livingstone-manuscript-viewer-modal iframe {
     -webkit-border-radius: 0;
