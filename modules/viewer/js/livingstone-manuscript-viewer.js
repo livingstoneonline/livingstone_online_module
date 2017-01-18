@@ -979,6 +979,12 @@
       }
       resizeIframe();
       $(window).resize(resizeIframe);
+
+      // Just in case.
+      setTimeout(function() {
+        resizeIframe();
+      }, 1000);
+
     });
 
     /**
