@@ -397,6 +397,7 @@
           transcription_pane.addClass('pane-open').addClass('pane-right');
           var page = toolbar.getPage();
           transcription.setPage(page.pid, page.label);
+          transcription.resize();
           $.each(center_panes, function () {
             this.addClass('pane-open');
             this.addClass('pane-left');
@@ -968,21 +969,12 @@
     var that = this,
         element = $(selector);
 
-    function resizeIframe() {
-      element.height(element.get(0).contentWindow.document.body.scrollHeight + 'px');
-    }
-
-    // Resize the iFrame when the window is resized.
-    $(window).resize(resizeIframe);
-
     /**
-     * Detect when the transcript has loaded so that the parent frame of this
-     * one can attach tooltips.
+     * Resize the iframe based on the length of it's content.
      */
-    element.load(function () {
-      element.attr('loaded', '1');
-      resizeIframe();
-    });
+    this.resize = function () {
+      element.height(element.get(0).contentWindow.document.body.scrollHeight + 'px');
+    };
 
     /**
      * Scrolls to the given page if possible.
@@ -1015,10 +1007,22 @@
       }
       if (event.data.event == 'ready') {
         // Resize once loaded.
-        resizeIframe();
+        that.resize();
       }
     }
     window.addEventListener("message", receiveMessage, false);
+
+    // Resize the iFrame when the window is resized.
+    $(window).resize(function () { that.resize(); });
+
+    /**
+     * Detect when the transcript has loaded so that the parent frame of this
+     * one can attach tooltips.
+     */
+    element.load(function () {
+      element.attr('loaded', '1');
+      that.resize();
+    });
 
     // Expose some jQuery functions via a proxy.
     this.on = $.proxy(element.on, element);
