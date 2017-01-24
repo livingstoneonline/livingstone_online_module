@@ -38,7 +38,7 @@
     /**
      * Sends a message to the viewer.
      */
-    function sendMessage(label) {
+    function sendPageMessage(label) {
       parent.window.postMessage({
         event: 'page',
         label: label
@@ -47,7 +47,7 @@
 
     // When page break is clicked let the viewer know.
     $('.TEI span.pb-title').click(function () {
-      sendMessage($(this).text());
+      sendPageMessage($(this).text());
       transcriptionScrollTo(pageSelector($(this).text()), 0);
     });
 
@@ -72,5 +72,10 @@
     }
 
     window.addEventListener("message", receiveMessage, false);
+
+    // Let the parent page know it's ready.
+    parent.window.postMessage({
+      event: 'ready'
+    }, "*");
   });
 }(jQuery));

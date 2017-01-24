@@ -968,23 +968,20 @@
     var that = this,
         element = $(selector);
 
+    function resizeIframe() {
+      element.height(element.get(0).contentWindow.document.body.scrollHeight + 'px');
+    }
+
+    // Resize the iFrame when the window is resized.
+    $(window).resize(resizeIframe);
+
     /**
      * Detect when the transcript has loaded so that the parent frame of this
      * one can attach tooltips.
      */
     element.load(function () {
       element.attr('loaded', '1');
-      function resizeIframe() {
-        element.height(element.get(0).contentWindow.document.body.scrollHeight + 'px');
-      }
       resizeIframe();
-      $(window).resize(resizeIframe);
-
-      // Just in case.
-      setTimeout(function() {
-        resizeIframe();
-      }, 1000);
-
     });
 
     /**
@@ -1015,6 +1012,10 @@
         if (page) {
           element.trigger(jQuery.Event('page-change', { pid: page.pid, label: event.data.label }));
         }
+      }
+      if (event.data.event == 'ready') {
+        // Resize once loaded.
+        resizeIframe();
       }
     }
     window.addEventListener("message", receiveMessage, false);
