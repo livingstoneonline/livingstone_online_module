@@ -1,4 +1,4 @@
-<div id="<?php print $identifier; ?>" unselectable="on" onselectstart="return false;">
+<div id="<?php print $identifier; ?>"  oncontextmenu="return false;" unselectable="on" onselectstart="return false;">
   <?php if ($is_spectral): ?>
     <div class="image-toolbar">
       <select class="spectral-image icon button select">
