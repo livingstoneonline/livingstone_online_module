@@ -89,8 +89,11 @@
      */
     this.getInitialSpectralTileSource = function () {
       var index = settings.initialPage;
-      var page = that.getPage(index);
       var found = undefined;
+      var page = that.getPage(index);
+      if (!page) {
+        return false;
+      }
       $.each(page.dsid, function (i, dsid) {
         if (dsid.match("^RATIO_BY_0940_JP2$")) {
           found = dsid;
@@ -396,7 +399,9 @@
         case 'transcription':
           transcription_pane.addClass('pane-open').addClass('pane-right');
           var page = toolbar.getPage();
-          transcription.setPage(page.pid, page.label);
+          if (page) {
+            transcription.setPage(page.pid, page.label);
+          }
           transcription.resize();
           $.each(center_panes, function () {
             this.addClass('pane-open');
@@ -687,12 +692,14 @@
      */
     function updatePageDownload(index) {
       var page = manuscript.getPage(index);
-      page_download.html('');
-      if ($.isNumeric(page.size) && page.size > 0) {
-        var size = page.size / 1024 / 1024;
-        var text = '(' + size.toFixed(1) + ' MB)';
-        var url = Drupal.settings.basePath + 'islandora/object/' + page.pid + '/datastream/ZIP/download';
-        page_download.html('<a href="' + url + '" class="icon button"><span class="fa">&#xf063;</span>&nbsp;' + text + '</a>');
+      if (page) {
+        page_download.html('');
+        if ($.isNumeric(page.size) && page.size > 0) {
+          var size = page.size / 1024 / 1024;
+          var text = '(' + size.toFixed(1) + ' MB)';
+          var url = Drupal.settings.basePath + 'islandora/object/' + page.pid + '/datastream/ZIP/download';
+          page_download.html('<a href="' + url + '" class="icon button"><span class="fa">&#xf063;</span>&nbsp;' + text + '</a>');
+        }
       }
     }
 
@@ -702,7 +709,7 @@
     function updateImageSelect(index) {
       var page = manuscript.getPage(index);
       var mapping = manuscript.getTileSourceMapping(index);
-      if (mapping) {
+      if (page && mapping) {
         var labels = {
           'COLOR_JP2': 'color',
           'RATIO_BY_0940_JP2': 'spectral_ratio',
@@ -981,14 +988,16 @@
      */
     this.setPage = function (pid, label) {
       var page = manuscript.getPageByPid(pid);
-      label = label || page.labels[0];
-      if (typeof label != "undefined") {
-        var iframe = jQuery('iframe#transcription');
-        if (iframe.length) {
-          iframe.get(0).contentWindow.postMessage({
-            event: 'page',
-            label: label
-          }, "*");
+      if (page) {
+        label = label || page.labels[0];
+        if (typeof label != "undefined") {
+          var iframe = jQuery('iframe#transcription');
+          if (iframe.length) {
+            iframe.get(0).contentWindow.postMessage({
+              event: 'page',
+              label: label
+            }, "*");
+          }
         }
       }
     };

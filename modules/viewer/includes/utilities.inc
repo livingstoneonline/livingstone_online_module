@@ -15,7 +15,7 @@
  *   An associative array keyed by page pid, with the datastream size as it's
  *   value in bytes.
  */
-function livingstone_manuscript_viewer_page_sizes($pid) {
+function livingstone_manuscript_viewer_page_sizes($pid, $pages) {
   $path_parts = parse_url(variable_get('islandora_solr_url', 'localhost:8080/solr'));
   $solr = new Apache_Solr_Service($path_parts['host'], $path_parts['port'], $path_parts['path'] . '/');
   $solr->setCreateDocuments(0);
@@ -35,15 +35,15 @@ function livingstone_manuscript_viewer_page_sizes($pid) {
   }
   $results = isset($results) ? json_decode($results->getRawResponse(), TRUE) : array();
   $docs = $results['response']['docs'];
-  $objects = array();
+  $sizes = array();
   foreach ($docs as $doc) {
     $pid = $doc['PID'];
     $size = isset($doc['fedora_datastream_latest_ZIP_SIZE_ms']) ?
       reset($doc['fedora_datastream_latest_ZIP_SIZE_ms']) :
       FALSE;
-    $objects[$pid] = $size;
+    $sizes[$pid] = $size;
   }
-  return $objects;
+  return array_intersect_key($sizes, $pages);
 }
 
 /**
@@ -72,8 +72,9 @@ function livingstone_manuscript_viewer_page_labels($pid, $pages) {
       $results = $xpath->query('//tei:pb[@facs and @n]');
       foreach ($results as $result) {
         $facs = $result->getAttribute('facs');
-        $cache[$pid][] = array(
-          'pid' => str_replace('liv_', 'liv:', $facs),
+        $page_pid =str_replace('liv_', 'liv:', $facs);
+        $cache[$pid][$page_pid] = array(
+          'pid' => $page_pid,
           'label' => $result->getattribute('n'),
         );
       }
@@ -88,7 +89,7 @@ function livingstone_manuscript_viewer_page_labels($pid, $pages) {
       }
     }
   }
-  return $cache[$pid];
+  return array_intersect_key($cache[$pid], $pages);
 }
 
 /**
@@ -161,7 +162,7 @@ EOQ;
     $pages[$page_pid]['page'] = $result['page'];
     $pages[$page_pid]['dsid'][] = $result['dsid'];
   }
-  $sizes = livingstone_manuscript_viewer_page_sizes($pid);
+  $sizes = livingstone_manuscript_viewer_page_sizes($pid, $pages);
   // Add tokens and sizes, for use in Djatoka viewer for administrative access.
   $index = 0;
   foreach ($pages as &$page) {
