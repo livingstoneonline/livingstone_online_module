@@ -120,6 +120,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
           '#title' => t('Full Record'),
           '#default_value' => $full_record,
         ),
+        'access' => $access,
         'date-container' => array(
           '#type' => 'container',
           '#attributes' => array(
@@ -146,7 +147,6 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
         'addressee' => $addressee,
         'repository' => $repository,
         'genre' => $genre,
-        'access' => $access,
         'page' => array(
           '#type' => 'hidden',
           '#default_value' => livingstone_browse_catalogue_default_value('page', 0, $form_state),
