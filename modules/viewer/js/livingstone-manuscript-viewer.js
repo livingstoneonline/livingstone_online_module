@@ -980,7 +980,9 @@
      * Resize the iframe based on the length of it's content.
      */
     this.resize = function () {
-      element.height(element.get(0).contentWindow.document.body.scrollHeight + 'px');
+      if (element && element.get(0)) {
+        element.height(element.get(0).contentWindow.document.body.scrollHeight + 'px');
+      }
     };
 
     /**

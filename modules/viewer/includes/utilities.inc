@@ -82,8 +82,9 @@ function livingstone_manuscript_viewer_page_labels($pid, $pages) {
     else {
       $index = 0;
       foreach ($pages as $page) {
-        $cache[$pid][] = array(
-          'pid' => $page['pid'],
+        $page_pid = $page['pid'];
+        $cache[$pid][$page_pid] = array(
+          'pid' => $page_pid,
           'label' => sprintf('%04d', $index+=1)
         );
       }
