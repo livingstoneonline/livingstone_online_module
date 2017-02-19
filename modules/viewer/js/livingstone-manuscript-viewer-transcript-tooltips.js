@@ -45,6 +45,10 @@
                 ready: true,
                 event: event.type
               },
+              hide: {
+                fixed: true,
+                delay: 1000
+              },
               events: {
                 hide: function (event, api) {
                   api.destroy();
