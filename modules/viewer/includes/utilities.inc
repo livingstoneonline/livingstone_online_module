@@ -54,6 +54,9 @@ function livingstone_manuscript_viewer_page_sizes($pid, $pages) {
  *
  * @param string $pid
  *   The PID of the manuscript.
+ * @param array $pages
+ *   The pages to filter the results by, as sometimes we have TEI but no actual
+ *   pages, so we don't want to return labels in such a case.
  *
  * @return array
  *   An array of associative arrays in order, containing a field for each 'pid'
@@ -73,7 +76,7 @@ function livingstone_manuscript_viewer_page_labels($pid, $pages) {
       foreach ($results as $result) {
         $facs = $result->getAttribute('facs');
         $page_pid =str_replace('liv_', 'liv:', $facs);
-        $cache[$pid][$page_pid] = array(
+        $cache[$pid][] = array(
           'pid' => $page_pid,
           'label' => $result->getattribute('n'),
         );
@@ -83,14 +86,18 @@ function livingstone_manuscript_viewer_page_labels($pid, $pages) {
       $index = 0;
       foreach ($pages as $page) {
         $page_pid = $page['pid'];
-        $cache[$pid][$page_pid] = array(
+        $cache[$pid][] = array(
           'pid' => $page_pid,
           'label' => sprintf('%04d', $index+=1)
         );
       }
     }
   }
-  return array_intersect_key($cache[$pid], $pages);
+  // Filter the results by the given pages.
+  $filter = function ($label) use($pages) {
+    return isset($pages[$label['pid']]);
+  };
+  return array_filter($cache[$pid], $filter);
 }
 
 /**
