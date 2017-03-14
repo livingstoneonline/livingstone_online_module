@@ -32,7 +32,7 @@
       <dt>Publisher</dt>
       <dd>Livingstone Online</dd>
       <dt>Directors</dt>
-      <dd>Adrian S. Wisnicki (director), Christopher Lawrence (director emeritus), Megan Ward (associate director), Anne Martin (associate director)</dd>
+      <dd>Adrian S. Wisnicki (director), Megan Ward (associate director), Anne Martin (associate director), Christopher Lawrence (director emeritus)</dd>
       <dt>Project Host</dt>
       <dd>University of Maryland Libraries</dd>
       <dt>Date</dt>
