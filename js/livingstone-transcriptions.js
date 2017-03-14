@@ -8,66 +8,93 @@
 
   var base = '#transcription-viewer';
 
+  function date_components(input) {
+    var date_components = input.match(/(-?[0-9]{4})-?([0-9]{2})?-?([0-9]{2})?/),
+        valid_components = $.isArray(date_components),
+        extract_component = function (index) {
+          var valid_component = valid_components && (typeof date_components[index] != 'undefined');
+          return valid_component ? parseInt(date_components[index]) : null;
+        };
+    return {
+      bce: input.match(/^-/),
+      unknown: input.match(/^unknown$/i),
+      year: extract_component(1),
+      month: extract_component(2),
+      day: extract_component(3),
+      format: function () {
+        var months = [
+          "Jan", "Feb", "Mar", "Apr", "May", "June",
+          "July", "Aug", "Sept", "Oct", "Nov", "Dec"
+        ];
+        var year = $.isNumeric(this.year) ? this.year : false;
+        var month = $.isNumeric(this.month) ? months[this.month - 1] : false;
+        var day = $.isNumeric(this.day) ? this.day : false;
+        if (this.unknown) {
+          return 'Unknown';
+        }
+        else if (this.bce && year) {
+          return Math.abs(parseInt(year)) + ' BCE';
+        }
+        else if (!month && !day) {
+          return year;
+        }
+        else if (!day) {
+          return month + ' ' + year;
+        }
+        else {
+          return day + ' ' + month + ' ' + year;
+        }
+      },
+      match: function() {
+        var year  = $.isNumeric(this.year) ? this.year.toString() : '0000',
+            month = $.isNumeric(this.month) ? this.month.toString() : '00',
+            day   = $.isNumeric(this.day) ? this.day.toString() : '00',
+            pad = function(n, width) {
+              n = n + '';
+              return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
+            };
+        return pad(year , 4) + '-' + pad(month, 2) + '-' + pad(day, 2);
+      },
+      compare: function(b) {
+        if (this.unknown && b.unknown) {
+          return 0;
+        }
+        else if (this.unknown) {
+          return 1;
+        }
+        else if (b.unknown) {
+          return -1;
+        }
+        if (this.bce && b.bce) {
+          // Normal compare.
+          return this.match().localeCompare(b.match());
+        }
+        else if (this.bce) {
+          return -1;
+        }
+        else if (b.bce) {
+          return 1;
+        }
+        return this.match().localeCompare(b.match());
+      }
+    };
+  }
+
   function format_dates(input) {
     var output = [];
     var dates = input.split(' ');
+    var date;
     for (var i in dates) {
-      output.push(format_date(dates[i]));
+      date = date_components(dates[i]);
+      output.push(date.format());
     }
     return output.join(' - ');
   }
 
-  function format_date(input) {
-    var months = [
-      "Jan", "Feb", "Mar", "Apr", "May", "June",
-      "July", "Aug", "Sept", "Oct", "Nov", "Dec"
-    ];
-
-    var date = input.match(/(-?[0-9]{4})-?([0-9]{2})?-?([0-9]{2})?/);
-    var year = (typeof date[1] != 'undefined') ? parseInt(date[1]) : null;
-    var month = (typeof date[2] != 'undefined') ? months[parseInt(date[2])-1] : null;
-    var day = (typeof date[3] != 'undefined') ? parseInt(date[3]) : null;
-
-    if (input.match(/^unknown$/i)) {
-      return 'Unknown';
-    }
-    else if (input.match(/^-/)) {
-      return Math.abs(parseInt(year)) + ' BCE';
-    }
-    else if (!month && !day) {
-      return year;
-    }
-    else if (!day) {
-      return month + ' ' + year;
-    }
-    else {
-      return day + ' ' + month + ' ' + year;
-    }
-  }
-
   function TranscriptionDate(input) {
-    var date = input.match(/(-?[0-9]{4})-?([0-9]{2})?-?([0-9]{2})?/),
-        year = date[1] ? date[1] : '00',
-        month = date[2] ? date[2] : '00',
-        day = date[3] ? date[3] : '00';
     this.value = input;
     this.label = format_dates(input);
-    this.unknown = input.match(/^unknown$/i);
-    this.match = year + month + day;
-
-    // Compare two TranscriptionDate.
-    this.compare = function(b) {
-      if (this.unknown && b.unknown) {
-        return 0;
-      }
-      else if (this.unknown) {
-        return 1;
-      }
-      else if (b.unknown) {
-        return -1;
-      }
-      return this.match.localeCompare(b.match);
-    }
+    this.date = date_components(input);
   }
 
   Drupal.behaviors.livingstoneTranscriptionsViewer = {
@@ -93,7 +120,7 @@
           });
           // Sort.
           options = options.sort(function(a, b) {
-            return a.compare(b);
+            return a.date.compare(b.date);
           });
           var counts = {};
           $.each(options, function(i, option) {
