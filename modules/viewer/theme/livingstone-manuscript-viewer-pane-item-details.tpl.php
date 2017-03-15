@@ -51,7 +51,7 @@
           <?php print implode('; ', $fields['authors']); ?>.
         <?php endif; ?>
         "<?php print implode('', $fields['title-alt']); ?>."
-        <i>Livingstone Online</i>. Adrian S. Wisnicki, Christopher Lawrence, Megan Ward, and Anne Martin, dirs.
+        <i>Livingstone Online</i>. Adrian S. Wisnicki, Megan Ward, Anne Martin, and Christopher Lawrence, dirs.
         University of Maryland Libraries, 2016. Web.
         <?php print $fields['accessed_date']?>.
       </dd>
