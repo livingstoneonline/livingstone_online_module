@@ -23,11 +23,6 @@ function livingstone_section_page_nodes_feature_uuid_features_default_content() 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '05c2bec5-31aa-4dde-b5e9-b3fdff8e3181',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -1381,65 +1376,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:15px;"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>The 1870 and 1871 Field Diaries and other texts studied by the Livingstone Spectral Imaging Project can be difficult to cite due to Livingstone’s methods in composing his manuscripts and the complexity of our processed spectral images. This page outlines the standardized system that we have adopted for, first, citing specific manuscript pages and spectral images and, second, naming corresponding spectral image files.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -1451,11 +1388,58 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -1463,7 +1447,31 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>The 1870 and 1871 Field Diaries and other texts studied by the Livingstone Spectral Imaging Project can be difficult to cite due to Livingstone’s methods in composing his manuscripts and the complexity of our processed spectral images. This page outlines the standardized system that we have adopted for, first, citing specific manuscript pages and spectral images and, second, naming corresponding spectral image files.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
   'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/manuscript-citation-and-file-naming-practices',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Note on the Text of the Letter',
@@ -1478,11 +1486,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '08909242-0281-4ba9-b57b-ed711e0b2335',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-16 20:25:19 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -1529,17 +1532,15 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This section describes key physical and textual characteristics of the <em>Letter from Bambarre</em>. The section begins with a summary of the issue of the <em>Proceedings of the Royal Geographical Society </em>(8 Nov. 1869),&nbsp;<font id="yui_3_16_0_ym19_1_1488568903116_24315" size="2"><span id="yui_3_16_0_ym19_1_1488568903116_24314" style="color:rgb(51,51,51);">pages of which Livingstone used to create the letter,</span></font> then turns to a close analysis of the letter itself as well as to an overview of relationship of this letter to other contemporaneous letters that Livingstone also wrote over pages from the <em>Proceedings</em>.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian Wisnicki (author), Beta edition: 2010, First edition: 2011, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -1554,19 +1555,21 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -1578,28 +1581,40 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian Wisnicki (author), Beta edition: 2010, First edition: 2011, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section describes key physical and textual characteristics of the <em>Letter from Bambarre</em>. The section begins with a summary of the issue of the <em>Proceedings of the Royal Geographical Society </em>(8 Nov. 1869),&nbsp;<font id="yui_3_16_0_ym19_1_1488568903116_24315" size="2"><span id="yui_3_16_0_ym19_1_1488568903116_24314" style="color:rgb(51,51,51);">pages of which Livingstone used to create the letter,</span></font> then turns to a close analysis of the letter itself as well as to an overview of relationship of this letter to other contemporaneous letters that Livingstone also wrote over pages from the <em>Proceedings</em>.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -1609,16 +1624,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/note-the-text-the-letter',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-17 02:25:19 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Resources: Overview',
@@ -1633,11 +1649,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '08cc1752-d8e8-4f69-a2f5-b9b89d734f88',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-03-23 20:22:35 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -1665,11 +1676,71 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000071_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_000071_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 27670,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'b349c560-f13d-486a-be5f-fe13c13c2dd8',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_000071_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000071_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_000071_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 160154,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '27f17f28-423c-41f7-8a03-9f2a1e4cd314',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_000071_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -1679,56 +1750,8 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_000071_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_000071_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 27670,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'b349c560-f13d-486a-be5f-fe13c13c2dd8',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_000071_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_000071_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_000071_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 160154,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '27f17f28-423c-41f7-8a03-9f2a1e4cd314',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/liv_000071_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -1739,16 +1762,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'resources/resources-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-03-24 01:22:35 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone’s Posthumous Reputation',
@@ -1763,11 +1787,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '0bda8609-f62b-4428-9446-3a3307b7ea15',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 13:25:56 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -2103,65 +2122,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay examines David Livingstone’s posthumous reputation, focusing on his status as an icon of the British Empire. It overviews the numerous biographies that have taken him as their subject and explores the changing ways in which Livingstone was represented as the British Empire developed and declined. This “metabiographical” approach enables us to trace Livingstone’s evolving public image, from the late nineteenth century to the present, as re-written and re-imagined for a range of socio-political purposes.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013475_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013475_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 19782,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bee5fa66-f0bb-462b-b7dc-2f3074bf1c4f',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013475_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013475_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013475_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 37582,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '9c266d20-bd74-483d-8b1f-6cb0d9795ae0',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013475_0001-tile.jpg',
       ),
     ),
   ),
@@ -2173,7 +2134,77 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013475_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013475_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 19782,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'bee5fa66-f0bb-462b-b7dc-2f3074bf1c4f',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013475_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013475_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013475_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 37582,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '9c266d20-bd74-483d-8b1f-6cb0d9795ae0',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013475_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay examines David Livingstone’s posthumous reputation, focusing on his status as an icon of the British Empire. It overviews the numerous biographies that have taken him as their subject and explores the changing ways in which Livingstone was represented as the British Empire developed and declined. This “metabiographical” approach enables us to trace Livingstone’s evolving public image, from the late nineteenth century to the present, as re-written and re-imagined for a range of socio-political purposes.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -2184,16 +2215,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'life-and-times/livingstone-s-posthumous-reputation',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 19:25:56 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Materials',
@@ -2208,16 +2240,15 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '0fd60177-0cf5-4647-a0e9-a837850febc7',
-  'date' => '2015-06-14 09:55:08 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(),
   'field_section_body' => array(),
-  'field_section_overview' => array(),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'slavery_image_1.jpg',
         'uri' => 'public://section_page/grid_images/slavery_image_1.jpg',
         'filemime' => 'image/jpeg',
@@ -2225,27 +2256,36 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => '793709f9-eb82-4649-8843-30b2c857034c',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 584,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 672,
+          'width' => 584,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 584,
         'height' => 672,
+        'width' => 584,
         'uuid_features_packaged_file_path' => 'assets/slavery_image_1.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(),
-  'field_section_page_transcription' => array(),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'materials',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2015-06-14 14:55:08 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Practices, Standards, and Arrangements',
@@ -2260,11 +2300,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '10e996f3-d9b0-4602-b09b-5b943343b79f',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 13:24:00 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -2454,65 +2489,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section enumerates and defines <em>Livingstone Online</em>\'s methodological practices, data production standards, and hosting and backup arrangements.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013493_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013493_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20228,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'accecc44-be41-4a1b-bf3c-b12840d89c78',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013493_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013493_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013493_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 36966,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'b0d7e6b9-da9e-4f40-b698-81f0334ca6d5',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013493_0001-tile.jpg',
       ),
     ),
   ),
@@ -2524,7 +2501,77 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013493_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013493_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20228,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'accecc44-be41-4a1b-bf3c-b12840d89c78',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013493_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013493_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013493_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 36966,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'b0d7e6b9-da9e-4f40-b698-81f0334ca6d5',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013493_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section enumerates and defines <em>Livingstone Online</em>\'s methodological practices, data production standards, and hosting and backup arrangements.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -2535,16 +2582,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'behind-the-scenes/practices-standards-and-arrangements',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 19:24:00 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Field Diary I: An Overview',
@@ -2559,11 +2607,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '11835b50-66a9-48bd-b340-9bc19da83bd7',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 06:22:14 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -2616,17 +2659,15 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary I, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). In this field diary, Livingstone parts from his daughter Agnes in France and sails to Africa by way of Malta, Egypt, India, and Zanzibar. As he records his multi-part voyage to Africa, Livingstone also catalogues his preparations, as he gathers porters and supplies and curries political favor.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -2641,19 +2682,21 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -2665,28 +2708,40 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary I, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). In this field diary, Livingstone parts from his daughter Agnes in France and sails to Africa by way of Malta, Egypt, India, and Zanzibar. As he records his multi-part voyage to Africa, Livingstone also catalogues his preparations, as he gathers porters and supplies and curries political favor.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -2696,16 +2751,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-i-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 12:22:14 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Project Documentation',
@@ -2720,11 +2776,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '1c3313a3-9c2d-4434-9034-516507fb541b',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -2792,65 +2843,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page provides curated access to some 300 project documents spanning three years of research activities&nbsp;(2013-16) for our critical edition of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -2862,7 +2855,77 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page provides curated access to some 300 project documents spanning three years of research activities&nbsp;(2013-16) for our critical edition of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -2872,16 +2935,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/project-documentation',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Terminology and Acronyms',
@@ -2896,11 +2960,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '1c8d1749-834b-4bba-a6db-76db3bc16220',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 18:12:25 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -2970,20 +3029,11 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section explains the reference system used to indicate individual leaves, folia, and pages of Livingstone\'s 1871 Field Diary. The section also defines the key institutional acronyms employed in this edition.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -2995,19 +3045,21 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -3019,21 +3071,40 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section explains the reference system used to indicate individual leaves, folia, and pages of Livingstone\'s 1871 Field Diary. The section also defines the key institutional acronyms employed in this edition.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -3043,16 +3114,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/terminology-and-acronyms',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-10 00:12:25 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Field Diary II: An Overview',
@@ -3067,11 +3139,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '1d5af01e-faa6-4ef8-9176-fc6458fb77ff',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 06:23:55 -0600',
-  'user_uuid' => '0474136e-da6f-4c0b-9472-898ca7edbb66',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -3121,17 +3188,15 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary II, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). Livingstone here begins his journey, moving inland from the coast of Africa. Though it only covers the first two months in Africa,&nbsp;this diary nonetheless contains records of the illness and hunger that would dog Livingstone and his men throughout his final journey. This notebook also contains observations on local climate, topography, and culture.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -3146,19 +3211,21 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -3170,28 +3237,40 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary II, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). Livingstone here begins his journey, moving inland from the coast of Africa. Though it only covers the first two months in Africa,&nbsp;this diary nonetheless contains records of the illness and hunger that would dog Livingstone and his men throughout his final journey. This notebook also contains observations on local climate, topography, and culture.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -3201,16 +3280,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-ii-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 12:23:55 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -3225,11 +3305,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '221eacac-416a-4414-9ce9-707c337043df',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-03-20 13:27:21 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -3618,16 +3693,15 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'liv_013315_0001-carousel.jpg',
         'uri' => 'public://section_page/carousel_images/liv_013315_0001-carousel.jpg',
         'filemime' => 'image/jpeg',
@@ -3635,23 +3709,25 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => '4b12b307-f388-4927-a776-2c68b45ddd4d',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013315_0001-carousel.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'liv_013315_0001-tile.jpg',
         'uri' => 'public://section_page/grid_images/liv_013315_0001-tile.jpg',
         'filemime' => 'image/jpeg',
@@ -3659,21 +3735,32 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => '64dfa856-1599-43b0-9163-f7db33c8942c',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 292,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 292,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013315_0001-tile.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -3684,16 +3771,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'behind-the-scenes/acknowledgments',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-03-20 18:27:21 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -3708,11 +3796,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '222965a6-6231-48db-97bf-8881dfea1b28',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:35:04 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -3895,17 +3978,15 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s 1871 Field Diary. It enumerates all the main sections of the edition and provides links to all embedded files and documentation.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -3920,19 +4001,21 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -3944,28 +4027,40 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s 1871 Field Diary. It enumerates all the main sections of the edition and provides links to all embedded files and documentation.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -3975,16 +4070,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/edition-guide',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-09 23:35:04 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'History & Chronology of the 1870 Field Diary',
@@ -3999,11 +4095,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '24ea361b-e744-409f-a28d-ae041994cf81',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -4168,65 +4259,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section concludes our analysis of the state of the 1870 Field Diary manuscript by summarizing the previously documented history of the diary and by using our findings in the foregoing parts of this essay to develop a comprehensive new chronology of the manuscript.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -4238,7 +4271,77 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section concludes our analysis of the state of the 1870 Field Diary manuscript by summarizing the previously documented history of the diary and by using our findings in the foregoing parts of this essay to develop a comprehensive new chronology of the manuscript.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -4248,16 +4351,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/history-chronology-the-1870-field-diary',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online TEI P5 Encoding Guidelines',
@@ -4272,11 +4376,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '255bf215-fc27-4341-8695-a0a7b4a38d6f',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 13:24:48 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -4286,11 +4385,11 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_body' => array(),
-  'field_section_overview' => array(),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'liv_013091_0001-carousel.jpg',
         'uri' => 'public://section_page/carousel_images/liv_013091_0001-carousel.jpg',
         'filemime' => 'image/jpeg',
@@ -4298,23 +4397,25 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => '8f361013-c198-47e4-bb90-e99ab8ccec64',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013091_0001-carousel.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'liv_013091_0001-tile.jpg',
         'uri' => 'public://section_page/grid_images/liv_013091_0001-tile.jpg',
         'filemime' => 'image/jpeg',
@@ -4322,21 +4423,39 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bb1dba94-e90b-443f-9668-d3f2661cae72',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013091_0001-tile.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'http://livingstoneonline.github.io/LEAP-ODD/leap.html',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_section_overview' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -4347,23 +4466,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'http://livingstoneonline.github.io/LEAP-ODD/leap.html',
-        'format' => NULL,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'resources/livingstone-online-tei-p5-encoding-guidelines',
+      'language' => 'und',
     ),
   ),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1,
-      ),
-    ),
-  ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 19:24:48 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -4378,11 +4491,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '2d9c6d93-18a3-4b54-ba84-e668adbd7361',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-16 22:10:44 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -4424,20 +4532,11 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page cites the individuals who made a special contribution to supporting the work of developing the multispectral critical edition of <em>Livingstone\'s Letter from Babambarre</em> in 2010-11. Contemporaneous institutional affiliations have been retained although some of these have since changed.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -4449,19 +4548,21 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -4473,21 +4574,40 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page cites the individuals who made a special contribution to supporting the work of developing the multispectral critical edition of <em>Livingstone\'s Letter from Babambarre</em> in 2010-11. Contemporaneous institutional affiliations have been retained although some of these have since changed.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -4497,16 +4617,17 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/acknowledgments',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-17 04:10:44 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Publishing Livingstone\'s Missionary Travels',
@@ -4521,11 +4642,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '2dc0d511-087c-40dc-ab6b-4fe769dd03f7',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 12:25:11 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -4965,65 +5081,7 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay uses John Murray’s publication of Livingstone’s <em>Missionary Travels</em> as a case study to explore the role of print and publishers in fostering the fame of nineteenth-century explorers.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_014052_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_014052_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 19778,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '83eb79e8-66a5-43b7-97a5-bf52e388b7f6',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_014052_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_014052_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_014052_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 40665,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '47290cf6-73d8-4810-b23a-e44a43ebc2e6',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_014052_0001-tile.jpg',
       ),
     ),
   ),
@@ -5035,7 +5093,77 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_014052_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_014052_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 19778,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '83eb79e8-66a5-43b7-97a5-bf52e388b7f6',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_014052_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_014052_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_014052_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 40665,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '47290cf6-73d8-4810-b23a-e44a43ebc2e6',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_014052_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay uses John Murray’s publication of Livingstone’s <em>Missionary Travels</em> as a case study to explore the role of print and publishers in fostering the fame of nineteenth-century explorers.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -5046,16 +5174,17 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'life-and-times/publishing-livingstones-missionary-travels',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 18:25:11 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Why Should We Read Livingstone’s Manuscripts?',
@@ -5070,11 +5199,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '2fad8685-ae1e-42f2-815a-4d94a94025a7',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 11:56:17 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -5161,65 +5285,7 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section outlines Livingstone\'s importance as an imperial travel writer, the topics that he covers in his writings, the geographical extent of his travels, the potential of his manuscripts to inform research in many disciplines, and the overall importance of Livingstone\'s manuscripts for understanding both nineteenth-century and contemporary global events.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013667_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013667_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20512,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7178217a-cf89-4ea2-93be-66614f869d88',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013667_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013667_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013667_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 40242,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '0d72f71c-36f9-4815-8ecf-5a63d6c9bb77',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013667_0001-tile.jpg',
       ),
     ),
   ),
@@ -5231,7 +5297,77 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013667_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013667_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20512,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7178217a-cf89-4ea2-93be-66614f869d88',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013667_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013667_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013667_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 40242,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '0d72f71c-36f9-4815-8ecf-5a63d6c9bb77',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013667_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section outlines Livingstone\'s importance as an imperial travel writer, the topics that he covers in his writings, the geographical extent of his travels, the potential of his manuscripts to inform research in many disciplines, and the overall importance of Livingstone\'s manuscripts for understanding both nineteenth-century and contemporary global events.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -5242,16 +5378,17 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/why-should-we-read-livingstone-s-manuscripts',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 17:56:17 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Project Teams',
@@ -5266,11 +5403,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '2fafd228-a8e3-4e3c-99af-4e1ddf77b09b',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 13:09:53 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -5459,11 +5591,71 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013650_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013650_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 21710,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'bc16a3e0-dc49-4afc-87d0-bf0414047d06',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013650_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013650_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013650_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 37589,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '2c32c052-d95d-415d-947c-79e3a2929dc8',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013650_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -5473,56 +5665,8 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013650_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013650_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 21710,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc16a3e0-dc49-4afc-87d0-bf0414047d06',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013650_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013650_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013650_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 37589,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '2c32c052-d95d-415d-947c-79e3a2929dc8',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/liv_013650_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -5533,16 +5677,17 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'behind-the-scenes/project-teams',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 19:09:53 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Timeline',
@@ -5557,11 +5702,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '30c2c5e6-789e-4e36-8de8-e9d0102b55eb',
-  'path' => array(
-    'pathauto' => 0,
-  ),
-  'date' => '2015-06-01 11:57:44 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -5571,6 +5711,67 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_body' => array(),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'IMG_5196-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/IMG_5196-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17276,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'aae7292f-598d-4b3e-a7bf-0bf03b2fb59e',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/IMG_5196-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'IMG_5196-tile.jpg',
+        'uri' => 'public://section_page/grid_images/IMG_5196-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 32532,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'eb7c4e69-3c5b-4358-8447-2a28234e0bae',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/IMG_5196-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -5581,56 +5782,15 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
-        'filename' => 'IMG_5196-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/IMG_5196-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17276,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'aae7292f-598d-4b3e-a7bf-0bf03b2fb59e',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/IMG_5196-carousel.jpg',
+        'value' => 'Browse by',
+        'format' => NULL,
       ),
     ),
   ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'IMG_5196-tile.jpg',
-        'uri' => 'public://section_page/grid_images/IMG_5196-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 32532,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'eb7c4e69-3c5b-4358-8447-2a28234e0bae',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/IMG_5196-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -5643,23 +5803,12 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Browse by',
-        'format' => NULL,
-      ),
-    ),
+  'path' => array(
+    'pathauto' => 0,
   ),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-  ),
-  'field_section_page_transcription' => array(),
+  'url_alias' => array(),
+  'date' => '2015-06-01 16:57:44 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Note on the Three Versions of the Text',
@@ -5674,11 +5823,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '3174f7e5-fce7-42b5-b846-72a0af38fba9',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:54:42 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -5732,17 +5876,15 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This note describes the relationship among the four different texts that document Livingstone\'s experiences in 1871: the 1871 Field Diary, the Unyanyembe Journal (1866-72), the <em>Last Journals</em> (1874), and the letter to Earl Granville (1872d). The note also explores the unique features of the 1871 Field Diary and considers how comparison of the diary to the Unyanyembe Journal and Granville letter provides a fascinating glimpse into the ways that Livingstone hoped to rewrite problematic incidents from this period in his life for public consumption.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -5757,19 +5899,21 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -5781,28 +5925,40 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This note describes the relationship among the four different texts that document Livingstone\'s experiences in 1871: the 1871 Field Diary, the Unyanyembe Journal (1866-72), the <em>Last Journals</em> (1874), and the letter to Earl Granville (1872d). The note also explores the unique features of the 1871 Field Diary and considers how comparison of the diary to the Unyanyembe Journal and Granville letter provides a fascinating glimpse into the ways that Livingstone hoped to rewrite problematic incidents from this period in his life for public consumption.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -5812,16 +5968,17 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/note-the-three-versions-the-text',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-09 23:54:42 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'A Project Bibliography',
@@ -5836,11 +5993,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '3ce886fd-7e91-4774-9611-7088ff515114',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-05-29 15:30:26 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -5918,20 +6070,11 @@ Elizabeth Maxwell</span></p>
 <p>Wakelin, John. 1925. <em>David Livingstone: A Study in Creative Personality. The Livingstone Talking Music Film</em>. Page &amp; Thomas Ltd. Acc. 12927/324. National Library of Scotland, Edinburgh, Scotland.</p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page presents a bibliography of the primary works cited in our critical edition of Livingstone\'s Final Manuscripts (1865-1873). The bibliography builds on and extends the <a href="/spectral-imaging/integrated-project-bibliography">bibliography</a> developed for the Livingstone Spectral Imaging Project, so users are directed to that bibliography for the full context of the works cited here.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -5943,19 +6086,21 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -5967,21 +6112,40 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page presents a bibliography of the primary works cited in our critical edition of Livingstone\'s Final Manuscripts (1865-1873). The bibliography builds on and extends the <a href="/spectral-imaging/integrated-project-bibliography">bibliography</a> developed for the Livingstone Spectral Imaging Project, so users are directed to that bibliography for the full context of the works cited here.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -5991,16 +6155,17 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/project-bibliography',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-05-29 20:30:26 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Field Diary VI: An Overview',
@@ -6015,11 +6180,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '4307d45b-1155-4f12-8e35-00ab82d63fb3',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 08:12:56 -0600',
-  'user_uuid' => '0474136e-da6f-4c0b-9472-898ca7edbb66',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -6082,17 +6242,15 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ?</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary VI, which is part of our critical edition of Livingstone\'s final field diaries and journals. This diary introduces what will prove to be an ongoing local conflict: violence with the Mazitu people. It also includes many cultural observations, including an especially large number of drawings of personal details such as facial features and tattoos.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -6107,19 +6265,21 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -6131,28 +6291,40 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary VI, which is part of our critical edition of Livingstone\'s final field diaries and journals. This diary introduces what will prove to be an ongoing local conflict: violence with the Mazitu people. It also includes many cultural observations, including an especially large number of drawings of personal details such as facial features and tattoos.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -6162,16 +6334,17 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-vi-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 14:12:56 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Project Team',
@@ -6186,11 +6359,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '432d0dde-4054-4313-9225-24c93217b99e',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:38:43 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -6265,20 +6433,11 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page introduces the project team that developed the critical edition of Livingstone\'s 1871 Field Diary in 2010-13. Institutional affiliations below date to 2013, although some of these have since changed.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -6290,19 +6449,21 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -6314,21 +6475,40 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces the project team that developed the critical edition of Livingstone\'s 1871 Field Diary in 2010-13. Institutional affiliations below date to 2013, although some of these have since changed.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -6338,16 +6518,17 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/project-team',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-09 23:38:43 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online: An Introduction',
@@ -6362,11 +6543,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '439d7063-9706-41a2-adef-e997db6b2311',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 11:45:59 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -6402,11 +6578,71 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013465_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013465_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20636,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'f4e6c3c7-17eb-4c31-898d-927888537444',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013465_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013465_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013465_0001-tile_0.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 51411,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '000d5936-004f-465e-90f2-91de808891ec',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013465_0001-tile_0.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -6416,56 +6652,8 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013465_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013465_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20636,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'f4e6c3c7-17eb-4c31-898d-927888537444',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013465_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013465_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013465_0001-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 51411,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '000d5936-004f-465e-90f2-91de808891ec',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013465_0001-tile_0.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -6476,16 +6664,17 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/livingstone-online-introduction',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 17:45:59 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Data Management',
@@ -6500,11 +6689,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '4e938263-a435-4fd2-9e4b-267153763d3f',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-16 21:36:43 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -6531,17 +6715,15 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This section provides a brief overview of the objectives of data management in an edition like the present one, then explores the specific management steps taken in relation to data and metadata during the imaging and processing of <em>Livingstone\'s Letter from Bambarre</em>.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki and Heather F. Ball (authors), Beta edition: 2010, First edition: 2011, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -6556,19 +6738,21 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -6580,28 +6764,40 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki and Heather F. Ball (authors), Beta edition: 2010, First edition: 2011, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section provides a brief overview of the objectives of data management in an edition like the present one, then explores the specific management steps taken in relation to data and metadata during the imaging and processing of <em>Livingstone\'s Letter from Bambarre</em>.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -6611,16 +6807,17 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/data-management',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-17 03:36:43 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Field Diary X: An Overview',
@@ -6635,11 +6832,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '4f03390b-0aa6-4a1c-aaf4-d1d10b8812af',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 08:19:58 -0600',
-  'user_uuid' => '0474136e-da6f-4c0b-9472-898ca7edbb66',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -6693,17 +6885,15 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary X, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). Dominated by local politics, this diary narrates Livingstone\'s negotiation of the complex politics between Arabs and Africans. It also records in detail his first interaction with the seemingly despotic chief Cazembe.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -6718,19 +6908,21 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -6742,28 +6934,40 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary X, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). Dominated by local politics, this diary narrates Livingstone\'s negotiation of the complex politics between Arabs and Africans. It also records in detail his first interaction with the seemingly despotic chief Cazembe.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -6773,16 +6977,17 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-x-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 14:19:58 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Aftermath of Livingstone\'s Death',
@@ -6797,11 +7002,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '535bf1aa-5479-42de-984f-7048ec054e4c',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-05-28 00:34:47 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -6908,17 +7108,15 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This bonus page provides a curated selection of images related to the immediate aftermath of Livingstone\'s death. The images offer a useful perspective on Livingstone\'s final manuscripts by foregrounding a series of cultural contexts often left out in iconic representations focusing on Livingstone himself.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Curated by Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -6933,19 +7131,21 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -6957,32 +7157,21 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Curated by Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6990,7 +7179,31 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This bonus page provides a curated selection of images related to the immediate aftermath of Livingstone\'s death. The images offer a useful perspective on Livingstone\'s final manuscripts by foregrounding a series of cultural contexts often left out in iconic representations focusing on Livingstone himself.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
   'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/the-aftermath-livingstones-death',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2017-05-28 05:34:47 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -7005,11 +7218,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '55a1e9ea-f6d4-4713-a8d1-a810ecbe1c20',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-23 18:13:01 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -7089,20 +7297,11 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of <em>Livingstone\'s Letter from Bambarre</em>. It enumerates the main sections of the edition and provides short descriptions of each section.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -7114,19 +7313,21 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -7138,21 +7339,40 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of <em>Livingstone\'s Letter from Bambarre</em>. It enumerates the main sections of the edition and provides short descriptions of each section.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -7162,16 +7382,17 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/edition-guide-0',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-24 00:13:01 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Credits and Permissions',
@@ -7186,11 +7407,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '57af40fe-d6fd-419f-a7a4-633af9bc77ec',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-02-20 10:32:06 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -7337,11 +7553,71 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013102_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013102_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20161,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '8e8e3e9c-0e94-4dc8-9934-494c18446201',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013102_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013102_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013102_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 40870,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '1f11c699-da88-4828-a573-0b8c783b54b8',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013102_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -7351,56 +7627,8 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013102_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013102_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20161,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '8e8e3e9c-0e94-4dc8-9934-494c18446201',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013102_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013102_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013102_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 40870,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '1f11c699-da88-4828-a573-0b8c783b54b8',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013102_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -7411,16 +7639,17 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'behind-the-scenes/credits-and-permissions',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-02-20 16:32:06 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Notes on Processed Spectral Images',
@@ -7435,11 +7664,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '58a3243f-182c-4d5a-b174-293eaaf2129b',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -8055,65 +8279,7 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page introduces, enumerates, and briefly defines the processed spectral image types, GIF animations, and PowerPoint presentations produced by the two phases of the Livingstone Spectral Imaging Project (2010-13, 2013-17).</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'NLS10703_035_010r_0_A_raking_irdiff-new-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/NLS10703_035_010r_0_A_raking_irdiff-new-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2613,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4edf8a91-7b14-45cd-bb52-44865422187a',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/NLS10703_035_010r_0_A_raking_irdiff-new-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'NLS10703_035_010r_0_A_raking_irdiff-new-tile.jpg',
-        'uri' => 'public://section_page/grid_images/NLS10703_035_010r_0_A_raking_irdiff-new-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 39956,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '399fdea0-a926-465e-b257-a48bf904e750',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/NLS10703_035_010r_0_A_raking_irdiff-new-tile.jpg',
       ),
     ),
   ),
@@ -8125,7 +8291,77 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'NLS10703_035_010r_0_A_raking_irdiff-new-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/NLS10703_035_010r_0_A_raking_irdiff-new-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 2613,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4edf8a91-7b14-45cd-bb52-44865422187a',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/NLS10703_035_010r_0_A_raking_irdiff-new-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'NLS10703_035_010r_0_A_raking_irdiff-new-tile.jpg',
+        'uri' => 'public://section_page/grid_images/NLS10703_035_010r_0_A_raking_irdiff-new-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 39956,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '399fdea0-a926-465e-b257-a48bf904e750',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/NLS10703_035_010r_0_A_raking_irdiff-new-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces, enumerates, and briefly defines the processed spectral image types, GIF animations, and PowerPoint presentations produced by the two phases of the Livingstone Spectral Imaging Project (2010-13, 2013-17).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -8136,16 +8372,17 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/notes-processed-spectral-images',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'In His Own Words: Overview',
@@ -8160,11 +8397,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '58e469f4-872f-42ba-85b6-1058ac1f5538',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-06-01 01:00:25 -0500',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -8192,11 +8424,71 @@ Elizabeth Maxwell</span></p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'IMG_6158-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/IMG_6158-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 23811,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4824b4ca-afaf-4cf1-b129-faaca2f5ce46',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/IMG_6158-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'IMG_6158-tile.jpg',
+        'uri' => 'public://section_page/grid_images/IMG_6158-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 141736,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '51d692aa-e17b-4d97-9edf-0c36bb3b54b6',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/IMG_6158-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -8206,56 +8498,8 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'IMG_6158-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/IMG_6158-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 23811,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4824b4ca-afaf-4cf1-b129-faaca2f5ce46',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/IMG_6158-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'IMG_6158-tile.jpg',
-        'uri' => 'public://section_page/grid_images/IMG_6158-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 141736,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '51d692aa-e17b-4d97-9edf-0c36bb3b54b6',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/IMG_6158-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -8268,16 +8512,17 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/in-his-own-words-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-06-01 06:00:25 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Digital Catalogue Record',
@@ -8292,11 +8537,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '6359d32f-8c12-4096-a78f-8cff0fc04ec8',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-06-01 01:07:48 -0500',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -8306,11 +8546,11 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_body' => array(),
-  'field_section_overview' => array(),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'liv_013669_0001-carousel.jpg',
         'uri' => 'public://section_page/carousel_images/liv_013669_0001-carousel.jpg',
         'filemime' => 'image/jpeg',
@@ -8318,23 +8558,25 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => '90b4e541-136e-44d9-b99e-73c17b47d6fc',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013669_0001-carousel.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'liv_013669_0001-tile.jpg',
         'uri' => 'public://section_page/grid_images/liv_013669_0001-tile.jpg',
         'filemime' => 'image/jpeg',
@@ -8342,36 +8584,25 @@ Elizabeth Maxwell</span></p>
         'status' => 1,
         'type' => 'image',
         'uuid' => '73e7eb21-e87c-49df-b5e6-d4a48cbd3af8',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 292,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 292,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013669_0001-tile.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>Search and sort our extensive primary records on Livingstone\'s manuscripts; view and download images and transcriptions</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_pre_title' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Browse by',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
@@ -8383,14 +8614,37 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_open_in_new_tab' => array(
+  'field_section_overview' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(
     'und' => array(
       0 => array(
-        'value' => 0,
+        'value' => 'Browse by',
+        'format' => NULL,
       ),
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>Search and sort our extensive primary records on Livingstone\'s manuscripts; view and download images and transcriptions</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/digital-catalogue-record',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2015-06-01 06:07:48 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Third Massacre Narrative',
@@ -8405,11 +8659,6 @@ Elizabeth Maxwell</span></p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '6453ebdd-b8e9-41ce-937b-d534198f06a8',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:44:22 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -8444,17 +8693,15 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>The page presents the narrative version of the Nyangwe massacre that David Livingstone included in a letter to Earl Granville (14 Nov. 1871) and copied into the Unyanyembe Journal (1866-72). The version here derives from the copy in the Journal.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Heather F. Ball (textual editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -8469,19 +8716,21 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -8493,32 +8742,21 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Heather F. Ball (textual editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -8526,7 +8764,31 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
       ),
     ),
   ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>The page presents the narrative version of the Nyangwe massacre that David Livingstone included in a letter to Earl Granville (14 Nov. 1871) and copied into the Unyanyembe Journal (1866-72). The version here derives from the copy in the Journal.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
   'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-third-massacre-narrative',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2017-02-09 23:44:22 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Creating the 1870 Field Diary',
@@ -8541,11 +8803,6 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '64a38b96-79b8-47a9-99d6-34c9838a0980',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -8862,65 +9119,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:15px;"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section, the first of a six-part sequence, begins a comprehensive account of the 1870 Field Diary as a constructed and preserved object, and explores the initial steps in the creation of the diary.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -8932,7 +9131,77 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section, the first of a six-part sequence, begins a comprehensive account of the 1870 Field Diary as a constructed and preserved object, and explores the initial steps in the creation of the diary.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -8942,16 +9211,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/creating-the-1870-field-diary',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Project Documentation',
@@ -8966,11 +9236,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '66488668-a6e0-44d2-86f3-95361e477c40',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-15 20:03:09 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -9039,17 +9304,15 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page provides download access to some 70 project documents or document sets produced during the course of primary research activities (2010-13) for our critical edition of Livingstone’s 1871 Field Diary. We offer the documents as a single comprehensive collection and grouped by area of project endeavor. As a bonus, we also offer the entire Livingstone Spectral Image Archive (except for archival images and MD5 checksum files) as a single ZIP file.</p>
-',
-        'format' => 'full_html',
+        'value' => 'First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -9064,19 +9327,21 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -9088,28 +9353,40 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page provides download access to some 70 project documents or document sets produced during the course of primary research activities (2010-13) for our critical edition of Livingstone’s 1871 Field Diary. We offer the documents as a single comprehensive collection and grouped by area of project endeavor. As a bonus, we also offer the entire Livingstone Spectral Image Archive (except for archival images and MD5 checksum files) as a single ZIP file.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -9119,16 +9396,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/project-documentation-0',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-16 02:03:09 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'The Diary across Hands, Space, and Time (2)',
@@ -9143,11 +9421,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '6851b824-bc16-4acf-8629-ab1ee03fce0d',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -9352,65 +9625,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section continues our analysis of the state of the 1870 Field Diary manuscript by turning to material aspects of the diary closely linked to its travels across hands, space, and time. In particular, this section uses manuscript topography as a means to illuminate how handling by a variety of individuals has helped shape the present material state of the manuscript.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -9422,7 +9637,77 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section continues our analysis of the state of the 1870 Field Diary manuscript by turning to material aspects of the diary closely linked to its travels across hands, space, and time. In particular, this section uses manuscript topography as a means to illuminate how handling by a variety of individuals has helped shape the present material state of the manuscript.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -9432,16 +9717,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-diary-across-hands-space-and-time-2',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Spectral Image Collection',
@@ -9456,11 +9742,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '686d8c7f-1386-4692-b780-cfc9081e3872',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -9470,11 +9751,11 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_body' => array(),
-  'field_section_overview' => array(),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'LivingstoneText_009-new-carousel_1.jpg',
         'uri' => 'public://section_page/carousel_images/LivingstoneText_009-new-carousel_1.jpg',
         'filemime' => 'image/jpeg',
@@ -9482,23 +9763,25 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => '69485956-0d86-4053-ac46-e761c9370996',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/LivingstoneText_009-new-carousel_1.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'LivingstoneText_009-new-tile.jpg',
         'uri' => 'public://section_page/grid_images/LivingstoneText_009-new-tile.jpg',
         'filemime' => 'image/jpeg',
@@ -9506,21 +9789,39 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'abfda483-5511-412c-ab41-c5945dabf8a8',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/LivingstoneText_009-new-tile.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(
+    'und' => array(
+      0 => array(
+        'value' => '/islandora/search?access=view_spectral',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_section_overview' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -9531,23 +9832,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(
-    'und' => array(
-      0 => array(
-        'value' => '/islandora/search?access=view_spectral',
-        'format' => NULL,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-livingstone-spectral-image-collection',
+      'language' => 'und',
     ),
   ),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-  ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The 1871 Field Diary Facsimile',
@@ -9562,11 +9857,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '69625dff-15c4-4ff8-be0b-56b8789a7944',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 18:10:34 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -9595,17 +9885,15 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page discusses the facsimile of the page of the 1871 Field Diary that appears in Livingstone\'s <em>Last Journals</em> (1874).</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -9620,19 +9908,21 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -9644,32 +9934,21 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -9677,7 +9956,31 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page discusses the facsimile of the page of the 1871 Field Diary that appears in Livingstone\'s <em>Last Journals</em> (1874).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
   'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-1871-field-diary-facsimile',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2017-02-10 00:10:34 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'An Introduction to Spectral Imaging',
@@ -9692,11 +9995,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '6b92625f-5f97-46c4-845c-54a9516137ca',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-16 20:54:17 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -9746,17 +10044,15 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page provides a brief introduction to the spectral imaging process and describes how a number of previous spectral imaging projects set the stage for the imaging and analysis of <em>Livingstone\'s Letter from Bambarre.</em></p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki and Heather F. Ball (authors), Beta edition: 2010, First edition: 2011, Second edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -9771,19 +10067,21 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -9795,28 +10093,40 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki and Heather F. Ball (authors), Beta edition: 2010, First edition: 2011, Second edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page provides a brief introduction to the spectral imaging process and describes how a number of previous spectral imaging projects set the stage for the imaging and analysis of <em>Livingstone\'s Letter from Bambarre.</em></p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -9826,16 +10136,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/introduction-spectral-imaging',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-17 02:54:17 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Overview of Processing Objectives',
@@ -9850,11 +10161,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '6fb642c6-5b13-41a6-a99f-462bc4fcef2e',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:48:26 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -9893,17 +10199,15 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page outlines the primary and secondary objectives that informed the spectral image processing of Livingstone\'s 1871 Field Diary.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -9918,19 +10222,21 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -9942,28 +10248,40 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page outlines the primary and secondary objectives that informed the spectral image processing of Livingstone\'s 1871 Field Diary.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -9973,16 +10291,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/overview-processing-objectives',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-09 23:48:26 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Project Team',
@@ -9997,11 +10316,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '70968a8f-9950-4796-a8db-f9e6e636e34b',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-16 17:42:51 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -10056,20 +10370,11 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page introduces the project team that developed the critical edition of <em>Livingstone\'s Letter from Bambarre</em> in 2010-11. Contemporaneous institutional affiliations have been retained although some of these have since changed.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -10081,19 +10386,21 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -10105,21 +10412,40 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces the project team that developed the critical edition of <em>Livingstone\'s Letter from Bambarre</em> in 2010-11. Contemporaneous institutional affiliations have been retained although some of these have since changed.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -10129,16 +10455,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/project-team-0',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-16 23:42:51 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Field Diary III: An Overview',
@@ -10153,11 +10480,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '71ed5af0-2b30-4cb6-9c86-95af8a77a565',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 06:23:46 -0600',
-  'user_uuid' => '0474136e-da6f-4c0b-9472-898ca7edbb66',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -10227,17 +10549,15 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary III, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73).</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -10252,19 +10572,21 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -10276,28 +10598,40 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary III, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -10307,16 +10641,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-iii-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 12:23:46 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Background of the Edition',
@@ -10331,11 +10666,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '72224f6c-477c-4e88-9a84-a625a61d4681',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-16 17:59:19 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -10382,17 +10712,15 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page details the history of the <em>Letter from Bambarre</em>. The page begins by outlining the circumstances that led Livingstone to compose the letter, then describes the subsequent history of the letter, particularly after its purchase at a Sotheby\'s auction in 1966 by Peter Beard.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian Wisnicki (author), Beta edition: 2010, First edition: 2011, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -10407,19 +10735,21 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -10431,28 +10761,40 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian Wisnicki (author), Beta edition: 2010, First edition: 2011, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page details the history of the <em>Letter from Bambarre</em>. The page begins by outlining the circumstances that led Livingstone to compose the letter, then describes the subsequent history of the letter, particularly after its purchase at a Sotheby\'s auction in 1966 by Peter Beard.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -10462,16 +10804,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/background-the-edition',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-16 23:59:19 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Project History (2)',
@@ -10486,11 +10829,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '73c6634d-9b48-417f-ae97-81cc19dc0f23',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-03-12 16:46:42 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -10875,17 +11213,15 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page, the second part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary. The two-part essay provides an overview of all significant phases of project endeavor and for each phase describes all key project activities. (Note: Contemporaneous institutional affiliations for individuals have been retained although some of these have since changed.) Read the first part of the essay <a href="/spectral-imaging/project-history-1">here</a>.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -10900,19 +11236,21 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -10924,28 +11262,40 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page, the second part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary. The two-part essay provides an overview of all significant phases of project endeavor and for each phase describes all key project activities. (Note: Contemporaneous institutional affiliations for individuals have been retained although some of these have since changed.) Read the first part of the essay <a href="/spectral-imaging/project-history-1">here</a>.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -10955,16 +11305,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/project-history-2',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-03-12 21:46:42 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Glossary of Key Terms in Livingstone\'s Manuscripts, 1870-71',
@@ -10979,11 +11330,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '749fac17-d2c6-49e7-bfed-0aca417379b5',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -11812,65 +12158,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page offers a glossary of the people, groups, places, and geographical features cited in the Livingstone manuscripts (1870-71) imaged by the Livingstone Spectral Imaging Project. It serves as an integrated reference that complements our project’s annotated transcriptions of these same manuscripts.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_003006_0001-new-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_003006_0001-new-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 12739,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'c3e80381-69c2-43e7-bb1d-eb10636a2d69',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_003006_0001-new-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_003006_0001-new-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_003006_0001-new-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 29113,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '9c6416fa-7c12-4354-86f2-9003c28d1cb0',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_003006_0001-new-tile.jpg',
       ),
     ),
   ),
@@ -11882,7 +12170,77 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_003006_0001-new-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_003006_0001-new-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 12739,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'c3e80381-69c2-43e7-bb1d-eb10636a2d69',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_003006_0001-new-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_003006_0001-new-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_003006_0001-new-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 29113,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '9c6416fa-7c12-4354-86f2-9003c28d1cb0',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_003006_0001-new-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page offers a glossary of the people, groups, places, and geographical features cited in the Livingstone manuscripts (1870-71) imaged by the Livingstone Spectral Imaging Project. It serves as an integrated reference that complements our project’s annotated transcriptions of these same manuscripts.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -11893,16 +12251,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/glossary-key-terms-in-livingstones-manuscripts-1870-71',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s 1871 Field Diary',
@@ -11917,11 +12276,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '75c25c6c-c491-4059-b446-3562d7518c95',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:32:12 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -11979,65 +12333,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page – published in its original form on 1 November 2011 – introduces our multispectral critical edition of David Livingstone\'s 1871 Field Diary. This diary chronicles the months leading up to Livingstone\'s famous meeting with Henry Morton Stanley and records Livingstone\'s first-hand impressions of a horrific slave trading massacre he witnessed in Central Africa. Livingstone composed the diary when short on both paper and ink, so he improvised by writing over a copy of <em>The Standard</em> newspaper and other scraps while using an ink concocted out of clothing dye. The result is a diary that is today almost completely invisible to the naked eye. In 2011, the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> restored the full text of this diary and published it online. This edition updates and enhances our previous edition, while fully integrating all relevant primary and secondary materials into <em>Livingstone Online</em>.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013723_0001-new-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013723_0001-new-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20034,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '123bb2fd-274e-402f-a166-1066b064282d',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013723_0001-new-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013723_0001-new-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013723_0001-new-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 36312,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '0f347638-5375-4e41-b04f-07b5610365d7',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/liv_013723_0001-new-tile.jpg',
       ),
     ),
   ),
@@ -12049,7 +12345,77 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013723_0001-new-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013723_0001-new-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20034,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '123bb2fd-274e-402f-a166-1066b064282d',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013723_0001-new-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013723_0001-new-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013723_0001-new-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 36312,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '0f347638-5375-4e41-b04f-07b5610365d7',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013723_0001-new-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page – published in its original form on 1 November 2011 – introduces our multispectral critical edition of David Livingstone\'s 1871 Field Diary. This diary chronicles the months leading up to Livingstone\'s famous meeting with Henry Morton Stanley and records Livingstone\'s first-hand impressions of a horrific slave trading massacre he witnessed in Central Africa. Livingstone composed the diary when short on both paper and ink, so he improvised by writing over a copy of <em>The Standard</em> newspaper and other scraps while using an ink concocted out of clothing dye. The result is a diary that is today almost completely invisible to the naked eye. In 2011, the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> restored the full text of this diary and published it online. This edition updates and enhances our previous edition, while fully integrating all relevant primary and secondary materials into <em>Livingstone Online</em>.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -12060,16 +12426,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/livingstones-1871-field-diary',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-09 23:32:12 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone’s Life & Expeditions',
@@ -12084,11 +12451,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '76ab1aa0-2bf4-4c42-adf7-c8c4ee960236',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 13:25:24 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -12442,65 +12804,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay overviews Livingstone’s life and expeditions. It presents an account of his upbringing in Scotland, his early years as a missionary in southern Africa, and the celebrated cross-continental expedition of 1852-56. The essay also discusses the Zambezi Expedition (1857-64) as well as Livingstone’s final journeys (1866-73), including the 1871 Nyangwe massacre and the famous meeting with Henry M. Stanley ("Dr Livingstone I Presume?"). The essay closes with an account of Livingstone’s death (1873), followed by the transcontinental transportation of his remains to Britain and his interment at Westminster Abbey (1874).</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_003007_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_003007_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 19654,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'fdded85d-d179-45e9-9b40-592e369348f0',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_003007_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_003007_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_003007_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 39465,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '0a0337fc-2901-428c-bfaf-7a1b364234f6',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_003007_0001-tile.jpg',
       ),
     ),
   ),
@@ -12512,7 +12816,77 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_003007_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_003007_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 19654,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'fdded85d-d179-45e9-9b40-592e369348f0',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_003007_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_003007_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_003007_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 39465,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '0a0337fc-2901-428c-bfaf-7a1b364234f6',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_003007_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay overviews Livingstone’s life and expeditions. It presents an account of his upbringing in Scotland, his early years as a missionary in southern Africa, and the celebrated cross-continental expedition of 1852-56. The essay also discusses the Zambezi Expedition (1857-64) as well as Livingstone’s final journeys (1866-73), including the 1871 Nyangwe massacre and the famous meeting with Henry M. Stanley ("Dr Livingstone I Presume?"). The essay closes with an account of Livingstone’s death (1873), followed by the transcontinental transportation of his remains to Britain and his interment at Westminster Abbey (1874).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -12523,16 +12897,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'life-and-times/livingstone-s-life-expeditions',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 19:25:24 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Southern Africans and the Advent of Colonialism',
@@ -12547,11 +12922,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '77590f20-a6f3-4721-85ff-22b52973f313',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 14:02:12 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -12891,65 +13261,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay provides a summary of the most important historical events and processes relating to the peoples of southern Africa. The essay also explains the social and political context of the sub-continent from the Stone Age through to the mid-nineteenth century, when Livingstone first arrived in the region. The essay concludes with a glossary that defines key terms used in the text.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013160_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013160_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20662,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '299f5c32-6414-41ad-b52f-788dcdb7af39',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013160_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013160_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013160_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 53397,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '56a85917-1ce9-499f-995f-7624d35de876',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013160_0001-tile.jpg',
       ),
     ),
   ),
@@ -12961,7 +13273,77 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013160_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013160_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20662,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '299f5c32-6414-41ad-b52f-788dcdb7af39',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013160_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013160_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013160_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 53397,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '56a85917-1ce9-499f-995f-7624d35de876',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013160_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay provides a summary of the most important historical events and processes relating to the peoples of southern Africa. The essay also explains the social and political context of the sub-continent from the Stone Age through to the mid-nineteenth century, when Livingstone first arrived in the region. The essay concludes with a glossary that defines key terms used in the text.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -12972,16 +13354,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'life-and-times/southern-africans-and-the-advent-colonialism',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 20:02:12 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Collaborating Institutions',
@@ -12996,11 +13379,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '77d30e4e-f5dd-4ec0-a619-a8eb85d9b4f4',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 13:10:33 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -13111,11 +13489,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000077_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_000077_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 19242,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'cb3fa954-32c9-4a1b-8a15-856ec8f5e415',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_000077_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000077_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_000077_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 30512,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '238f4d0f-2fc4-4cf0-83e2-7934d80a38b4',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_000077_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -13125,56 +13563,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_000077_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_000077_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 19242,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'cb3fa954-32c9-4a1b-8a15-856ec8f5e415',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_000077_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_000077_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_000077_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 30512,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '238f4d0f-2fc4-4cf0-83e2-7934d80a38b4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_000077_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -13185,16 +13575,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'behind-the-scenes/collaborating-institutions',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 19:10:33 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Site Guide',
@@ -13209,11 +13600,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '78d62fa4-716c-41ee-94ef-b09eb07b8903',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-06-08 22:23:25 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -13784,11 +14170,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013716_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013716_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 29221,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'a53130fb-486a-44c2-a567-d1fd5f7df4af',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013716_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013716_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013716_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 192041,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'ca9f2983-4c37-4652-9a66-5052b8ec57b4',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013716_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -13798,56 +14244,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013716_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013716_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 29221,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'a53130fb-486a-44c2-a567-d1fd5f7df4af',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013716_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013716_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013716_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 192041,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'ca9f2983-4c37-4652-9a66-5052b8ec57b4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013716_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -13858,16 +14256,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/livingstone-online-site-guide',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-06-09 03:23:25 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'What is LEAP (2013-2017)?',
@@ -13882,11 +14281,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '7f02dba0-1cfc-468b-acf2-2092bda28149',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-03-20 13:53:26 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -13950,11 +14344,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013409_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013409_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20408,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'd64d1e2c-85ce-492c-9d62-ed74d9dad91b',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013409_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013409_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013409_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 42513,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '93d785cd-7ce2-49bd-872b-c4354b63b924',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013409_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -13964,56 +14418,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013409_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013409_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20408,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd64d1e2c-85ce-492c-9d62-ed74d9dad91b',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013409_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013409_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013409_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 42513,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '93d785cd-7ce2-49bd-872b-c4354b63b924',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013409_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -14024,16 +14430,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/what-leap-2013-2017',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-03-20 18:53:26 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s 1870 Field Diary',
@@ -14048,11 +14455,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '7fbeae31-b1a8-46f0-9529-67f90d0e36f5',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -14090,65 +14492,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page introduces our multispectral critical edition of David Livingstone\'s 1870 Field Diary and select 1870-1871 manuscripts. Livingstone composed these texts over various scraps of paper while stranded in Central Africa and used them to capture his first-hand impressions of the Central African slave trade,&nbsp;record the complex social dynamics among local populations, and set out geographical information gathered through travel and from Arab and African informants. Our edition uses advanced spectral imaging technology to recover the hidden material history of these manuscripts and reveals the story of their passage through multiple hands and spaces over the last 145 years.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'NLS10703_044_014v_0_A_pseudo_0505-0780-new-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/NLS10703_044_014v_0_A_pseudo_0505-0780-new-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 15467,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '30070800-0b6d-43f4-9eaa-6094f56e261b',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/NLS10703_044_014v_0_A_pseudo_0505-0780-new-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'NLS10703_044_014v_0_A_pseudo_0505-0780-new-tile.jpg',
-        'uri' => 'public://section_page/grid_images/NLS10703_044_014v_0_A_pseudo_0505-0780-new-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 180043,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '97ca8739-35ae-4204-9843-9c3fdbb62d33',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/NLS10703_044_014v_0_A_pseudo_0505-0780-new-tile.jpg',
       ),
     ),
   ),
@@ -14160,7 +14504,77 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'NLS10703_044_014v_0_A_pseudo_0505-0780-new-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/NLS10703_044_014v_0_A_pseudo_0505-0780-new-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 15467,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '30070800-0b6d-43f4-9eaa-6094f56e261b',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/NLS10703_044_014v_0_A_pseudo_0505-0780-new-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'NLS10703_044_014v_0_A_pseudo_0505-0780-new-tile.jpg',
+        'uri' => 'public://section_page/grid_images/NLS10703_044_014v_0_A_pseudo_0505-0780-new-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 180043,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '97ca8739-35ae-4204-9843-9c3fdbb62d33',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/NLS10703_044_014v_0_A_pseudo_0505-0780-new-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces our multispectral critical edition of David Livingstone\'s 1870 Field Diary and select 1870-1871 manuscripts. Livingstone composed these texts over various scraps of paper while stranded in Central Africa and used them to capture his first-hand impressions of the Central African slave trade,&nbsp;record the complex social dynamics among local populations, and set out geographical information gathered through travel and from Arab and African informants. Our edition uses advanced spectral imaging technology to recover the hidden material history of these manuscripts and reveals the story of their passage through multiple hands and spaces over the last 145 years.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -14178,16 +14592,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/livingstones-1870-field-diary',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Spectral Imaging Project: An Introduction',
@@ -14202,11 +14617,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '8082ba50-e1cb-47bb-b5b8-18c9d2aeb395',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -14242,11 +14652,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'LivingstoneText_019-new-carousel_0.jpg',
+        'uri' => 'public://section_page/carousel_images/LivingstoneText_019-new-carousel_0.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 2081,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '1abad9f8-a4a8-45f1-8132-ccc44a166abc',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/LivingstoneText_019-new-carousel_0.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'LivingstoneText_019-new-tile.jpg',
+        'uri' => 'public://section_page/grid_images/LivingstoneText_019-new-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 19728,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'df52dfda-b78f-411c-a8ec-87cc1b736132',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/LivingstoneText_019-new-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -14256,56 +14726,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'LivingstoneText_019-new-carousel_0.jpg',
-        'uri' => 'public://section_page/carousel_images/LivingstoneText_019-new-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2081,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '1abad9f8-a4a8-45f1-8132-ccc44a166abc',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/LivingstoneText_019-new-carousel_0.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'LivingstoneText_019-new-tile.jpg',
-        'uri' => 'public://section_page/grid_images/LivingstoneText_019-new-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 19728,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'df52dfda-b78f-411c-a8ec-87cc1b736132',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/LivingstoneText_019-new-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -14316,16 +14738,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-livingstone-spectral-imaging-project-introduction',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Field Diary VII: An Overview',
@@ -14340,11 +14763,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '8174f961-541f-4e9a-810d-5f8c705bcc38',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 08:16:25 -0600',
-  'user_uuid' => '0474136e-da6f-4c0b-9472-898ca7edbb66',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -14427,17 +14845,15 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary VII, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). The first half of this notebook is dominated by food scarcity, which Livingstone attributes to local conflicts with and fear of the Mazitu. After Livingstone and his men leave the conflict zone, the second half of the diary covers Livingstone\'s dealings with two chiefs, Chitapangwa and Moambo. It also records local conventions of dress and personal decoration.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -14452,19 +14868,21 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -14476,28 +14894,40 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary VII, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). The first half of this notebook is dominated by food scarcity, which Livingstone attributes to local conflicts with and fear of the Mazitu. After Livingstone and his men leave the conflict zone, the second half of the diary covers Livingstone\'s dealings with two chiefs, Chitapangwa and Moambo. It also records local conventions of dress and personal decoration.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -14507,16 +14937,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-vii-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 14:16:25 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Letter from Bambarre',
@@ -14531,11 +14962,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '8229df32-720a-4447-82e1-9f17f8de0d71',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-16 17:24:22 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -14571,65 +14997,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page introduces our multispectral critical edition of the <em>Letter from Bambarre</em>, a harrowing letter that David Livingstone wrote to his friend and future editor Horace Waller on 5 February 1871. The page describes the significance of the edition and outlines its role as a pilot project for our critical edition of Livingstone\'s 1871 Field Diary.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'LivingstoneText_024-new-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/LivingstoneText_024-new-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 1872,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4d740470-6d7d-4a2e-be83-8e3c0ad9975c',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/LivingstoneText_024-new-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'LivingstoneText_024-new-tile.jpg',
-        'uri' => 'public://section_page/grid_images/LivingstoneText_024-new-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 15814,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'aded744c-f190-4e80-863c-e3b1dbade519',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/LivingstoneText_024-new-tile.jpg',
       ),
     ),
   ),
@@ -14641,7 +15009,77 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'LivingstoneText_024-new-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/LivingstoneText_024-new-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 1872,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4d740470-6d7d-4a2e-be83-8e3c0ad9975c',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/LivingstoneText_024-new-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'LivingstoneText_024-new-tile.jpg',
+        'uri' => 'public://section_page/grid_images/LivingstoneText_024-new-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 15814,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'aded744c-f190-4e80-863c-e3b1dbade519',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/LivingstoneText_024-new-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces our multispectral critical edition of the <em>Letter from Bambarre</em>, a harrowing letter that David Livingstone wrote to his friend and future editor Horace Waller on 5 February 1871. The page describes the significance of the edition and outlines its role as a pilot project for our critical edition of Livingstone\'s 1871 Field Diary.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -14652,16 +15090,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/livingstones-letter-bambarre',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-16 23:24:22 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -14676,11 +15115,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '847e1823-0e9f-4bd4-ae02-bfb2a8ff141b',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -14888,11 +15322,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -14902,56 +15396,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -14961,16 +15407,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/edition-guide-1',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'A Brief History of Livingstone Online (2004-2013)',
@@ -14985,11 +15432,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '85a0a40c-9dfc-4167-aff4-0797f78db4c0',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 12:18:54 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -15082,65 +15524,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay explores the origins of<em> Livingstone Online</em>, describes the goals and achievements of the project\'s first phase (2004-06), considers how these goals changed as the site grew and gained more collaborators during its second phase (2007-09), and, finally, outlines how <em>Livingstone Online</em> expanded into an international project while embracing advanced imaging technology for the study of Livingstone\'s manuscripts (2010-13).</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013356_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013356_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20489,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '10dbc788-4f10-4cc7-9683-46c6d006e71b',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013356_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013356_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013356_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 36766,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '5946a790-2b94-44c2-8cfa-bd34f8bb823f',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013356_0001-tile.jpg',
       ),
     ),
   ),
@@ -15152,7 +15536,77 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013356_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013356_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20489,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '10dbc788-4f10-4cc7-9683-46c6d006e71b',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013356_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013356_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013356_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 36766,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '5946a790-2b94-44c2-8cfa-bd34f8bb823f',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013356_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay explores the origins of<em> Livingstone Online</em>, describes the goals and achievements of the project\'s first phase (2004-06), considers how these goals changed as the site grew and gained more collaborators during its second phase (2007-09), and, finally, outlines how <em>Livingstone Online</em> expanded into an international project while embracing advanced imaging technology for the study of Livingstone\'s manuscripts (2010-13).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -15163,16 +15617,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/brief-history-livingstone-online-2004-2013',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 18:18:54 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Outreach Worksheets',
@@ -15187,11 +15642,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '88827c23-c292-4e86-ad55-2431062e5986',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-04-29 21:06:59 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -15275,11 +15725,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000041_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_000041_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 19921,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '65f96551-7914-4a61-909d-498906e06253',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_000041_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000041_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_000041_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 33488,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'a59dfeab-1621-4508-8c67-36aefe9f068b',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_000041_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -15289,56 +15799,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_000041_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_000041_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 19921,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '65f96551-7914-4a61-909d-498906e06253',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_000041_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_000041_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_000041_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 33488,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'a59dfeab-1621-4508-8c67-36aefe9f068b',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/liv_000041_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -15349,16 +15811,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'resources/livingstone-online-outreach-worksheets',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-04-30 02:06:59 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone, Central Africa, 1870',
@@ -15373,11 +15836,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '8903fa5b-7919-4f98-96ad-9b147e7f16d2',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-03-31 12:36:38 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -15924,17 +16382,15 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This essay shifts critical focus from biographical approaches centering on Livingstone in 1870 to the Central African cultural material found in the 1870 Field Diary. In doing so, the essay argues that the diary’s innovative narrative style documents and, at times, foregrounds a regional universe whose complexity stands at odds with the reductive characterizations later imposed upon it by Livingstone and others.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki, with Megan Ward (authors), Justin Livingstone (peer-reviewing editor), First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -15949,19 +16405,21 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -15973,28 +16431,40 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki, with Megan Ward (authors), Justin Livingstone (peer-reviewing editor), First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay shifts critical focus from biographical approaches centering on Livingstone in 1870 to the Central African cultural material found in the 1870 Field Diary. In doing so, the essay argues that the diary’s innovative narrative style documents and, at times, foregrounds a regional universe whose complexity stands at odds with the reductive characterizations later imposed upon it by Livingstone and others.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -16004,16 +16474,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/livingstone-central-africa-1870',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-03-31 17:36:38 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'The Project Team',
@@ -16028,11 +16499,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '8bbaa4ed-e4af-42b0-aca4-4eb5d309a4f6',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -16099,11 +16565,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -16113,56 +16639,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -16172,16 +16650,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-project-team',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Field Diary V: An Overview',
@@ -16196,11 +16675,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '8e59a0ee-1450-448a-a568-c2917dfb0d91',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 08:09:30 -0600',
-  'user_uuid' => '0474136e-da6f-4c0b-9472-898ca7edbb66',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -16261,17 +16735,15 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary V, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). In this diary, Livingstone returns to the work that initially brought him to Africa: medicine and Christian conversion. His cultural observations and discussions of the slave trade in this notebook largely grow out of those foci.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -16286,19 +16758,21 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -16310,28 +16784,40 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary V, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). In this diary, Livingstone returns to the work that initially brought him to Africa: medicine and Christian conversion. His cultural observations and discussions of the slave trade in this notebook largely grow out of those foci.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -16341,16 +16827,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-v-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 14:09:30 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -16365,11 +16852,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '8ef66730-cfc0-4101-9760-ecbb6f710bc8',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -16446,11 +16928,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -16460,56 +17002,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -16519,16 +17013,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/acknowledgments-0',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Illustrative Image Credits',
@@ -16543,11 +17038,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '906a2148-9b4b-4981-b5e7-82412ba8b4c2',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-04-08 09:30:00 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -16726,11 +17216,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013461_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013461_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20158,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '09bdb53b-15ed-42c4-807d-c759314ad23b',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013461_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013461_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013461_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 59954,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '9ee1de01-709d-4fd9-a33a-9e133e677606',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 310,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 310,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013461_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -16740,56 +17290,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013461_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013461_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20158,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '09bdb53b-15ed-42c4-807d-c759314ad23b',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013461_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013461_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013461_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 59954,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '9ee1de01-709d-4fd9-a33a-9e133e677606',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 310,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 310,
-        'uuid_features_packaged_file_path' => 'assets/liv_013461_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -16800,16 +17302,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'behind-the-scenes/illustrative-image-credits',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-04-08 14:30:00 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Online Digital Collection',
@@ -16824,11 +17327,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '91f40778-9b1b-495e-80ff-c10fe1d903c8',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-06-01 11:52:19 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -16874,65 +17372,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section describes the scope of the <em>Livingstone Online</em> digital collection and enumerates the various methods available for encountering this collection.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013466_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013466_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 23594,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'be03f4cd-46af-4ff5-979b-e97faa302ca0',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013466_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013466_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013466_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 140429,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '1aed5921-04dd-49fd-8f27-655a63f72579',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013466_0001-tile.jpg',
       ),
     ),
   ),
@@ -16944,7 +17384,77 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013466_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013466_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 23594,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'be03f4cd-46af-4ff5-979b-e97faa302ca0',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013466_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013466_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013466_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 140429,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '1aed5921-04dd-49fd-8f27-655a63f72579',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013466_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section describes the scope of the <em>Livingstone Online</em> digital collection and enumerates the various methods available for encountering this collection.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -16955,16 +17465,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/the-livingstone-online-digital-collection',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-06-01 16:52:19 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Project Team',
@@ -16979,11 +17490,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '920682c6-665f-4111-8458-6247e55dc5e7',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-05-30 15:08:33 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -17056,20 +17562,11 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page introduces the project team that developed the critical edition of Livingstone\'s final manuscripts (1865-73).</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -17081,19 +17578,21 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -17105,21 +17604,40 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces the project team that developed the critical edition of Livingstone\'s final manuscripts (1865-73).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -17129,16 +17647,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/project-team',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-05-30 20:08:33 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Behind the Scenes: Overview',
@@ -17153,11 +17672,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '9422bd16-b593-482e-8821-21b3ed99a80d',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-04-02 11:41:50 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -17191,11 +17705,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000049_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_000049_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 26924,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '58d747d5-f962-48a7-8049-f4b9aa2a5693',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_000049_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000049_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_000049_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 155435,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '07357281-4d79-49b6-8ac6-bf022c306567',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_000049_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -17205,56 +17779,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_000049_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_000049_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 26924,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '58d747d5-f962-48a7-8049-f4b9aa2a5693',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_000049_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_000049_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_000049_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 155435,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '07357281-4d79-49b6-8ac6-bf022c306567',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_000049_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -17265,16 +17791,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'behind-the-scenes/behind-the-scenes-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-04-02 16:41:50 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online\'s Staff',
@@ -17289,11 +17816,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '970d3a26-234b-4a39-aa82-d8931b11e919',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-02-12 18:38:55 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -17506,11 +18028,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013445_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013445_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20204,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '144e002a-7b11-4142-bc16-0c02a50a10d0',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013445_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013445_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013445_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 49802,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '6dce8899-a412-4317-862f-fd216e5d7955',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013445_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -17520,56 +18102,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013445_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013445_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20204,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '144e002a-7b11-4142-bc16-0c02a50a10d0',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013445_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013445_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013445_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 49802,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '6dce8899-a412-4317-862f-fd216e5d7955',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013445_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -17580,16 +18114,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'behind-the-scenes/livingstone-onlines-staff',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-02-13 00:38:55 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Project Documents',
@@ -17604,11 +18139,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '97fc9cb2-fc88-4a58-86b4-4cfaf7d4cf6e',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 13:23:31 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -17724,65 +18254,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><strong><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></strong></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section provides access to a curated set of project documents created during the development of <a href="/about-site/what-leap-2013-2016">LEAP: The <em>Livingstone Online</em> Enrichment and Access Project</a>. Users have the option of downloading the entire project document collection (several hundred files produced over a three-year period),&nbsp;area-specific subsets, or <span style="line-height: 20.7999992370605px;">individual highlights</span>. Together these documents provide an intimate look into the development of the present site. Their provision supports our mission of transparency and comprehensive knowledge transfer.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013245_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013245_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20162,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '52377632-3750-4067-9baf-7bcf10e890a0',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013245_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013245_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013245_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 32047,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '9674384b-736d-4c9c-8210-55dc50fbf249',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013245_0001-tile.jpg',
       ),
     ),
   ),
@@ -17794,7 +18266,77 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013245_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013245_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20162,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '52377632-3750-4067-9baf-7bcf10e890a0',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013245_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013245_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013245_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 32047,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '9674384b-736d-4c9c-8210-55dc50fbf249',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013245_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section provides access to a curated set of project documents created during the development of <a href="/about-site/what-leap-2013-2016">LEAP: The <em>Livingstone Online</em> Enrichment and Access Project</a>. Users have the option of downloading the entire project document collection (several hundred files produced over a three-year period),&nbsp;area-specific subsets, or <span style="line-height: 20.7999992370605px;">individual highlights</span>. Together these documents provide an intimate look into the development of the present site. Their provision supports our mission of transparency and comprehensive knowledge transfer.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -17805,16 +18347,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'resources/livingstone-online-project-documents',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 19:23:31 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Structuring the 1870 Field Diary',
@@ -17829,11 +18372,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '9b55d92a-0b4f-4465-aa88-aef50b7ed339',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -18095,65 +18633,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section, the second of a six-part sequence, continues a comprehensive account of the 1870 Field Diary as a constructed and preserved object. The section explores the structure that Livingstone (and, later, others) imposed on the text and discusses other prominent textual features.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -18165,7 +18645,77 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section, the second of a six-part sequence, continues a comprehensive account of the 1870 Field Diary as a constructed and preserved object. The section explores the structure that Livingstone (and, later, others) imposed on the text and discusses other prominent textual features.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -18175,16 +18725,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/structuring-the-1870-field-diary',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Field Diary XVI: An Overview',
@@ -18199,11 +18750,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '9b8fe6dc-7202-4830-8af8-383baeb53c20',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 09:07:02 -0600',
-  'user_uuid' => '0474136e-da6f-4c0b-9472-898ca7edbb66',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -18262,17 +18808,15 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary XVI, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). The last field diary that Livingstone completed, FD XVI contains meditations on Livingstone\'s career and authority. Despite being written when Livingstone was in declining health, this diary holds extensive meteorological and topographical calculations, as Livingstone persisted in his quest to identify the source of the Nile.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -18287,19 +18831,21 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -18311,28 +18857,40 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary XVI, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). The last field diary that Livingstone completed, FD XVI contains meditations on Livingstone\'s career and authority. Despite being written when Livingstone was in declining health, this diary holds extensive meteorological and topographical calculations, as Livingstone persisted in his quest to identify the source of the Nile.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -18342,16 +18900,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-xvi-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 15:07:02 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Manuscript of the 1871 Field Diary',
@@ -18366,11 +18925,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '9c4e1bbc-bdba-4fc9-a213-f7fb7152585c',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:41:47 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -18617,17 +19171,15 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This section provides an overview of the strategies Livingstone employed in composing the 1871 Field Diary and the long-term consequences of those strategies. The section also defines the scope of the present edition and develops a history of the 1871 Field Diary manuscript from the nineteenth century to the present.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -18642,19 +19194,21 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -18666,32 +19220,21 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -18699,7 +19242,31 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
       ),
     ),
   ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section provides an overview of the strategies Livingstone employed in composing the 1871 Field Diary and the long-term consequences of those strategies. The section also defines the scope of the present edition and develops a history of the 1871 Field Diary manuscript from the nineteenth century to the present.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
   'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-manuscript-the-1871-field-diary',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2017-02-09 23:41:47 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Conservation and Transport',
@@ -18714,11 +19281,6 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '9d934abd-24be-4b78-bd98-8b5a4ae956e0',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-16 20:58:59 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -18773,17 +19335,15 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page outlines the conservation steps taken to stabilize the manuscript of <em>Livingstone\'s Letter from Bambarre</em>, then summarizes the circumstances surrounding the transportation of the letter for spectral imaging from the Metropolitan Museum of Art in New York City to the Walters Art Museum in Baltimore.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki and Heather F. Ball (authors), Beta edition: 2010, First edition: 2011, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -18798,19 +19358,21 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -18822,28 +19384,40 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki and Heather F. Ball (authors), Beta edition: 2010, First edition: 2011, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page outlines the conservation steps taken to stabilize the manuscript of <em>Livingstone\'s Letter from Bambarre</em>, then summarizes the circumstances surrounding the transportation of the letter for spectral imaging from the Metropolitan Museum of Art in New York City to the Walters Art Museum in Baltimore.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -18853,16 +19427,17 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/conservation-and-transport',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-17 02:58:59 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -18877,11 +19452,6 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '9e2b973a-2e2a-4f0e-b590-eeb58d0a8e6e',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:39:39 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -19125,17 +19695,15 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page cites the individuals who made a special contribution to supporting the work in developing the multispectral critical edition of Livingstone\'s 1871 Field Diary in 2010-13. Institutional affiliations below date to 2013, although some of these have since changed.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Beta edition: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -19150,19 +19718,21 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -19174,28 +19744,40 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Beta edition: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page cites the individuals who made a special contribution to supporting the work in developing the multispectral critical edition of Livingstone\'s 1871 Field Diary in 2010-13. Institutional affiliations below date to 2013, although some of these have since changed.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -19205,16 +19787,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/acknowledgments-1',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-09 23:39:39 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'LEAP (2013-2017): A Project History, Part II',
@@ -19229,11 +19812,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '9e853e69-ef25-40c6-bd0a-e296e3849c47',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-04-01 17:15:40 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -19399,65 +19977,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay sets out the second part of a history of LEAP: The <em>Livingstone Online</em> Enrichment and Access Project, the NEH-funded initiative that resulted in the development of the present <em>Livingstone Online</em> site. The essay combines text, images, and access to downloadable project documents to provide an intimate, behind-the-scenes look into project.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013528_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013528_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 19782,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '03556eb6-a08d-4f8e-9749-7fdf3500d7a5',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013528_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013528_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013528_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 31118,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'c97d66ee-005b-493c-ac06-9669a0db223d',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/liv_013528_0001-tile.jpg',
       ),
     ),
   ),
@@ -19469,7 +19989,77 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013528_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013528_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 19782,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '03556eb6-a08d-4f8e-9749-7fdf3500d7a5',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013528_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013528_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013528_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 31118,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'c97d66ee-005b-493c-ac06-9669a0db223d',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013528_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay sets out the second part of a history of LEAP: The <em>Livingstone Online</em> Enrichment and Access Project, the NEH-funded initiative that resulted in the development of the present <em>Livingstone Online</em> site. The essay combines text, images, and access to downloadable project documents to provide an intimate, behind-the-scenes look into project.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -19480,16 +20070,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/leap-2013-2017-project-history-part-ii',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-04-01 22:15:40 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Repository',
@@ -19504,11 +20095,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'a196eb07-12c3-4133-b6e8-5a46fc2d9256',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-06-01 11:40:33 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -19518,20 +20104,11 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_body' => array(),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section allows users to browse images and transcriptions of Livingstone\'s manuscripts by the libraries, archives, museums, and other institutions where these manuscripts reside.</p>
-
-<hr />',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'liv_013332_0001-carousel.jpg',
         'uri' => 'public://section_page/carousel_images/liv_013332_0001-carousel.jpg',
         'filemime' => 'image/jpeg',
@@ -19539,23 +20116,25 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => '7594906a-69c7-4f4b-9699-df9ac8988b72',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013332_0001-carousel.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'liv_013332_0001-tile.jpg',
         'uri' => 'public://section_page/grid_images/liv_013332_0001-tile.jpg',
         'filemime' => 'image/jpeg',
@@ -19563,36 +20142,25 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'f2a8675c-bbc6-4f67-907b-f69d3065a488',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013332_0001-tile.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>View Livingstone\'s manuscripts by archive</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_pre_title' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Browse by',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
@@ -19604,14 +20172,46 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_open_in_new_tab' => array(
+  'field_section_overview' => array(
     'und' => array(
       0 => array(
-        'value' => 0,
+        'value' => '<p>This section allows users to browse images and transcriptions of Livingstone\'s manuscripts by the libraries, archives, museums, and other institutions where these manuscripts reside.</p>
+
+<hr />',
+        'format' => 'full_html',
       ),
     ),
   ),
   'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Browse by',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>View Livingstone\'s manuscripts by archive</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/repository',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2015-06-01 16:40:33 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Life and Times: Overview',
@@ -19626,11 +20226,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'a7a76aaf-60bb-456e-a0c3-150596f6c7b7',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-04-02 14:25:41 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -19664,11 +20259,71 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013455_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013455_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 25173,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'a5c1d363-ebc6-4924-80b4-6c502c629a11',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013455_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013455_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013455_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 190365,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'c5188dc5-526a-490b-afbe-474a8c65e297',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013455_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -19678,56 +20333,8 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013455_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013455_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 25173,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'a5c1d363-ebc6-4924-80b4-6c502c629a11',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013455_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013455_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013455_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 190365,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'c5188dc5-526a-490b-afbe-474a8c65e297',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013455_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -19738,16 +20345,17 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'life-and-times/life-and-times-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-04-02 19:25:41 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Field Diary XIV: An Overview',
@@ -19762,11 +20370,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'ad330d80-44ba-4144-aba3-cd890830b080',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 08:23:34 -0600',
-  'user_uuid' => '0474136e-da6f-4c0b-9472-898ca7edbb66',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -19836,17 +20439,15 @@ The Livingstone Spectral Imaging Project<br />
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary XIV, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). This diary records Livingstone\'s iconic meeting with Henry Morton Stanley and their time together. Stanley\'s appearance inaugurates a new level of communication with Europe and America for Livingstone. At the same time, this diary narrates ongoing local violence between African chiefs that also involves Arabs.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -19861,19 +20462,21 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -19885,28 +20488,40 @@ The Livingstone Spectral Imaging Project<br />
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary XIV, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). This diary records Livingstone\'s iconic meeting with Henry Morton Stanley and their time together. Stanley\'s appearance inaugurates a new level of communication with Europe and America for Livingstone. At the same time, this diary narrates ongoing local violence between African chiefs that also involves Arabs.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -19916,16 +20531,17 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-xiv-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 14:23:34 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Livingstone’s Composition Methods',
@@ -19940,11 +20556,6 @@ The Livingstone Spectral Imaging Project<br />
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'ae2084e0-9536-418e-8d1e-a3fd0ae5da1e',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:45:58 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -20245,17 +20856,15 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This section discusses Livingstone’s methods for composing the main portion of the 1871 Field Diary (Livingstone 1871f), examines the impact of the Nyangwe massacre on these practices, and closes with a look at the composition methods Livingstone used for the additional pages of the diary.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -20270,19 +20879,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -20294,28 +20905,40 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section discusses Livingstone’s methods for composing the main portion of the 1871 Field Diary (Livingstone 1871f), examines the impact of the Nyangwe massacre on these practices, and closes with a look at the composition methods Livingstone used for the additional pages of the diary.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -20325,16 +20948,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/livingstone-s-composition-methods',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-09 23:45:58 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Prototyping Animated Spectral Images (ASIs)',
@@ -20349,11 +20973,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'af8d4263-1bd8-4a08-9155-642433fa2799',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -20529,65 +21148,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay describes the background, objectives, workflow, and results of the development of animated spectral images (ASIs) for the present multispectral critical edition of Livingstone’s 1870 Field Diary.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -20599,7 +21160,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay describes the background, objectives, workflow, and results of the development of animated spectral images (ASIs) for the present multispectral critical edition of Livingstone’s 1870 Field Diary.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -20609,16 +21240,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/prototyping-animated-spectral-images-asis',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Online Code',
@@ -20633,11 +21265,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'b1d5286c-4650-4d31-bafe-d33892f53573',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 12:07:33 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -20741,65 +21368,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section describes the ideals that guide the development of <em>Livingstone Online</em> as a whole and determine its day-to-day practices as a digital project that collaborates with individuals and institutions around the world and that takes seriously its responsibilities as a publicly funded and accountable entity.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013651_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013651_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20355,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '86b4e324-4347-4f7a-a598-660d06e96053',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013651_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013651_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013651_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 34625,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'adda95e8-5ba5-486f-a6b9-6f86c181a491',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013651_0001-tile.jpg',
       ),
     ),
   ),
@@ -20811,7 +21380,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013651_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013651_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20355,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '86b4e324-4347-4f7a-a598-660d06e96053',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013651_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013651_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013651_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 34625,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'adda95e8-5ba5-486f-a6b9-6f86c181a491',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013651_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section describes the ideals that guide the development of <em>Livingstone Online</em> as a whole and determine its day-to-day practices as a digital project that collaborates with individuals and institutions around the world and that takes seriously its responsibilities as a publicly funded and accountable entity.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -20822,16 +21461,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'behind-the-scenes/the-livingstone-online-code',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 18:07:33 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'An Integrated Project Bibliography',
@@ -20846,11 +21486,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'b33a7f9f-edeb-4611-a294-8d92020bf9f0',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -21464,65 +22099,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page presents a comprehensive, integrated bibliography of the primary texts and literary, historical, cultural, and scientific sources that serve as the basis of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'Twitter3b-new-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/Twitter3b-new-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14161,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'c62093d2-e817-42df-96c7-228722acf985',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/Twitter3b-new-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'Twitter3b-new-tile.jpg',
-        'uri' => 'public://section_page/grid_images/Twitter3b-new-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 85687,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '8b5b5db2-b656-4c05-87e1-d6a85ed5baf2',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/Twitter3b-new-tile.jpg',
       ),
     ),
   ),
@@ -21534,7 +22111,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'Twitter3b-new-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/Twitter3b-new-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14161,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'c62093d2-e817-42df-96c7-228722acf985',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/Twitter3b-new-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'Twitter3b-new-tile.jpg',
+        'uri' => 'public://section_page/grid_images/Twitter3b-new-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 85687,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '8b5b5db2-b656-4c05-87e1-d6a85ed5baf2',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/Twitter3b-new-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page presents a comprehensive, integrated bibliography of the primary texts and literary, historical, cultural, and scientific sources that serve as the basis of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -21545,16 +22192,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/integrated-project-bibliography',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Unyanyembe Journal: An Overview',
@@ -21569,11 +22217,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'b37eb894-0985-448c-a9b2-da5c4a5dcdb8',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-24 22:17:57 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -21766,17 +22409,15 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This essay introduces Livingstone’s Unyanyembe Journal (1866-72), the almost 800-page bound volume that Livingstone used to make his most lasting record of his final journey to Africa. It covers the journal’s dates and places, Livingstone’s thematic concerns, and the conflicts he faced as he created this record. The essay closes by considering Livingstone’s rhetorical situation as he writes the Unyanyembe Journal in Africa, among African and Arab populations, but for a primarily British audience.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -21791,19 +22432,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -21815,28 +22458,40 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay introduces Livingstone’s Unyanyembe Journal (1866-72), the almost 800-page bound volume that Livingstone used to make his most lasting record of his final journey to Africa. It covers the journal’s dates and places, Livingstone’s thematic concerns, and the conflicts he faced as he created this record. The essay closes by considering Livingstone’s rhetorical situation as he writes the Unyanyembe Journal in Africa, among African and Arab populations, but for a primarily British audience.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -21846,16 +22501,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/the-unyanyembe-journal-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-25 04:17:57 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Spectral Image Processing',
@@ -21870,11 +22526,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'b3ee9521-1ad9-4492-9298-dfa44a950820',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-16 21:32:11 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -21926,17 +22577,15 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This section provides an overview of the steps involved in processing spectral images. The section then details the collaborative, interdisciplinary workflow that guided the processing of the raw spectral images of <em>Livingstone\'s Letter from Bambarre</em>.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki and Heather F. Ball (authors), Beta edition: 2010, First edition: 2011, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -21951,19 +22600,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -21975,28 +22626,40 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki and Heather F. Ball (authors), Beta edition: 2010, First edition: 2011, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section provides an overview of the steps involved in processing spectral images. The section then details the collaborative, interdisciplinary workflow that guided the processing of the raw spectral images of <em>Livingstone\'s Letter from Bambarre</em>.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -22006,16 +22669,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/spectral-image-processing',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-17 03:32:11 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'About This Site: Overview',
@@ -22030,11 +22694,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'b49b7671-f0d6-47e9-8826-f97b878a6831',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-04-06 11:26:31 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -22072,11 +22731,71 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'IMG_5192-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/IMG_5192-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20119,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '043d7a24-eb14-4924-9621-6b18d8ce8d41',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/IMG_5192-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'IMG_5192-tile.jpg',
+        'uri' => 'public://section_page/grid_images/IMG_5192-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 101506,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'bfb80b6c-8174-4349-b79a-c591d91ccf63',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/IMG_5192-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -22086,56 +22805,8 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'IMG_5192-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/IMG_5192-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20119,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '043d7a24-eb14-4924-9621-6b18d8ce8d41',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/IMG_5192-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'IMG_5192-tile.jpg',
-        'uri' => 'public://section_page/grid_images/IMG_5192-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 101506,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bfb80b6c-8174-4349-b79a-c591d91ccf63',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/IMG_5192-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -22150,16 +22821,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/about-this-site-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-04-06 16:26:31 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Three Versions of the 1871 Field Diary',
@@ -22174,11 +22846,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'b941bdf2-38e1-4447-8c38-75449da48309',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:43:20 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -22192,20 +22859,11 @@ ornament their faces and heads (1871f:CVII)</p>
       0 => array(
         'value' => '<hr />
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page allows users to engage in comparative study of three versions of the 1871 Field Diary: the original 1871 Field Diary, the revised version in the Unyanyembe Journal (1866-72), and the posthumously edited and published version in the <em>Last Journals</em> (1874). Users can scroll through each of the versions or guide their search using dates found in the texts. For each manuscript, we have selected colors that match the corresponding colors of the original documents.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -22217,19 +22875,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -22241,29 +22901,35 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
         'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page allows users to engage in comparative study of three versions of the 1871 Field Diary: the original 1871 Field Diary, the revised version in the Unyanyembe Journal (1866-72), and the posthumously edited and published version in the <em>Last Journals</em> (1874). Users can scroll through each of the versions or guide their search using dates found in the texts. For each manuscript, we have selected colors that match the corresponding colors of the original documents.</p>
+',
+        'format' => 'full_html',
       ),
     ),
   ),
@@ -22283,6 +22949,20 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/three-versions-the-1871-field-diary',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2017-02-09 23:43:20 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'The Date of the Livingstone-Stanley Meeting',
@@ -22297,11 +22977,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'bcafb301-2e80-4e89-879a-3210c23efb12',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:47:35 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -22483,17 +23158,15 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This essay explores the challenges of dating the famous meeting between Livingstone and Stanley. The essay considers previous critical interpretations, evaluates the additional evidence available from the 1871 Field Diary, outlines the difficulties in reconciling the written accounts of Livingstone and Stanley, and, finally, summarizes the findings and limits of the present analysis.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Justin Livingstone and Adrian S. Wisnicki, Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -22508,19 +23181,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -22532,32 +23207,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Justin Livingstone and Adrian S. Wisnicki, Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -22565,7 +23229,31 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay explores the challenges of dating the famous meeting between Livingstone and Stanley. The essay considers previous critical interpretations, evaluates the additional evidence available from the 1871 Field Diary, outlines the difficulties in reconciling the written accounts of Livingstone and Stanley, and, finally, summarizes the findings and limits of the present analysis.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
   'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-date-the-livingstone-stanley-meeting',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2017-02-09 23:47:35 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Victorian Medicine',
@@ -22580,11 +23268,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'c25a3705-73b9-4094-bc06-aa5f39d93935',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 18:42:51 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -22701,65 +23384,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay describes the evolving state of British health in the nineteenth century and considers how Livingstone’s perceptions of this health influenced his understanding of Africa and his writings.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013418_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013418_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 21213,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'ea8bf07c-3872-4c4c-b922-3644a45382f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013418_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013418_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013418_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 48780,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '90f863ce-16e4-4989-b94a-8e8d9f8b59bb',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013418_0001-tile.jpg',
       ),
     ),
   ),
@@ -22771,7 +23396,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013418_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013418_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 21213,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'ea8bf07c-3872-4c4c-b922-3644a45382f4',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013418_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013418_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013418_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 48780,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '90f863ce-16e4-4989-b94a-8e8d9f8b59bb',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013418_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay describes the evolving state of British health in the nineteenth century and considers how Livingstone’s perceptions of this health influenced his understanding of Africa and his writings.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -22782,16 +23477,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'life-and-times/victorian-medicine',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-27 00:42:51 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Global Sources',
@@ -22806,11 +23502,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'c7a7c0e0-6b8a-40fb-ba23-984487fede29',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -22946,65 +23637,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>Livingstone represented his last journey (1866-1873) as a search for the geographical source(s) of the Nile, but the 1870 Field Diary foregrounds Livingstone’s encounter with sources of another kind: non-Western informants who shared their knowledge of local African geography and cultural practices. Attention to Livingstone’s use of these sources illuminates broader strategies by which Victorian travel writers converted experiences – over which they sometimes exerted limited influence – into authoritative and controlled narratives of the field.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -23016,7 +23649,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>Livingstone represented his last journey (1866-1873) as a search for the geographical source(s) of the Nile, but the 1870 Field Diary foregrounds Livingstone’s encounter with sources of another kind: non-Western informants who shared their knowledge of local African geography and cultural practices. Attention to Livingstone’s use of these sources illuminates broader strategies by which Victorian travel writers converted experiences – over which they sometimes exerted limited influence – into authoritative and controlled narratives of the field.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -23026,16 +23729,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/livingstones-global-sources',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s 1871 Field Diary',
@@ -23050,11 +23754,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'c7b7f847-291e-4122-8f80-0727f8336b81',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -23064,11 +23763,11 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_body' => array(),
-  'field_section_overview' => array(),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'liv_013723_0001-new-carousel.jpg',
         'uri' => 'public://section_page/carousel_images/liv_013723_0001-new-carousel.jpg',
         'filemime' => 'image/jpeg',
@@ -23076,23 +23775,25 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => '123bb2fd-274e-402f-a166-1066b064282d',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013723_0001-new-carousel.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
+        'uid' => 1,
         'filename' => 'liv_013723_0001-new-tile.jpg',
         'uri' => 'public://section_page/grid_images/liv_013723_0001-new-tile.jpg',
         'filemime' => 'image/jpeg',
@@ -23100,21 +23801,39 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => '0f347638-5375-4e41-b04f-07b5610365d7',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 292,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 292,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013723_0001-new-tile.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'http://livingstone.library.ucla.edu/1871diary/index.htm',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_section_overview' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -23125,23 +23844,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'http://livingstone.library.ucla.edu/1871diary/index.htm',
-        'format' => NULL,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/livingstones-1871-field-diary-0',
+      'language' => 'und',
     ),
   ),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1,
-      ),
-    ),
-  ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Project History',
@@ -23156,11 +23869,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'c91df526-2079-4a89-888a-313ba71cb600',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -23387,65 +24095,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay set outs the history of our work to develop a multispectral critical edition of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts. It provides an overview of all significant periods of project endeavor and for each period describes all key project activities.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -23457,7 +24107,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay set outs the history of our work to develop a multispectral critical edition of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts. It provides an overview of all significant periods of project endeavor and for each period describes all key project activities.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -23467,16 +24187,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/project-history',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => '18th- and 19th-Century European Expeditions',
@@ -23491,11 +24212,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'c97b074f-908e-4022-8ce9-e23418a99796',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 14:11:56 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -23598,65 +24314,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay offers an introduction to the development, sponsorship, and goals of European expeditions from the eighteenth to the nineteenth centuries.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_014001_0011-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_014001_0011-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 19470,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4e238d36-8c6f-4da2-919e-78d586973beb',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_014001_0011-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_014001_0011-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_014001_0011-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 34933,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'f937a241-1ede-48fe-b49f-d2bb1de8e17f',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/liv_014001_0011-tile.jpg',
       ),
     ),
   ),
@@ -23668,7 +24326,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_014001_0011-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_014001_0011-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 19470,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4e238d36-8c6f-4da2-919e-78d586973beb',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_014001_0011-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_014001_0011-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_014001_0011-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 34933,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'f937a241-1ede-48fe-b49f-d2bb1de8e17f',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_014001_0011-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay offers an introduction to the development, sponsorship, and goals of European expeditions from the eighteenth to the nineteenth centuries.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -23679,16 +24407,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'life-and-times/18th-and-19th-century-european-expeditions',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-26 20:11:56 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Design of Livingstone Online',
@@ -23703,11 +24432,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'cc3ab471-98ad-431e-a7b7-8e0be4959241',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-07-17 12:47:04 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -23822,65 +24546,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay provides an overview of the <em>Livingstone Online</em> site design. The essay outlines the key components of the site, the site’s aesthetic objectives, and the collaborative process that led to the development of the site.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013732_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013732_0001-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 26838,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '423b335a-cf2f-467b-8862-2ae93b581806',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013732_0001-carousel_0.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013732_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013732_0001-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 256243,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'dbe695a0-fddc-48fe-875b-bbcc5e4558a3',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/liv_013732_0001-tile_0.jpg',
       ),
     ),
   ),
@@ -23892,7 +24558,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013732_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013732_0001-carousel_0.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 26838,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '423b335a-cf2f-467b-8862-2ae93b581806',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013732_0001-carousel_0.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013732_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013732_0001-tile_0.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 256243,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'dbe695a0-fddc-48fe-875b-bbcc5e4558a3',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013732_0001-tile_0.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay provides an overview of the <em>Livingstone Online</em> site design. The essay outlines the key components of the site, the site’s aesthetic objectives, and the collaborative process that led to the development of the site.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -23903,16 +24639,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/the-design-livingstone-online',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-07-17 17:47:04 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => '1871 Field Diary Headers',
@@ -23927,11 +24664,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'cd6dfca9-a8b8-4766-bc05-dcd7e247f8ad',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 18:09:44 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -24147,20 +24879,11 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page enables comparative analysis of the headers from the two copy books that constitute the main portion of the 1871 Field Diary (Livingstone 1871f).</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -24172,19 +24895,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -24196,25 +24921,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -24222,7 +24943,31 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page enables comparative analysis of the headers from the two copy books that constitute the main portion of the 1871 Field Diary (Livingstone 1871f).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
   'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/1871-field-diary-headers',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2017-02-10 00:09:44 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -24237,11 +24982,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'cd82bd9d-3e50-421b-969e-3f513a20258b',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-05-30 15:22:35 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -24334,20 +25074,11 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s final manuscripts (1865-73). It enumerates all the main sections of the edition, including core data and critical materials.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -24359,19 +25090,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -24383,21 +25116,40 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s final manuscripts (1865-73). It enumerates all the main sections of the edition, including core data and critical materials.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -24407,16 +25159,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/edition-guide',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-05-30 20:22:35 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Medical Education',
@@ -24431,11 +25184,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'ce8c001e-9bd3-4995-8b37-37477601e8f8',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 18:35:02 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -24612,65 +25360,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay provides a detailed description of Livingstone’s medical education as well as an overview of how his education affected his recording strategies in Africa.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013430_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013430_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 19885,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '2740d75b-e003-450f-99fb-a5354c8cc482',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013430_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013430_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013430_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 42851,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '178c92e6-55a3-4cb9-be56-c06e8f77b6f9',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013430_0001-tile.jpg',
       ),
     ),
   ),
@@ -24682,7 +25372,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013430_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013430_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 19885,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '2740d75b-e003-450f-99fb-a5354c8cc482',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013430_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013430_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013430_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 42851,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '178c92e6-55a3-4cb9-be56-c06e8f77b6f9',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013430_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay provides a detailed description of Livingstone’s medical education as well as an overview of how his education affected his recording strategies in Africa.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -24693,16 +25453,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'life-and-times/livingstones-medical-education',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-27 00:35:02 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Field Diary XV: An Overview',
@@ -24717,11 +25478,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'd0a08841-27b1-4400-bf50-b452794cb1be',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 08:36:11 -0600',
-  'user_uuid' => '0474136e-da6f-4c0b-9472-898ca7edbb66',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -24798,17 +25554,15 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary XV, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). Rather than being sequential, this diary expands on many of the entries in FD XIV, especially the local African-Arab conflict and Livingstone\'s disagreement with John Kirk, British Consul in Zanzibar. It also contains botanical, meteorological, and consumer information.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -24823,19 +25577,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -24847,28 +25603,40 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary XV, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). Rather than being sequential, this diary expands on many of the entries in FD XIV, especially the local African-Arab conflict and Livingstone\'s disagreement with John Kirk, British Consul in Zanzibar. It also contains botanical, meteorological, and consumer information.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -24878,16 +25646,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-xv-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 14:36:11 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Project History (1)',
@@ -24902,11 +25671,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'd2c119f4-4ada-4b18-9aca-6e79a46dc975',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:58:10 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -25332,17 +26096,15 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page, the first part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary. The two-part essay provides an overview of all significant phases of project endeavor and for each phase describes all key project activities. (Note: Contemporaneous institutional affiliations for individuals have been retained although some of these have since changed.) Read the second part of the essay <a href="/spectral-imaging/project-history-2">here</a>.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -25357,19 +26119,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -25381,28 +26145,40 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page, the first part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary. The two-part essay provides an overview of all significant phases of project endeavor and for each phase describes all key project activities. (Note: Contemporaneous institutional affiliations for individuals have been retained although some of these have since changed.) Read the second part of the essay <a href="/spectral-imaging/project-history-2">here</a>.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -25412,16 +26188,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/project-history-1',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-09 23:58:10 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Manuscripts in the Digital Age',
@@ -25436,11 +26213,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'd3443f49-2d3b-45ee-b815-d0a762ab0d8e',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-27 13:40:12 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -25485,65 +26257,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay traces the history of documenting and assembling Livingstone\'s surviving manuscripts through the Livingstone Documentation Project (1973-85), followed by the ongoing efforts of <em>Livingstone Online</em> (2004-present) to bring digital editions of these manuscripts to a global audience.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'DLC297b_157-138_008r_0_A_ratio_by_0940-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/DLC297b_157-138_008r_0_A_ratio_by_0940-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 24145,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'b1348f58-d46e-449a-9048-02489a2af91d',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/DLC297b_157-138_008r_0_A_ratio_by_0940-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'DLC297b_157-138_008r_0_A_ratio_by_0940-tile.jpg',
-        'uri' => 'public://section_page/grid_images/DLC297b_157-138_008r_0_A_ratio_by_0940-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 68513,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '2c17c3bc-8592-4943-8d31-d0c51708c8f1',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/DLC297b_157-138_008r_0_A_ratio_by_0940-tile.jpg',
       ),
     ),
   ),
@@ -25555,7 +26269,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'DLC297b_157-138_008r_0_A_ratio_by_0940-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/DLC297b_157-138_008r_0_A_ratio_by_0940-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 24145,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'b1348f58-d46e-449a-9048-02489a2af91d',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/DLC297b_157-138_008r_0_A_ratio_by_0940-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'DLC297b_157-138_008r_0_A_ratio_by_0940-tile.jpg',
+        'uri' => 'public://section_page/grid_images/DLC297b_157-138_008r_0_A_ratio_by_0940-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 68513,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '2c17c3bc-8592-4943-8d31-d0c51708c8f1',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/DLC297b_157-138_008r_0_A_ratio_by_0940-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay traces the history of documenting and assembling Livingstone\'s surviving manuscripts through the Livingstone Documentation Project (1973-85), followed by the ongoing efforts of <em>Livingstone Online</em> (2004-present) to bring digital editions of these manuscripts to a global audience.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -25566,16 +26350,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/livingstones-manuscripts-in-the-digital-age',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-27 19:40:12 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Diary across Hands, Space, and Time (1)',
@@ -25590,11 +26375,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'd67ceafd-e4ff-436e-917d-f0ff4cb21795',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -25827,65 +26607,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section continues our analysis of the state of the 1870 Field Diary manuscript by turning to material aspects of the diary closely linked to its travels across hands, space, and time. In particular, the section uses the presence of ink and pencil on the pages of the manuscript to explore the role of Livingstone and others in composing the text of the diary.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -25897,7 +26619,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section continues our analysis of the state of the 1870 Field Diary manuscript by turning to material aspects of the diary closely linked to its travels across hands, space, and time. In particular, the section uses the presence of ink and pencil on the pages of the manuscript to explore the role of Livingstone and others in composing the text of the diary.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -25907,16 +26699,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-diary-across-hands-space-and-time-1',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'David Livingstone: A Bibliography',
@@ -25931,11 +26724,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'd6801fb9-85ff-4b39-bc07-6378bc6421db',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 18:52:26 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -26269,65 +27057,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section enumerates books by Livingstone, edited collections of his primary works, bibliographies, and biographies and critical sources. We encourage authors of new works to submit publication information to us so that it can be included in the lists below. Our <a href="/islandora/search/*%3A*?type=edismax">digital catalogue</a> also includes publication information for a vast array of individual items, particularly letters.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013494_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013494_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20422,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '27f5b6ed-2a0f-4a2e-b01f-26400966e696',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013494_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013494_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013494_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 42395,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '6e143e94-cf44-43ff-af44-459a80b8d19a',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013494_0001-tile.jpg',
       ),
     ),
   ),
@@ -26339,7 +27069,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013494_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013494_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20422,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '27f5b6ed-2a0f-4a2e-b01f-26400966e696',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013494_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013494_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013494_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 42395,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '6e143e94-cf44-43ff-af44-459a80b8d19a',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013494_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section enumerates books by Livingstone, edited collections of his primary works, bibliographies, and biographies and critical sources. We encourage authors of new works to submit publication information to us so that it can be included in the lists below. Our <a href="/islandora/search/*%3A*?type=edismax">digital catalogue</a> also includes publication information for a vast array of individual items, particularly letters.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -26350,16 +27150,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'resources/david-livingstone-bibliography',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-27 00:52:26 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Theory Behind Livingstone Online',
@@ -26374,11 +27175,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'd7005121-41b1-4918-95a8-2e759f91461b',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-07-01 17:58:38 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -26431,65 +27227,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay sets out <em>Livingstone Online</em>\'s theoretical objectives. We cite our attempts to represent Livingstone\'s legacy in a reflective and critically-informed manner, and we discuss the challenges inherent in working with colonial source materials. The essay concludes by outlining our goal of conducting research in a transparent manner that invites critical interrogation and debate.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013807_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013807_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 21390,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '5e4806ad-2a8b-4921-94cd-71c3fd109a4e',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013807_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013807_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013807_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 186452,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd78cc29f-f732-4e95-b4b7-0bd9da6b7843',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013807_0001-tile.jpg',
       ),
     ),
   ),
@@ -26501,7 +27239,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013807_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013807_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 21390,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '5e4806ad-2a8b-4921-94cd-71c3fd109a4e',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013807_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013807_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013807_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 186452,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'd78cc29f-f732-4e95-b4b7-0bd9da6b7843',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013807_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay sets out <em>Livingstone Online</em>\'s theoretical objectives. We cite our attempts to represent Livingstone\'s legacy in a reflective and critically-informed manner, and we discuss the challenges inherent in working with colonial source materials. The essay concludes by outlining our goal of conducting research in a transparent manner that invites critical interrogation and debate.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -26512,16 +27320,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/the-theory-behind-livingstone-online',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-07-01 22:58:38 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Imaging the Letter',
@@ -26536,11 +27345,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'd766c0a2-d67a-467f-b4a1-422cd48779e9',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-16 21:16:38 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -26641,17 +27445,15 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This section opens by outling some of the legibility challenges posed by <em>Livingstone\'s Letter from Bambarre</em>. The section then discusses the spectral imaging opportunities offered by these challenges, describes the system used to carry out the spectral imaging, and provides key technical details related to the imaging.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki and Heather F. Ball (authors), Beta edition: 2010, First edition: 2011, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -26666,19 +27468,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -26690,28 +27494,40 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki and Heather F. Ball (authors), Beta edition: 2010, First edition: 2011, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section opens by outling some of the legibility challenges posed by <em>Livingstone\'s Letter from Bambarre</em>. The section then discusses the spectral imaging opportunities offered by these challenges, describes the system used to carry out the spectral imaging, and provides key technical details related to the imaging.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -26721,16 +27537,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/imaging-the-letter',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-01-17 03:16:38 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Fever in the Tropics',
@@ -26745,11 +27562,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'd90534e6-fa44-4235-af76-80c34119b996',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-01-26 18:51:12 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -26906,65 +27718,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay contrasts nineteenth-century ideas (including Livingstone’s own) about fever with modern ideas about the causes and appropriate treatment for fever.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013402_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013402_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20497,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'badf74f5-6019-4efc-a16a-e84ab93d1bbe',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013402_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013402_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013402_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 49177,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '9138cda7-c608-4f8d-8e55-d51d22421c95',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013402_0001-tile.jpg',
       ),
     ),
   ),
@@ -26976,7 +27730,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013402_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013402_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20497,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'badf74f5-6019-4efc-a16a-e84ab93d1bbe',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013402_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013402_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013402_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 49177,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '9138cda7-c608-4f8d-8e55-d51d22421c95',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013402_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay contrasts nineteenth-century ideas (including Livingstone’s own) about fever with modern ideas about the causes and appropriate treatment for fever.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -26987,16 +27811,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'life-and-times/fever-in-the-tropics',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-01-27 00:51:12 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'LEAP (2013-2017): A Project History, Part I',
@@ -27011,11 +27836,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'da31bc5d-a889-49c7-8a85-2c9fc373af4d',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-04-01 17:03:05 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -27226,65 +28046,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay sets out the first part of a history of LEAP: The <em>Livingstone Online</em> Enrichment and Access Project, the NEH-funded initiative that resulted in the development of the present <em>Livingstone Online</em> site. The essay combines text, images, and access to downloadable project documents to provide an intimate, behind-the-scenes look into project.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013027_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013027_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20178,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '260f021b-1999-4eb4-86ad-114157461d87',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013027_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013027_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013027_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 39051,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'b00814f3-90d3-48f8-9a26-b4184a783ebf',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013027_0001-tile.jpg',
       ),
     ),
   ),
@@ -27296,7 +28058,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013027_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013027_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20178,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '260f021b-1999-4eb4-86ad-114157461d87',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013027_0001-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013027_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013027_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 39051,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'b00814f3-90d3-48f8-9a26-b4184a783ebf',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013027_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay sets out the first part of a history of LEAP: The <em>Livingstone Online</em> Enrichment and Access Project, the NEH-funded initiative that resulted in the development of the present <em>Livingstone Online</em> site. The essay combines text, images, and access to downloadable project documents to provide an intimate, behind-the-scenes look into project.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -27307,16 +28139,17 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/leap-2013-2017-project-history-part-i',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-04-01 22:03:05 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Three Versions of the 1870 Field Diary',
@@ -27331,11 +28164,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'dc5f43a4-713f-4d5c-b261-d8a38c06e80f',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -27349,21 +28177,13 @@ ornament their faces and heads (1871f:CVII)</p>
       0 => array(
         'value' => '<hr />
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page allows users to engage in comparative study of three versions of the 1870 Field Diary: the original 1870 Field Diary (1870-71), the revised version in the Unyanyembe Journal (1866-72), and the posthumously edited and published version in the <em>Last Journals</em> (1874). Users can scroll through each of the versions or guide their search using dates found in the texts. For each manuscript, we have selected colors that match the corresponding colors of the original documents.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -27375,29 +28195,35 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
         'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page allows users to engage in comparative study of three versions of the 1870 Field Diary: the original 1870 Field Diary (1870-71), the revised version in the Unyanyembe Journal (1866-72), and the posthumously edited and published version in the <em>Last Journals</em> (1874). Users can scroll through each of the versions or guide their search using dates found in the texts. For each manuscript, we have selected colors that match the corresponding colors of the original documents.</p>
+',
+        'format' => 'full_html',
       ),
     ),
   ),
@@ -27417,6 +28243,20 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/three-versions-the-1870-field-diary',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'The Diary across Hands, Space, and Time (3)',
@@ -27431,11 +28271,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'dd8aea19-8bea-44e3-a772-e745848e20f4',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -27703,65 +28538,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This section continues our analysis of the state of the 1870 Field Diary manuscript by turning to material aspects of the diary closely linked to its travels across hands, space, and time. In particular, the section examines how the many environments through which the diary has circulated have left their marks on its pages. This section also includes a brief discussion of notable material features of the manuscript not covered in the foregoing sections.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -27773,7 +28550,77 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section continues our analysis of the state of the 1870 Field Diary manuscript by turning to material aspects of the diary closely linked to its travels across hands, space, and time. In particular, the section examines how the many environments through which the diary has circulated have left their marks on its pages. This section also includes a brief discussion of notable material features of the manuscript not covered in the foregoing sections.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -27783,16 +28630,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-diary-across-hands-space-and-time-3',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Field Diary IV: An Overview',
@@ -27807,11 +28655,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'df7c40c8-c422-4120-a915-59c9c153cb58',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 08:05:58 -0600',
-  'user_uuid' => '0474136e-da6f-4c0b-9472-898ca7edbb66',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -27892,17 +28735,15 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary IV, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). This notebook contains Livingstone\'s early thoughts on two topics that prove central to his final journey: authority struggles with his men and outrage over the Zanzibar-based Arab slave trade. This diary also contains notations on local cultures, geography, and agriculture.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -27917,19 +28758,21 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -27941,28 +28784,40 @@ ornament their faces and heads (1871f:CVII)</p>
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary IV, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). This notebook contains Livingstone\'s early thoughts on two topics that prove central to his final journey: authority struggles with his men and outrage over the Zanzibar-based Arab slave trade. This diary also contains notations on local cultures, geography, and agriculture.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -27972,16 +28827,17 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-iv-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 14:05:58 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'TEI P5 Encoding Guidelines',
@@ -27996,11 +28852,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'e3ff9ebe-6577-45e5-81b2-eb9ad2e3abba',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:49:23 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -28748,17 +29599,15 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page presents the original TEI P5 encoding guidelines used by the first phase of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> (2010-13) to transcribe the 1871 Field Diary. The guidelines have now been incorporated into (and so superseded by) the main <em>Livingstone Online</em> <a href="http://livingstoneonline.github.io/LEAP-ODD/leap.html" target="_blank">coding guidelines</a>, but the manuscript specific information set out here nonetheless remains a useful record of Livingstone\'s authorial practices in composing the text of the diary.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki (author), Kate Simpson (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -28773,19 +29622,21 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -28797,28 +29648,40 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki (author), Kate Simpson (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page presents the original TEI P5 encoding guidelines used by the first phase of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> (2010-13) to transcribe the 1871 Field Diary. The guidelines have now been incorporated into (and so superseded by) the main <em>Livingstone Online</em> <a href="http://livingstoneonline.github.io/LEAP-ODD/leap.html" target="_blank">coding guidelines</a>, but the manuscript specific information set out here nonetheless remains a useful record of Livingstone\'s authorial practices in composing the text of the diary.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -28828,16 +29691,17 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/tei-p5-encoding-guidelines',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-09 23:49:23 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Outreach Program',
@@ -28852,11 +29716,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'e5b11e17-a894-4e30-b7fa-fabfc2177fdc',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-04-29 21:05:09 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -28885,11 +29744,71 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_014081_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_014081_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20676,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'fd906174-9aca-4fc4-9bc7-551bb990efa6',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_014081_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_014081_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_014081_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 59206,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7405c4bb-ffff-4f4f-a437-8c2d862ef412',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_014081_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -28899,56 +29818,8 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_014081_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_014081_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20676,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'fd906174-9aca-4fc4-9bc7-551bb990efa6',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_014081_0001-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_014081_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_014081_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 59206,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7405c4bb-ffff-4f4f-a437-8c2d862ef412',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/liv_014081_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -28959,16 +29830,17 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'resources/livingstone-online-outreach-program',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-04-30 02:05:09 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'The Letter with Annotations',
@@ -28983,11 +29855,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'e6c8584c-5b4c-4eb1-b875-ac05f66086b3',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-01-23 18:01:11 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -29001,20 +29868,11 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       0 => array(
         'value' => '<hr />
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This page allows users to study <em>Livingstone\'s Letter from Bambarre</em> alongside a detailed set of annotations.</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_byline' => array(),
   'field_section_carousel_image' => array(
     'und' => array(
       0 => array(
@@ -29026,19 +29884,21 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -29050,36 +29910,35 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Livingstone\'s Letter from Bambarre',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
         'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page allows users to study <em>Livingstone\'s Letter from Bambarre</em> alongside a detailed set of annotations.</p>
+',
+        'format' => 'full_html',
       ),
     ),
   ),
@@ -29095,6 +29954,27 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Livingstone\'s Letter from Bambarre',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/the-letter-annotations',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2017-01-24 00:01:11 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Composition Practices',
@@ -29109,11 +29989,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'ec4831b5-1dfb-407f-9029-5c6e5715933c',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -29368,65 +30243,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_overview' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>This essay explores Livingstone’s composition practices from 1870-1871 in order to show how they vary from the practices scholars have previously identified in Livingstone’s other works. As such, the manuscripts from this period – Field Diary XIII, the 1870 Field Diary, and the Unyanyembe Journal – offer insights into how the circumstances of imperial exploration change composition practices. The essay also discusses the material edited out from Livingstone’s posthumously published <em>Last Journals </em>(1874).</p>
-',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
       ),
     ),
   ),
@@ -29438,7 +30255,77 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '65x65-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 14032,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => '390x293-tile.jpg',
+        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 17417,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This essay explores Livingstone’s composition practices from 1870-1871 in order to show how they vary from the practices scholars have previously identified in Livingstone’s other works. As such, the manuscripts from this period – Field Diary XIII, the 1870 Field Diary, and the Unyanyembe Journal – offer insights into how the circumstances of imperial exploration change composition practices. The essay also discusses the material edited out from Livingstone’s posthumously published <em>Last Journals </em>(1874).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -29448,16 +30335,17 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/livingstones-composition-practices',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Livingstone in 1871',
@@ -29472,11 +30360,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'ee070bc7-7f68-4e61-962d-038e1703231a',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:40:50 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -30105,17 +30988,15 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This section offers an overview of Livingstone’s final travels and objectives, including the historical circumstances in which he composed the 1871 Field Diary. The section also presents a short history of the village of Nyangwe, describes the main part of Livingstone\'s sojourn in the village, and sets out the key circumstances surrounding the massacre that Livingstone witnessed in Nyangwe on 15 July 1871. Finally, the section examines some of the most important differences in the representations of the massacre in the 1871 Field Diary, the Unyanyembe Journal (1866-72), and Livingstone\'s <em>Last Journals</em> (1874).</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -30130,19 +31011,21 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -30154,32 +31037,21 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_section_date' => array(),
-  'field_section_subtitle' => array(),
-  'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
+  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -30187,7 +31059,31 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section offers an overview of Livingstone’s final travels and objectives, including the historical circumstances in which he composed the 1871 Field Diary. The section also presents a short history of the village of Nyangwe, describes the main part of Livingstone\'s sojourn in the village, and sets out the key circumstances surrounding the massacre that Livingstone witnessed in Nyangwe on 15 July 1871. Finally, the section examines some of the most important differences in the representations of the massacre in the 1871 Field Diary, the Unyanyembe Journal (1866-72), and Livingstone\'s <em>Last Journals</em> (1874).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
   'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/livingstone-in-1871',
+      'language' => 'und',
+    ),
+  ),
+  'date' => '2017-02-09 23:40:50 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Final Manuscripts (1865-1873)',
@@ -30202,11 +31098,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'ef7677b7-0212-4c34-bb8e-ce826eefb0af',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 09:20:29 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -30226,17 +31117,15 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces our critical edition of Livingstone\'s final field diaries and journals (1866-73).</p>
-',
-        'format' => 'full_html',
+        'value' => 'A critical edition, Beta version: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -30251,19 +31140,21 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -30275,28 +31166,40 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'A critical edition, Beta version: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces our critical edition of Livingstone\'s final field diaries and journals (1866-73).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -30314,16 +31217,17 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/livingstones-final-manuscripts-1865-1873',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 15:20:29 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Addressee',
@@ -30338,11 +31242,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'f08e9f08-303d-448e-8c8a-d09c5dfba96e',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-06-01 11:36:22 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -30357,8 +31256,75 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
         'value' => '<p><img alt="" class="media-image attr__typeof__foaf:Image img__fid__900 img__view_mode__media_large attr__format__media_large" height="13" src="/sites/default/files/styles/large/public/arrow-right.png?itok=aCpXptpT" typeof="foaf:Image" width="13"></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013434_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013434_0001-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 20259,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'fce219fb-9896-4cc9-92f3-5899eb7217b0',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013434_0001-carousel.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013434_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013434_0001-tile_0.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 47612,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '1f7d9317-e2c2-4f9d-9a99-d927fb7a4e85',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013434_0001-tile_0.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(
+    'und' => array(
+      0 => array(
+        'value' => '/browse/addressee',
+        'format' => NULL,
       ),
     ),
   ),
@@ -30371,56 +31337,15 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(
     'und' => array(
       0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013434_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013434_0001-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 20259,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'fce219fb-9896-4cc9-92f3-5899eb7217b0',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013434_0001-carousel.jpg',
+        'value' => 'Browse by',
+        'format' => NULL,
       ),
     ),
   ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013434_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013434_0001-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 47612,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '1f7d9317-e2c2-4f9d-9a99-d927fb7a4e85',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013434_0001-tile_0.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -30431,30 +31356,17 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_pre_title' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Browse by',
-        'format' => NULL,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/addressee',
+      'language' => 'und',
     ),
   ),
-  'field_section_outbound_link' => array(
-    'und' => array(
-      0 => array(
-        'value' => '/browse/addressee',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-  ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-06-01 16:36:22 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Field Diary XVII: An Overview',
@@ -30469,11 +31381,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'f14df138-9618-48a7-967e-c9122d79add2',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-22 09:08:15 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -30537,17 +31444,15 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces Field Diary XVII, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). Livingstone began this diary at the end of his life, recording geographical information, scientific observations, and local conflicts within days of his death. The diary ends with a note from Livingstone\'s porter, Jacob Wainwright.</p>
-',
-        'format' => 'full_html',
+        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -30562,19 +31467,21 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -30586,28 +31493,40 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Megan Ward, with Adrian S. Wisnicki, First edition: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This page introduces Field Diary XVII, which is part of our critical edition of Livingstone\'s final field diaries and journals (1866-73). Livingstone began this diary at the end of his life, recording geographical information, scientific observations, and local conflicts within days of his death. The diary ends with a note from Livingstone\'s porter, Jacob Wainwright.</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -30617,16 +31536,17 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/field-diary-xvii-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-22 15:08:15 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Spectral Imaging: Overview',
@@ -30641,11 +31561,6 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'f2928a2c-8998-407f-beab-43aaa7679c45',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2016-11-14 16:39:50 -0600',
-  'user_uuid' => '6526347b-b488-4611-aed1-cb54535fac22',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -30679,11 +31594,71 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000202_0002_IC1_(liv_000204_0001_trans)-new-carousel_0.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_000202_0002_IC1_(liv_000204_0001_trans)-new-carousel_0.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 22100,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'b588ca63-2c28-4073-8f47-ef6c2581bc3f',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_000202_0002_IC1_(liv_000204_0001_trans)-new-carousel_0.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000202_0002_IC1_(liv_000204_0001_trans)-new-tile_0.jpg',
+        'uri' => 'public://section_page/grid_images/liv_000202_0002_IC1_(liv_000204_0001_trans)-new-tile_0.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 45844,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '0a23af53-2c97-4862-9f72-9a3cd9cb3c56',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 292,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 292,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_000202_0002_IC1_(liv_000204_0001_trans)-new-tile_0.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -30693,56 +31668,8 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_000202_0002_IC1_(liv_000204_0001_trans)-new-carousel_0.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_000202_0002_IC1_(liv_000204_0001_trans)-new-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 22100,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'b588ca63-2c28-4073-8f47-ef6c2581bc3f',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_000202_0002_IC1_(liv_000204_0001_trans)-new-carousel_0.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_000202_0002_IC1_(liv_000204_0001_trans)-new-tile_0.jpg',
-        'uri' => 'public://section_page/grid_images/liv_000202_0002_IC1_(liv_000204_0001_trans)-new-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 45844,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '0a23af53-2c97-4862-9f72-9a3cd9cb3c56',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 292,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 292,
-        'uuid_features_packaged_file_path' => 'assets/liv_000202_0002_IC1_(liv_000204_0001_trans)-new-tile_0.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -30753,16 +31680,17 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/spectral-imaging-overview',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2016-11-14 22:39:50 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Manuscript Structure',
@@ -30777,11 +31705,6 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'f2fbbb5a-5113-4031-b5ea-0a343971a1d6',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2017-02-09 17:46:43 -0600',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -31059,17 +31982,15 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
-  'field_section_overview' => array(
+  'field_section_byline' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This section sets out an analysis of the structure of the 1871 Field Diary, including Livingstone’s numbering system, the distinction between journal entries and notes, Livingstone’s orthography, and a handful of additional elements (sketches, maps, calculations, extraneous foreign text, and flourishes to correct ink flow).</p>
-',
-        'format' => 'full_html',
+        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
+        'format' => NULL,
       ),
     ),
   ),
@@ -31084,19 +32005,21 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
         'status' => 1,
         'type' => 'image',
         'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 65,
+          'width' => 65,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 65,
         'height' => 65,
+        'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
       ),
     ),
   ),
+  'field_section_date' => array(),
   'field_section_grid_image' => array(
     'und' => array(
       0 => array(
@@ -31108,28 +32031,40 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
         'status' => 1,
         'type' => 'image',
         'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
           'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'width' => 390,
         'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
       ),
     ),
   ),
-  'field_section_byline' => array(
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
-        'value' => 'Adrian S. Wisnicki (author), Debbie Harrison (editor), Beta version: 2011, First edition & corrections: 2012-13, Updated: 2017',
-        'format' => NULL,
+        'value' => 0,
       ),
     ),
   ),
-  'field_section_date' => array(),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>This section sets out an analysis of the structure of the 1871 Field Diary, including Livingstone’s numbering system, the distinction between journal entries and notes, Livingstone’s orthography, and a handful of additional elements (sketches, maps, calculations, extraneous foreign text, and flourishes to correct ink flow).</p>
+',
+        'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(
     'und' => array(
       0 => array(
@@ -31139,16 +32074,17 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
     ),
   ),
   'field_section_teaser' => array(),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'spectral-imaging/livingstones-manuscript-structure',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2017-02-09 23:46:43 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Who is Livingstone Online\'s Audience?',
@@ -31163,11 +32099,6 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'fbe43c27-596e-4517-9823-2bfd3ff3cb55',
-  'path' => array(
-    'pathauto' => 1,
-  ),
-  'date' => '2015-03-20 13:09:55 -0500',
-  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
   'field_section' => array(
     'und' => array(
       0 => array(
@@ -31201,11 +32132,71 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> &#10548;</a></span></span></p>
 
 ',
-        'summary' => '',
         'format' => 'full_html',
       ),
     ),
   ),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013005_0001-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_013005_0001-carousel_0.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 19960,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '60c9d5f0-c5d9-483d-bcab-af344c30fb65',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 65,
+          'width' => 65,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 65,
+        'width' => 65,
+        'uuid_features_packaged_file_path' => 'assets/liv_013005_0001-carousel_0.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_013005_0001-tile.jpg',
+        'uri' => 'public://section_page/grid_images/liv_013005_0001-tile.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 49139,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '363631d8-2dcb-45dc-98bc-622f815852eb',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 293,
+          'width' => 390,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 293,
+        'width' => 390,
+        'uuid_features_packaged_file_path' => 'assets/liv_013005_0001-tile.jpg',
+      ),
+    ),
+  ),
+  'field_section_image' => array(),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -31215,56 +32206,8 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013005_0001-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/liv_013005_0001-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 19960,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '60c9d5f0-c5d9-483d-bcab-af344c30fb65',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 65,
-          'height' => 65,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 65,
-        'height' => 65,
-        'uuid_features_packaged_file_path' => 'assets/liv_013005_0001-carousel_0.jpg',
-      ),
-    ),
-  ),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 9,
-        'filename' => 'liv_013005_0001-tile.jpg',
-        'uri' => 'public://section_page/grid_images/liv_013005_0001-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 49139,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '363631d8-2dcb-45dc-98bc-622f815852eb',
-        'rdf_mapping' => array(),
-        'image_dimensions' => array(
-          'width' => 390,
-          'height' => 293,
-        ),
-        'alt' => NULL,
-        'title' => NULL,
-        'width' => 390,
-        'height' => 293,
-        'uuid_features_packaged_file_path' => 'assets/liv_013005_0001-tile.jpg',
-      ),
-    ),
-  ),
-  'field_section_byline' => array(),
-  'field_section_date' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(
     'und' => array(
@@ -31275,16 +32218,17 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
       ),
     ),
   ),
-  'field_section_pre_title' => array(),
-  'field_section_outbound_link' => array(),
-  'field_section_open_in_new_tab' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'about-this-site/who-livingstone-onlines-audience',
+      'language' => 'und',
     ),
   ),
-  'field_section_page_transcription' => array(),
+  'date' => '2015-03-20 18:09:55 +0000',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   return $nodes;
 }

@@ -3,6 +3,7 @@ description = Imports all the "Section Page" nodes.
 core = 7.x
 package = Livingstone
 version = 7.x-1.0
+dependencies[] = livingstone_section_page_feature
 dependencies[] = uuid_features
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2

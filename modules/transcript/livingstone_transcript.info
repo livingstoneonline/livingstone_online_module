@@ -1,4 +1,4 @@
-name = "Livingstone Transcript"
+name = "Livingstone Transcript Module"
 description = "Provides the transcript field along with a mechanism for generating transcripts."
 package = Livingstone
 dependencies[] = islandora
