@@ -41,7 +41,7 @@ function livingstone_section_page_feature_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '2',
+          'weight' => '3',
         ),
         'path' => array(
           'weight' => '15',

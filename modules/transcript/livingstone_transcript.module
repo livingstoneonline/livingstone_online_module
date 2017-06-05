@@ -96,7 +96,7 @@ function livingstone_transcript_field_formatter_view($entity_type, $entity, $fie
             )
           ),
           '#options' => $documents,
-          '#default_value' => $project_id,
+          '#value' => $project_id,
         ),
         'date' => array(
           '#type' => 'select',

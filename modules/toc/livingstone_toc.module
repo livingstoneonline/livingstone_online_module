@@ -10,6 +10,7 @@
  */
 function livingstone_toc_form_menu_edit_item_alter(array &$form, array &$form_state) {
   $form['link_path']['#type'] = 'textarea';
+  unset($form['link_path']['#maxlength']);
 }
 
 /**
@@ -133,6 +134,7 @@ function livingstone_toc_field_widget_form(array &$form, array &$form_state, $fi
         '#type' => 'select',
         '#title' => t('display table of contents'),
         '#options' => array(t('Do not display table of contents')) + $menus,
+        '#default_value' => isset($items[$delta]) ? $items[$delta] : NULL,
       );
       return array('menu_name' => $element);
   }
@@ -144,5 +146,9 @@ function livingstone_toc_field_widget_form(array &$form, array &$form_state, $fi
 function theme_livingstone_table_of_contents(array $variables) {
   $menu = menu_tree_page_data($variables['menu_name'], NULL, FALSE);
   $output = menu_tree_output($menu);
+  // Open in a new tab.
+  foreach (element_children($output) as $key) {
+    $output[$key]['#localized_options']['attributes']['target'] = '_blank';
+  }
   return drupal_render($output);
 }

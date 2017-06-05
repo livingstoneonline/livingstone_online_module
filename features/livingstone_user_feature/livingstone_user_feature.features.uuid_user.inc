@@ -27,7 +27,7 @@ function livingstone_user_feature_uuid_features_default_users() {
   'roles' => array(
     2 => 'authenticated user',
   ),
-  'date' => '2017-04-11 12:56:29 -0500',
+  'date' => '2017-04-11 17:56:29 +0000',
 );
   $users[] = array(
   'name' => 'awisnicki',
@@ -46,7 +46,7 @@ function livingstone_user_feature_uuid_features_default_users() {
   'roles' => array(
     2 => 'authenticated user',
   ),
-  'date' => '2014-01-30 14:31:28 -0600',
+  'date' => '2014-01-30 20:31:28 +0000',
 );
   $users[] = array(
   'name' => 'jlivingstone',
@@ -65,7 +65,7 @@ function livingstone_user_feature_uuid_features_default_users() {
   'roles' => array(
     2 => 'authenticated user',
   ),
-  'date' => '2016-11-20 14:52:02 -0600',
+  'date' => '2016-11-20 20:52:02 +0000',
 );
   $users[] = array(
   'name' => 'hball',
@@ -84,7 +84,7 @@ function livingstone_user_feature_uuid_features_default_users() {
   'roles' => array(
     2 => 'authenticated user',
   ),
-  'date' => '2016-03-24 14:41:02 -0500',
+  'date' => '2016-03-24 19:41:02 +0000',
 );
   $users[] = array(
   'name' => 'aliff.angela',
@@ -103,7 +103,7 @@ function livingstone_user_feature_uuid_features_default_users() {
   'roles' => array(
     2 => 'authenticated user',
   ),
-  'date' => '2015-04-24 18:26:49 -0500',
+  'date' => '2015-04-24 23:26:49 +0000',
 );
   $users[] = array(
   'name' => 'wardmegan',
@@ -122,7 +122,7 @@ function livingstone_user_feature_uuid_features_default_users() {
   'roles' => array(
     2 => 'authenticated user',
   ),
-  'date' => '2014-12-12 13:13:32 -0600',
+  'date' => '2014-12-12 19:13:32 +0000',
 );
   $users[] = array(
   'name' => 'akkumari',
@@ -141,7 +141,7 @@ function livingstone_user_feature_uuid_features_default_users() {
   'roles' => array(
     2 => 'authenticated user',
   ),
-  'date' => '2014-12-12 13:11:11 -0600',
+  'date' => '2014-12-12 19:11:11 +0000',
 );
   return $users;
 }

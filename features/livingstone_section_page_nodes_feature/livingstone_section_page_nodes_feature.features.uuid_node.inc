@@ -1439,7 +1439,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -1461,6 +1460,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -1595,7 +1595,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -1624,6 +1623,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -1732,7 +1738,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -1762,6 +1767,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -2185,7 +2191,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -2215,6 +2220,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -2270,7 +2276,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(),
   'field_section_outbound_link' => array(),
   'field_section_overview' => array(),
@@ -2278,6 +2283,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'url_alias' => array(
     0 => array(
       'alias' => 'materials',
@@ -2552,7 +2558,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -2582,6 +2587,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -2722,7 +2728,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -2751,6 +2756,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -2906,7 +2912,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -2935,6 +2940,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -3085,7 +3097,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -3114,6 +3125,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -3251,7 +3269,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -3280,6 +3297,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -3749,7 +3767,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -3771,6 +3788,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -4041,7 +4059,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -4070,6 +4087,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -4322,7 +4346,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -4351,6 +4374,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -4437,7 +4467,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -4466,6 +4495,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -4588,7 +4618,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -4617,6 +4646,13 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -5144,7 +5180,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -5174,6 +5209,7 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -5348,7 +5384,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -5378,6 +5413,7 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -5647,7 +5683,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -5677,6 +5712,7 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -5763,7 +5799,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -5803,6 +5838,7 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 0,
   ),
@@ -5939,7 +5975,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -5968,6 +6003,13 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -6126,7 +6168,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6155,6 +6196,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -6305,7 +6347,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6334,6 +6375,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -6489,7 +6531,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6518,6 +6559,13 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -6634,7 +6682,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6664,6 +6711,7 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -6778,7 +6826,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6807,6 +6854,13 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -6948,7 +7002,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6977,6 +7030,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -7171,7 +7225,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -7193,6 +7246,7 @@ Elizabeth Maxwell</span></p>
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -7353,7 +7407,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -7382,6 +7435,13 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -7609,7 +7669,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -7639,6 +7698,7 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -8342,7 +8402,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -8372,6 +8431,7 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -8480,7 +8540,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -8512,6 +8571,7 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -8598,7 +8658,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -8606,14 +8665,7 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_outbound_link' => array(
-    'und' => array(
-      0 => array(
-        'value' => '/islandora/search',
-        'format' => NULL,
-      ),
-    ),
-  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(),
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(
@@ -8634,12 +8686,13 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'in-his-own-words/digital-catalogue-record',
+      'alias' => 'in-his-own-words/catalogue',
       'language' => 'und',
     ),
   ),
@@ -8756,7 +8809,6 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -8778,6 +8830,13 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -9182,7 +9241,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -9211,6 +9269,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -9367,7 +9432,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -9396,6 +9460,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -9688,7 +9759,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -9717,6 +9787,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -9803,7 +9880,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -9832,6 +9908,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -9948,7 +10025,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -9970,6 +10046,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -10107,7 +10190,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -10136,6 +10218,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -10262,7 +10351,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -10291,6 +10379,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -10426,7 +10521,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -10455,6 +10549,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -10612,7 +10713,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -10641,6 +10741,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -10775,7 +10876,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -10804,6 +10904,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -11276,7 +11383,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -11305,6 +11411,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -12221,7 +12334,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -12251,6 +12363,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -12396,7 +12509,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -12423,6 +12535,13 @@ The Livingstone Spectral Imaging Project<br />
         'value' => '<p>A multispectral critical edition (2011-2013, 2017)</p>
 ',
         'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
       ),
     ),
   ),
@@ -12867,7 +12986,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -12897,6 +13015,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -13324,7 +13443,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -13354,6 +13472,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -13545,7 +13664,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -13575,6 +13693,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -14226,7 +14345,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -14256,6 +14374,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -14400,7 +14519,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -14430,6 +14548,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -14555,7 +14674,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -14589,6 +14707,13 @@ The Livingstone Spectral Imaging Project<br />
         'value' => '<p>A multispectral critical edition (2013-2017)</p>
 ',
         'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
       ),
     ),
   ),
@@ -14708,7 +14833,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -14738,6 +14862,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -14908,7 +15033,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -14937,6 +15061,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -15060,7 +15185,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -15087,6 +15211,13 @@ The Livingstone Spectral Imaging Project<br />
         'value' => '<p>A multispectral critical edition (2010-2011, 2017)</p>
 ',
         'format' => 'full_html',
+      ),
+    ),
+  ),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
       ),
     ),
   ),
@@ -15378,7 +15509,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -15407,6 +15537,13 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -15587,7 +15724,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -15617,6 +15753,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -15781,7 +15918,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -15811,6 +15947,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -16445,7 +16582,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -16474,6 +16610,13 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -16621,7 +16764,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -16650,6 +16792,13 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -16798,7 +16947,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -16827,6 +16975,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -16984,7 +17133,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -17013,6 +17161,13 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -17272,7 +17427,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -17302,6 +17456,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -17435,7 +17590,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -17465,6 +17619,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -17618,7 +17773,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -17647,6 +17801,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -17761,7 +17916,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -17791,6 +17945,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -18084,7 +18239,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -18114,6 +18268,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -18317,7 +18472,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -18347,6 +18501,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -18696,7 +18851,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -18725,6 +18879,13 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -18871,7 +19032,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -18900,6 +19060,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -19234,7 +19395,6 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -19256,6 +19416,13 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -19398,7 +19565,6 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -19427,6 +19593,13 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -19758,7 +19931,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -19787,6 +19959,13 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -20040,7 +20219,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -20070,6 +20248,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -20156,7 +20335,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -20201,6 +20379,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -20315,7 +20494,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -20345,6 +20523,7 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -20502,7 +20681,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -20531,6 +20709,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -20919,7 +21098,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -20948,6 +21126,13 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -21211,7 +21396,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -21240,6 +21424,13 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -21431,7 +21622,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -21461,6 +21651,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -22162,7 +22353,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -22192,6 +22382,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -22472,7 +22663,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -22501,6 +22691,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -22640,7 +22831,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -22669,6 +22859,13 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -22787,7 +22984,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -22821,6 +23017,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -22915,7 +23112,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -22952,6 +23148,13 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -23221,7 +23424,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -23243,6 +23445,13 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -23447,7 +23656,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -23477,6 +23685,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -23487,6 +23696,113 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 00:42:51 +0000',
+  'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
+);
+  $nodes[] = array(
+  'title' => 'Location',
+  'log' => '',
+  'status' => 1,
+  'comment' => 0,
+  'promote' => 0,
+  'sticky' => 0,
+  'type' => 'section_page',
+  'language' => 'en',
+  'created' => 1496682436,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'c301ad6d-8a42-4467-854c-5ba54a7f63ad',
+  'field_section' => array(
+    'und' => array(
+      0 => array(
+        'tid' => 'f84b765b-34bc-4c58-b139-b7cec8d09d08',
+        'uuid' => 'f84b765b-34bc-4c58-b139-b7cec8d09d08',
+      ),
+    ),
+  ),
+  'field_section_body' => array(),
+  'field_section_byline' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000071_0001-article.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_000071_0001-article.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 457681,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => 'acb5a72d-5a68-41bb-956b-3a0b6ed887ec',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 1037,
+          'width' => 1556,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 1037,
+        'width' => 1556,
+        'uuid_features_packaged_file_path' => 'assets/liv_000071_0001-article.jpg',
+      ),
+    ),
+  ),
+  'field_section_date' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000071_0001-article.jpg',
+        'uri' => 'public://section_page/grid_images/liv_000071_0001-article.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 457681,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '88971f2a-df76-4416-b19a-ce1717892ea3',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 1037,
+          'width' => 1556,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 1037,
+        'width' => 1556,
+        'uuid_features_packaged_file_path' => 'assets/liv_000071_0001-article.jpg',
+      ),
+    ),
+  ),
+  'field_section_open_in_new_tab' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_section_outbound_link' => array(),
+  'field_section_overview' => array(),
+  'field_section_page_transcription' => array(),
+  'field_section_pre_title' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Browse by',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_section_subtitle' => array(),
+  'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'in-his-own-words/location',
+      'language' => 'en',
+    ),
+  ),
+  'date' => '2017-06-05 17:07:16 +0000',
   'user_uuid' => '50364555-24c0-4c4a-a038-46124d918c7a',
 );
   $nodes[] = array(
@@ -23700,7 +24016,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -23729,6 +24044,13 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -23815,7 +24137,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -23844,6 +24165,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -24158,7 +24480,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -24187,6 +24508,13 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -24377,7 +24705,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -24407,6 +24734,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -24609,7 +24937,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -24639,6 +24966,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -24935,7 +25263,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -24957,6 +25284,13 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -25130,7 +25464,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -25159,6 +25492,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -25423,7 +25757,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -25453,6 +25786,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -25617,7 +25951,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -25646,6 +25979,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -25660,7 +25994,7 @@ ornament their faces and heads (1871f:CVII)</p>
 );
   $nodes[] = array(
   'title' => 'Project History (1)',
-  'log' => 'Copy of the revision from <em class="placeholder">Tue, 03/14/2017 - 09:34</em>.',
+  'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
@@ -26159,7 +26493,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -26188,6 +26521,13 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -26320,7 +26660,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -26350,6 +26689,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -26670,7 +27010,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -26699,6 +27038,13 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -27120,7 +27466,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -27150,6 +27495,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -27290,7 +27636,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -27320,6 +27665,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -27508,7 +27854,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -27537,6 +27882,13 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -27781,7 +28133,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -27811,6 +28162,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -28109,7 +28461,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -28139,6 +28490,7 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -28209,7 +28561,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -28246,6 +28597,13 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -28601,7 +28959,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -28630,6 +28987,13 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -28798,7 +29162,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -28827,6 +29190,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -29662,7 +30026,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -29691,6 +30054,13 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -29800,7 +30170,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -29830,6 +30199,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -29924,7 +30294,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -29964,6 +30333,13 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -30306,7 +30682,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -30335,6 +30710,13 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -31051,7 +31433,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -31073,6 +31454,13 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -31180,7 +31568,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -31217,6 +31604,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -31312,7 +31700,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -31356,6 +31743,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -31507,7 +31895,6 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -31536,6 +31923,7 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -31650,7 +32038,6 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -31680,6 +32067,7 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -32045,7 +32433,6 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -32074,6 +32461,13 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
     ),
   ),
   'field_section_teaser' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'path' => array(
     'pathauto' => 1,
   ),
@@ -32188,7 +32582,6 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
       ),
     ),
   ),
-  'field_section_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -32218,6 +32611,7 @@ The page immediately following Livingstone&rsquo;s final entry records a note by
       ),
     ),
   ),
+  'field_section_table_of_contents' => array(),
   'path' => array(
     'pathauto' => 1,
   ),

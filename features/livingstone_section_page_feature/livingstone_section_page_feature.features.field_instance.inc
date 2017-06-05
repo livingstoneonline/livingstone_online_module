@@ -42,7 +42,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
@@ -85,7 +85,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'rows' => 20,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -125,7 +125,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -183,7 +183,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -223,7 +223,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -281,69 +281,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-section_page-field_section_image'.
-  $field_instances['node-section_page-field_section_image'] = array(
-    'bundle' => 'section_page',
-    'deleted' => 0,
-    'description' => 'On mobile devices the image appears at the top of the page.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_section_image',
-    'label' => 'Section Image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => 'section_page/images',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
-          'upload' => 'upload',
-        ),
-      ),
-      'type' => 'media_generic',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -385,7 +323,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -423,7 +361,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -525,7 +463,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         ),
       ),
       'type' => 'textfield_&_textfield',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -604,7 +542,44 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-section_page-field_section_table_of_contents'.
+  $field_instances['node-section_page-field_section_table_of_contents'] = array(
+    'bundle' => 'section_page',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'livingstone_toc',
+        'settings' => array(),
+        'type' => 'table_of_contents_default',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_section_table_of_contents',
+    'label' => 'Table of Contents',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'livingstone_toc',
+      'settings' => array(),
+      'type' => 'table_of_contents_select',
+      'weight' => 12,
     ),
   );
 
@@ -643,7 +618,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -655,14 +630,13 @@ function livingstone_section_page_feature_field_default_field_instances() {
   t('Date');
   t('Grid Image');
   t('Main Text');
-  t('On mobile devices the image appears at the top of the page.');
   t('Open in New Tab');
   t('Outbound Link');
   t('Overview');
   t('Pre-Title');
   t('Section');
-  t('Section Image');
   t('Subtitle');
+  t('Table of Contents');
   t('Teaser');
   t('Text displayed in the the gridview level 2 for this section page.');
   t('The section this page belongs to.');
