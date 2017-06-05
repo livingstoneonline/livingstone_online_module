@@ -1,5 +1,5 @@
 /* Debug */
-
+/*
 @media only screen
 and (min-width : 1080px) {
   #transcription-viewer {
@@ -101,9 +101,11 @@ and (max-width : 766px) {
 /*
    iOS always renders the iframe completely so we have to wrap it in a div and
    scroll on that. Lovely...
- */
+ *
 .transcription-viewer-content iframe {
   display: block;
   width: 100%;
   min-height: 600px;
 }
+
+*/

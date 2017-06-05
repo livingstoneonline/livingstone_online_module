@@ -5,39 +5,29 @@
  * Search selector.
  */
 (function ($) {
-    'use strict';
+  'use strict';
 
-    /**
-     * Represents the search form.
-     * @type {string}
-     */
-    var base = 'form input[name="search_block_form"]';
+  /**
+   * Represents the search form.
+   * @type {string}
+   */
+  var base = '.form-search a[href="#"]';
 
-    /**
-     * Initialize the Livingstone Manuscript Viewer.
-     */
-    Drupal.behaviors.livingstoneSearchForm = {
-        attach: function (context, settings) {
-            // Attach to links.
-            $(base, document).once('livingstoneSearchForm', function () {
-                $(this).click(function() {
-                    $('.search-type').show();
-                    setTimeout(function () {
-                        $('.search-type').hide();
-                    }, 10000);
-                });
-                $(document).click(function(event) {
-                    if (!$(event.target).closest(base).length &&
-                        !$(event.target).closest('.search-type').length) {
-                        $('.search-type').hide();
-                    }
-                });
-            });
-        },
-        detach: function (context) {
-            $(base).removeClass('livingstoneSearchForm-processed');
-            $(base).removeData();
-            $(base).off();
-        }
-    };
+  /**
+   * Initialize the Livingstone Manuscript Viewer.
+   */
+  Drupal.behaviors.livingstoneSearchForm = {
+    attach: function (context, settings) {
+      $(base, document).once('livingstoneSearchForm', function () {
+        $(this).click(function (e) {
+          return e.stopPropagation();
+        });
+      });
+    },
+    detach: function (context) {
+      $(base).removeClass('livingstoneSearchForm-processed');
+      $(base).removeData();
+      $(base).off();
+    }
+  };
 }(jQuery));

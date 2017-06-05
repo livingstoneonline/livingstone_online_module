@@ -18,7 +18,7 @@
  * - $content: The rendered page content.
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -31,9 +31,14 @@
   <body class="loading">
     <div class="loading-modal"></div>
     <?php print $content; ?>
+    <!--
     <div class="slideout-menu">
       <h3>Sections <a class="slideout-menu-toggle">&times;</a></h3>
       <ul><?php print render($page['section']); ?></ul>
+      <section id="block-livingstone-livingstone-slide-out-menu" class="block block-livingstone hidden-xs clearfix">
+        <?php print theme('livingstone_slide_out_menu'); ?>
+      </section>
     </div>
+    -->
   </body>
 </html>

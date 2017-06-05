@@ -124,7 +124,7 @@
    */
   function getIdentifier(pid, dsid, token) {
     var baseURL = new URI().path(Drupal.settings.basePath).search(""),
-        template = new URITemplate(baseURL + "islandora/object/{pid}/datastream/{dsid}/view{?q,token}");
+        template = new URITemplate("http://livingstone/islandora/object/{pid}/datastream/{dsid}/view{?q,token}");
     return template.expand({pid: pid, dsid: dsid, token: token});
   }
 

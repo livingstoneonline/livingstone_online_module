@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Partner Nodes Feature feature.
+ */
+
+include_once 'livingstone_partner_nodes_feature.features.inc';

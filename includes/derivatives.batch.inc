@@ -7,7 +7,6 @@
 
 require_once dirname(__FILE__) . '/utilities.inc';
 require_once dirname(__FILE__) . '/batch.inc';
-require_once dirname(__FILE__) . '/fedora.import.inc';
 
 /**
  * Generates missing derivatives.

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Repository Info Nodes Feature feature.
+ */
+
+include_once 'livingstone_repository_info_nodes_feature.features.inc';

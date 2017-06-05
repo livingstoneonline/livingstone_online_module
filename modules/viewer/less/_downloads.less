@@ -2,7 +2,7 @@
 
 #downloads {
   position: fixed;
-  overflow: scroll;
+  overflow-y: auto;
   background: white;
   width: 100%;
   height: 100%;
@@ -11,6 +11,22 @@
     .responsive-padding(3em 1em 1em, 3em 2em 2em, 3em 4em 3em);
     max-width: 800px;
     margin: auto;
+  }
+  .downloads-lists {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .close {
+    .item();
+    position: absolute;
+    font-size: 0.875em;
+    // Position must match #toolbar padding and the icon-group margin.
+    top: 10px;
+    right: 5px;
+    opacity: 1;
+    // In the case of overlap show above the other element.
+    z-index: 1;
   }
   h1, h2 {
     color: #000;

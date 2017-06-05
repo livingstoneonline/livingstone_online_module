@@ -36,6 +36,34 @@
   }
 
   /**
+   * Defines a select form element that corresponds to a url parameter.
+   *
+   * @param string selector
+   *   jQuery selector to select the form element.
+   * @param string key
+   *   The key of the url parameter.
+   * @param default_value
+   *   The value used to denote that the form element is not set.
+   *
+   * @constructor
+   */
+  function SelectParam(selector, key, default_value) {
+    var that = this;
+    this.field = $(selector).selectpicker('refresh');
+    this.isset = function() {
+      return that.field.selectpicker('val') != default_value;
+    };
+    this.query = function () {
+      var query = {};
+      query[key] = that.field.selectpicker('val');
+      return that.isset() ? query : null;
+    };
+    this.clear = function () {
+      that.field.selectpicker('val', default_value);
+    };
+  }
+
+  /**
    * Defines a checkbox form element that corresponds to a url parameter.
    *
    * @param string selector
@@ -77,20 +105,20 @@
    */
   function Facet(selector, facet, default_value) {
     var that = this;
-    this.field = $(selector);
+    this.field = $(selector).selectpicker('refresh');
     this.fields = this.field;
     default_value = default_value || 0;
     this.isset = function() {
-      return that.field.val() != default_value;
+      return that.field.selectpicker('val') != default_value;
     };
     this.val = function() {
-      return that.field.val();
+      return that.field.selectpicker('val');
     };
     this.query = function () {
       return that.isset() ? facet + ":\"" + that.val() + "\"" : null;
     };
     this.clear = function () {
-      that.field.val(default_value);
+      that.field.selectpicker('val', default_value);
     };
   }
 
@@ -171,8 +199,8 @@
         sort_links = $('th a', base),
         pager_links = $('ul.pager a', base),
         full_record = new CheckboxParam('input[name="full_record"]', 'full_record'),
-        query = $('input[name="query"]'),
-        submit = $('input[type="submit"].search-button'),
+        submit = $('button.search-button'),
+        query = new Param('input[name="query"]', 'query', ''),
         sort = new Param('input[name="sort"]', 'sort', 'asc'),
         order = new Param('input[name="order"]', 'order', 'Date(s)'),
         page = new Param('input[name="page"]', 'page', 0),
@@ -182,9 +210,9 @@
         addressee = new Facet('select[name="addressee"]', settings.facets.addressee),
         repository = new Facet('select[name="repository"]', settings.facets.repository),
         genre = new Facet('select[name="genre"]', settings.facets.genre),
-        access = new Param('select[name="access"]', 'access', 'all'),
-        limit = new Param('select[name="limit"]', 'limit', 'catalogue'),
-        params = [ full_record, sort, order, page, access, limit ],
+        access = new SelectParam('select[name="access"]', 'access', 'all'),
+        limit = new SelectParam('select[name="limit"]', 'limit', 'catalogue'),
+        params = [ query, full_record, sort, order, page, access, limit ],
         facets = [ year, range, creator, addressee, repository, genre ];
 
     /**
@@ -195,7 +223,7 @@
     function buildURL() {
       var uri = new URI(top.location);
       // Unset page & facets query arguments.
-      uri.removeSearch(['access', 'sort', 'order', 'page', 'full_record', 'limit']);
+      uri.removeSearch(['query', 'access', 'sort', 'order', 'page', 'full_record', 'limit']);
       uri.removeSearch(/f\[*/);
       params.map(function (param) { return param.query() })
           .filter(function (param) { return param != null; })
@@ -241,7 +269,7 @@
       // Always update the URL before doing a rebuild.
       setURL(buildURL());
       // Trigger hidden Ajax rebuild form element.
-      $('input[name="rebuild"]').trigger('mousedown');
+      $('button[name="rebuild"]').trigger('mousedown');
     }
 
     /**
@@ -262,9 +290,6 @@
      * Performs a query.
      */
     function search() {
-      var uri = new URI();
-      uri.path('/islandora/search/' + query.val());
-      setURL(uri.toString());
       rebuild();
     }
 
@@ -275,7 +300,8 @@
      */
     function isSearchResultsOverflowed() {
       var search_results = $('.search-results');
-      var scrollWidth = search_results.get(0).scrollWidth;
+      var table = $('.search-results table');
+      var scrollWidth = table.get(0).scrollWidth;
       var width = search_results.width();
       return width < scrollWidth;
     }
@@ -334,13 +360,13 @@
       search();
     });
 
-    query.keydown(function (event) {
+    query.field.keydown(function (event) {
       if (event.keyCode == 13) {
         event.preventDefault();
       }
     });
 
-    query.keyup(function (event) {
+    query.field.keyup(function (event) {
       if (event.keyCode == 13) {
         event.preventDefault();
         search();
@@ -391,7 +417,7 @@
       page.field.val(uri.search(true).page);
       rebuild(false);
       $('html,body').animate({
-        scrollTop: '0px'
+        scrollTop: $('.search-results').offset().top - 200
       }, 1000);
     });
 

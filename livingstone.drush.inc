@@ -37,16 +37,15 @@ function livingstone_drush_command() {
 }
 
 function drush_livingstone_import_nodes() {
-  module_load_include('inc', 'livingstone', 'includes/node.import');
-  module_load_include('inc', 'livingstone', 'includes/node.import.batch');
-  $batch = livingstone_node_import_sync_batch();
+  module_load_include('inc', 'livingstone_node_import', 'includes/node.import');
+  module_load_include('inc', 'livingstone_node_import', 'includes/node.import.batch');
   $batch['progressive'] = FALSE;
   batch_set($batch);
   drush_backend_batch_process();
 }
 
 function drush_livingstone_import_objects() {
-  module_load_include('inc', 'livingstone', 'includes/fedora.import.batch');
+  module_load_include('inc', 'livingstone_fedora_import', 'includes/fedora.import.batch');
   livingstone_fedora_import_update_tables();
   $batch = livingstone_fedora_import_add_objects_batch();
   $batch['progressive'] = FALSE;
@@ -60,7 +59,7 @@ function drush_livingstone_import_objects() {
   $batch = livingstone_fedora_import_publish_objects_batch();
   $batch['progressive'] = FALSE;
   batch_set($batch);
-  $batch = livingstone_fedora_import_reindex_manuscripts_batch();
+  $batch = livingstone_fedora_import_reindex_manuscripts_batch(TRUE);
   $batch['progressive'] = FALSE;
   batch_set($batch);
   $batch = livingstone_fedora_import_update_table_batch();

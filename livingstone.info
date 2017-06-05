@@ -2,7 +2,6 @@ name = "Livingstone Manuscript Viewer"
 description = "Viewer for islandora:manuscriptCModel objects"
 package = Islandora Viewers
 dependencies[] = islandora
-dependencies[] = islandora_basic_collection
 dependencies[] = islandora_solr
 dependencies[] = entity
 dependencies[] = date

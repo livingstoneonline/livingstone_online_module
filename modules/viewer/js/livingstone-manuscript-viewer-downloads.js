@@ -21,7 +21,7 @@
       // Attach to links.
       $(base).show();
       $(base, document).once('livingstoneDownloads', function () {
-        $('.close.icon').click(function(event) {
+        $('.close').click(function(event) {
           parent.window.postMessage({ event: 'close' }, "*");
         });
       });

@@ -1,0 +1,125 @@
+<?php
+
+/**
+ * @file
+ * Hook callbacks for this module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function livingstone_transcript_theme() {
+  return array(
+    'livingstone_transcript' => array(
+      'variables' => array(
+        // PID of the object (Required).
+        'pid' => NULL,
+        // The Datastream of the transcript, defaults to TEI.
+        'dsid' => 'TEI',
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_preprocess_theme().
+ */
+function theme_livingstone_transcript(array &$variables) {
+  module_load_include('inc', 'livingstone_transcript', 'transcript');
+  $pid = $variables['pid'];
+  $dsid = $variables['dsid'];
+  $object = islandora_object_load($pid);
+  if ($object === FALSE || !isset($object[$dsid])) {
+    $content = t('No Transcript available.');
+  }
+  else {
+    $content = livingstone_transcript_saxon_transform_embedded($object[$dsid]);
+    if ($content === FALSE) {
+      $content = t('Failed to generate transcript.');
+    }
+  }
+  $module_path = drupal_get_path('module', 'livingstone_transcript');
+  $element = array(
+    '#attached' => array(
+      'js' => array(
+        "{$module_path}/js/livingstone-transcript.js",
+      ),
+    ),
+    '#markup' => $content,
+  );
+  return drupal_render($element);
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function livingstone_transcript_field_formatter_info() {
+  return array(
+    'transcript_formatter' => array(
+      'label' => t('Transcript Display'),
+      'field types' => array('double_field'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function livingstone_transcript_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  module_load_include('inc', 'livingstone', 'includes/utilities');
+  $documents = array();
+  foreach ($items as $item) {
+    $documents[$item['first']] = $item['second'];
+  }
+  $transcriptions = array();
+  foreach ($documents as $project_id => $label) {
+    $transcriptions[] = array(
+      '#theme' => 'livingstone_transcript',
+      '#pid' => livingstone_project_id_to_pid($project_id),
+    );
+  }
+  $panels = array();
+  foreach(array_slice($documents, 0, 2) as $project_id => $label) {
+    $panels[] = array(
+      '#prefix' => '<div class="pane">',
+      '#suffix' => '</div>',
+      'toolbar' => array(
+        '#prefix' => '<div class="transcription-viewer-toolbar">',
+        '#suffix' => '</div>',
+        'transcription' => array(
+          '#type' => 'select',
+          '#attributes' => array(
+            'data-mobile' => 'true',
+            'class' => array(
+              'selectpicker',
+              'transcript',
+            )
+          ),
+          '#options' => $documents,
+          '#default_value' => $project_id,
+        ),
+        'date' => array(
+          '#type' => 'select',
+          '#attributes' => array(
+            'data-mobile' => 'true',
+            'class' => array(
+              'selectpicker',
+              'date',
+            ),
+          ),
+          '#options' => array('Select date'),
+        ),
+      ),
+      'content' => $transcriptions,
+    );
+  }
+  $element = array(
+    '#attached' => array(
+      'css' => array(drupal_get_path('module', 'livingstone_transcript') . "/css/livingstone-transcript.css"),
+    ),
+    '#prefix' => '<div class="transcription-field-display">',
+    '#suffix' => '</div>',
+    'panels' => $panels,
+  );
+  return array($element);
+}

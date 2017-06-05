@@ -1,0 +1,14 @@
+name = Livingstone Section Taxonomy Feature
+description = Defines the section taxonomy used to organize the site.
+core = 7.x
+package = Livingstone
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = livingstone_base_feature
+dependencies[] = strongarm
+dependencies[] = taxonomy
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[taxonomy][] = section
+project path = sites/all/modules/custom/livingstone_online_module/features

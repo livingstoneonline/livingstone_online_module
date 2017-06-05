@@ -5,6 +5,7 @@
 #livingstone-browse-catalogue-form .search-fields {
   padding: 21px 5px;
 }
+/*
 #livingstone-browse-catalogue-form input[type="text"] {
   // @todo use character rather than background.
   background: url('../images/search-button.png') no-repeat 1px 1px #FFF;
@@ -13,15 +14,21 @@
   height: 25px;
   width: 100%;
   display: inline;
-}
+}*/
 #livingstone-browse-catalogue-form input[type="submit"].search-button {
   margin-top: -2px;
   padding: 0 0.5em;
   height: 25px;
 }
 #livingstone-browse-catalogue-form select {
+  background-color: #f2f2f2;
+  color: black;
   margin: 0.5em 0 0.5em;
   width: 90%;
+}
+#livingstone-browse-catalogue-form button {
+  background-color: #f2f2f2;
+  color: black;
 }
 #livingstone-browse-catalogue-form select[name="limit"],
 #livingstone-browse-catalogue-form select[name="creator"],
@@ -37,12 +44,14 @@
 .search-fields .full-record {
   margin: 10px 0;
 }
+/*
 #livingstone-browse-catalogue-form input[type="checkbox"],
 #livingstone-browse-catalogue-form input[type="checkbox"] + label{
   margin: 0;
   padding: 0;
   vertical-align: middle;
 }
+*/
 #livingstone-browse-catalogue-form input[type="radio"] {
   display: block;
 }
@@ -68,6 +77,11 @@
 .search-results td.access-column a {
   margin: 0 0.5em;
   vertical-align: middle;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 body.page-islandora #livingstone-browse-catalogue-form .search-results th {
   background: #ddd none repeat scroll 0 0;
@@ -182,6 +196,7 @@ body.page-islandora #livingstone-browse-catalogue-form .search-results th {
   cursor: pointer;
   -webkit-appearance: button;
 }
+
 /*target Internet Explorer 9 and Internet Explorer 10:*/
 @media @ie9-10 {
   #livingstone-browse-catalogue-form select {
@@ -274,28 +289,6 @@ and (max-width : 1028px) {
   padding-right: 10px !important;
 }
 
-a.fa-ban,
-a.fa-ban:hover {
-  color: #b22222;
-}
-
-.download-size {
-  display: inline-block;
-  color: #808080;
-  font-size:  0.8em;
-  vertical-align: middle;
-}
-.catalogue-download-links {
-  text-align: center;
-  padding: 2em 1em;
-  font-size: 0.9em;
-}
-.catalogue-download-links div:first-of-type {
-  font-style: italic;
-}
-.catalogue-download-links a {
-  padding-right: 0.3em;
-}
 .pager-wrapper {
   text-align: center;
 }
@@ -307,15 +300,6 @@ a.fa-ban:hover {
 }
 .pager-wrapper .scroll-instructions-right {
   float: right;
-}
-
-.alt-scroll-instructions {
-  text-align: center;
-}
-
-.alt-scroll-instructions span {
-  padding-left: 1em;
-  padding-right: 1em;
 }
 
 @media screen and (max-width: 768px) {

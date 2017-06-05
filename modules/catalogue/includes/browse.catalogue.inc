@@ -37,177 +37,215 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
   $scroll_left_msg = t('&larr; click in table, left arrow key');
   $scroll_right_msg = t('click in table, right arrow key &rarr;');
   return array(
-    '#prefix' => '<div id="form_wrapper">',
-    '#suffix' => '</div>',
-    '#attached' => array(
-      'js' => array(
-        "$viewer_path/lib/URI.js",
-        "$viewer_path/js/livingstone-manuscript-viewer-modal.js",
-        "$viewer_path/js/livingstone-manuscript-viewer-downloads-modal.js",
-        "$viewer_path/js/livingstone-manuscript-viewer-transcript-tooltips.js",
-        "$viewer_path/lib/qtip2/3.0.3/jquery.qtip.min.css",
-        "$viewer_path/lib/qtip2/3.0.3/jquery.qtip.min.js",
-        "$path/js/browse.catalogue.js",
-        array(
-          'type' => 'setting',
-          'data' => array(
-            'livingstoneBrowseCatalogue' => array(
-              'facets' => livingstone_browse_catalogue_facet_fields(),
-            ),
-          )
-        ),
-      ),
-      'css' => array(
-        "$viewer_path/css/livingstone-manuscript-viewer-modal.css",
-        "$path/css/livingstone-browse-catalogue.css",
-      ),
-    ),
-    'ajax-wrapper' => array(
-      '#type' => 'container',
-      '#prefix' => '<div id="ajax-wrapper">',
+      '#prefix' => '<div id="form_wrapper">',
       '#suffix' => '</div>',
-      '#attributes' => array(
-        'class' => array(
-          'browse-catalogue-base',
-        ),
-      ),
-      'controls' => array(
-        '#type' => 'container',
-        '#attributes' => array(
-          'class' => array(
-            'col-sm-4',
-            'col-lg-3',
-            'search-fields',
+      '#attached' => array(
+        'js' => array(
+          "$viewer_path/lib/URI.js",
+          "$viewer_path/js/livingstone-manuscript-viewer-modal.js",
+          "$viewer_path/js/livingstone-manuscript-viewer-downloads-modal.js",
+          "$viewer_path/js/livingstone-manuscript-viewer-transcript-tooltips.js",
+          "$viewer_path/lib/qtip2/3.0.3/jquery.qtip.min.js",
+          "$path/js/browse.catalogue.js",
+          array(
+            'type' => 'setting',
+            'data' => array(
+              'livingstoneBrowseCatalogue' => array(
+                'facets' => livingstone_browse_catalogue_facet_fields(),
+              ),
+            )
           ),
         ),
-        'search-block' => array(
+        'css' => array(
+          "$viewer_path/css/livingstone-manuscript-viewer-modal.css",
+          "$viewer_path/lib/qtip2/3.0.3/jquery.qtip.min.css",
+          //"$path/css/livingstone-browse-catalogue.css",
+        ),
+      ),
+      'ajax-wrapper' => array(
+        '#type' => 'container',
+        '#prefix' => '<div id="ajax-wrapper">',
+        '#suffix' => '</div>',
+        '#attributes' => array(
+          'class' => array(
+            'browse-catalogue-base',
+          ),
+        ),
+        'controls' => array(
           '#type' => 'container',
           '#attributes' => array(
             'class' => array(
-              'search-block',
+              'search-fields',
+              'row',
             ),
           ),
-          '#theme' => 'livingstone_browse_catalogue_search',
-          'query' => array(
-            '#type' => 'textfield',
-            '#size' => NULL,
-            '#default_value' => $query,
+          'control_group_1' => array(
+            '#type' => 'container',
             '#attributes' => array(
               'class' => array(
-                'img-rounded',
+                'col-md-4',
+                'col-sm-6',
               ),
             ),
+            'search-block' => array(
+              '#type' => 'markup',
+              '#prefix' => '<div class="search-block">',
+              '#suffix' => '</div>',
+              'query' => array(
+                '#type' => 'textfield',
+                '#size' => NULL,
+                '#default_value' => $query,
+                '#theme' => 'livingstone_browse_catalogue_search',
+                '#attributes' => array(
+                  'class' => array(
+                    'img-rounded',
+                  ),
+                ),
+              ),
+              'search' => array(
+                '#type' => 'submit',
+                '#prefix' => '<div>',
+                '#suffix' => '</div>',
+                '#value' => t('Search'),
+                '#attributes' => array(
+                  'class' => array(
+                    'search-button',
+                    'img-rounded',
+                    'btn',
+                    'btn-default',
+                  ),
+                ),
+              ),
+            ),
+            'limit' => $limit,
+            'access' => $access,
           ),
-          'search' => array(
+          'control_group_2' => array(
+            '#type' => 'container',
+            '#attributes' => array(
+              'class' => array(
+                'col-md-4',
+                'col-sm-6',
+              ),
+            ),
+            'clear' => array(
+              '#type' => 'submit',
+              '#value' => t('Clear search / browse choices'),
+              '#submit' => array('livingstone_browse_catalogue_form_clear_submit'),
+              '#attributes' => array(
+                'class' => array(
+                  'clear-button',
+                  'img-rounded',
+                  'btn',
+                  'btn-default',
+                ),
+              ),
+            ),
+            'date-container' => array(
+              '#type' => 'container',
+              '#attributes' => array(
+                'class' => array(
+                  'date-container',
+                ),
+              ),
+              'range' => array(
+                '#theme' => 'livingstone_browse_catalogue_date_range',
+                '#attributes' => array(
+                  'class' => array(
+                    'range',
+                  ),
+                ),
+                'year' => $year,
+                'from' => $from,
+                'to' => $to,
+              ),
+            ),
+            'creator' => $creator,
+          ),
+          'control_group_3' => array(
+            '#type' => 'container',
+            '#attributes' => array(
+              'class' => array(
+                'col-md-4',
+                'col-sm-12',
+              ),
+            ),
+            'addressee' => $addressee,
+            'repository' => $repository,
+            'genre' => $genre,
+          ),
+          'control_group_4' => array(
+            '#type' => 'container',
+            '#attributes' => array(
+              'class' => array(
+                'col-xs-12',
+                'control-group-4',
+              ),
+            ),
+            'full_record' => array(
+              '#prefix' => '<div class="full-record">',
+              '#suffix' => '</div>',
+              '#type' => 'checkbox',
+              '#title' => t('Full Record'),
+              '#default_value' => $full_record,
+            ),
+            'download_links' => array(
+              '#prefix' => '<div class="catalogue-download-links">',
+              '#suffix' => '</div>',
+              '#markup' => livingstone_browse_catalogue_form_download_markup(),
+            ),
+          ),
+          'page' => array(
+            '#type' => 'hidden',
+            '#default_value' => livingstone_browse_catalogue_default_value('page', 0, $form_state),
+          ),
+          'sort' => array(
+            '#type' => 'hidden',
+            '#default_value' => livingstone_browse_catalogue_default_value('sort', 'asc', $form_state),
+          ),
+          'order' => array(
+            '#type' => 'hidden',
+            '#default_value' => livingstone_browse_catalogue_default_value('order', 'Date(s)', $form_state),
+          ),
+          'rebuild' => array(
+            '#name' => 'rebuild',
             '#type' => 'submit',
-            '#value' => t('Search'),
-            '#attributes' => array(
-              'class' => array(
-                'search-button',
-                'img-rounded',
-                'btn',
-                'btn-small',
-                'btn-secondary',
-              ),
+            '#value' => t('Rebuild'),
+            '#prefix' => '<div style="display:none">',
+            '#suffix' => '</div>',
+            '#submit' => array('livingstone_browse_catalogue_form_rebuild_submit'),
+            '#ajax' => array(
+              'wrapper' => 'ajax-wrapper',
+              'callback' => 'livingstone_browse_catalogue_form_ajax_callback',
             ),
           ),
         ),
-        'limit' => $limit,
-        'full_record' => array(
-          '#prefix' => '<div class="full-record">',
-          '#suffix' => '</div>',
-          '#type' => 'checkbox',
-          '#title' => t('Full Record'),
-          '#default_value' => $full_record,
-        ),
-        'access' => $access,
-        'date-container' => array(
+        'results' => array(
           '#type' => 'container',
           '#attributes' => array(
             'class' => array(
-              'date-container',
+              'row',
             ),
           ),
-          'range' => array(
-            '#theme' => 'livingstone_browse_catalogue_date_range',
+          'column' => array(
+            '#type' => 'container',
             '#attributes' => array(
               'class' => array(
-                'range',
+                'col-xs-12',
               ),
             ),
-            'year' => $year,
-            'from' => $from,
-            'to' => $to,
-          ),
-          'clearfix' => array(
-            '#markup' => '<div class="clearfix"></div>',
-          ),
-        ),
-        'creator' => $creator,
-        'addressee' => $addressee,
-        'repository' => $repository,
-        'genre' => $genre,
-        'page' => array(
-          '#type' => 'hidden',
-          '#default_value' => livingstone_browse_catalogue_default_value('page', 0, $form_state),
-        ),
-        'sort' => array(
-          '#type' => 'hidden',
-          '#default_value' => livingstone_browse_catalogue_default_value('sort', 'asc', $form_state),
-        ),
-        'order' => array(
-          '#type' => 'hidden',
-          '#default_value' => livingstone_browse_catalogue_default_value('order', 'Date(s)', $form_state),
-        ),
-        'clear' => array(
-          '#type' => 'submit',
-          '#value' => t('Clear search / browse choices'),
-          '#submit' => array('livingstone_browse_catalogue_form_clear_submit'),
-          '#attributes' => array(
-            'class' => array(
-              'clear-button',
-              'img-rounded',
-              'btn',
-              'btn-small',
-              'btn-secondary',
+            'top_pager' => array(
+              '#prefix' => "<div id='scroll-instructions'><div class='pager-wrapper'><span class='scroll-instructions-left'>{$scroll_left_msg}</span>",
+              '#markup' => $pager,
+              '#suffix' => "<span class='scroll-instructions-right'>{$scroll_right_msg}</span></div><div class='alt-scroll-instructions'><span class='scroll-instructions-left'>{$scroll_left_msg}</span><span class='scroll-instructions-right'>{$scroll_right_msg}</span></div></div>",
+            ),
+            'table' => $table,
+            'bottom_pager' => array(
+              '#markup' => $pager,
             ),
           ),
         ),
-        'rebuild' => array(
-          '#name' => 'rebuild',
-          '#type' => 'submit',
-          '#value' => t('Rebuild'),
-          '#prefix' => '<div style="display:none">',
-          '#suffix' => '</div>',
-          '#submit' => array('livingstone_browse_catalogue_form_rebuild_submit'),
-          '#ajax' => array(
-            'wrapper' => 'ajax-wrapper',
-            'callback' => 'livingstone_browse_catalogue_form_ajax_callback',
-          ),
-        ),
-        'download_links' => array(
-          '#markup' => livingstone_browse_catalogue_form_download_markup(),
-        ),
-      ),
-      'results' => array(
-        '#type' => 'container',
-        '#attributes' => array(
-          'class' => array(
-            'col-sm-8',
-            'col-lg-9',
-          ),
-        ),
-        'top_pager' => array(
-          '#prefix' => "<div id='scroll-instructions'><div class='pager-wrapper'><span class='scroll-instructions-left'>{$scroll_left_msg}</span>",
-          '#markup' => $pager,
-          '#suffix' => "<span class='scroll-instructions-right'>{$scroll_right_msg}</span><div style='clear:both'></div></div><div class='alt-scroll-instructions'><span class='scroll-instructions-left'>{$scroll_left_msg}</span><span class='scroll-instructions-right'>{$scroll_right_msg}</span><div style='clear:both'></div></div></div>",
-        ),
-        'table' => $table,
-        'bottom_pager' => array(
-          '#markup' => $pager,
-        ),
-      ),
-    )) + $form;
+      )) + $form;
 }
 
 function livingstone_browse_catalogue_form_download_markup() {
@@ -215,12 +253,10 @@ function livingstone_browse_catalogue_form_download_markup() {
   $tei_files = file_create_url(file_build_uri('/Livingstone-Online-Complete-TEI-transcriptions.zip'));
   $mods_files = file_create_url(file_build_uri('/Livingstone-Online-Complete-MODS-records.zip'));
   return <<<EOT
-<div class="catalogue-download-links">
   <div>Download complete:</div>
   <div><a href="$pdf_files">PDF transcriptions</a>(all users)</div>
   <div><a href="$tei_files">TEI transcriptions</a>(specialists)</div>
   <div><a href="$mods_files">MODS Records</a>(specialists)</div>
-</div>
 EOT;
 }
 
@@ -279,7 +315,7 @@ function livingstone_browse_catalogue_form_rebuild_submit(array $form, array &$f
  *   Drupal form state.
  */
 function livingstone_browse_catalogue_form_clear_submit(array $form, array &$form_state) {
-  $form_state['redirect'] = "islandora/search";
+  $form_state['redirect'] = "in-his-own-words/catalogue";
 }
 
 /**
@@ -293,7 +329,7 @@ function livingstone_browse_catalogue_form_clear_submit(array $form, array &$for
 function livingstone_browse_catalogue_form_submit(array $form, array &$form_state) {
   $values = $form_state['values'];
   $form_state['redirect'] = array(
-    "islandora/search/{$values['query']}",
+    "in-his-own-words/catalogue",
     array(
       'query' => livingstone_browse_catalogue_build_query($values),
     ),
@@ -311,6 +347,9 @@ function livingstone_browse_catalogue_form_submit(array $form, array &$form_stat
  */
 function livingstone_browse_catalogue_build_query(array $values) {
   $query = array();
+  if ($values['query']) {
+    $query['query'] = $values['query'];
+  }
   if ($values['full_record']) {
     $query['full_record'] = 1;
   }
@@ -433,8 +472,9 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
       'neither' => t('No access available'),
     ),
     '#attributes' => array(
+      'data-mobile' => 'true',
       'class' => array(
-        'img-rounded'
+        'img-rounded',
       ),
     ),
   );
@@ -447,8 +487,9 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
       'both' => t('Search catalogue & transcriptions'),
     ),
     '#attributes' => array(
+      'data-mobile' => 'true',
       'class' => array(
-        'img-rounded'
+        'img-rounded',
       ),
     ),
   );
@@ -462,8 +503,9 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
       '#default_value' => $default,
       '#options' => array_merge(array($label), $options),
       '#attributes' => array(
+        'data-mobile' => 'true',
         'class' => array(
-          'img-rounded'
+          'img-rounded',
         ),
       ),
     );
@@ -483,7 +525,7 @@ function livingstone_browse_catalogue_facet_elements(array $results, array &$for
 function livingstone_browse_catalogue_pager(array $results) {
   $mock_pager = '<div class="mock-pager"></div>';
   pager_default_initialize($results['response']['numFound'], LIVINGSTONE_BROWSE_CATALOGUE_LIMIT_RESULTS);
-  $pager = theme('pager', array('quantity' => 5));
+  $pager = theme('pager', array('quantity' => 3));
   return empty($pager) ? $mock_pager :  $pager;
 }
 
@@ -1104,6 +1146,7 @@ function livingstone_browse_catalogue_facet_range_elements($query, array &$form_
   $results = livingstone_browse_catalogue_solr_search_without_facet($facet_field, $form_state);
   list($year, $from, $to) = livingstone_browse_catalogue_facet_range_defaults($form_state);
   $years = livingstone_browse_catalogue_facet_range_options('date', $results);
+  //$years = array('1999' => '1999', '2009' => '2009', '4023' => '4023');
   $range_years = array_combine(array_keys($years), array_keys($years));
   $from_years = array_filter($range_years, function ($year) use ($to) {
     return $year <= $to || !$to;
@@ -1120,7 +1163,7 @@ function livingstone_browse_catalogue_facet_range_elements($query, array &$form_
     return in_array($default, $options) ? preg_replace('/^([1-9]{4}).*/', '\1', $default) : 0;
   };
   $classes = array(
-    'img-rounded'
+    'img-rounded',
   );
   return array(
     array(
@@ -1128,9 +1171,10 @@ function livingstone_browse_catalogue_facet_range_elements($query, array &$form_
       '#default_value' => $year,
       '#options' => array(t('Year')) + $years,
       '#attributes' => array(
+        'data-mobile' => 'true',
         'class' => $classes + array(
-          'year',
-        ),
+            'year',
+          ),
       ),
     ),
     array(
@@ -1138,9 +1182,10 @@ function livingstone_browse_catalogue_facet_range_elements($query, array &$form_
       '#default_value' => $default_value($from, $from_years),
       '#options' => array(t('From')) + $from_years,
       '#attributes' => array(
+        'data-mobile' => 'true',
         'class' => $classes + array(
-          'from',
-        ),
+            'from',
+          ),
       ),
     ),
     array(
@@ -1148,9 +1193,10 @@ function livingstone_browse_catalogue_facet_range_elements($query, array &$form_
       '#default_value' => $default_value($to, $to_years),
       '#options' => array(t('To')) + $to_years,
       '#attributes' => array(
+        'data-mobile' => 'true',
         'class' => $classes + array(
-          'to',
-        ),
+            'to',
+          ),
       ),
     ),
   );

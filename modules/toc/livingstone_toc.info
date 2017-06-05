@@ -1,0 +1,6 @@
+name = "Livingstone Table of Contents Module"
+description = "Allows fo the creation of table of contents widget on section pages."
+package = Livingstone
+dependencies[] = menu
+version = 7.x-dev
+core = 7.x

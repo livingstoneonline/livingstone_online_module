@@ -1,0 +1,8 @@
+/* line 1, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/transcript/less/livingstone-transcript.less */
+.transcription-viewer-content {
+  display: none !important;
+}
+/* line 4, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/transcript/less/livingstone-transcript.less */
+.transcription-viewer-content.active {
+  display: block !important;
+}

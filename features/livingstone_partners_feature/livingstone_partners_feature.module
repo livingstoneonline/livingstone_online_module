@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Partners Feature feature.
+ */
+
+include_once 'livingstone_partners_feature.features.inc';

@@ -1,0 +1,56 @@
+/*
+.icon() {
+  display: inline-block;
+  //height: @icon-height;
+  //line-height: @icon-height;
+  vertical-align: middle;
+  margin: @icon-margin;
+  color: #333;
+}
+
+.button() {
+  .border-radius(@button-radius);
+  background: none repeat scroll 0 0 #eee;
+  border: 1px solid #ccc;
+  padding: @button-padding;
+  // Line height should account for the border used in button display.
+  //line-height: @icon-height - 2;
+}*/
+/*
+.select() {
+  .appearance(none);
+  padding-right: 20px !important;
+  background: url(../images/select-arrow.png) no-repeat #eee !important;
+  background-size: 1em !important;
+  background-position: right !important;
+  font-family: Source Sans Pro, sans-serif;
+}*/
+/* line 7, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_icons.less */
+.icon-group-group {
+  display: inline-block;
+}
+/* line 10, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_icons.less */
+.icon-group {
+  display: inline-block;
+  margin: 4px 0;
+}
+/* line 13, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_icons.less */
+.icon-group .icon-group-item {
+  display: inline-block;
+}
+/* line 17, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_icons.less */
+.rotate {
+  margin-left: 2px;
+}
+/* line 20, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_icons.less */
+.close {
+  position: absolute;
+  width: 25px;
+  top: 6px;
+  right: 2px;
+  z-index: 1;
+}
+/* line 29, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_icons.less */
+.disabled {
+  color: darkgray !important;
+}

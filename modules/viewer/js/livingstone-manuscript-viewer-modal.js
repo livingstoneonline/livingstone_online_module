@@ -17,7 +17,10 @@
    */
   Drupal.behaviors.livingstoneManuscriptViewerModal = {
     attach: function (context, settings) {
-
+      if (!$('div.livingstone-manuscript-viewer-modal').length) {
+        // Add the element to which our logic will bind.
+        $('body').prepend('<div class="livingstone-manuscript-viewer-modal"></div>');
+      }
       // Attach to links.
       $(base, document).once('livingstoneManuscriptViewerModal', function () {
         $(this).click(function(event) {
@@ -56,7 +59,7 @@
     var url = '/livingstone/manuscript/' + pid + '/view';
     $.get('/livingstone/manuscript/' + pid + '/access', function (data) {
       if (data.viewable) {
-        $('body').prepend('<div class="livingstone-manuscript-viewer-modal"><iframe src="' + url + '"></iframe><div>');
+        $('div.livingstone-manuscript-viewer-modal').prepend('<iframe src="' + url + '"></iframe>');
         $('body').addClass('modal-open');
         sendMessage('open', pid, page);
       }
@@ -68,7 +71,7 @@
    */
   function closeModal() {
     $('body').removeClass('modal-open');
-    $('div.livingstone-manuscript-viewer-modal').remove();
+    $('div.livingstone-manuscript-viewer-modal iframe').remove();
   }
 
   /**
@@ -78,7 +81,7 @@
    *   TRUE if the viewer is defined FALSE otherwise.
    */
   function viewerExists() {
-    return $('div.livingstone-manuscript-viewer-model > iframe').length > 0;
+    return $('div.livingstone-manuscript-viewer-modal > iframe').length > 0;
   }
 
   /**

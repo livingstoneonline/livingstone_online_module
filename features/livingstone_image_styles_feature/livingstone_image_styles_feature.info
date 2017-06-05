@@ -1,0 +1,11 @@
+name = Livingstone Image Styles Feature
+description = Defines the various image styles used throughout the site.
+core = 7.x
+package = Livingstone
+version = 7.x-1.0
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = section_carousel_image
+features[image][] = section_grid_image
+features[image][] = timeline_image
+project path = sites/all/modules/custom/livingstone_online_module/features

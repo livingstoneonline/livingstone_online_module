@@ -1,0 +1,5 @@
+name = "Livingstone Deployment"
+description = "Allows updating modules via the Admin interface."
+package = Livingstone
+version = 7.x-dev
+core = 7.x

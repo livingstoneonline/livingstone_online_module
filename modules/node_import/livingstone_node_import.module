@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ *
+ * Module imports "manuscript" nodes from Solr.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function livingstone_node_import_menu() {
+  return array(
+    'admin/livingstone/import/drupal' => array(
+      'title' => "Drupal Import",
+      'description' => 'Updates the Drupal content from Fedora, used by search and time line.',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_NORMAL_ITEM,
+      'file' => 'node.import.form.inc',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_node_import_form'),
+    ),
+  );
+}

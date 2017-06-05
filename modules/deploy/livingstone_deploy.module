@@ -1,0 +1,262 @@
+<?php
+
+/**
+ * @file
+ * Module hooks and utility functions.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function livingstone_deploy_menu() {
+  return array(
+    'admin/livingstone/deploy' => array(
+      'title' => 'Deploy Code',
+      'description' => 'Updates the code on this server to the chose configuration (dev, stage, prod).',
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_NORMAL_ITEM,
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_deploy_admin_form'),
+    ),
+  );
+}
+
+/**
+ * The Livingstone development form.
+ *
+ * @param array $form
+ *   Drupal form.
+ * @param array $form_state
+ *   Drupal form state.
+ *
+ * @return array
+ *   The form definition.
+ */
+function livingstone_deploy_admin_form(array $form, array &$form_state) {
+  return array(
+    'branch' => array(
+      '#type' => 'select',
+      '#options' => array(
+        'dev' => 'dev',
+        'stage' => 'stage',
+        'prod' => 'prod',
+      ),
+    ),
+    'submit' => array(
+      '#type' => 'submit',
+      '#value' => t('Update Modules'),
+    ),
+  );
+}
+
+/**
+ * Performs the form submission.
+ *
+ * @param array $form
+ *   Drupal form.
+ * @param array $form_state
+ *   Drupal form state.
+ */
+function livingstone_deploy_admin_form_submit(array $form, array &$form_state) {
+  $sites_all = DRUPAL_ROOT . '/sites/all';
+  $branch = $form_state['values']['branch'];
+  $output_theme = shell_exec("cd $sites_all/themes/livingstone_online_theme; git checkout ${branch}; git pull 2>&1");
+  drupal_set_message($output_theme, "Update Theme");
+  $output_module = shell_exec("cd $sites_all/modules/custom/LEAP_XSLT; git checkout ${branch}; git pull 2>&1");
+  drupal_set_message($output_module, "Update LEAP-XSLT");
+  $output_module = shell_exec("cd $sites_all/modules/custom/livingstone_online_module; git checkout ${branch}; git pull 2>&1");
+  drupal_set_message($output_module, "Update Module");
+  $output_cache = shell_exec("cd $sites_all; s6-setuidgid apache /usr/local/bin/drush cc all 2>&1");
+  drupal_set_message($output_cache, "Clear Cache");
+}
+
+
+function livingstone_deploy_render($nodes) {
+  module_load_include('inc', 'features', 'features.export');
+  $code[] = <<<EOT
+<?php
+/**
+ * @file
+ * livingstone_section_page_nodes_feature.features.uuid_node.inc
+ */
+
+/**
+ * Implements hook_uuid_features_default_content().
+ */
+function livingstone_section_page_nodes_feature_uuid_features_default_content() {
+EOT;
+  $code[] = '  $nodes = array();';
+  $code[] = '';
+  foreach ($nodes as $node) {
+    $code[] = '  $nodes[] = ' . features_var_export($node, '') . ';';
+  }
+  $code[] = '  return $nodes;';
+  $code[] = "}\n";
+  $code = implode("\n", $code);
+  return $code;
+}
+
+function livingstone_deploy_migrate_uuid_nodes() {
+  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+  module_load_include('inc', 'livingstone_section_page_nodes_feature', 'livingstone_section_page_nodes_feature.features.uuid_node');
+  $nodes = livingstone_section_page_nodes_feature_uuid_features_default_content();
+  $supported_fields = drupal_map_assoc(array(
+    'title',
+    'log',
+    'status',
+    'comment',
+    'promote',
+    'sticky',
+    'type',
+    'language',
+    'created',
+    'tnid',
+    'translate',
+    'uuid',
+    'field_section',
+    'field_section_body',
+    'field_section_byline',
+    'field_section_carousel_image',
+    'field_section_date',
+    'field_section_grid_image',
+    'field_section_open_in_new_tab',
+    'field_section_outbound_link',
+    'field_section_overview',
+    'field_section_page_transcription',
+    'field_section_subtitle',
+    'field_section_teaser',
+    'field_section_pre_title',
+    'path',
+    'url_alias',
+    'date',
+    'user_uuid',
+  ));
+  $field_rename_mapping = array(
+    'field_section_page_sections' => 'field_section',
+    'body' => 'field_section_body',
+    'field_section_page_tag_line' => 'field_section_overview',
+    'field_section_page_main_image' => 'field_section_image',
+    'field_carousel_image' => 'field_section_carousel_image',
+    'field_section_page_image' => 'field_section_grid_image',
+    'field_section_page_byline' => 'field_section_byline',
+    'field_section_page_date' => 'field_section_date',
+    'field_subtitle' => 'field_section_subtitle',
+    'field_level_2_teaser' => 'field_section_teaser',
+    'field_pre_title' => 'field_section_pre_title',
+    'field_outbound_link' => 'field_section_outbound_link',
+    'field_open_new_tab' => 'field_section_open_in_new_tab',
+    'field_transcriptions' => 'field_section_page_transcription',
+  );
+  $path_rename_mapping = array(
+    '/^\/about-site/' => '/about-this-site',
+    '/^\/his-own-words/' => '/in-his-own-words',
+    '/^\/islandora\/search/' => '/in-his-own-words/catalogue',
+    '/^\/browse\/addressee/' => '/in-his-own-words/addressee',
+  );
+  foreach($nodes as &$node) {
+    // Rename fields.
+    foreach($field_rename_mapping as $old => $new) {
+      if (isset($node[$old])) {
+        $node[$new] = $node[$old];
+        unset($node[$old]);
+      }
+    }
+    // Remove fields that do not belong.
+    $remove = array_diff_key($node, $supported_fields);
+    foreach ($remove as $key => $value) {
+      unset($node[$key]);
+    }
+    // Fix paths
+    if (!empty($node['field_section_body']['und'][0]['value'])) {
+      $doc = new DOMDocument('1.0', 'UTF');
+      $doc->preserveWhiteSpace = TRUE;
+      $doc->formatOutput = FALSE;
+      @$doc->loadHTML('<root>' . mb_convert_encoding($node['field_section_body']['und'][0]['value'], 'HTML-ENTITIES', 'UTF-8') . '</root>',  LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+
+      $xpath = new DOMXPath($doc);
+      $results = $xpath->query('//a[@href]');
+      foreach ($results as $result) {
+        $href = $result->getAttribute('href');
+        foreach ($path_rename_mapping as $regex => $replace) {
+          $href = preg_replace($regex, $replace, $href);
+        }
+        $result->setAttribute('href', $href);
+      }
+      // Needed to do this way to preserve whitespace and entities.
+      $body = &$node['field_section_body']['und'][0];
+      $body['value'] = $doc->saveHTML();
+      $body['value'] = preg_replace('/^<root>/', '', $body['value']);
+      $body['value'] = preg_replace('/<\/root>$/', '', $body['value']);
+      // Fix BR, HR tags.
+      $body['value'] = preg_replace('/<br>/', '<br />', $body['value']);
+      $body['value'] = preg_replace('/<hr>/', '<hr />', $body['value']);
+      $body['value'] = preg_replace("/\r\n/", "\n", $body['value']);
+    }
+    // Fix Grid file path.
+    if (!empty($node['field_section_grid_image']['und'][0]['uri']) &&
+        strpos($node['field_section_grid_image']['und'][0]['uri'], 'section_page/grid_images') == FALSE) {
+      $node['field_section_grid_image']['und'][0]['uri'] = preg_replace('/public:\/\//', 'public://section_page/grid_images/', $node['field_section_grid_image']['und'][0]['uri']);
+    }
+    // Fix Carousel Images file path.
+    if (!empty($node['field_section_carousel_image']['und'][0]['uri']) &&
+      strpos($node['field_section_carousel_image']['und'][0]['uri'], 'section_page/carousel_images') == FALSE) {
+      $node['field_section_carousel_image']['und'][0]['uri'] = preg_replace('/public:\/\//', 'public://section_page/carousel_images/', $node['field_section_carousel_image']['und'][0]['uri']);
+    }
+  }
+  $feature_path = drupal_get_path('module', 'livingstone_section_page_nodes_feature');
+  if (file_put_contents("$feature_path/livingstone_section_page_nodes_feature.features.uuid_node.inc", livingstone_deploy_render($nodes)) == FALSE) {
+    dsm('Failed to save.');
+  }
+}
+
+function livingstone_deploy_migrate_file_list() {
+  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+  module_load_include('inc', 'livingstone_section_page_nodes_feature', 'livingstone_section_page_nodes_feature.features.uuid_node');
+  $nodes = livingstone_section_page_nodes_feature_uuid_features_default_content();
+  $fp = fopen('/tmp/files.csv', 'w');
+  $fields = array(
+    'UUID',
+    'TITLE',
+    'FILE',
+    'SIZE',
+  );
+  fputcsv($fp, $fields);
+  foreach($nodes as &$node) {
+    $base_fields = array(
+      $node['uuid'],
+      $node['title'],
+    );
+    if (!empty($node['field_section_body']['und'][0]['value'])) {
+      $doc = new DOMDocument('1.0', 'UTF');
+      @$doc->loadHTML($node['field_section_body']['und'][0]['value']);
+      $xpath = new DOMXPath($doc);
+      $results = $xpath->query('//a[@href]');
+      foreach($results as $result) {
+        $href = $result->getAttribute('href');
+        if (preg_match('/\/sites\/default\/files/', $href)) {
+          // Remove trailing tokens from urls.
+          $file = preg_replace('/\?.*$/', '', $href);
+          $file = preg_replace('/%20/', '', $file);
+          $fields = $base_fields;
+          $fields[] = $file;
+          $fields[] = file_exists($file) ? filesize($file) : 'N/A';
+          fputcsv($fp, $fields);
+        }
+      }
+      $results = $xpath->query('//img[@src]');
+      foreach($results as $result) {
+        $src = $result->getAttribute('src');
+        if (preg_match('/\/sites\/default\/files/', $src)) {
+          // Remove trailing tokens from urls.
+          $file = preg_replace('/\?.*$/', '', $src);
+          $file = preg_replace('/%20/', '', $file);
+          $fields = $base_fields;
+          $fields[] = $file;
+          $fields[] = file_exists($file) ? filesize($file) : 'N/A';
+          fputcsv($fp, $fields);
+        }
+      }
+    }
+  }
+  fclose($fp);
+}

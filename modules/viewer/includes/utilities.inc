@@ -16,6 +16,20 @@
  *   value in bytes.
  */
 function livingstone_manuscript_viewer_page_sizes($pid, $pages) {
+  return livingstone_manuscript_viewer_datastream_sizes($pid, 'ZIP', $pages);
+}
+
+/**
+ * Gets the size of the given datastream from each page via Solr.
+ *
+ * @param string $pid
+ *   The PID of the manuscript.
+ *
+ * @return array
+ *   An associative array keyed by page pid, with the datastream size as it's
+ *   value in bytes.
+ */
+function livingstone_manuscript_viewer_datastream_sizes($pid, $dsid, $pages) {
   $path_parts = parse_url(variable_get('islandora_solr_url', 'localhost:8080/solr'));
   $solr = new Apache_Solr_Service($path_parts['host'], $path_parts['port'], $path_parts['path'] . '/');
   $solr->setCreateDocuments(0);
@@ -25,7 +39,7 @@ function livingstone_manuscript_viewer_page_sizes($pid, $pages) {
       0,
       10000,
       array(
-        'fl' => 'PID,fedora_datastream_latest_ZIP_SIZE_ms',
+        'fl' => "PID,fedora_datastream_latest_{$dsid}_SIZE_ms",
       ),
       'GET'
     );
@@ -38,8 +52,8 @@ function livingstone_manuscript_viewer_page_sizes($pid, $pages) {
   $sizes = array();
   foreach ($docs as $doc) {
     $pid = $doc['PID'];
-    $size = isset($doc['fedora_datastream_latest_ZIP_SIZE_ms']) ?
-      reset($doc['fedora_datastream_latest_ZIP_SIZE_ms']) :
+    $size = isset($doc["fedora_datastream_latest_{$dsid}_SIZE_ms"]) ?
+      reset($doc["fedora_datastream_latest_{$dsid}_SIZE_ms"]) :
       FALSE;
     $sizes[$pid] = $size;
   }
@@ -115,7 +129,7 @@ function livingstone_manuscript_viewer_pages($pid) {
   global $user;
   $filter_hidden = '';
   // Prevent non-administrators from accessing hidden pages.
-  if (!in_array('administrator', $user->roles)) {
+  if (!in_array('administrator', $user->roles) && $user->uid != 1) {
     $filter_hidden = <<<EOT
     OPTIONAL {
       ?pid <fedora-view:disseminates> ?policy .
@@ -214,7 +228,7 @@ function livingstone_manuscript_viewer_filter_module_resources($resource) {
  */
 function livingstone_manuscript_viewer_css_resources() {
   $css = drupal_add_css();
-  $css = array_filter($css, 'livingstone_manuscript_viewer_filter_module_resources');
+  //$css = array_filter($css, 'livingstone_manuscript_viewer_filter_module_resources');
   return drupal_get_css($css);
 }
 
@@ -223,6 +237,6 @@ function livingstone_manuscript_viewer_css_resources() {
  */
 function livingstone_manuscript_viewer_js_resources() {
   $js = drupal_add_js();
-  $js = array_filter($js, 'livingstone_manuscript_viewer_filter_module_resources');
+  //$js = array_filter($js, 'livingstone_manuscript_viewer_filter_module_resources');
   return drupal_get_js('header', $js);
 }

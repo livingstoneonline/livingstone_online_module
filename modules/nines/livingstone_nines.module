@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Implements a export mechanism to generate NINEs submission.
+ */
+
+const LIVINGSTONE_NINES_ZIP_FILE = 'RDF-NINES.zip';
+
+/**
+ * Implements hook_menu().
+ */
+function livingstone_nines_menu() {
+  return array(
+    'admin/livingstone/export/nines' => array(
+      'title' => "NINES Export",
+      'description' => "Iterates over all content and generates RDF for NINES submission.",
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_NORMAL_ITEM,
+      'file' => 'nines.export.form.inc',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_nines_export_form'),
+    ),
+  );
+}

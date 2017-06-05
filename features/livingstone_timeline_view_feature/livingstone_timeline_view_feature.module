@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Timeline View Feature feature.
+ */
+
+include_once 'livingstone_timeline_view_feature.features.inc';

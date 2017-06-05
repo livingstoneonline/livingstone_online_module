@@ -1,6 +1,6 @@
 name = "Livingstone Browse Catalogue Module"
 description = "Search interface for discovering Manuscripts."
-package = Islandora Viewers
+package = Livingstone
 dependencies[] = islandora
 dependencies[] = livingstone_manuscript_viewer
 version = 7.x-dev

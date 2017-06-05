@@ -1,0 +1,9 @@
+name = Livingstone User Feature
+description = Creates the admin user.
+core = 7.x
+package = Livingstone
+version = 7.x-1.0
+dependencies[] = uuid_features
+features[features_api][] = api:2
+features[uuid_user][] = 0ff19f94-945c-48e1-bab1-4969fb58aea1
+project path = sites/all/modules/custom/livingstone_online_module/features

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Section Taxonomy Feature feature.
+ */
+
+include_once 'livingstone_section_taxonomy_feature.features.inc';

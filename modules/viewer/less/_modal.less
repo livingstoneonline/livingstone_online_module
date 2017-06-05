@@ -3,9 +3,23 @@
 body.modal-open {
   overflow: hidden;
   position: fixed;
+  div.livingstone-manuscript-viewer-modal {
+    display: block;
+    background-color: rgba(0,0,0,0.4);
+  }
+}
+body.download-modal-open {
+  overflow: hidden;
+  position: fixed;
+  div.livingstone-manuscript-viewer-download-modal {
+    display: block;
+    background-color: rgba(0,0,0,0.4);
+  }
 }
 
-div.livingstone-manuscript-viewer-modal {
+div.livingstone-manuscript-viewer-modal,
+div.livingstone-manuscript-viewer-download-modal {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -14,7 +28,6 @@ div.livingstone-manuscript-viewer-modal {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  background-color: rgba(0,0,0,0.4);
   iframe {
     .border-radius(3px);
     .box-shadow(none);
@@ -33,7 +46,6 @@ div.livingstone-manuscript-viewer-modal {
   // Remove border on phones.
   @media screen and (max-width: 568px) {
     padding: 0;
-    height: 100vh;
     iframe {
       .border-radius(0);
       border-width: 0;

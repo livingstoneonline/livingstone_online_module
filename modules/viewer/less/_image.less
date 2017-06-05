@@ -9,20 +9,30 @@
     width: 100%;
     text-align: center;
     z-index: 1;
-    a,
-    a:hover {
+    .spectral-image {
+      max-width: 30%;
+      // Download button not displayed so more space.
+      @media only screen and (max-width : 900px) {
+        max-width: 60%;
+      }
+      // Small screen.
+      @media only screen and (max-width : 400px) {
+        max-width: 30%;
+      }
+      .filter-option {
+        // Prevent text from overlapping the caret.
+        width: 80%;
+      }
+      button {
+        padding: 2.5px 12px;
+      }
+    }
+    a.button,
+    a.button:hover {
+      .item();
       color: black;
       cursor: pointer;
       text-decoration: none;
-    }
-    .icon {
-      .icon;
-    }
-    .button {
-      .button;
-    }
-    .select {
-      .select;
     }
     .download {
       // Not enough room for the download icon.

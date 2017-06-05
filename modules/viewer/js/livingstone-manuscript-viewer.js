@@ -443,7 +443,7 @@
       // Hack to get around sudden switch to mobile when displaying compare.
       if (window.innerWidth <= 767) {
         if (compare_image_pane.hasClass('pane-open')) {
-          $('#toolbar .icon.compare').removeClass('depressed');
+          $('#toolbar .compare').removeClass('depressed');
           toolbar.trigger('close-pane', { pane:'compare' });
         }
       }
@@ -476,13 +476,13 @@
     var that = this,
         element = $(selector),
         slider = $('.zoom-slider', element),
-        zoom_out = $('.icon.zoom-out', element),
-        zoom_in = $('.icon.zoom-in'),
-        rotate = $('.icon.rotate'),
-        pager = $('select.pager'),
-        item_details = $('.icon.item-details'),
-        transcription = $('.icon.transcription'),
-        compare = $('.icon.compare'),
+        zoom_out = $('.zoom-out', element),
+        zoom_in = $('.zoom-in'),
+        rotate = $('.rotate'),
+        pager = $('select.page-select'),
+        item_details = $('.item-details'),
+        transcription = $('.transcription'),
+        compare = $('.compare'),
         radios = [item_details, transcription, compare].filter(function (value) {
           return value.length > 0;
         });
@@ -576,7 +576,7 @@
     });
 
     // Close
-    $('.icon.close', element).click(function () {
+    $('.close', element).click(function () {
       parent.window.postMessage({ event: 'close' }, "*");
     });
 
@@ -596,6 +596,9 @@
       }
       else if (pager.val() != pid) {
         pager.val(pid);
+      }
+      if (pager.selectpicker) {
+        pager.selectpicker('refresh');
       }
     };
 
@@ -698,7 +701,7 @@
           var size = page.size / 1024 / 1024;
           var text = '(' + size.toFixed(1) + ' MB)';
           var url = Drupal.settings.basePath + 'islandora/object/' + page.pid + '/datastream/ZIP/download';
-          page_download.html('<a href="' + url + '" class="icon button"><span class="fa">&#xf063;</span>&nbsp;' + text + '</a>');
+          page_download.html('<a href="' + url + '" class="icon button" title="Download Page Archive"><span class="fa">&#xf063;</span>&nbsp;' + text + '</a>');
         }
       }
     }
@@ -767,7 +770,17 @@
         $.each(options, function(index, option) {
           image_selector.append('<option value="' + option.value + '">' + option.label + '</option>');
         });
-        image_selector.val(mapping.dsid);
+        if (image_selector.selectpicker) {
+          image_selector.selectpicker('val', mapping.dsid);
+        }
+        else {
+          image_selector.val(mapping.dsid);
+        }
+        // XXX. Add tooltip to describe images.
+        // The Bootstrap select adds titles willy nilly so we remove them.
+        image_selector.parent().find('*[title]').each(function() {
+          $(this).removeAttr('title');
+        });
       }
     }
 
@@ -926,24 +939,15 @@
     // Expose some jQuery functions via a proxy.
     this.on = $.proxy(element.on, element);
 
-    // Add tooltip to describe images.
-    image_selector.wrap('<span class="image-selector-tooltip"></span>');
-    image_selector.before('<span class="image-selector-tooltip-text">spectral image type</span>');
-    var image_selector_tooltip = $('.image-selector-tooltip', element);
-    image_selector_tooltip.hover(function () {
-      var isTouch =  !!('ontouchstart' in window) || window.navigator.msMaxTouchPoints > 0;
-      if( !isTouch ){
-        image_selector_tooltip.addClass('hover');
-      }
-    }, function () {
-      image_selector_tooltip.removeClass('hover');
+    // XXX. Add tooltip to describe images.
+    // The Bootstrap select adds titles willy nilly so we remove them.
+    image_selector.parent().find('*[title]').each(function() {
+      $(this).removeAttr('title');
     });
-    image_selector_tooltip.click(function () {
-      image_selector_tooltip.addClass('hover');
-      setTimeout(function () {
-        image_selector_tooltip.removeClass('hover');
-        image_selector_tooltip.blur();
-      }, 3000);
+    image_selector.change(function() {
+      image_selector.parent().find('*[title]').each(function() {
+        $(this).removeAttr('title');
+      });
     });
   };
 
@@ -957,7 +961,7 @@
         downloads_modal = $('#downloads');
 
     // Close downloads modal.
-    $('.icon.close', downloads_modal).click(function () {
+    $('.close', downloads_modal).click(function () {
       downloads_modal.hide();
     });
 

@@ -24,12 +24,40 @@ function livingstone_browse_catalogue_theme() {
 }
 
 /**
+ * Implements hook_block_info().
+ */
+function livingstone_browse_catalogue_block_info() {
+  return array(
+    'livingstone_browse_catalogue' => array(
+      'info' => t('Livingstone Browse Catalogue'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'region' => 'content',
+      'status' => 1,
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function livingstone_browse_catalogue_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'livingstone_browse_catalogue':
+      module_load_include('inc', 'livingstone_browse_catalogue', 'includes/browse.catalogue');
+      $block['content'] = livingstone_browse_catalogue();
+      break;
+  }
+  return $block;
+}
+
+/**
  * Implements hook_menu_alter().
  */
 function livingstone_browse_catalogue_menu_alter(array &$items) {
   if (isset($items['islandora/search'])) {
     $search_item = &$items['islandora/search'];
-    $search_item['page callback'] = 'livingstone_browse_catalogue';
+    $search_item['page callback'] = 'livingstone_browse_catalogue_object_view_redirect';
   }
   if (isset($items['islandora/object/%islandora_object'])) {
     $view_object = &$items['islandora/object/%islandora_object'];
@@ -45,7 +73,7 @@ function livingstone_browse_catalogue_menu_alter(array &$items) {
  */
 function livingstone_browse_catalogue_object_view_redirect(AbstractObject $object) {
   $pid = preg_replace('/:/', '_', $object->id);
-  drupal_goto("islandora/search/{$pid}");
+  drupal_goto("in-his-own-words/catalogue/{$pid}");
 }
 
 /**
