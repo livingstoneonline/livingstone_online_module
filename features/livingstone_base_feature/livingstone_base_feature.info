@@ -66,6 +66,7 @@ dependencies[] = path
 dependencies[] = pathauto
 dependencies[] = qtip
 dependencies[] = qtip_filter
+dependencies[] = redirect
 dependencies[] = search
 dependencies[] = simple_timeline
 dependencies[] = strongarm
