@@ -14,7 +14,7 @@ function livingstone_settings_feature_apachesolr_environments() {
   $environment->api_version = 1;
   $environment->env_id = 'solr';
   $environment->name = 'localhost server';
-  $environment->url = 'http://tomcat:8080/solr';
+  $environment->url = 'http://tomcat:8080/solr/drupal';
   $environment->service_class = '';
   $environment->conf = array(
     'apachesolr_direct_commit' => 1,

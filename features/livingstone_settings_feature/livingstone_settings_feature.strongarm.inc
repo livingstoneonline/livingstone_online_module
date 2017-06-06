@@ -315,7 +315,7 @@ function livingstone_settings_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'islandora_base_url';
-  $strongarm->value = 'http://tomcat:8080/fedora';
+  $strongarm->value = 'http://livingstoneonline.org:8080/fedora';
   $export['islandora_base_url'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -493,7 +493,7 @@ function livingstone_settings_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'islandora_solr_url';
-  $strongarm->value = 'tomcat:8080/solr';
+  $strongarm->value = 'livingstoneonline.org:8080/solr';
   $export['islandora_solr_url'] = $strongarm;
 
   $strongarm = new stdClass();
