@@ -66,6 +66,7 @@ function livingstone_theme() {
 }
 
 function livingstone_apachesolr_process_results(&$results) {
+  module_load_include('inc', 'livingstone', 'includes/utilities');
   global $user;
   foreach ($results as &$result) {
     if (isset($result['node'])) {
@@ -81,7 +82,7 @@ function livingstone_apachesolr_process_results(&$results) {
             $default;
         };
         $pid = $get_value('field_manuscript_pid');
-        $query = array('query' => $pid);
+        $query = array('query' => livingstone_pid_to_project_id($pid));
         if ($get_value('field_manuscript_viewable', FALSE)) {
           $query['view_pid'] = $pid;
         }
