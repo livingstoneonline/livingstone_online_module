@@ -26,50 +26,57 @@ define('LIVINGSTONE_DATASTREAM_GENERATION_ERROR', 'livingstone_datastream_genera
  */
 function livingstone_fedora_import_types() {
   return array(
-    'illustrative' => array(
-      'title' => t('Illustrative Image(s)'),
-      'content_model' => 'islandora:sp_large_image_cmodel',
-      'required_datastreams' => array('MODS', 'OBJ', 'TXT', 'XMP'),
-      'derived_datastreams' => array('JP2'),
-    ),
-    'no_crop' => array(
-      'title' => t('No Crop Image(s)'),
-      'content_model' => 'islandora:sp_large_image_cmodel',
-      'required_datastreams' => array('OBJ', 'TXT', 'XMP'),
-      'derived_datastreams' => array('JP2'),
-    ),
     'manuscript' => array(
-      'title' => t('Manuscript(s)'),
+      'title' => t('Manuscript Objects'),
       'content_model' => 'islandora:manuscriptCModel',
       'required_datastreams' => array('MODS'),
       'optional_datastreams' => array('TEI', 'TN', 'ZIP'),
       'derived_datastreams' => array(),
+      'weight' => 0,
     ),
     'manuscript_page' => array(
-      'title' => t('Manuscript Page(s)'),
+      'title' => t('Manuscript Object Pages/Images'),
       'content_model' => 'islandora:manuscriptPageCModel',
       'required_datastreams' => array('OBJ', 'TXT', 'XMP'),
-      'derived_datastreams' => array('JP2')
+      'derived_datastreams' => array('JP2'),
+      'weight' => 1,
     ),
     'manuscript_additional_pdf' => array(
-      'title' => t('Manuscript Additional PDF(s)'),
+      'title' => t('Manuscript Object PDFs'),
       'content_model' => 'islandora:sp_pdf',
       'required_datastreams' => array('OBJ'),
       'derived_datastreams' => array(),
+      'weight' => 2,
     ),
     'spectral_manuscript' => array(
-      'title' => t('Spectral Manuscript(s)'),
+      'title' => t('Spectral Manuscript Objects'),
       'content_model' => 'livingstone:spectralManuscriptCModel',
       'required_datastreams' => array('MODS'),
       'optional_datastreams' => array('TEI', 'TN'),
       'derived_datastreams' => array(),
+      'weight' => 3,
     ),
     'spectral_manuscript_page' => array(
-      'title' => t('Spectral Manuscript Page(s)'),
+      'title' => t('Spectral Manuscript Pages/Images'),
       'content_model' => 'livingstone:spectralManuscriptPageCModel',
       'required_datastreams' => array(),
       'optional_datastreams' => array('GIF', 'CROPPED_GIF', 'ZIP'),
       'derived_datastreams' => array('JP2'),
+      'weight' => 4,
+    ),
+    'illustrative' => array(
+      'title' => t('Illustrative Images'),
+      'content_model' => 'islandora:sp_large_image_cmodel',
+      'required_datastreams' => array('MODS', 'OBJ', 'TXT', 'XMP'),
+      'derived_datastreams' => array('JP2'),
+      'weight' => 5,
+    ),
+    'no_crop' => array(
+      'title' => t('No Crop Images'),
+      'content_model' => 'islandora:sp_large_image_cmodel',
+      'required_datastreams' => array('OBJ', 'TXT', 'XMP'),
+      'derived_datastreams' => array('JP2'),
+      'weight' => 6,
     ),
   );
 }

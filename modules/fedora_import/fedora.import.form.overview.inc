@@ -599,13 +599,29 @@ function livingstone_fedora_import_spectral_page_derivatives_missing_count() {
  *   A renderable array describing the count table.
  */
 function livingstone_fedora_import_count_table(DatabaseStatementInterface $results, array $header, $empty_message) {
-  $type_titles =livingstone_fedora_import_titles();
+  $type_titles = livingstone_fedora_import_titles();
   $total = 0;
   $rows = array();
   foreach ($results->fetchAllKeyed() as $type => $count) {
     $rows[] = array($type_titles[$type], $count);
     $total += $count;
   }
+  $types = livingstone_fedora_import_types();
+  $weights = array();
+  foreach ($types as $type => $info) {
+    $title = $info['title'];
+    $weights[$title] = $info['weight'];
+  }
+  $sort = function ($a, $b) use ($weights) {
+    if ($weights[$a[0]] == $weights[$b[0]]) {
+      return 0;
+    }
+    else if ($weights[$a[0]] < $weights[$b[0]]) {
+      return -1;
+    }
+    return 1;
+  };
+  usort($rows, $sort);
   if ($total) {
     $rows[] = array(
       t('<strong>Total</strong>'),
