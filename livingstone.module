@@ -7,7 +7,7 @@
 
 const LIVINGSTONE_SPECTRAL_MANUSCRIPT_CMODEL = "livingstone:spectralManuscriptCModel";
 const LIVINGSTONE_SPECTRAL_PAGE_CMODEL = "livingstone:spectralPageCModel";
-
+const LIVINGSTONE_ADMINISTER_PERMISSION = 'livingstone administer permission';
 /**
  * Implements hook_menu().
  */
@@ -16,8 +16,20 @@ function livingstone_menu() {
     'admin/livingstone' => array(
       'title' => "Livingstone",
       'description' => "Customizations for Livingstone Online.",
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_NORMAL_ITEM,
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission().
+ */
+function livingstone_permission() {
+  return array(
+    LIVINGSTONE_ADMINISTER_PERMISSION => array(
+      'title' => t('Administer Livingstone Modules'),
+      'description' => t('Allows for the deployment of code and import of content.'),
     ),
   );
 }

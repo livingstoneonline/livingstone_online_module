@@ -14,7 +14,7 @@ function livingstone_fedora_import_menu() {
     'admin/livingstone/import/fedora' => array(
       'title' => 'Fedora Import',
       'description' => 'Updates and adds content from the FTP server into Fedora.',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_NORMAL_ITEM,
       'file' => 'fedora.import.form.overview.inc',
       'page callback' => 'livingstone_fedora_import_overview_menu_task',
@@ -22,7 +22,7 @@ function livingstone_fedora_import_menu() {
     'admin/livingstone/import/fedora/overview' => array(
       'title' => 'Overview',
       'description' => 'Updates and adds content from the FTP server into Fedora.',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_DEFAULT_LOCAL_TASK,
       'file' => 'fedora.import.form.overview.inc',
       'page callback' => 'livingstone_fedora_import_overview_menu_task',
@@ -31,7 +31,7 @@ function livingstone_fedora_import_menu() {
     'admin/livingstone/import/fedora/local' => array(
       'title' => 'Local objects',
       'description' => 'Lists all the local objects.',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_LOCAL_TASK,
       'file' => 'fedora.import.form.local.inc',
       'page callback' => 'drupal_get_form',
@@ -41,7 +41,7 @@ function livingstone_fedora_import_menu() {
     'admin/livingstone/import/fedora/remote' => array(
       'title' => 'Remote objects',
       'description' => 'Lists all the remote objects.',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_LOCAL_TASK,
       'file' => 'fedora.import.form.remote.inc',
       'page callback' => 'drupal_get_form',
@@ -51,7 +51,7 @@ function livingstone_fedora_import_menu() {
     'admin/livingstone/import/fedora/add' => array(
       'title' => 'Add',
       'description' => 'Allows the user to add new objects from the FTP.',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_LOCAL_TASK,
       'file' => 'fedora.import.form.add.inc',
       'page callback' => 'drupal_get_form',
@@ -61,7 +61,7 @@ function livingstone_fedora_import_menu() {
     'admin/livingstone/import/fedora/update' => array(
       'title' => 'Update',
       'description' => 'Allows the user to update existing objects from the FTP.',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_LOCAL_TASK,
       'file' => 'fedora.import.form.update.inc',
       'page callback' => 'drupal_get_form',
@@ -71,7 +71,7 @@ function livingstone_fedora_import_menu() {
     'admin/livingstone/import/fedora/remove' => array(
       'title' => 'Remove',
       'description' => 'Allows the user to remove stale objects from Fedora.',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_LOCAL_TASK,
       'file' => 'fedora.import.form.remove.inc',
       'page callback' => 'drupal_get_form',
@@ -81,7 +81,7 @@ function livingstone_fedora_import_menu() {
     'admin/livingstone/import/fedora/publish' => array(
       'title' => 'Publish / Conceal',
       'description' => 'Allows the user to publish/hide objects in Fedora.',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_LOCAL_TASK,
       'file' => 'fedora.import.form.publish.inc',
       'page callback' => 'drupal_get_form',
@@ -91,7 +91,7 @@ function livingstone_fedora_import_menu() {
     'admin/livingstone/import/fedora/errors' => array(
       'title' => 'Error Log',
       'description' => 'Lists any errors that have occurred during import.',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_LOCAL_TASK,
       'file' => 'fedora.import.form.error.inc',
       'page callback' => 'drupal_get_form',

@@ -15,7 +15,7 @@ function livingstone_nines_menu() {
     'admin/livingstone/export/nines' => array(
       'title' => "NINES Export",
       'description' => "Iterates over all content and generates RDF for NINES submission.",
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_NORMAL_ITEM,
       'file' => 'nines.export.form.inc',
       'page callback' => 'drupal_get_form',

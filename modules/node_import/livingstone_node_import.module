@@ -14,7 +14,7 @@ function livingstone_node_import_menu() {
     'admin/livingstone/import/drupal' => array(
       'title' => "Drupal Import",
       'description' => 'Updates the Drupal content from Fedora, used by search and time line.',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_NORMAL_ITEM,
       'file' => 'node.import.form.inc',
       'page callback' => 'drupal_get_form',

@@ -13,7 +13,7 @@ function livingstone_deploy_menu() {
     'admin/livingstone/deploy' => array(
       'title' => 'Deploy Code',
       'description' => 'Updates the code on this server to the chose configuration (dev, stage, prod).',
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_NORMAL_ITEM,
       'page callback' => 'drupal_get_form',
       'page arguments' => array('livingstone_deploy_admin_form'),
