@@ -100,6 +100,7 @@ function livingstone_timeline_view_feature_views_default_views() {
   $handler->display->display_options['fields']['field_manuscript_image']['label'] = '';
   $handler->display->display_options['fields']['field_manuscript_image']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_manuscript_image']['alter']['path'] = '/in-his-own-words/catalogue?query="[field_manuscript_pid]"&view_pid=[field_manuscript_pid]';
+  $handler->display->display_options['fields']['field_manuscript_image']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['field_manuscript_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_manuscript_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_manuscript_image']['settings'] = array(
