@@ -305,7 +305,7 @@ function template_preprocess_livingstone_manuscript_viewer_pane_image(array &$va
     array(
       'attributes' => array(
         'target' => '_blank',
-        'title' => t('View Processing Details'),
+        'title' => t('Display Processing Details'),
         'class' => array('processing-details', 'icon', 'button'),
       ),
     )

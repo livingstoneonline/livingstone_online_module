@@ -701,7 +701,7 @@
           var size = page.size / 1024 / 1024;
           var text = '(' + size.toFixed(1) + ' MB)';
           var url = Drupal.settings.basePath + 'islandora/object/' + page.pid + '/datastream/ZIP/download';
-          page_download.html('<a href="' + url + '" class="icon button" title="Download Page Archive"><span class="fa">&#xf063;</span>&nbsp;' + text + '</a>');
+          page_download.html('<a href="' + url + '" class="icon button" title="Download Archival Packet"><span class="fa">&#xf063;</span>&nbsp;' + text + '</a>');
         }
       }
     }

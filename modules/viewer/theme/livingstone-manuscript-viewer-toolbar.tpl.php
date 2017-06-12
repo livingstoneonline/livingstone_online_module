@@ -21,7 +21,7 @@
   </span>
   <span class="item-group">
     <?php if ($is_viewable): ?>
-      <span title="<?php print t('Select Page'); ?>">
+      <span title="<?php print t('Select Image'); ?>">
         <select class="page-select selectpicker" data-mobile="true">
         <?php foreach ($pager_options as $pager_option): ?>
           <option value="<?php print $pager_option['pid']; ?>"><?php print $pager_option['label']; ?></option>
