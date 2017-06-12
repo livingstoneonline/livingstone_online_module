@@ -113,16 +113,21 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'router_path' => 'about-this-site',
     'link_title' => 'About this Site',
     'options' => array(
+      'identifier' => 'main-menu_about-this-site:about-this-site',
       'attributes' => array(
         'title' => 'Section Pages: About this Site',
       ),
-      'identifier' => 'main-menu_about-this-site:about-this-site',
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
     ),
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 1,
-    'expanded' => 0,
+    'expanded' => 1,
     'weight' => -50,
     'customized' => 1,
   );
