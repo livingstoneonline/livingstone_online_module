@@ -33,14 +33,29 @@ function livingstone_deploy_menu() {
  *   The form definition.
  */
 function livingstone_deploy_admin_form(array $form, array &$form_state) {
+  $description = <<<EOT
+  This deploys the following modules/themes using the selected branch for each.<br/>
+  <ul>
+    <li><a href="https://github.com/livingstoneonline/livingstone_online_module">livingstone_online_module</a>: Responsible for the majority of the sites functionality.</li>
+    <li><a href="https://github.com/livingstoneonline/livingstone_online_theme">livingstone_online_theme</a>: Responsible for the display of the site (css, etc).</li>
+    <li><a href="https://github.com/livingstoneonline/LEAP-XSLT">LEAP-XSLT</a>: Contains the transcripts transforms and related CSS for displaying the generated HTML in both viewers.</li>
+  </ul>
+EOT;
   return array(
     'branch' => array(
       '#type' => 'select',
+      '#description' => t('Please select the branch to deploy from.'),
       '#options' => array(
         'dev' => 'dev',
         'stage' => 'stage',
         'prod' => 'prod',
       ),
+    ),
+    'description' => array(
+      '#type' => 'markup',
+      '#prefix' => '<p>',
+      '#suffix' => '</p>',
+      '#markup' => t($description),
     ),
     'submit' => array(
       '#type' => 'submit',
