@@ -45,17 +45,7 @@ function livingstone_image_styles_feature_image_default_styles() {
   // Exported image style: timeline_image.
   $styles['timeline_image'] = array(
     'label' => 'Timeline Image',
-    'effects' => array(
-      1 => array(
-        'name' => 'image_scale',
-        'data' => array(
-          'width' => 100,
-          'height' => 100,
-          'upscale' => 1,
-        ),
-        'weight' => 1,
-      ),
-    ),
+    'effects' => array(),
   );
 
   return $styles;
