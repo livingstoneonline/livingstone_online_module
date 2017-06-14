@@ -16,6 +16,7 @@ function livingstone_transcript_theme() {
         'pid' => NULL,
         // The Datastream of the transcript, defaults to TEI.
         'dsid' => 'TEI',
+        'classes' => array(),
       ),
     ),
   );
@@ -28,12 +29,13 @@ function theme_livingstone_transcript(array &$variables) {
   module_load_include('inc', 'livingstone_transcript', 'transcript');
   $pid = $variables['pid'];
   $dsid = $variables['dsid'];
+  $classes = $variables['classes'];
   $object = islandora_object_load($pid);
   if ($object === FALSE || !isset($object[$dsid])) {
     $content = t('No Transcript available.');
   }
   else {
-    $content = livingstone_transcript_saxon_transform_embedded($object[$dsid]);
+    $content = livingstone_transcript_saxon_transform_embedded($object[$dsid], $classes);
     if ($content === FALSE) {
       $content = t('Failed to generate transcript.');
     }
@@ -76,6 +78,7 @@ function livingstone_transcript_field_formatter_view($entity_type, $entity, $fie
     $transcriptions[] = array(
       '#theme' => 'livingstone_transcript',
       '#pid' => livingstone_project_id_to_pid($project_id),
+      '#classes' => array(),
     );
   }
   $panels = array();

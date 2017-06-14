@@ -184,7 +184,7 @@ function livingstone_transcript_saxon_transform($tei) {
  * @return string|bool
  *   The transformed TEI as HTML if successful FALSE otherwise.
  */
-function livingstone_transcript_saxon_transform_embedded($datastream) {
+function livingstone_transcript_saxon_transform_embedded($datastream, array $classes) {
   module_load_include('inc', 'livingstone', 'includes/utilities');
   $content = livingstone_transcript_saxon_transform($datastream->content);
   if ($content == FALSE) {
@@ -195,10 +195,10 @@ function livingstone_transcript_saxon_transform_embedded($datastream) {
   $xpath = new DOMXPath($doc);
   $results = $xpath->query('/html/body/*[1]');
   $transcript = $results->item(0);
-  $class = $transcript->getAttribute('class');
-  $project_id = livingstone_pid_to_project_id($datastream->parent->id);
-  $class = "{$class} transcription-viewer-content {$project_id}";
-  $transcript->setAttribute('class', $class);
+  $classes[] = $transcript->getAttribute('class');
+  $classes[] = 'transcription-viewer-content';
+  $classes[] = livingstone_pid_to_project_id($datastream->parent->id);
+  $transcript->setAttribute('class', implode(' ', $classes));
   $element = array(
     '#attached' => array(
       'css' => livingstone_transcript_transform_get_css($xpath),

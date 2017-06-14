@@ -101,11 +101,11 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
     'transcription' => array(
       '#access' => $has_transcription,
       '#theme' => 'livingstone_transcript',
-      '#theme_wrappers' => array('livingstone_manuscript_viewer_pane'),
       '#attributes' => array(
         'class' => array('transcription'),
       ),
       '#pid' => $manuscript,
+      '#classes' => array('pane'),
     ),
     'main_image' => array(
       '#access' => $is_viewable,

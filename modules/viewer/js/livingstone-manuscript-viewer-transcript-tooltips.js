@@ -15,7 +15,7 @@
      *   An jQuery object containing the iframes in which to attach tooltips.
      */
     function attachToolTips(tei) {
-      $(tei).parent().once('livingstoneTranscriptScroll', function() {
+      $(tei).once('livingstoneTranscriptScroll', function() {
         $(this).scroll(function () {
           var api = $(this).find('[data-hasqtip]').qtip('api');
           if (api) {
