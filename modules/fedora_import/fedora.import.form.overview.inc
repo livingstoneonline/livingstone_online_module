@@ -453,7 +453,7 @@ function livingstone_fedora_import_add_stats_table() {
  */
 function livingstone_fedora_import_public_stats_table() {
   $header = array('Local Objects to be <strong>made public</strong>', 'Count');
-  $results = db_query("SELECT DISTINCT l.TYPE, count(l.TYPE) as count FROM {livingstone_fedora_local_objects} as l LEFT OUTER JOIN {livingstone_fedora_local_objects} as r on l.PID = r.PID WHERE (l.PRIVATE <> r.PRIVATE AND l.PRIVATE=true) GROUP by l.TYPE ORDER BY count DESC;");
+  $results = db_query("SELECT DISTINCT l.TYPE, count(l.TYPE) as count FROM {livingstone_fedora_local_objects} as l LEFT OUTER JOIN {livingstone_fedora_remote_objects} as r on l.PID = r.PID WHERE (l.PRIVATE <> r.PRIVATE AND l.PRIVATE=true) GROUP by l.TYPE ORDER BY count DESC;");
   return livingstone_fedora_import_count_table($results, $header, t('No local files are to be made public.'));
 }
 

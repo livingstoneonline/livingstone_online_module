@@ -17,12 +17,19 @@
     function attachToolTips(iframes) {
       function attach() {
         var iframe = this;
+        $(this).parent().scroll(function () {
+          var api = $('iframe', this).contents().find('[data-hasqtip]').qtip('api');
+          if (api) {
+            api.destroy();
+          }
+        });
         $(this).contents().find('[title][title!=""]').each(function () {
           $(this).on('mouseenter', function (event) {
             var offset = $(iframe).offset();
             var position = this.getBoundingClientRect();
+            var width = (position.right - position.left) / 2;
             var top = offset.top + position.top;
-            var left = offset.left + position.left;
+            var left = offset.left + position.left + width;
             $(this).qtip({
               prerender: false,
               style: {
@@ -47,7 +54,8 @@
               },
               hide: {
                 fixed: true,
-                delay: 1000
+                delay: 1000,
+                event: 'click unfocus'
               },
               events: {
                 hide: function (event, api) {
@@ -88,6 +96,9 @@
               attachToolTips($(this).contents().find('iframe#transcription'));
             });
           });
+          break;
+        case 'close':
+          $('.qtip').remove();
           break;
       }
     }

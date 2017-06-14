@@ -673,7 +673,6 @@ body.loading .loading-modal {
 /* line 3, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_modal.less */
 body.modal-open {
   overflow: hidden;
-  position: fixed;
 }
 /* line 6, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_modal.less */
 body.modal-open div.livingstone-manuscript-viewer-modal {

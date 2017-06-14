@@ -329,7 +329,8 @@
                 },
                 hide: {
                   fixed: true,
-                  delay: 1000
+                  delay: 1000,
+                  event: 'click unfocus'
                 },
                 events: {
                   hide: function (event, api) {

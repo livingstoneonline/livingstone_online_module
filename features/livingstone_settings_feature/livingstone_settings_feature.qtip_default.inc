@@ -55,11 +55,11 @@ function livingstone_settings_feature_qtip_default_qtips() {
     'hide' => array(
       'event' => array(
         'mouseleave' => 'mouseleave',
+        'unfocus' => 'unfocus',
         'click' => 'click',
-        'unfocus' => 0,
         'blur' => 0,
       ),
-      'fixed' => 0,
+      'fixed' => 1,
       'delay' => '',
       'inactive' => '',
     ),
