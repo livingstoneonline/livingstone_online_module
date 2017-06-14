@@ -621,7 +621,15 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
     '#prefix' => '<div class="search-results">',
     '#suffix' => '</div>',
     '#theme' => 'table',
-    '#sticky' => FALSE,
+    '#attributes' => array(
+      'class' => array('livingstone-sticky-enabled'),
+    ),
+    '#attached' => array(
+      'js' => array(
+        drupal_get_path('module','livingstone_browse_catalogue') . '/js/header.js',
+      ),
+    ),
+    '#sticky' => false,
     '#header' => $headers,
     '#rows' => $rows,
     '#empty' => t('No results found.'),
