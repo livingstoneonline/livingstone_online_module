@@ -360,7 +360,7 @@ body.loading .loading-modal {
 /* line 33, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane.item-details {
   -webkit-overflow-scrolling: touch;
-  overflow: scroll;
+  overflow: auto;
 }
 /* line 37, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane.transcription {

@@ -24,7 +24,7 @@
               </li>
             <?php endforeach; ?>
           </ul>
-        <?php endif; ?>cd
+        <?php endif; ?>
       </div>
       <div class="downloads-list">
         <?php if (!empty($downloads['gif'])): ?>
