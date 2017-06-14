@@ -255,7 +255,7 @@
         manuscript = new Manuscript(settings),
         toolbar = new Toolbar('#toolbar', manuscript),
         item_details = new ItemDetails('#item-details'),
-        transcription = new Transcription('#transcription', manuscript),
+        transcription = new Transcription('.transcription-viewer-content', manuscript),
         main_image = $('#main-image').length ?
           new Image('#main-image', manuscript, settings.openSeaDragon.options) :
           null,
@@ -402,7 +402,6 @@
           if (page) {
             transcription.setPage(page.pid, page.label);
           }
-          transcription.resize();
           $.each(center_panes, function () {
             this.addClass('pane-open');
             this.addClass('pane-left');
@@ -980,14 +979,31 @@
     var that = this,
         element = $(selector);
 
-    /**
-     * Resize the iframe based on the length of it's content.
-     */
-    this.resize = function () {
-      if (element && element.get(0)) {
-        element.height(element.get(0).contentWindow.document.body.scrollHeight + 'px');
+    function page_selector(page) {
+      return 'span.pb-title:contains(' + page + ')';
+    }
+
+    function scroll_to(selector, offset) {
+      var heading;
+      offset = offset || 0;
+      heading = $(selector).eq(offset);
+      if (heading.length != 0) {
+        var pane = $('.pane.transcription');
+        var pos = heading.position();
+        var rect= heading.get(0).getBoundingClientRect();
+        var height = Math.abs(rect.bottom - rect.top);
+        var top = pane.scrollTop() + pos.top - height;
+        pane.animate({
+          scrollTop: top + 'px'
+        }, 1000);
       }
-    };
+    }
+
+    $('.TEI span.pb-title', element).click(function () {
+      var label = $(this).text();
+      var page = manuscript.getPageByLabel(label);
+      element.trigger(jQuery.Event('page-change', { pid: page.pid, label: label }));
+    });
 
     /**
      * Scrolls to the given page if possible.
@@ -997,50 +1013,14 @@
       if (page) {
         label = label || page.labels[0];
         if (typeof label != "undefined") {
-          var iframe = jQuery('iframe#transcription');
-          if (iframe.length) {
-            iframe.get(0).contentWindow.postMessage({
-              event: 'page',
-              label: label
-            }, "*");
-          }
+          scroll_to(page_selector(label));
         }
       }
     };
 
-    // Listen for page events.
-    function receiveMessage(event) {
-      if (typeof event.data.event == "undefined") {
-        return;
-      }
-      if (event.data.event == 'page' &&
-          typeof event.data.label != "undefined") {
-        var page = manuscript.getPageByLabel(event.data.label);
-        if (page) {
-          element.trigger(jQuery.Event('page-change', { pid: page.pid, label: event.data.label }));
-        }
-      }
-      if (event.data.event == 'ready') {
-        // Resize once loaded.
-        that.resize();
-      }
-    }
-    window.addEventListener("message", receiveMessage, false);
-
-    // Resize the iFrame when the window is resized.
-    $(window).resize(function () { that.resize(); });
-
-    /**
-     * Detect when the transcript has loaded so that the parent frame of this
-     * one can attach tooltips.
-     */
-    element.load(function () {
-      element.attr('loaded', '1');
-      that.resize();
-    });
-
     // Expose some jQuery functions via a proxy.
     this.on = $.proxy(element.on, element);
+    this.trigger = $.proxy(element.trigger, element);
   };
 
 }(jQuery));

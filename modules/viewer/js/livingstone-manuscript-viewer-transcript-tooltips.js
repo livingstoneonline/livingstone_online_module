@@ -14,22 +14,22 @@
      * @param iframes
      *   An jQuery object containing the iframes in which to attach tooltips.
      */
-    function attachToolTips(iframes) {
-      function attach() {
-        var iframe = this;
-        $(this).parent().scroll(function () {
-          var api = $('iframe', this).contents().find('[data-hasqtip]').qtip('api');
+    function attachToolTips(tei) {
+      $(tei).parent().once('livingstoneTranscriptScroll', function() {
+        $(this).scroll(function () {
+          var api = $(this).find('[data-hasqtip]').qtip('api');
           if (api) {
             api.destroy();
           }
         });
-        $(this).contents().find('[title][title!=""]').each(function () {
-          $(this).on('mouseenter', function (event) {
-            var offset = $(iframe).offset();
+      });
+      $(tei).find('[title][title!=""]').each(function () {
+        $(this).once('livingstoneTranscriptToolTip', function () {
+          $(this).on('mouseenter', function(event) {
             var position = this.getBoundingClientRect();
-            var width = (position.right - position.left) / 2;
-            var top = offset.top + position.top;
-            var left = offset.left + position.left + width;
+            var width = (position.right - position.left);
+            var top = position.top;
+            var left = position.left + width;
             $(this).qtip({
               prerender: false,
               style: {
@@ -65,15 +65,6 @@
             });
           });
         });
-      }
-      iframes.each(function () {
-        var loaded = $(this).attr('loaded') == '1';
-        if (!loaded) {
-          $(this).load(attach);
-        }
-        else {
-          attach.apply(this);
-        }
       });
     }
 
@@ -90,11 +81,15 @@
       switch(event.data.event) {
         case 'open':
           // Opened viewer, so attach qtip logic.
-          var iframes = $('.livingstone-manuscript-viewer-modal').find('iframe');
-          iframes.each(function () {
-            $(this).load(function () {
-              attachToolTips($(this).contents().find('iframe#transcription'));
+          var iframe = $('.livingstone-manuscript-viewer-modal').find('iframe');
+          iframe.load(function() {
+            $(this).contents().find('.transcription-viewer-content').each(function () {
+              attachToolTips($(this));
             });
+          });
+          // If already loaded.
+          iframe.contents().find('.transcription-viewer-content').each(function () {
+            attachToolTips($(this));
           });
           break;
         case 'close':
@@ -104,8 +99,5 @@
     }
     window.addEventListener("message", receiveMessage, false);
 
-    // Initialize.
-    var iframes = $('.transcription-viewer-content').find('iframe');
-    attachToolTips(iframes);
   });
 }(jQuery));

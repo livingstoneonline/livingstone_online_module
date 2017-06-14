@@ -185,6 +185,7 @@ function livingstone_transcript_saxon_transform($tei) {
  *   The transformed TEI as HTML if successful FALSE otherwise.
  */
 function livingstone_transcript_saxon_transform_embedded($datastream) {
+  module_load_include('inc', 'livingstone', 'includes/utilities');
   $content = livingstone_transcript_saxon_transform($datastream->content);
   if ($content == FALSE) {
     return FALSE;
