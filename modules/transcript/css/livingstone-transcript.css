@@ -1,8 +1,10 @@
 /* line 1, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/transcript/less/livingstone-transcript.less */
 .transcription-viewer-content {
   display: none !important;
+  min-height: 100% !important;
+  min-width: 100% !important;
 }
-/* line 4, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/transcript/less/livingstone-transcript.less */
+/* line 6, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/transcript/less/livingstone-transcript.less */
 .transcription-viewer-content.active {
   display: block !important;
 }

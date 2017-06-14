@@ -184,7 +184,7 @@ function theme_livingstone_manuscript_viewer_pane(array $variables) {
   $element = &$variables['element'];
   $attributes = isset($element['#attributes']) ? $element['#attributes'] : array();
   $attributes['class'][] = 'pane';
-  if ($element['#open']) {
+  if (isset($element['#open']) && $element['#open']) {
     $attributes['class'][] = 'pane-open';
   }
   if (isset($element['#side'])) {

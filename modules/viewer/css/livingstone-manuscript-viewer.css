@@ -367,35 +367,40 @@ body.loading .loading-modal {
   -webkit-overflow-scrolling: touch;
   overflow: auto;
 }
-/* line 41, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
+/* line 40, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
+.pane.transcription .transcription-viewer-content {
+  min-height: 100% !important;
+  min-width: 100% !important;
+}
+/* line 45, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane.main-image,
 .pane.compare-image,
 .pane.restricted {
   height: 100%;
   background-color: black;
 }
-/* line 47, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
+/* line 51, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane.compare-image {
   border-left: 2px solid white;
 }
 @media only screen and (max-width: 850px) {
-  /* line 52, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
+  /* line 56, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
   .pane .page-download {
     display: none;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 58, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
+  /* line 62, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
   .pane.pane-left,
   .pane.pane-right {
     width: 100%;
     float: none;
   }
-  /* line 66, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
+  /* line 70, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
   .pane.pane-open ~ .pane.pane-open {
     display: none;
   }
-  /* line 69, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
+  /* line 73, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
   .pane .spectral-image-toolbar {
     text-align: center;
   }
