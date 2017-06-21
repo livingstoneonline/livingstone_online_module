@@ -60,5 +60,6 @@ features[variable][] = node_options_section_page
 features[variable][] = node_preview_section_page
 features[variable][] = node_submitted_section_page
 features[variable][] = pathauto_node_section_page_pattern
+features[variable][] = pathauto_taxonomy_term_section_pattern
 features_exclude[dependencies][livingstone_settings_feature] = livingstone_settings_feature
 project path = sites/all/modules/custom/livingstone_online_module/features
