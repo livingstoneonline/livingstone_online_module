@@ -1109,6 +1109,13 @@ function livingstone_user_feature_user_default_permissions() {
     'module' => 'islandora',
   );
 
+  // Exported permission: 'livingstone administer permission'.
+  $permissions['livingstone administer permission'] = array(
+    'name' => 'livingstone administer permission',
+    'roles' => array(),
+    'module' => 'livingstone',
+  );
+
   // Exported permission: 'manage collection policy'.
   $permissions['manage collection policy'] = array(
     'name' => 'manage collection policy',

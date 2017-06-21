@@ -4,7 +4,6 @@ core = 7.x
 package = Livingstone
 version = 7.x-1.0
 dependencies[] = livingstone_manuscript_feature
-dependencies[] = livingstone_settings_feature
 dependencies[] = uuid_features
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2

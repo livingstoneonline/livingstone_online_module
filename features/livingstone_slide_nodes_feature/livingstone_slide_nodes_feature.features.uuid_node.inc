@@ -51,6 +51,7 @@ function livingstone_slide_nodes_feature_uuid_features_default_content() {
   'path' => array(
     'pathauto' => 0,
   ),
+  'url_alias' => array(),
   'date' => '2016-07-23 00:08:09 +0000',
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
@@ -95,6 +96,7 @@ function livingstone_slide_nodes_feature_uuid_features_default_content() {
   'path' => array(
     'pathauto' => 0,
   ),
+  'url_alias' => array(),
   'date' => '2016-07-21 20:44:57 +0000',
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
@@ -139,6 +141,7 @@ function livingstone_slide_nodes_feature_uuid_features_default_content() {
   'path' => array(
     'pathauto' => 0,
   ),
+  'url_alias' => array(),
   'date' => '2016-07-23 00:04:44 +0000',
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
@@ -183,6 +186,7 @@ function livingstone_slide_nodes_feature_uuid_features_default_content() {
   'path' => array(
     'pathauto' => 0,
   ),
+  'url_alias' => array(),
   'date' => '2016-07-23 00:06:32 +0000',
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
@@ -227,6 +231,7 @@ function livingstone_slide_nodes_feature_uuid_features_default_content() {
   'path' => array(
     'pathauto' => 0,
   ),
+  'url_alias' => array(),
   'date' => '2016-07-23 00:02:18 +0000',
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
@@ -271,6 +276,7 @@ function livingstone_slide_nodes_feature_uuid_features_default_content() {
   'path' => array(
     'pathauto' => 0,
   ),
+  'url_alias' => array(),
   'date' => '2016-07-23 00:06:58 +0000',
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
@@ -315,6 +321,7 @@ function livingstone_slide_nodes_feature_uuid_features_default_content() {
   'path' => array(
     'pathauto' => 0,
   ),
+  'url_alias' => array(),
   'date' => '2016-07-23 00:00:57 +0000',
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );

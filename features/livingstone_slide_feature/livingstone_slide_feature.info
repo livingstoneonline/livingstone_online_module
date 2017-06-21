@@ -17,4 +17,5 @@ features[variable][] = language_content_type_slide
 features[variable][] = node_options_slide
 features[variable][] = node_preview_slide
 features[variable][] = node_submitted_slide
+features[variable][] = pathauto_node_slide_pattern
 project path = sites/all/modules/custom/livingstone_online_module/features

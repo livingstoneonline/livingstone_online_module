@@ -5,7 +5,6 @@ package = Livingstone
 version = 7.x-1.0
 dependencies[] = ctools
 dependencies[] = features
-dependencies[] = livingstone_settings_feature
 dependencies[] = livingstone_slide_feature
 dependencies[] = node_export_features
 dependencies[] = strongarm

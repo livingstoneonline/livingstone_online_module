@@ -36,5 +36,12 @@ function livingstone_repository_info_feature_strongarm() {
   );
   $export['field_bundle_settings_node__repository_info'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_repository_info_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_repository_info_pattern'] = $strongarm;
+
   return $export;
 }

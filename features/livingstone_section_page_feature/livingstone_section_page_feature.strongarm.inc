@@ -83,5 +83,12 @@ function livingstone_section_page_feature_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_section_page'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_section_page_pattern';
+  $strongarm->value = '[node:field_section]/[node:title]';
+  $export['pathauto_node_section_page_pattern'] = $strongarm;
+
   return $export;
 }
