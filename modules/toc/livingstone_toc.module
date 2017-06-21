@@ -150,5 +150,6 @@ function theme_livingstone_table_of_contents(array $variables) {
   foreach (element_children($output) as $key) {
     $output[$key]['#localized_options']['attributes']['target'] = '_blank';
   }
-  return drupal_render($output);
+  $modal = '<div class="table-of-contents-modal"></div>';
+  return $modal . drupal_render($output);
 }
