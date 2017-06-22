@@ -1172,6 +1172,13 @@ function livingstone_user_feature_user_default_permissions() {
     'module' => 'nodequeue',
   );
 
+  // Exported permission: 'menu view unpublished'.
+  $permissions['menu view unpublished'] = array(
+    'name' => 'menu view unpublished',
+    'roles' => array(),
+    'module' => 'menu_view_unpublished',
+  );
+
   // Exported permission: 'migrate collection members'.
   $permissions['migrate collection members'] = array(
     'name' => 'migrate collection members',
