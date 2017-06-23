@@ -133,7 +133,6 @@
           // Resize.
           function resizeIframe() {
             iframe.height(iframe.get(0).contentWindow.document.body.scrollHeight + 'px');
-            iframe.width(iframe.get(0).contentWindow.document.body.scrollWidth + 'px');
           }
           resizeIframe();
           $(window).resize(resizeIframe);
