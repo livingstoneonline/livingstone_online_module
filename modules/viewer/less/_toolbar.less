@@ -7,10 +7,8 @@
 @toolbar-item-margin: @toolbar-item-margin-vertical @toolbar-item-margin-horizontal;
 
 #toolbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  .flexbox(center, row, wrap);
+  .align-items(center);
   @media (min-width: 480px) {
     padding-right: 25px;
   }
@@ -97,10 +95,8 @@
     z-index: 1;
   }
   .item-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    .flexbox(center, row, wrap);
+    .align-items(center);
   }
   @media only screen and (max-width : @split-pane-max-width) {
     // Don't display compare when split screen is not usable.
