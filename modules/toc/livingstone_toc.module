@@ -146,10 +146,6 @@ function livingstone_toc_field_widget_form(array &$form, array &$form_state, $fi
 function theme_livingstone_table_of_contents(array $variables) {
   $menu = menu_tree_page_data($variables['menu_name'], NULL, FALSE);
   $output = menu_tree_output($menu);
-  // Open in a new tab.
-  foreach (element_children($output) as $key) {
-    $output[$key]['#localized_options']['attributes']['target'] = '_blank';
-  }
   $modal = '<div class="table-of-contents-modal"></div>';
   return $modal . drupal_render($output);
 }
