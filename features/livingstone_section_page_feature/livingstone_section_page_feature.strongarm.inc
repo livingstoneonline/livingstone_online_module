@@ -44,7 +44,10 @@ function livingstone_section_page_feature_strongarm() {
           'weight' => '3',
         ),
         'path' => array(
-          'weight' => '15',
+          'weight' => '17',
+        ),
+        'redirect' => array(
+          'weight' => '18',
         ),
       ),
       'display' => array(),

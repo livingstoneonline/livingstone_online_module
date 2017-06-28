@@ -40,12 +40,15 @@ namespace NINES {
     $object->text = preg_replace("/([\r\n]{6,}|[\n]{3,}|[\r]{3,})/", "\n", $object->text);
     // Types.
     $object->setTypes(array(
-      'Interactive Resource',
-      'Collection',
       'Codex',
+      'Collection',
+      'Dataset',
+      'Illustration',
+      'Interactive Resource',
       'Manuscript',
-      'Sheet',
       'Physical Object',
+      'Sheet',
+      'Still Image',
     ));
     // Disciplines.
     $object->setDisciplines(array(
@@ -54,27 +57,36 @@ namespace NINES {
       'Ethnic Studies',
       'Geography',
       'History',
-      'Science',
       'Literature',
       'Manuscript Studies',
+      'Political Science',
+      'Religious Studies',
+      'Science',
     ));
     // Genres.
     $object->setGenres(array(
       'Bibliography',
+      'Catalog',
       'Collection',
+      'Correspondence',
       'Criticism',
+      'Ephemera',
+      'Essay',
       'Historiography',
       'Life Writing',
       'Nonfiction',
       'Paratext',
       'Photograph',
+      'Political Statement',
       'Reference Works',
+      'Religion',
       'Travel Writing',
+      'Visual Art',
     ));
     // Authors.
     $object->roles['AUT'] = 'Wisnicki, Adrian S.';
     // Publisher.
-    $object->roles['PBL'] = 'Livingstone Online';
+    $object->roles['PBL'] = 'Livingstone Online (livignstoneonline.org)';
     // Full text.
     $object->full_text = TRUE;
     // See Also.
@@ -151,7 +163,7 @@ namespace NINES {
     $object = new Object($id);
     // Title.
     $object->title = $node->title;
-    $object->alternatives[] = $node->field_section_alt_title['und'][0]['value'];
+    $object->alternatives[] = $node->field_manuscript_alt_title['und'][0]['value'];
     // Date.
     $date_label = $node->field_manuscript_dates['und'][0]['value'];
     $start_date = new DateTime($node->field_manuscript_start_date['und'][0]['value']);
@@ -161,14 +173,32 @@ namespace NINES {
     $object->text = strip_tags($node->field_manuscript_tei['und'][0]['value']);
     $object->text = preg_replace("/([\r\n]{6,}|[\n]{3,}|[\r]{3,})/", "\n", $object->text);
     // Types.
-    $object->setTypes(array(
-      'Interactive Resource',
-      'Collection',
+    $types = array();
+    // Map genre to type.
+    $genre = isset($node->field_manuscript_genres['und'][0]['value']) ? $node->field_manuscript_genres['und'][0]['value'] : '';
+    if (preg_match('/map/i', $genre)) {
+      $types[] = 'Map';
+    }
+    if (preg_match('/page proofs/i', $genre)) {
+      $types[] = 'Page Proofs';
+    }
+    if (preg_match('/typescript/i', $genre)) {
+      $types[] = 'Typescript';
+    }
+    if (preg_match('/drawing/i', $genre)) {
+      $types[] = 'Drawing';
+    }
+    $object->setTypes(array_unique(array_merge($types, array(
       'Codex',
+      'Collection',
+      'Dataset',
+      'Illustration',
+      'Interactive Resource',
       'Manuscript',
-      'Sheet',
       'Physical Object',
-    ));
+      'Sheet',
+      'Still Image',
+    ))));
     // Disciplines.
     $object->setDisciplines(array(
       'Anthropology',
@@ -176,22 +206,31 @@ namespace NINES {
       'Ethnic Studies',
       'Geography',
       'History',
-      'Science',
       'Literature',
       'Manuscript Studies',
+      'Political Science',
+      'Religious Studies',
+      'Science',
     ));
     // Genres.
     $object->setGenres(array(
       'Bibliography',
+      'Catalog',
       'Collection',
+      'Correspondence',
       'Criticism',
+      'Ephemera',
+      'Essay',
       'Historiography',
       'Life Writing',
       'Nonfiction',
       'Paratext',
       'Photograph',
+      'Political Statement',
       'Reference Works',
+      'Religion',
       'Travel Writing',
+      'Visual Art',
     ));
     // Authors.
     $authors = $node->field_manuscript_creators['und'][0]['value'];

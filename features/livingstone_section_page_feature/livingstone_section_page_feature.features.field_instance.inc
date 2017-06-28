@@ -21,7 +21,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -43,6 +43,45 @@ function livingstone_section_page_feature_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-section_page-field_section_authors'.
+  $field_instances['node-section_page-field_section_authors'] = array(
+    'bundle' => 'section_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'This field is not displayed to the user, but used to populate &lt;role:AUT&gt; elements in the NINE\'s RDF Export.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_section_authors',
+    'label' => 'Author(s)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 128,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 15,
     ),
   );
 
@@ -139,7 +178,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -227,6 +266,45 @@ function livingstone_section_page_feature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-section_page-field_section_editors'.
+  $field_instances['node-section_page-field_section_editors'] = array(
+    'bundle' => 'section_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'This field is not displayed to the user, but used to populate &lt;role:EDT&gt; elements in the NINE\'s RDF Export.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_section_editors',
+    'label' => 'Editor(s)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 128,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 16,
+    ),
+  );
+
   // Exported field_instance: 'node-section_page-field_section_grid_image'.
   $field_instances['node-section_page-field_section_grid_image'] = array(
     'bundle' => 'section_page',
@@ -304,7 +382,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -342,7 +420,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -482,7 +560,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -598,7 +676,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -629,9 +707,11 @@ function livingstone_section_page_feature_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Appears italicised before the title; typically "Browse by".');
+  t('Author(s)');
   t('Byline');
   t('Carousel Image');
   t('Date');
+  t('Editor(s)');
   t('Grid Image');
   t('Main Text');
   t('Open in New Tab');
@@ -644,6 +724,8 @@ function livingstone_section_page_feature_field_default_field_instances() {
   t('Teaser');
   t('Text displayed in the the gridview level 2 for this section page.');
   t('The section this page belongs to.');
+  t('This field is not displayed to the user, but used to populate &lt;role:AUT&gt; elements in the NINE\'s RDF Export.');
+  t('This field is not displayed to the user, but used to populate &lt;role:EDT&gt; elements in the NINE\'s RDF Export.');
   t('Transcriptions');
 
   return $field_instances;
