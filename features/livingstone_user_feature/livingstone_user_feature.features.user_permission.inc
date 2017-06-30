@@ -1112,7 +1112,10 @@ function livingstone_user_feature_user_default_permissions() {
   // Exported permission: 'livingstone administer permission'.
   $permissions['livingstone administer permission'] = array(
     'name' => 'livingstone administer permission',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+    ),
     'module' => 'livingstone',
   );
 
