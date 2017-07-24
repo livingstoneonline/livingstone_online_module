@@ -12,16 +12,16 @@
     </span>
     <?php if ($is_viewable): ?>
       <span class="zoom">
-        <a class="zoom-out fa" title="<?php print t('Zoom Out'); ?>">&#xf010;</a>
+        <a class="zoom-out fa" title="<?php print t('Zoom out'); ?>">&#xf010;</a>
         <span class="zoom-slider" title="<?php print t('Zoom'); ?>"></span>
-        <a class="zoom-in fa" title="<?php print t('Zoom In'); ?>">&#xf00e;</a>
-        <a class="rotate fa" title="<?php print t('Rotate Image'); ?>">&#xf01e;</a>
+        <a class="zoom-in fa" title="<?php print t('Zoom in'); ?>">&#xf00e;</a>
+        <a class="rotate fa" title="<?php print t('Rotate image'); ?>">&#xf01e;</a>
       </span>
     <?php endif; ?>
   </span>
   <span class="item-group">
     <?php if ($is_viewable): ?>
-      <span title="<?php print t('Select Image'); ?>">
+      <span title="<?php print t('Select image'); ?>">
         <select class="page-select selectpicker" data-mobile="true">
         <?php foreach ($pager_options as $pager_option): ?>
           <option value="<?php print $pager_option['pid']; ?>"><?php print $pager_option['label']; ?></option>
@@ -30,10 +30,10 @@
       </span>
     <?php endif; ?>
     <span class="panes">
-      <a href="#" data-pane="item details" class="item-details" title="<?php print t('Display Item Details'); ?>">Item Details</a>
-      <a href="#" data-pane="transcription" class="transcription <?php if (!$has_transcription): print 'disabled'; endif ?>" title="<?php print t('Display Transcription'); ?>">Transcription</a>
+      <a href="#" data-pane="item details" class="item-details" title="<?php print t('Display item details'); ?>">Item Details</a>
+      <a href="#" data-pane="transcription" class="transcription <?php if (!$has_transcription): print 'disabled'; endif ?>" title="<?php print t('Display transcription'); ?>">Transcription</a>
         <?php if ($is_spectral && $is_viewable): ?>
-          <a href="#" data-pane="compare" class="compare" title="<?php print t('Compare Spectral Images'); ?>"><span class="fa">&#xf0e7;</span>&nbsp;Compare&nbsp;<span class="fa">&#xf0e7;</span></a>
+          <a href="#" data-pane="compare" class="compare" title="<?php print t('Compare spectral images'); ?>"><span class="fa">&#xf0e7;</span>&nbsp;Compare&nbsp;<span class="fa">&#xf0e7;</span></a>
         <?php endif; ?>
     </span>
     <span class="search">

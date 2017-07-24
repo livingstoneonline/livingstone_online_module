@@ -35,22 +35,6 @@ function livingstone_permission() {
 }
 
 /**
- * Implements hook_node_info().
- *
-function livingstone_node_info() {
-  return array(
-    'manuscript' => array(
-      'name' => t('Manuscript'),
-      'base' => 'node_content',
-      'description' => t('Manuscript data synced from Fedora, do not create manually.'),
-      'has_title' => TRUE,
-      'title_label' => t('Title'),
-      'locked' => TRUE,
-    ),
-  );
-}*/
-
-/**
  * Implements hook_theme().
  */
 function livingstone_theme() {

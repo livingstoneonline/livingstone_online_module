@@ -1,5 +1,5 @@
 <div class="dropdown">
-  <button id="browse-collection" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button id="browse-collection" class="btn btn-default dropdown-toggle" title="Browse collection" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <?php print t('Browse Collection'); ?>&nbsp;<span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="browse-collection">

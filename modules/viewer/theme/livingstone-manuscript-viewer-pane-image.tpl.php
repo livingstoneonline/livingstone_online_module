@@ -1,7 +1,7 @@
 <div id="<?php print $identifier; ?>"  oncontextmenu="return false;" unselectable="on" onselectstart="return false;">
   <?php if ($is_spectral): ?>
     <div class="image-toolbar">
-      <span title="<?php print t('Select Spectral Image Type'); ?>">
+      <span title="<?php print t('Select spectral image type'); ?>">
         <select class="spectral-image selectpicker" data-mobile="true">
           <?php $page = reset($pages); ?>
           <?php foreach ($page['dsid'] as $dsid): ?>
@@ -15,10 +15,10 @@
       </span>
     </div>
   <?php endif; ?>
-  <div class="prev-icon" title="<?php print t('View Previous Image'); ?>">
+  <div class="prev-icon" title="<?php print t('View previous image'); ?>">
     <div class="arrow-left"></div>
   </div>
-  <div class="next-icon" title="<?php print t('View Next Image'); ?>">
+  <div class="next-icon" title="<?php print t('View next image'); ?>">
     <div class="arrow-right"></div>
   </div>
 </div>

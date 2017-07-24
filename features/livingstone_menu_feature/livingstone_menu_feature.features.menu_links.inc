@@ -115,7 +115,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'options' => array(
       'identifier' => 'main-menu_about-this-site:about-this-site',
       'attributes' => array(
-        'title' => 'Section Pages: About this Site',
+        'title' => 'About this site',
       ),
       'item_attributes' => array(
         'id' => '',
@@ -212,7 +212,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'options' => array(
       'identifier' => 'main-menu_behind-the-scenes:behind-the-scenes',
       'attributes' => array(
-        'title' => 'Section Pages: Behind the Scenes',
+        'title' => 'Behind the scenes',
       ),
       'item_attributes' => array(
         'id' => '',
@@ -525,7 +525,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'options' => array(
       'identifier' => 'main-menu_in-his-own-words:in-his-own-words',
       'attributes' => array(
-        'title' => 'Section Pages: In His Own Words ',
+        'title' => 'In his own words',
       ),
       'item_attributes' => array(
         'id' => '',
@@ -670,7 +670,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'options' => array(
       'identifier' => 'main-menu_life-and-times:life-and-times',
       'attributes' => array(
-        'title' => 'Section Pages: Life and Times',
+        'title' => 'Life and times',
       ),
       'item_attributes' => array(
         'id' => '',
@@ -1199,7 +1199,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'options' => array(
       'identifier' => 'main-menu_resources:resources',
       'attributes' => array(
-        'title' => 'Section Pages: Resources',
+        'title' => 'Resources',
       ),
       'item_attributes' => array(
         'id' => '',
@@ -1272,7 +1272,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'options' => array(
       'identifier' => 'main-menu_spectral-imaging:spectral-imaging',
       'attributes' => array(
-        'title' => 'Section Pages: Spectral Imaging',
+        'title' => 'Spectral imaging',
       ),
       'item_attributes' => array(
         'id' => '',
@@ -1566,7 +1566,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'options' => array(
       'identifier' => 'menu-fixed-header-menu_:uuid/node/78d62fa4-716c-41ee-94ef-b09eb07b8903',
       'attributes' => array(
-        'title' => 'Site Guide',
+        'title' => 'Site guide',
         'class' => array(
           0 => 'fa',
           1 => 'site-guide',
@@ -3175,7 +3175,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'link_title' => '',
     'options' => array(
       'attributes' => array(
-        'title' => 'Site Guide',
+        'title' => 'Site guide',
         'class' => array(
           0 => 'fa',
           1 => 'site-guide',

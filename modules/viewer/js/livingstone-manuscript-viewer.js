@@ -771,6 +771,7 @@
         });
         if (image_selector.selectpicker) {
           image_selector.selectpicker('val', mapping.dsid);
+          image_selector.selectpicker('refresh');
         }
         else {
           image_selector.val(mapping.dsid);
