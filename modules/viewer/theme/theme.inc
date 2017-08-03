@@ -304,7 +304,7 @@ function template_preprocess_livingstone_manuscript_viewer_pane_image(array &$va
     array(
       'attributes' => array(
         'target' => '_blank',
-        'title' => t('Display Processing Details'),
+        'title' => t('Display processing details'),
         'class' => array('processing-details', 'icon', 'button'),
       ),
     )
@@ -316,8 +316,8 @@ function template_preprocess_livingstone_manuscript_viewer_pane_image(array &$va
       'html' => TRUE,
       'attributes' => array(
         'target' => '_blank',
-        'title' => t('Download Page Archive'),
-        'class' => array('icon', 'button'),
+        'title' => t('Download page archive'),
+        'class' => array('icon', 'button', 'download'),
       ),
     )
   );

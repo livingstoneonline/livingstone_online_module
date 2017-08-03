@@ -244,7 +244,7 @@ namespace NINES {
       $object->roles['RCP'][] = $addressee;
     }
     // Publisher.
-    $object->roles['PBL'] = 'Livingstone Online';
+    $object->roles['PBL'] = 'Livingstone Online (livingstoneonline.org)';
     // Full text.
     $object->full_text = TRUE;
     // See Also.

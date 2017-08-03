@@ -9,6 +9,9 @@
     width: 100%;
     text-align: center;
     z-index: 1;
+    & > * {
+      vertical-align: middle;
+    }
     .spectral-image {
       max-width: 30%;
       // Download button not displayed so more space.
@@ -24,6 +27,7 @@
         width: 80%;
       }
       button {
+        display: inline-block;
         padding: 2px 12px;
         border-radius: 7px;
         font-size: 14px;
@@ -35,6 +39,9 @@
       color: black;
       cursor: pointer;
       text-decoration: none;
+      line-height: 24px;
+      padding: 0 8px;
+      display: inline-block;
     }
     .dropdown-menu {
       font-size: 14px;

@@ -1,18 +1,16 @@
 <div id="<?php print $identifier; ?>"  oncontextmenu="return false;" unselectable="on" onselectstart="return false;">
   <?php if ($is_spectral): ?>
     <div class="image-toolbar">
-      <span title="<?php print t('Select spectral image type'); ?>">
+      <!--<span title="<?php print t('Select spectral image type'); ?>">-->
         <select class="spectral-image selectpicker" data-mobile="true">
           <?php $page = reset($pages); ?>
           <?php foreach ($page['dsid'] as $dsid): ?>
             <option value="<?php print $dsid; ?>"><?php print substr($dsid, 0, strlen($dsid)-4); ?></option>
           <?php endforeach; ?>
         </select>
-      </span>
+      <!--</span>-->
       <?php print $processing_details; ?>
-      <span class="download">
-        <?php print $download; ?>
-      </span>
+      <?php print $download; ?>
     </div>
   <?php endif; ?>
   <div class="prev-icon" title="<?php print t('View previous image'); ?>">

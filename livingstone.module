@@ -249,22 +249,25 @@ function livingstone_islandora_required_objects(IslandoraTuque $connection) {
  * Implements hook_islandora_derivative().
  */
 function livingstone_livingstone_spectralManuscriptPageCModel_islandora_derivative() {
-  module_load_include('inc', 'livingstone', 'includes/fedora.import');
-  $large_image_module_path = drupal_get_path('module', 'islandora_large_image');
-  $dsids = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_DATASTREAM_TABLE, 'r')
-    ->distinct()
-    ->fields('r', array('DSID'))
-    ->condition('r.DSID', '%OBJ', 'LIKE')
-    ->execute()
-    ->fetchCol(0);
-  foreach ($dsids as $dsid) {
-    $format = preg_replace('/_OBJ$/', '', $dsid);
-    $format = strtoupper($format);
-    $derivatives[] = array(
-      'source_dsid' => "{$format}_OBJ",
-      'destination_dsid' => "${format}_JP2",
-      'function' => array('livingstone_spectral_create_jp2_derivative'),
-    );
+  module_load_include('inc', 'livingstone_fedora_import', 'fedora.import');
+  static $derivatives = FALSE;
+  if ($derivatives == FALSE) {
+    $derivatives = array();
+    $dsids = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_DATASTREAM_TABLE, 'r')
+      ->distinct()
+      ->fields('r', array('DSID'))
+      ->condition('r.DSID', '%OBJ', 'LIKE')
+      ->execute()
+      ->fetchCol(0);
+    foreach ($dsids as $dsid) {
+      $format = preg_replace('/_OBJ$/', '', $dsid);
+      $format = strtoupper($format);
+      $derivatives[] = array(
+        'source_dsid' => "{$format}_OBJ",
+        'destination_dsid' => "${format}_JP2",
+        'function' => array('livingstone_spectral_create_jp2_derivative'),
+      );
+    }
   }
   return $derivatives;
 }

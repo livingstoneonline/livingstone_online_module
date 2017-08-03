@@ -654,7 +654,6 @@
         prev = $('.prev-icon', element),
         next = $('.next-icon', element),
         image_selector = $('select.spectral-image', element),
-        page_download = $('.download', element),
         openseadragon = new OpenSeadragon($.extend({
           element: element.get(0),
           tileSources: manuscript.getTileSources(),
@@ -695,12 +694,12 @@
     function updatePageDownload(index) {
       var page = manuscript.getPage(index);
       if (page) {
-        page_download.html('');
+        $('.download', element).remove();
         if ($.isNumeric(page.size) && page.size > 0) {
           var size = page.size / 1024 / 1024;
           var text = '(' + size.toFixed(1) + ' MB)';
           var url = Drupal.settings.basePath + 'islandora/object/' + page.pid + '/datastream/ZIP/download';
-          page_download.html('<a href="' + url + '" class="icon button" title="Download Archival Packet"><span class="fa">&#xf063;</span>&nbsp;' + text + '</a>');
+          $('.image-toolbar', element).append('<a href="' + url + '" class="icon button download" title="Download archival packet"><span class="fa">&#xf063;</span>&nbsp;' + text + '</a>');
         }
       }
     }

@@ -269,6 +269,7 @@
       var select = $(this);
       var selected = $("option:selected", this);
       var value = select.val();
+      var date_selector = dateSelector(value);
       var options = $('option[value="' + value + '"]', this);
       var offset = 0;
       $.each(options, function (i) {
@@ -277,7 +278,10 @@
           return false;
         }
       });
-      scrollTo(getActiveTranscript(), dateSelector(value), offset);
+      scrollTo(getActiveTranscript(), date_selector, offset);
+      // Add highlight.
+      $('.highlight').removeClass('highlight');
+      $(date_selector).eq(offset).addClass('highlight');
     });
 
     // This is the first past so we must explicitly activate

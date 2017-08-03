@@ -300,7 +300,7 @@
      */
     function isSearchResultsOverflowed() {
       var search_results = $('.search-results');
-      var table = $('.search-results table');
+      var table = $('.search-results table.livingstone-sticky-enabled');
       var scrollWidth = table.get(0).scrollWidth;
       var width = search_results.width();
       return width < scrollWidth;

@@ -558,37 +558,43 @@ body.loading .loading-modal {
   z-index: 1;
 }
 /* line 12, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+#main-image .image-toolbar > *,
+#compare-image .image-toolbar > * {
+  vertical-align: middle;
+}
+/* line 15, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar .spectral-image,
 #compare-image .image-toolbar .spectral-image {
   max-width: 30%;
 }
 @media only screen and (max-width: 900px) {
-  /* line 15, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+  /* line 18, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
   #main-image .image-toolbar .spectral-image,
   #compare-image .image-toolbar .spectral-image {
     max-width: 60%;
   }
 }
 @media only screen and (max-width: 400px) {
-  /* line 19, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+  /* line 22, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
   #main-image .image-toolbar .spectral-image,
   #compare-image .image-toolbar .spectral-image {
     max-width: 30%;
   }
 }
-/* line 22, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 25, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar .spectral-image .filter-option,
 #compare-image .image-toolbar .spectral-image .filter-option {
   width: 80%;
 }
-/* line 26, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 29, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar .spectral-image button,
 #compare-image .image-toolbar .spectral-image button {
+  display: inline-block;
   padding: 2px 12px;
   border-radius: 7px;
   font-size: 14px;
 }
-/* line 32, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 36, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar a.button,
 #compare-image .image-toolbar a.button,
 #main-image .image-toolbar a.button:hover,
@@ -602,25 +608,28 @@ body.loading .loading-modal {
   color: black;
   cursor: pointer;
   text-decoration: none;
+  line-height: 24px;
+  padding: 0 8px;
+  display: inline-block;
 }
-/* line 39, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 46, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar .dropdown-menu,
 #compare-image .image-toolbar .dropdown-menu {
   font-size: 14px;
 }
 @media only screen and (max-width: 900px) {
-  /* line 44, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+  /* line 51, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
   #main-image .image-toolbar .download,
   #compare-image .image-toolbar .download {
     display: none;
   }
 }
-/* line 49, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 56, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar .download .fa,
 #compare-image .image-toolbar .download .fa {
   font-size: 0.85em;
 }
-/* line 65, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 72, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .prev-icon,
 #compare-image .prev-icon {
   position: absolute;
@@ -636,7 +645,7 @@ body.loading .loading-modal {
   background-position: 0 0;
   border-radius: 0px 6px 6px 0px;
 }
-/* line 71, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 78, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .next-icon,
 #compare-image .next-icon {
   position: absolute;
@@ -652,15 +661,15 @@ body.loading .loading-modal {
   background-position: 100% 0;
   border-radius: 6px 0px 0px 6px;
 }
-/* line 81, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 88, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #panels.compare #main-image .next-icon {
   display: none;
 }
-/* line 86, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 93, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #panels.compare #compare-image .prev-icon {
   display: none;
 }
-/* line 92, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 99, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 .image-selector-tooltip .image-selector-tooltip-text {
   visibility: hidden;
   font-size: 0.85em;
@@ -676,7 +685,7 @@ body.loading .loading-modal {
   top: 40px;
   margin-left: 4px;
 }
-/* line 108, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
+/* line 115, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 .image-selector-tooltip.hover .image-selector-tooltip-text,
 .image-selector-tooltip:hover {
   visibility: visible;

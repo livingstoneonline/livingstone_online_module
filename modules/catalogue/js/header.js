@@ -92,7 +92,7 @@
     // Reset top position of sticky table headers to the current top offset.
     this.stickyOffsetTop = Drupal.settings.tableHeaderOffset ? eval(Drupal.settings.tableHeaderOffset + '()') : 0;
     this.stickyOffsetTop += $(document).scrollTop() - this.stickyTable.parent().offset().top;
-    this.stickyOffsetTop += $('.region-fixed-header').height() + 1;
+    this.stickyOffsetTop += $('.region-fixed-header').height();
     this.stickyTable.css('top', this.stickyOffsetTop + 'px');
 
     // Save positioning data.

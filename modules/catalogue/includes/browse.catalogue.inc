@@ -37,8 +37,8 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
   $scroll_left_msg = t('&larr; click in table, left arrow key');
   $scroll_right_msg = t('click in table, right arrow key &rarr;');
   return array(
-      '#prefix' => '<div id="form_wrapper">',
-      '#suffix' => '</div>',
+      '#prefix' => '<div id="form_wrapper" class="row"><div class="col-md-offset-1 col-md-10">',
+      '#suffix' => '</div></div>',
       '#attached' => array(
         'js' => array(
           "$viewer_path/lib/URI.js",
@@ -253,7 +253,7 @@ function livingstone_browse_catalogue_form_download_markup() {
   $tei_files = file_create_url(file_build_uri('/Livingstone-Online-Complete-TEI-transcriptions.zip'));
   $mods_files = file_create_url(file_build_uri('/Livingstone-Online-Complete-MODS-records.zip'));
   return <<<EOT
-<span>Download: </span><a href="$pdf_files">PDF transcriptions</a>, <a href="$tei_files">TEI transcriptions</a>, <a href="$mods_files">MODS Records</a>
+<span>Download: </span><a href="$pdf_files">PDF transcriptions</a> – <a href="$tei_files">TEI transcriptions</a> – <a href="$mods_files">MODS Records</a>
 EOT;
 }
 

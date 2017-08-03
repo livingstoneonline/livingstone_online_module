@@ -45,7 +45,7 @@ function drush_livingstone_import_nodes() {
 }
 
 function drush_livingstone_import_objects() {
-  module_load_include('inc', 'livingstone_fedora_import', 'includes/fedora.import.batch');
+  module_load_include('inc', 'livingstone_fedora_import', 'fedora.import.batch');
   livingstone_fedora_import_update_tables();
   $batch = livingstone_fedora_import_add_objects_batch();
   $batch['progressive'] = FALSE;
