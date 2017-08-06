@@ -84,7 +84,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
             '#attributes' => array(
               'class' => array(
                 'col-md-4',
-                'col-sm-6',
+                'col-sm-12',
               ),
             ),
             'search-block' => array(
@@ -125,7 +125,7 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
             '#attributes' => array(
               'class' => array(
                 'col-md-4',
-                'col-sm-6',
+                'col-sm-12',
               ),
             ),
             'clear' => array(
