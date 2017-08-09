@@ -4014,6 +4014,79 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
   $nodes[] = array(
+  'title' => 'Michigan State University. Libraries. Special Collections Division',
+  'log' => '',
+  'status' => 1,
+  'comment' => 0,
+  'promote' => 1,
+  'sticky' => 0,
+  'type' => 'repository_info',
+  'language' => 'en',
+  'created' => 1502302737,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'b7417e00-f7c0-4de0-9f32-5e7d3622b4ec',
+  'field_repo_city' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'East Lansing',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_repo_country' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'United States',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_repo_lcnaf' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'http://id.loc.gov/authorities/names/n93024330.html',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_repo_link' => array(
+    'und' => array(
+      0 => array(
+        'value' => '/islandora/search/?f[0]=repository_ms:"Michigan State University. Libraries. Special Collections Division"',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_repo_repository' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Michigan State University. Libraries. Special Collections Division',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_repo_state' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Michigan',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'content/michigan-state-university-libraries-special-collections-division',
+      'language' => 'en',
+    ),
+  ),
+  'date' => '2017-08-09 18:18:57 +0000',
+  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+);
+  $nodes[] = array(
   'title' => 'Yale University. Divinity School. Library',
   'log' => 'Created by FeedsNodeProcessor',
   'status' => 1,
@@ -4629,6 +4702,72 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'url_alias' => array(),
   'date' => '2017-03-28 17:51:17 +0000',
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
+);
+  $nodes[] = array(
+  'title' => 'University of Birmingham. Library',
+  'log' => '',
+  'status' => 1,
+  'comment' => 0,
+  'promote' => 1,
+  'sticky' => 0,
+  'type' => 'repository_info',
+  'language' => 'en',
+  'created' => 1502302657,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'd00e1f00-b1f4-42b5-aa7f-7fba4efed6a8',
+  'field_repo_city' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Birmingham',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_repo_country' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'England',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_repo_lcnaf' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'http://id.loc.gov/authorities/names/n83137759',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_repo_link' => array(
+    'und' => array(
+      0 => array(
+        'value' => '/islandora/search/?f[0]=repository_ms:"University of Birmingham. Library"',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_repo_repository' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'University of Birmingham. Library',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_repo_state' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'url_alias' => array(
+    0 => array(
+      'alias' => 'content/university-birmingham-library',
+      'language' => 'en',
+    ),
+  ),
+  'date' => '2017-08-09 18:17:37 +0000',
+  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
 );
   $nodes[] = array(
   'title' => 'Natural History Museum (London, England). General Library',
