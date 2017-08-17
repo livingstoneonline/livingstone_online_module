@@ -4077,12 +4077,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'path' => array(
     'pathauto' => 1,
   ),
-  'url_alias' => array(
-    0 => array(
-      'alias' => 'content/michigan-state-university-libraries-special-collections-division',
-      'language' => 'en',
-    ),
-  ),
+  'url_alias' => array(),
   'date' => '2017-08-09 18:18:57 +0000',
   'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
 );
@@ -4760,12 +4755,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'path' => array(
     'pathauto' => 1,
   ),
-  'url_alias' => array(
-    0 => array(
-      'alias' => 'content/university-birmingham-library',
-      'language' => 'en',
-    ),
-  ),
+  'url_alias' => array(),
   'date' => '2017-08-09 18:17:37 +0000',
   'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
 );

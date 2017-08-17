@@ -23,6 +23,12 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 15,
       ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -59,6 +65,12 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 9,
       ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -93,6 +105,13 @@ function livingstone_section_page_feature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'search_index' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -142,6 +161,13 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'search_index' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -179,6 +205,12 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 11,
+      ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -240,6 +272,13 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'search_index' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -278,6 +317,12 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 8,
+      ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -320,6 +365,12 @@ function livingstone_section_page_feature_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 0,
+      ),
+      'search_index' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -384,6 +435,12 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 14,
       ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -422,6 +479,12 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 13,
       ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -455,6 +518,13 @@ function livingstone_section_page_feature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'search_index' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -501,6 +571,12 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'settings' => array(),
         'type' => 'transcript_formatter',
         'weight' => 6,
+      ),
+      'search_index' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -562,6 +638,12 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 10,
       ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -601,6 +683,13 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'search_index' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -642,6 +731,12 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'type' => 'table_of_contents_default',
         'weight' => 7,
       ),
+      'search_index' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -677,6 +772,13 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 12,
+      ),
+      'search_index' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',

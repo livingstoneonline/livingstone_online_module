@@ -26,7 +26,7 @@ function livingstone_section_page_feature_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_index' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'search_result' => array(
         'custom_settings' => FALSE,
