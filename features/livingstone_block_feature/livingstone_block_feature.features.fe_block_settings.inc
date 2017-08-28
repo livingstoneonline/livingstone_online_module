@@ -786,7 +786,9 @@ search/node/*',
     'module' => 'views',
     'node_types' => array(),
     'pages' => 'in-his-own-words/location',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 2,
+    ),
     'themes' => array(
       'bootstrap' => array(
         'region' => '',

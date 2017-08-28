@@ -57,13 +57,28 @@ function livingstone_browse_catalogue_block_view($delta = '') {
 function livingstone_browse_catalogue_menu_alter(array &$items) {
   if (isset($items['islandora/search'])) {
     $search_item = &$items['islandora/search'];
-    $search_item['page callback'] = 'livingstone_browse_catalogue_object_view_redirect';
+    $search_item['page callback'] = 'livingstone_browse_catalogue_search_redirect';
   }
   if (isset($items['islandora/object/%islandora_object'])) {
     $view_object = &$items['islandora/object/%islandora_object'];
     $view_object['page callback'] = 'livingstone_browse_catalogue_object_view_redirect';
     $view_object['page arguments'] = array(2);
   }
+}
+
+/**
+ * Redirect the search page to the new location.
+ *
+ * @param $search
+ */
+function livingstone_browse_catalogue_search_redirect($search = NULL) {
+  $query = drupal_get_query_parameters();
+  if ($search) {
+    $query['query'] = $search;
+  }
+  drupal_goto('in-his-own-words/catalogue', array(
+    'query' => $query,
+  ));
 }
 
 /**

@@ -482,3 +482,12 @@ function livingstone_block_view($delta = '') {
   }
   return $block;
 }
+
+// XXX. Hack do not check this in, it's just to regenerate the paths when pulling in the changes from production.
+/*
+function livingstone_node_presave($node){
+  global $user;
+  if($node->type=='section_page'){
+    $node->path['pathauto']=1;
+  }
+}*/
