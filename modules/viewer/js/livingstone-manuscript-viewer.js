@@ -264,7 +264,7 @@
           null,
         images = [main_image, comparison_image].filter(function (value) { return value !== null; }),
         item_details_pane = $('.pane.item-details'),
-        transcription_pane = $('.pane.transcription'),
+        transcription_pane = $('.pane.transcription-pane'),
         main_image_pane = $('.pane.main-image'),
         compare_image_pane = $('.pane.compare-image'),
         restricted_pane = $('.pane.restricted'),
@@ -480,7 +480,7 @@
         rotate = $('.rotate'),
         pager = $('select.page-select'),
         item_details = $('.item-details'),
-        transcription = $('.transcription'),
+        transcription = $('.transcription-button'),
         compare = $('.compare'),
         radios = [item_details, transcription, compare].filter(function (value) {
           return value.length > 0;
@@ -988,7 +988,7 @@
       offset = offset || 0;
       heading = $(selector).eq(offset);
       if (heading.length != 0) {
-        var pane = $('.pane.transcription');
+        var pane = $('.pane.transcription-pane');
         var pos = heading.position();
         var rect= heading.get(0).getBoundingClientRect();
         var height = Math.abs(rect.bottom - rect.top);

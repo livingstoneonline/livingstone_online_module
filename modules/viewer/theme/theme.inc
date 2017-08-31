@@ -100,12 +100,14 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
     ),
     'transcription' => array(
       '#access' => $has_transcription,
-      '#theme' => 'livingstone_transcript',
+      '#type' => 'container',
       '#attributes' => array(
-        'class' => array('transcription'),
+        'class' => array('transcription-pane', 'pane'),
       ),
-      '#pid' => $manuscript,
-      '#classes' => array('pane'),
+      'transcription' => array(
+        '#theme' => 'livingstone_transcript',
+        '#pid' => $manuscript,
+      ),
     ),
     'main_image' => array(
       '#access' => $is_viewable,

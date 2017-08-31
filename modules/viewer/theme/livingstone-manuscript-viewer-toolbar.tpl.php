@@ -31,7 +31,7 @@
     <?php endif; ?>
     <span class="panes">
       <a href="#" data-pane="item details" class="item-details" title="<?php print t('Display item details'); ?>">Item Details</a>
-      <a href="#" data-pane="transcription" class="transcription <?php if (!$has_transcription): print 'disabled'; endif ?>" title="<?php print t('Display transcription'); ?>">Transcription</a>
+      <a href="#" data-pane="transcription" class="transcription-button <?php if (!$has_transcription): print 'disabled'; endif ?>" title="<?php print t('Display transcription'); ?>">Transcription</a>
         <?php if ($is_spectral && $is_viewable): ?>
           <a href="#" data-pane="compare" class="compare" title="<?php print t('Compare spectral images'); ?>"><span class="fa">&#xf0e7;</span>&nbsp;Compare&nbsp;<span class="fa">&#xf0e7;</span></a>
         <?php endif; ?>

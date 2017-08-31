@@ -116,7 +116,9 @@ function livingstone_transcript_transform_get_css(DOMXPath $xpath) {
     $stylesheet = preg_replace('/^http:\/\/livingstoneonline.github.io\/LEAP-XSLT\/(.*)$/U', '$1', $url);
     $full_path = "$leap_path/$stylesheet";
     if (file_exists($full_path)) {
-      $files[] = $full_path;
+      $files[$full_path] = array(
+        'basename' => 'transcript-' . basename($full_path),
+      );
     }
   }
   return !empty($files) ? $files : array(
@@ -195,15 +197,25 @@ function livingstone_transcript_saxon_transform_embedded($datastream, array $cla
   $xpath = new DOMXPath($doc);
   $results = $xpath->query('/html/body/*[1]');
   $transcript = $results->item(0);
-  $classes[] = $transcript->getAttribute('class');
+  $classes = explode(' ', $transcript->getAttribute('class'));
+  foreach($classes as $key => $class) {
+    if ($class == 'transcription') {
+      unset($classes[$key]);
+    }
+  }
   $classes[] = 'transcription-viewer-content';
   $classes[] = livingstone_pid_to_project_id($datastream->parent->id);
-  $transcript->setAttribute('class', implode(' ', $classes));
   $element = array(
     '#attached' => array(
       'css' => livingstone_transcript_transform_get_css($xpath),
     ),
-    '#markup' => $doc->saveXML($transcript),
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => $classes,
+    ),
+    'transcription' => array(
+      '#markup' => $doc->saveXML($transcript),
+    )
   );
   return drupal_render($element);
 }

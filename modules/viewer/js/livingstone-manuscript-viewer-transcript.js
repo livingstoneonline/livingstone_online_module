@@ -21,7 +21,7 @@
     function transcriptionScrollTo(selector, offset) {
       var element = $(selector).eq(offset);
       if (element.length != 0) {
-        $('.pane.transcription').animate({
+        $('.pane.transcription-pane').animate({
           scrollTop: element.offset().top + 'px'
         }, 1000);
       }

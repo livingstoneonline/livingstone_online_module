@@ -403,7 +403,7 @@ body.loading .loading-modal {
   overflow: auto;
 }
 /* line 37, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
-.pane.transcription {
+.pane.transcription-pane {
   -webkit-overflow-scrolling: touch;
   overflow: auto;
 }
