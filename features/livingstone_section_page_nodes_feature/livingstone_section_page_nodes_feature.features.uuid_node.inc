@@ -12641,28 +12641,28 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     'und' => array(
       0 => array(
         'value' => '<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction to the edition</span></strong></h4>
+<h4><strong><span style="font-family:crimson text">Introduction to the edition</span></strong></h4>
 
 <p>The publication of Livingstone’s 1871 Field Diary reveals for the first time the original record of a remarkable and traumatic period in the life of David Livingstone, the celebrated British abolitionist, missionary, and explorer of Africa. The date of publication coincides almost exactly with the date Livingstone completed this diary in Central Africa 140 years ago. The original, previously unpublished text of the diary has remained inaccessible until now, due to the fragility of the paper and the near-illegible script. Thanks to cutting-edge spectral imaging and processing technology, the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> now makes all the surviving pages of the diary available through this electronic edition.</p>
 
-<p class="space-1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/liv_016022_0001.jpg"><img alt="An image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/liv_016022_0001.jpg" title="An image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a></p>
+<p class="rtecenter"><a href="/sites/default/files/liv_016022_0001.jpg"><img alt="An image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/liv_016022_0001.jpg" style="width:716px" title="An image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." /></a></p>
 
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/liv_016023_0001.jpg"><img alt="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII spectral_ratio). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/liv_016023_0001.jpg" title="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII spectral_ratio). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
-<span style="font-size:12px;">(Top) Natural light and (bottom) processed spectral images of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII color and spectral_ratio). <em>Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> These images demonstrate the dramatic ability of spectral image processing to reveal diary text that is otherwise nearly invisible to the naked eye. A portion of the printed newspaper title <em>The Standard</em> is visible at left.</span></p>
+<p><a href="/sites/default/files/liv_016023_0001.jpg"><img alt="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII spectral_ratio). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/liv_016023_0001.jpg" style="width:716px" title="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII spectral_ratio). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." /></a><br />
+<span style="font-size:12px">(Top) Natural light and (bottom) processed spectral images of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII color and spectral_ratio). <em>Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> These images demonstrate the dramatic ability of spectral image processing to reveal diary text that is otherwise nearly invisible to the naked eye. A portion of the printed newspaper title <em>The Standard</em> is visible at left.</span></p>
 
 <p>In 1871, David Livingstone spent five months stranded in a small village in the Congo called Nyangwe. He had run out of writing paper and had nearly run out of ink, so he improvised the materials for his diary by writing over an old copy of <em>The Standard</em> newspaper with ink made from the seeds of a local berry. On 15 July 1871, while still in Nyangwe, Livingstone witnessed a massacre of the local African population by Arab slave traders from Zanzibar. Some 400 or 500 Africans, the majority of them women, died in a single day – a scale of murder and death unprecedented in Livingstone’s experience.</p>
 
 <p>The massacre horrified Livingstone, leaving him too shattered to continue his mission to find the source of the Nile. He traveled 240 miles from Nyangwe – violently ill most of the way – back to Ujiji, an Arab settlement on the eastern shore of Lake Tanganyika. Here, Henry Morton Stanley, a reporter sent by <em>The</em> <em>New York Herald</em> to locate Livingstone (who had been "missing" for several years and presumed dead) found the Scottish explorer and purportedly greeted him with the iconic words, "Dr. Livingstone, I presume?"</p>
 
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/liv_016024_0001.jpg"><img alt="Dr. Livingstone, I Presume? Illustration from Stanley 1872,2:opposite 412. Courtesy of Edinburgh University Library" class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/liv_016024_0001.jpg" title="Dr. Livingstone, I Presume? Illustration from Stanley 1872,2:opposite 412. Courtesy of Edinburgh University Library." typeof="foaf:Image&quot;" width="716" /></a><br />
-<span style="font-size:12px;">Dr. Livingstone, I Presume? Illustration from Stanley\'s <em>How I Found Livingstone</em> (1872,2:opposite 412). <em>Courtesy of Edinburgh University Library.</em></span></p>
+<p><a href="/sites/default/files/liv_016024_0001.jpg"><img alt="Dr. Livingstone, I Presume? Illustration from Stanley 1872,2:opposite 412. Courtesy of Edinburgh University Library" class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/liv_016024_0001.jpg" style="width:716px" title="Dr. Livingstone, I Presume? Illustration from Stanley 1872,2:opposite 412. Courtesy of Edinburgh University Library." /></a><br />
+<span style="font-size:12px">Dr. Livingstone, I Presume? Illustration from Stanley\'s <em>How I Found Livingstone</em> (1872,2:opposite 412). <em>Courtesy of Edinburgh University Library.</em></span></p>
 
 <p>The rest is history. The meeting – one of the most famous encounters in the nineteenth century – and Stanley’s published accounts of Livingstone’s crusade against slavery secured the latter a prominent and enduring place in the public imagination. The meeting also launched Stanley’s own career as an explorer and led him, ultimately, to found the Congo Free State on behalf of Leopold II, the King of Belgium.</p>
 
 <p>Yet despite its significance, Livingstone’s 1871 Field Diary – which chronicles both the months in Livingstone’s life leading up to the famous meeting and the Nyangwe massacre as it unfolds moment by moment before Livingstone’s eyes – has remained inaccessible to scholars and the public alike. The newspaper over which Livingstone wrote has deteriorated, and Livingstone’s improvised red ink has faded to the point of invisibility. From the time that the diary was returned to England after Livingstone’s death in Africa in 1873 to the present, it has not been possible to read and study Livingstone’s original words.</p>
 
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/liv_016025_0001.jpg"><img alt="The Massacre of the Manyuema Women at Nyangwe. Illustration from Livingstone 1874,2:opposite 133. Courtesy of Edinburgh University Library" class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/liv_016025_0001.jpg" title="The Massacre of the Manyuema Women at Nyangwe. Illustration from Livingstone 1874,2:opposite 133. Courtesy of Edinburgh University Library." typeof="foaf:Image&quot;" width="716" /></a><br />
-<span style="font-size:12px;">The Massacre of the Manyuema Women at Nyangwe. Illustration from the <em>Last Journals</em> (Livingstone 1874,2:opposite 133). <em>Courtesy of Edinburgh University Library.</em></span></p>
+<p><a href="/sites/default/files/liv_016025_0001.jpg"><img alt="The Massacre of the Manyuema Women at Nyangwe. Illustration from Livingstone 1874,2:opposite 133. Courtesy of Edinburgh University Library" class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/liv_016025_0001.jpg" style="width:716px" title="The Massacre of the Manyuema Women at Nyangwe. Illustration from Livingstone 1874,2:opposite 133. Courtesy of Edinburgh University Library." /></a><br />
+<span style="font-size:12px">The Massacre of the Manyuema Women at Nyangwe. Illustration from the <em>Last Journals</em> (Livingstone 1874,2:opposite 133). <em>Courtesy of Edinburgh University Library.</em></span></p>
 
 <p>Today, the first phase of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> – a unique transatlantic collaboration between scholars, scientists and educational and archival institutions – has completed its work on the diary. The complete original text is now made available worldwide as a free online resource. The diary, as those who read it will soon discover, offers an astonishing glimpse into Livingstone’s conflicted thoughts and actions during the most crucial period in his life. Instead of the saintly hero of Victorian mythology, the individual who emerges from the pages of the diary is passionate, vulnerable, and deeply torn about the violent events developing around him.</p>
 
@@ -12683,7 +12683,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 The Livingstone Spectral Imaging Project<br />
 1 November 2011, Edinburgh, Scotland</p>
 
-<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
+<p class="rtecenter"><span style="font-size:16px"><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-family:source sans pro">Return to top</span> ⤴</a></span></span></p>
 ',
         'format' => 'full_html',
       ),
@@ -12714,8 +12714,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013723_0001-new-carousel.jpg',
@@ -12741,8 +12741,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 292,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 292,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013723_0001-new-tile.jpg',
@@ -12769,7 +12769,13 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(
     'und' => array(
       0 => array(
@@ -15445,19 +15451,19 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction to the Edition</span></strong></h4>
+<h4><strong><span style="font-family:crimson text">Introduction to the Edition</span></strong></h4>
 
 <p>This edition of <em>Livingstone’s Letter from Bambarre</em> is of great interest to scholars of the British Empire, Victorian literature, African history, the history of medicine, and the digital humanities. Livingstone\'s previously unpublished letter of 5 February 1871 to his friend and future editor, Horace Waller, was the first nineteenth-century British literary work to be captured and enhanced with the multispectral imaging process.</p>
 
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/liv_002564_0004_color-article1.jpg"><img alt="A color image of a page of the Letter from Bambarre (Livingstone 1871c:[4]). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/liv_002564_0004_color-article1.jpg" title="A color image of a page of the Letter from Bambarre (Livingstone 1871c:[4]). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
-<span style="font-size:12px;">A color image of a page of the <em>Letter from Bambarre</em> (Livingstone 1871c:[4]). <em>Copyright Peter and Nejma Beard. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
+<p><a href="/sites/default/files/liv_002564_0004_color-article1.jpg"><img alt="A color image of a page of the Letter from Bambarre (Livingstone 1871c:[4]). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/liv_002564_0004_color-article1.jpg" style="width:716px" title="A color image of a page of the Letter from Bambarre (Livingstone 1871c:[4]). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." /></a><br />
+<span style="font-size:12px">A color image of a page of the <em>Letter from Bambarre</em> (Livingstone 1871c:[4]). <em>Copyright Peter and Nejma Beard. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
 
 <p><a href="/spectral-imaging/introduction-spectral-imaging">Spectral imaging</a>, when used for the study of cultural objects, involves illuminating an object with successive wavelengths of light – starting with ultraviolet, working through the visible spectrum, and concluding with infrared – while capturing digital images and, later, processing the images in order to enhance select object features.</p>
 
 <p>When originally published in 2010, <em>Livingstone’s Letter from Bambarre</em> set a new standard for the range of data that a digital edition of a nineteenth-century manuscript could contain, as the edition (reproduced here) included a full textual apparatus and bibliography, alongside natural light images and multispectral images processed to enhance text and topography.</p>
 
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/liv_002564_0004_pseudoratio_0505-0780-article1.jpg"><img alt="A processed spectral image of a page of the Letter from Bambarre (Livingstone 1871c:[4] pseudoratio). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/liv_002564_0004_pseudoratio_0505-0780-article1.jpg" title="A processed spectral image of a page of the Letter from Bambarre (Livingstone 1871c:[4] pseudoratio). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
-<span style="font-size:12px;">A processed spectral image of a page of the <em>Letter from Bambarre</em> (Livingstone 1871c:[4] pseudoratio). <em>Copyright Peter and Nejma Beard. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. This page is the same one as above, but this image has been enhanced with spectral image processing to minimize the underlying printed text (page center) and to reveal Livingstone\'s writing.</span></p>
+<p><a href="/sites/default/files/liv_002564_0004_pseudoratio_0505-0780-article1.jpg"><img alt="A processed spectral image of a page of the Letter from Bambarre (Livingstone 1871c:[4] pseudoratio). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/liv_002564_0004_pseudoratio_0505-0780-article1.jpg" style="width:716px" title="A processed spectral image of a page of the Letter from Bambarre (Livingstone 1871c:[4] pseudoratio). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." /></a><br />
+<span style="font-size:12px">A processed spectral image of a page of the <em>Letter from Bambarre</em> (Livingstone 1871c:[4] pseudoratio). <em>Copyright Peter and Nejma Beard. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. This page is the same one as above, but this image has been enhanced with spectral image processing to minimize the underlying printed text (page center) and to reveal Livingstone\'s writing.</span></p>
 
 <p>The edition of the letter also served as the pilot phase for an eighteen-month spectral imaging project (2010-11) on <a href="/spectral-imaging/livingstones-1871-field-diary-0">Livingstone\'s 1871 Field Diary</a>, an iconic document that captures Livingstone\'s first-hand impressions of a horric slave-trading massacre in Central Africa and that documents the months leading up to his famous meeting with Henry M. Stanley.</p>
 
@@ -15465,7 +15471,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><strong><u>Bonus</u>:</strong> Study the original first edition of <a href="http://livingstone.library.ucla.edu/bambarre/" target="_blank">Livingstone\'s Letter from Bambarre</a> (external link)</p>
 
-<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
+<p class="rtecenter"><span style="font-size:16px"><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-family:source sans pro">Return to top</span> ⤴</a></span></span></p>
 ',
         'format' => 'full_html',
       ),
@@ -15496,8 +15502,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/LivingstoneText_024-new-carousel.jpg',
@@ -15523,8 +15529,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/LivingstoneText_024-new-tile.jpg',
@@ -15551,7 +15557,13 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(
     'und' => array(
       0 => array(
