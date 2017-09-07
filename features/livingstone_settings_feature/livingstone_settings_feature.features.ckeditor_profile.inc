@@ -69,8 +69,19 @@ function livingstone_settings_feature_ckeditor_profile_defaults() {
         'forcePasteAsPlainText' => 'f',
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
-        'theme_config_js' => 't',
-        'js_conf' => '',
+        'theme_config_js' => 'f',
+        'js_conf' => 'config.extraCss = ".section-page-toc-links{display:flex;justify-content:center;}";
+config.fontSize_sizes = \'12/12px;14/14px;16/16px;\';
+config.height = 450;
+config.font_names = \'Source Sans Pro;Patua One;Crimson Text\';
+config.templates_replaceContent = false;
+config.templates_files = [
+  \'/sites/all/themes/livingstone_online_theme/ckeditor.templates.js\',
+];
+config.contentsCss = [
+  CKEDITOR.getUrl(\'contents.css\'),
+  \'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Crimson+Text:400,600,700,400italic,600italic|Patua+One\'
+];',
         'loadPlugins' => array(
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
