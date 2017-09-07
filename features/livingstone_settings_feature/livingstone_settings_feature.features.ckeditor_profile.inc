@@ -28,7 +28,7 @@ function livingstone_settings_feature_ckeditor_profile_defaults() {
     [\'Styles\',\'Format\',\'FontSize\',\'Font\'],
     \'/\',
     [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'Subscript\',\'Superscript\',\'-\',\'RemoveFormat\'],
-    [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\'],
+    [\'Templates\',\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\'],
     [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'-\'],
     [\'Link\',\'Unlink\',\'Anchor\']
 ]',
@@ -42,7 +42,7 @@ function livingstone_settings_feature_ckeditor_profile_defaults() {
         'auto_lang' => 't',
         'language_direction' => 'default',
         'allowed_content' => 't',
-        'extraAllowedContent' => '',
+        'extraAllowedContent' => 'div (section-page-toc-links)',
         'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
         'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
@@ -69,7 +69,7 @@ function livingstone_settings_feature_ckeditor_profile_defaults() {
         'forcePasteAsPlainText' => 'f',
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
-        'theme_config_js' => 'f',
+        'theme_config_js' => 't',
         'js_conf' => '',
         'loadPlugins' => array(
           'drupalbreaks' => array(
