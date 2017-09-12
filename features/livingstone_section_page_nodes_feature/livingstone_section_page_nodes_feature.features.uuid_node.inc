@@ -35,24 +35,31 @@ function livingstone_section_page_nodes_feature_uuid_features_default_content() 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 425px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Manuscript Citation and File Naming Practices</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link3">1. Citing manuscripts and spectral images</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link4">2. Naming spectral image files</a><br />
-			<a href="#link5">Appendices</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link6">1. Manuscripts in the present critical edition</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link7">a. "Retrospect to be Inserted in the Journal" (10 Mar. 1870)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link8a">b. 1870 Field Diary (17 Aug. 1870-22 Mar. 1871)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link8b">c. 1871 Field Diary (23 Mar. 1871-3 Nov. 1871)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link9">d. 1871 Letters (5 Feb.-26 June 1871).</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link10">2. Author-date details, page numbers, and project file names</a><a id="link1" name="link1"></a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link11">3. Processed spectral image names</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Manuscript Citation and File Naming Practices</a></span></span>
+	<ol style="list-style-type:decimal">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Citing manuscripts and spectral images</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Naming spectral image files</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Appendices</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Manuscripts in the present critical edition</a></span></span>
+		<ol style="list-style-type:lower-alpha">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">"Retrospect to be Inserted in the Journal" (10 Mar. 1870)</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8a">1870 Field Diary (17 Aug. 1870-22 Mar. 1871)</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8b">1871 Field Diary (23 Mar. 1871-3 Nov. 1871)</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">1871 Letters (5 Feb.-26 June 1871)</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Author-date details, page numbers, and project file names</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Processed spectral image names</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -1388,58 +1395,10 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -1545,58 +1504,10 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -1624,7 +1535,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -2715,58 +2632,10 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -2833,15 +2702,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 300px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Complete Project Documentation</a><a id="link1" name="link1"></a><br />
-			<a href="#link3">Area-specific Subsets of Project Documentation</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Complete Project Documentation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Area-specific Subsets of Project Documentation</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -2900,58 +2767,10 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -2979,7 +2798,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -3018,14 +2843,12 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 220px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Leaf, Folio, Page</a><br />
-			<a href="#link2">Institutional Acronyms</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Leaf, Folio, Page</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Institutional Acronyms</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Leaf, Folio, Page</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -3036,102 +2859,54 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <p>&nbsp;</p>
 
-<h4><strong><span style="font-family:crimson text;">Institutional Acronyms</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+<h4><strong><span style="font-family:crimson text">Institutional Acronyms</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px"><span style="font-family:source sans pro">Top</span></span> ⤴</a></span></h4>
 
 <p>The following table provides the key institutions and institutional acronyms referenced in this critical edition.</p>
 
-<table align="center" class="tablefont" height="254" style="border: 1px solid gray; text-align: left; width:60%">
+<table align="center" class="tablefont" style="border:1px solid gray; height:254px; text-align:left; width:60%">
 	<tbody>
-		<tr style="border-bottom: 1px solid gray;">
-			<td style="border-right: 1px solid gray; border-bottom: 1px solid gray; text-align: left;" width="80"><strong><span style="font-size:14px;">Acronym </span></strong></td>
-			<td style="border-bottom: 1px solid gray;" width="334"><strong><span style="font-size:14px;">Institution or Organization </span></strong></td>
+		<tr>
+			<td style="text-align:left"><strong><span style="font-size:14px">Acronym </span></strong></td>
+			<td><strong><span style="font-size:14px">Institution or Organization </span></strong></td>
 		</tr>
 		<tr>
-			<td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>NEH </b></span></td>
-			<td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">National Endowment for the Humanities</span></td>
+			<td><span style="font-size:14px"><strong>NEH </strong></span></td>
+			<td><span style="font-size:14px">National Endowment for the Humanities</span></td>
 		</tr>
 		<tr>
-			<td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>DLC </b></span></td>
-			<td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">David Livingstone Centre, Blantyre, Scotland</span></td>
+			<td><span style="font-size:14px"><strong>DLC </strong></span></td>
+			<td><span style="font-size:14px">David Livingstone Centre, Blantyre, Scotland</span></td>
 		</tr>
 		<tr>
-			<td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>NLS </b></span></td>
-			<td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">National Library of Scotland, Edinburgh, Scotland</span></td>
+			<td><span style="font-size:14px"><strong>NLS </strong></span></td>
+			<td><span style="font-size:14px">National Library of Scotland, Edinburgh, Scotland</span></td>
 		</tr>
 		<tr>
-			<td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>NTS </b></span></td>
-			<td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">National Trust for Scotland</span></td>
+			<td><span style="font-size:14px"><strong>NTS </strong></span></td>
+			<td><span style="font-size:14px">National Trust for Scotland</span></td>
 		</tr>
 		<tr>
-			<td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>UCLA </b></span></td>
-			<td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">University of California, Los Angeles, USA</span></td>
+			<td><span style="font-size:14px"><strong>UCLA </strong></span></td>
+			<td><span style="font-size:14px">University of California, Los Angeles, USA</span></td>
 		</tr>
 		<tr>
-			<td style="border-right: 1px solid gray;" width="80"><span style="font-size:14px;"><b>EMEL </b></span></td>
-			<td style="" width="296"><span style="font-size:14px;">Early Manuscripts Electronic Library</span></td>
+			<td><span style="font-size:14px"><strong>EMEL </strong></span></td>
+			<td><span style="font-size:14px">Early Manuscripts Electronic Library</span></td>
 		</tr>
 	</tbody>
 </table>
 
-<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
+<p class="rtecenter"><span style="font-size:16px"><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-family:source sans pro">Return to top</span> ⤴</a></span></span></p>
 ',
         'format' => 'full_html',
       ),
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -3159,7 +2934,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -3247,58 +3028,10 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -3860,23 +3593,21 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 285px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Prefatory Materials</a><br />
-			<a href="#link3">The 1871 Field Diary</a><br />
-			<a href="#link4">Livingstone &amp; the Manuscript</a><br />
-			<a href="#link5">Critical Notes</a><br />
-			<a href="#link6">Project History &amp; Documentation</a><br />
-			<a href="#link7">Supplemental Pages</a><br />
-			<a href="#link8">Images for Viewing or Download</a><br />
-			<a href="#link9">Ink Spectra PowerPoint Files</a><br />
-			<a href="#link10">Livingstone Spectral Image Archive Files</a><br />
-			<a href="#link11">Project Documents</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Prefatory Materials</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">The 1871 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Livingstone &amp; the Manuscript</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Critical Notes</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Project History &amp; Documentation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Supplemental Pages</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Images for Viewing or Download</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Ink Spectra PowerPoint Files</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Livingstone Spectral Image Archive Files</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Project Documents</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong>Introduction &nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -4042,58 +3773,10 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -4121,7 +3804,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -4267,58 +3956,10 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -4385,15 +4026,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 400px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">1. Introduction</a><br />
-			<a href="#link2">2. Previously Documented History of the 1870 Field Diary</a><a id="link1" name="link1"></a><br />
-			<a href="#link3">3. A New Chronology of the Manuscript, 1863-2017</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Previously Documented History of the 1870 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">A New Chronology of the Manuscript, 1863-2017</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -4549,58 +4188,10 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -4628,7 +4219,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -4818,58 +4415,10 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -4897,7 +4446,13 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -6194,58 +5749,10 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6273,7 +5780,13 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -6390,58 +5903,10 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6570,58 +6035,10 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6755,58 +6172,10 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -6834,7 +6203,13 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -7046,58 +6421,10 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -7125,7 +6452,13 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -7217,58 +6550,10 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -7458,58 +6743,10 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -7569,17 +6806,14 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 350px;">
-	<tbody>
-		<tr>
-			<td>&nbsp;</td>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Prefatory Material</a><br />
-			<a href="#link2">Spectral Images and Texts</a><br />
-			<a href="#link3">Critical Materials</a><a id="link1" name="link1"></a><br />
-			<a href="#link4">Project History</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Prefatory Material</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Spectral Images and Texts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Critical Materials</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Project History</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Prefatory Material</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -7641,58 +6875,10 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -7720,7 +6906,13 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -8017,20 +7209,21 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 340px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Overview List of Spectral Images Types</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link2.1">1. Processed Spectral Images</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link2.2">2. GIF Animations and PowerPoint Presentations</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link2.3">3. Notes on a Few Unusual Imaging Cases</a><br />
-			<a href="#link3">Processed Spectral Image Descriptions</a><br />
-			<a href="#link4">GIF Animations and PowerPoint Presentations</a><br />
-			<a href="#link5">Notes on a Few Unusual Imaging Cases</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Overview List of Spectral Images Types</a></span></span>
+	<ol style="list-style-type:decimal;">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2.1">Processed Spectral Images</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2.2">GIF Animations and PowerPoint Presentations</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2.3">Notes on a Few Unusual Imaging Cases</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Processed Spectral Image Descriptions</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">GIF Animations and PowerPoint Presentations</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Notes on a Few Unusual Imaging Cases</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -8649,8 +7842,8 @@ Elizabeth Maxwell</span></p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/NLS10703_035_010r_0_A_raking_irdiff-new-carousel.jpg',
@@ -8676,8 +7869,8 @@ Elizabeth Maxwell</span></p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/NLS10703_035_010r_0_A_raking_irdiff-new-tile.jpg',
@@ -9043,58 +8236,10 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -9115,7 +8260,13 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -9154,26 +8305,30 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 475px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">1. Introduction</a><br />
-			<a href="#link3">2. Livingstone’s Undertexts</a><br />
-			<a href="#link4">3. Gatherings</a><br />
-			<a href="#link5">4. Arrangement of the Second Gathering</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link6">a. First sub-gathering (Livingstone 1870c)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link7">b. Second sub-gathering (Livingstone 1870e, 1870f)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link8">c. Third sub-gathering (Livingstone 1870h)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link9">d. Fourth sub-gathering (Livingstone 1870i, 1870j, 1870k, 1871a, 1871b)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link10">e. Fifth sub-gathering (Livingstone 1871e)</a><br />
-			<a href="#link11">5. Page Layout and Orientation</a><br />
-			<a href="#link12">6. Initial Stages of Creation</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link13">a. Acquisition of the undertexts</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link14">b. Annotation of one undertext</a><a id="link1" name="link1"></a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link15">c. Additional notes on the undertexts</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Livingstone’s Undertexts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Gatherings</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Arrangement of the Second Gathering</a></span></span>
+	<ol style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">First sub-gathering (Livingstone 1870c)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Second sub-gathering (Livingstone 1870e, 1870f)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Third sub-gathering (Livingstone 1870h)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Fourth sub-gathering (Livingstone 1870i, 1870j, 1870k, 1871a, 1871b)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Fifth sub-gathering (Livingstone 1871e)</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Page Layout and Orientation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Initial Stages of Creation</a></span></span>
+	<ol style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">Acquisition of the undertexts</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link14">Annotation of one undertext</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link15">Additional notes on the undertexts</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -9470,58 +8625,10 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -9549,7 +8656,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -9588,15 +8701,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 300px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link0">Introduction</a><br />
-			<a href="#link1">Complete Project Documentation</a><br />
-			<a href="#link2">Area-specific Subsets of Project Documentation</a><a id="link0" name="link0"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Complete Project Documentation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Area-specific Subsets of Project Documentation</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -9656,58 +8767,10 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -9735,7 +8798,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -9774,20 +8843,27 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 400px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">1. Handling the Manuscript Pages</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link2">a. Page Folds</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link3">i. Original folds</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link4">ii. Broad patterns and categories of manuscript folding</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link5">b. Page Impressions</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link6">c. Torn Pages and Manuscript Holes</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link7">i. Torn pages</a><a id="link1" name="link1"></a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link8">ii. Manuscript holes</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Handling the Manuscript Pages</a></span></span>
+	<ol style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Page Folds</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Original folds</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Broad patterns and categories of manuscript folding</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Page Impressions</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Torn Pages and Manuscript Holes</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Torn pages</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Manuscript holes</a></span></span></li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Handling the Manuscript Pages</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -9978,58 +9054,10 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -10057,7 +9085,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -10241,58 +9275,10 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -10313,7 +9299,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -10401,58 +9393,10 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -10480,7 +9424,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -10557,58 +9507,10 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -10636,7 +9538,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -10715,65 +9623,17 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p><strong>Janet Safford</strong> - Imaging Specialist</p>
 
-<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
+<p class="rtecenter"><span style="font-size:16px"><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-family:source sans pro">Return to top</span> ⤴</a></span></span></p>
 ',
         'format' => 'full_html',
       ),
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -10801,7 +9661,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -10909,58 +9775,10 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -11073,58 +9891,10 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -11152,7 +9922,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -11191,34 +9967,47 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 380px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link0">Introduction</a><br />
-			<a href="#link15">Spectral Image Processing</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link16">Principal Component Analysis (PCA)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link17">Spectral Ratio and Pseudocolor Rendering</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link18">Processing Objectives and Results</a><br />
-			<a href="#link19">Data Management</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link20">Preliminary Data Management</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link21">"Data Scrubbing"</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link22">Creating the Data Archive</a><br />
-			<a href="#link23">Restoring the Text</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link24">Data Hosting</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link25">Creating a Publication Template / XML Encoding</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link26">Transcription Outcomes</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link27">The Electronic Edition</a><br />
-			<a href="#link28">Analysis to Dissemination</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link29">Preliminary Data Analysis</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link30">Dissemination, Results Release, and the "UK Tour"</a><br />
-			<a href="#link31">Lessons Learned / Future Projects</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link32">Challenge #1: Project Funding</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link33">Challenge #2: Communication</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link34">Challenge #3: File Naming</a><a id="link0" name="link0"></a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link35">Future Projects</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link15">Spectral Image Processing</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link16">Principal Component Analysis (PCA)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link17">Spectral Ratio and Pseudocolor Rendering</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link18">Processing Objectives and Results</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link19">Data Management</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link20">Preliminary Data Management</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link21">"Data Scrubbing"</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link22">Creating the Data Archive</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link23">Restoring the Text</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link24">Data Hosting</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link25">Creating a Publication Template / XML Encoding</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link26">Transcription Outcomes</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link27">The Electronic Edition</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link28">Analysis to Dissemination</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link29">Preliminary Data Analysis</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link30">Dissemination, Results Release, and the "UK Tour"</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link31">Lessons Learned / Future Projects</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link32">Challenge #1: Project Funding</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link33">Challenge #2: Communication</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link34">Challenge #3: File Naming</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link35">Future Projects</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -11575,58 +10364,10 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -11654,7 +10395,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -11693,21 +10440,25 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 350px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#g0">Introduction</a><br />
-			People and Groups<br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#g1">1. Individuals</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#g2">2. African Ethnic Groups</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#g3">3. Other Groups, Collectives, Organizations</a><br />
-			Places and Features<br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#g4">1. Settlements</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#g5">2. Regions</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#g6">3. Geographical Features</a><a id="g0" name="g0"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text">People and Groups</span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g1">Individuals</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g2">African Ethnic Groups</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g3">Other Groups, Collectives, Organizations</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text">Places and Features</span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g4">Settlements</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g5">Regions</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g6">Geographical Features</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -12538,8 +11289,8 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_003006_0001-new-carousel.jpg',
@@ -12565,8 +11316,8 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_003006_0001-new-tile.jpg',
@@ -14994,8 +13745,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/NLS10703_044_014v_0_A_pseudo_0505-0780-new-carousel.jpg',
@@ -15021,8 +13772,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/NLS10703_044_014v_0_A_pseudo_0505-0780-new-tile.jpg',
@@ -15056,7 +13807,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(
     'und' => array(
       0 => array(
@@ -15332,58 +14089,10 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -15610,21 +14319,18 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 350px;">
-	<tbody>
-		<tr>
-			<td>&nbsp;</td>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Prefatory Material</a><br />
-			<a href="#link2">Spectral Images and Texts</a><br />
-			<a href="#link3">Critical Essays and Materials</a><br />
-			<a href="#link4">Image Processing Information</a><br />
-			<a href="#link5">Supporting Materials</a><br />
-			<a href="#link6">Files for Download</a><br />
-			<a href="#link7">Animated Spectral Images for Download</a><a id="link1" name="link1"></a><br />
-			<a href="#link8">Project Documentation</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Prefatory Material</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Spectral Images and Texts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Critical Essays and Materials</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Image Processing Information</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Supporting Materials</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Files for Download</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Animated Spectral Images for Download</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Project Documentation</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Prefatory Material</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -15810,58 +14516,10 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -15889,7 +14547,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -16339,25 +15003,23 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 250px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Livingstone</a><br />
-			<a href="#link2">Scholars</a><br />
-			<a href="#link3">Revising Manuscripts</a><br />
-			<a href="#link4">The 1870 Field Diary</a><br />
-			<a href="#link5">Zanzibar Trade in Central Africa</a><br />
-			<a href="#link6">Manyema</a><br />
-			<a href="#link7">Bambarre People and Ujijians</a><br />
-			<a href="#link8">Process, Narrative, Knowledge</a><br />
-			<a href="#link9">Informed Observation</a><br />
-			<a href="#link10">Cannibalism in 1870</a><br />
-			<a href="#link11">Silences in the Published Record</a><br />
-			<a href="#link12">Works Cited: Primary Sources</a><br />
-			<a href="#link13">Works Cited: Secondary Sources</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Livingstone</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Scholars</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Revising Manuscripts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">The 1870 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Zanzibar Trade in Central Africa</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Manyema</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Bambarre People and Ujijians</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Process, Narrative, Knowledge</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Informed Observation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Cannibalism in 1870</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Silences in the Published Record</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Works Cited: Primary Sources</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">Works Cited: Secondary Sources</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Livingstone</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -16885,58 +15547,10 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -16964,7 +15578,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -17055,65 +15675,17 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><strong>Trevor Muñoz</strong> (University of Maryland)</p>
 
-<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
+<p class="rtecenter"><span style="font-size:16px"><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-family:source sans pro">Return to top</span> ⤴</a></span></span></p>
 ',
         'format' => 'full_html',
       ),
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -17141,7 +15713,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -17240,58 +15818,10 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -17420,65 +15950,17 @@ The Livingstone Spectral Imaging Project<br />
 
 <p class="space2"><strong>Joel Wurl</strong> (National Endowment for the Humanities)</p>
 
-<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
+<p class="rtecenter"><span style="font-size:16px"><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-family:source sans pro">Return to top</span> ⤴</a></span></span></p>
 ',
         'format' => 'full_html',
       ),
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -17506,7 +15988,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -18072,58 +16560,10 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -18341,58 +16781,10 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -19098,24 +17490,31 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 300px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">1. Structure of the 1870 Field Diary</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link2">a. A Relational Document</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link3">b. Sequencing of Manuscript Pages</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link4">i. Sequencing by date</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link5">ii. Sequencing by Roman numerals</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link6">iii. Sequencing by archival numbers</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link7">c. Content and Structure</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link8">i. Letter to Lord Stanley</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link9">ii. Field notes</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link10">iii. Maps</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link11">iv. Calculations</a><a id="link1" name="link1"></a><br />
-			<a href="#link12">2. Additional Manuscript Features</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Structure of the 1870 Field Diary</a></span></span>
+	<ol class="rteindent1" style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">A Relational Document</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Sequencing of Manuscript Pages</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Sequencing by date</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Sequencing by Roman numerals</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Sequencing by archival numbers</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Content and Structure</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Letter to Lord Stanley</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Field notes</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Maps</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Calculations</a></span></span></li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Additional Manuscript Features</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Structure of the 1870 Field Diary</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -19359,58 +17758,10 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -19438,7 +17789,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -19535,58 +17892,10 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -19653,23 +17962,30 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 340px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">The Manuscript: An Overview</a><br />
-			<a href="#link2">Scope of the Present Edition</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link3">The Nyangwe Segment (23 Mar.-11 Aug. 1871)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link4">Additional Diary Pages (11 Aug.-3 Nov. 1871)</a><br />
-			<a href="#link5">History of the Manuscript</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link6">From Africa to England (1871-74)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link7">Production of the <em>Last Journals</em> (1874)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link8">1874 to Present</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link9">1. The Nyangwe Segment</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link10">2. Additional Diary Pages</a><br />
-			<a href="#link11">Works Cited</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">The Manuscript: An Overview</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Scope of the Present Edition</a></span></span>
+	<ol style="list-style-type:none">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">The Nyangwe Segment (23 Mar.-11 Aug. 1871)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Additional Diary Pages (11 Aug.-3 Nov. 1871)</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">History of the Manuscript</a></span></span>
+	<ol style="list-style-type:none">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">From Africa to England (1871-74)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Production of the <em>Last Journals</em> (1874)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">1874 to Present</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">The Nyangwe Segment</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Additional Diary Pages</a></span></span></li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Works Cited</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">The Manuscript: An Overview</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -19899,58 +18215,10 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -19971,7 +18239,13 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -20064,58 +18338,10 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -20143,7 +18369,13 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -20425,58 +18657,10 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -20504,7 +18688,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -21182,58 +19372,10 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -21300,19 +19442,17 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 280px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Livingstone\'s Paper</a><br />
-			<a href="#link3">Livingstone\'s Ink</a><br />
-			<a href="#link4">Entries in the 1871 Field Diary</a><br />
-			<a href="#link5">Page Headers in the 1871 Field Diary</a><br />
-			<a href="#link6">The Nyangwe Massacre, 15 July 1871</a><br />
-			<a href="#link7">Additional Diary Pages</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Livingstone\'s Paper</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Livingstone\'s Ink</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Entries in the 1871 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Page Headers in the 1871 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">The Nyangwe Massacre, 15 July 1871</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Additional Diary Pages</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -21600,58 +19740,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -21679,7 +19771,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -21718,17 +19816,15 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 180px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#asi1">Introduction</a><br />
-			<a href="#asi2">Background </a><br />
-			<a href="#asi3">Prototyping Objectives</a><br />
-			<a href="#asi4">Developing ASIs</a><a id="asi1" name="asi1"></a><br />
-			<a href="#asi5">Results</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi2">Background</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi3">Prototyping Objectives</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi4">Developing ASIs</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi5">Results</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -21893,58 +19989,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -21972,7 +20020,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -22243,15 +20297,13 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 280px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Primary texts</a><br />
-			<a href="#link2">Literary, historical, and cultural sources</a><br />
-			<a href="#link3">Scientific sources</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Primary texts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Literary, historical, and cultural sources</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Scientific sources</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Primary texts</span> &nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -22879,8 +20931,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/Twitter3b-new-carousel.jpg',
@@ -22906,8 +20958,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/Twitter3b-new-tile.jpg',
@@ -23173,58 +21225,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -23342,58 +21346,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -23421,7 +21377,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -23649,58 +21611,10 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -23736,7 +21650,13 @@ ornament their faces and heads (1871f:CVII)</p>
   ),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -23775,18 +21695,16 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 300px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Previous Critical Readings</a><br />
-			<a href="#link3">Evidence from the 1871 Field Diary</a><br />
-			<a href="#link4">Reconciling Livingstone and Stanley</a><br />
-			<a href="#link5">The Limits of Interpretation</a><a id="link1" name="link1"></a><br />
-			<a href="#link6">Works Cited</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Previous Critical Readings</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Evidence from the 1871 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Reconciling Livingstone and Stanley</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">The Limits of Interpretation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Works Cited</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -23956,58 +21874,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -24028,7 +21898,13 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -24436,58 +22312,10 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -24830,58 +22658,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -24948,17 +22728,15 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 250px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Conflicting Loyalties</a><br />
-			<a href="#link3">Local Sources, Global Knowledge</a><br />
-			<a href="#link4">Conclusion</a><br />
-			<a href="#link5">Works Cited</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Conflicting Loyalties</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Local Sources, Global Knowledge</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Conclusion</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Works Cited</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -25069,7 +22847,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>Spurr, David. 1993. <em>The Rhetoric of Empire: Colonial Discourse in Journalism, Travel Writing, and Imperial Administration</em>. Durham and London: Duke University Press.</p>
 
-<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
+<p class="rtecenter"><span style="font-size:16px"><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-family:source sans pro">Return to top</span> ⤴</a></span></span></p>
 ',
         'format' => 'full_html',
       ),
@@ -25083,58 +22861,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -25162,7 +22892,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -25318,18 +23054,16 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 310px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Groundwork (2010-13)</a><br />
-			<a href="#link3">Year One (1 Dec. 2013 to 30 Nov. 2014) </a><br />
-			<a href="#link4">Year Two (1 Dec. 2014 to 30 Nov. 2015)</a><br />
-			<a href="#link5">Year Three (1 Dec. 2015 to 31 Dec. 2016)</a><a id="link1" name="link1"></a><br />
-			<a href="#link6">Conclusion</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Groundwork (2010-13)</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Year One (1 Dec. 2013 to 30 Nov. 2014) </a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Year Two (1 Dec. 2014 to 30 Nov. 2015)</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Year Three (1 Dec. 2015 to 31 Dec. 2016)</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Conclusion</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -25544,58 +23278,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -25623,7 +23309,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -26336,58 +24028,10 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -26408,7 +24052,13 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -26590,58 +24240,10 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -27088,58 +24690,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -27206,27 +24760,34 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 380px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link0">Introduction</a><br />
-			<a href="#link1">Initial History</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link2">Locating the Manuscript</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link3">Contacting the Archimedes Team / Visit to Blantyre</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link4">Funding and the Missing Diary Pages</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link5">Livingstone’s Letter from Bambarre</a><br />
-			<a href="#link6">Pre-Imaging Activities</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link7">Setting the Stage</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link8">Permission and Conservation</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link9">Project Planning</a><br />
-			<a href="#link10">Spectral Imaging in Scotland</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link11">Imaging Set-Up</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link12">Data Logging, Collection, and Copying</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link13">Personnel and Activities</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link14">Imaging Schedule and Objectives</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Initial History</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Locating the Manuscript</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Contacting the Archimedes Team / Visit to Blantyre</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Funding and the Missing Diary Pages</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Livingstone’s Letter from Bambarre</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Pre-Imaging Activities</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Setting the Stage</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Permission and Conservation</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Project Planning</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Spectral Imaging in Scotland</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Imaging Set-Up</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Data Logging, Collection, and Copying</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">Personnel and Activities</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link14">Imaging Schedule and Objectives</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -27631,58 +25192,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -27710,7 +25223,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -28043,58 +25562,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -28161,22 +25632,29 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 400px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">1. Introduction</a><br />
-			<a href="#link2">2. Composing the Diary: Ink and Pencil on the Page</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link3">a. Texts from Other Hands</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link4">i. Primary printed texts</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link5">ii. Primary handwritten texts</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link6">iii. Handwritten additions</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link7">b. Livingstone’s Use of Inks and Pencils</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link8">i. Pre-composition (pencil and iron gall ink)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link9">ii. Preliminary composition and additions (iron gall ink)</a><a id="link1" name="link1"></a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link10">iii. Reinking and revision (iron gall and Zingifure ink)</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Composing the Diary: Ink and Pencil on the Page</a></span></span>
+	<ol style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Texts from Other Hands</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Primary printed texts</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Primary handwritten texts</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Handwritten additions</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Livingstone’s Use of Inks and Pencils</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Pre-composition (pencil and iron gall ink)</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Preliminary composition and additions (iron gall ink)</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Reinking and revision (iron gall and Zingifure ink)</a></span></span></li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -28393,58 +25871,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -28472,7 +25902,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -29240,58 +26676,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -29319,7 +26707,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -29975,43 +27369,12 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_authors' => array(),
-  'field_section_body' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<hr />',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_body' => array(),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -30047,7 +27410,13 @@ ornament their faces and heads (1871f:CVII)</p>
   ),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -30086,23 +27455,30 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 275px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">1. The Manuscript across Environments</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link2">a. Page Discoloration</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link3">i. First gathering</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link4">ii. Second gathering</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link5">b. Stains on the Pages</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link6">i. The big stain</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link7">ii. Brown stains</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link8">iii. Red stains</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link9">iv. Miscellaneous singular stains</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link10">v. Invisible stains</a><a id="link1" name="link1"></a><br />
-			<a href="#link11">2. Other Material Features</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">The Manuscript across Environments</a></span></span>
+	<ol style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Page Discoloration</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">First gathering</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Second gathering</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Stains on the Pages</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">The big stain</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Brown stains</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Red stains</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Miscellaneous singular stains</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Invisible stains</a></span></span></li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Other Material Features</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">The Manuscript across Environments</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -30353,58 +27729,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -30432,7 +27760,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -30551,58 +27885,10 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -30669,61 +27955,86 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 335px;">
-	<tbody>
-		<tr>
-			<td>
-			<p><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link0">Overview of TEI P5 Encoding Practices</a><br />
-			<a href="#link1">I. File Naming</a><br />
-			<a href="#link2">II. Document Header</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link3">A. &lt;fileDesc&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link4">1. &lt;titleStmt&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link5">2. &lt;publicationStmt&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link6">3. &lt;sourceDesc&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link7">B. &lt;encodingDesc&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link8">C. &lt;profileDesc&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link9">D. &lt;revisionDesc&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link9.5">E. &lt;facsimile&gt;&lt;surface&gt;&lt;graphic&gt;&lt;zone&gt;</a><br />
-			<a href="#link10">III. Body Text</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link11">A. Major Structural Elements</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link12">1. &lt;text&gt;&lt;body&gt;&lt;div&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link13">2. &lt;ab&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link14">3. &lt;cb/&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link15">4. &lt;milestone&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link16">5. &lt;fw&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link17">6. &lt;p&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link18">7. &lt;lb/&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link44">8. &lt;w/&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link19">B. Textual Layout and Formatting</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link20">1. &lt;space/&gt; and Spacing between Words</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link21">2. &lt;hi&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link22">C. Additions and Deletions</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link23">1. &lt;add&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link24">2. &lt;del&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link25">D. Illegible Text</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link26">1. &lt;unclear&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link27">2. &lt;gap&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link28">E. Editorial Interventions</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link29">1. &lt;supplied&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link30">2. &lt;choice&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link31">a. &lt;abbr&gt;&lt;expan&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link32">b. &lt;sic&gt;&lt;corr&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link33">c. &lt;unclear&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link34">d. &lt;orig&gt;&lt;reg&gt;</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link35">F. Content Tagging</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link36">1. People</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link37">2. Tribes and Villagers</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link38">3. Places and Geographical Entities</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link39">4. Dates</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link40">5. Medical References</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link41">6. Foreign Words and Phrases</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link42">7. Drawings, Maps, Calculations, Seals, </a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <a href="#link42">Squiggles, Foreign Text (Hebrew/Arabic)</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link43">G. Special Characters</a><a name="link0"></a></span></span></p>
-			</td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Overview of TEI P5 Encoding Practices</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">I. File Naming</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">II. Document Header</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">A. &lt;fileDesc&gt;</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">1. &lt;titleStmt&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">2. &lt;publicationStmt&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">3. &lt;sourceDesc&gt;</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">B. &lt;encodingDesc&gt;</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">C. &lt;profileDesc&gt;</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">D. &lt;revisionDesc&gt;</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9.5">E. &lt;facsimile&gt;&lt;surface&gt;&lt;graphic&gt;&lt;zone&gt;</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">III. Body Text</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">A. Major Structural Elements</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">1. &lt;text&gt;&lt;body&gt;&lt;div&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">2. &lt;ab&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link14">3. &lt;cb/&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link15">4. &lt;milestone&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link16">5. &lt;fw&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link17">6. &lt;p&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link18">7. &lt;lb/&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link44">8. &lt;w/&gt;</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link19">B. Textual Layout and Formatting</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link20">1. &lt;space/&gt; and Spacing between Words</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link21">2. &lt;hi&gt;</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link22">C. Additions and Deletions</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link23">1. &lt;add&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link24">2. &lt;del&gt;</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link25">D. Illegible Text</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link26">1. &lt;unclear&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link27">2. &lt;gap&gt;</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link28">E. Editorial Interventions</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link29">1. &lt;supplied&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link30">2. &lt;choice&gt;</a></span></span>
+			<ol>
+				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link31">a. &lt;abbr&gt;&lt;expan&gt;</a></span></span></li>
+				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link32">b. &lt;sic&gt;&lt;corr&gt;</a></span></span></li>
+				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link33">c. &lt;unclear&gt;</a></span></span></li>
+				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link34">d. &lt;orig&gt;&lt;reg&gt;</a></span></span></li>
+			</ol>
+			</li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link35">F. Content Tagging</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link36">1. People</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link37">2. Tribes and Villagers</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link38">3. Places and Geographical Entities</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link39">4. Dates</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link40">5. Medical References</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link41">6. Foreign Words and Phrases</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link42">7. Drawings, Maps, Calculations, Seals, Squiggles, Foreign Text (Hebrew/Arabic)</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link43">G. Special Characters</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>
 
 <hr />
 <h4><strong>Overview of TEI P5 Encoding Practices</strong>&nbsp;&nbsp;&nbsp; <span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -31416,58 +28727,10 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -31495,7 +28758,13 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -31674,64 +28943,16 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr/>',
+        'value' => '<hr />',
         'format' => 'full_html',
       ),
     ),
   ),
   'field_section_byline' => array(),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -31770,7 +28991,13 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-letter-bambarre',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -31809,20 +29036,17 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 250px;">
-	<tbody>
-		<tr>
-			<td>&nbsp;</td>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Stages of Composition</a><br />
-			<a href="#link3">Exceptions to the Rule</a><br />
-			<a href="#link4">Documents of Varying Purposes</a><br />
-			<a href="#link5">Unpublished Accounts</a><br />
-			<a href="#link6">Conclusion</a><a id="link1" name="link1"></a><br />
-			<a href="#link7">Works Cited</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Stages of Composition</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Exceptions to the Rule</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Documents of Varying Purposes</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Unpublished Accounts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Conclusion</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Works Cited</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
@@ -32063,58 +29287,10 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 14032,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '4913c7f0-6bcf-446e-b86e-af9b36b3cb79',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 17417,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => '7f37cdd8-1cc5-4228-847f-e46c3d1ba192',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -32142,7 +29318,13 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1870-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -32181,20 +29363,18 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 280px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Livingstone in 1871</a><br />
-			<a href="#link2">The Village of Nyangwe</a><br />
-			<a href="#link3">Canoes on the Lualaba</a><br />
-			<a href="#link4">"Unspeakable Horror"</a><br />
-			<a href="#link5">Representing the Nyangwe Massacre (1)</a><br />
-			<a href="#link6">Representing the Nyangwe Massacre (2)</a><br />
-			<a href="#link7">Conclusion</a><br />
-			<a href="#link8">Works Cited</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Livingstone in 1871</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">The Village of Nyangwe</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Canoes on the Lualaba</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">"Unspeakable Horror"</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Representing the Nyangwe Massacre (1)</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Representing the Nyangwe Massacre (2)</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Conclusion</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Works Cited</a></span></span></li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Livingstone in 1871</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -32809,58 +29989,10 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -32881,7 +30013,13 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -33246,58 +30384,10 @@ The page immediately following Livingstone’s final entry records a note by Jac
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -33509,22 +30599,23 @@ The page immediately following Livingstone’s final entry records a note by Jac
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 250px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Page Numbers</a><br />
-			<a href="#link3">Journal Entries and Notes</a><br />
-			<a href="#link4">Livingstone’s Orthography</a><br />
-			<a href="#link5">Additional Textual Elements</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link6">1. Sketches</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link7">2. Maps</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link8">3. Calculations</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link9">4. Extraneous Foreign Text</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link10">5. Flourishes to Correct Ink Flow</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Page Numbers</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Journal Entries and Notes</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Livingstone’s Orthography</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Additional Textual Elements</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Sketches</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Maps</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Calculations</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Extraneous Foreign Text</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Flourishes to Correct Ink Flow</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>
 
 <hr />
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -33786,58 +30877,10 @@ The page immediately following Livingstone’s final entry records a note by Jac
       ),
     ),
   ),
-  'field_section_carousel_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '65x65-carousel.jpg',
-        'uri' => 'public://section_page/carousel_images/65x65-carousel_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 787,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'd9e5596c-3650-465c-8bb3-cc031df933f4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 65,
-          'width' => 65,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 65,
-        'width' => 65,
-        'uuid_features_packaged_file_path' => 'assets/65x65-carousel_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_carousel_image' => array(),
   'field_section_date' => array(),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(
-    'und' => array(
-      0 => array(
-        'uid' => 1,
-        'filename' => '390x293-tile.jpg',
-        'uri' => 'public://section_page/grid_images/390x293-tile_0.jpg',
-        'filemime' => 'image/jpeg',
-        'filesize' => 2587,
-        'status' => 1,
-        'type' => 'image',
-        'uuid' => 'bc20ee41-123d-4660-87ea-c8922cf14368',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
-        'metadata' => array(
-          'height' => 293,
-          'width' => 390,
-        ),
-        'alt' => '',
-        'title' => '',
-        'height' => 293,
-        'width' => 390,
-        'uuid_features_packaged_file_path' => 'assets/390x293-tile_0.jpg',
-      ),
-    ),
-  ),
+  'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -33865,7 +30908,13 @@ The page immediately following Livingstone’s final entry records a note by Jac
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-livingstone-1871-diary',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,

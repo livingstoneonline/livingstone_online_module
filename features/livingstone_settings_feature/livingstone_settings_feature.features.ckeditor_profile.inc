@@ -41,7 +41,7 @@ function livingstone_settings_feature_ckeditor_profile_defaults() {
         'lang' => 'en',
         'auto_lang' => 't',
         'language_direction' => 'default',
-        'allowed_content' => 't',
+        'allowed_content' => 'f',
         'extraAllowedContent' => 'div (section-page-toc-links)',
         'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
@@ -70,7 +70,7 @@ function livingstone_settings_feature_ckeditor_profile_defaults() {
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
-        'js_conf' => 'config.extraCss = ".section-page-toc-links{display:flex;justify-content:center;}";
+        'js_conf' => 'config.extraCss = ".section-page-toc-links{display:flex;justify-content:center;} .section-page-toc-links ol:not(style), .section-page-toc-links ul:not(style){list-style: inherit;}";
 config.fontSize_sizes = \'12/12px;14/14px;16/16px;\';
 config.height = 450;
 config.font_names = \'Source Sans Pro;Patua One;Crimson Text\';
