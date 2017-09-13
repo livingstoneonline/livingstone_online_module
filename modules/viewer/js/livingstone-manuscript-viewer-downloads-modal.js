@@ -17,6 +17,10 @@
    */
   Drupal.behaviors.livingstoneManuscriptViewerDownloadsModal = {
     attach: function (context, settings) {
+      // Add the element to which our logic will bind.
+      if (!$('div.livingstone-manuscript-viewer-download-modal').length) {
+        $('body').prepend('<div class="livingstone-manuscript-viewer-download-modal"></div>');
+      }
       // Attach to links.
       $(base, document).once('livingstoneManuscriptViewerDownloadsModal', function () {
         $(this).click(function(event) {
@@ -38,16 +42,16 @@
    * Show the modal window.
    */
   function openModal(url) {
-    $('body').prepend('<div class="livingstone-manuscript-viewer-modal"><iframe src="' + url + '"></iframe></div>');
-    $('body').addClass('modal-open');
+    $('div.livingstone-manuscript-viewer-download-modal').prepend('<iframe src="' + url + '"></iframe>');
+    $('body').addClass('download-modal-open');
   }
 
   /**
    * Removes the modal window.
    */
   function closeModal() {
-    $('div.livingstone-manuscript-viewer-modal').remove();
-    $('body').removeClass('modal-open');
+    $('div.livingstone-manuscript-viewer-download-modal iframe').remove();
+    $('body').removeClass('download-modal-open');
   }
 
   /**

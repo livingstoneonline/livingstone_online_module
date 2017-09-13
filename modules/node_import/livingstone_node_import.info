@@ -1,0 +1,7 @@
+name = "Livingstone Node Import Module"
+description = "Allows importing manuscript content into Drupal from Fedora / Solr."
+package = Livingstone
+dependencies[] = islandora
+dependencies[] = islandora_solr
+version = 7.x-dev
+core = 7.x

@@ -1,0 +1,8 @@
+name = "Livingstone Transcript Module"
+description = "Provides the transcript field along with a mechanism for generating transcripts."
+package = Livingstone
+dependencies[] = islandora
+dependencies[] = leap_xslt
+dependencies[] = double_field
+version = 7.x-dev
+core = 7.x

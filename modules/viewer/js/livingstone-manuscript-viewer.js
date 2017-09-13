@@ -255,7 +255,7 @@
         manuscript = new Manuscript(settings),
         toolbar = new Toolbar('#toolbar', manuscript),
         item_details = new ItemDetails('#item-details'),
-        transcription = new Transcription('#transcription', manuscript),
+        transcription = new Transcription('.transcription-viewer-content', manuscript),
         main_image = $('#main-image').length ?
           new Image('#main-image', manuscript, settings.openSeaDragon.options) :
           null,
@@ -264,7 +264,7 @@
           null,
         images = [main_image, comparison_image].filter(function (value) { return value !== null; }),
         item_details_pane = $('.pane.item-details'),
-        transcription_pane = $('.pane.transcription'),
+        transcription_pane = $('.pane.transcription-pane'),
         main_image_pane = $('.pane.main-image'),
         compare_image_pane = $('.pane.compare-image'),
         restricted_pane = $('.pane.restricted'),
@@ -402,7 +402,6 @@
           if (page) {
             transcription.setPage(page.pid, page.label);
           }
-          transcription.resize();
           $.each(center_panes, function () {
             this.addClass('pane-open');
             this.addClass('pane-left');
@@ -443,7 +442,7 @@
       // Hack to get around sudden switch to mobile when displaying compare.
       if (window.innerWidth <= 767) {
         if (compare_image_pane.hasClass('pane-open')) {
-          $('#toolbar .icon.compare').removeClass('depressed');
+          $('#toolbar .compare').removeClass('depressed');
           toolbar.trigger('close-pane', { pane:'compare' });
         }
       }
@@ -476,13 +475,13 @@
     var that = this,
         element = $(selector),
         slider = $('.zoom-slider', element),
-        zoom_out = $('.icon.zoom-out', element),
-        zoom_in = $('.icon.zoom-in'),
-        rotate = $('.icon.rotate'),
-        pager = $('select.pager'),
-        item_details = $('.icon.item-details'),
-        transcription = $('.icon.transcription'),
-        compare = $('.icon.compare'),
+        zoom_out = $('.zoom-out', element),
+        zoom_in = $('.zoom-in'),
+        rotate = $('.rotate'),
+        pager = $('select.page-select'),
+        item_details = $('.item-details'),
+        transcription = $('.transcription-button'),
+        compare = $('.compare'),
         radios = [item_details, transcription, compare].filter(function (value) {
           return value.length > 0;
         });
@@ -576,7 +575,7 @@
     });
 
     // Close
-    $('.icon.close', element).click(function () {
+    $('.close', element).click(function () {
       parent.window.postMessage({ event: 'close' }, "*");
     });
 
@@ -596,6 +595,9 @@
       }
       else if (pager.val() != pid) {
         pager.val(pid);
+      }
+      if (pager.selectpicker) {
+        pager.selectpicker('refresh');
       }
     };
 
@@ -652,7 +654,6 @@
         prev = $('.prev-icon', element),
         next = $('.next-icon', element),
         image_selector = $('select.spectral-image', element),
-        page_download = $('.download', element),
         openseadragon = new OpenSeadragon($.extend({
           element: element.get(0),
           tileSources: manuscript.getTileSources(),
@@ -693,12 +694,12 @@
     function updatePageDownload(index) {
       var page = manuscript.getPage(index);
       if (page) {
-        page_download.html('');
+        $('.download', element).remove();
         if ($.isNumeric(page.size) && page.size > 0) {
           var size = page.size / 1024 / 1024;
           var text = '(' + size.toFixed(1) + ' MB)';
           var url = Drupal.settings.basePath + 'islandora/object/' + page.pid + '/datastream/ZIP/download';
-          page_download.html('<a href="' + url + '" class="icon button"><span class="fa">&#xf063;</span>&nbsp;' + text + '</a>');
+          $('.image-toolbar', element).append('<a href="' + url + '" class="icon button download" title="Download archival packet"><span class="fa">&#xf063;</span>&nbsp;' + text + '</a>');
         }
       }
     }
@@ -767,7 +768,18 @@
         $.each(options, function(index, option) {
           image_selector.append('<option value="' + option.value + '">' + option.label + '</option>');
         });
-        image_selector.val(mapping.dsid);
+        if (image_selector.selectpicker) {
+          image_selector.selectpicker('val', mapping.dsid);
+          image_selector.selectpicker('refresh');
+        }
+        else {
+          image_selector.val(mapping.dsid);
+        }
+        // XXX. Add tooltip to describe images.
+        // The Bootstrap select adds titles willy nilly so we remove them.
+        image_selector.parent().find('*[title]').each(function() {
+          $(this).removeAttr('title');
+        });
       }
     }
 
@@ -926,24 +938,15 @@
     // Expose some jQuery functions via a proxy.
     this.on = $.proxy(element.on, element);
 
-    // Add tooltip to describe images.
-    image_selector.wrap('<span class="image-selector-tooltip"></span>');
-    image_selector.before('<span class="image-selector-tooltip-text">spectral image type</span>');
-    var image_selector_tooltip = $('.image-selector-tooltip', element);
-    image_selector_tooltip.hover(function () {
-      var isTouch =  !!('ontouchstart' in window) || window.navigator.msMaxTouchPoints > 0;
-      if( !isTouch ){
-        image_selector_tooltip.addClass('hover');
-      }
-    }, function () {
-      image_selector_tooltip.removeClass('hover');
+    // XXX. Add tooltip to describe images.
+    // The Bootstrap select adds titles willy nilly so we remove them.
+    image_selector.parent().find('*[title]').each(function() {
+      $(this).removeAttr('title');
     });
-    image_selector_tooltip.click(function () {
-      image_selector_tooltip.addClass('hover');
-      setTimeout(function () {
-        image_selector_tooltip.removeClass('hover');
-        image_selector_tooltip.blur();
-      }, 3000);
+    image_selector.change(function() {
+      image_selector.parent().find('*[title]').each(function() {
+        $(this).removeAttr('title');
+      });
     });
   };
 
@@ -957,7 +960,7 @@
         downloads_modal = $('#downloads');
 
     // Close downloads modal.
-    $('.icon.close', downloads_modal).click(function () {
+    $('.close', downloads_modal).click(function () {
       downloads_modal.hide();
     });
 
@@ -976,14 +979,31 @@
     var that = this,
         element = $(selector);
 
-    /**
-     * Resize the iframe based on the length of it's content.
-     */
-    this.resize = function () {
-      if (element && element.get(0)) {
-        element.height(element.get(0).contentWindow.document.body.scrollHeight + 'px');
+    function page_selector(page) {
+      return 'span.pb-title:contains(' + page + ')';
+    }
+
+    function scroll_to(selector, offset) {
+      var heading;
+      offset = offset || 0;
+      heading = $(selector).eq(offset);
+      if (heading.length != 0) {
+        var pane = $('.pane.transcription-pane');
+        var pos = heading.position();
+        var rect= heading.get(0).getBoundingClientRect();
+        var height = Math.abs(rect.bottom - rect.top);
+        var top = pane.scrollTop() + pos.top - height;
+        pane.animate({
+          scrollTop: top + 'px'
+        }, 1000);
       }
-    };
+    }
+
+    $('.TEI span.pb-title', element).click(function () {
+      var label = $(this).text();
+      var page = manuscript.getPageByLabel(label);
+      element.trigger(jQuery.Event('page-change', { pid: page.pid, label: label }));
+    });
 
     /**
      * Scrolls to the given page if possible.
@@ -993,50 +1013,14 @@
       if (page) {
         label = label || page.labels[0];
         if (typeof label != "undefined") {
-          var iframe = jQuery('iframe#transcription');
-          if (iframe.length) {
-            iframe.get(0).contentWindow.postMessage({
-              event: 'page',
-              label: label
-            }, "*");
-          }
+          scroll_to(page_selector(label));
         }
       }
     };
 
-    // Listen for page events.
-    function receiveMessage(event) {
-      if (typeof event.data.event == "undefined") {
-        return;
-      }
-      if (event.data.event == 'page' &&
-          typeof event.data.label != "undefined") {
-        var page = manuscript.getPageByLabel(event.data.label);
-        if (page) {
-          element.trigger(jQuery.Event('page-change', { pid: page.pid, label: event.data.label }));
-        }
-      }
-      if (event.data.event == 'ready') {
-        // Resize once loaded.
-        that.resize();
-      }
-    }
-    window.addEventListener("message", receiveMessage, false);
-
-    // Resize the iFrame when the window is resized.
-    $(window).resize(function () { that.resize(); });
-
-    /**
-     * Detect when the transcript has loaded so that the parent frame of this
-     * one can attach tooltips.
-     */
-    element.load(function () {
-      element.attr('loaded', '1');
-      that.resize();
-    });
-
     // Expose some jQuery functions via a proxy.
     this.on = $.proxy(element.on, element);
+    this.trigger = $.proxy(element.trigger, element);
   };
 
 }(jQuery));

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Section Page Nodes Feature feature.
+ */
+
+include_once 'livingstone_section_page_nodes_feature.features.inc';

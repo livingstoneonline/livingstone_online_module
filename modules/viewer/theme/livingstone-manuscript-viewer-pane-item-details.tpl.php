@@ -52,7 +52,7 @@
         <?php endif; ?>
         "<?php print implode('', $fields['title-alt']); ?>."
         <i>Livingstone Online</i>. Adrian S. Wisnicki, Megan Ward, Anne Martin, and Christopher Lawrence, dirs.
-        University of Maryland Libraries, 2016. Web.
+        University of Maryland Libraries, <?php print date('Y'); ?>. Web.
         <?php print $fields['accessed_date']?>.
       </dd>
     </dl>

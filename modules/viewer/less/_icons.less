@@ -14,25 +14,18 @@
     display: inline-block;
   }
 }
-.icon {
-  .icon;
-  &.rotate {
+  .rotate {
     margin-left: @icon-margin / 2;
   }
-  &.close {
+  .close {
     position: absolute;
     width: @close-icon-width;
-    font-size: 0.9em;
     // Position must match #toolbar padding and the icon-group margin.
     top: 6px;
     right: 2px;
     // In the case of overlap show above the other element.
     z-index: 1;
   }
-  &.disabled {
+  .disabled {
     color: darkgray !important;
   }
-}
-.button {
-  .button;
-}

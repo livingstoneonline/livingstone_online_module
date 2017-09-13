@@ -15,20 +15,17 @@
  */
 function livingstone_initialize_batch_operation(&$context, $total = 1) {
   if (empty($context['results'])) {
-    $results =& $context['results'];
-    if (empty($results)) {
-      // "files" will be deleted upon failure or success of the batch.
-      // "successful" is a count of the number of successful operations.
-      // "failed" is a count of the number of failed operations.
-      // "messages" array of messages to display on finishing the batch
-      // values are used as parameters to t() and drupal_set_message().
-      $results = array(
-        'files' => array(),
-        'messages' => array(),
-        'successful' => 0,
-        'failed' => 0,
-      );
-    }
+    // "files" will be deleted upon failure or success of the batch.
+    // "successful" is a count of the number of successful operations.
+    // "failed" is a count of the number of failed operations.
+    // "messages" array of messages to display on finishing the batch
+    // values are used as parameters to t() and drupal_set_message().
+    $context['results'] = array(
+      'files' => array(),
+      'messages' => array(),
+      'successful' => 0,
+      'failed' => 0,
+    );
   }
   if (empty($context['sandbox'])) {
     // Local storage for a single operation.

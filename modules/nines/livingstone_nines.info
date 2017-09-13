@@ -1,0 +1,6 @@
+name = "Livingstone Nines Export Module"
+description = "Exports Nines RDF to a zip file."
+package = Livingstone
+dependencies[] = islandora
+version = 7.x-dev
+core = 7.x

@@ -1,0 +1,470 @@
+<?php
+
+/**
+ * @file
+ * Module hooks and utility functions.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function livingstone_deploy_menu() {
+  return array(
+    'admin/livingstone/deploy' => array(
+      'title' => 'Deploy Code',
+      'description' => 'Updates the code on this server to the chose configuration (dev, stage, prod).',
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
+      'type' => MENU_NORMAL_ITEM,
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('livingstone_deploy_admin_form'),
+    ),
+  );
+}
+
+/**
+ * The Livingstone development form.
+ *
+ * @param array $form
+ *   Drupal form.
+ * @param array $form_state
+ *   Drupal form state.
+ *
+ * @return array
+ *   The form definition.
+ */
+function livingstone_deploy_admin_form(array $form, array &$form_state) {
+  $description = <<<EOT
+  This deploys the following modules/themes using the selected branch for each.<br/>
+  <ul>
+    <li><a href="https://github.com/livingstoneonline/livingstone_online_module">livingstone_online_module</a>: Responsible for the majority of the site's functionality.</li>
+    <li><a href="https://github.com/livingstoneonline/livingstone_online_theme">livingstone_online_theme</a>: Responsible for the display of the site (css, etc).</li>
+    <li><a href="https://github.com/livingstoneonline/LEAP-XSLT">LEAP-XSLT</a>: Contains the transcripts, transforms, and related CSS for displaying the generated HTML in both viewers.</li>
+  </ul>
+EOT;
+  return array(
+    'branch' => array(
+      '#type' => 'select',
+      '#description' => t('Please select the branch to deploy from.'),
+      '#options' => array(
+        'dev' => 'dev',
+        'stage' => 'stage',
+        'prod' => 'prod',
+      ),
+    ),
+    'description' => array(
+      '#type' => 'markup',
+      '#prefix' => '<p>',
+      '#suffix' => '</p>',
+      '#markup' => t($description),
+    ),
+    'submit' => array(
+      '#type' => 'submit',
+      '#value' => t('Update Modules'),
+    ),
+  );
+}
+
+/**
+ * Performs the form submission.
+ *
+ * @param array $form
+ *   Drupal form.
+ * @param array $form_state
+ *   Drupal form state.
+ */
+function livingstone_deploy_admin_form_submit(array $form, array &$form_state) {
+  $sites_all = DRUPAL_ROOT . '/sites/all';
+  $branch = $form_state['values']['branch'];
+  $output_theme = shell_exec("cd $sites_all/themes/livingstone_online_theme; git checkout ${branch}; git pull 2>&1");
+  drupal_set_message($output_theme, "Update Theme");
+  $output_module = shell_exec("cd $sites_all/modules/custom/LEAP_XSLT; git checkout ${branch}; git pull 2>&1");
+  drupal_set_message($output_module, "Update LEAP-XSLT");
+  $output_module = shell_exec("cd $sites_all/modules/custom/livingstone_online_module; git checkout ${branch}; git pull 2>&1");
+  drupal_set_message($output_module, "Update Module");
+  $output_cache = shell_exec("cd $sites_all; s6-setuidgid apache /usr/local/bin/drush cc all 2>&1");
+  drupal_set_message($output_cache, "Clear Cache");
+}
+
+
+function livingstone_deploy_render($nodes) {
+  module_load_include('inc', 'features', 'features.export');
+  $code[] = <<<EOT
+<?php
+/**
+ * @file
+ * livingstone_section_page_nodes_feature.features.uuid_node.inc
+ */
+
+/**
+ * Implements hook_uuid_features_default_content().
+ */
+function livingstone_section_page_nodes_feature_uuid_features_default_content() {
+EOT;
+  $code[] = '  $nodes = array();';
+  $code[] = '';
+  foreach ($nodes as $node) {
+    $code[] = '  $nodes[] = ' . features_var_export($node, '') . ';';
+  }
+  $code[] = '  return $nodes;';
+  $code[] = "}\n";
+  $code = implode("\n", $code);
+  return $code;
+}
+
+function livingstone_deploy_migrate_uuid_nodes() {
+  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+  module_load_include('inc', 'livingstone_section_page_nodes_feature', 'livingstone_section_page_nodes_feature.features.uuid_node');
+  $nodes = livingstone_section_page_nodes_feature_uuid_features_default_content();
+  $supported_fields = drupal_map_assoc(array(
+    'title',
+    'log',
+    'status',
+    'comment',
+    'promote',
+    'sticky',
+    'type',
+    'language',
+    'created',
+    'tnid',
+    'translate',
+    'uuid',
+    'field_section',
+    'field_section_body',
+    'field_section_byline',
+    'field_section_carousel_image',
+    'field_section_date',
+    'field_section_grid_image',
+    'field_section_open_in_new_tab',
+    'field_section_outbound_link',
+    'field_section_overview',
+    'field_section_page_transcription',
+    'field_section_table_of_contents',
+    'field_section_subtitle',
+    'field_section_teaser',
+    'field_section_pre_title',
+    'path',
+    'url_alias',
+    'date',
+    'user_uuid',
+  ));
+  $field_rename_mapping = array(
+    'field_section_page_sections' => 'field_section',
+    'body' => 'field_section_body',
+    'field_section_page_tag_line' => 'field_section_overview',
+    'field_section_page_main_image' => 'field_section_image',
+    'field_carousel_image' => 'field_section_carousel_image',
+    'field_section_page_image' => 'field_section_grid_image',
+    'field_section_page_byline' => 'field_section_byline',
+    'field_section_page_date' => 'field_section_date',
+    'field_subtitle' => 'field_section_subtitle',
+    'field_level_2_teaser' => 'field_section_teaser',
+    'field_pre_title' => 'field_section_pre_title',
+    'field_outbound_link' => 'field_section_outbound_link',
+    'field_open_new_tab' => 'field_section_open_in_new_tab',
+    'field_transcriptions' => 'field_section_page_transcription',
+  );
+  $path_rename_mapping = array(
+    '/\/islandora\/search/' => '/in-his-own-words/catalogue?query=',
+    '/\/browse\/addressee/' => '/in-his-own-words/addressee?prefix=',
+  );
+  $paths = array(
+    '/spectral-imaging/manuscript-citation-and-file-naming-practices' => '/spectral-imaging/manuscript-citation-and-file-naming-practices',
+    '/spectral-imaging/note-text-letter' => '/spectral-imaging/note-the-text-the-letter',
+    '/resources/resources-overview' => '/resources/resources-overview',
+    '/life-and-times/livingstone’s-posthumous-reputation' => '/life-and-times/livingstone-s-posthumous-reputation',
+    '/life-and-times/livingstone%E2%80%99s-posthumous-reputation' => '/life-and-times/livingstone-s-posthumous-reputation',
+    '/materials' => '/materials',
+    '/behind-scenes/practices-standards-and-arrangements' => '/behind-the-scenes/practices-standards-and-arrangements',
+    '/his-own-words/field-diary-i-overview' => '/in-his-own-words/field-diary-i-overview',
+    '/spectral-imaging/project-documentation' => '/spectral-imaging/project-documentation',
+    '/spectral-imaging/terminology-and-acronyms' => '/spectral-imaging/terminology-and-acronyms',
+    '/his-own-words/field-diary-ii-overview' => '/in-his-own-words/field-diary-ii-overview',
+    '/behind-scenes/acknowledgments' => '/behind-the-scenes/acknowledgments',
+    '/spectral-imaging/edition-guide' => '/spectral-imaging/edition-guide',
+    '/spectral-imaging/history-chronology-1870-field-diary' => '/spectral-imaging/history-chronology-the-1870-field-diary',
+    '/resources/livingstone-online-tei-p5-encoding-guidelines' => '/resources/livingstone-online-tei-p5-encoding-guidelines',
+    '/spectral-imaging/acknowledgments' => '/spectral-imaging/acknowledgments',
+    '/life-and-times/publishing-livingstones-missionary-travels' => '/life-and-times/publishing-livingstones-missionary-travels',
+    '/about-site/why-should-we-read-livingstone’s-manuscripts' => '/about-this-site/why-should-we-read-livingstone-s-manuscripts',
+    '/about-site/why-should-we-read-livingstone%E2%80%99s-manuscripts' => '/about-this-site/why-should-we-read-livingstone-s-manuscripts',
+    '/behind-scenes/project-teams' => '/behind-the-scenes/project-teams',
+    '/spectral-imaging/note-three-versions-text' => '/spectral-imaging/note-the-three-versions-the-text',
+    '/his-own-words/project-bibliography' => '/in-his-own-words/project-bibliography',
+    '/his-own-words/field-diary-vi-overview' => '/in-his-own-words/field-diary-vi-overview',
+    '/spectral-imaging/project-team' => '/spectral-imaging/project-team',
+    '/about-site/livingstone-online-introduction' => '/about-this-site/livingstone-online-introduction',
+    '/spectral-imaging/data-management' => '/spectral-imaging/data-management',
+    '/his-own-words/field-diary-x-overview' => '/in-his-own-words/field-diary-x-overview',
+    '/his-own-words/aftermath-livingstones-death' => '/in-his-own-words/the-aftermath-livingstones-death',
+    '/spectral-imaging/edition-guide-0' => '/spectral-imaging/edition-guide-0',
+    '/behind-scenes/credits-and-permissions' => '/behind-the-scenes/credits-and-permissions',
+    '/spectral-imaging/notes-processed-spectral-images' => '/spectral-imaging/notes-processed-spectral-images',
+    '/his-own-words/his-own-words-overview' => '/in-his-own-words/in-his-own-words-overview',
+    '/spectral-imaging/third-massacre-narrative' => '/spectral-imaging/the-third-massacre-narrative',
+    '/spectral-imaging/creating-1870-field-diary' => '/spectral-imaging/creating-the-1870-field-diary',
+    '/spectral-imaging/project-documentation-0' => '/spectral-imaging/project-documentation-0',
+    '/spectral-imaging/diary-across-hands-space-and-time-2' => '/spectral-imaging/the-diary-across-hands-space-and-time-2',
+    '/spectral-imaging/livingstone-spectral-image-collection' => '/spectral-imaging/the-livingstone-spectral-image-collection',
+    '/spectral-imaging/1871-field-diary-facsimile' => '/spectral-imaging/the-1871-field-diary-facsimile',
+    '/spectral-imaging/introduction-spectral-imaging' => '/spectral-imaging/introduction-spectral-imaging',
+    '/spectral-imaging/overview-processing-objectives' => '/spectral-imaging/overview-processing-objectives',
+    '/spectral-imaging/project-team-0' => '/spectral-imaging/project-team-0',
+    '/his-own-words/field-diary-iii-overview' => '/in-his-own-words/field-diary-iii-overview',
+    '/spectral-imaging/background-edition' => '/spectral-imaging/background-the-edition',
+    '/spectral-imaging/project-history-2' => '/spectral-imaging/project-history-2',
+    '/spectral-imaging/glossary-key-terms-livingstones-manuscripts-1870-71' => '/spectral-imaging/glossary-key-terms-in-livingstones-manuscripts-1870-71',
+    '/spectral-imaging/livingstones-1871-field-diary' => '/spectral-imaging/livingstones-1871-field-diary',
+    '/life-and-times/livingstone’s-life-expeditions' => '/life-and-times/livingstone-s-life-expeditions',
+    '/life-and-times/livingstone%E2%80%99s-life-expeditions' => '/life-and-times/livingstone-s-life-expeditions',
+    '/life-and-times/southern-africans-and-advent-colonialism' => '/life-and-times/southern-africans-and-the-advent-colonialism',
+    '/behind-scenes/collaborating-institutions' => '/behind-the-scenes/collaborating-institutions',
+    '/about-site/livingstone-online-site-guide' => '/about-this-site/livingstone-online-site-guide',
+    '/about-site/what-leap-2013-2017' => '/about-this-site/what-leap-2013-2017',
+    '/spectral-imaging/livingstones-1870-field-diary' => '/spectral-imaging/livingstones-1870-field-diary',
+    '/spectral-imaging/livingstone-spectral-imaging-project-introduction' => '/spectral-imaging/the-livingstone-spectral-imaging-project-introduction',
+    '/his-own-words/field-diary-vii-overview' => '/in-his-own-words/field-diary-vii-overview',
+    '/spectral-imaging/livingstones-letter-bambarre' => '/spectral-imaging/livingstones-letter-bambarre',
+    '/spectral-imaging/edition-guide-1' => '/spectral-imaging/edition-guide-1',
+    '/about-site/brief-history-livingstone-online-2004-2013' => '/about-this-site/brief-history-livingstone-online-2004-2013',
+    '/resources/livingstone-online-outreach-worksheets' => '/resources/livingstone-online-outreach-worksheets',
+    '/spectral-imaging/livingstone-central-africa-1870' => '/spectral-imaging/livingstone-central-africa-1870',
+    '/spectral-imaging/project-team-1' => '/spectral-imaging/the-project-team',
+    '/his-own-words/field-diary-v-overview' => '/in-his-own-words/field-diary-v-overview',
+    '/spectral-imaging/acknowledgments-0' => '/spectral-imaging/acknowledgments-0',
+    '/behind-scenes/illustrative-image-credits' => '/behind-the-scenes/illustrative-image-credits',
+    '/his-own-words/livingstone-online-digital-collection' => '/in-his-own-words/the-livingstone-online-digital-collection',
+    '/his-own-words/project-team' => '/in-his-own-words/project-team',
+    '/behind-scenes/behind-scenes-overview' => '/behind-the-scenes/behind-the-scenes-overview',
+    '/behind-scenes/livingstone-onlines-staff' => '/behind-the-scenes/livingstone-onlines-staff',
+    '/resources/livingstone-online-project-documents' => '/resources/livingstone-online-project-documents',
+    '/spectral-imaging/structuring-1870-field-diary' => '/spectral-imaging/structuring-the-1870-field-diary',
+    '/his-own-words/field-diary-xvi-overview' => '/in-his-own-words/field-diary-xvi-overview',
+    '/spectral-imaging/manuscript-1871-field-diary' => '/spectral-imaging/the-manuscript-the-1871-field-diary',
+    '/spectral-imaging/conservation-and-transport' => '/spectral-imaging/conservation-and-transport',
+    '/spectral-imaging/acknowledgments-1' => '/spectral-imaging/acknowledgments-1',
+    '/about-site/leap-2013-2017-project-history-part-ii' => '/about-this-site/leap-2013-2017-project-history-part-ii',
+    '/his-own-words/repository' => '/in-his-own-words/repository',
+    '/life-and-times/life-and-times-overview' => '/life-and-times/life-and-times-overview',
+    '/his-own-words/field-diary-xiv-overview' => '/in-his-own-words/field-diary-xiv-overview',
+    '/spectral-imaging/livingstone’s-composition-methods' => '/spectral-imaging/livingstone-s-composition-methods',
+    '/spectral-imaging/livingstone%E2%80%99s-composition-methods' => '/spectral-imaging/livingstone-s-composition-methods',
+    '/spectral-imaging/prototyping-animated-spectral-images-asis' => '/spectral-imaging/prototyping-animated-spectral-images-asis',
+    '/behind-scenes/livingstone-online-code' => '/behind-the-scenes/the-livingstone-online-code',
+    '/spectral-imaging/integrated-project-bibliography' => '/spectral-imaging/integrated-project-bibliography',
+    '/his-own-words/unyanyembe-journal-overview' => '/in-his-own-words/the-unyanyembe-journal-overview',
+    '/spectral-imaging/spectral-image-processing' => '/spectral-imaging/spectral-image-processing',
+    '/about-site/about-site-overview' => '/about-this-site/about-this-site-overview',
+    '/spectral-imaging/three-versions-1871-field-diary' => '/spectral-imaging/three-versions-the-1871-field-diary',
+    '/spectral-imaging/date-livingstone-stanley-meeting' => '/spectral-imaging/the-date-the-livingstone-stanley-meeting',
+    '/life-and-times/victorian-medicine' => '/life-and-times/victorian-medicine',
+    '/spectral-imaging/livingstones-global-sources' => '/spectral-imaging/livingstones-global-sources',
+    '/spectral-imaging/livingstones-1871-field-diary-0' => '/spectral-imaging/livingstones-1871-field-diary-0',
+    '/spectral-imaging/project-history' => '/spectral-imaging/project-history',
+    '/life-and-times/18th-and-19th-century-european-expeditions' => '/life-and-times/18th-and-19th-century-european-expeditions',
+    '/about-site/design-livingstone-online' => '/about-this-site/the-design-livingstone-online',
+    '/spectral-imaging/1871-field-diary-headers' => '/spectral-imaging/1871-field-diary-headers',
+    '/his-own-words/edition-guide' => '/in-his-own-words/edition-guide',
+    '/life-and-times/livingstones-medical-education' => '/life-and-times/livingstones-medical-education',
+    '/his-own-words/field-diary-xv-overview' => '/in-his-own-words/field-diary-xv-overview',
+    '/spectral-imaging/project-history-1' => '/spectral-imaging/project-history-1',
+    '/about-site/livingstones-manuscripts-digital-age' => '/about-this-site/livingstones-manuscripts-in-the-digital-age',
+    '/spectral-imaging/diary-across-hands-space-and-time-1' => '/spectral-imaging/the-diary-across-hands-space-and-time-1',
+    '/resources/david-livingstone-bibliography' => '/resources/david-livingstone-bibliography',
+    '/about-site/theory-behind-livingstone-online' => '/about-this-site/the-theory-behind-livingstone-online',
+    '/spectral-imaging/imaging-letter' => '/spectral-imaging/imaging-the-letter',
+    '/life-and-times/fever-tropics' => '/life-and-times/fever-in-the-tropics',
+    '/about-site/leap-2013-2017-project-history-part-i' => '/about-this-site/leap-2013-2017-project-history-part-i',
+    '/spectral-imaging/three-versions-1870-field-diary' => '/spectral-imaging/three-versions-the-1870-field-diary',
+    '/spectral-imaging/diary-across-hands-space-and-time-3' => '/spectral-imaging/the-diary-across-hands-space-and-time-3',
+    '/his-own-words/field-diary-iv-overview' => '/in-his-own-words/field-diary-iv-overview',
+    '/spectral-imaging/tei-p5-encoding-guidelines' => '/spectral-imaging/tei-p5-encoding-guidelines',
+    '/resources/livingstone-online-outreach-program' => '/resources/livingstone-online-outreach-program',
+    '/spectral-imaging/letter-annotations' => '/spectral-imaging/the-letter-annotations',
+    '/spectral-imaging/livingstones-composition-practices' => '/spectral-imaging/livingstones-composition-practices',
+    '/spectral-imaging/livingstone-1871' => '/spectral-imaging/livingstone-in-1871',
+    '/his-own-words/livingstones-final-manuscripts-1865-1873' => '/in-his-own-words/livingstones-final-manuscripts-1865-1873',
+    '/his-own-words/addressee' => '/in-his-own-words/addressee',
+    '/his-own-words/field-diary-xvii-overview' => '/in-his-own-words/field-diary-xvii-overview',
+    '/spectral-imaging/spectral-imaging-overview' => '/spectral-imaging/spectral-imaging-overview',
+    '/spectral-imaging/livingstones-manuscript-structure' => '/spectral-imaging/livingstones-manuscript-structure',
+    '/about-site/who-livingstone-onlines-audience' => '/about-this-site/who-livingstone-onlines-audience',
+    '/his-own-words/location' => '/in-his-own-words/location',
+  );
+  foreach ($paths as $new_path => $old_path) {
+    if ($new_path == $old_path) {
+      unset($paths[$new_path]);
+    }
+  }
+  foreach($nodes as &$node) {
+    // Rename fields.
+    foreach($field_rename_mapping as $old => $new) {
+      if (isset($node[$old])) {
+        $node[$new] = $node[$old];
+        unset($node[$old]);
+      }
+    }
+    // Remove fields that do not belong.
+    $remove = array_diff_key($node, $supported_fields);
+    foreach ($remove as $key => $value) {
+      unset($node[$key]);
+    }
+    // Fix paths.
+    if (!empty($node['field_section_body']['und'][0]['value'])) {
+      $doc = new DOMDocument('1.0', 'UTF');
+      $doc->preserveWhiteSpace = TRUE;
+      $doc->formatOutput = FALSE;
+      @$doc->loadHTML('<root>' . mb_convert_encoding($node['field_section_body']['und'][0]['value'], 'HTML-ENTITIES', 'UTF-8') . '</root>',  LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+      $xpath = new DOMXPath($doc);
+      $results = $xpath->query('//a[@href]');
+      foreach ($results as $result) {
+        $href = $result->getAttribute('href');
+        foreach($paths as $old_path => $new_path) {
+          if ($href == $old_path) {
+            $href = $new_path;
+            $result->setAttribute('href', $href);
+            break;
+          }
+        }
+        foreach ($path_rename_mapping as $regex => $replace) {
+          // Change the path params.
+          $href = preg_replace($regex, $replace, $href);
+          // Replace the second '?' with an ampersand.
+          if (preg_match('/\?.*\?/', $href)) {
+            $href = preg_replace('/\?(.*)\?/', '?$1&', $href);
+          }
+        }
+        $result->setAttribute('href', $href);
+      }
+      // Needed to do this way to preserve whitespace and entities.
+      $body = &$node['field_section_body']['und'][0];
+      $body['value'] = $doc->saveHTML();
+      $body['value'] = preg_replace('/^<root>/', '', $body['value']);
+      $body['value'] = preg_replace('/<\/root>$/', '', $body['value']);
+      // Fix BR, HR tags.
+      $body['value'] = preg_replace('/<br>/', '<br />', $body['value']);
+      $body['value'] = preg_replace('/<hr>/', '<hr />', $body['value']);
+      $body['value'] = preg_replace("/\r\n/", "\n", $body['value']);
+      $body['value'] = trim($body['value']);
+    }
+    // Fix Grid file path.
+    if (!empty($node['field_section_grid_image']['und'][0]['uri']) &&
+        strpos($node['field_section_grid_image']['und'][0]['uri'], 'section_page/grid_images') == FALSE) {
+      $node['field_section_grid_image']['und'][0]['uri'] = preg_replace('/public:\/\//', 'public://section_page/grid_images/', $node['field_section_grid_image']['und'][0]['uri']);
+    }
+    // Fix Carousel Images file path.
+    if (!empty($node['field_section_carousel_image']['und'][0]['uri']) &&
+      strpos($node['field_section_carousel_image']['und'][0]['uri'], 'section_page/carousel_images') == FALSE) {
+      $node['field_section_carousel_image']['und'][0]['uri'] = preg_replace('/public:\/\//', 'public://section_page/carousel_images/', $node['field_section_carousel_image']['und'][0]['uri']);
+    }
+  }
+  $feature_path = drupal_get_path('module', 'livingstone_section_page_nodes_feature');
+  if (file_put_contents("$feature_path/livingstone_section_page_nodes_feature.features.uuid_node.inc", livingstone_deploy_render($nodes)) == FALSE) {
+    dsm('Failed to save.');
+  }
+}
+
+function livingstone_deploy_migrate_file_list() {
+  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+  module_load_include('inc', 'livingstone_section_page_nodes_feature', 'livingstone_section_page_nodes_feature.features.uuid_node');
+  $nodes = livingstone_section_page_nodes_feature_uuid_features_default_content();
+  $fp = fopen('/tmp/files.csv', 'w');
+  $fields = array(
+    'UUID',
+    'TITLE',
+    'FILE',
+    'SIZE',
+  );
+  fputcsv($fp, $fields);
+  foreach($nodes as &$node) {
+    $base_fields = array(
+      $node['uuid'],
+      $node['title'],
+    );
+    if (!empty($node['field_section_body']['und'][0]['value'])) {
+      $doc = new DOMDocument('1.0', 'UTF');
+      @$doc->loadHTML($node['field_section_body']['und'][0]['value']);
+      $xpath = new DOMXPath($doc);
+      $results = $xpath->query('//a[@href]');
+      foreach($results as $result) {
+        $href = $result->getAttribute('href');
+        if (preg_match('/\/sites\/default\/files/', $href)) {
+          // Remove trailing tokens from urls.
+          $file = preg_replace('/\?.*$/', '', $href);
+          $file = preg_replace('/%20/', '', $file);
+          $fields = $base_fields;
+          $fields[] = $file;
+          $fields[] = file_exists($file) ? filesize($file) : 'N/A';
+          fputcsv($fp, $fields);
+        }
+      }
+      $results = $xpath->query('//img[@src]');
+      foreach($results as $result) {
+        $src = $result->getAttribute('src');
+        if (preg_match('/\/sites\/default\/files/', $src)) {
+          // Remove trailing tokens from urls.
+          $file = preg_replace('/\?.*$/', '', $src);
+          $file = preg_replace('/%20/', '', $file);
+          $fields = $base_fields;
+          $fields[] = $file;
+          $fields[] = file_exists($file) ? filesize($file) : 'N/A';
+          fputcsv($fp, $fields);
+        }
+      }
+    }
+  }
+  fclose($fp);
+}
+
+function livingstone_deploy_migrate_link_list() {
+  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+  module_load_include('inc', 'livingstone_section_page_nodes_feature', 'livingstone_section_page_nodes_feature.features.uuid_node');
+  $nodes = livingstone_section_page_nodes_feature_uuid_features_default_content();
+  $fp = fopen('/tmp/links.csv', 'w');
+  $fields = array(
+    'UUID',
+    'TITLE',
+    'LINK',
+  );
+  $ignore = array(
+    '/^\/in-his-own-words\/catalogue/',
+  );
+  $include = array(
+    '/^\/?about-this-site/',
+    '/^\/?in-his-own-words/',
+    '/^\/?spectal\/imaging/',
+    '/^\/?behind\/the\/scenes/',
+    '/^\/?resources/',
+  );
+  fputcsv($fp, $fields);
+  foreach($nodes as &$node) {
+    $base_fields = array(
+      $node['uuid'],
+      $node['title'],
+    );
+    if (!empty($node['field_section_body']['und'][0]['value'])) {
+      $doc = new DOMDocument('1.0', 'UTF');
+      @$doc->loadHTML($node['field_section_body']['und'][0]['value']);
+      $xpath = new DOMXPath($doc);
+      $results = $xpath->query('//a[@href]');
+      foreach($results as $result) {
+        $href = $result->getAttribute('href');
+        $matches = function ($regex) use ($href) {
+          return preg_match($regex, $href);
+        };
+//        $ignore_results = array_filter($ignore, $matches);
+//        if (!empty($ignore_results)) {
+//          continue;
+//        }
+        $include_results = array_filter($include, $matches);
+        if (!empty($include_results)) {
+          // Remove trailing tokens from urls.
+          $fields = $base_fields;
+          $fields[] = $href;
+          fputcsv($fp, $fields);
+          continue;
+        }
+      }
+    }
+  }
+  fclose($fp);
+}

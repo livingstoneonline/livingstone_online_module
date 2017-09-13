@@ -1,3 +1,8 @@
+/* line 1, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/livingstone-manuscript-viewer-transcript.less */
+.transcription-pane .transcription-viewer-content {
+  display: inline-block;
+}
+/* line 4, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/livingstone-manuscript-viewer-transcript.less */
 .highlight {
   background-color: lightgray;
 }

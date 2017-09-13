@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Manuscript Nodes Feature feature.
+ */
+
+include_once 'livingstone_manuscript_nodes_feature.features.inc';

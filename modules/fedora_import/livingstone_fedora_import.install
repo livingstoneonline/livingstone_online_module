@@ -1,0 +1,139 @@
+<?php
+
+/**
+ * @file
+ * Install hooks for this module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function livingstone_schema() {
+  module_load_include('inc', 'livingstone_fedora_import', 'fedora.import');
+  $schema[LIVINGSTONE_FEDORA_IMPORT_REMOTE_OBJECT_TABLE] = array(
+    'fields' => array(
+      'pid' => array(
+        'description' => 'The object identifier.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE
+      ),
+      'content_model' => array(
+        'description' => 'The content type to use when creating this object.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+      ),
+      'private' => array(
+        'description' => 'True if the image content is to be admin access only.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'type' => array(
+        'description' => 'The type of object.',
+        'type' => 'char',
+        'length' => 32,
+        'not null' => TRUE,
+      ),
+      'md5' => array(
+        'description' => 'MD5 of all the relevant data-stream MD5 checksums.',
+        'type' => 'char',
+        'length' => 32,
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('pid'),
+  );
+  $schema[LIVINGSTONE_FEDORA_IMPORT_REMOTE_DATASTREAM_TABLE] = array(
+    'fields' => array(
+      'pid' => array(
+        'description' => 'The object identifier.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE
+      ),
+      'dsid' => array(
+        'description' => 'The datastream identifier.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+      ),
+      'md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+        'not null' => TRUE,
+      ),
+      'file' => array(
+        'description' => 'Full path to the file on remote ftp server.',
+        'type' => 'text',
+        'not null' => TRUE,
+      ),
+    ),
+    'unique keys' => array(
+      'id' => array('pid', 'dsid'),
+    ),
+  );
+  $schema[LIVINGSTONE_FEDORA_IMPORT_LOCAL_OBJECT_TABLE] = array(
+    'fields' => array(
+      'pid' => array(
+        'description' => 'The object identifier.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE
+      ),
+      'content_model' => array(
+        'description' => 'The content type to use when creating this object.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+      ),
+      'private' => array(
+        'description' => 'True if the image content is to be admin access only.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'type' => array(
+        'description' => 'The type of object.',
+        'type' => 'char',
+        'length' => 32,
+        'not null' => TRUE,
+      ),
+      'md5' => array(
+        'description' => 'MD5 of all the relevant data-stream MD5 checksums.',
+        'type' => 'char',
+        'length' => 32,
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('pid'),
+  );
+  $schema[LIVINGSTONE_FEDORA_IMPORT_LOCAL_DATASTREAM_TABLE] = array(
+    'fields' => array(
+      'pid' => array(
+        'description' => 'The object identifier.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE
+      ),
+      'dsid' => array(
+        'description' => 'The datastream identifier.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+      ),
+      'md5' => array(
+        'description' => 'MD5 of the data-stream.',
+        'type' => 'char',
+        'length' => 32,
+        'not null' => TRUE,
+      ),
+    ),
+    'unique keys' => array(
+      'id' => array('pid', 'dsid'),
+    ),
+  );
+  return $schema;
+}

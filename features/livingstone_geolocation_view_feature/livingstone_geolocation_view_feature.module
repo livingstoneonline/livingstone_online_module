@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Geolocation View Feature feature.
+ */
+
+include_once 'livingstone_geolocation_view_feature.features.inc';

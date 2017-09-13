@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Nodequeue Feature feature.
+ */
+
+include_once 'livingstone_nodequeue_feature.features.inc';

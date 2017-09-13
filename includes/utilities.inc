@@ -153,3 +153,28 @@ EOQ;
   return $pages;
 }
 
+/**
+ * Converts the given Project ID to a Fedora PID.
+ *
+ * @param string $project_id
+ *   The Project ID to convert.
+ *
+ * @return string
+ *   The Fedora PID generated from the Project ID.
+ */
+function livingstone_project_id_to_pid($project_id) {
+  return preg_replace('/liv_/', 'liv:', $project_id);
+}
+
+/**
+ * Converts the given Fedora PID to a Project ID.
+ *
+ * @param string $pid
+ *   The Fedora PID to convert.
+ *
+ * @return string
+ *   The Project ID generated from the Fedora PID.
+ */
+function livingstone_pid_to_project_id($pid) {
+  return preg_replace('/liv:/', 'liv_', $pid);
+}

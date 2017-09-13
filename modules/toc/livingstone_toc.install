@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Install hooks for this module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function livingstone_toc_install() {
+  db_change_field('menu_links', 'link_path', 'link_path', array(
+    'description' => 'The Drupal path or external path this link points to.',
+    'type' => 'varchar',
+    'length' => 2048,
+    'not null' => TRUE,
+    'default' => '',
+  ));
+}
+
+/**
+ * Implements hook_field_schema().
+ */
+function livingstone_toc_field_schema($field) {
+  if ($field['type'] == 'table_of_contents') {
+    return [
+      'columns' => [
+        'menu_name' => [
+          'description' => "The menu name. All links with the same menu name (such as 'navigation') are part of the same menu.",
+          'type' => 'varchar',
+          'length' => 32,
+          'not null' => TRUE,
+          'default' => '',
+        ],
+      ],
+      'indexes' => [
+        'menu_name' => ['menu_name'],
+      ],
+      'foreign keys' => [
+        'menu_name' => [
+          'table' => 'menu_custom',
+          'columns' => ['menu_name' => 'menu_name'],
+        ],
+      ],
+    ];
+  }
+}

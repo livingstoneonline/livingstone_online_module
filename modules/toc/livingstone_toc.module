@@ -1,0 +1,151 @@
+<?php
+
+/**
+ * @file
+ * Creates a Table of Contents widget for section page nodes.
+ */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function livingstone_toc_form_menu_edit_item_alter(array &$form, array &$form_state) {
+  $form['link_path']['#type'] = 'textarea';
+  unset($form['link_path']['#maxlength']);
+}
+
+/**
+ * Implements hook_theme().
+ */
+function livingstone_toc_theme($existing, $type, $theme, $path) {
+  return array(
+    'livingstone_table_of_contents' => array(
+      'variables' => array('menu_name' => NULL),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_info().
+ */
+function livingstone_toc_field_info() {
+  return array(
+    'table_of_contents' => array(
+      'label' => t('Table of Contents'),
+      'description' => t('This field stores a reference to a Menu and renders it as a collapsible table of contents.'),
+      'default_widget' => 'table_of_contents_select',
+      'default_formatter' => 'table_of_contents_default',
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_validate().
+ */
+function livingstone_toc_field_validate($entity_type, $entity, $field, $instance, $langcode, $items, &$errors) {
+  foreach ($items as $delta => $item) {
+    if (!livingstone_toc_field_is_empty($item, $field) && menu_load($item['menu_name']) == FALSE) {
+      $errors[$field['field_name']][$langcode][$delta][] = array(
+        'error' => 'invalid_menu',
+        'message' => t('%name: %menu does not exist.', array('%name' => $instance['label'], '%menu' => $item['menu_name'])),
+      );
+    }
+  }
+}
+
+/**
+ * Implements hook_field_is_empty().
+ */
+function livingstone_toc_field_is_empty($item, $field) {
+  switch ($field['type']) {
+    case 'table_of_contents':
+      return empty($item['menu_name']);
+  }
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function livingstone_toc_field_formatter_info() {
+  return array(
+    'table_of_contents_default' => array(
+      'label' => t('Table of Contents'),
+      'field types' => array('table_of_contents'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function livingstone_toc_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+
+  switch ($display['type']) {
+    case 'table_of_contents_default':
+      foreach ($items as $delta => $item) {
+        $element[$delta] = array(
+          '#theme' => 'livingstone_table_of_contents',
+          '#menu_name' => $item['menu_name']
+        );
+      }
+      break;
+  }
+  return $element;
+}
+
+/**
+ * Implements hook_field_widget_info().
+ */
+function livingstone_toc_field_widget_info() {
+  return array(
+    'table_of_contents_select' => array(
+      'label' => t('Table of Contents'),
+      'field types' => array('table_of_contents'),
+      'behaviors' => array(
+        'multiple values' => FIELD_BEHAVIOR_DEFAULT,
+        'default value' => FIELD_BEHAVIOR_NONE,
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_widget_form().
+ */
+function livingstone_toc_field_widget_form(array &$form, array &$form_state, $field, $instance, $langcode, $items, $delta, $element) {
+  switch ($instance['widget']['type']) {
+    case 'table_of_contents_select';
+      $ignore_menus = drupal_map_assoc(array(
+        'devel',
+        'main-menu',
+        'management',
+        'menu-fixed-header-menu',
+        'menu-secondary',
+        'navigation',
+        'user-menu',
+      ));
+      $menus = menu_load_all();
+      $menus = array_diff_key($menus, $ignore_menus);
+      $map_to_label = function ($menu) {
+        return $menu['title'];
+      };
+      $menus = array_map($map_to_label, $menus);
+      $element += array(
+        '#type' => 'select',
+        '#title' => t('display table of contents'),
+        '#options' => array(t('Do not display table of contents')) + $menus,
+        '#default_value' => isset($items[$delta]) ? $items[$delta] : NULL,
+      );
+      return array('menu_name' => $element);
+  }
+}
+
+/**
+ * Returns HTML for a table of contents field.
+ */
+function theme_livingstone_table_of_contents(array $variables) {
+  $menu = menu_tree_page_data($variables['menu_name'], NULL, FALSE);
+  $output = menu_tree_output($menu);
+  $modal = '<div class="table-of-contents-modal"></div>';
+  return $modal . drupal_render($output);
+}

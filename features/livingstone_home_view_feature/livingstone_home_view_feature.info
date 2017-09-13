@@ -1,0 +1,12 @@
+name = Livingstone Home View Feature
+description = View used to create the home page including slides.
+core = 7.x
+package = Livingstone
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = flexslider_views
+dependencies[] = livingstone_slide_feature
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = home

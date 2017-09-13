@@ -1,0 +1,8 @@
+name = "Livingstone Fedora Import Module"
+description = "Allows importing content into Fedora from an FTP server."
+package = Livingstone
+dependencies[] = islandora
+dependencies[] = islandora_solr
+dependencies[] = livingstone
+version = 7.x-dev
+core = 7.x

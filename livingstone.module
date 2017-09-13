@@ -7,123 +7,29 @@
 
 const LIVINGSTONE_SPECTRAL_MANUSCRIPT_CMODEL = "livingstone:spectralManuscriptCModel";
 const LIVINGSTONE_SPECTRAL_PAGE_CMODEL = "livingstone:spectralPageCModel";
-
+const LIVINGSTONE_ADMINISTER_PERMISSION = 'livingstone administer permission';
 /**
  * Implements hook_menu().
  */
 function livingstone_menu() {
   return array(
-    'admin/islandora/livingstone/import/drupal' => array(
-      'title' => "Import Manuscript's into Drupal Nodes",
-      'description' => "Updates the Drupal content from Fedora, used by search and time line.",
-      'access arguments' => array('administer site configuration'),
+    'admin/livingstone' => array(
+      'title' => "Livingstone",
+      'description' => "Customizations for Livingstone Online.",
+      'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_NORMAL_ITEM,
-      'file' => 'includes/node.import.form.inc',
-      'page callback' => 'drupal_get_form',
-      'page arguments' => array('livingstone_node_import_form'),
-    ),
-    'admin/islandora/livingstone/import/fedora' => array(
-      'title' => 'Import content from Remote FTP into Local Fedora',
-      'description' => 'Updates and adds content from the FTP server into Fedora.',
-      'access arguments' => array('administer site configuration'),
-      'type' => MENU_NORMAL_ITEM,
-      'file' => 'includes/fedora.import.form.overview.inc',
-      'page callback' => 'livingstone_fedora_import_overview_menu_task',
-    ),
-    'admin/islandora/livingstone/import/fedora/overview' => array(
-      'title' => 'Overview',
-      'description' => 'Updates and adds content from the FTP server into Fedora.',
-      'access arguments' => array('administer site configuration'),
-      'type' => MENU_DEFAULT_LOCAL_TASK,
-      'file' => 'includes/fedora.import.form.overview.inc',
-      'page callback' => 'livingstone_fedora_import_overview_menu_task',
-      'weight' => -50,
-    ),
-    'admin/islandora/livingstone/import/fedora/local' => array(
-      'title' => 'Local objects',
-      'description' => 'Lists all the local objects.',
-      'access arguments' => array('administer site configuration'),
-      'type' => MENU_LOCAL_TASK,
-      'file' => 'includes/fedora.import.form.local.inc',
-      'page callback' => 'drupal_get_form',
-      'page arguments' => array('livingstone_fedora_import_local_objects_form'),
-      'weight' => -40,
-    ),
-    'admin/islandora/livingstone/import/fedora/remote' => array(
-      'title' => 'Remote objects',
-      'description' => 'Lists all the remote objects.',
-      'access arguments' => array('administer site configuration'),
-      'type' => MENU_LOCAL_TASK,
-      'file' => 'includes/fedora.import.form.remote.inc',
-      'page callback' => 'drupal_get_form',
-      'page arguments' => array('livingstone_fedora_import_remote_objects_form'),
-      'weight' => -30,
-    ),
-    'admin/islandora/livingstone/import/fedora/add' => array(
-      'title' => 'Add',
-      'description' => 'Allows the user to add new objects from the FTP.',
-      'access arguments' => array('administer site configuration'),
-      'type' => MENU_LOCAL_TASK,
-      'file' => 'includes/fedora.import.form.add.inc',
-      'page callback' => 'drupal_get_form',
-      'page arguments' => array('livingstone_fedora_import_add_objects_form'),
-      'weight' => -20,
-    ),
-    'admin/islandora/livingstone/import/fedora/update' => array(
-      'title' => 'Update',
-      'description' => 'Allows the user to update existing objects from the FTP.',
-      'access arguments' => array('administer site configuration'),
-      'type' => MENU_LOCAL_TASK,
-      'file' => 'includes/fedora.import.form.update.inc',
-      'page callback' => 'drupal_get_form',
-      'page arguments' => array('livingstone_fedora_import_update_objects_form'),
-      'weight' => 0,
-    ),
-    'admin/islandora/livingstone/import/fedora/remove' => array(
-      'title' => 'Remove',
-      'description' => 'Allows the user to remove stale objects from Fedora.',
-      'access arguments' => array('administer site configuration'),
-      'type' => MENU_LOCAL_TASK,
-      'file' => 'includes/fedora.import.form.remove.inc',
-      'page callback' => 'drupal_get_form',
-      'page arguments' => array('livingstone_fedora_import_remove_objects_form'),
-      'weight' => 0,
-    ),
-    'admin/islandora/livingstone/import/fedora/publish' => array(
-      'title' => 'Publish / Conceal',
-      'description' => 'Allows the user to publish/hide objects in Fedora.',
-      'access arguments' => array('administer site configuration'),
-      'type' => MENU_LOCAL_TASK,
-      'file' => 'includes/fedora.import.form.publish.inc',
-      'page callback' => 'drupal_get_form',
-      'page arguments' => array('livingstone_fedora_import_publish_objects_form'),
-      'weight' => 10,
-    ),
-    'admin/islandora/livingstone/import/fedora/errors' => array(
-      'title' => 'Error Log',
-      'description' => 'Lists any errors that have occurred during import.',
-      'access arguments' => array('administer site configuration'),
-      'type' => MENU_LOCAL_TASK,
-      'file' => 'includes/fedora.import.form.error.inc',
-      'page callback' => 'drupal_get_form',
-      'page arguments' => array('livingstone_fedora_import_error_form'),
-      'weight' => 20,
     ),
   );
 }
 
 /**
- * Implements hook_node_info().
+ * Implements hook_permission().
  */
-function livingstone_node_info() {
+function livingstone_permission() {
   return array(
-    'manuscript' => array(
-      'name' => t('Manuscript'),
-      'base' => 'node_content',
-      'description' => t('Manuscript data synced from Fedora, do not create manually.'),
-      'has_title' => TRUE,
-      'title_label' => t('Title'),
-      'locked' => TRUE,
+    LIVINGSTONE_ADMINISTER_PERMISSION => array(
+      'title' => t('Administer Livingstone Modules'),
+      'description' => t('Allows for the deployment of code and import of content.'),
     ),
   );
 }
@@ -136,66 +42,50 @@ function livingstone_theme() {
     'livingstone_form_search_block_search_type' => array(
       'file' => 'theme/theme.inc',
       'render element' => 'element',
-    )
+    ),
+    'livingstone_browse_collection_block' => array(
+      'file' => 'theme/theme.inc',
+      'render element' => 'element',
+      'template' => 'theme/livingstone-browse-collection-block',
+    ),
+    'livingstone_share_icons' => array(
+      'file' => 'theme/theme.inc',
+      'render element' => 'element',
+      'template' => 'theme/livingstone-share-icons',
+    ),
+    'livingstone_slide_out_menu' => array(
+      'file' => 'theme/theme.inc',
+      'render element' => 'element',
+      'template' => 'theme/livingstone-slide-out-menu',
+    ),
   );
 }
 
 function livingstone_apachesolr_process_results(&$results) {
+  module_load_include('inc', 'livingstone', 'includes/utilities');
   global $user;
   foreach ($results as &$result) {
     if (isset($result['node'])) {
       $node = $result['node'];
       if ($node->bundle == 'manuscript') {
         $node = node_load($node->entity_id);
-        if (isset($node->alt_title[LANGUAGE_NONE][0]['value'])) {
-          $result['title'] = $node->alt_title[LANGUAGE_NONE][0]['value'];
+        if (isset($node->field_manuscript_alt_title[LANGUAGE_NONE][0]['value'])) {
+          $result['title'] = $node->field_manuscript_alt_title[LANGUAGE_NONE][0]['value'];
         }
-        $get_value = function ($field, $default) use ($node) {
+        $get_value = function ($field, $default = NULL) use ($node) {
           return isset($node->{$field}[LANGUAGE_NONE][0]['value']) ?
             $node->{$field}[LANGUAGE_NONE][0]['value'] :
             $default;
         };
-        $pid = $get_value('pid');
-        $viewable = $get_value('viewable');
-        if ($viewable) {
-          $result['link'] = url("islandora/search/\"$pid\"", array(
-            'absolute' => TRUE,
-            'query' => array(
-              'view_pid' => $pid,
-            ),
-          ));
+        $pid = $get_value('field_manuscript_pid');
+        $query = array('query' => livingstone_pid_to_project_id($pid));
+        if ($get_value('field_manuscript_viewable', FALSE)) {
+          $query['view_pid'] = $pid;
         }
-        else {
-          $result['link'] = url("islandora/search/\"$pid\"", array('absolute' => TRUE));
-        }
-      }
-    }
-  }
-}
-
-function livingstone_preprocess_search_result(array &$variables) {
-  global $user;
-  $result = &$variables['result'];
-  if (isset($result['node'])) {
-    $node = $result['node'];
-    if ($node->type == 'manuscript') {
-      $get_value = function ($field, $default) use ($node) {
-        return isset($node->{$field}[LANGUAGE_NONE][0]['value']) ?
-          $node->{$field}[LANGUAGE_NONE][0]['value'] :
-          $default;
-      };
-      $pid = $get_value('pid');
-      $viewable = $get_value('viewable');
-      if ($viewable) {
-        $variables['url'] = $result['link'] = url("islandora/search/\"$pid\"", array(
+        $variables['url'] = $result['link'] = url("in-his-own-words/catalogue", array(
           'absolute' => TRUE,
-          'query' => array(
-            'view_pid' => $pid,
-          ),
+          'query' => $query,
         ));
-      }
-      else {
-        $variables['url'] = $result['link'] = url("islandora/search/\"$pid\"", array('absolute' => TRUE));
       }
     }
   }
@@ -288,17 +178,11 @@ function livingstone_apachesolr_query_alter(DrupalSolrQueryInterface $query) {
  * Implements hook_form_FORM_ID_alter().
  */
 function livingstone_form_search_block_form_alter(array &$form, array &$form_state) {
-  $module_path = drupal_get_path('module', 'livingstone');
-  $form['#attached'] = array(
-    'js' => array(
-      "$module_path/js/search-form.js",
-    ),
-  );
   $form['search_type'] = array(
-    '#prefix' => '<span class="search-type" style="display:none">',
-    '#suffix' => '</span>',
     '#theme' => 'livingstone_form_search_block_search_type',
+    '#theme_wrappers' => array(),
     '#type' => 'checkboxes',
+    '#weight' => -50,
     '#default_value' => drupal_map_assoc(array('web', 'catalogue', 'transcriptions')),
     '#options' => array(
       'web' => t('Search web pages'),
@@ -365,22 +249,25 @@ function livingstone_islandora_required_objects(IslandoraTuque $connection) {
  * Implements hook_islandora_derivative().
  */
 function livingstone_livingstone_spectralManuscriptPageCModel_islandora_derivative() {
-  module_load_include('inc', 'livingstone', 'includes/fedora.import');
-  $large_image_module_path = drupal_get_path('module', 'islandora_large_image');
-  $dsids = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_DATASTREAM_TABLE, 'r')
-    ->distinct()
-    ->fields('r', array('DSID'))
-    ->condition('r.DSID', '%OBJ', 'LIKE')
-    ->execute()
-    ->fetchCol(0);
-  foreach ($dsids as $dsid) {
-    $format = preg_replace('/_OBJ$/', '', $dsid);
-    $format = strtoupper($format);
-    $derivatives[] = array(
-      'source_dsid' => "{$format}_OBJ",
-      'destination_dsid' => "${format}_JP2",
-      'function' => array('livingstone_spectral_create_jp2_derivative'),
-    );
+  module_load_include('inc', 'livingstone_fedora_import', 'fedora.import');
+  static $derivatives = FALSE;
+  if ($derivatives == FALSE) {
+    $derivatives = array();
+    $dsids = db_select(LIVINGSTONE_FEDORA_IMPORT_REMOTE_DATASTREAM_TABLE, 'r')
+      ->distinct()
+      ->fields('r', array('DSID'))
+      ->condition('r.DSID', '%OBJ', 'LIKE')
+      ->execute()
+      ->fetchCol(0);
+    foreach ($dsids as $dsid) {
+      $format = preg_replace('/_OBJ$/', '', $dsid);
+      $format = strtoupper($format);
+      $derivatives[] = array(
+        'source_dsid' => "{$format}_OBJ",
+        'destination_dsid' => "${format}_JP2",
+        'function' => array('livingstone_spectral_create_jp2_derivative'),
+      );
+    }
   }
   return $derivatives;
 }
@@ -503,108 +390,104 @@ function livingstone_spectral_create_jp2_derivative(AbstractObject $object, $for
 }
 
 /**
- * Implements hook_field_formatter_info().
+ * Implements hook_block_info().
  */
-function livingstone_field_formatter_info() {
+function livingstone_block_info() {
   return array(
-    'transcript_formatter' => array(
-      'label' => t('Transcript Display'),
-      'field types' => array('double_field'),
+    'livingstone_browse_collection' => array(
+      'info' => t('Livingstone Browse Collection'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'region' => 'navigation',
+      'status' => 1,
+    ),
+    'livingstone_share_icons' => array(
+      'info' => t('Livingstone Share Icons'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'region' => 'footer',
+      'status' => 1,
+    ),
+    'livingstone_breadcrumbs' => array(
+      'info' => t('Livingstone Breadcrumbs'),
+      'cache' => DRUPAL_CACHE_PER_PAGE,
+      'region' => 'fixed_header',
+      'status' => 1,
+    ),
+    'livingstone_fixed_search_form' => array(
+      'info' => t('Livingstone Fixed Header Search Form'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'region' => 'fixed_header',
+      'status' => 1,
+    ),
+    'livingstone_slide_out_menu' => array(
+      'info' => t('Livingstone Slide Out Menu'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'region' => 'fixed_header',
+      'status' => 1,
+    ),
+    'livingstone_browse_addressee' => array(
+      'info' => t('Livingstone Browse Addressee'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'region' => 'content',
+      'status' => 1,
+      'weight' => 20,
     ),
   );
 }
 
 /**
- * Implements hook_field_formatter_view().
+ * Implements hook_block_view().
  */
-function livingstone_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
-  module_load_include('inc', 'livingstone', 'includes/utilities');
-  $transcriptions = array(
-    '#prefix' => '<div id="transcripts">',
-    '#suffix' => '</div>',
-  );
-  $documents = array();
-  foreach ($items as $item) {
-    $value = preg_replace('/liv_/', 'liv:', $item['first']);
-    $documents[$value] = $item['second'];
-  }
-  $module_path = drupal_get_path('module', 'livingstone');
-  drupal_add_css("$module_path/css/transcription-viewer.css");
-  drupal_add_js("$module_path/modules/viewer/js/livingstone-manuscript-viewer-transcript-tooltips.js");
-  drupal_add_js("$module_path/modules/viewer/lib/qtip2/3.0.3/jquery.qtip.min.js");
-  drupal_add_css("$module_path/modules/viewer/lib/qtip2/3.0.3/jquery.qtip.min.css");
-  drupal_add_js("$module_path/js/livingstone-transcriptions.js");
-  list($document) = each($documents);
-  list($second_document) = each($documents);
-  reset($documents);
-  $transcription_url = url("livingstone/manuscript/{$document}/transcript");
-  $second_transcription_url = isset($second_document) ?
-    url("livingstone/manuscript/{$second_document}/transcript") :
-    $transcription_url;
-  return array(
-    array(
-      'viewer' => array(
-        '#prefix' => '<div id="transcription-viewer">',
-        '#suffix' => '</div>',
-        'panels' => array(
-          array(
-            '#prefix' => '<div class="pane">',
-            '#suffix' => '</div>',
-            'toolbar' => array(
-              '#prefix' => '<div class="transcription-viewer-toolbar">',
-              '#suffix' => '</div>',
-              'transcription' => array(
-                '#type' => 'select',
-                '#attributes' => array(
-                  'class' => array('transcript')
-                ),
-                '#options' => $documents,
-                '#value' => $document,
-              ),
-              'date' => array(
-                '#type' => 'select',
-                '#attributes' => array(
-                  'class' => array('date')
-                ),
-                '#options' => array('Select date'),
-              ),
-            ),
-            'content' => array(
-              '#prefix' => '<div class="transcription-viewer-content">',
-              '#markup' => "<iframe src=\"{$transcription_url}\"></iframe>",
-              '#suffix' => '</div>',
-            ),
-          ),
-          array(
-            '#prefix' => '<div class="pane">',
-            '#suffix' => '</div>',
-            'toolbar' => array(
-              '#prefix' => '<div class="transcription-viewer-toolbar">',
-              '#suffix' => '</div>',
-              'transcription' => array(
-                '#type' => 'select',
-                '#attributes' => array(
-                  'class' => array('transcript')
-                ),
-                '#options' => $documents,
-                '#value' => isset($second_document) ? $second_document : $document,
-              ),
-              'date' => array(
-                '#type' => 'select',
-                '#attributes' => array(
-                  'class' => array('date')
-                ),
-                '#options' => array('Select date'),
-              ),
-            ),
-            'content' => array(
-              '#prefix' => '<div class="transcription-viewer-content">',
-              '#markup' => "<iframe src=\"{$second_transcription_url}\"></iframe>",
-              '#suffix' => '</div>',
-            ),
-          ),
+function livingstone_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'livingstone_browse_collection':
+      $block['content'] = array(
+        '#theme' => 'livingstone_browse_collection_block',
+      );
+      break;
+
+    case 'livingstone_share_icons':
+      $block['content'] = array(
+        '#theme' => 'livingstone_share_icons',
+      );
+      break;
+
+    case 'livingstone_breadcrumbs':
+      $block['content'] = array(
+        '#theme' => 'breadcrumb',
+        '#breadcrumb' => drupal_get_breadcrumb(),
+      );
+      break;
+
+    case 'livingstone_fixed_search_form':
+      $text = t('Top ⤴');
+      $block['content'] = array(
+        'form' =>  drupal_get_form('search_block_form'),
+        'top' => array(
+          '#markup' => "<a class='visible-xs-inline-block' href='#TOP'>{$text}</a>",
         ),
-      ),
-    ),
-  );
+      );
+      break;
+
+    case 'livingstone_slide_out_menu':
+      $block['content'] = array(
+        '#theme' => 'livingstone_slide_out_menu',
+      );
+      break;
+
+    case 'livingstone_browse_addressee':
+      $prefix = isset($_GET['prefix']) ? $_GET['prefix'] : NULL;
+      $block['content'] = islandora_solr_facet_pages_callback('addressee', $prefix);
+      break;
+  }
+  return $block;
 }
+
+// XXX. Hack do not check this in, it's just to regenerate the paths when pulling in the changes from production.
+/*
+function livingstone_node_presave($node){
+  global $user;
+  if($node->type=='section_page'){
+    $node->path['pathauto']=1;
+  }
+}*/

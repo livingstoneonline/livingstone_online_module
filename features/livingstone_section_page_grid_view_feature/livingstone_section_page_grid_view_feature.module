@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Section Page Grid View Feature feature.
+ */
+
+include_once 'livingstone_section_page_grid_view_feature.features.inc';

@@ -40,21 +40,13 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
   $css_path = "$module_path/css";
   $lib_path = "$module_path/lib";
 
-  drupal_add_js("$lib_path/jquery/1.12.4/dist/jquery.min.js");
-  drupal_add_js("$lib_path/jquery/plugins/jquery.once.js");
-  drupal_add_js("$lib_path/jquery-ui/1.11.4/jquery-ui.js");
-  drupal_add_css("$lib_path/jquery-ui/1.11.4/jquery-ui.css");
-  drupal_add_js("$lib_path/drupal.js");
+  // Adds the library making it available for use.
+  drupal_add_library('system', 'ui.slider');
   drupal_add_js("$lib_path/openseadragon/2.2.0/openseadragon.js");
   drupal_add_js("$js_path/djatoka-tile-source.js");
   drupal_add_js("$lib_path/URI.js");
   drupal_add_js("$js_path/livingstone-manuscript-viewer.js");
   drupal_add_js("$js_path/livingstone-manuscript-viewer-downloads-modal.js");
-
-  // @todo abstract into a theme function for top level module.
-  drupal_add_js("$js_path/slideout-menu.js");
-  // @todo See if I can include this from the other module.
-  drupal_add_js("$js_path/search-form.js");
 
   drupal_add_css("$css_path/livingstone-manuscript-viewer.css", array(
     'group' => CSS_THEME,
@@ -108,13 +100,14 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
     ),
     'transcription' => array(
       '#access' => $has_transcription,
-      '#theme' => 'livingstone_manuscript_viewer_pane_transcription',
-      '#theme_wrappers' => array('livingstone_manuscript_viewer_pane'),
+      '#type' => 'container',
       '#attributes' => array(
-        'class' => array('transcription'),
+        'class' => array('transcription-pane', 'pane'),
       ),
-      '#manuscript' => $manuscript,
-      '#open' => FALSE,
+      'transcription' => array(
+        '#theme' => 'livingstone_transcript',
+        '#pid' => $manuscript,
+      ),
     ),
     'main_image' => array(
       '#access' => $is_viewable,
@@ -173,7 +166,10 @@ function template_preprocess_livingstone_manuscript_viewer_toolbar(array &$varia
   //$variables['has_transcription'] = true;
   $variables['pager_options'] = livingstone_manuscript_viewer_page_labels($variables['manuscript'], $variables['pages']);
   $variables['search'] = drupal_get_form('search_block_form');
-  $variables['search']['#attributes'] = array('target' => '_top');
+  $variables['search']['#attributes'] = array(
+    'target' => '_top',
+    'class' => array('form-inline', 'form-search')
+  );
 }
 
 /**
@@ -190,7 +186,7 @@ function theme_livingstone_manuscript_viewer_pane(array $variables) {
   $element = &$variables['element'];
   $attributes = isset($element['#attributes']) ? $element['#attributes'] : array();
   $attributes['class'][] = 'pane';
-  if ($element['#open']) {
+  if (isset($element['#open']) && $element['#open']) {
     $attributes['class'][] = 'pane-open';
   }
   if (isset($element['#side'])) {
@@ -254,7 +250,7 @@ function template_preprocess_livingstone_manuscript_viewer_pane_item_details(arr
       $attributes = array(
         'external' => FALSE,
         'attributes' => array(
-          'title' => 'Download',
+          'title' => t('Download'),
           'class' => array('fa fa-arrow-down'),
         ),
       );
@@ -310,6 +306,7 @@ function template_preprocess_livingstone_manuscript_viewer_pane_image(array &$va
     array(
       'attributes' => array(
         'target' => '_blank',
+        'title' => t('Display processing details'),
         'class' => array('processing-details', 'icon', 'button'),
       ),
     )
@@ -320,7 +317,9 @@ function template_preprocess_livingstone_manuscript_viewer_pane_image(array &$va
     array(
       'html' => TRUE,
       'attributes' => array(
-        'class' => array('icon', 'button'),
+        'target' => '_blank',
+        'title' => t('Download page archive'),
+        'class' => array('icon', 'button', 'download'),
       ),
     )
   );
@@ -360,18 +359,32 @@ function template_preprocess_livingstone_manuscript_viewer_downloads(array &$var
       $results->item(0)->textContent :
       $variables['title'];
   }
-  $variables['downloads'] = array();
-  $pages = livingstone_manuscript_viewer_pages($manuscript);
+  $variables['downloads'] = array('archival');
+  $pages = livingstone_manuscript_viewer_pages($variables['manuscript']);
   foreach ($pages as $page) {
     if (!$page['size']) {
       continue;
     }
-    $variables['downloads'][] = array(
+    $variables['downloads']['archival'][] = array(
       'size' => number_format($page['size'] / 1024 / 1024, 1),
       'label' => str_replace(':', '_', $page['pid']),
       'url' => url("islandora/object/{$page['pid']}/datastream/ZIP/download"),
     );
   }
+  $gif_sizes = livingstone_manuscript_viewer_datastream_sizes($variables['manuscript'], 'GIF', $pages);
+  $gif_sizes = array_filter($gif_sizes);
+  foreach ($gif_sizes as $pid => $size) {
+    $variables['downloads']['gif'][] = array(
+      'size' => number_format($size / 1024 / 1024, 1),
+      'label' => str_replace(':', '_', $pid),
+      'url' => url("islandora/object/{$pid}/datastream/GIF/download"),
+    );
+  }
+  $sort = function($a, $b) {
+    return strcmp($a['label'], $a['label']);
+  };
+  usort($variables['downloads']['archival'], $sort);
+  usort($variables['downloads']['gif'], $sort);
 }
 
 /**
@@ -408,18 +421,14 @@ function template_process_livingstone_manuscript_viewer_transcript_html(array &$
  * Implements hook_preprocess_theme().
  */
 function theme_livingstone_manuscript_viewer_transcript(array &$variables) {
-  module_load_include('inc', 'livingstone_manuscript_viewer', 'includes/transcript');
+  module_load_include('inc', 'livingstone_transcript', 'transcript');
+  //module_load_include('inc', 'livingstone_manuscript_viewer', 'includes/transcript');
   module_load_include('inc', 'livingstone_manuscript_viewer', 'includes/utilities');
   $module_path = drupal_get_path('module', 'livingstone_manuscript_viewer');
   $js_path = "$module_path/js";
   $lib_path = "$module_path/lib";
   $css_path = "$module_path/css";
   drupal_add_js("$js_path/livingstone-manuscript-viewer-transcript.js");
-  drupal_add_js("$lib_path/drupal.js");
-  drupal_add_js("$lib_path/jquery/plugins/jquery.once.js");
-  drupal_add_js("$lib_path/qtip2/3.0.3/jquery.qtip.min.js");
-  drupal_add_js("$lib_path/jquery/1.12.4/dist/jquery.min.js");
-  drupal_add_css("$lib_path/qtip2/3.0.3/jquery.qtip.min.css");
   drupal_add_css("$css_path/livingstone-manuscript-viewer-transcript.css");
   $manuscript = $variables['manuscript'];
   $manuscript = islandora_object_load($manuscript);
@@ -434,7 +443,7 @@ function theme_livingstone_manuscript_viewer_transcript(array &$variables) {
 </html>
 EOT;
   }
-  $markup = livingstone_manuscript_viewer_saxon_transform($manuscript['TEI']->content);
+  $markup = livingstone_transcript_saxon_transform($manuscript['TEI']->content);
   if ($markup === FALSE) {
     $error = t('Failed to generate transcript.') ;
     return <<<EOT

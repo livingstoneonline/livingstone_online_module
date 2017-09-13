@@ -21,17 +21,9 @@
     function transcriptionScrollTo(selector, offset) {
       var element = $(selector).eq(offset);
       if (element.length != 0) {
-        // XXX. Awful. Because of bugs on the iframe we need to make the element
-        // in which it is embedded in scroll rather than itself.
-        $('iframe', parent.document).each(function () {
-          try {
-            if (this.contentDocument == document) {
-              $(this).parent().animate({
-                scrollTop: element.offset().top + 'px'
-              }, 1000);
-            }
-          } catch (e) {}
-        });
+        $('.pane.transcription-pane').animate({
+          scrollTop: element.offset().top + 'px'
+        }, 1000);
       }
     }
 

@@ -1,0 +1,164 @@
+// range selector mixin
+.select-range(@start, @end, @content){
+  @start: ~"n+@{start}";
+  @end: ~"-n+@{end}";
+  &:nth-child(@{start}):nth-child(@{end}) {
+    @content();
+  }
+}
+// mod query mixin
+.mod-list(@mod, @remainder, @content){
+  @child: ~"@{mod}n+@{remainder}";
+  &:nth-last-child(@{child}):first-child,
+  &:nth-last-child(@{child}):first-child ~ * {
+    @content();
+  }
+}
+.box-sizing(@value: border-box) {
+  -webkit-box-sizing: @value;
+  -moz-box-sizing: @value;
+  box-sizing: @value;
+}
+.border-radius(@value) {
+  -webkit-border-radius: @value;
+  -moz-border-radius: @value;
+  border-radius: @value;
+}
+.box-shadow(@value) {
+  -moz-box-shadow: @value;
+  -webkit-box-shadow: @value;
+  -o-box-shadow: @value;
+  box-shadow: @value;
+}
+.appearance(@value) {
+  -webkit-appearance: @value;
+  -moz-appearance: @value;
+  appearance: @value;
+}
+.flex-display {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.justify-content(@value) when (@value = flex-start) {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: @value;
+}
+.justify-content(@value) when (@value = flex-end) {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: @value;
+}
+.justify-content(@value) when (@value = center) {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: @value;
+}
+.justify-content(@value) when (@value = space-between) {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: @value;
+}
+.justify-content(@value) when (default()) {
+  justify-content: @value;
+}
+.align-items(@value) when (@value = flex-start) {
+  -webkit-box-align: start;
+  -webkit-align-items: @value;
+  -ms-flex-align: start;
+  align-items: @value;
+}
+.align-items(@value) when (@value = flex-end) {
+  -webkit-box-align: end;
+  -webkit-align-items: @value;
+  -ms-flex-align: end;
+  align-items: @value;
+}
+.align-items(@value) when (@value = center) {
+  -webkit-box-align: center;
+  -webkit-align-items: @value;
+  -ms-flex-align: center;
+  align-items: @value;
+}
+.align-items(@value) when (@value = baseline) {
+  -webkit-box-align: baseline;
+  -webkit-align-items: @value;
+  -ms-flex-align: baseline;
+  align-items: @value;
+}
+.align-items(@value) when (@value = stretch) {
+  -webkit-box-align: stretch;
+  -webkit-align-items: @value;
+  -ms-flex-align: stretch;
+  align-items: @value;
+}
+.align-items(@value) when (default()) {
+  -webkit-align-items: @value;
+  align-items: @value;
+}
+.align-content(@value) when (@value = flex-start) {
+  -ms-flex-line-pack: start;
+  align-content: @value;
+}
+.align-content(@value) when (@value = flex-end) {
+  -ms-flex-line-pack: end;
+  align-content: @value;
+}
+.align-content(@value) when (@value = center) {
+  -ms-flex-line-pack: center;
+  align-content: @value;
+}
+.align-content(@value) when (@value = space-between) {
+  -ms-flex-line-pack: justify;
+  align-content: @value;
+}
+.align-content(@value) when (@value = space-around) {
+  -ms-flex-line-pack: distribute;
+  align-content: @value;
+}
+.align-content(@value) when (@value = stretch) {
+  -ms-flex-line-pack: stretch;
+  align-content: @value;
+}
+.align-content(@value) when (default()) {
+  align-content: @value;
+}
+.flex-flow(@direction, @wrap: nowrap) when (@direction = row) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: @direction @wrap;
+  -ms-flex-flow: @direction @wrap;
+  flex-flow: @direction @wrap;
+}
+.flex-flow(@direction:row, @wrap: nowrap) when (default()) {
+  -ms-flex-flow: @direction @wrap;
+  -webkit-flex-flow: @direction @wrap;
+  flex-flow: @direction @wrap;
+}
+.flexbox(@justify-content: flex-start, @direction: row, @wrap: nowrap) {
+  .flex-display;
+  .justify-content(@justify-content);
+  .flex-flow(@direction, @wrap);
+}
+.flex(@grow, @shrink: 1, @basis: auto) when (@grow = none) {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+  -ms-flex: none;
+  flex: @grow @shrink @basis;
+}
+.flex(@grow: 0, @shrink: 1, @basis: auto) when (not(@grow = none)) {
+  -webkit-box-flex: @grow;
+  -webkit-flex: @grow @shrink @basis;
+  -ms-flex: @grow @shrink @basis;
+  flex: @grow @shrink @basis;
+}
+.hide() {
+  display: none;
+}
+

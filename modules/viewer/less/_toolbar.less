@@ -1,8 +1,114 @@
 @import "_variables";
 @import "_utilities";
-@import "_icons";
+
+
+@toolbar-item-margin-vertical: 10px;
+@toolbar-item-margin-horizontal: 5px;
+@toolbar-item-margin: @toolbar-item-margin-vertical @toolbar-item-margin-horizontal;
 
 #toolbar {
+  .flexbox(center, row, wrap);
+  .align-items(center);
+  @media (min-width: 480px) {
+    padding-right: 25px;
+  }
+  a,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  .slideout-menu-toggle {
+    margin: @toolbar-item-margin;
+  }
+  .links {
+    a {
+      font-size: 25px;
+      margin: @toolbar-item-margin;
+    }
+  }
+  // We use jQuery UI for the zoom icons, override the default to prevent it
+  // from highlighting.
+  .zoom {
+    margin: @toolbar-item-margin;
+    .ui-state-hover,
+    .ui-widget-content .ui-state-hover,
+    .ui-widget-header .ui-state-hover,
+    .ui-state-focus,
+    .ui-widget-content .ui-state-focus,
+    .ui-widget-header .ui-state-focus {
+      border: 1px solid #386095;
+      background: #428bca;
+      font-weight: bold;
+      color: #c77405;
+    }
+    .ui-slider {
+      display: inline-block;
+      width: 150px;
+      margin: 0 10px;
+      // Height is 0.8em using 0.1em for top positions it in the center of the items.
+      top: 0.1em;
+    }
+    a {
+      .item();
+    }
+  }
+  .page-select {
+    max-width: 80px;
+    margin: @toolbar-item-margin;
+    .filter-option {
+      // Prevent text from overlapping the caret.
+      width: 80%;
+    }
+    button {
+      font-size: 14px;
+      padding: 2px 12px;
+      border-radius: 7px;
+    }
+  }
+  .panes {
+    margin: @toolbar-item-margin;
+    .fa {
+      // Fix a bug in font awesome.
+      display: inline;
+    }
+    .disabled {
+      color: darkgray !important;
+    }
+    .depressed {
+      background-color: #999;
+    }
+    a {
+      .item();
+      text-decoration: none;
+    }
+  }
+  .search {
+    margin: @toolbar-item-margin;
+    @media screen and (max-width: 575px) {
+      display: none;
+    }
+  }
+  .close {
+    .item();
+    position: absolute;
+    font-size: 0.875em;
+    top: @toolbar-item-margin-vertical;
+    right: @toolbar-item-margin-horizontal;
+    opacity: 1;
+    // In the case of overlap show above the other element.
+    z-index: 1;
+  }
+  .item-group {
+    .flexbox(center, row, wrap);
+    .align-items(center);
+  }
+  @media only screen and (max-width : @split-pane-max-width) {
+    // Don't display compare when split screen is not usable.
+    .compare {
+      display: none;
+    }
+  }
+  /*
   // Close icon position must match #toolbar padding.
   padding: 2px @close-icon-width + 5 2px 5px;
   // Once the tool bar is only the side-menu and share links.
@@ -29,7 +135,6 @@
   .pager-icon {
     position: relative;
     left: -20px;
-    font-size: 0.5em;
   }
   .links {
     li {
@@ -37,8 +142,8 @@
     }
     a {
       // Make the text the full size of the icon.
-      font-size: @icon-height;
-      line-height: @icon-height;
+      //font-size: @icon-height;
+      //line-height: @icon-height;
       &:hover {
         color: #666666;
       }
@@ -62,12 +167,6 @@
   .depressed {
     background-color: #999;
   }
-  .ui-slider {
-    display: inline-block;
-    width: 150px;
-    top: 3px;
-    margin: 0 10px;
-  }
   // Override the default to prevent highlighting.
   .ui-state-hover,
   .ui-widget-content .ui-state-hover,
@@ -82,6 +181,7 @@
   }
 
   // Search form.
+  /*
   form {
     display: inline-block;
     input[type=text] {
@@ -96,10 +196,11 @@
       font-size: 14.4px;
       font-family: 'Source Sans Pro', sans-serif;
     }
-  }
+  }*/
 }
 
 // Could be refactored out.
+/*
 .search-type {
   text-align: left;
   margin-top: 32px;
@@ -115,7 +216,7 @@
   border: 1px solid rgb(208, 208, 208);
   color: #333;
   font-size: 14px;
-}
+}*/
 
 // @todo refactor into tooltip / tooltip-text classes.
 .transcription-tooltip .transcription-tooltip-text {

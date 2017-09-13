@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Section Page Feature feature.
+ */
+
+include_once 'livingstone_section_page_feature.features.inc';

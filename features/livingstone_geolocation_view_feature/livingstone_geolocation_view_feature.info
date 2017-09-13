@@ -1,0 +1,13 @@
+name = Livingstone Geolocation View Feature
+description = View used to display the location page.
+core = 7.x
+package = Livingstone
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = gmap
+dependencies[] = livingstone_base_feature
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = geolocation
+project path = sites/all/modules/custom/livingstone_online_module/features

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Slide Feature feature.
+ */
+
+include_once 'livingstone_slide_feature.features.inc';

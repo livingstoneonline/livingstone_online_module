@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Livingstone Settings Feature feature.
+ */
+
+include_once 'livingstone_settings_feature.features.inc';
