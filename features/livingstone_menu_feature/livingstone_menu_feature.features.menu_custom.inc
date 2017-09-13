@@ -16,6 +16,12 @@ function livingstone_menu_feature_menu_default_menu_custom() {
     'title' => 'Main menu',
     'description' => 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.',
   );
+  // Exported menu: menu-final-manuscripts.
+  $menus['menu-final-manuscripts'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'title' => 'Livingstone\'s Final Manuscripts (1865-1873)',
+    'description' => 'Table of contents for Livingstone\'s Final Manuscripts (1865-1873).',
+  );
   // Exported menu: menu-fixed-header-menu.
   $menus['menu-fixed-header-menu'] = array(
     'menu_name' => 'menu-fixed-header-menu',
@@ -54,8 +60,10 @@ function livingstone_menu_feature_menu_default_menu_custom() {
   t('Livingstone 1870 Field Diary');
   t('Livingstone 1871 Field Diary');
   t('Livingstone Letter from Bambarre');
+  t('Livingstone\'s Final Manuscripts (1865-1873)');
   t('Main menu');
   t('Secondary menu');
+  t('Table of contents for Livingstone\'s Final Manuscripts (1865-1873).');
   t('Table of contents for Livingstone’s Letter from Bambarre.');
   t('Table of contents for the Livingstone\'s 1870 Field Diary.');
   t('Table of contents for the Livingstone\'s 1871 Field Diary.');
