@@ -74,6 +74,7 @@ function livingstone_user_feature_user_default_permissions() {
   $permissions['access media browser'] = array(
     'name' => 'access media browser',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
       'editor' => 'editor',
     ),
@@ -222,7 +223,9 @@ function livingstone_user_feature_user_default_permissions() {
   $permissions['administer imce'] = array(
     'name' => 'administer imce',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
+      'editor' => 'editor',
     ),
     'module' => 'imce',
   );
@@ -249,7 +252,9 @@ function livingstone_user_feature_user_default_permissions() {
   $permissions['administer media browser'] = array(
     'name' => 'administer media browser',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
+      'editor' => 'editor',
     ),
     'module' => 'media',
   );
@@ -1315,6 +1320,7 @@ function livingstone_user_feature_user_default_permissions() {
   $permissions['use media wysiwyg'] = array(
     'name' => 'use media wysiwyg',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
       'editor' => 'editor',
     ),

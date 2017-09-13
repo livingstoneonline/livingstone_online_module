@@ -30142,7 +30142,13 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(
     'und' => array(
       0 => array(

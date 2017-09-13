@@ -1528,6 +1528,696 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_about-this-site:about-this-site',
   );
+  // Exported menu link: menu-final-manuscripts_a-project-bibliography:uuid/node/3ce886fd-7e91-4774-9611-7088ff515114.
+  $menu_links['menu-final-manuscripts_a-project-bibliography:uuid/node/3ce886fd-7e91-4774-9611-7088ff515114'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/3ce886fd-7e91-4774-9611-7088ff515114',
+    'router_path' => 'uuid',
+    'link_title' => 'A Project Bibliography',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_a-project-bibliography:uuid/node/3ce886fd-7e91-4774-9611-7088ff515114',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -22,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_acknowledgments:uuid/node/c469b0b9-9cf5-485b-bbc5-329cb3665448.
+  $menu_links['menu-final-manuscripts_acknowledgments:uuid/node/c469b0b9-9cf5-485b-bbc5-329cb3665448'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/c469b0b9-9cf5-485b-bbc5-329cb3665448',
+    'router_path' => 'uuid',
+    'link_title' => 'Acknowledgments',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_acknowledgments:uuid/node/c469b0b9-9cf5-485b-bbc5-329cb3665448',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -47,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_bonus-additional-final-manuscripts:in-his-own-words/catalogue.
+  $menu_links['menu-final-manuscripts_bonus-additional-final-manuscripts:in-his-own-words/catalogue'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'in-his-own-words/catalogue',
+    'router_path' => 'in-his-own-words',
+    'link_title' => 'Bonus: Additional Final Manuscripts',
+    'options' => array(
+      'query' => array(
+        'query' => 'NOT+Zambezi+NOT+Zambesi+NOT+1864+NOT+abbey+NOT+oxford+NOT+picture+NOT+receipt+NOT+ticket+NOT+"than+1873"',
+        'access' => 'view',
+        'f%5B%5D' => 'genre_ms:"autographs+(manuscripts)"',
+      ),
+      'attributes' => array(
+        'target' => '_blank',
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_bonus-additional-final-manuscripts:in-his-own-words/catalogue',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -43,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_edition-guide:uuid/node/cd82bd9d-3e50-421b-969e-3f513a20258b.
+  $menu_links['menu-final-manuscripts_edition-guide:uuid/node/cd82bd9d-3e50-421b-969e-3f513a20258b'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/cd82bd9d-3e50-421b-969e-3f513a20258b',
+    'router_path' => 'uuid',
+    'link_title' => 'Edition Guide',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_edition-guide:uuid/node/cd82bd9d-3e50-421b-969e-3f513a20258b',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-i-an-overview:uuid/node/11835b50-66a9-48bd-b340-9bc19da83bd7.
+  $menu_links['menu-final-manuscripts_field-diary-i-an-overview:uuid/node/11835b50-66a9-48bd-b340-9bc19da83bd7'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/11835b50-66a9-48bd-b340-9bc19da83bd7',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary I: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-i-an-overview:uuid/node/11835b50-66a9-48bd-b340-9bc19da83bd7',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -39,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-ii-an-overview:uuid/node/1d5af01e-faa6-4ef8-9176-fc6458fb77ff.
+  $menu_links['menu-final-manuscripts_field-diary-ii-an-overview:uuid/node/1d5af01e-faa6-4ef8-9176-fc6458fb77ff'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/1d5af01e-faa6-4ef8-9176-fc6458fb77ff',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary II: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-ii-an-overview:uuid/node/1d5af01e-faa6-4ef8-9176-fc6458fb77ff',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -38,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-iii-an-overview:uuid/node/71ed5af0-2b30-4cb6-9c86-95af8a77a565.
+  $menu_links['menu-final-manuscripts_field-diary-iii-an-overview:uuid/node/71ed5af0-2b30-4cb6-9c86-95af8a77a565'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/71ed5af0-2b30-4cb6-9c86-95af8a77a565',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary III: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-iii-an-overview:uuid/node/71ed5af0-2b30-4cb6-9c86-95af8a77a565',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -37,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-iv-an-overview:uuid/node/df7c40c8-c422-4120-a915-59c9c153cb58.
+  $menu_links['menu-final-manuscripts_field-diary-iv-an-overview:uuid/node/df7c40c8-c422-4120-a915-59c9c153cb58'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/df7c40c8-c422-4120-a915-59c9c153cb58',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary IV: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-iv-an-overview:uuid/node/df7c40c8-c422-4120-a915-59c9c153cb58',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -36,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-v-an-overview:uuid/node/8e59a0ee-1450-448a-a568-c2917dfb0d91.
+  $menu_links['menu-final-manuscripts_field-diary-v-an-overview:uuid/node/8e59a0ee-1450-448a-a568-c2917dfb0d91'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/8e59a0ee-1450-448a-a568-c2917dfb0d91',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary V: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-v-an-overview:uuid/node/8e59a0ee-1450-448a-a568-c2917dfb0d91',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -35,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-vi-an-overview:uuid/node/4307d45b-1155-4f12-8e35-00ab82d63fb3.
+  $menu_links['menu-final-manuscripts_field-diary-vi-an-overview:uuid/node/4307d45b-1155-4f12-8e35-00ab82d63fb3'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/4307d45b-1155-4f12-8e35-00ab82d63fb3',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary VI: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-vi-an-overview:uuid/node/4307d45b-1155-4f12-8e35-00ab82d63fb3',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -34,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-vii-an-overview:uuid/node/8174f961-541f-4e9a-810d-5f8c705bcc38.
+  $menu_links['menu-final-manuscripts_field-diary-vii-an-overview:uuid/node/8174f961-541f-4e9a-810d-5f8c705bcc38'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/8174f961-541f-4e9a-810d-5f8c705bcc38',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary VII: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-vii-an-overview:uuid/node/8174f961-541f-4e9a-810d-5f8c705bcc38',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -33,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-x-an-overview:uuid/node/4f03390b-0aa6-4a1c-aaf4-d1d10b8812af.
+  $menu_links['menu-final-manuscripts_field-diary-x-an-overview:uuid/node/4f03390b-0aa6-4a1c-aaf4-d1d10b8812af'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/4f03390b-0aa6-4a1c-aaf4-d1d10b8812af',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary X: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-x-an-overview:uuid/node/4f03390b-0aa6-4a1c-aaf4-d1d10b8812af',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -32,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-xiv-an-overview:uuid/node/ad330d80-44ba-4144-aba3-cd890830b080.
+  $menu_links['menu-final-manuscripts_field-diary-xiv-an-overview:uuid/node/ad330d80-44ba-4144-aba3-cd890830b080'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/ad330d80-44ba-4144-aba3-cd890830b080',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary XIV: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-xiv-an-overview:uuid/node/ad330d80-44ba-4144-aba3-cd890830b080',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -31,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-xv-an-overview:uuid/node/d0a08841-27b1-4400-bf50-b452794cb1be.
+  $menu_links['menu-final-manuscripts_field-diary-xv-an-overview:uuid/node/d0a08841-27b1-4400-bf50-b452794cb1be'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/d0a08841-27b1-4400-bf50-b452794cb1be',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary XV: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-xv-an-overview:uuid/node/d0a08841-27b1-4400-bf50-b452794cb1be',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -30,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-xvi-an-overview:uuid/node/9b8fe6dc-7202-4830-8af8-383baeb53c20.
+  $menu_links['menu-final-manuscripts_field-diary-xvi-an-overview:uuid/node/9b8fe6dc-7202-4830-8af8-383baeb53c20'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/9b8fe6dc-7202-4830-8af8-383baeb53c20',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary XVI: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-xvi-an-overview:uuid/node/9b8fe6dc-7202-4830-8af8-383baeb53c20',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -29,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_field-diary-xvii-an-overview:uuid/node/f14df138-9618-48a7-967e-c9122d79add2.
+  $menu_links['menu-final-manuscripts_field-diary-xvii-an-overview:uuid/node/f14df138-9618-48a7-967e-c9122d79add2'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/f14df138-9618-48a7-967e-c9122d79add2',
+    'router_path' => 'uuid',
+    'link_title' => 'Field Diary XVII: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_field-diary-xvii-an-overview:uuid/node/f14df138-9618-48a7-967e-c9122d79add2',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -28,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_introduction-to-the-edition:uuid/node/ef7677b7-0212-4c34-bb8e-ce826eefb0af.
+  $menu_links['menu-final-manuscripts_introduction-to-the-edition:uuid/node/ef7677b7-0212-4c34-bb8e-ce826eefb0af'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/ef7677b7-0212-4c34-bb8e-ce826eefb0af',
+    'router_path' => 'uuid',
+    'link_title' => 'Introduction to the Edition',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_introduction-to-the-edition:uuid/node/ef7677b7-0212-4c34-bb8e-ce826eefb0af',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_items-with-images--transcriptions:in-his-own-words/catalogue.
+  $menu_links['menu-final-manuscripts_items-with-images--transcriptions:in-his-own-words/catalogue'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'in-his-own-words/catalogue',
+    'router_path' => 'in-his-own-words',
+    'link_title' => 'Items with Images & Transcriptions',
+    'options' => array(
+      'query' => array(
+        'query' => 'NOT+letter+NOT+spectral+NOT+shire+NOT+rumor+NOT+blotting+NOT+signatures',
+        'access' => 'both_transcription',
+        'f%255B%255D' => 'dateRangeYear_mi:[1866+TO+1873]',
+      ),
+      'attributes' => array(
+        'target' => '_blank',
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_items-with-images--transcriptions:in-his-own-words/catalogue',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -45,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_items-with-images-only:in-his-own-words/catalogue.
+  $menu_links['menu-final-manuscripts_items-with-images-only:in-his-own-words/catalogue'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'in-his-own-words/catalogue',
+    'router_path' => 'in-his-own-words',
+    'link_title' => 'Items with Images Only',
+    'options' => array(
+      'query' => array(
+        'query' => 'NOT+letter+NOT+spectral+NOT+shire+NOT+rumor+NOT+blotting+NOT+signatures',
+        'access' => 'both_wo_transcription',
+        'f%5B%5D' => 'genre_ms:"autographs+(manuscripts)"',
+      ),
+      'attributes' => array(
+        'target' => '_blank',
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_items-with-images-only:in-his-own-words/catalogue',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -44,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_leap-2013-2017-a-project-history-part-i:uuid/node/da31bc5d-a889-49c7-8a85-2c9fc373af4d.
+  $menu_links['menu-final-manuscripts_leap-2013-2017-a-project-history-part-i:uuid/node/da31bc5d-a889-49c7-8a85-2c9fc373af4d'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/da31bc5d-a889-49c7-8a85-2c9fc373af4d',
+    'router_path' => 'uuid',
+    'link_title' => 'LEAP (2013-2017): A Project History, Part I',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_leap-2013-2017-a-project-history-part-i:uuid/node/da31bc5d-a889-49c7-8a85-2c9fc373af4d',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -24,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_leap-2013-2017-a-project-history-part-ii:uuid/node/9e853e69-ef25-40c6-bd0a-e296e3849c47.
+  $menu_links['menu-final-manuscripts_leap-2013-2017-a-project-history-part-ii:uuid/node/9e853e69-ef25-40c6-bd0a-e296e3849c47'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/9e853e69-ef25-40c6-bd0a-e296e3849c47',
+    'router_path' => 'uuid',
+    'link_title' => 'LEAP (2013-2017): A Project History, Part II',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_leap-2013-2017-a-project-history-part-ii:uuid/node/9e853e69-ef25-40c6-bd0a-e296e3849c47',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -23,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_multiple-versions-of-the-text:uuid/node/965e7eed-45ee-43a8-9469-6105dce06fe6.
+  $menu_links['menu-final-manuscripts_multiple-versions-of-the-text:uuid/node/965e7eed-45ee-43a8-9469-6105dce06fe6'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/965e7eed-45ee-43a8-9469-6105dce06fe6',
+    'router_path' => 'uuid',
+    'link_title' => 'Multiple Versions of the Text',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_multiple-versions-of-the-text:uuid/node/965e7eed-45ee-43a8-9469-6105dce06fe6',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -42,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_project-team:uuid/node/920682c6-665f-4111-8458-6247e55dc5e7.
+  $menu_links['menu-final-manuscripts_project-team:uuid/node/920682c6-665f-4111-8458-6247e55dc5e7'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/920682c6-665f-4111-8458-6247e55dc5e7',
+    'router_path' => 'uuid',
+    'link_title' => 'Project Team',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_project-team:uuid/node/920682c6-665f-4111-8458-6247e55dc5e7',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_scope-of-the-edition:uuid/node/2301477f-224c-4b1b-88b1-bfdffbec2b6d.
+  $menu_links['menu-final-manuscripts_scope-of-the-edition:uuid/node/2301477f-224c-4b1b-88b1-bfdffbec2b6d'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/2301477f-224c-4b1b-88b1-bfdffbec2b6d',
+    'router_path' => 'uuid',
+    'link_title' => 'Scope of the Edition',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_scope-of-the-edition:uuid/node/2301477f-224c-4b1b-88b1-bfdffbec2b6d',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_tei-p5-encoding-guidelines:http://livingstoneonline.github.io/LEAP-ODD/leap.html.
+  $menu_links['menu-final-manuscripts_tei-p5-encoding-guidelines:http://livingstoneonline.github.io/LEAP-ODD/leap.html'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'http://livingstoneonline.github.io/LEAP-ODD/leap.html',
+    'router_path' => '',
+    'link_title' => 'TEI P5 Encoding Guidelines',
+    'options' => array(
+      'attributes' => array(
+        'target' => '_blank',
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_tei-p5-encoding-guidelines:http://livingstoneonline.github.io/LEAP-ODD/leap.html',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -25,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_the-aftermath-of-livingstones-death:uuid/node/535bf1aa-5479-42de-984f-7048ec054e4c.
+  $menu_links['menu-final-manuscripts_the-aftermath-of-livingstones-death:uuid/node/535bf1aa-5479-42de-984f-7048ec054e4c'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/535bf1aa-5479-42de-984f-7048ec054e4c',
+    'router_path' => 'uuid',
+    'link_title' => 'The Aftermath of Livingstone\'s Death',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_the-aftermath-of-livingstones-death:uuid/node/535bf1aa-5479-42de-984f-7048ec054e4c',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -26,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_the-final-field-diaries-general-overview:uuid/node/c67fe71d-2072-4f67-8f1e-a69ac24e4ef9.
+  $menu_links['menu-final-manuscripts_the-final-field-diaries-general-overview:uuid/node/c67fe71d-2072-4f67-8f1e-a69ac24e4ef9'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/c67fe71d-2072-4f67-8f1e-a69ac24e4ef9',
+    'router_path' => 'uuid',
+    'link_title' => 'The Final Field Diaries: General Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_the-final-field-diaries-general-overview:uuid/node/c67fe71d-2072-4f67-8f1e-a69ac24e4ef9',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -40,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_the-final-manuscripts-three-bonus-texts:uuid/node/d39f223d-8df4-477a-9cf2-958b7ce4a2f3.
+  $menu_links['menu-final-manuscripts_the-final-manuscripts-three-bonus-texts:uuid/node/d39f223d-8df4-477a-9cf2-958b7ce4a2f3'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/d39f223d-8df4-477a-9cf2-958b7ce4a2f3',
+    'router_path' => 'uuid',
+    'link_title' => 'The Final Manuscripts: Three Bonus Texts',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_the-final-manuscripts-three-bonus-texts:uuid/node/d39f223d-8df4-477a-9cf2-958b7ce4a2f3',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -27,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_the-unyanyembe-journal-an-overview:uuid/node/b37eb894-0985-448c-a9b2-da5c4a5dcdb8.
+  $menu_links['menu-final-manuscripts_the-unyanyembe-journal-an-overview:uuid/node/b37eb894-0985-448c-a9b2-da5c4a5dcdb8'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/b37eb894-0985-448c-a9b2-da5c4a5dcdb8',
+    'router_path' => 'uuid',
+    'link_title' => 'The Unyanyembe Journal: An Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-final-manuscripts_the-unyanyembe-journal-an-overview:uuid/node/b37eb894-0985-448c-a9b2-da5c4a5dcdb8',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -41,
+    'customized' => 1,
+  );
   // Exported menu link: menu-fixed-header-menu_:<front>.
   $menu_links['menu-fixed-header-menu_:<front>'] = array(
     'menu_name' => 'menu-fixed-header-menu',
@@ -1711,9 +2401,9 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'link_title' => 'Images & Transcriptions of Select 1870-1871 Texts',
     'options' => array(
       'query' => array(
-        'query' => 'retrospect+letter',
+        'query' => 'retrospect letter',
         'access' => 'view_spectral',
-        'f%5B%5D' => 'genre_ms:"spectral color"',
+        'f%25255B%25255D' => 'genre_ms:"spectral color"',
       ),
       'identifier' => 'menu-livingstone-1870-diary_images--transcriptions-of-select-1870-1871-texts:in-his-own-words/catalogue',
       'attributes' => array(
@@ -3228,6 +3918,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
   t('1871 Field Diary Headers');
   t('18th- and 19th-Century European Expeditions');
   t('A Brief History of Livingstone Online (2004-2013)');
+  t('A Project Bibliography');
   t('About This Site: Home');
   t('About This Site: Overview');
   t('About this Site');
@@ -3238,6 +3929,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
   t('Behind the Scenes');
   t('Behind the Scenes: Home');
   t('Behind the Scenes: Overview');
+  t('Bonus: Additional Final Manuscripts');
   t('Browse by Addressee');
   t('Browse by Digital Catalogue Record');
   t('Browse by Location');
@@ -3251,6 +3943,18 @@ function livingstone_menu_feature_menu_default_menu_links() {
   t('David Livingstone: A Bibliography');
   t('Edition Guide');
   t('Fever in the Tropics');
+  t('Field Diary I: An Overview');
+  t('Field Diary II: An Overview');
+  t('Field Diary III: An Overview');
+  t('Field Diary IV: An Overview');
+  t('Field Diary V: An Overview');
+  t('Field Diary VI: An Overview');
+  t('Field Diary VII: An Overview');
+  t('Field Diary X: An Overview');
+  t('Field Diary XIV: An Overview');
+  t('Field Diary XV: An Overview');
+  t('Field Diary XVI: An Overview');
+  t('Field Diary XVII: An Overview');
   t('History & Chronology of the 1870 Field Diary');
   t('Illustrative Image Credits');
   t('Images & Transcriptions of Select 1870-1871 Texts');
@@ -3262,6 +3966,8 @@ function livingstone_menu_feature_menu_default_menu_links() {
   t('In His Own Words: Home');
   t('In His Own Words: Overview');
   t('Introduction to the Edition');
+  t('Items with Images & Transcriptions');
+  t('Items with Images Only');
   t('Key Terms in Livingstone\'s Manuscripts, 1870-71');
   t('LEAP (2013-2017): A Project History, Part I');
   t('LEAP (2013-2017): A Project History, Part II');
@@ -3292,6 +3998,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
   t('Livingstone’s Life & Expeditions');
   t('Livingstone’s Posthumous Reputation');
   t('Manuscript Citation and File Naming Practices');
+  t('Multiple Versions of the Text');
   t('Note on the Text of the Letter');
   t('Note on the Three Versions of the Text');
   t('Notes on Processed Spectral Images');
@@ -3308,6 +4015,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
   t('Resources');
   t('Resources: Home');
   t('Resources: Overview');
+  t('Scope of the Edition');
   t('Southern Africans and the Advent of Colonialism');
   t('Spectral Image Processing');
   t('Spectral Imaging');
@@ -3316,11 +4024,14 @@ function livingstone_menu_feature_menu_default_menu_links() {
   t('TEI P5 Encoding Guidelines');
   t('Terminology and Acronyms');
   t('The 1871 Field Diary Facsimile');
+  t('The Aftermath of Livingstone\'s Death');
   t('The Date of the Livingstone-Stanley Meeting');
   t('The Design of Livingstone Online');
   t('The Diary across Hands, Space, & Time (1)');
   t('The Diary across Hands, Space, & Time (2)');
   t('The Diary across Hands, Space, & Time (3)');
+  t('The Final Field Diaries: General Overview');
+  t('The Final Manuscripts: Three Bonus Texts');
   t('The Livingstone Online Code');
   t('The Livingstone Online Digital Collection');
   t('The Livingstone Spectral Image Collection');
@@ -3329,6 +4040,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
   t('The Project Team');
   t('The Theory behind Livingstone Online');
   t('The Third Massacre Narrative');
+  t('The Unyanyembe Journal: An Overview');
   t('Three Versions of the 1870 Field Diary');
   t('Three Versions of the 1871 Field Diary');
   t('Victorian Medicine');
