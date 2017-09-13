@@ -33,7 +33,6 @@ function livingstone_user_feature_uuid_features_default_users() {
   'roles' => array(
     2 => 'authenticated user',
     3 => 'administrator',
-    4 => 'developer',
     5 => 'editor',
   ),
   'date' => '2017-04-11 17:56:29 +0000',
