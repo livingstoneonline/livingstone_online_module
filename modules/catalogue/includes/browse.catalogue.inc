@@ -1257,7 +1257,10 @@ function livingstone_browse_catalogue_facet_range_defaults(array $form_state) {
 function livingstone_browse_catalogue_get_facet_value($facet_field) {
   $filter_queries = isset($_GET['f']) ? $_GET['f'] : array();
   if (isset($_GET['f%5B%5D'])) {
-    $filter_queries[] = $_GET['f%5B%5D'];
+    $filter_queries[] = urldecode($_GET['f%5B%5D']);
+  }
+  if (isset($_GET['f%255B%255D'])) {
+    $filter_queries[] = urldecode($_GET['f%255B%255D']);
   }
   foreach ($filter_queries as $filter_query) {
     list($field, $value) = explode(':', $filter_query);
@@ -1301,19 +1304,20 @@ function livingstone_browse_catalogue_default_value($element, $default, array $f
 function livingstone_browse_catalogue_facet_default($facet, array $form_state) {
   $facet_fields = livingstone_browse_catalogue_facet_fields();
   $facet_field = $facet_fields[$facet];
+  $filter_queries = isset($_GET['f']) ? $_GET['f'] : array();
+  if (isset($_GET['f%5B%5D'])) {
+    $filter_queries[] = urldecode($_GET['f%5B%5D']);
+  }
+  if (isset($_GET['f%255B%255D'])) {
+    $filter_queries[] = urldecode($_GET['f%255B%255D']);
+  }
   if (isset($form_state['values'][$facet])) {
     return $form_state['values'][$facet];
   }
-  elseif (isset($_GET['f'])) {
-    $filter_queries = isset($_GET['f']) ? $_GET['f'] : array();
-    if (isset($_GET['f%5B%5D'])) {
-      $filter_queries[] = $_GET['f%5B%5D'];
-    }
-    foreach ($filter_queries as $facet) {
-      list($field, $value) = explode(':', $facet);
-      if ($field == $facet_field) {
-        return trim(stripslashes($value), " \t\n\r\0\x0B\'\"");
-      }
+  foreach ($filter_queries as $facet) {
+    list($field, $value) = explode(':', $facet);
+    if ($field == $facet_field) {
+      return trim(stripslashes($value), " \t\n\r\0\x0B\'\"");
     }
   }
   return 0;
