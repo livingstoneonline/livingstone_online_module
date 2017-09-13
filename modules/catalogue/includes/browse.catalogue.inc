@@ -24,7 +24,7 @@ const LIVINGSTONE_BROWSE_CATALOGUE_LIMIT_RESULTS = 100;
  */
 function livingstone_browse_catalogue_form(array $form, array &$form_state, $query) {
   form_load_include($form_state, 'inc', 'livingstone_browse_catalogue', 'includes/browse.catalogue');
-  $query = livingstone_browse_catalogue_default_value('query', $query, $form_state);
+  $query = urldecode(livingstone_browse_catalogue_default_value('query', $query, $form_state));
   livingstone_browse_catalogue_form_ajax_hacks($form_state, $query);
   $full_record = livingstone_browse_catalogue_default_value('full_record', 0, $form_state);
   $results = livingstone_browse_catalogue_search($query, $form_state);
@@ -597,7 +597,7 @@ function livingstone_browse_catalogue_table(array $results, $collapsed = TRUE) {
           );
           $data = _filter_url($data, $filter);
           $dom = new DOMDocument();
-          $dom->loadHTML('<html><body><span>' . $data . '</span></body></html>');
+          @$dom->loadHTML('<html><body><span>' . $data . '</span></body></html>');
           $links = $dom->getElementsByTagName('a');
           foreach ($links as $link) {
             $link->setAttribute('target', '_blank');
@@ -1256,6 +1256,9 @@ function livingstone_browse_catalogue_facet_range_defaults(array $form_state) {
  */
 function livingstone_browse_catalogue_get_facet_value($facet_field) {
   $filter_queries = isset($_GET['f']) ? $_GET['f'] : array();
+  if (isset($_GET['f%5B%5D'])) {
+    $filter_queries[] = $_GET['f%5B%5D'];
+  }
   foreach ($filter_queries as $filter_query) {
     list($field, $value) = explode(':', $filter_query);
     if ($field == $facet_field) {
@@ -1302,7 +1305,11 @@ function livingstone_browse_catalogue_facet_default($facet, array $form_state) {
     return $form_state['values'][$facet];
   }
   elseif (isset($_GET['f'])) {
-    foreach ($_GET['f'] as $facet) {
+    $filter_queries = isset($_GET['f']) ? $_GET['f'] : array();
+    if (isset($_GET['f%5B%5D'])) {
+      $filter_queries[] = $_GET['f%5B%5D'];
+    }
+    foreach ($filter_queries as $facet) {
       list($field, $value) = explode(':', $facet);
       if ($field == $facet_field) {
         return trim(stripslashes($value), " \t\n\r\0\x0B\'\"");
