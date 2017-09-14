@@ -9,8 +9,42 @@
  * Implements hook_form_FORM_ID_alter().
  */
 function livingstone_toc_form_menu_edit_item_alter(array &$form, array &$form_state) {
+  $form['#validate'] = array('livingstone_toc_menu_edit_item_validate');
   $form['link_path']['#type'] = 'textarea';
   unset($form['link_path']['#maxlength']);
+}
+
+// More or less a copy of core with fixes for array query params.
+function livingstone_toc_menu_edit_item_validate($form, &$form_state) {
+  $item = &$form_state['values'];
+  $normal_path = drupal_get_normal_path($item['link_path']);
+  if ($item['link_path'] != $normal_path) {
+    drupal_set_message(t('The menu system stores system paths only, but will use the URL alias for display. %link_path has been stored as %normal_path', array('%link_path' => $item['link_path'], '%normal_path' => $normal_path)));
+    $item['link_path'] = $normal_path;
+  }
+  if (!url_is_external($item['link_path'])) {
+    $parsed_link = drupal_parse_url($item['link_path']);
+    if (isset($parsed_link['query'])) {
+      $item['options']['query'] = $parsed_link['query'];
+    }
+    else {
+      // Use unset() rather than setting to empty string
+      // to avoid redundant serialized data being stored.
+      unset($item['options']['query']);
+    }
+    if (isset($parsed_link['fragment'])) {
+      $item['options']['fragment'] = $parsed_link['fragment'];
+    }
+    else {
+      unset($item['options']['fragment']);
+    }
+    if (isset($parsed_link['path']) && $item['link_path'] != $parsed_link['path']) {
+      $item['link_path'] = $parsed_link['path'];
+    }
+  }
+  if (!trim($item['link_path']) || !drupal_valid_path($item['link_path'], TRUE)) {
+    form_set_error('link_path', t("The path '@link_path' is either invalid or you do not have access to it.", array('@link_path' => $item['link_path'])));
+  }
 }
 
 /**
