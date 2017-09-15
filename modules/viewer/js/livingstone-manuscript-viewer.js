@@ -990,9 +990,7 @@
       if (heading.length != 0) {
         var pane = $('.pane.transcription-pane');
         var pos = heading.position();
-        var rect= heading.get(0).getBoundingClientRect();
-        var height = Math.abs(rect.bottom - rect.top);
-        var top = pane.scrollTop() + pos.top - height;
+        var top = pane.scrollTop() + pos.top - $('#toolbar').height();
         pane.animate({
           scrollTop: top + 'px'
         }, 1000);
