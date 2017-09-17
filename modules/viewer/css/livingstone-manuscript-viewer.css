@@ -755,6 +755,8 @@ div.livingstone-manuscript-viewer-download-modal iframe {
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  width: 75%;
+  margin: 0 auto;
 }
 #downloads .close {
   -webkit-border-radius: 7px;
