@@ -756,6 +756,7 @@ function livingstone_user_feature_user_default_permissions() {
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
       'editor' => 'editor',
     ),
@@ -1236,6 +1237,7 @@ function livingstone_user_feature_user_default_permissions() {
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
       'editor' => 'editor',
     ),
@@ -1401,6 +1403,7 @@ function livingstone_user_feature_user_default_permissions() {
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
       'editor' => 'editor',
     ),
@@ -1421,6 +1424,7 @@ function livingstone_user_feature_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
       'editor' => 'editor',
     ),

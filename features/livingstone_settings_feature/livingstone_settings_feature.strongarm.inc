@@ -215,6 +215,7 @@ function livingstone_settings_feature_strongarm() {
   $strongarm->name = 'imce_custom_content';
   $strongarm->value = array(
     'imce_mkdir_content' => 1,
+    'imce_search_content' => 1,
   );
   $export['imce_custom_content'] = $strongarm;
 
@@ -235,12 +236,12 @@ function livingstone_settings_feature_strongarm() {
     1 => array(
       'name' => 'User-1',
       'usertab' => 1,
-      'filesize' => 0,
-      'quota' => 0,
-      'tuquota' => 0,
+      'filesize' => '0',
+      'quota' => '0',
+      'tuquota' => '0',
       'extensions' => '*',
       'dimensions' => '1200x1200',
-      'filenum' => 0,
+      'filenum' => '0',
       'directories' => array(
         0 => array(
           'name' => '.',
@@ -274,7 +275,8 @@ function livingstone_settings_feature_strongarm() {
           'suffix' => '',
         ),
       ),
-      'mkdirnum' => 0,
+      'mkdirnum' => '0',
+      'uploader' => 'plupload',
     ),
     2 => array(
       'name' => 'Sample profile',
