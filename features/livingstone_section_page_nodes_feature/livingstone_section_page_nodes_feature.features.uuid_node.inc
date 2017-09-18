@@ -35,34 +35,7 @@ function livingstone_section_page_nodes_feature_uuid_features_default_content() 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Manuscript Citation and File Naming Practices</a></span></span>
-	<ol style="list-style-type:decimal">
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Citing manuscripts and spectral images</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Naming spectral image files</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Appendices</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Manuscripts in the present critical edition</a></span></span>
-		<ol style="list-style-type:lower-alpha">
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">"Retrospect to be Inserted in the Journal" (10 Mar. 1870)</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8a">1870 Field Diary (17 Aug. 1870-22 Mar. 1871)</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8b">1871 Field Diary (23 Mar. 1871-3 Nov. 1871)</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">1871 Letters (5 Feb.-26 June 1871)</a></span></span></li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Author-date details, page numbers, and project file names</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Processed spectral image names</a></span></span></li>
-	</ol>
-	</li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>The <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> has focused on the following manuscripts: the "Retrospect to be Inserted in the Journal" (10 Mar. 1870), the 1870 Field Diary (17 Aug. 1870-22 Mar. 1871), the 1871 Field Diary (23 Mar.-3 Nov. 1871), and a selection of six 1871 letters (5 Feb.-26 June 1871). Livingstone\'s practices in composing these texts resulted in a series of manuscripts that today make normalized citation difficult, particularly with the addition of multiple spectral images for each manuscript side.</p>
 
@@ -1396,7 +1369,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -1411,7 +1383,31 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>The 1870 and 1871 Field Diaries and other texts studied by the Livingstone Spectral Imaging Project can be difficult to cite due to Livingstone’s methods in composing his manuscripts and the complexity of our processed spectral images. This page outlines the standardized system that we have adopted for, first, citing specific manuscript pages and spectral images and, second, naming corresponding spectral image files.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Manuscript Citation and File Naming Practices</a></span></span>
+	<ol style="list-style-type:decimal">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Citing manuscripts and spectral images</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Naming spectral image files</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Appendices</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Manuscripts in the present critical edition</a></span></span>
+		<ol style="list-style-type:lower-alpha">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">"Retrospect to be Inserted in the Journal" (10 Mar. 1870)</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8a">1870 Field Diary (17 Aug. 1870-22 Mar. 1871)</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8b">1871 Field Diary (23 Mar. 1871-3 Nov. 1871)</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">1871 Letters (5 Feb.-26 June 1871)</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Author-date details, page numbers, and project file names</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Processed spectral image names</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -1431,7 +1427,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Note on the Text of the Letter',
@@ -1505,7 +1501,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -1553,7 +1548,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2017-01-17 02:25:19 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Resources: Overview',
@@ -1625,7 +1620,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -1692,7 +1686,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-03-24 01:22:35 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone’s Posthumous Reputation',
@@ -2101,7 +2095,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -2168,7 +2161,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-01-26 19:25:56 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Materials',
@@ -2188,7 +2181,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -2233,7 +2225,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-06-14 14:55:08 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Practices, Standards, and Arrangements',
@@ -2486,7 +2478,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -2553,7 +2544,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-01-26 19:24:00 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary I: An Overview',
@@ -2633,7 +2624,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -2675,7 +2665,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2016-11-22 12:22:14 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Project Documentation',
@@ -2702,16 +2692,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Complete Project Documentation</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Area-specific Subsets of Project Documentation</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>Research for our critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts has resulted in the production of a considerable amount of supporting documentation. This documentation encompasses all aspects of the project and, as a whole, offers an intimate glimpse into project development. The documentation takes a variety of forms, from emails among project team members, grant application files, project plans, and spreadsheets of processing objectives, to meeting and research notes, test images, metadata-addition scripts, and PowerPoint presentations. Altogether, we provide curated access to some 300 project documents (broadly defined) spanning three years of research activities (2013-16) among an internationally distributed team of collaborators and supporting institutions.</p>
 
@@ -2768,7 +2749,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -2783,7 +2763,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>This page provides curated access to some 300 project documents spanning three years of research activities&nbsp;(2013-16) for our critical edition of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Complete Project Documentation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Area-specific Subsets of Project Documentation</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -2816,7 +2802,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Terminology and Acronyms',
@@ -2843,15 +2829,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Leaf, Folio, Page</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Institutional Acronyms</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Leaf, Folio, Page</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Leaf, Folio, Page</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>In this edition, we call each sheet of paper on which Livingstone has written any portion of his diary a <strong>leaf</strong>. Each side of each leaf is a <strong>folio</strong>. Thus, every leaf consists of two folia, the one on the recto and the one on the verso. Finally, each folio may contain either one Livingstone diary <strong>page</strong> (covering the whole folio on which is appears) or two Livingstone diary <strong>pages </strong>(side by side on the folio on which they appear). The diary pages may be numbered or unnumbered.</p>
 
@@ -2904,7 +2882,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -2919,7 +2896,12 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>This section explains the reference system used to indicate individual leaves, folia, and pages of Livingstone\'s 1871 Field Diary. The section also defines the key institutional acronyms employed in this edition.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Leaf, Folio, Page</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Institutional Acronyms</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -2952,7 +2934,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2017-02-10 00:12:25 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary II: An Overview',
@@ -3029,7 +3011,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -3071,7 +3052,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2016-11-22 12:23:55 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -3507,7 +3488,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -3566,7 +3546,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-03-20 18:27:21 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -3593,24 +3573,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Prefatory Materials</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">The 1871 Field Diary</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Livingstone &amp; the Manuscript</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Critical Notes</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Project History &amp; Documentation</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Supplemental Pages</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Images for Viewing or Download</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Ink Spectra PowerPoint Files</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Livingstone Spectral Image Archive Files</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Project Documents</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong>Introduction &nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong>Introduction &nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>This page provides a descriptive list of all the webpages and downloadable files that collectively constitute <em>Livingstone’s 1871 Field Diary: A Multispectral Critical Edition</em>. This list does not include the contents of the <a href="/islandora/search?access=view_spectral">Livingstone Spectral Image Collection</a>, which is too extensive to enumerate on a page like this.</p>
 
@@ -3774,7 +3737,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -3789,6 +3751,21 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s 1871 Field Diary. It enumerates all the main sections of the edition and provides links to all embedded files and documentation.</p>
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Prefatory Materials</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">The 1871 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Livingstone &amp; the Manuscript</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Critical Notes</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Project History &amp; Documentation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Supplemental Pages</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Images for Viewing or Download</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Ink Spectra PowerPoint Files</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Livingstone Spectral Image Archive Files</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Project Documents</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -3822,7 +3799,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2017-02-09 23:35:04 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Scope of the Edition',
@@ -3957,7 +3934,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -3999,7 +3975,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2017-06-14 13:10:09 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'History & Chronology of the 1870 Field Diary',
@@ -4026,16 +4002,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:decimal">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Previously Documented History of the 1870 Field Diary</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">A New Chronology of the Manuscript, 1863-2017</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>The pages of the 1870 Field Diary record the long and complex history of this fascinating manuscript, one of the most visually arresting and textually intriguing documents produced by British nineteenth-century travel in Africa.</p>
 
@@ -4189,7 +4156,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -4204,7 +4170,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>This section concludes our analysis of the state of the 1870 Field Diary manuscript by summarizing the previously documented history of the diary and by using our findings in the foregoing parts of this essay to develop a comprehensive new chronology of the manuscript.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Previously Documented History of the 1870 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">A New Chronology of the Manuscript, 1863-2017</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -4237,7 +4209,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online TEI P5 Encoding Guidelines',
@@ -4288,7 +4260,6 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -4354,7 +4325,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-01-26 19:24:48 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -4416,7 +4387,6 @@ Elizabeth Maxwell</span></p>
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -4464,7 +4434,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-01-17 04:10:44 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Publishing Livingstone\'s Missionary Travels',
@@ -4969,7 +4939,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -5036,7 +5005,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-01-26 18:25:11 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Why Should We Read Livingstone’s Manuscripts?',
@@ -5174,7 +5143,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -5241,7 +5209,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-01-26 17:56:17 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Project Teams',
@@ -5474,7 +5442,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -5541,7 +5508,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-01-26 19:09:53 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Timeline',
@@ -5592,7 +5559,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -5669,7 +5635,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-06-01 16:57:44 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Note on the Three Versions of the Text',
@@ -5750,7 +5716,6 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -5798,7 +5763,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-02-09 23:54:42 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'A Project Bibliography',
@@ -5904,7 +5869,6 @@ Elizabeth Maxwell</span></p>
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -5946,7 +5910,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-05-29 20:30:26 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary VI: An Overview',
@@ -6036,7 +6000,6 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -6078,7 +6041,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2016-11-22 14:12:56 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Project Team',
@@ -6173,7 +6136,6 @@ Elizabeth Maxwell</span></p>
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -6221,7 +6183,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-02-09 23:38:43 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online: An Introduction',
@@ -6301,7 +6263,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -6368,7 +6329,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-01-26 17:45:59 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Data Management',
@@ -6422,7 +6383,6 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -6470,7 +6430,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-01-17 03:36:43 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary X: An Overview',
@@ -6551,7 +6511,6 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -6593,7 +6552,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2016-11-22 14:19:58 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Aftermath of Livingstone\'s Death',
@@ -6744,7 +6703,6 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -6779,7 +6737,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-05-28 05:34:47 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -6806,17 +6764,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Prefatory Material</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Spectral Images and Texts</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Critical Materials</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Project History</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Prefatory Material</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Prefatory Material</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p><strong><a href="/spectral-imaging/livingstones-letter-bambarre-0">Introduction to the Edition</a></strong></p>
 
@@ -6876,7 +6824,6 @@ Elizabeth Maxwell</span></p>
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -6891,7 +6838,14 @@ Elizabeth Maxwell</span></p>
     'und' => array(
       0 => array(
         'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of <em>Livingstone\'s Letter from Bambarre</em>. It enumerates the main sections of the edition and provides short descriptions of each section.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Prefatory Material</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Spectral Images and Texts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Critical Materials</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Project History</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -6924,7 +6878,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-01-24 00:13:01 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Credits and Permissions',
@@ -7115,7 +7069,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -7182,7 +7135,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-02-20 16:32:06 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Notes on Processed Spectral Images',
@@ -7209,24 +7162,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Overview List of Spectral Images Types</a></span></span>
-	<ol style="list-style-type:decimal;">
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2.1">Processed Spectral Images</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2.2">GIF Animations and PowerPoint Presentations</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2.3">Notes on a Few Unusual Imaging Cases</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Processed Spectral Image Descriptions</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">GIF Animations and PowerPoint Presentations</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Notes on a Few Unusual Imaging Cases</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>Our work on the critical editions of Livingstone’s <a href="/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871</a> Field Diaries and the <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> has resulted in a range of processed spectral images. Below, we enumerate the processed spectral image types, GIF animations, and PowerPoint presentations developed by our scientists (Roger Easton, Keith Knox, and Caroline Houston) in close collaboration with our scholars (Adrian S. Wisnicki, Megan Ward, Debbie Harrison, and Kate Simpson) to address our research goals. In a separate section of the site, we also out set out the objectives of the <a href="/spectral-imaging/prototyping-animated-spectral-images-asis">animated spectral images (ASIs)</a> developed by one of our junior project scholars (Ashanka Kumari).</p>
 
@@ -7850,7 +7786,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -7889,7 +7824,21 @@ Elizabeth Maxwell</span></p>
     'und' => array(
       0 => array(
         'value' => '<p>This page introduces, enumerates, and briefly defines the processed spectral image types, GIF animations, and PowerPoint presentations produced by the two phases of the Livingstone Spectral Imaging Project (2010-13, 2013-17).</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Overview List of Spectral Images Types</a></span></span>
+	<ol style="list-style-type:decimal;">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2.1">Processed Spectral Images</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2.2">GIF Animations and PowerPoint Presentations</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2.3">Notes on a Few Unusual Imaging Cases</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Processed Spectral Image Descriptions</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">GIF Animations and PowerPoint Presentations</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Notes on a Few Unusual Imaging Cases</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -7917,7 +7866,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'In His Own Words: Overview',
@@ -7989,7 +7938,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -8058,7 +8006,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-06-01 06:00:25 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Digital Catalogue Record',
@@ -8109,7 +8057,6 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -8175,7 +8122,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-06-01 06:07:48 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Third Massacre Narrative',
@@ -8237,7 +8184,6 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -8278,7 +8224,7 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
     ),
   ),
   'date' => '2017-02-09 23:44:22 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Creating the 1870 Field Diary',
@@ -8305,33 +8251,7 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:decimal">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Livingstone’s Undertexts</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Gatherings</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Arrangement of the Second Gathering</a></span></span>
-	<ol style="list-style-type:lower-alpha">
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">First sub-gathering (Livingstone 1870c)</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Second sub-gathering (Livingstone 1870e, 1870f)</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Third sub-gathering (Livingstone 1870h)</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Fourth sub-gathering (Livingstone 1870i, 1870j, 1870k, 1871a, 1871b)</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Fifth sub-gathering (Livingstone 1871e)</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Page Layout and Orientation</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Initial Stages of Creation</a></span></span>
-	<ol style="list-style-type:lower-alpha">
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">Acquisition of the undertexts</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link14">Annotation of one undertext</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link15">Additional notes on the undertexts</a></span></span></li>
-	</ol>
-	</li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>As a material and visual object, the 1870 Field Diary differs both from Livingstone\'s other field diaries and from similar diaries kept by other Victorian travelers to Africa and elsewhere.</p>
 
@@ -8626,7 +8546,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -8641,7 +8560,30 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     'und' => array(
       0 => array(
         'value' => '<p>This section, the first of a six-part sequence, begins a comprehensive account of the 1870 Field Diary as a constructed and preserved object, and explores the initial steps in the creation of the diary.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Livingstone’s Undertexts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Gatherings</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Arrangement of the Second Gathering</a></span></span>
+	<ol style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">First sub-gathering (Livingstone 1870c)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Second sub-gathering (Livingstone 1870e, 1870f)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Third sub-gathering (Livingstone 1870h)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Fourth sub-gathering (Livingstone 1870i, 1870j, 1870k, 1871a, 1871b)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Fifth sub-gathering (Livingstone 1871e)</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Page Layout and Orientation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Initial Stages of Creation</a></span></span>
+	<ol style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">Acquisition of the undertexts</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link14">Annotation of one undertext</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link15">Additional notes on the undertexts</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -8674,7 +8616,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Project Documentation',
@@ -8768,7 +8710,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -8816,7 +8757,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-02-16 02:03:09 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Diary across Hands, Space, and Time (2)',
@@ -9055,7 +8996,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -9103,7 +9043,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Spectral Image Collection',
@@ -9146,15 +9086,14 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/LivingstoneText_009-new-carousel_1.jpg',
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -9173,8 +9112,8 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/LivingstoneText_009-new-tile.jpg',
@@ -9191,7 +9130,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_outbound_link' => array(
     'und' => array(
       0 => array(
-        'value' => '/islandora/search?access=view_spectral',
+        'value' => 'in-his-own-words/catalogue?access=view_spectral',
         'format' => NULL,
       ),
     ),
@@ -9220,7 +9159,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The 1871 Field Diary Facsimile',
@@ -9276,7 +9215,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -9317,7 +9255,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-02-10 00:10:34 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'An Introduction to Spectral Imaging',
@@ -9394,7 +9332,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -9442,7 +9379,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-01-17 02:54:17 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Overview of Processing Objectives',
@@ -9508,7 +9445,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -9556,7 +9492,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-02-09 23:48:26 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Project Team',
@@ -9631,7 +9567,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -9679,7 +9614,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-01-16 23:42:51 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary III: An Overview',
@@ -9776,7 +9711,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -9818,7 +9752,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2016-11-22 12:23:46 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Background of the Edition',
@@ -9892,7 +9826,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -9940,7 +9873,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-01-16 23:59:19 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Project History (2)',
@@ -10365,7 +10298,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -10413,7 +10345,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-03-12 21:46:42 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Glossary of Key Terms in Livingstone\'s Manuscripts, 1870-71',
@@ -11297,7 +11229,6 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -11364,7 +11295,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s 1871 Field Diary',
@@ -11473,7 +11404,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -11546,7 +11476,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-02-09 23:32:12 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone’s Life & Expeditions',
@@ -11951,7 +11881,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -12018,7 +11947,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-01-26 19:25:24 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Southern Africans and the Advent of Colonialism',
@@ -12439,7 +12368,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -12506,7 +12434,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-01-26 20:02:12 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Collaborating Institutions',
@@ -12661,7 +12589,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -12728,7 +12655,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-01-26 19:10:33 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Site Guide',
@@ -13422,7 +13349,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -13489,7 +13415,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-06-09 03:23:25 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'What is LEAP (2013-2017)?',
@@ -13597,7 +13523,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -13664,7 +13589,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-03-20 18:53:26 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s 1870 Field Diary',
@@ -13753,7 +13678,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -13833,7 +13757,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Spectral Imaging Project: An Introduction',
@@ -13913,7 +13837,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -13980,7 +13903,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary VII: An Overview',
@@ -14090,7 +14013,6 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -14132,7 +14054,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-22 14:16:25 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Letter from Bambarre',
@@ -14219,7 +14141,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -14292,7 +14213,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-01-16 23:24:22 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -14517,7 +14438,6 @@ The Livingstone Spectral Imaging Project<br />
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -14565,7 +14485,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'A Brief History of Livingstone Online (2004-2013)',
@@ -14713,7 +14633,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -14780,7 +14699,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-01-26 18:18:54 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Outreach Worksheets',
@@ -14909,7 +14828,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -14976,7 +14894,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-04-30 02:06:59 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone, Central Africa, 1870',
@@ -15548,7 +15466,6 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -15596,7 +15513,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-03-31 17:36:38 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Project Team',
@@ -15683,7 +15600,6 @@ The Livingstone Spectral Imaging Project<br />
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -15731,7 +15647,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary V: An Overview',
@@ -15819,7 +15735,6 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -15861,7 +15776,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-22 14:09:30 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -15958,7 +15873,6 @@ The Livingstone Spectral Imaging Project<br />
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -16006,7 +15920,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Illustrative Image Credits',
@@ -16229,7 +16143,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -16296,7 +16209,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-04-08 14:30:00 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Online Digital Collection',
@@ -16393,7 +16306,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -16460,7 +16372,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-06-01 16:52:19 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Project Team',
@@ -16561,7 +16473,6 @@ The Livingstone Spectral Imaging Project<br />
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -16603,7 +16514,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-05-30 20:08:33 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Behind the Scenes: Overview',
@@ -16681,7 +16592,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -16748,7 +16658,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-04-02 16:41:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Multiple Versions of the Text',
@@ -16782,7 +16692,6 @@ The Livingstone Spectral Imaging Project<br />
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -16903,7 +16812,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-06-16 16:11:06 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online\'s Staff',
@@ -17160,7 +17069,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -17227,7 +17135,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-02-13 00:38:55 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Project Documents',
@@ -17254,19 +17162,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 350px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lopd1.0">Introduction</a><br />
-			<a href="#lopd1.1">The Entire LEAP Document Collection</a><br />
-			<a href="#lopd1.2">Area-specific Subsets of the LEAP Document Collection</a><br />
-			<a href="#lopd1.3">Highlights of the LEAP Document Collection</a><a name="lopd1.0"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span> &nbsp;&nbsp; </strong><span style="font-family:crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span> &nbsp;&nbsp; </strong><span style="font-family:crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p><em>Livingstone Online</em> takes pride in being a public project, by which we mean a project that is publicly funded and that recognizes the importance of being publicly accountable, as noted <a href="/behind-scenes/livingstone-online-code">elsewhere</a>. In that spirit, we seek to make our research as open and transparent as possible, particularly so that others developing similar projects can study, learn from, and indeed improve upon our work.</p>
 
@@ -17276,13 +17172,17 @@ The Livingstone Spectral Imaging Project<br />
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/resources/livingstone-online-project-documents/148_007321-article.jpg"><img alt="Livingstone\'s mail bag, given to H.M. Stanley, c.1872. Copyright David Livingstone Centre (National Museums of Scotland, photographer). May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/resources/livingstone-online-project-documents/148_007321-article.jpg" title="Livingstone\'s mail bag, given to H.M. Stanley, c.1872. Copyright David Livingstone Centre (National Museums of Scotland, photographer). May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Livingstone\'s mail bag, given to H.M. Stanley, c.1872. <em>Copyright David Livingstone Centre (National Museums of Scotland, photographer). May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre). </em></span></p>
+
 <p><a name="lopd1.1"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">The Entire LEAP Document Collection</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family:crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>Download <a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_LEAP_Complete_Collection.zip">The Entire LEAP Document Collection</a> (1 GB) of a series of organized subdirectories containing hundreds of files that together encompass every aspect of LEAP research.</p>
+
 <p><a name="lopd1.2"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><span style="font-family:crimson text;"><strong>Area-specific Subsets of the LEAP Document Collection</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family:crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -17322,10 +17222,10 @@ The Livingstone Spectral Imaging Project<br />
 	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_12c_LEAP_Archival_Image_Download_Documentation.zip">Archival Image Download Documentation</a> (170 KB)</li>
 	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_00_Livingstone_Online_2004-2010_Project_Documents.zip"><u>Bonus:</u> <em>Livingstone Online</em> 2004-2010 Project Documents</a> (14.2 MB)</li>
 </ul>
+
 <p><a name="lopd1.3"></a></p>
+
 <p>&nbsp;</p>
-
-
 
 <h4><span style="font-family:crimson text;"><strong>Highlights of the LEAP Document Collection</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></h4>
 
@@ -17357,7 +17257,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>12.<strong> <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_L_Final_Manuscripts_Workflow.zip"><strong>Workflow for Encoding Final Manuscripts in TEI</strong></a></strong> (175 KB) - [qtip: Megan Ward|Megan Ward (Assistant Professor, Oregon State University). Co-director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.]<span id="yui_3_16_0_1_1433886731108_8727" style="color:rgb(51,51,51);"> </span> led the LEAP team over a three-year period in transcribing and encoding in 2000+ manuscripts pages from Livingstone\'s final diaries (1866-73), the massive Unyanyembe Journal (1866-72), and all the Livingstone letters held by the David Livingstone Centre. This workflow documents the process and schedule by which this work was accomplished.</p>
 
-<p class="rtecenter"><strong><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></strong></p>
+<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
         'format' => 'full_html',
       ),
@@ -17388,15 +17288,14 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013245_0001-carousel.jpg',
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -17415,8 +17314,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013245_0001-tile.jpg',
@@ -17435,6 +17334,15 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This section provides access to a curated set of project documents created during the development of <a href="/about-site/what-leap-2013-2016">LEAP: The <em>Livingstone Online</em> Enrichment and Access Project</a>. Users have the option of downloading the entire project document collection (several hundred files produced over a three-year period),&nbsp;area-specific subsets, or <span style="line-height: 20.7999992370605px;">individual highlights</span>. Together these documents provide an intimate look into the development of the present site. Their provision supports our mission of transparency and comprehensive knowledge transfer.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lopd1.0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lopd1.1">The Entire LEAP Document Collection</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lopd1.2">Area-specific Subsets of the LEAP Document Collection</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lopd1.3">Highlights of the LEAP Document Collection</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -17463,7 +17371,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-01-26 19:23:31 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Structuring the 1870 Field Diary',
@@ -17759,7 +17667,6 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -17807,7 +17714,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary XVI: An Overview',
@@ -17893,7 +17800,6 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -17935,7 +17841,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-22 15:07:02 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Manuscript of the 1871 Field Diary',
@@ -18216,7 +18122,6 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -18257,7 +18162,7 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
     ),
   ),
   'date' => '2017-02-09 23:41:47 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Conservation and Transport',
@@ -18339,7 +18244,6 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -18387,7 +18291,7 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
     ),
   ),
   'date' => '2017-01-17 02:58:59 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -18658,7 +18562,6 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -18706,7 +18609,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-02-09 23:39:39 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'LEAP (2013-2017): A Project History, Part II',
@@ -18937,7 +18840,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -19004,7 +18906,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-04-01 22:15:40 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Repository',
@@ -19055,7 +18957,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -19130,7 +19031,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-06-01 16:40:33 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Life and Times: Overview',
@@ -19208,7 +19109,6 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -19275,7 +19175,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-04-02 19:25:41 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary XIV: An Overview',
@@ -19373,7 +19273,6 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -19415,7 +19314,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-22 14:23:34 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone’s Composition Methods',
@@ -19741,7 +19640,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -19789,7 +19687,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-09 23:45:58 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Prototyping Animated Spectral Images (ASIs)',
@@ -19990,7 +19888,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -20038,7 +19935,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Online Code',
@@ -20203,7 +20100,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -20270,7 +20166,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-26 18:07:33 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'An Integrated Project Bibliography',
@@ -20939,7 +20835,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -21006,7 +20901,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Unyanyembe Journal: An Overview',
@@ -21226,7 +21121,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -21268,7 +21162,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-25 04:17:57 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Spectral Image Processing',
@@ -21347,7 +21241,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -21395,7 +21288,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-01-17 03:32:11 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'About This Site: Overview',
@@ -21496,7 +21389,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -21578,7 +21470,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-04-06 16:26:31 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Three Versions of the 1871 Field Diary',
@@ -21612,7 +21504,6 @@ ornament their faces and heads (1871f:CVII)</p>
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -21668,7 +21559,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-09 23:43:20 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Date of the Livingstone-Stanley Meeting',
@@ -21875,7 +21766,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -21916,7 +21806,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-09 23:47:35 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Victorian Medicine',
@@ -22092,7 +21982,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -22159,7 +22048,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 00:42:51 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Location',
@@ -22210,7 +22099,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -22268,7 +22156,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-06-05 17:07:16 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -22313,7 +22201,6 @@ ornament their faces and heads (1871f:CVII)</p>
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -22355,7 +22242,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-06-14 03:45:01 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Final Field Diaries: General Overview',
@@ -22659,7 +22546,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -22701,7 +22587,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-06-14 18:22:51 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Global Sources',
@@ -22862,7 +22748,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -22910,7 +22795,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s 1871 Field Diary',
@@ -22961,7 +22846,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -23027,7 +22911,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Project History',
@@ -23279,7 +23163,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -23327,7 +23210,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => '18th- and 19th-Century European Expeditions',
@@ -23489,7 +23372,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -23556,7 +23438,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-26 20:11:56 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Design of Livingstone Online',
@@ -23726,7 +23608,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -23793,7 +23674,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-07-17 17:47:04 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => '1871 Field Diary Headers',
@@ -24029,7 +23910,6 @@ ornament their faces and heads (1871f:CVII)</p>
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -24070,7 +23950,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-10 00:09:44 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -24241,7 +24121,6 @@ ornament their faces and heads (1871f:CVII)</p>
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -24283,7 +24162,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-05-30 20:22:35 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Medical Education',
@@ -24520,7 +24399,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -24587,7 +24465,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 00:35:02 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary XV: An Overview',
@@ -24691,7 +24569,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -24733,7 +24610,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-22 14:36:11 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Project History (1)',
@@ -25193,7 +25070,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -25241,7 +25117,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-09 23:58:10 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Manuscripts in the Digital Age',
@@ -25337,7 +25213,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -25404,7 +25279,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 19:40:12 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Final Manuscripts: Three Bonus Texts',
@@ -25563,7 +25438,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -25605,7 +25479,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-06-14 03:57:45 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Diary across Hands, Space, and Time (1)',
@@ -25872,7 +25746,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -25920,7 +25793,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'David Livingstone: A Bibliography',
@@ -26311,7 +26184,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -26378,7 +26250,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 00:52:26 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Theory Behind Livingstone Online',
@@ -26482,7 +26354,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -26549,7 +26420,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-07-01 22:58:38 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Imaging the Letter',
@@ -26677,7 +26548,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -26725,7 +26595,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-01-17 03:16:38 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Fever in the Tropics',
@@ -26931,7 +26801,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -26998,7 +26867,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 00:51:12 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'LEAP (2013-2017): A Project History, Part I',
@@ -27278,7 +27147,6 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -27345,7 +27213,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-04-01 22:03:05 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Three Versions of the 1870 Field Diary',
@@ -27372,7 +27240,6 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -27428,7 +27295,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Diary across Hands, Space, and Time (3)',
@@ -27730,7 +27597,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -27778,7 +27644,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary IV: An Overview',
@@ -27886,7 +27752,6 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -27928,7 +27793,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-22 14:05:58 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'TEI P5 Encoding Guidelines',
@@ -28728,7 +28593,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -28776,7 +28640,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2017-02-09 23:49:23 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Outreach Program',
@@ -28849,7 +28713,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -28916,7 +28779,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2015-04-30 02:05:09 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'The Letter with Annotations',
@@ -28950,7 +28813,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   ),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -29009,7 +28871,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2017-01-24 00:01:11 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Composition Practices',
@@ -29288,7 +29150,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -29336,7 +29197,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone in 1871',
@@ -29990,7 +29851,6 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -30031,7 +29891,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2017-02-09 23:40:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Final Manuscripts (1865-1873)',
@@ -30111,10 +29971,57 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
+  'field_section_carousel_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000016_0003-carousel.jpg',
+        'uri' => 'public://section_page/carousel_images/liv_000016_0003-carousel.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 4152,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '9aac78ac-edab-4225-a28e-993bb3b16bb6',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 180,
+          'width' => 180,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 180,
+        'width' => 180,
+        'uuid_features_packaged_file_path' => 'assets/liv_000016_0003-carousel.jpg',
+      ),
+    ),
+  ),
   'field_section_editors' => array(),
-  'field_section_grid_image' => array(),
+  'field_section_grid_image' => array(
+    'und' => array(
+      0 => array(
+        'uid' => 1,
+        'filename' => 'liv_000016_0003-tile-v2.jpg',
+        'uri' => 'public://section_page/grid_images/liv_000016_0003-tile-v2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => 5180,
+        'status' => 1,
+        'type' => 'image',
+        'uuid' => '9706653b-1092-421a-b047-df2c590d8776',
+        'field_file_image_alt_text' => array(),
+        'field_file_image_title_text' => array(),
+        'metadata' => array(
+          'height' => 180,
+          'width' => 180,
+        ),
+        'alt' => NULL,
+        'title' => NULL,
+        'height' => 180,
+        'width' => 180,
+        'uuid_features_packaged_file_path' => 'assets/liv_000016_0003-tile-v2.jpg',
+      ),
+    ),
+  ),
   'field_section_open_in_new_tab' => array(
     'und' => array(
       0 => array(
@@ -30168,7 +30075,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2016-11-22 15:20:29 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Addressee',
@@ -30211,15 +30118,14 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013434_0001-carousel.jpg',
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -30238,8 +30144,8 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013434_0001-tile_0.jpg',
@@ -30253,14 +30159,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
       ),
     ),
   ),
-  'field_section_outbound_link' => array(
-    'und' => array(
-      0 => array(
-        'value' => '/browse/addressee',
-        'format' => NULL,
-      ),
-    ),
-  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(
     'und' => array(
       0 => array(
@@ -30300,7 +30199,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2015-06-01 16:36:22 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Field Diary XVII: An Overview',
@@ -30391,7 +30290,6 @@ The page immediately following Livingstone’s final entry records a note by Jac
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -30433,7 +30331,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
     ),
   ),
   'date' => '2016-11-22 15:08:15 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Spectral Imaging: Overview',
@@ -30511,7 +30409,6 @@ The page immediately following Livingstone’s final entry records a note by Jac
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -30578,7 +30475,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Manuscript Structure',
@@ -30884,7 +30781,6 @@ The page immediately following Livingstone’s final entry records a note by Jac
     ),
   ),
   'field_section_carousel_image' => array(),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(),
   'field_section_open_in_new_tab' => array(
@@ -30932,7 +30828,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
     ),
   ),
   'date' => '2017-02-09 23:46:43 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   $nodes[] = array(
   'title' => 'Who is Livingstone Online\'s Audience?',
@@ -31010,7 +30906,6 @@ The page immediately following Livingstone’s final entry records a note by Jac
       ),
     ),
   ),
-  'field_section_date' => array(),
   'field_section_editors' => array(),
   'field_section_grid_image' => array(
     'und' => array(
@@ -31077,7 +30972,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
     ),
   ),
   'date' => '2015-03-20 18:09:55 +0000',
-  'user_uuid' => 'a7c94fe0-7ba3-4ab0-b83a-4c141089855d',
+  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
 );
   return $nodes;
 }
