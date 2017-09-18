@@ -1582,10 +1582,15 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'link_title' => 'Bonus: Additional Final Manuscripts',
     'options' => array(
       'query' => array(
-        'query' => 'NOT+Zambezi+NOT+Zambesi+NOT+1864+NOT+abbey+NOT+oxford+NOT+picture+NOT+receipt+NOT+ticket+NOT+"than+1873"',
+        'query' => 'NOT Zambezi NOT Zambesi NOT 1864 NOT abbey NOT oxford NOT picture NOT receipt NOT ticket NOT "than 1873"',
         'access' => 'view',
-        'f%5B%5D' => 'genre_ms:"autographs+(manuscripts)"',
+        'f' => array(
+          0 => 'dateRangeYear_mi:[1865 TO 1873]',
+          1 => 'creator_ms:"Livingstone, David, 1813-1873"',
+          2 => 'genre_ms:"autographs (manuscripts)"',
+        ),
       ),
+      'identifier' => 'menu-final-manuscripts_bonus-additional-final-manuscripts:in-his-own-words/catalogue',
       'attributes' => array(
         'target' => '_blank',
       ),
@@ -1594,7 +1599,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
         'class' => '',
         'style' => '',
       ),
-      'identifier' => 'menu-final-manuscripts_bonus-additional-final-manuscripts:in-his-own-words/catalogue',
+      'fragment' => '',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -1964,10 +1969,15 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'link_title' => 'Items with Images Only',
     'options' => array(
       'query' => array(
-        'query' => 'NOT+letter+NOT+spectral+NOT+shire+NOT+rumor+NOT+blotting+NOT+signatures',
+        'query' => 'NOT letter NOT spectral NOT shire NOT rumor NOT blotting NOT signatures',
         'access' => 'both_wo_transcription',
-        'f%5B%5D' => 'genre_ms:"autographs+(manuscripts)"',
+        'f' => array(
+          0 => 'dateRangeYear_mi:[1866 TO 1873]',
+          1 => 'repository_ms:"David Livingstone Centre"',
+          2 => 'genre_ms:"autographs (manuscripts)"',
+        ),
       ),
+      'identifier' => 'menu-final-manuscripts_items-with-images-only:in-his-own-words/catalogue',
       'attributes' => array(
         'target' => '_blank',
       ),
@@ -1976,7 +1986,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
         'class' => '',
         'style' => '',
       ),
-      'identifier' => 'menu-final-manuscripts_items-with-images-only:in-his-own-words/catalogue',
+      'fragment' => '',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -1993,13 +2003,17 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'router_path' => 'uuid',
     'link_title' => 'LEAP (2013-2017): A Project History, Part I',
     'options' => array(
-      'attributes' => array(),
+      'identifier' => 'menu-final-manuscripts_leap-2013-2017-a-project-history-part-i:uuid/node/da31bc5d-a889-49c7-8a85-2c9fc373af4d',
+      'attributes' => array(
+        'target' => '_blank',
+      ),
       'item_attributes' => array(
         'id' => '',
         'class' => '',
         'style' => '',
       ),
-      'identifier' => 'menu-final-manuscripts_leap-2013-2017-a-project-history-part-i:uuid/node/da31bc5d-a889-49c7-8a85-2c9fc373af4d',
+      'query' => array(),
+      'fragment' => '',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -2016,13 +2030,17 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'router_path' => 'uuid',
     'link_title' => 'LEAP (2013-2017): A Project History, Part II',
     'options' => array(
-      'attributes' => array(),
+      'identifier' => 'menu-final-manuscripts_leap-2013-2017-a-project-history-part-ii:uuid/node/9e853e69-ef25-40c6-bd0a-e296e3849c47',
+      'attributes' => array(
+        'target' => '_blank',
+      ),
       'item_attributes' => array(
         'id' => '',
         'class' => '',
         'style' => '',
       ),
-      'identifier' => 'menu-final-manuscripts_leap-2013-2017-a-project-history-part-ii:uuid/node/9e853e69-ef25-40c6-bd0a-e296e3849c47',
+      'query' => array(),
+      'fragment' => '',
     ),
     'module' => 'menu',
     'hidden' => 0,
