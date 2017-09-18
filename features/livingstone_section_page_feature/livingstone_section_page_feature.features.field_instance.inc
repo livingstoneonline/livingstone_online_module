@@ -48,7 +48,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -57,7 +57,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
     'bundle' => 'section_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This field is not displayed to the user, but used to populate &lt;role:AUT&gt; elements in the NINE\'s RDF Export.',
+    'description' => 'This field is not displayed to the user, but used to populate &lt;role:AUT&gt; elements in the NINE\'s RDF Export. Please give the name in the last name, first name format: "Wisnicki, Adrian S."',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -143,7 +143,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'rows' => 20,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -190,7 +190,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -254,54 +254,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'node-section_page-field_section_date'.
-  $field_instances['node-section_page-field_section_date'] = array(
-    'bundle' => 'section_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'search_index' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_section_date',
-    'label' => 'Date',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 9,
     ),
   );
 
@@ -310,7 +263,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
     'bundle' => 'section_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This field is not displayed to the user, but used to populate &lt;role:EDT&gt; elements in the NINE\'s RDF Export.',
+    'description' => 'This field is not displayed to the user, but used to populate &lt;role:EDT&gt; elements in the NINE\'s RDF Export. Please give the name in the last name, first name format: "Wisnicki, Adrian S."',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -414,7 +367,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -553,7 +506,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 6,
     ),
   );
 
@@ -621,7 +574,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         ),
       ),
       'type' => 'textfield_&_textfield',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -666,7 +619,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 0,
     ),
   );
 
@@ -713,7 +666,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 0,
+      'weight' => 2,
     ),
   );
 
@@ -756,7 +709,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
       'module' => 'livingstone_toc',
       'settings' => array(),
       'type' => 'table_of_contents_select',
-      'weight' => 12,
+      'weight' => 5,
     ),
   );
 
@@ -812,7 +765,6 @@ function livingstone_section_page_feature_field_default_field_instances() {
   t('Author(s)');
   t('Byline');
   t('Carousel Image');
-  t('Date');
   t('Editor(s)');
   t('Grid Image');
   t('Main Text');
@@ -826,8 +778,8 @@ function livingstone_section_page_feature_field_default_field_instances() {
   t('Teaser');
   t('Text displayed in the the gridview level 2 for this section page.');
   t('The section this page belongs to.');
-  t('This field is not displayed to the user, but used to populate &lt;role:AUT&gt; elements in the NINE\'s RDF Export.');
-  t('This field is not displayed to the user, but used to populate &lt;role:EDT&gt; elements in the NINE\'s RDF Export.');
+  t('This field is not displayed to the user, but used to populate &lt;role:AUT&gt; elements in the NINE\'s RDF Export. Please give the name in the last name, first name format: "Wisnicki, Adrian S."');
+  t('This field is not displayed to the user, but used to populate &lt;role:EDT&gt; elements in the NINE\'s RDF Export. Please give the name in the last name, first name format: "Wisnicki, Adrian S."');
   t('Transcriptions');
 
   return $field_instances;
