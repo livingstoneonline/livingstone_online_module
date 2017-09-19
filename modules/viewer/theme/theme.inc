@@ -45,7 +45,7 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
   drupal_add_js("$lib_path/jquery-ui/1.11.4/jquery-ui.js");
   drupal_add_css("$lib_path/jquery-ui/1.11.4/jquery-ui.css");
   drupal_add_js("$lib_path/drupal.js");
-  drupal_add_js("$lib_path/openseadragon/2.2.0/openseadragon.js");
+  drupal_add_js("$lib_path/openseadragon/2.3.1/openseadragon.js");
   drupal_add_js("$js_path/djatoka-tile-source.js");
   drupal_add_js("$lib_path/URI.js");
   drupal_add_js("$js_path/livingstone-manuscript-viewer.js");
