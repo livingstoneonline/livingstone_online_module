@@ -538,7 +538,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -48,
+    'weight' => -49,
     'customized' => 1,
   );
   // Exported menu link: main-menu_key-terms-in-livingstones-manuscripts-1870-71:uuid/node/749fac17-d2c6-49e7-bfed-0aca417379b5.
@@ -561,7 +561,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -43,
     'customized' => 1,
     'parent_identifier' => 'main-menu_spectral-imaging:spectral-imaging',
   );
@@ -754,7 +754,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -47,
     'customized' => 1,
     'parent_identifier' => 'main-menu_resources:resources',
   );
@@ -778,7 +778,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
     'parent_identifier' => 'main-menu_resources:resources',
   );
@@ -874,7 +874,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -43,
+    'weight' => -42,
     'customized' => 1,
     'parent_identifier' => 'main-menu_spectral-imaging:spectral-imaging',
   );
@@ -898,7 +898,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
     'customized' => 1,
     'parent_identifier' => 'main-menu_spectral-imaging:spectral-imaging',
   );
@@ -922,9 +922,35 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
     'parent_identifier' => 'main-menu_spectral-imaging:spectral-imaging',
+  );
+  // Exported menu link: main-menu_livingstones-final-manuscripts-1865-1873:uuid/node/ef7677b7-0212-4c34-bb8e-ce826eefb0af.
+  $menu_links['main-menu_livingstones-final-manuscripts-1865-1873:uuid/node/ef7677b7-0212-4c34-bb8e-ce826eefb0af'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'uuid/node/ef7677b7-0212-4c34-bb8e-ce826eefb0af',
+    'router_path' => 'uuid',
+    'link_title' => 'Livingstone\'s Final Manuscripts (1865-1873)',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'query' => array(),
+      'fragment' => '',
+      'identifier' => 'main-menu_livingstones-final-manuscripts-1865-1873:uuid/node/ef7677b7-0212-4c34-bb8e-ce826eefb0af',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -42,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_in-his-own-words:in-his-own-words',
   );
   // Exported menu link: main-menu_livingstones-letter-from-bambarre:uuid/node/8229df32-720a-4447-82e1-9f17f8de0d71.
   $menu_links['main-menu_livingstones-letter-from-bambarre:uuid/node/8229df32-720a-4447-82e1-9f17f8de0d71'] = array(
@@ -946,7 +972,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
     'parent_identifier' => 'main-menu_spectral-imaging:spectral-imaging',
   );
@@ -1066,7 +1092,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -42,
+    'weight' => -41,
     'customized' => 1,
     'parent_identifier' => 'main-menu_spectral-imaging:spectral-imaging',
   );
@@ -1263,6 +1289,32 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_spectral-imaging:spectral-imaging',
   );
+  // Exported menu link: main-menu_spectral-imaging-overview:uuid/node/f2928a2c-8998-407f-beab-43aaa7679c45.
+  $menu_links['main-menu_spectral-imaging-overview:uuid/node/f2928a2c-8998-407f-beab-43aaa7679c45'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'uuid/node/f2928a2c-8998-407f-beab-43aaa7679c45',
+    'router_path' => 'uuid',
+    'link_title' => 'Spectral Imaging: Overview',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'query' => array(),
+      'fragment' => '',
+      'identifier' => 'main-menu_spectral-imaging-overview:uuid/node/f2928a2c-8998-407f-beab-43aaa7679c45',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_spectral-imaging:spectral-imaging',
+  );
   // Exported menu link: main-menu_spectral-imaging:spectral-imaging.
   $menu_links['main-menu_spectral-imaging:spectral-imaging'] = array(
     'menu_name' => 'main-menu',
@@ -1285,7 +1337,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -47,
+    'weight' => -48,
     'customized' => 1,
   );
   // Exported menu link: main-menu_the-design-of-livingstone-online:uuid/node/cc3ab471-98ad-431e-a7b7-8e0be4959241.
@@ -1380,7 +1432,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -44,
     'customized' => 1,
     'parent_identifier' => 'main-menu_spectral-imaging:spectral-imaging',
   );
@@ -1404,7 +1456,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
     'parent_identifier' => 'main-menu_spectral-imaging:spectral-imaging',
   );
@@ -2117,6 +2169,33 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -46,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-final-manuscripts_tei-p5-encoding-guidelines:uuid/node/255bf215-fc27-4341-8695-a0a7b4a38d6f.
+  $menu_links['menu-final-manuscripts_tei-p5-encoding-guidelines:uuid/node/255bf215-fc27-4341-8695-a0a7b4a38d6f'] = array(
+    'menu_name' => 'menu-final-manuscripts',
+    'link_path' => 'uuid/node/255bf215-fc27-4341-8695-a0a7b4a38d6f',
+    'router_path' => 'uuid',
+    'link_title' => 'TEI P5 Encoding Guidelines',
+    'options' => array(
+      'identifier' => 'menu-final-manuscripts_tei-p5-encoding-guidelines:uuid/node/255bf215-fc27-4341-8695-a0a7b4a38d6f',
+      'attributes' => array(
+        'target' => '_blank',
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'query' => array(),
+      'fragment' => '',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -25,
     'customized' => 1,
   );
   // Exported menu link: menu-final-manuscripts_the-aftermath-of-livingstones-death:uuid/node/535bf1aa-5479-42de-984f-7048ec054e4c.
@@ -3987,6 +4066,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
   t('Livingstone\'s 1870 Field Diary');
   t('Livingstone\'s 1871 Field Diary');
   t('Livingstone\'s Composition Practices');
+  t('Livingstone\'s Final Manuscripts (1865-1873)');
   t('Livingstone\'s Global Sources');
   t('Livingstone\'s Letter from Bambarre');
   t('Livingstone\'s Letter with Annotations');
@@ -4020,6 +4100,7 @@ function livingstone_menu_feature_menu_default_menu_links() {
   t('Spectral Image Processing');
   t('Spectral Imaging');
   t('Spectral Imaging: Home');
+  t('Spectral Imaging: Overview');
   t('Structuring the 1870 Field Diary');
   t('TEI P5 Encoding Guidelines');
   t('Terminology and Acronyms');
