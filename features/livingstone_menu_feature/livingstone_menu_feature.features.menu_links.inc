@@ -3587,13 +3587,16 @@ function livingstone_menu_feature_menu_default_menu_links() {
         'view_pid' => 'liv:002564',
         'view_page' => 0,
       ),
-      'attributes' => array(),
+      'identifier' => 'menu-livingstone-letter-bambarre_images-and-transcription-of-the-letter:in-his-own-words/catalogue',
+      'attributes' => array(
+        'target' => '_blank',
+      ),
       'item_attributes' => array(
         'id' => '',
         'class' => '',
         'style' => '',
       ),
-      'identifier' => 'menu-livingstone-letter-bambarre_images-and-transcription-of-the-letter:in-his-own-words/catalogue',
+      'fragment' => '',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -3656,13 +3659,17 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'router_path' => 'uuid',
     'link_title' => 'Key Terms in Livingstone\'s Manuscripts, 1870-71',
     'options' => array(
-      'attributes' => array(),
+      'identifier' => 'menu-livingstone-letter-bambarre_key-terms-in-livingstones-manuscripts-1870-71:uuid/node/749fac17-d2c6-49e7-bfed-0aca417379b5',
+      'attributes' => array(
+        'target' => '_blank',
+      ),
       'item_attributes' => array(
         'id' => '',
         'class' => '',
         'style' => '',
       ),
-      'identifier' => 'menu-livingstone-letter-bambarre_key-terms-in-livingstones-manuscripts-1870-71:uuid/node/749fac17-d2c6-49e7-bfed-0aca417379b5',
+      'query' => array(),
+      'fragment' => '',
     ),
     'module' => 'menu',
     'hidden' => 0,

@@ -1454,8 +1454,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Livingstone’s letter to Waller consists of two leaves, both of which are covered recto and verso, recto to verso, with writing. The leaves are taken from a proof copy of <em>The Proceedings of the Royal Geographical Society</em>, 14.1 (8 Nov. 1869): 1-18. This issue is devoted almost wholly to letters from Livingstone written in July 1868. This proof copy, like the 24 November 1869 issue of <em>The Standard</em>, was delivered to Livingstone on 4 February 1871 along with three letters from Waller (see <a href="http://livingstonestage.lib.umd.edu/spectral-imaging/livingstones-letter-annotations">The Letter with Annotations, note for 0001.2-3</a>). One of the letters from Waller (1869b), in fact, discusses the particular RGS meeting to which the <em>Proceedings</em> correspond.</p>
+        'value' => '<p>Livingstone’s letter to Waller consists of two leaves, both of which are covered recto and verso, recto to verso, with writing. The leaves are taken from a proof copy of <em>The Proceedings of the Royal Geographical Society</em>, 14.1 (8 Nov. 1869): 1-18. This issue is devoted almost wholly to letters from Livingstone written in July 1868. This proof copy, like the 24 November 1869 issue of <em>The Standard</em>, was delivered to Livingstone on 4 February 1871 along with three letters from Waller (see <a href="http://livingstonestage.lib.umd.edu/spectral-imaging/livingstones-letter-annotations">The Letter with Annotations, note for 0001.2-3</a>). One of the letters from Waller (1869b), in fact, discusses the particular RGS meeting to which the <em>Proceedings</em> correspond.</p>
 
 <p class="space1 rtecenter" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/note-the-text-the-letter/liv_002564_0002_color-article1.jpg"><img alt="A color image of a page of the Letter from Bambarre (Livingstone 1871c:[2]), detail. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/note-the-text-the-letter/liv_002564_0002_color-article1.jpg" title="A color image of a page of the Letter from Bambarre (Livingstone 1871c:[2]), detail. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="80%" /></a><br />
 <span style="font-size:12px;display:inline-block;text-align:left;width:80%">A color image of a page of the <em>Letter from Bambarre</em> (Livingstone 1871c:[2]), detail. <em>Copyright Peter and Nejma Beard. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. This segment shows, upside-down, the printed conclusion of Livingstone’s "despatch" to the Earl of Clarendon (July 1868), and, handwritten, Livingstone’s reference to that same despatch on the last line on the page: "Despatch supplementary to that from Bangwe[olo]."</span></p>
@@ -4348,8 +4347,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<div class="doubleimg">
+        'value' => '<div class="doubleimg">
 <div class="doubleleft"><a href="/sites/default/files/spectral-imaging/acknowledgments/liv_003125_0001-article.jpg"><img alt="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/spectral-imaging/acknowledgments/liv_003125_0001-article.jpg" style="height: 318px; margin-right: 10px" title="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></div>
 
 <div class="doubleright"><a href="/sites/default/files/spectral-imaging/acknowledgments/liv_003125_0002-article.jpg"><img alt="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/spectral-imaging/acknowledgments/liv_003125_0002-article.jpg" style="height: 318px;" title="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></div>
@@ -5649,8 +5647,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Victorian explorers and travellers produced a variety of records to document their experiences in the field. Often they produced these records in stages, with each successive record building on and revising the information contained in previous records. Roy C. Bridges (1987:180) has identified three general categories of such records: “There is the first-stage or ‘raw’ record made as [the explorer] went along, the more considered and organised journal or perhaps letter written during intervals of greater leisure and finally the definitive account of the expedition, usually composed after his return to Europe with a view to publication.” However, adds Bridges, “these categories are not of course absolute and in practice may merge into one another in various ways.” (For more on the critical debate, see Youngs 1994 and Wisnicki 2010.)</p>
+        'value' => '<p>Victorian explorers and travellers produced a variety of records to document their experiences in the field. Often they produced these records in stages, with each successive record building on and revising the information contained in previous records. Roy C. Bridges (1987:180) has identified three general categories of such records: “There is the first-stage or ‘raw’ record made as [the explorer] went along, the more considered and organised journal or perhaps letter written during intervals of greater leisure and finally the definitive account of the expedition, usually composed after his return to Europe with a view to publication.” However, adds Bridges, “these categories are not of course absolute and in practice may merge into one another in various ways.” (For more on the critical debate, see Youngs 1994 and Wisnicki 2010.)</p>
 
 <p>Livingstone didn’t live to publish “the definitive account” of his final travels. Rather, Horace Waller posthumously edited and published the <em>Last Journals</em> in 1874 (see Helly 1987; also see <a href="/spectral-imaging/manuscript">The Manuscript</a>). However, Bridges’s categories otherwise offer a useful method for grouping the documents Livingstone produced on his last journey. These documents include first-stage records such as field diaries and notebooks, and second-stage records such as letters and the Unyanyembe Journal (1866-72) into which Livingstone transcribed most of his field diaries. Bridges (1987:181, 184) underscores the value of the “raw,” unadulterated, first-stage records: “Direct and full information on the journey is provided with no later glossing, omission or addition”; as a result, “Livingstone’s notebooks and diaries do sometimes give information which is simply not present at all in published works.”</p>
 
@@ -6065,8 +6062,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p class="space1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/project-team/Raking_Light_Set_Up_Toth_28_June_2010-article.jpg"><img alt="Sketch diagram of the raking light setup used for spectrally imaging both the 1870 and 1871 Field Diaries at the National Library of Scotland, 28 June 2010. Copyright Michael B. Toth. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/project-team/Raking_Light_Set_Up_Toth_28_June_2010-article.jpg" style="width: 80%; border-width: 1px; border-style: solid; border-color: #000000;" title="Sketch diagram of the raking light setup used for spectrally imaging both the 1870 and 1871 Field Diaries at the National Library of Scotland, 28 June 2010. Copyright Michael B. Toth. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a><br />
+        'value' => '<p class="space1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/project-team/Raking_Light_Set_Up_Toth_28_June_2010-article.jpg"><img alt="Sketch diagram of the raking light setup used for spectrally imaging both the 1870 and 1871 Field Diaries at the National Library of Scotland, 28 June 2010. Copyright Michael B. Toth. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/project-team/Raking_Light_Set_Up_Toth_28_June_2010-article.jpg" style="width: 80%; border-width: 1px; border-style: solid; border-color: #000000;" title="Sketch diagram of the raking light setup used for spectrally imaging both the 1870 and 1871 Field Diaries at the National Library of Scotland, 28 June 2010. Copyright Michael B. Toth. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a><br />
 <span style="font-size:12px;display:inline-block;text-align:left;width:80%">Sketch diagram of the raking light setup used for spectrally imaging both the 1870 and 1871 Field Diaries at the National Library of Scotland, 28 June 2010. <em>Copyright Michael B. Toth. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> Learn more about the imaging set-up in our <a href="/spectral-imaging/project-history-1">project history</a>.</span></p>
 
 <p><em>Scholarship and Science</em></p>
@@ -6352,8 +6348,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Data management entails the organization and storage of all information related to a specific object (in this case, <em>Livingstone’s Letter from Bambarre</em>). The information is not solely limited to the images. Structural and descriptive metadata are also recorded, along with camera and lighting specifications, the algorithms used to process images, and software information. The more information recorded, the easier it is to recreate the image capture. This procedure therefore serves as a preservation method for future users, allowing them to understand all aspects of the image capture.</p>
+        'value' => '<p>Data management entails the organization and storage of all information related to a specific object (in this case, <em>Livingstone’s Letter from Bambarre</em>). The information is not solely limited to the images. Structural and descriptive metadata are also recorded, along with camera and lighting specifications, the algorithms used to process images, and software information. The more information recorded, the easier it is to recreate the image capture. This procedure therefore serves as a preservation method for future users, allowing them to understand all aspects of the image capture.</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/data-management/DSCN3651-article.jpg"><img alt="Data manager Doug Emery and program manager Mike Toth confer over the data produced by the spectral imaging of Livingstone’s Letter from Bambarre. Copyright Adrian S. Wisnicki. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/data-management/DSCN3651-article.jpg" title="Data manager Doug Emery and program manager Mike Toth confer over the data produced by the spectral imaging of Livingstone’s Letter from Bambarre. Copyright Adrian S. Wisnicki. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Data manager Doug Emery and program manager Mike Toth confer over the data produced by the spectral imaging of <em>Livingstone’s Letter from Bambarre</em>. <em>Copyright Adrian S. Wisnicki. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
@@ -8153,8 +8148,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Livingstone produced at least three narratives of the massacre he witnessed in Nyangwe on 15 July 1871. One narrative appears in the <a href="/islandora/search/liv_000095?full_record=0&amp;access=all&amp;limit=catalogue">1871 Field Diary</a> (Livingstone 1871f:CXLVI-CXLVIII), another in the <a href="/islandora/search/&quot;Unyanyembe Journal&quot; NOT field?access=all&amp;limit=catalogue">Unyanyembe Journal</a> (Livingstone 1866-72:[691]-[696]). He includes an additional narrative, which he composed between the former two, in a 14 November 1871 <a href="/islandora/search/Granville%20NOT%20december?access=all&amp;limit=catalogue&amp;f%5B4%5D=dateRangeYear_mi%3A1871&amp;full_record=0">letter to Earl Granville</a> (Livingstone 1872d). Stanley brought this letter back to England, and it was published in the <em>Parliamentary Papers</em> of 1872 (LXX [C-598], 10-15), making it the only narrative of the massacre published in Livingstone\'s lifetime. Livingstone also copied the letter into the <a href="/islandora/search/&quot;Unyanyembe Journal&quot; NOT field?access=all&amp;limit=catalogue">Unyanyembe Journal</a>, where the letter precedes the Journal’s narrative of the massacre (the letter appears on pages [565]-[583]; the journal entries describing the massacre are on [691]-[696]). The transcription that follows derives from the copy of the letter in the Journal.</p>
+        'value' => '<p>Livingstone produced at least three narratives of the massacre he witnessed in Nyangwe on 15 July 1871. One narrative appears in the <a href="/islandora/search/liv_000095?full_record=0&amp;access=all&amp;limit=catalogue">1871 Field Diary</a> (Livingstone 1871f:CXLVI-CXLVIII), another in the <a href="/islandora/search/&quot;Unyanyembe Journal&quot; NOT field?access=all&amp;limit=catalogue">Unyanyembe Journal</a> (Livingstone 1866-72:[691]-[696]). He includes an additional narrative, which he composed between the former two, in a 14 November 1871 <a href="/islandora/search/Granville%20NOT%20december?access=all&amp;limit=catalogue&amp;f%5B4%5D=dateRangeYear_mi%3A1871&amp;full_record=0">letter to Earl Granville</a> (Livingstone 1872d). Stanley brought this letter back to England, and it was published in the <em>Parliamentary Papers</em> of 1872 (LXX [C-598], 10-15), making it the only narrative of the massacre published in Livingstone\'s lifetime. Livingstone also copied the letter into the <a href="/islandora/search/&quot;Unyanyembe Journal&quot; NOT field?access=all&amp;limit=catalogue">Unyanyembe Journal</a>, where the letter precedes the Journal’s narrative of the massacre (the letter appears on pages [565]-[583]; the journal entries describing the massacre are on [691]-[696]). The transcription that follows derives from the copy of the letter in the Journal.</p>
 
 <p class="rtecenter">*</p>
 
@@ -8647,16 +8641,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Complete Project Documentation</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Area-specific Subsets of Project Documentation</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>Research for our critical edition of Livingstone\'s 1871 Field Diary has resulted in the production of a significant amount of supporting documentation. This documentation encompasses all aspects of the project and, as a whole, offers an intimate glimpse into project development. The project team has curated this documentation in a handful of ways. First, the team has organized the documentation into categories of project endeavor in order to facilitate study of individual files or file sequences. As part of this, we have removed duplicate or variant files with the goal of being representative (rather than exhaustive) about our research. Second, documentation files have been renamed to reflect the contents and actual order of research activities (although, as users will find, research activities did not always take an organized form and involved much trial and error). Finally, we have lightly edited the documentation to remove personal information or other sensitive material such as passwords.</p>
 
@@ -8728,7 +8713,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     'und' => array(
       0 => array(
         'value' => '<p>This page provides download access to some 70 project documents or document sets produced during the course of primary research activities (2010-13) for our critical edition of Livingstone’s 1871 Field Diary. We offer the documents as a single comprehensive collection and grouped by area of project endeavor. As a bonus, we also offer the entire Livingstone Spectral Image Archive (except for archival images and MD5 checksum files) as a single ZIP file.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Complete Project Documentation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Area-specific Subsets of Project Documentation</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -8788,30 +8779,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:decimal">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Handling the Manuscript Pages</a></span></span>
-	<ol style="list-style-type:lower-alpha">
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Page Folds</a></span></span>
-		<ol style="list-style-type:lower-roman">
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Original folds</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Broad patterns and categories of manuscript folding</a></span></span></li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Page Impressions</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Torn Pages and Manuscript Holes</a></span></span>
-		<ol style="list-style-type:lower-roman">
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Torn pages</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Manuscript holes</a></span></span></li>
-		</ol>
-		</li>
-	</ol>
-	</li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Handling the Manuscript Pages</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Handling the Manuscript Pages</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p style="font-size:14px;">– Spectral images most relevant for study of this aspect of the manuscript:<br />
 <span style="padding-left:2em; padding-bottom:-.5em"><em>Folds</em>: raking, color_raking, IC3</span><br />
@@ -9014,6 +8982,28 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     'und' => array(
       0 => array(
         'value' => '<p>This section continues our analysis of the state of the 1870 Field Diary manuscript by turning to material aspects of the diary closely linked to its travels across hands, space, and time. In particular, this section uses manuscript topography as a means to illuminate how handling by a variety of individuals has helped shape the present material state of the manuscript.</p>
+<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Handling the Manuscript Pages</a></span></span>
+	<ol style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Page Folds</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Original folds</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Broad patterns and categories of manuscript folding</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Page Impressions</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Torn Pages and Manuscript Holes</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Torn pages</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Manuscript holes</a></span></span></li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+</ol>
+</div>
+
 ',
         'format' => 'full_html',
       ),
@@ -9190,8 +9180,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>The <em>Last Journals</em> (Livingstone 1874,2:opposite 114) contains a facsimile of a portion of the 1871 Field Diary (Livingstone 1871f:CXVII). On first glance, the facsimile appears to be an exact reproduction of the diary page, thereby potentially enabling scholars to gauge the fading of the ink between 1874 and 2010 (when the diary was spectrally imaged). However, although Livingstone’s handwritten overtext looks the same, the position and size of the newsprint undertext appears to have changed relative to the overtext! The phenomenon is particularly obviously when one examines the position of the word "valleys" which appears in the center of the left-hand side of both images. How is this possible?</p>
+        'value' => '<p>The <em>Last Journals</em> (Livingstone 1874,2:opposite 114) contains a facsimile of a portion of the 1871 Field Diary (Livingstone 1871f:CXVII). On first glance, the facsimile appears to be an exact reproduction of the diary page, thereby potentially enabling scholars to gauge the fading of the ink between 1874 and 2010 (when the diary was spectrally imaged). However, although Livingstone’s handwritten overtext looks the same, the position and size of the newsprint undertext appears to have changed relative to the overtext! The phenomenon is particularly obviously when one examines the position of the word "valleys" which appears in the center of the left-hand side of both images. How is this possible?</p>
 
 <p class="space-1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/the-1871-field-diary-facsimile/liv_016020_0001.jpg"><img alt="A portion of a page of the 1871 Field Diary (Livingstone 1871f:CXVII): facsimile from the Last Journals (Livingstone 1874,2:opposite 114). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/the-1871-field-diary-facsimile/liv_016020_0001.jpg" style="width: 80%;" title="A portion of a page of the 1871 Field Diary (Livingstone 1871f:CXVII): facsimile from the Last Journals (Livingstone 1874,2:opposite 114). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></p>
 
@@ -9286,8 +9275,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Spectral imaging, a digital imaging technique with a variety of applications, is used in cultural heritage studies to enhance select components of a document or object. The object is illuminated by a number of narrow bands of wavelengths of light from the ultraviolet (UV) through the visible and the infrared (IR) spectrum. An image is taken of the object when exposed to each wavelength, with the resulting series of images stacked together to form a spectral map of the imaged object. Working with this image stack, imaging scientists then write mathematical algorithms to highlight and analyze specific components of the given document.</p>
+        'value' => '<p>Spectral imaging, a digital imaging technique with a variety of applications, is used in cultural heritage studies to enhance select components of a document or object. The object is illuminated by a number of narrow bands of wavelengths of light from the ultraviolet (UV) through the visible and the infrared (IR) spectrum. An image is taken of the object when exposed to each wavelength, with the resulting series of images stacked together to form a spectral map of the imaged object. Working with this image stack, imaging scientists then write mathematical algorithms to highlight and analyze specific components of the given document.</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/introduction-spectral-imaging/12-wavelengths.jpg"><img alt="The first page of the Letter from Bambarre (Livingstone 1871c:[1]) as illuminated by twelve wavelenghts of light, ranging from the ultraviolet (365nm), upper left corner, to the near infrared (870nm), lower right corer. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/introduction-spectral-imaging/12-wavelengths.jpg" title="The first page of the Letter from Bambarre (Livingstone 1871c:[1]) as illuminated by twelve wavelenghts of light, ranging from the ultraviolet (365nm), upper left corner, to the near infrared (870nm), lower right corer. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">The first page of the <em>Letter from Bambarre</em> (Livingstone 1871c:[1]) as illuminated by twelve wavelenghts of light, ranging from the ultraviolet (365nm), upper left corner, to the near infrared (870nm), lower right corer. <em>Copyright Peter and Nejma Beard. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
@@ -9410,8 +9398,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Spectral image processing uses tailored mathematical algorithms in order to manipulate and enhance raw spectral image data. In the case of Livingstone’s 1871 Field Diary, such processing relies on the fact that different ink types on a given page (for instance, Livingstone’s ink, the ink of the newsprint, etc.) behave differently under different bands of wavelengths of light. Imaging scientists can use this differentiated behavior to create processed images (renderings of combinations of bands) that distinguish among what may be otherwise very subtle differences in color.</p>
+        'value' => '<p>Spectral image processing uses tailored mathematical algorithms in order to manipulate and enhance raw spectral image data. In the case of Livingstone’s 1871 Field Diary, such processing relies on the fact that different ink types on a given page (for instance, Livingstone’s ink, the ink of the newsprint, etc.) behave differently under different bands of wavelengths of light. Imaging scientists can use this differentiated behavior to create processed images (renderings of combinations of bands) that distinguish among what may be otherwise very subtle differences in color.</p>
 
 <p class="space-2 rtecenter"><a href="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016135_0001.jpg"><img alt="An image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016135_0001.jpg" style="height: 220px; margin-left: 10px" title="An image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a> <a href="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016136_0001.jpg"><img alt="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI pack16 [0940]), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016136_0001.jpg" style="height: 220px; margin-left: 10px; margin-top: 10px" title="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI pack16 [0940]), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a> <a href="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016137_0001.jpg"><img alt="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI pseudo_v1), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016137_0001.jpg" style="height: 220px; margin-left: 10px; margin-top: 10px" title="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI pseudo_v1), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a> <a href="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016138_0001.jpg"><img alt="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI pca621r), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016138_0001.jpg" style="height: 220px; margin-left: 10px" title="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI pca621r), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a> <a href="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016139_0001.jpg"><img alt="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI pca621r_adapThresh), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016139_0001.jpg" style="height: 220px; margin-left: 10px; margin-top: 10px" title="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI pca621r_adapThresh), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a> <a href="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016140_0001.jpg"><img alt="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI pca621r_pcolor), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016140_0001.jpg" style="height: 220px; margin-left: 10px; margin-top: 10px" title="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI pca621r_pcolor), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a> <a href="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016141_0001.jpg"><img alt="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI spectral_ratio), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016141_0001.jpg" style="height: 220px; margin-left: 10px" title="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI spectral_ratio), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a> <a href="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016142_0001.jpg"><img alt="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI sharpie), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016142_0001.jpg" style="height: 220px; margin-left: 10px; margin-top: 10px" title="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI sharpie), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a> <a href="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016143_0001.jpg"><img alt="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI raking), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/overview-processing-objectives/liv_016143_0001.jpg" style="height: 220px; margin-left: 10px; margin-top: 10px" title="A processed spectral image of a page of the 1871 Field Diary (Livingstone 1871f:CXXVI raking), detail. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></p>
 
@@ -9523,8 +9510,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/project-team-0/liv_000209_0007_pseudoBY_940_by_592-article.jpg"><img alt="A processed spectral image of a page from the 1870 Field Diary (1871b:LXXXIV pseudo_v4_BY). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/project-team-0/liv_000209_0007_pseudoBY_940_by_592-article.jpg" title="A processed spectral image of a page from the 1870 Field Diary (1871b:LXXXIV pseudo_v4_BY). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/project-team-0/liv_000209_0007_pseudoBY_940_by_592-article.jpg"><img alt="A processed spectral image of a page from the 1870 Field Diary (1871b:LXXXIV pseudo_v4_BY). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/project-team-0/liv_000209_0007_pseudoBY_940_by_592-article.jpg" title="A processed spectral image of a page from the 1870 Field Diary (1871b:LXXXIV pseudo_v4_BY). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A processed spectral image of a page from the 1870 Field Diary (1871b:LXXXIV pseudo_v4_BY). <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. This page contains the entries Livingstone wrote just before (4 February 1871) and after (8 February 1871) he composed the <em>Letter from Bambarre</em>. In the former entry, Livingstone notes the imminent arrival of the freed Banian slaves that would deliver the letters from Horace Waller that inspired Livingstone to write his letter.</span></p>
 
 <p><em>Scholarship</em></p>
@@ -9788,8 +9774,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Livingstone was at a personal and profession nadir when he wrote his letter to Waller. The dramatic crossing of the African continent from 1852 to 1856 and the resulting narrative, <em>Missionary Travels</em> (1857), established Livingstone\'s reputation as an explorer, abolitionist, and imperial visionary. Unfortunately, his subsequent journey to Africa (1858-64) revealed that many of his plans for African colonization and development had been poorly conceived.</p>
+        'value' => '<p>Livingstone was at a personal and profession nadir when he wrote his letter to Waller. The dramatic crossing of the African continent from 1852 to 1856 and the resulting narrative, <em>Missionary Travels</em> (1857), established Livingstone\'s reputation as an explorer, abolitionist, and imperial visionary. Unfortunately, his subsequent journey to Africa (1858-64) revealed that many of his plans for African colonization and development had been poorly conceived.</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/background-the-edition/liv_000071_0001-article1.jpg"><img alt="The small foldout map of Central Africa included with the published edition of Livingstone\'s Last Journals (1874). Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/background-the-edition/liv_000071_0001-article1.jpg" title="The small foldout map of Central Africa included with the published edition of Livingstone\'s Last Journals (1874). Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">The small foldout map of Central Africa included with the published edition of Livingstone\'s <em>Last Journals</em> (1874). <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank">Creative Commons Share-alike 2.5 UK: Scotland</a></em>. Bambarre lies almost exactly at the center of the map, just west of Lake Tanganyika (see section detail, below). The lines in red trace Livingstone\'s three journeys around and across Africa.</span></p>
@@ -9909,50 +9894,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link15">Spectral Image Processing</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link16">Principal Component Analysis (PCA)</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link17">Spectral Ratio and Pseudocolor Rendering</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link18">Processing Objectives and Results</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link19">Data Management</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link20">Preliminary Data Management</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link21">"Data Scrubbing"</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link22">Creating the Data Archive</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link23">Restoring the Text</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link24">Data Hosting</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link25">Creating a Publication Template / XML Encoding</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link26">Transcription Outcomes</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link27">The Electronic Edition</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link28">Analysis to Dissemination</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link29">Preliminary Data Analysis</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link30">Dissemination, Results Release, and the "UK Tour"</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link31">Lessons Learned / Future Projects</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link32">Challenge #1: Project Funding</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link33">Challenge #2: Communication</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link34">Challenge #3: File Naming</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link35">Future Projects</a></span></span></li>
-	</ol>
-	</li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>This page, the second part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary and complements the <a href="http://livingstoneonline.org/spectral-imaging/project-documentation-0">documentation</a> related to the development of our critical edition. In doing so, the essay extends <a href="/behind-scenes/livingstone-online-code">our efforts</a> to conduct publicly-funded research in a transparent manner that promotes knowledge transfer and that opens all aspects of our research to critical review. Read the first part of the essay <a href="/spectral-imaging/project-history-1">here</a>.</p>
 
@@ -10321,7 +10263,47 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     'und' => array(
       0 => array(
         'value' => '<p>This page, the second part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary. The two-part essay provides an overview of all significant phases of project endeavor and for each phase describes all key project activities. (Note: Contemporaneous institutional affiliations for individuals have been retained although some of these have since changed.) Read the first part of the essay <a href="/spectral-imaging/project-history-1">here</a>.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link15">Spectral Image Processing</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link16">Principal Component Analysis (PCA)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link17">Spectral Ratio and Pseudocolor Rendering</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link18">Processing Objectives and Results</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link19">Data Management</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link20">Preliminary Data Management</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link21">"Data Scrubbing"</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link22">Creating the Data Archive</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link23">Restoring the Text</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link24">Data Hosting</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link25">Creating a Publication Template / XML Encoding</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link26">Transcription Outcomes</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link27">The Electronic Edition</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link28">Analysis to Dissemination</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link29">Preliminary Data Analysis</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link30">Dissemination, Results Release, and the "UK Tour"</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link31">Lessons Learned / Future Projects</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link32">Challenge #1: Project Funding</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link33">Challenge #2: Communication</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link34">Challenge #3: File Naming</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link35">Future Projects</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -14251,21 +14233,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Prefatory Material</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Spectral Images and Texts</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Critical Essays and Materials</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Image Processing Information</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Supporting Materials</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Files for Download</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Animated Spectral Images for Download</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Project Documentation</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Prefatory Material</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Prefatory Material</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p><strong><a href="/spectral-imaging/livingstones-1870-field-diary">Introduction to the Edition</a></strong></p>
 
@@ -14463,7 +14431,18 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts. It enumerates all the main sections of the edition and provides links to all embedded files and documentation.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Prefatory Material</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Spectral Images and Texts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Critical Essays and Materials</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Image Processing Information</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Supporting Materials</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Files for Download</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Animated Spectral Images for Download</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Project Documentation</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -14924,25 +14903,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Livingstone</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Scholars</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Revising Manuscripts</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">The 1870 Field Diary</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Zanzibar Trade in Central Africa</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Manyema</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Bambarre People and Ujijians</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Process, Narrative, Knowledge</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Informed Observation</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Cannibalism in 1870</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Silences in the Published Record</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Works Cited: Primary Sources</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">Works Cited: Secondary Sources</a></span></span></li>
-</ol>
-</div>
-
-<hr />
+        'value' => '
 <h4><strong><span style="font-family:crimson text;">Livingstone</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>In July 1869, David Livingstone left the village of Ujiji on the eastern shore of Lake Tanganyika and set out west to explore what he incorrectly believed to be the western line of drainage of the Nile River. To make the journey, Livingstone traveled with Arab traders and their followers. His course took him into the eastern part of the present day Democratic Republic of the Congo, to the region of Manyema (now Maniema).</p>
@@ -15483,7 +15444,23 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This essay shifts critical focus from biographical approaches centering on Livingstone in 1870 to the Central African cultural material found in the 1870 Field Diary. In doing so, the essay argues that the diary’s innovative narrative style documents and, at times, foregrounds a regional universe whose complexity stands at odds with the reductive characterizations later imposed upon it by Livingstone and others.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Livingstone</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Scholars</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Revising Manuscripts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">The 1870 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Zanzibar Trade in Central Africa</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Manyema</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Bambarre People and Ujijians</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Process, Narrative, Knowledge</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Informed Observation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Cannibalism in 1870</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Silences in the Published Record</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Works Cited: Primary Sources</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">Works Cited: Secondary Sources</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -15543,8 +15520,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/the-project-team/liv_002568_0002_pseudo_0780_by_0940-article.jpg"><img alt="A spectral image of a page from Livingstone\'s Letter to John Kirk 2, 13 Feb. 1871 (Livingstone 1871d:[2] pseudo_v3). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/the-project-team/liv_002568_0002_pseudo_0780_by_0940-article.jpg" title="A spectral image of a page from Livingstone\'s Letter to John Kirk 2, 13 Feb. 1871 (Livingstone 1871d:[2] pseudo_v3). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/the-project-team/liv_002568_0002_pseudo_0780_by_0940-article.jpg"><img alt="A spectral image of a page from Livingstone\'s Letter to John Kirk 2, 13 Feb. 1871 (Livingstone 1871d:[2] pseudo_v3). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/the-project-team/liv_002568_0002_pseudo_0780_by_0940-article.jpg" title="A spectral image of a page from Livingstone\'s Letter to John Kirk 2, 13 Feb. 1871 (Livingstone 1871d:[2] pseudo_v3). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A spectral image of a page from Livingstone\'s Letter to John Kirk 2, 13 Feb. 1871 (Livingstone 1871d:[2] pseudo_v3). <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
 
 <p><em>Leadership</em></p>
@@ -15811,8 +15787,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p class="space1 rtecenter" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/acknowledgments-0/liv_002571_0001_ratio_by_0940_hue-46.jpg"><img alt="A custom processed spectral image of a page from Livingstone\'s letter to John Kirk 2, 14 May 1871  (Livingstone 1871i:[1] spectral_ratio, with hue rotated to -46). Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/acknowledgments-0/liv_002571_0001_ratio_by_0940_hue-46.jpg" title="A custom processed spectral image of a page from Livingstone\'s letter to John Kirk 2, 14 May 1871  (Livingstone 1871i:[1] spectral_ratio, with hue rotated to -46). Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="90%" /></a><br />
+        'value' => '<p class="space1 rtecenter" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/acknowledgments-0/liv_002571_0001_ratio_by_0940_hue-46.jpg"><img alt="A custom processed spectral image of a page from Livingstone\'s letter to John Kirk 2, 14 May 1871  (Livingstone 1871i:[1] spectral_ratio, with hue rotated to -46). Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/acknowledgments-0/liv_002571_0001_ratio_by_0940_hue-46.jpg" title="A custom processed spectral image of a page from Livingstone\'s letter to John Kirk 2, 14 May 1871  (Livingstone 1871i:[1] spectral_ratio, with hue rotated to -46). Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="90%" /></a><br />
 <span style="font-size:12px;display:inline-block;text-align:left;width:90%">A custom processed spectral image of a page from Livingstone\'s letter to John Kirk 2, 14 May 1871 (Livingstone 1871i:[1] spectral_ratio, with hue rotated to -46). <em>Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. Livingstone wrote this letter over a piece of paper that Kirk used to send Livingstone quinine. The processing suppresses nearly all of Livingstone\'s letter and instead foregrounds Kirk\'s original text: "Quinine" and "JK".</span></p>
 
 <p>It has been an immense privilege to work on this phase (2013-17) of the Livingstone Spectral Imaging Project. The members of the <a href="/spectral-imaging/project-team">project team</a> are grateful to the individuals below who have supported our work and to those individuals who supported the <a href="http://livingstone.library.ucla.edu/1871diary/acknowledgments.htm" target="_blank">first phase of the project</a> (2010-13), as that phase laid some of the groundwork for the current phase.</p>
@@ -17423,34 +17398,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:decimal">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Structure of the 1870 Field Diary</a></span></span>
-	<ol class="rteindent1" style="list-style-type:lower-alpha">
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">A Relational Document</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Sequencing of Manuscript Pages</a></span></span>
-		<ol style="list-style-type:lower-roman">
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Sequencing by date</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Sequencing by Roman numerals</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Sequencing by archival numbers</a></span></span></li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Content and Structure</a></span></span>
-		<ol style="list-style-type:lower-roman">
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Letter to Lord Stanley</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Field notes</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Maps</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Calculations</a></span></span></li>
-		</ol>
-		</li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Additional Manuscript Features</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Structure of the 1870 Field Diary</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Structure of the 1870 Field Diary</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>As detailed in the previous section, Livingstone created the 1870 Field Diary manuscript over a period of time and based on a series of complex decisions. This process, as studied through the leaves of the diary itself, provides important insights into Livingstone’s work as a traveler and writer. Below, we continue our analysis of the diary by now turning to the many ways that Livingstone (and, later, British archivists) structured his record of the field.</p>
 
@@ -17706,6 +17654,33 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This section, the second of a six-part sequence, continues a comprehensive account of the 1870 Field Diary as a constructed and preserved object. The section explores the structure that Livingstone (and, later, others) imposed on the text and discusses other prominent textual features.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Structure of the 1870 Field Diary</a></span></span>
+
+	<ol style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">A Relational Document</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Sequencing of Manuscript Pages</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Sequencing by date</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Sequencing by Roman numerals</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Sequencing by archival numbers</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Content and Structure</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Letter to Lord Stanley</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Field notes</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Maps</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Calculations</a></span></span></li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Additional Manuscript Features</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -17898,33 +17873,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">The Manuscript: An Overview</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Scope of the Present Edition</a></span></span>
-	<ol style="list-style-type:none">
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">The Nyangwe Segment (23 Mar.-11 Aug. 1871)</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Additional Diary Pages (11 Aug.-3 Nov. 1871)</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">History of the Manuscript</a></span></span>
-	<ol style="list-style-type:none">
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">From Africa to England (1871-74)</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Production of the <em>Last Journals</em> (1874)</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">1874 to Present</a></span></span>
-		<ol>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">The Nyangwe Segment</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Additional Diary Pages</a></span></span></li>
-		</ol>
-		</li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Works Cited</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">The Manuscript: An Overview</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">The Manuscript: An Overview</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>The manuscript of Livingstone’s 1871 Field Diary forms the last third of a longer sequence of manuscripts that record Livingstone’s travels in Manyema, a region that today lies in the eastern part of the Democratic Republic of Congo. These manuscripts encompasses over 160 numbered pages (the 1870 and 1871 Field Diaries) as well as several unnumbered fragments (Clendennen and Cunningham 1979:275-77, Field Diaries 34-39).</p>
 
@@ -18166,7 +18115,30 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
     'und' => array(
       0 => array(
         'value' => '<p>This section provides an overview of the strategies Livingstone employed in composing the 1871 Field Diary and the long-term consequences of those strategies. The section also defines the scope of the present edition and develops a history of the 1871 Field Diary manuscript from the nineteenth century to the present.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">The Manuscript: An Overview</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Scope of the Present Edition</a></span></span>
+	<ol style="list-style-type:none">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">The Nyangwe Segment (23 Mar.-11 Aug. 1871)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Additional Diary Pages (11 Aug.-3 Nov. 1871)</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">History of the Manuscript</a></span></span>
+	<ol style="list-style-type:none">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">From Africa to England (1871-74)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Production of the <em>Last Journals</em> (1874)</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">1874 to Present</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">The Nyangwe Segment</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Additional Diary Pages</a></span></span></li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Works Cited</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -18219,8 +18191,7 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Yana Van Dyke, a paper conservator at the Metropolitan Museum of Art in New York City, carried out the conservation of Livingstone’s letter and prepared the letter for transport from the Met to the Walters Art Museum in Baltimore. The letter required conservation because pieces of the letter were detached, torn, or folded over. These issues arose partly from the adverse environmental circumstances in which the letter was originally written and transported, and partly from the fact that Livingstone wrote the letter with iron gall ink, which can contain a corrosive metallic component and thus deteriorate the paper upon which it is used.</p>
+        'value' => '<p>Yana Van Dyke, a paper conservator at the Metropolitan Museum of Art in New York City, carried out the conservation of Livingstone’s letter and prepared the letter for transport from the Met to the Walters Art Museum in Baltimore. The letter required conservation because pieces of the letter were detached, torn, or folded over. These issues arose partly from the adverse environmental circumstances in which the letter was originally written and transported, and partly from the fact that Livingstone wrote the letter with iron gall ink, which can contain a corrosive metallic component and thus deteriorate the paper upon which it is used.</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/conservation-and-transport/DSCN3433-article.jpg"><img alt="Yana Van Dyke prepares the letter for imaging. Copyright Adrian S. Wisnicki. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/conservation-and-transport/DSCN3433-article.jpg" title="Yana Van Dyke prepares the letter for imaging. Copyright Adrian S. Wisnicki. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Yana Van Dyke prepares the letter for imaging. <em>Copyright Adrian S. Wisnicki. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
@@ -18348,8 +18319,7 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/acknowledgments-1/liv_000097_0001_pseudo_0505-0780-article.jpg"><img alt="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871l:[1]-[2] pseudo_v1). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/acknowledgments-1/liv_000097_0001_pseudo_0505-0780-article.jpg" title="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871l:[1]-[2] pseudo_v1). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/acknowledgments-1/liv_000097_0001_pseudo_0505-0780-article.jpg"><img alt="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871l:[1]-[2] pseudo_v1). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/acknowledgments-1/liv_000097_0001_pseudo_0505-0780-article.jpg" title="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871l:[1]-[2] pseudo_v1). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871l:[1]-[2] pseudo_v1). <em>Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> Livingstone has written this fragment over an envelope sent to him (care of John Kirk) by the Royal Geographical Society (RGS). The seal of the RGS appears at right, while the vertical undertext on the left is the original address to Livingstone in another hand.</span></p>
 
 <p>The opportunity to work on this project has been both amazing and humbling – amazing because it has brought me into contact with so many wonderful people in so many fields, at so many different institutions; humbling because throughout the project I have never ceased to marvel at the kindness of these individuals (including the tireless members of my team), at the generosity of these institutions, and at the willingness of all to help and give their time selflessly whenever I contacted them. Please consider this project to be yours also. It will help me discharge the lifetime’s debt I’ve now built up with many of you.</p>
@@ -19373,20 +19343,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Livingstone\'s Paper</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Livingstone\'s Ink</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Entries in the 1871 Field Diary</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Page Headers in the 1871 Field Diary</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">The Nyangwe Massacre, 15 July 1871</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Additional Diary Pages</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>As Livingstone traveled in Manyema in 1870 and 1871, he ran short of many supplies, in one instance noting that he needed "Pens = Paper letters ink" (1871f:CLXII). As a result, during this period he resorted to using improvised composition materials for both his letters and diary. This section discusses Livingstone’s methods for composing the main portion of the 1871 Field Diary (Livigstone 1871f), including his practices in using paper and ink, pre-allocating pages for certain kinds of entries, and pre-numbering page headers. The section also examines the impact of the Nyangwe massacre on these practices. The section closes with a look at the composition methods Livingstone used for the additional pages of the diary.</p>
 
@@ -19686,7 +19643,17 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This section discusses Livingstone’s methods for composing the main portion of the 1871 Field Diary (Livingstone 1871f), examines the impact of the Nyangwe massacre on these practices, and closes with a look at the composition methods Livingstone used for the additional pages of the diary.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Livingstone\'s Paper</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Livingstone\'s Ink</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Entries in the 1871 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Page Headers in the 1871 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">The Nyangwe Massacre, 15 July 1871</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Additional Diary Pages</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -19746,18 +19713,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi2">Background</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi3">Prototyping Objectives</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi4">Developing ASIs</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi5">Results</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>A variety of spectral image processing techniques arose from our work on a multispectral critical edition of Livingstone’s 1870 Field Diary. These techniques have allowed us to study the passage of the diary across space, hands, and time and, ultimately, to develop a detailed chronology of the manuscript based on the material evidence of the manuscript itself (see our six-part <a href="/spectral-imaging/sections-1870-field-diary-edition/creating-1870-field-diary">State of the Manuscript</a>).</p>
 
@@ -19934,7 +19890,15 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay describes the background, objectives, workflow, and results of the development of animated spectral images (ASIs) for the present multispectral critical edition of Livingstone’s 1870 Field Diary.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi2">Background</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi3">Prototyping Objectives</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi4">Developing ASIs</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#asi5">Results</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -21218,8 +21182,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Spectral image processing relies on using tailored mathematical algorithms in order to manipulate and enhance data captured through the spectral imaging process. Examples of simple manipulation include retouching, color correction, noise reduction, and changing image contrast. Processing techniques can also take a variety of complex forms. In the case of palimpsests, for instance, imaging scientists can create an algorithm to peel back the prominent "overtext" (the uppermost layer of text) in order to reveal the "undertext" (the underlying text), which is often much more difficult, if not impossible, to read.</p>
+        'value' => '<p>Spectral image processing relies on using tailored mathematical algorithms in order to manipulate and enhance data captured through the spectral imaging process. Examples of simple manipulation include retouching, color correction, noise reduction, and changing image contrast. Processing techniques can also take a variety of complex forms. In the case of palimpsests, for instance, imaging scientists can create an algorithm to peel back the prominent "overtext" (the uppermost layer of text) in order to reveal the "undertext" (the underlying text), which is often much more difficult, if not impossible, to read.</p>
 
 <div class="doubleimg">
 <div class="doubleleft"><a href="/sites/default/files/spectral-imaging/spectral-image-processing/liv_002564_0003_color-article1.jpg"><img alt="A color image of a page of the Letter from Bambarre (Livingstone 1871c:[3]). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/spectral-imaging/spectral-image-processing/liv_002564_0003_color-article1.jpg" style="height: 550px; margin-right: 10px" title="A color image of a page of the Letter from Bambarre (Livingstone 1871c:[3]). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></div>
@@ -21522,14 +21485,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'field_section_authors' => array(),
-  'field_section_body' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<hr />',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_body' => array(),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
   'field_section_editors' => array(),
@@ -21614,19 +21570,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Previous Critical Readings</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Evidence from the 1871 Field Diary</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Reconciling Livingstone and Stanley</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">The Limits of Interpretation</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Works Cited</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>For many years, scholars have debated the precise date of the celebrated meeting between David Livingstone and Henry M. Stanley in Ujiji 1871. Both travellers lost track of the date due to illness, as indeed explorers often did. As a result, Stanley gives the dates as 3 November or 10 November (depending on the text), while the only dating from Livingstone – ambiguous at best – points to 28 October. The 1871 Field Diary does not resolve the issue, but it does provide crucial evidence for further analysis.</p>
 
@@ -21808,7 +21752,16 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay explores the challenges of dating the famous meeting between Livingstone and Stanley. The essay considers previous critical interpretations, evaluates the additional evidence available from the 1871 Field Diary, outlines the difficulties in reconciling the written accounts of Livingstone and Stanley, and, finally, summarizes the findings and limits of the present analysis.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Previous Critical Readings</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Evidence from the 1871 Field Diary</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Reconciling Livingstone and Stanley</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">The Limits of Interpretation</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Works Cited</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -22654,18 +22607,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Conflicting Loyalties</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Local Sources, Global Knowledge</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Conclusion</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Works Cited</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>Livingstone’s 1870 Field Diary reflects a range of information sources although most of the diary details Livingstone’s time spent in one place, the central African village of Bambarre, where he was immobilized due to ill health. In this, the diary arguably offers an excellent snapshot of Livingstone’s experiences in a “contact zone,” Mary Louise Pratt’s seminal term for the “social spaces where disparate cultures meet, clash, and grapple with each other, often in highly asymmetrical relations of domination and subordination” (Pratt 1992:24).</p>
 
@@ -22802,6 +22744,16 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>Livingstone represented his last journey (1866-1873) as a search for the geographical source(s) of the Nile, but the 1870 Field Diary foregrounds Livingstone’s encounter with sources of another kind: non-Western informants who shared their knowledge of local African geography and cultural practices. Attention to Livingstone’s use of these sources illuminates broader strategies by which Victorian travel writers converted experiences – over which they sometimes exerted limited influence – into authoritative and controlled narratives of the field.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Conflicting Loyalties</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Local Sources, Global Knowledge</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Conclusion</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Works Cited</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -22978,19 +22930,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Groundwork (2010-13)</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Year One (1 Dec. 2013 to 30 Nov. 2014) </a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Year Two (1 Dec. 2014 to 30 Nov. 2015)</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Year Three (1 Dec. 2015 to 31 Dec. 2016)</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Conclusion</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>This essay provides a narrative of our collaborative, interdisciplinary research process and complements the <a href="/spectral-imaging/project-documentation">documentation</a> related to the development of the critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts. In doing so, the essay extends <a href="/behind-scenes/livingstone-online-code">our efforts</a> to conduct publicly-funded research in a transparent manner that promotes knowledge transfer and that opens all aspects of our research to critical review.</p>
 
@@ -23217,7 +23157,16 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay set outs the history of our work to develop a multispectral critical edition of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts. It provides an overview of all significant periods of project endeavor and for each period describes all key project activities.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Groundwork (2010-13)</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Year One (1 Dec. 2013 to 30 Nov. 2014) </a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Year Two (1 Dec. 2014 to 30 Nov. 2015)</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Year Three (1 Dec. 2015 to 31 Dec. 2016)</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Conclusion</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -23734,8 +23683,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>The headers in the two copy-books that constitute the main portion of the 1871 Field Diary (Livigstone 1871f) contain significant information about Livingstone\'s methods for composing the diary. The images of these headers below (processing type: spectral_ratio) enable quick comparative analysis. For a discussion of the mistakes and anomalies related to the Roman numerals in the headers, see the section on <a href="/spectral-imaging/terminology-acronyms-numerals">Terminology, Acronyms, and Numerals</a>.</p>
+        'value' => '<p>The headers in the two copy-books that constitute the main portion of the 1871 Field Diary (Livigstone 1871f) contain significant information about Livingstone\'s methods for composing the diary. The images of these headers below (processing type: spectral_ratio) enable quick comparative analysis. For a discussion of the mistakes and anomalies related to the Roman numerals in the headers, see the section on <a href="/spectral-imaging/terminology-acronyms-numerals">Terminology, Acronyms, and Numerals</a>.</p>
 
 <p class="space1 rtecenter" style="line-height:110%"><img alt="Livingstone 1871f:CII (header). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/1871-field-diary-headers/DLC297c_102.jpg" title="Livingstone 1871f:CII (header). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="80%" /><br />
 <span style="font-size:12px;">Livingstone 1871f:CII (header). <em>Copyright David Livingstone Centre. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
@@ -24674,37 +24622,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Initial History</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Locating the Manuscript</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Contacting the Archimedes Team / Visit to Blantyre</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Funding and the Missing Diary Pages</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Livingstone’s Letter from Bambarre</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Pre-Imaging Activities</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Setting the Stage</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Permission and Conservation</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Project Planning</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Spectral Imaging in Scotland</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Imaging Set-Up</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Data Logging, Collection, and Copying</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">Personnel and Activities</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link14">Imaging Schedule and Objectives</a></span></span></li>
-	</ol>
-	</li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>This page, the first part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary and complements the <a href="http://livingstoneonline.org/spectral-imaging/project-documentation-0">documentation</a> related to the development of our critical edition. In doing so, the essay extends <a href="/behind-scenes/livingstone-online-code">our efforts</a> to conduct publicly-funded research in a transparent manner that promotes knowledge transfer and that opens all aspects of our research to critical review. Read the second part of the essay <a href="/spectral-imaging/project-history-2">here</a>.</p>
 
@@ -25121,6 +25039,34 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This page, the first part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary. The two-part essay provides an overview of all significant phases of project endeavor and for each phase describes all key project activities. (Note: Contemporaneous institutional affiliations for individuals have been retained although some of these have since changed.) Read the second part of the essay <a href="/spectral-imaging/project-history-2">here</a>.</p>
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Initial History</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Locating the Manuscript</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Contacting the Archimedes Team / Visit to Blantyre</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Funding and the Missing Diary Pages</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Livingstone’s Letter from Bambarre</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Pre-Imaging Activities</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Setting the Stage</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Permission and Conservation</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Project Planning</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Spectral Imaging in Scotland</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Imaging Set-Up</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">Data Logging, Collection, and Copying</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">Personnel and Activities</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link14">Imaging Schedule and Objectives</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -26481,8 +26427,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>In writing his letter to Waller, Livingstone used two pages from a proof copy of the <em>Proceedings of the Royal Geographical Society</em> (see <a href="/spectral-imaging/note-text-letter">Note on the Text of the Letter</a>). He first wrote across the back of each sheet ([1] and [3]), then across the side with the printed text ([2] and [4]). In covering this latter side, he began by filling the top, left, and bottom margins, then turned the sheet ninety degrees clockwise and wrote in the remaining margin. Finally, without again turning the sheet, he wrote across the printed text, so that his "overtext" ran perpendicular to the print.</p>
+        'value' => '<p>In writing his letter to Waller, Livingstone used two pages from a proof copy of the <em>Proceedings of the Royal Geographical Society</em> (see <a href="/spectral-imaging/note-text-letter">Note on the Text of the Letter</a>). He first wrote across the back of each sheet ([1] and [3]), then across the side with the printed text ([2] and [4]). In covering this latter side, he began by filling the top, left, and bottom margins, then turned the sheet ninety degrees clockwise and wrote in the remaining margin. Finally, without again turning the sheet, he wrote across the printed text, so that his "overtext" ran perpendicular to the print.</p>
 
 <div class="doubleimg">
 <div class="doubleleft"><a href="/sites/default/files/spectral-imaging/imaging-the-letter/liv_002564_0001_color-article1.jpg"><img alt="A color image of a page of the Letter from Bambarre (Livingstone 1871c:[1]), detail, that shows bleedthrough from the other side of the page. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/spectral-imaging/imaging-the-letter/liv_002564_0001_color-article1.jpg" style="height: 318px; margin-right: 10px" title="A color image of a page of the Letter from Bambarre (Livingstone 1871c:[1]), detail, that shows bleedthrough from the other side of the page. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></div>
@@ -27356,33 +27301,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:decimal">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">The Manuscript across Environments</a></span></span>
-	<ol style="list-style-type:lower-alpha">
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Page Discoloration</a></span></span>
-		<ol style="list-style-type:lower-roman">
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">First gathering</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Second gathering</a></span></span></li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Stains on the Pages</a></span></span>
-		<ol style="list-style-type:lower-roman">
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">The big stain</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Brown stains</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Red stains</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Miscellaneous singular stains</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Invisible stains</a></span></span></li>
-		</ol>
-		</li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Other Material Features</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">The Manuscript across Environments</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">The Manuscript across Environments</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p style="font-size:14px;">– Spectral images most relevant for study of this aspect of the manuscript<br />
 <span style="padding-left:2em; padding-bottom:-.5em"><em>Page discolor:</em> ICA_pseudo_1, ICA_pseudo_32, PCA_pseudo_32, PCA_pseudo_34, IC4</span><br />
@@ -27645,6 +27564,33 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This section continues our analysis of the state of the 1870 Field Diary manuscript by turning to material aspects of the diary closely linked to its travels across hands, space, and time. In particular, the section examines how the many environments through which the diary has circulated have left their marks on its pages. This section also includes a brief discussion of notable material features of the manuscript not covered in the foregoing sections.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:decimal">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">The Manuscript across Environments</a></span></span>
+
+	<ol style="list-style-type:lower-alpha">
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Page Discoloration</a></span></span>
+
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">First gathering</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Second gathering</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Stains on the Pages</a></span></span>
+		<ol style="list-style-type:lower-roman">
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">The big stain</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Brown stains</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Red stains</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Miscellaneous singular stains</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Invisible stains</a></span></span></li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">Other Material Features</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -27859,89 +27805,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Overview of TEI P5 Encoding Practices</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">I. File Naming</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">II. Document Header</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">A. &lt;fileDesc&gt;</a></span></span>
-		<ol>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">1. &lt;titleStmt&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">2. &lt;publicationStmt&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">3. &lt;sourceDesc&gt;</a></span></span></li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">B. &lt;encodingDesc&gt;</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">C. &lt;profileDesc&gt;</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">D. &lt;revisionDesc&gt;</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9.5">E. &lt;facsimile&gt;&lt;surface&gt;&lt;graphic&gt;&lt;zone&gt;</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">III. Body Text</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">A. Major Structural Elements</a></span></span>
-		<ol>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">1. &lt;text&gt;&lt;body&gt;&lt;div&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">2. &lt;ab&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link14">3. &lt;cb/&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link15">4. &lt;milestone&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link16">5. &lt;fw&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link17">6. &lt;p&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link18">7. &lt;lb/&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link44">8. &lt;w/&gt;</a></span></span></li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link19">B. Textual Layout and Formatting</a></span></span>
-		<ol>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link20">1. &lt;space/&gt; and Spacing between Words</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link21">2. &lt;hi&gt;</a></span></span></li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link22">C. Additions and Deletions</a></span></span>
-		<ol>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link23">1. &lt;add&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link24">2. &lt;del&gt;</a></span></span></li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link25">D. Illegible Text</a></span></span>
-		<ol>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link26">1. &lt;unclear&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link27">2. &lt;gap&gt;</a></span></span></li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link28">E. Editorial Interventions</a></span></span>
-		<ol>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link29">1. &lt;supplied&gt;</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link30">2. &lt;choice&gt;</a></span></span>
-			<ol>
-				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link31">a. &lt;abbr&gt;&lt;expan&gt;</a></span></span></li>
-				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link32">b. &lt;sic&gt;&lt;corr&gt;</a></span></span></li>
-				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link33">c. &lt;unclear&gt;</a></span></span></li>
-				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link34">d. &lt;orig&gt;&lt;reg&gt;</a></span></span></li>
-			</ol>
-			</li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link35">F. Content Tagging</a></span></span>
-		<ol>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link36">1. People</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link37">2. Tribes and Villagers</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link38">3. Places and Geographical Entities</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link39">4. Dates</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link40">5. Medical References</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link41">6. Foreign Words and Phrases</a></span></span></li>
-			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link42">7. Drawings, Maps, Calculations, Seals, Squiggles, Foreign Text (Hebrew/Arabic)</a></span></span></li>
-		</ol>
-		</li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link43">G. Special Characters</a></span></span></li>
-	</ol>
-	</li>
-</ol>
-</div>
-
-<hr />
-<h4><strong>Overview of TEI P5 Encoding Practices</strong>&nbsp;&nbsp;&nbsp; <span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong>Overview of TEI P5 Encoding Practices</strong>&nbsp;&nbsp;&nbsp; <span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>[Update note: Thanks to <a href="/about-site/what-leap-2013-2017">LEAP</a>, the <em>Livingstone Online</em> team has now converted the TEI P5 transcription of the 1871 Field Diary to our overall <a href="http://livingstoneonline.github.io/LEAP-ODD/leap.html" target="_blank">site encoding standards</a>. As a result, the encoding guidelines set out below are no longer valid, but are provided&nbsp;for reference purposes only. Additionally, this page remains a useful record of Livingstone\'s authorial practices in composing the text of the 1871 Field Diary.]</p>
 
@@ -28646,7 +28510,86 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     'und' => array(
       0 => array(
         'value' => '<p>This page presents the original TEI P5 encoding guidelines used by the first phase of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> (2010-13) to transcribe the 1871 Field Diary. The guidelines have now been incorporated into (and so superseded by) the main <em>Livingstone Online</em> <a href="http://livingstoneonline.github.io/LEAP-ODD/leap.html" target="_blank">coding guidelines</a>, but the manuscript specific information set out here nonetheless remains a useful record of Livingstone\'s authorial practices in composing the text of the diary.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Overview of TEI P5 Encoding Practices</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">I. File Naming</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">II. Document Header</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">A. &lt;fileDesc&gt;</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">1. &lt;titleStmt&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">2. &lt;publicationStmt&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">3. &lt;sourceDesc&gt;</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">B. &lt;encodingDesc&gt;</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">C. &lt;profileDesc&gt;</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">D. &lt;revisionDesc&gt;</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9.5">E. &lt;facsimile&gt;&lt;surface&gt;&lt;graphic&gt;&lt;zone&gt;</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">III. Body Text</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link11">A. Major Structural Elements</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link12">1. &lt;text&gt;&lt;body&gt;&lt;div&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link13">2. &lt;ab&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link14">3. &lt;cb/&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link15">4. &lt;milestone&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link16">5. &lt;fw&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link17">6. &lt;p&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link18">7. &lt;lb/&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link44">8. &lt;w/&gt;</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link19">B. Textual Layout and Formatting</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link20">1. &lt;space/&gt; and Spacing between Words</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link21">2. &lt;hi&gt;</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link22">C. Additions and Deletions</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link23">1. &lt;add&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link24">2. &lt;del&gt;</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link25">D. Illegible Text</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link26">1. &lt;unclear&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link27">2. &lt;gap&gt;</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link28">E. Editorial Interventions</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link29">1. &lt;supplied&gt;</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link30">2. &lt;choice&gt;</a></span></span>
+			<ol>
+				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link31">a. &lt;abbr&gt;&lt;expan&gt;</a></span></span></li>
+				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link32">b. &lt;sic&gt;&lt;corr&gt;</a></span></span></li>
+				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link33">c. &lt;unclear&gt;</a></span></span></li>
+				<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link34">d. &lt;orig&gt;&lt;reg&gt;</a></span></span></li>
+			</ol>
+			</li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link35">F. Content Tagging</a></span></span>
+		<ol>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link36">1. People</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link37">2. Tribes and Villagers</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link38">3. Places and Geographical Entities</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link39">4. Dates</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link40">5. Medical References</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link41">6. Foreign Words and Phrases</a></span></span></li>
+			<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link42">7. Drawings, Maps, Calculations, Seals, Squiggles, Foreign Text (Hebrew/Arabic)</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link43">G. Special Characters</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -28841,14 +28784,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'field_section_authors' => array(),
-  'field_section_body' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<hr />',
-        'format' => 'full_html',
-      ),
-    ),
-  ),
+  'field_section_body' => array(),
   'field_section_byline' => array(),
   'field_section_carousel_image' => array(),
   'field_section_editors' => array(),
@@ -28936,20 +28872,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Stages of Composition</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Exceptions to the Rule</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Documents of Varying Purposes</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Unpublished Accounts</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Conclusion</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Works Cited</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>During the second half of 1870, David Livingstone was at a particularly low point. His mission to find the source of the Nile had become an “obsession,”&nbsp;in the words of his biographer Tim Jeal, “a compensation for every other failure” (Jeal 2013:367). Yet, despite his sense of urgency, Livingstone was stranded in Bambarre, a village in Central Africa, and was unable to travel due to illness and flesh-eating ulcers on his feet.</p>
 
@@ -29202,6 +29125,18 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     'und' => array(
       0 => array(
         'value' => '<p>This essay explores Livingstone’s composition practices from 1870-1871 in order to show how they vary from the practices scholars have previously identified in Livingstone’s other works. As such, the manuscripts from this period – Field Diary XIII, the 1870 Field Diary, and the Unyanyembe Journal – offer insights into how the circumstances of imperial exploration change composition practices. The essay also discusses the material edited out from Livingstone’s posthumously published <em>Last Journals </em>(1874).</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Stages of Composition</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Exceptions to the Rule</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Documents of Varying Purposes</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Unpublished Accounts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Conclusion</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Works Cited</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -29262,21 +29197,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Livingstone in 1871</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">The Village of Nyangwe</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Canoes on the Lualaba</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">"Unspeakable Horror"</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Representing the Nyangwe Massacre (1)</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Representing the Nyangwe Massacre (2)</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Conclusion</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Works Cited</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Livingstone in 1871</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Livingstone in 1871</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>David Livingstone wrote the 1871 Field Diary during his final African expedition (1866-73). Sir Roderick Murchison, President of the Royal Geographical Society, set Livingstone’s primary objective for this expedition as determining the water system of Central Africa by exploring the region between Lakes Nyassa and Tanganyika. Murchison hoped that by this expedition Livingstone would "be paving the way for the introduction of social improvements among the natives, by the promotion of fair barter and commerce, to the exclusion of the trade in slaves" and that Livingstone would "act as a pioneer in removing those obstacles" that prevented Christian missionaries from traveling to these regions (Murchison 1864-65:264).</p>
 
@@ -29903,7 +29824,18 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     'und' => array(
       0 => array(
         'value' => '<p>This section offers an overview of Livingstone’s final travels and objectives, including the historical circumstances in which he composed the 1871 Field Diary. The section also presents a short history of the village of Nyangwe, describes the main part of Livingstone\'s sojourn in the village, and sets out the key circumstances surrounding the massacre that Livingstone witnessed in Nyangwe on 15 July 1871. Finally, the section examines some of the most important differences in the representations of the massacre in the 1871 Field Diary, the Unyanyembe Journal (1866-72), and Livingstone\'s <em>Last Journals</em> (1874).</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Livingstone in 1871</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">The Village of Nyangwe</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Canoes on the Lualaba</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">"Unspeakable Horror"</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Representing the Nyangwe Massacre (1)</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Representing the Nyangwe Massacre (2)</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Conclusion</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Works Cited</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -30543,26 +30475,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Page Numbers</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Journal Entries and Notes</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Livingstone’s Orthography</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Additional Textual Elements</a></span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Sketches</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Maps</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Calculations</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Extraneous Foreign Text</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Flourishes to Correct Ink Flow</a></span></span></li>
-	</ol>
-	</li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>The pages of the 1871 Field Diary conform to a series of basic patterns. Collectively, these patterns reveal the development of Livingstone\'s narrative objectives as he writes the diary. This section sets out an analysis of the structure of the 1871 Field Diary, including Livingstone’s numbering system, the distinction between journal entries and notes, Livingstone’s orthography, and a handful of additional elements (sketches, maps, calculations, extraneous foreign text, and flourishes to correct ink flow).</p>
 
@@ -30836,6 +30749,24 @@ The page immediately following Livingstone’s final entry records a note by Jac
     'und' => array(
       0 => array(
         'value' => '<p>This section sets out an analysis of the structure of the 1871 Field Diary, including Livingstone’s numbering system, the distinction between journal entries and notes, Livingstone’s orthography, and a handful of additional elements (sketches, maps, calculations, extraneous foreign text, and flourishes to correct ink flow).</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Page Numbers</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Journal Entries and Notes</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Livingstone’s Orthography</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link5">Additional Textual Elements</a></span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link6">Sketches</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Maps</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Calculations</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link9">Extraneous Foreign Text</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link10">Flourishes to Correct Ink Flow</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
