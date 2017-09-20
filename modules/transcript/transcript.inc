@@ -203,6 +203,10 @@ function livingstone_transcript_saxon_transform_embedded($datastream, array $cla
       unset($classes[$key]);
     }
   }
+  // Some transcriptions are hacky and set style on the their
+  // elements so copy it up so...
+  $content = $doc->saveXML($transcript);
+  $style = $transcript->getAttribute('style');
   $classes[] = 'transcription-viewer-content';
   $classes[] = livingstone_pid_to_project_id($datastream->parent->id);
   $element = array(
@@ -212,10 +216,13 @@ function livingstone_transcript_saxon_transform_embedded($datastream, array $cla
     '#type' => 'container',
     '#attributes' => array(
       'class' => $classes,
+      'style' => $style,
+      'data-pid' => $datastream->parent->id,
+      'data-dsid' => $datastream->id,
     ),
     'transcription' => array(
-      '#markup' => $doc->saveXML($transcript),
+      '#markup' => $content,
     )
   );
-  return drupal_render($element);
+  return $element;
 }

@@ -130,8 +130,7 @@
   function TranscriptionPane(pane) {
     var toolbar = $('.transcription-viewer-toolbar', pane),
         transcription_select = $('select.transcript', toolbar),
-        date_select = $('select.date', toolbar),
-        transcripts = $('.transcription-viewer-content', pane); // There are multiple, one for each transcript option.
+        date_select = $('select.date', toolbar);
 
     /**
      * Looks for the element that corresponds to the currently selected transcript.
@@ -140,7 +139,7 @@
      *   The transcript element as a jQuery object if found, false otherwise.
      */
     function getTranscript(project_id) {
-      var transcript = transcripts.closest('.' + project_id);
+      var transcript = $('.transcription-viewer-content', pane).closest('.' + project_id);
       return transcript.length ? transcript : false;
     }
 
@@ -162,7 +161,7 @@
      *   The transcript element as a jQuery object if found, false otherwise.
      */
     function getActiveTranscript() {
-      var transcript = transcripts.closest('.active');
+      var transcript = $('.transcription-viewer-content', pane).closest('.active');
       return transcript.length ? transcript : false;
     }
 
@@ -175,11 +174,37 @@
     function setActiveTranscript(transcript) {
       if (transcript) {
         // Un-active current transcript.
-        transcripts.each(function () {
+        $('.transcription-viewer-content', pane).each(function () {
           $(this).removeClass('active');
         });
         // Activate the transcript.
         transcript.addClass('active');
+        if (transcript.hasClass('livingstone-transcript-delayed-load')) {
+          var pid = transcript.data('pid'),
+              dsid = transcript.data('dsid');
+          $.ajax({
+            dataType: "json",
+            url: '/livingstone/transcript/' + pid + '/' + dsid,
+            success: function (data) {
+              var parent = transcript.parent();
+              // Add css.
+              $.each(data.css, function(key, value) {
+                $("<link/>", {
+                  rel: "stylesheet",
+                  type: "text/css",
+                  href: '/' + key,
+                }).appendTo("head");
+              });
+              // Add Transcript.
+              transcript.remove();
+              transcript = $(data.html);
+              transcript.addClass('active');
+              parent.append(transcript);
+              // Update dates.
+              updateDates(transcript);
+            }
+          });
+        }
         // Update dates.
         updateDates(transcript);
         // Scroll to top?
