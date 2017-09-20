@@ -381,7 +381,7 @@ function template_preprocess_livingstone_manuscript_viewer_downloads(array &$var
     );
   }
   $sort = function($a, $b) {
-    return strcmp($a['label'], $a['label']);
+    return strcmp($a['label'], $b['label']);
   };
   usort($variables['downloads']['archival'], $sort);
   usort($variables['downloads']['gif'], $sort);
