@@ -1427,7 +1427,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Note on the Text of the Letter',
@@ -1548,7 +1548,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2017-01-17 02:25:19 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Resources: Overview',
@@ -1575,8 +1575,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span></h4>
 
 <p><strong><a href="/resources/david-livingstone-bibliography">David Livingstone: A Bibliography</a></strong> - enumerates books by Livingstone, edited collections of his primary works, bibliographies, and biographies and critical sources.</p>
 
@@ -1612,8 +1611,8 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_000071_0001-carousel.jpg',
@@ -1638,8 +1637,8 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
           'height' => 292,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 292,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_000071_0001-tile.jpg',
@@ -1686,7 +1685,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-03-24 01:22:35 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone’s Posthumous Reputation',
@@ -1713,27 +1712,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 300px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr1">Introduction</a><br />
-			<a href="#lpr2">Imperial Scramble: The Partition of Africa</a><br />
-			<a href="#lpr3">Edwardian Empire</a><br />
-			<a href="#lpr4">Post-war Trusteeship</a><br />
-			<a href="#lpr5">Imperial Decline</a><br />
-			<a href="#lpr6">Partnership and the Central African Federation</a><br />
-			<a href="#lpr7">Decolonisation and Critical Biography</a><br />
-			<a href="#lpr8">Postcolonial Rewriting</a><br />
-			<a href="#lpr9">Livingstone on Screen</a><br />
-			<a href="#lpr10">Conclusion</a><br />
-			<a href="#lpr11">Acknowledgements</a><br />
-			<a href="#lpr12">Works Cited</a><a name="lpr1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>David Livingstone is one of the most written about figures of the nineteenth century. From the 1870s until at least the 1950s, hundreds of books were published that celebrated his life and work in Africa. In light of the sheer volume of attention that Livingstone has attracted, it has become increasingly important not just to study the man, but to study his mythology. No longer is it only Livingstone’s life that is of interest, but rather what has been called his cultural “after-life” (MacKenzie 1996).</p>
 
@@ -2087,8 +2066,8 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013475_0001-carousel.jpg',
@@ -2113,8 +2092,8 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013475_0001-tile.jpg',
@@ -2133,7 +2112,22 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay examines David Livingstone’s posthumous reputation, focusing on his status as an icon of the British Empire. It overviews the numerous biographies that have taken him as their subject and explores the changing ways in which Livingstone was represented as the British Empire developed and declined. This “metabiographical” approach enables us to trace Livingstone’s evolving public image, from the late nineteenth century to the present, as re-written and re-imagined for a range of socio-political purposes.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr2">Imperial Scramble: The Partition of Africa</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr3">Edwardian Empire</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr4">Post-war Trusteeship</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr5">Imperial Decline</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr6">Partnership and the Central African Federation</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr7">Decolonisation and Critical Biography</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr8">Postcolonial Rewriting</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr9">Livingstone on Screen</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr10">Conclusion</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr11">Acknowledgements</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lpr12">Works Cited</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -2161,7 +2155,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-01-26 19:25:56 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Materials',
@@ -2225,7 +2219,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-06-14 14:55:08 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Practices, Standards, and Arrangements',
@@ -2252,21 +2246,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 320px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#psa1">Introduction</a><br />
-			<a href="#psa2">Methodological Practices</a><br />
-			<a href="#psa3">Data Production Standards</a><br />
-			<a href="#psa4">Hosting, Site Setup, and Backup Arrangements</a><br />
-			<a href="#psa5">Appendix 1: File Naming</a><br />
-			<a href="#psa6">Appendix 2: MODS Elements</a><a id="psa1" name="psa1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p><em>Livingstone Online</em> is a data-driven project. We promote access to and use of our entire digital collection. We work in a transparent and accountable manner. We seek to ensure the long-term digital preservation of our core data. As a result, we rely on a set of well-defined practices, standards, and arrangements to realize these objectives.</p>
 
@@ -2470,8 +2450,8 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013493_0001-carousel.jpg',
@@ -2496,8 +2476,8 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013493_0001-tile.jpg',
@@ -2516,6 +2496,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>This section enumerates and defines <em>Livingstone Online</em>\'s methodological practices, data production standards, and hosting and backup arrangements.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#psa1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#psa2">Methodological Practices</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#psa3">Data Production Standards</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#psa4">Hosting, Site Setup, and Backup Arrangements</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#psa5">Appendix 1: File Naming</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#psa6">Appendix 2: MODS Elements</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -2544,7 +2535,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-01-26 19:24:00 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary I: An Overview',
@@ -2571,8 +2562,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000001?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-i-overview/liv_000001_reading_copy.zip">basic reading copy</a> of Field Diary I.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000001?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-i-overview/liv_000001_reading_copy.zip">basic reading copy</a> of Field Diary I.]</p>
 
 <p>The first of Livingstone’s field diaries from his final expedition to Africa (1866-73) begins with Livingstone’s departure for Africa from France. Livingstone opens with a series of addresses in French, noting that his daughter Agnes will remain in Paris to practice her French. Livingstone travels from Marseilles to Malta, where the ship is quarantined due to cholera. They then sail to Alexandria, Egypt, then overland to Cairo, then on to the Gulf of Aden and from there to Bombay, India.</p>
 <!--<p class="space2">-->
@@ -2653,7 +2643,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -2665,7 +2661,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2016-11-22 12:22:14 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Project Documentation',
@@ -2802,7 +2798,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Terminology and Acronyms',
@@ -2934,7 +2930,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2017-02-10 00:12:25 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary II: An Overview',
@@ -2961,8 +2957,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000002?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-ii-overview/liv_000002_reading_copy.zip">basic reading copy</a> of Field Diary II.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000002?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-ii-overview/liv_000002_reading_copy.zip">basic reading copy</a> of Field Diary II.]</p>
 
 <p>Field Diary II picks up where the <a href="/his-own-words/field-diary-i-overview">previous diary</a> left off, as Livingstone and his men leave the eastern coast of Africa and begin their trek inland. As in the previous diary, an opening note (c. late 1940s-early 1950s) from Rev. James McNair indicates that he has assessed the similarity between this account and the one published in Horace Waller\'s edited <em>Last Journals</em> (1874). This diary is "the basis for the entries in the \'Last Journal,\'" writes McNair; divergences "have been penciled where noticed" (Livingstone 1866a:[3]). The note suggests that even from this early date Livingstone scholars and enthusiasts were interested in how his account has been shaped by the publication process.</p>
 
@@ -3040,7 +3035,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -3052,7 +3053,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2016-11-22 12:23:55 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -3546,7 +3547,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-03-20 18:27:21 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -3799,7 +3800,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2017-02-09 23:35:04 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Scope of the Edition',
@@ -3826,22 +3827,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 460px;">
-	<tbody>
-		<tr>
-			<td>&nbsp;</td>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">High-resolution images with critically encoded text and full metadata</a><br />
-			<a href="#link3">High-resolution images with full metadata</a><br />
-			<a href="#link4">Encoded digital facsimile</a><br />
-			<a href="#link5">Critical materials</a><br />
-			<a href="#link6">Works Cited</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>The present edition encompasses the entire manuscript corpus related to Livingstone\'s final expedition to Africa (1865-73) held by the David Livingstone Centre in Blantyre, Scotland. This set of documents is possibly the most comprehensive and diverse surviving collection of manuscripts related to any single nineteenth-century British expedition to Africa.</p>
 
@@ -3948,6 +3934,17 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>This page defines the scope of our critical edition of Livingstone’s final manuscripts (1865-73). The page overviews the importance and content of the manuscripts, then enumerates the items published through our edition as high-resolution images with critically encoded text and full metadata; as high-resolution images with full metadata; or in encoded facsimile. The page closes with a synopsis of the critical materials included in the edition.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link2">High-resolution images with critically encoded text and full metadata</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link3">High-resolution images with full metadata</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link4">Encoded digital facsimile</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link5">Critical materials</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link6">Works Cited</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -3963,7 +3960,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -3975,7 +3978,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2017-06-14 13:10:09 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'History & Chronology of the 1870 Field Diary',
@@ -4209,7 +4212,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online TEI P5 Encoding Guidelines',
@@ -4252,8 +4255,8 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013091_0001-carousel.jpg',
@@ -4278,8 +4281,8 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013091_0001-tile.jpg',
@@ -4293,14 +4296,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
       ),
     ),
   ),
-  'field_section_outbound_link' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'http://livingstoneonline.github.io/LEAP-ODD/leap.html',
-        'format' => NULL,
-      ),
-    ),
-  ),
+  'field_section_outbound_link' => array(),
   'field_section_overview' => array(),
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(),
@@ -4325,7 +4321,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     ),
   ),
   'date' => '2015-01-26 19:24:48 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -4434,7 +4430,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-01-17 04:10:44 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Publishing Livingstone\'s Missionary Travels',
@@ -4461,26 +4457,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 325px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt1">Introduction</a><br />
-			<a href="#plmt2"><em>Missionary Travels</em>: A Case Study</a><br />
-			<a href="#plmt3">Complementing the Narrative</a><br />
-			<a href="#plmt4">Illustrating <em>Missionary Travels</em></a><br />
-			<a href="#plmt5">Distributing <em>Missionary Travels</em></a><br />
-			<a href="#plmt6">Popularising <em>Missionary Travels</em></a><br />
-			<a href="#plmt7">Reviewing <em>Missionary Travels</em></a><br />
-			<a href="#plmt8">Works Cited</a><br />
-			<a href="#plmt9">Primary Sources</a><br />
-			<a href="#plmt10">Secondary Sources</a><br />
-			<a href="#plmt11">Contemporary Reviews of <em>Missionary Travels</em></a><a name="plmt1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><span style="font-family:crimson text;"><strong>Introduction</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>Introduction</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>Many nineteenth-century explorers were celebrities. Whether this fame came from their accomplishments in geography, science, or missionary work, explorers such as Livingstone were often hailed as heroes. Often without regard to the work produced by the explorers themselves, a host of Victorian myth-makers made it their business to profit from turning individual explorers into heroes or villains. Often, the explorer’s reputation would be well established before the adventurer had even returned from the field.</p>
 
@@ -4931,8 +4908,8 @@ Elizabeth Maxwell</span></p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_014052_0001-carousel.jpg',
@@ -4957,8 +4934,8 @@ Elizabeth Maxwell</span></p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_014052_0001-tile.jpg',
@@ -4977,7 +4954,21 @@ Elizabeth Maxwell</span></p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay uses John Murray’s publication of Livingstone’s <em>Missionary Travels</em> as a case study to explore the role of print and publishers in fostering the fame of nineteenth-century explorers.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt2"><em>Missionary Travels</em>: A Case Study</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt3">Complementing the Narrative</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt4">Illustrating <em>Missionary Travels</em></a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt5">Distributing <em>Missionary Travels</em></a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt6">Popularising <em>Missionary Travels</em></a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt7">Reviewing <em>Missionary Travels</em></a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt8">Works Cited</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt9">Primary Sources</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt10">Secondary Sources</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#plmt11">Contemporary Reviews of <em>Missionary Travels</em></a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -5005,7 +4996,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-01-26 18:25:11 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Why Should We Read Livingstone’s Manuscripts?',
@@ -5032,8 +5023,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Many critics and historians regard David Livingstone as the single most important British imperial travel writer of the nineteenth century. His writings illuminate European imperialism and colonialism, African history, and the nineteenth-century slave trade, all of which continue to affect our present day world.</p>
+        'value' => '<p>Many critics and historians regard David Livingstone as the single most important British imperial travel writer of the nineteenth century. His writings illuminate European imperialism and colonialism, African history, and the nineteenth-century slave trade, all of which continue to affect our present day world.</p>
 
 <p>In his manuscripts, Livingstone documents the cultures and geography of diverse African populations – their social organization, languages, religions, politics, and technologies. Often such information cannot be found elsewhere. Historian Roy C. Bridges (1981:202) notes that Livingstone “is the principal and sometimes the only source of information on certain areas of Africa in certain periods.”</p>
 
@@ -5135,8 +5125,8 @@ Elizabeth Maxwell</span></p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013667_0001-carousel.jpg',
@@ -5161,8 +5151,8 @@ Elizabeth Maxwell</span></p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013667_0001-tile.jpg',
@@ -5209,7 +5199,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-01-26 17:56:17 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Project Teams',
@@ -5236,19 +5226,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 625px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#pt1">LEAP: The&nbsp;<em>Livingstone Online</em>&nbsp;Enrichment and Access Project&nbsp;(2013-17)</a><br />
-			<a href="#pt2">Livingstone\'s 1870 Field Diary - A Multispectral Critical Edition&nbsp;(2013-16)</a><br />
-			<a href="#pt3">Livingstone\'s 1871 Field Diary - A Multispectral Critical Edition&nbsp;(2010-13)</a><br />
-			<a href="#pt4">Livingstone\'s Letter from Bambarre - A Multispectral Critical Edition&nbsp;(pilot project, 2010-11)</a><a name="pt1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><span style="font-family:crimson text;"><a href="/about-site/what-leap-2013-2016"><strong>LEAP: The <em>Livingstone Online</em> Enrichment and Access Project (2013-17)</strong></a></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><a href="/about-site/what-leap-2013-2016"><strong>LEAP: The <em>Livingstone Online</em> Enrichment and Access Project (2013-17)</strong></a></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/behind-the-scenes/project-teams/liv_014087_0001-crop-article.jpg"><img alt="Alphabetical Adventures of Livingstone in Africa for Boys and Girls, detail, 1941 (The Livingstone Press, London), by S.E. Iredale. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/behind-the-scenes/project-teams/liv_014087_0001-crop-article.jpg" title="Alphabetical Adventures of Livingstone in Africa for Boys and Girls, detail, 1941 (The Livingstone Press, London), by S.E. Iredale. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland(https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;"><em>Alphabetical Adventures of Livingstone in Africa for Boys and Girls</em>, detail&nbsp;(The Livingstone Press, London), 1941, by S.E. Iredale. <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank">Creative Commons Share-alike 2.5 UK: Scotland</a></em></span></p>
@@ -5434,8 +5412,8 @@ Elizabeth Maxwell</span></p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013650_0001-carousel.jpg',
@@ -5460,8 +5438,8 @@ Elizabeth Maxwell</span></p>
           'height' => 292,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 292,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013650_0001-tile.jpg',
@@ -5480,6 +5458,15 @@ Elizabeth Maxwell</span></p>
     'und' => array(
       0 => array(
         'value' => '<p>This page enumerates the team members for the three <em>Livingstone Online</em> projects funded by the National Endowment for the Humanities plus a pilot project that laid the groundwork for the funded projects.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#pt1">LEAP: The&nbsp;<em>Livingstone Online</em>&nbsp;Enrichment and Access Project&nbsp;(2013-17)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#pt2">Livingstone\'s 1870 Field Diary - A Multispectral Critical Edition&nbsp;(2013-16)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#pt3">Livingstone\'s 1871 Field Diary - A Multispectral Critical Edition&nbsp;(2010-13)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#pt4">Livingstone\'s Letter from Bambarre - A Multispectral Critical Edition&nbsp;(pilot project, 2010-11)</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -5508,7 +5495,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-01-26 19:09:53 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Timeline',
@@ -5635,7 +5622,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-06-01 16:57:44 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Note on the Three Versions of the Text',
@@ -5763,7 +5750,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-02-09 23:54:42 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'A Project Bibliography',
@@ -5790,8 +5777,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Anon. 1872. Review of Henry M. Stanley\'s <em>How I Found Livingstone</em>. <em>Illustrated London News</em> 20:Cover, 485. NJ.677. National Library of Scotland, Edinburgh, Scotland.</p>
+        'value' => '<p>Anon. 1872. Review of Henry M. Stanley\'s <em>How I Found Livingstone</em>. <em>Illustrated London News</em> 20:Cover, 485. NJ.677. National Library of Scotland, Edinburgh, Scotland.</p>
 
 <p>Anon. 1874. Review of David Livingstone\'s <em>Last Journals</em>. <em>Illustrated London News</em> 64:381 (cover), 392, 401, 417. NJ.677. National Library of Scotland, Edinburgh, Scotland.</p>
 
@@ -5898,7 +5884,13 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -5910,7 +5902,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-05-29 20:30:26 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary VI: An Overview',
@@ -5937,8 +5929,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000006?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-vi-overview/liv_000006_reading_copy.zip">basic reading copy</a> of Field Diary VI.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000006?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-vi-overview/liv_000006_reading_copy.zip">basic reading copy</a> of Field Diary VI.]</p>
 
 <p>In Field Diary VI, Livingstone travels through the Zalamyama Mountains and then across the Loangwa River valley. Throughout, he records the threat of violence from the Mazitu people, an African ethnic group descended from the Nguni of kwaZulu-Natal who migrated north due to the Mfecane of the early nineteenth century.</p>
 
@@ -6029,7 +6020,13 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -6041,7 +6038,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2016-11-22 14:12:56 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Project Team',
@@ -6183,7 +6180,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-02-09 23:38:43 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online: An Introduction',
@@ -6210,8 +6207,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p><em>Livingstone Online</em> is a digital museum and library that allows users to encounter the written and visual legacy of the famous Victorian explorer <a href="/life-and-times/livingstone’s-life-expeditions">David Livingstone</a> (1813-73). The site draws on recent scholarship and international collaboration to restore one of the British Empire\'s most iconic figures to the many global contexts in which he worked, traveled, and is remembered.</p>
+        'value' => '<p><em>Livingstone Online</em> is a digital museum and library that allows users to encounter the written and visual legacy of the famous Victorian explorer <a href="/life-and-times/livingstone’s-life-expeditions">David Livingstone</a> (1813-73). The site draws on recent scholarship and international collaboration to restore one of the British Empire\'s most iconic figures to the many global contexts in which he worked, traveled, and is remembered.</p>
 
 <p>Since 2004, <em>Livingstone Online</em> has established itself as a leading archival resource for the study of African history, nineteenth-century travel, and the British Empire. The site\'s <a href="/his-own-words/livingstone-online-digital-collection">digital collection</a> of high-resolution manuscript images and critically-edited transcriptions – 15,000 images and 700 transcriptions by late 2017 – is among the largest on the internet related to any single historical British visitor to Africa.</p>
 
@@ -6255,8 +6251,8 @@ Elizabeth Maxwell</span></p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013465_0001-carousel.jpg',
@@ -6281,8 +6277,8 @@ Elizabeth Maxwell</span></p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013465_0001-tile_0.jpg',
@@ -6329,7 +6325,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-01-26 17:45:59 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Data Management',
@@ -6430,7 +6426,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-01-17 03:36:43 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary X: An Overview',
@@ -6457,8 +6453,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000010?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-x-overview/liv_000010_reading_copy.zip">basic reading copy</a> of Field Diary X.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000010?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-x-overview/liv_000010_reading_copy.zip">basic reading copy</a> of Field Diary X.]</p>
 
 <p>In Field Diary X, Livingstone finds himself hampered by local politics, ill health, and rain, as he travels westward to Lake Moero. The diary can be broken up roughly into two halves, each concerned with Livingstone\'s navigation of local conflicts between and among Africans and Arabs.</p>
 
@@ -6540,7 +6535,13 @@ Elizabeth Maxwell</span></p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -6552,7 +6553,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2016-11-22 14:19:58 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Aftermath of Livingstone\'s Death',
@@ -6579,17 +6580,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 100px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Images</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p><em>Livingstone Online</em>\'s <a href="/his-own-words/livingstone-online-digital-collection">digital collection</a> includes a selection of images related to the aftermath of Livingstone\'s death in 1873. This bonus page provides a curated selection of these images. Some of the images appeared contemporaneously in the Victorian press; others emerged in subsequent years. The images focus on some of the individuals in Africa and Britain who took part in transporting Livingstone\'s body to its final resting place in Westminster Abbey and in mourning his death. As a result, the images restore some of the broader contexts in which Livingstone\'s legacy has resonated and highlight further cultural dimensions useful in the study of Livingstone\'s final manuscripts.</p>
 
@@ -6717,6 +6708,13 @@ Elizabeth Maxwell</span></p>
     'und' => array(
       0 => array(
         'value' => '<p>This bonus page provides a curated selection of images related to the immediate aftermath of Livingstone\'s death. The images offer a useful perspective on Livingstone\'s final manuscripts by foregrounding a series of cultural contexts often left out in iconic representations focusing on Livingstone himself.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link2">Images</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -6725,7 +6723,13 @@ Elizabeth Maxwell</span></p>
   'field_section_page_transcription' => array(),
   'field_section_pre_title' => array(),
   'field_section_subtitle' => array(),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -6737,7 +6741,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-05-28 05:34:47 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -6878,7 +6882,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2017-01-24 00:13:01 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Credits and Permissions',
@@ -6905,19 +6909,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 475px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#cp1"><em>Livingstone Online</em>&nbsp;General Credits, Permissions, and Disclaimers</a><br />
-			<a href="#cp2">Individual Credits and Permissions</a><br />
-			<a href="#cp3">Institutional Credits and Permissions</a><br />
-			<a href="#cp4"><em>David Livingstone: A Catalogue of Documents</em>&nbsp;Credits and Permissions</a><a name="cp1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Livingstone Online General Credits, Permissions, and Disclaimers</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Livingstone Online General Credits, Permissions, and Disclaimers</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>All <em>Livingstone Online</em> materials are copyright <em>Livingstone Online</em>, unless specified below or elsewhere in the site, and are made freely available under the <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a> license in an effort to promote the broadest possible non-commercial use.</p>
 
@@ -6928,7 +6920,9 @@ Elizabeth Maxwell</span></p>
 <p>Any violations of such rights or provision conditions are, therefore, wholly unintended. Should any such violations be present in our site, interested parties are kindly requested to bring the matter to <em>Livingstone Online</em> directors <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> and/or <a href="mailto:ward.megan.elizabeth@gmail.com">Megan Ward</a>, and we will do our best to resolve all issues with speed, including taking down materials from our site if necessary.</p>
 
 <p>Likewise, any inadvertent credit and permission ambiguities should be treated by site users with caution and further clarification should be sought prior to material reuse either from the directors of <em>Livingstone Online</em> or the rights owners of a given item.</p>
+
 <p><a name="cp2"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Individual Credits and Permissions</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -6940,7 +6934,9 @@ Elizabeth Maxwell</span></p>
 <p><strong>Project collaborators:</strong> The following project collaborators and contributors have all made their original written productions available to <em>Livingstone Online</em> under the <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a> license: Angela Aliff, Heather Ball, Craig Chandler, Erin Cheatham, James Cummings, Danielle Cyphert, Karin Dalziel, Stephen Davison, Roger Easton, Samanta Fitch, Louise Henderson, Claudia Horning, Keith Knox, Ashanka Kumari, Christopher Lawrence, Justin Livingstone, Lisa McAulay, Anne Martin, Jared McDonald, Sharon Messenger, Caroline Overy, A.J. Schmitz, Kate Simpson, Frank Smutniak, Matthew Stumpf, Mike Toth, Megan Ward, and Adrian S. Wisnicki. Where possible, appropriate credit is also provided for these contributions throughout the site.</p>
 
 <p>Louise Henderson\'s essay <a href="/life-and-times/publishing-livingstones-missionary-travels">Publishing Livingstone\'s <em>Missionary Travels</em></a> is © Louise Henderson and is published by permission. Please refer all inquiries and comments about this essay to her by <a href="mailto:louisechenderson@live.com">email</a>.</p>
+
 <p><a name="cp3"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Institutional Credits and Permissions</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -7061,8 +7057,8 @@ Elizabeth Maxwell</span></p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013102_0001-carousel.jpg',
@@ -7087,8 +7083,8 @@ Elizabeth Maxwell</span></p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013102_0001-tile.jpg',
@@ -7107,6 +7103,15 @@ Elizabeth Maxwell</span></p>
     'und' => array(
       0 => array(
         'value' => '<p>This page sets out the specific credits and permissions for all image, text, and other materials found on <em>Livingstone Online</em>.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#cp1"><em>Livingstone Online</em>&nbsp;General Credits, Permissions, and Disclaimers</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#cp2">Individual Credits and Permissions</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#cp3">Institutional Credits and Permissions</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#cp4"><em>David Livingstone: A Catalogue of Documents</em>&nbsp;Credits and Permissions</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -7135,7 +7140,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-02-20 16:32:06 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Notes on Processed Spectral Images',
@@ -7866,7 +7871,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'In His Own Words: Overview',
@@ -7893,8 +7898,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span></h4>
 
 <p><strong><a href="/his-own-words/livingstone-online-digital-collection">The Livingstone Online Digital Collection</a> </strong>- describes the scope of the <em>Livingstone Online</em> digital collection and enumerates the various methods available for encountering this collection.</p>
 
@@ -7930,8 +7934,8 @@ Elizabeth Maxwell</span></p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/IMG_6158-carousel.jpg',
@@ -7956,8 +7960,8 @@ Elizabeth Maxwell</span></p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/IMG_6158-tile.jpg',
@@ -8006,7 +8010,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-06-01 06:00:25 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Digital Catalogue Record',
@@ -8122,7 +8126,7 @@ Elizabeth Maxwell</span></p>
     ),
   ),
   'date' => '2015-06-01 06:07:48 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Third Massacre Narrative',
@@ -8224,7 +8228,7 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
     ),
   ),
   'date' => '2017-02-09 23:44:22 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Creating the 1870 Field Diary',
@@ -8616,7 +8620,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Project Documentation',
@@ -8757,7 +8761,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-02-16 02:03:09 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Diary across Hands, Space, and Time (2)',
@@ -9043,7 +9047,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Spectral Image Collection',
@@ -9159,7 +9163,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The 1871 Field Diary Facsimile',
@@ -9255,7 +9259,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-02-10 00:10:34 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'An Introduction to Spectral Imaging',
@@ -9379,7 +9383,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-01-17 02:54:17 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Overview of Processing Objectives',
@@ -9492,7 +9496,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-02-09 23:48:26 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Project Team',
@@ -9614,7 +9618,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-01-16 23:42:51 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary III: An Overview',
@@ -9641,8 +9645,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000003?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-iii-overview/liv_000003_reading_copy.zip">basic reading copy</a> of Field Diary III.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000003?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-iii-overview/liv_000003_reading_copy.zip">basic reading copy</a> of Field Diary III.]</p>
 
 <p>As Livingstone and his men travel further away from the coast and begin to head towards Lake Nyassa, Livingstone first encounters the problems that would dog him for the remainder of his last journey: food scarcity, the slave trade, and mutiny among his men. Although Livingstone first notes the group’s hunger early in the diary, they receive food from a friendly chief. As men trek further into the interior of Africa, however, it becomes more and more difficult to procure enough food. Though Livingstone repeatedly sends his men off to buy food with cloth, they often come back empty-handed or with inadequate supplies.</p>
 
@@ -9740,7 +9743,13 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -9752,7 +9761,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2016-11-22 12:23:46 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Background of the Edition',
@@ -9873,7 +9882,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-01-16 23:59:19 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Project History (2)',
@@ -10345,7 +10354,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2017-03-12 21:46:42 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Glossary of Key Terms in Livingstone\'s Manuscripts, 1870-71',
@@ -10372,28 +10381,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g0">Introduction</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text">People and Groups</span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g1">Individuals</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g2">African Ethnic Groups</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g3">Other Groups, Collectives, Organizations</a></span></span></li>
-	</ol>
-	</li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text">Places and Features</span></span>
-	<ol>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g4">Settlements</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g5">Regions</a></span></span></li>
-		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g6">Geographical Features</a></span></span></li>
-	</ol>
-	</li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>Livingstone refers to many African locations and geographical features, as well as numbers of African, Arab, and Indian names – sometimes spelled phonetically or with multiple variants. In order to make these references more easily interpretable, we have compiled an extensive glossary of the people, groups, places, and features cited in the manuscripts imaged by the Livingstone Spectral Imaging Project.</p>
 
@@ -11267,6 +11255,25 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     'und' => array(
       0 => array(
         'value' => '<p>This page offers a glossary of the people, groups, places, and geographical features cited in the Livingstone manuscripts (1870-71) imaged by the Livingstone Spectral Imaging Project. It serves as an integrated reference that complements our project’s annotated transcriptions of these same manuscripts.</p>
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text">People and Groups</span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g1">Individuals</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g2">African Ethnic Groups</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g3">Other Groups, Collectives, Organizations</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text">Places and Features</span></span>
+	<ol>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g4">Settlements</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g5">Regions</a></span></span></li>
+		<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#g6">Geographical Features</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -11295,7 +11302,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s 1871 Field Diary',
@@ -11322,8 +11329,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<h4><strong><span style="font-family:crimson text">Introduction to the edition</span></strong></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text">Introduction to the edition</span></strong></h4>
 
 <p>The publication of Livingstone’s 1871 Field Diary reveals for the first time the original record of a remarkable and traumatic period in the life of David Livingstone, the celebrated British abolitionist, missionary, and explorer of Africa. The date of publication coincides almost exactly with the date Livingstone completed this diary in Central Africa 140 years ago. The original, previously unpublished text of the diary has remained inaccessible until now, due to the fragility of the paper and the near-illegible script. Thanks to cutting-edge spectral imaging and processing technology, the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> now makes all the surviving pages of the diary available through this electronic edition.</p>
 
@@ -11476,7 +11482,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-02-09 23:32:12 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone’s Life & Expeditions',
@@ -11503,27 +11509,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 525px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle1">Early Years</a><br />
-			<a href="#lle2">Education and Intellectual Formation</a><br />
-			<a href="#lle3">Early Travels (1841-52)</a><br />
-			<a href="#lle4">Crossing the Continent (1852-56)</a><br />
-			<a href="#lle5">Return to Britain (1856-58): The Publication of <em>Missionary Travels</em></a><br />
-			<a href="#lle6">The Zambezi Expedition (1858-64)</a><br />
-			<a href="#lle7">Second Return to Britain (1864-65)</a><br />
-			<a href="#lle8">Final Journeys (1866-68): The Nile Question</a><br />
-			<a href="#lle9">Final Journeys (1869-72): Nyangwe Massacre and the Encounter with Stanley</a><br />
-			<a href="#lle10">Livingstone’s Death and Burial (1872-73)</a><a id="lle1" name="lle1"></a><br />
-			<a href="#lle11">Acknowledgements</a><br />
-			<a href="#lle12">Works Cited</a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Early Years</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Early Years</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>David Livingstone, perhaps the best known missionary and explorer of the Victorian period, was born in 1813 to parents Neil and Agnes Livingstone. He began life in Blantyre, a small town near Glasgow on the river Clyde where the cotton mill was the major employer. Like many locals, Livingstone entered the factory when he was ten years old, working as a piecer with the job of repairing threads broken during cotton spinning.</p>
 
@@ -11873,8 +11859,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_003007_0001-carousel.jpg',
@@ -11899,8 +11885,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_003007_0001-tile.jpg',
@@ -11919,6 +11905,23 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This essay overviews Livingstone’s life and expeditions. It presents an account of his upbringing in Scotland, his early years as a missionary in southern Africa, and the celebrated cross-continental expedition of 1852-56. The essay also discusses the Zambezi Expedition (1857-64) as well as Livingstone’s final journeys (1866-73), including the 1871 Nyangwe massacre and the famous meeting with Henry M. Stanley ("Dr Livingstone I Presume?"). The essay closes with an account of Livingstone’s death (1873), followed by the transcontinental transportation of his remains to Britain and his interment at Westminster Abbey (1874).</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle1">Early Years</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle2">Education and Intellectual Formation</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle3">Early Travels (1841-52)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle4">Crossing the Continent (1852-56)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle5">Return to Britain (1856-58): The Publication of <em>Missionary Travels</em></a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle6">The Zambezi Expedition (1858-64)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle7">Second Return to Britain (1864-65)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle8">Final Journeys (1866-68): The Nile Question</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle9">Final Journeys (1869-72): Nyangwe Massacre and the Encounter with Stanley</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle10">Livingstone’s Death and Burial (1872-73)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle11">Acknowledgements</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lle12">Works Cited</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -11947,7 +11950,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-01-26 19:25:24 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Southern Africans and the Advent of Colonialism',
@@ -11974,34 +11977,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 350px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp0">Introduction</a><br />
-			<a href="#sapp1">The Earliest Inhabitants</a><br />
-			<a href="#sapp2">Human Settlement and the Climate</a><br />
-			<a href="#sapp3">The Arrival of Europeans</a><br />
-			<a href="#sapp4">The Expanding Cape Colony</a><br />
-			<a href="#sapp5">The Advance of the Colonial Frontier</a><br />
-			<a href="#sapp6">The Transition from VOC to British Rule</a><br />
-			<a href="#sapp7">A New Mission Field Opens Up</a><br />
-			<a href="#sapp8">The Era of Reform</a><br />
-			<a href="#sapp9">Boer Discontent and the Great Trek</a><br />
-			<a href="#sapp10">Social and Political Change in the Interior</a><br />
-			<a href="#sapp11">Traders and Raiders along the Trans-Gariep Frontier</a><br />
-			<a href="#sapp12">The Mfecane and the Rise of the Zulu Kingdom</a><br />
-			<a href="#sapp13">The Mfecane Draws to a Close</a><br />
-			<a href="#sapp14">The Consolidation of European Political Power</a><br />
-			<a href="#sapp15">Livingstone in Context</a><br />
-			<a href="#sapp16">Acknowledgements</a><br />
-			<a href="#sapp17">Glossary</a><br />
-			<a href="#sapp18">Further Reading</a><a name="sapp0"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>By the mid-nineteenth century, southern Africa was a region characterised by intense conflict. The scale of this conflict had increased over the course of the late eighteenth and early nineteenth centuries, resulting in significant demographic shifts among the region’s population groups. In order to understand why, it is necessary to trace the history of human settlement in the African sub-continent from the pre-colonial period.</p>
 
@@ -12080,9 +12056,7 @@ The Livingstone Spectral Imaging Project<br />
 <p>European encroachment to the north and east of Cape Town was steady over the course of the seventeenth and eighteenth centuries, in spite of concerted Khoesan resistance. The loss of land and livestock, coupled with the introduction of European diseases, in particular smallpox, resulted in the rapid disintegration of Khoekhoe social and political organisation.</p>
 
 <p>The San were treated with particular disdain by the trekboers, who regarded their hunter-gatherer lifestyle as backward and uncivilized. Conflict along the north-eastern frontier culminated in a genocidal campaign of extermination against the San during the 1770s and 1780s.</p>
-
-<pBy the close of the eighteenth century, European settlement had reached the Gariep River to the north and the Fish River to the east. Many formerly independent Khoesan had been incorporated into the Cape’s labour regime as forced labourers, living and working alongside the slaves.</p>
-
+<pby century="" close="" eighteenth="" of="" the="">
 <div class="doubleimg">
 <div class="doubleleft"><a href="/sites/default/files/life-and-times/southern-africans-and-the-advent-colonialism/liv_012010_0020-article.jpg"><img alt="Lantern Slides of the Life, Adventures, and Work of David Livingstone. Courtesy of the Smithsonian Libraries, Washington, D.C." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/life-and-times/southern-africans-and-the-advent-colonialism/liv_012010_0020-article.jpg" style="height: 320px; margin-right: 10px;" typeof="foaf:Image&quot;" /></a></div>
 
@@ -12181,6 +12155,7 @@ The Livingstone Spectral Imaging Project<br />
 <span style="font-size:12px;">Sechuana Bible, 1853. <em>Copyright </em>Livingstone Online<em> (Gary Li, photographer). May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (The David Livingstone Centre). </em></span></p>
 
 <p><a name="sapp11"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><span style="font-family:crimson text;"><strong>Traders and Raiders along the Trans-Gariep Frontier</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -12330,7 +12305,7 @@ The Livingstone Spectral Imaging Project<br />
 <p>Wylie, Dan. 2011. <em>Shaka: A Jacana Pocket Biography</em>. Johannesburg: Jacana Media.</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
-',
+</pby>',
         'format' => 'full_html',
       ),
     ),
@@ -12360,8 +12335,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013160_0001-carousel.jpg',
@@ -12386,8 +12361,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013160_0001-tile.jpg',
@@ -12406,6 +12381,29 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This essay provides a summary of the most important historical events and processes relating to the peoples of southern Africa. The essay also explains the social and political context of the sub-continent from the Stone Age through to the mid-nineteenth century, when Livingstone first arrived in the region. The essay concludes with a glossary that defines key terms used in the text.</p>
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp1">The Earliest Inhabitants</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp2">Human Settlement and the Climate</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp3">The Arrival of Europeans</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp4">The Expanding Cape Colony</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp5">The Advance of the Colonial Frontier</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp6">The Transition from VOC to British Rule</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp7">A New Mission Field Opens Up</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp8">The Era of Reform</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp9">Boer Discontent and the Great Trek</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp10">Social and Political Change in the Interior</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp11">Traders and Raiders along the Trans-Gariep Frontier</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp12">The Mfecane and the Rise of the Zulu Kingdom</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp13">The Mfecane Draws to a Close</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp14">The Consolidation of European Political Power</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp15">Livingstone in Context</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp16">Acknowledgements</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp17">Glossary</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#sapp18">Further Reading</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -12434,7 +12432,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-01-26 20:02:12 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Collaborating Institutions',
@@ -12461,8 +12459,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>The success and continuing development of <em>Livingstone Online</em> relies on our collaboration with an international range of libraries, museums, archives, and universities. These institutions have not only made their Livingstone manuscripts available to us (and so to our users), but in many instances have provided pro bono services, technical advice, and other forms of support. We are grateful for this assistance. Our work would not be possible without it.</p>
+        'value' => '<p>The success and continuing development of <em>Livingstone Online</em> relies on our collaboration with an international range of libraries, museums, archives, and universities. These institutions have not only made their Livingstone manuscripts available to us (and so to our users), but in many instances have provided pro bono services, technical advice, and other forms of support. We are grateful for this assistance. Our work would not be possible without it.</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/behind-the-scenes/collaborating-institutions/liv_012028_0010-article.jpg"><img alt="Wooden casket containing the Freedom of City of London conferred on David Livingstone, c.1857. Copyright David Livingstone Centre and Roddy Simpson. Object images used by permission. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/behind-the-scenes/collaborating-institutions/liv_012028_0010-article.jpg" title="Wooden casket containing the Freedom of City of London conferred on David Livingstone, c.1857. Copyright David Livingstone Centre and Roddy Simpson. Object images used by permission. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Wooden casket containing the Freedom of City of London conferred on David Livingstone, detail, c.1857.&nbsp;<em>Copyright David Livingstone Centre and Roddy Simpson. Object images used by permission. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre). </em></span></p>
@@ -12581,8 +12578,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_000077_0001-carousel.jpg',
@@ -12607,8 +12604,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_000077_0001-tile.jpg',
@@ -12655,11 +12652,11 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-01-26 19:10:33 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Site Guide',
-  'log' => 'Copy of the revision from <em class="placeholder">Mon, 06/26/2017 - 08:32</em>.',
+  'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
@@ -12682,39 +12679,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 430px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg1">I) Main Sections and Subsections</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#losg1.0">1) Home Page</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#losg1.1">2) About This Site</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#losg1.2">3) In His Own Words</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#losg1.3">4) Spectral Imaging</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#losg1.4">5) Life and Times</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#losg1.5">6) Behind the Scenes</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#losg1.6">7) Resources</a><br />
-			<a href="#losg2">II) Core Site Data</a><br />
-			<a href="#losg3">III) LEAP Documentation</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg3.1">1) LEAP Documentation: Area Specific Subsets</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg3.2">2) LEAP Documentation: Highlights</a><br />
-			<a href="#losg4">IV) Livingstone Spectral Imaging Project Files</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg4.1">1) Livingstone\'s 1870 Field Diary</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg4.1.1">i. Miscellaneous Files for Download</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg4.1.2">ii. Animated Spectral Images (ASIs) for Download</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg4.1.3">iii. Project Documentation</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg4.2">2) Livingstone\'s 1871 Field Diary</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg4.2.1">i. Miscellaneous Files for Download</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg4.2.2">ii. Livingstone Spectral Image Archive Files</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg4.2.3">iii. Project Documentation</a><br />
-			<a href="#losg5">V) Livingstone\'s Final Manuscripts (1865-73): Files for Download</a><br />
-			<a href="#losg6">VI) Outreach Materials</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#losg6.1">1) Outreach Materials: Individual Worksheets</a><a name="losg1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">I) Main Sections and Subsections</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">I) Main Sections and Subsections</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p class="space2"><em>The home page and six main sections of the site, each of which contains a series of subsections.</em><a name="losg1.0"></a></p>
 
@@ -13341,8 +13306,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013716_0001-carousel.jpg',
@@ -13367,8 +13332,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013716_0001-tile.jpg',
@@ -13387,7 +13352,52 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This section provides a skeletal outline of the entire <em>Livingstone Online</em> site. The section enumerates all the main sections and subsections of the site and provides links to all core site data, documentation, and outreach materials.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg1">I) Main Sections and Subsections</a></span></span>
+	<ol>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg1.0">1) Home Page</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg1.1">2) About This Site</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg1.2">3) In His Own Words</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg1.3">4) Spectral Imaging</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg1.4">5) Life and Times</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg1.5">6) Behind the Scenes</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg1.6">7) Resources</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg2">II) Core Site Data</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg3">III) LEAP Documentation</a></span></span>
+	<ol>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg3.1">1) LEAP Documentation: Area Specific Subsets</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg3.2">2) LEAP Documentation: Highlights</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg4">IV) Livingstone Spectral Imaging Project Files</a></span></span>
+	<ol>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg4.1">1) Livingstone\'s 1870 Field Diary</a></span></span>
+		<ol>
+			<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg4.1.1">i. Miscellaneous Files for Download</a></span></span></li>
+			<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg4.1.2">ii. Animated Spectral Images (ASIs) for Download</a></span></span></li>
+			<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg4.1.3">iii. Project Documentation</a></span></span></li>
+		</ol>
+		</li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg4.2">2) Livingstone\'s 1871 Field Diary</a></span></span>
+		<ol>
+			<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg4.2.1">i. Miscellaneous Files for Download</a></span></span></li>
+			<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg4.2.2">ii. Livingstone Spectral Image Archive Files</a></span></span></li>
+			<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg4.2.3">iii. Project Documentation</a></span></span></li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg5">V) Livingstone\'s Final Manuscripts (1865-73): Files for Download</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#losg6">VI) Outreach Materials</a></span></span>
+	<ol>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;">​​​​​​​<a href="#losg6.1">1) Outreach Materials: Individual Worksheets</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -13415,7 +13425,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-06-09 03:23:25 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'What is LEAP (2013-2017)?',
@@ -13442,8 +13452,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>The <em>Livingstone Online</em> Enrichment and Access Project (LEAP) is a four-year initiative funded by the National Endowment for the Humanities (USA). The project, which launched on September 1, 2013, brings together an international, interdisciplinary team of experts and two of the largest Livingstone manuscript collections in Scotland: the National Library of Scotland and the David Livingstone Centre. The overarching goal of the project, under the leadership of Adrian S. Wisnicki, is to revise, redesign, and expand the original <em>Livingstone Online</em> website and digital collection (2005-13; Christopher Lawrence, original director and director emeritus of the present site).</p>
+        'value' => '<p>The <em>Livingstone Online</em> Enrichment and Access Project (LEAP) is a four-year initiative funded by the National Endowment for the Humanities (USA). The project, which launched on September 1, 2013, brings together an international, interdisciplinary team of experts and two of the largest Livingstone manuscript collections in Scotland: the National Library of Scotland and the David Livingstone Centre. The overarching goal of the project, under the leadership of Adrian S. Wisnicki, is to revise, redesign, and expand the original <em>Livingstone Online</em> website and digital collection (2005-13; Christopher Lawrence, original director and director emeritus of the present site).</p>
 
 <table align="center" cellpadding="1" cellspacing="1" style="width: 500px;">
 	<tbody>
@@ -13515,8 +13524,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013409_0001-carousel.jpg',
@@ -13541,8 +13550,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013409_0001-tile.jpg',
@@ -13589,7 +13598,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-03-20 18:53:26 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s 1870 Field Diary',
@@ -13616,8 +13625,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction to the edition</span></strong></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction to the edition</span></strong></h4>
 
 <p>David Livingstone composed the 1870 Field Diary and a handful or related manuscripts over various scraps of paper while stranded in Central Africa. Because of his immobility, Livingstone focused his writing on African life to an extent usual both for his final writings (1866-73) and those of contemporaneous British travelers to Africa. The documents capture Livingstone\'s first-hand impressions of the Central African slave trade,&nbsp;record complex social dynamics among local Central African populations, and set out detailed geographical information gathered through travel and by interviewing Arab and African informants.</p>
 
@@ -13757,7 +13765,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Spectral Imaging Project: An Introduction',
@@ -13784,8 +13792,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>The <em>Livingstone Spectral Imaging Project</em> brings together a team of scholars, scientists, and librarians from Scotland, England, and the United States to study some of the most intriguing diaries and letters that David Livingstone ever produced. Because of the methods that Livingstone used, today much of these documents is illegible to the naked eye.</p>
+        'value' => '<p>The <em>Livingstone Spectral Imaging Project</em> brings together a team of scholars, scientists, and librarians from Scotland, England, and the United States to study some of the most intriguing diaries and letters that David Livingstone ever produced. Because of the methods that Livingstone used, today much of these documents is illegible to the naked eye.</p>
 
 <p>Since 2010, however, we have applied spectral imaging and processing – a cutting-edge imaging technology first pioneered by NASA – to study these documents, examine manuscript features that cannot be seen in any other way, and, indeed, reveal text that has been hidden for 140 years. The National Endowment for the Humanities (USA) has cited <a href="http://50.neh.gov/projects/david-livingstone-goes-digital" target="_blank">this project</a> as one "that changed the landscape of the humanities" and has selected it as <a href="http://50.neh.gov/" target="_blank">one of 50 projects</a> to represent the best of the 65,000 projects that the NEH has funded since its inception 50 years ago.</p>
 
@@ -13829,8 +13836,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/LivingstoneText_019-new-carousel_0.jpg',
@@ -13855,8 +13862,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/LivingstoneText_019-new-tile.jpg',
@@ -13903,7 +13910,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary VII: An Overview',
@@ -13930,8 +13937,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000007?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-vii-overview/liv_000007_reading_copy.zip">basic reading copy</a> of Field Diary VII.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000007?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-vii-overview/liv_000007_reading_copy.zip">basic reading copy</a> of Field Diary VII.]</p>
 
 <p>Field Diary VII chronicles Livingstone’s journey westward through the Chikokwe Mountains and across the Movoche River (a tributary of the Loangwa River). The diary also represents the last of the field diaries from 1866; no other year of Livingsotne’s final travels (1866-73) will receive this much coverage. All the while, Livingstone is dogged by extreme hunger. What begins as an attempt to hunt a rhinoceros for Christmas dinner in face of the “exorbitant prices” of Kavimba’s village turns into a full-scale famine by the following month (Livingstone 1866f:[5]).</p>
 
@@ -14042,7 +14048,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -14054,7 +14066,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-22 14:16:25 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Letter from Bambarre',
@@ -14081,8 +14093,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<h4><strong><span style="font-family:crimson text">Introduction to the Edition</span></strong></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text">Introduction to the Edition</span></strong></h4>
 
 <p>This edition of <em>Livingstone’s Letter from Bambarre</em> is of great interest to scholars of the British Empire, Victorian literature, African history, the history of medicine, and the digital humanities. Livingstone\'s previously unpublished letter of 5 February 1871 to his friend and future editor, Horace Waller, was the first nineteenth-century British literary work to be captured and enhanced with the multispectral imaging process.</p>
 
@@ -14213,7 +14224,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-01-16 23:24:22 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -14485,7 +14496,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'A Brief History of Livingstone Online (2004-2013)',
@@ -14512,18 +14523,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" class="space-1" style="width: 350px;">
-	<tbody>
-		<tr>
-			<td><span style="font-family:crimson text;"><span style="font-size: 15px;"><a href="#hlo1">First Steps (2004-06)</a><br />
-			<a href="#hlo2">Development and Expansion (2007-09)</a><br />
-			<a href="#hlo3">The Interlude (2010-13)</a></span></span><a name="hlo1"></a></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><span style="font-family:crimson text;"><strong>First Steps (2004-06)</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>First Steps (2004-06)</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p><em>Livingstone Online</em> started as a pilot project with a broader aim. In 2004, a small group of scholars at the Wellcome Trust Centre for the History of Medicine at University College London began to investigate the ways in which nineteenth-century medicine and science advanced the nationalist aims of exploration and colonization.</p>
 
@@ -14625,8 +14625,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013356_0001-carousel.jpg',
@@ -14651,8 +14651,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013356_0001-tile.jpg',
@@ -14671,7 +14671,13 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This essay explores the origins of<em> Livingstone Online</em>, describes the goals and achievements of the project\'s first phase (2004-06), considers how these goals changed as the site grew and gained more collaborators during its second phase (2007-09), and, finally, outlines how <em>Livingstone Online</em> expanded into an international project while embracing advanced imaging technology for the study of Livingstone\'s manuscripts (2010-13).</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-family:crimson text;"><span style="font-size: 15px;"><a href="#hlo1">First Steps (2004-06)</a></span></span></li>
+	<li><span style="font-family:crimson text;"><span style="font-size: 15px;"><a href="#hlo2">Development and Expansion (2007-09)</a></span></span></li>
+	<li><span style="font-family:crimson text;"><span style="font-size: 15px;"><a href="#hlo3">The Interlude (2010-13)</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -14699,7 +14705,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-01-26 18:18:54 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Outreach Worksheets',
@@ -14726,17 +14732,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 250px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loow1.0">Introduction</a><br />
-			<a href="#loow1.1">Outreach Program Worksheets</a><a name="loow1.0"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span> &nbsp;&nbsp; </strong><span style="font-family:crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span> &nbsp;&nbsp; </strong><span style="font-family:crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p><a href="/resources/livingstone-online-outreach-program"><em>Livingstone Online</em>’s Outreach Program</a> (2013-15) resulted in the production of <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_Complete_Livingstone_Online_Worksheets.zip">eleven educational worksheets</a> for children aged 9-13.</p>
 
@@ -14820,8 +14816,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_000041_0001-carousel.jpg',
@@ -14846,8 +14842,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 292,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 292,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_000041_0001-tile.jpg',
@@ -14866,6 +14862,13 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This page introduces the <a href="/sites/default/files/Outreach_Complete_Livingstone_Online_Worksheets.zip">eleven educational worksheets</a> for children aged 9-13 created by the <a href="/resources/livingstone-online-outreach-program"><em>Livingstone Online</em>’s Outreach Program</a>. The page also allows users to download the worksheets or to view them online.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loow1.0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loow1.1">Outreach Program Worksheets</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -14894,7 +14897,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-04-30 02:06:59 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone, Central Africa, 1870',
@@ -15513,7 +15516,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-03-31 17:36:38 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Project Team',
@@ -15647,7 +15650,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary V: An Overview',
@@ -15674,8 +15677,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000005?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-v-overview/liv_000005_reading_copy.zip">basic reading copy</a> of Field Diary V.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000005?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-v-overview/liv_000005_reading_copy.zip">basic reading copy</a> of Field Diary V.]</p>
 
 <p>In Field Diary V, Livingstone journeys from the shores of Lake Nyassa west through mountains in modern-day Malawi. Along the way, he finds plentiful food, most of it given to them by local populations. Perhaps as a result, in this diary Livingstone records far fewer instances of mutiny or struggles for authority among his men.</p>
 
@@ -15764,7 +15766,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -15776,7 +15784,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-22 14:09:30 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -15920,7 +15928,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Illustrative Image Credits',
@@ -15947,26 +15955,12 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 200px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#iic1">Introduction</a><br />
-			<a href="#iic2">Home Page</a><br />
-			<a href="#iic3">About This Site</a><br />
-			<a href="#iic4">In His Own Words</a><br />
-			<a href="#iic5">Spectral Imaging</a><br />
-			<a href="#iic6">Life and Times</a><br />
-			<a href="#iic7">Behind the Scenes</a><br />
-			<a href="#iic8">Resources</a><a name="iic1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>Introduction</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<hr />
-<h4><span style="font-family:crimson text;"><strong>Introduction</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+<p>We illustrate our <a href="http://livingstoneonline.org">home page</a>, the tiles on our six main section pages (for instance, <a href="/about-this-site">About this Site</a>), and the tiles in the carousel at the top of each of our content pages (for instance, the present page) with images drawn from our digital collection. However, design considerations prevent us from providing image credits in those three parts of our site. As a result, we use this page to record those credits. (Note: Since each of our content pages takes the same image for the corresponding section and carousel tiles, below we list the credits for those images by content page.)</p>
 
-<p>We illustrate our <a href="http://livingstoneonline.org">home page</a>, the tiles on our six main section pages (for instance, <a href="/about-this-site">About this Site</a>), and the tiles in the carousel at the top of each of our content pages (for instance, the present page) with images drawn from our digital collection. However, design considerations prevent us from providing image credits in those three parts of our site. As a result, we<strong></strong> use this page to record those credits. (Note: Since each of our content pages takes the same image for the corresponding section and carousel tiles, below we list the credits for those images by content page.)</p>
 <p><a name="iic2"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Home page</span></strong><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -15984,7 +15978,9 @@ The Livingstone Spectral Imaging Project<br />
 <p><strong><a href="/">Sixth image</a></strong> - David Livingtone\'s followers, Susi and Chuma, pictured with his former possessions, 1873. Copyright Wellcome Library, London. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
 
 <p><strong><a href="/">Seventh image</a></strong> - Henry Morton Stanley meeting David Livingstone at Ujiji, in Africa. Coloured wood engraving by H. Hall after H. M. Stanley, c.1880. Copyright Wellcome Library, London. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
+
 <p><a name="iic3"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">About This Site</span></strong><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -16012,7 +16008,9 @@ The Livingstone Spectral Imaging Project<br />
 <p><strong><a href="/about-site/leap-2013-2016-project-history-part-i">LEAP (2013-2016): A Project History, Part I</a></strong> - David Livingstone\'s compass. Copyright <em>Livingstone Online</em>. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre).</p>
 
 <p><strong><a href="/about-site/leap-2013-2016-project-history-part-ii">LEAP (2013-2016): A Project History, Part II</a></strong> - Demonstration to the LEAP team at the University of Glasgow Photographic Unit, 2013, by Adrian S. Wisnicki. Copyright <em>Livingstone Online</em>. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
+
 <p><a name="iic4"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">In His Own Words</span></strong><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -16027,8 +16025,10 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><a href="/his-own-words/repository"><strong>Browse by Repository</strong></a> - Wooden box of David Livingstone\'s letters at SOAS, University of London. Copyright <em>Livingstone Online </em> (Gary Li, photographer). <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
 
-<p><strong></strong><a href="/his-own-words/timeline"><strong>Browse by Timeline</strong></a> - Blyde River Nature Preserve, Mpumalanga Province, South Africa, 2013, by Angela Aliff. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
+<p><a href="/his-own-words/timeline"><strong>Browse by Timeline</strong></a> - Blyde River Nature Preserve, Mpumalanga Province, South Africa, 2013, by Angela Aliff. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
+
 <p><a name="iic5"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Spectral Imaging</span></strong><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -16049,8 +16049,10 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><a href="/spectral-imaging/integrated-project-bibliography"><strong>An Integrated Project Bibliography</strong></a> - Ashanka Kumari and Adrian S. Wisnicki\'s at DH2016 in Krakow, Poland. Copyright Ashanka Kumari. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
 
-<p><strong></strong> <a href="/spectral-imaging/notes-processed-spectral-images"><strong>Notes on Processed Spectral Images</strong></a> - A processed spectral image of a page from David Livingstone\'s 1870 Field Diary (Livingstone 1870i:XXXV raking). Copyright National Library of Scotland and Dr. Neil Imray Livingstone Wilson (as relevant):&nbsp;<a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
+<p><a href="/spectral-imaging/notes-processed-spectral-images"><strong>Notes on Processed Spectral Images</strong></a> - A processed spectral image of a page from David Livingstone\'s 1870 Field Diary (Livingstone 1870i:XXXV raking). Copyright National Library of Scotland and Dr. Neil Imray Livingstone Wilson (as relevant):&nbsp;<a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
+
 <p><a name="iic6"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Life and Times</span></strong><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -16072,7 +16074,9 @@ The Livingstone Spectral Imaging Project<br />
 <p><strong><a href="/life-and-times/victorian-medicine">Victorian Medicine</a></strong> - <em>Orange Quinine Wine</em> (advertisement) 1898. Copyright Wellcome Library, London. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
 
 <p><strong><a href="/life-and-times/fever-tropics">Fever in the Tropics</a></strong> - <em>Ague and fever</em>, by Thomas Rowlandson. Copyright Wellcome Library, London. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
+
 <p><a name="iic7"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Behind the Scenes</span></strong><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -16094,7 +16098,9 @@ The Livingstone Spectral Imaging Project<br />
 <p><strong><a href="/behind-scenes/credits-and-permissions">Credits and Permissions</a></strong> - Wooden spoons. Copyright <em>Livingstone Online</em> (Gary Li, photographer). May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre).</p>
 
 <p><strong><a href="/behind-scenes/illustrative-image-credits">Illustrative Image Credits</a></strong> - <em>Bishop Mackenzie\'s Grave</em> – <em>The cross was placed there by Dr. Livingstone 1863</em>. Copyright Wellcome Library, London. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
+
 <p><a name="iic8"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Resources</span></strong><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -16135,8 +16141,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013461_0001-carousel.jpg',
@@ -16161,8 +16167,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 310,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 310,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013461_0001-tile.jpg',
@@ -16181,6 +16187,19 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This page provides the individual credits for the images used to illustrate our home page, the tiles on our six main section pages, and the carousel tiles that appear at the top of each content page.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#iic1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#iic2">Home Page</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#iic3">About This Site</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#iic4">In His Own Words</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#iic5">Spectral Imaging</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#iic6">Life and Times</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#iic7">Behind the Scenes</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#iic8">Resources</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -16209,7 +16228,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-04-08 14:30:00 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Online Digital Collection',
@@ -16236,8 +16255,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p><em>Livingstone Online</em> offers a critically-mediated encounter with the literary and visual legacy of David Livingstone. At the heart of our mission lies our <a href="/islandora/search">digital collection</a>, which consists of images, transcriptions, and individual item records (i.e., metadata) for a broad range of literary and material artifacts produced by Livingstone or related to his travels and legacy.</p>
+        'value' => '<p><em>Livingstone Online</em> offers a critically-mediated encounter with the literary and visual legacy of David Livingstone. At the heart of our mission lies our <a href="/islandora/search">digital collection</a>, which consists of images, transcriptions, and individual item records (i.e., metadata) for a broad range of literary and material artifacts produced by Livingstone or related to his travels and legacy.</p>
 
 <p>Currently our published digital collection spans over 1,100 items consisting of 12,000 curated digital images (including 3,000 spectral images) and 500 edited and encoded transcriptions. By late 2017, these numbers will increase to 1,200 published items consisting of 15,000 images and 700 transcriptions.<o:p></o:p></p>
 
@@ -16298,8 +16316,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013466_0001-carousel.jpg',
@@ -16324,8 +16342,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013466_0001-tile.jpg',
@@ -16372,7 +16390,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-06-01 16:52:19 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Project Team',
@@ -16399,8 +16417,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/in-his-own-words/project-team/liv_000073_0002-article.jpg"><img alt="Notes and Calculations for Field Diary XVII, 7-9 April 1873 (Livingstone 1873a:[2]). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/in-his-own-words/project-team/liv_000073_0002-article.jpg" title="Notes and Calculations for Field Diary XVII, 7-9 April 1873 (Livingstone 1873a:[2]). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/in-his-own-words/project-team/liv_000073_0002-article.jpg"><img alt="Notes and Calculations for Field Diary XVII, 7-9 April 1873 (Livingstone 1873a:[2]). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/in-his-own-words/project-team/liv_000073_0002-article.jpg" title="Notes and Calculations for Field Diary XVII, 7-9 April 1873 (Livingstone 1873a:[2]). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Notes and Calculations for Field Diary XVII, 7-9 April 1873 (Livingstone 1873a:[2]). <em>Copyright David Livingstone Centre. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. This previously undoucmented fragment came to light in 2013 as the project team prepared to image the Livingstone manuscripts held by the David Livingstone Centre. The dated entries span 7 to 9 April 1873, the last month of Livingstone\'s life, and are similar to the entries for the same dates in Field Diary XVII (see Livingstone 1873:[9]-[13]). The fragment indicates that even at this late date in his life, Livingstone continued to take his manuscripts through multiple stages of revision.</span></p>
 
 <p><em>Leadership</em></p>
@@ -16502,7 +16519,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -16514,7 +16537,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-05-30 20:08:33 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Behind the Scenes: Overview',
@@ -16541,8 +16564,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span></h4>
 
 <p><strong><a href="/behind-scenes/livingstone-onlines-staff">The Livingstone Online Staff</a></strong> - introduces the <em>Livingstone Online</em> staff.</p>
 
@@ -16584,8 +16606,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_000049_0001-carousel.jpg',
@@ -16610,8 +16632,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_000049_0001-tile.jpg',
@@ -16658,7 +16680,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-04-02 16:41:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Multiple Versions of the Text',
@@ -16812,7 +16834,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-06-16 16:11:06 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online\'s Staff',
@@ -16839,19 +16861,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 200px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#los1">Current Staff</a> </span></span><br />
-			<span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#los2">Affiliated Faculty</a><br />
-			<a href="#los3">Institutional Contacts</a><br />
-			<a href="#los4">Former Staff Members</a><a name="los1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Current Staff</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Current Staff</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p style="line-height:110%"><a href="/sites/default/files/behind-the-scenes/livingstone-onlines-staff/liv_013563_0001-crop-article.jpg"><img alt="Adrian Wisnicki, 2014, by Craig Chandler. Copyright Craig Chandler / University Communications, UNL. Used by permission." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/behind-the-scenes/livingstone-onlines-staff/liv_013563_0001-crop-article.jpg" title="Adrian Wisnicki, 2014, by Craig Chandler. Copyright Craig Chandler / University Communications, UNL. Used by permission." typeof="foaf:Image&quot;" width="716" /></a></p>
 
@@ -16960,7 +16970,9 @@ The Livingstone Spectral Imaging Project<br />
 <p class="space-1"><em>Member of Project Team:</em> 2015-present</p>
 
 <p>Mary Borgo is a Ph.D. candidate in British Literature at Indiana University. Her research interests include Victorian literature, theater, and pre-cinema technology. Her dissertation traces the global history of early screen culture by exploring how Livingstone and other missionaries used projection equipment.</p>
+
 <p><a name="los2"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Affiliated Faculty</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -16981,8 +16993,10 @@ The Livingstone Spectral Imaging Project<br />
 
 <p class="space-1"><em>Member of Project Team:</em> 2004-present (Associate Director, 2004-10)</p>
 
-<p>Janet is an experienced scholar of the natural history sciences and eighteenth- and nineteenth-century exploration. <span style="font-size:15px;"><span style="font-family: crimson text;"></span></span>She has previously worked on editing Charles Darwin\'s correspondence. The use of correspondence in the construction of knowledge has long been an area of special research interest to her.</p>
+<p>Janet is an experienced scholar of the natural history sciences and eighteenth- and nineteenth-century exploration. She has previously worked on editing Charles Darwin\'s correspondence. The use of correspondence in the construction of knowledge has long been an area of special research interest to her.</p>
+
 <p><a id="los3" name="los3"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Institutional Contacts</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -16996,7 +17010,9 @@ The Livingstone Spectral Imaging Project<br />
 <p><strong>Kay Walter</strong> (University of Nebraska-Lincoln)</p>
 
 <p><strong>Gail van Jaarsveldt</strong> (Jafuta Foundation)</p>
+
 <p><a id="los4" name="los4"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Former Staff Members</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -17061,8 +17077,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013445_0001-carousel.jpg',
@@ -17087,8 +17103,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013445_0001-tile.jpg',
@@ -17107,6 +17123,15 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This page introduces the <em>Livingstone Online</em> staff. Teams for funded projects can be found <a href="/behind-scenes/project-teams">elsewhere</a>.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#los1">Current Staff</a> </span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#los2">Affiliated Faculty</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#los3">Institutional Contacts</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#los4">Former Staff Members</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -17135,7 +17160,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-02-13 00:38:55 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Project Documents',
@@ -17371,7 +17396,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-01-26 19:23:31 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Structuring the 1870 Field Diary',
@@ -17714,7 +17739,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary XVI: An Overview',
@@ -17741,8 +17766,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000016?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xvi-overview/liv_000016_reading_copy.zip">basic reading copy</a> of Field Diary XVI.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000016?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xvi-overview/liv_000016_reading_copy.zip">basic reading copy</a> of Field Diary XVI.]</p>
 
 <p>Field Diary XVI is the last diary Livingstone completed in his life, and its almost 200 pages record his struggles with ill health, heavy rains, hunger, and misdirection. Livingstone and his men head south to Lake Bangweolo and then circle around the lake to the south-east. Throughout, they are plagued with difficult travel due to the extensive marshy region, made worse by the "wet wet wet sloppy weather" (Livingstone 1872h:[67]). In addition, Livingstone mistrusts local directions, which do not jibe with his previous calculations, resulting in confusion that is made worse by his anal bleeding and scarcity of food.</p>
 
@@ -17829,7 +17853,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -17841,7 +17871,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-22 15:07:02 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Manuscript of the 1871 Field Diary',
@@ -18162,7 +18192,7 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
     ),
   ),
   'date' => '2017-02-09 23:41:47 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Conservation and Transport',
@@ -18291,7 +18321,7 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
     ),
   ),
   'date' => '2017-01-17 02:58:59 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -18609,7 +18639,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2017-02-09 23:39:39 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'LEAP (2013-2017): A Project History, Part II',
@@ -18636,24 +18666,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 400px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph2.1">Imagining the New <em>Livingstone Online</em></a><br />
-			<a href="#lph2.2">(Re)defining <em>Livingstone Online</em>\'s Vision</a><br />
-			<a href="#lph2.3">Getting the Word Out: Scholars, Stakeholders, Social Media</a><br />
-			<a href="#lph2.4">Getting the Word Out: Into Schools</a><br />
-			<a href="#lph2.5">The Website Emerges</a><br />
-			<a href="#lph2.6">What the Team Learned via LEAP</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#lph2.7">1. Guiding the Project</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#lph2.8">2. All That Data</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#lph2.9">3. Had We But Time Enough</a><a name="lph2.1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Imagining the New <em>Livingstone Online</em></span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Imagining the New <em>Livingstone Online</em></span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>In addition to development of core data, LEAP empowered the project team to overhaul the <em>Livingstone Online</em> site top to bottom. This involved, first, converting the site to <a href="http://islandora.ca/" target="_blank">Islandora</a>, an open-source software framework combining <a href="https://www.drupal.org/" target="_blank">Drupal</a> for its front end and <a href="http://fedorarepository.org/" target="_blank">Fedora</a> for its back end, and, second, redesigning the interface to cater to modern user sensibilities and expectations. The first element would allow the site to be integrated into the UCLA Digital Library collections and so be maintained and preserved long-term as part of those collections (as was then anticipated). The second would hopefully facilitate access to the site\'s materials by a variety of users.</p>
 
@@ -18802,7 +18815,7 @@ The Livingstone Spectral Imaging Project<br />
 <p><em>Director\'s note:</em> In August 2017, we will release the final installment of this LEAP history, which will include narratives of a) the project\'s alpha and beta launches, b) the transition of <em>Livingstone Online</em> from the UCLA Digital Library to the University of Maryland Libraries, and c) development of the formal first edition of <em>Livingstone Online</em>. The final installment will also set out additional lessons learned through the project. For now, please read about the beta launch on our <a href="https://livingstoneonline.wordpress.com/2015/09/01/another-milestone-livingstone-online-launches-the-beta-site/" target="_blank">Wordpress blog</a> or view our <a href="https://www.flickr.com/photos/135618046@N03/sets/72157657303973268/" target="_blank">Flickr images</a> from the launch.</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
-</pas>',
+',
         'format' => 'full_html',
       ),
     ),
@@ -18832,8 +18845,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013528_0001-carousel.jpg',
@@ -18858,8 +18871,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 292,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 292,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013528_0001-tile.jpg',
@@ -18878,7 +18891,22 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This essay sets out the second part of a history of LEAP: The <em>Livingstone Online</em> Enrichment and Access Project, the NEH-funded initiative that resulted in the development of the present <em>Livingstone Online</em> site and our critical edition of <a href="/his-own-words/livingstones-final-manuscripts-1865-1873">Livingstone\'s Final Manuscripts (1865-73)</a>. The essay combines text, images, and access to downloadable project documents to provide an intimate, behind-the-scenes look into project.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph2.1">Imagining the New <em>Livingstone Online</em></a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph2.2">(Re)defining <em>Livingstone Online</em>\'s Vision</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph2.3">Getting the Word Out: Scholars, Stakeholders, Social Media</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph2.4">Getting the Word Out: Into Schools</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph2.5">The Website Emerges</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph2.6">What the Team Learned via LEAP</a></span></span>
+	<ol>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph2.7">1. Guiding the Project</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph2.8">2. All That Data</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph2.9">3. Had We But Time Enough</a></span></span></li>
+	</ol>
+	</li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -18906,7 +18934,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-04-01 22:15:40 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Repository',
@@ -19031,7 +19059,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-06-01 16:40:33 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Life and Times: Overview',
@@ -19058,8 +19086,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span></h4>
 
 <p><strong><a href="/life-and-times/livingstone%E2%80%99s-life-expeditions">Livingstone\'s Life &amp; Expeditions</a></strong> - overviews Livingstone’s life and expeditions, starting with his upbringing in Scotland, his early years as a missionary in southern Africa, and the celebrated cross-continental expedition of 1852-56. Also discusses the Zambezi Expedition (1858-64) as well as Livingstone’s final journeys (1866-73), including the 1871 Nyangwe massacre and the famous meeting with Henry M. Stanley ("Dr Livingstone I Presume?"). Closes with an account of Livingstone’s death (1873), followed by the transcontinental transportation of his remains to Britain and his interment at Westminster Abbey (1874).</p>
 
@@ -19101,8 +19128,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013455_0001-carousel.jpg',
@@ -19127,8 +19154,8 @@ The Livingstone Spectral Imaging Project<br />
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013455_0001-tile.jpg',
@@ -19175,7 +19202,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2015-04-02 19:25:41 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary XIV: An Overview',
@@ -19202,8 +19229,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000014?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xiv-overview/liv_000014_reading_copy.zip">basic reading copy</a> of Field Diary XIV.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000014?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xiv-overview/liv_000014_reading_copy.zip">basic reading copy</a> of Field Diary XIV.]</p>
 
 <p>Field Diary XIV starts in late 1871 in Ujiji, where Livingstone has returned after failing to sail down the Lualaba River in central Congo and having witnessed a significant massacre led by slave traders in the village of Nyangwe. Starting from Ujiji, Livingstone circumnavigates Lake Tanganyika, determines that the Rusizi River flows into the lake (and so proves that the lake from its northern end cannot be a direct feeder of the Nile), returns to Ujiji, then travels east to Unyanyembe, where he rests for several months before leaving at the end of the summer to travel west yet again to the regions south of the lake.</p>
 
@@ -19302,7 +19328,13 @@ The Livingstone Spectral Imaging Project<br />
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -19314,7 +19346,7 @@ The Livingstone Spectral Imaging Project<br />
     ),
   ),
   'date' => '2016-11-22 14:23:34 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone’s Composition Methods',
@@ -19687,7 +19719,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-09 23:45:58 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Prototyping Animated Spectral Images (ASIs)',
@@ -19935,7 +19967,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Livingstone Online Code',
@@ -19962,21 +19994,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 500px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loc1">Introduction</a><br />
-			<a href="#loc2">Cross-cultural awareness</a><br />
-			<a href="#loc3">Responsible conduct towards project partners</a><br />
-			<a href="#loc4">Considerate collaboration</a><br />
-			<a href="#loc5">Transparency and accountability</a></span></span><br />
-			<span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loc6">Commitments to long-term sustainability and open access and use</a><a id="loc1" name="loc1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p><em>Livingstone Online</em> presents Livingstone’s legacy in all its complexity. We celebrate Livingstone’s vision of human equality, which distinguished him among contemporary Victorian travelers to Africa. We recognize the value of his writings in illuminating African history and culture, European imperialism, and the nineteenth-century slave trade. We also acknowledge postcolonial critiques of Livingstone’s works and of the imperial project as a whole, and so strive not to perpetuate Victorian imperial stereotypes of the non-Western world.</p>
 
@@ -20092,8 +20110,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013651_0001-carousel.jpg',
@@ -20118,8 +20136,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013651_0001-tile.jpg',
@@ -20138,6 +20156,17 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This section describes the ideals that guide the development of <em>Livingstone Online</em> as a whole and determine its day-to-day practices as a digital project that collaborates with individuals and institutions around the world and that takes seriously its responsibilities as a publicly funded and accountable entity.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loc1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loc2">Cross-cultural awareness</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loc3">Responsible conduct towards project partners</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loc4">Considerate collaboration</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loc5">Transparency and accountability</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#loc6">Commitments to long-term sustainability and open access and use</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -20166,7 +20195,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-26 18:07:33 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'An Integrated Project Bibliography',
@@ -20193,16 +20222,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<div class="section-page-toc-links">
-<ol style="list-style-type:none">
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Primary texts</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Literary, historical, and cultural sources</a></span></span></li>
-	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Scientific sources</a></span></span></li>
-</ol>
-</div>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Primary texts</span> &nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Primary texts</span> &nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>Anon. 1892. "Les Arabes du Haut Congo." <em>Le Congo Illustré</em> 1: 130-31.</p>
 
@@ -20873,7 +20893,13 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This page presents a comprehensive, integrated bibliography of the primary texts and literary, historical, cultural, and scientific sources that serve as the basis of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Primary texts</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Literary, historical, and cultural sources</a></span></span></li>
+	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Scientific sources</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -20901,7 +20927,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Unyanyembe Journal: An Overview',
@@ -20928,20 +20954,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 200px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Slavery and Christianity</a><br />
-			<a href="#link3">Ethnographic Observations</a><br />
-			<a href="#link4">Conflicts</a><br />
-			<a href="#link5">Conclusions</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>[View the <a href="/islandora/search/liv_000019?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/the-unyanyembe-journal-overview/liv_000019_reading_copy.zip">basic reading copy</a> of the Unyanyembe Journal.]</p>
 
@@ -21135,6 +21148,16 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay introduces Livingstone’s Unyanyembe Journal (1866-72), the almost 800-page bound volume that Livingstone used to make his most lasting record of his final journey to Africa. It covers the journal’s dates and places, Livingstone’s thematic concerns, and the conflicts he faced as he created this record. The essay closes by considering Livingstone’s rhetorical situation as he writes the Unyanyembe Journal in Africa, among African and Arab populations, but for a primarily British audience.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link2">Slavery and Christianity</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link3">Ethnographic Observations</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link4">Conflicts</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link5">Conclusions</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -21150,7 +21173,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -21162,7 +21191,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-25 04:17:57 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Spectral Image Processing',
@@ -21288,7 +21317,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-01-17 03:32:11 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'About This Site: Overview',
@@ -21315,8 +21344,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p><strong><a href="/about-site/livingstone-online-introduction">Livingstone Online: An Introduction</a></strong> - introduces <em>Livingstone Online</em> by describing the site\'s goals, content, and practices. The section also outlines the site\'s educational value for modern audiences.</p>
 
@@ -21419,7 +21447,7 @@ ornament their faces and heads (1871f:CVII)</p>
           'width' => 390,
         ),
         'alt' => 'About This Site: Overview: The "About This Site" section of Livingstone Online describes some of the key elements of this site, including our goals, mission, and staff. The section also includes a set of essays detailing the history of Livingstone Online.',
-        'title' => '',
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/IMG_5192-tile.jpg',
@@ -21470,7 +21498,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-04-06 16:26:31 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Three Versions of the 1871 Field Diary',
@@ -21559,7 +21587,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-09 23:43:20 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Date of the Livingstone-Stanley Meeting',
@@ -21806,7 +21834,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-09 23:47:35 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Victorian Medicine',
@@ -21833,20 +21861,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 325px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#vm1">British Health in the Nineteenth Century</a><br />
-			<a href="#vm2">Transformations in British Health at Mid Century</a><br />
-			<a href="#vm3">Medical Practice in Mid-Victorian Britain</a><br />
-			<a href="#vm4">Science and the Rise of the Medical Profession</a><br />
-			<a href="#vm5">Further Reading</a><a id="vm1" name="vm1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><span style="font-family:crimson text;"><strong>British Health in the Nineteenth Century</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>British Health in the Nineteenth Century</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>The practice and understanding of medicine profoundly changed during the years of Livingstone\'s life (1813-1873). These changes grew out of the massive restructuring of British society that followed the industrial revolution of the late eighteenth and early nineteenth century. Throughout the nineteenth century, British people moved from town to country, while the British economy and labor force moved from agriculture to industry and commerce.</p>
 
@@ -21974,8 +21989,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013418_0001-carousel.jpg',
@@ -22000,8 +22015,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013418_0001-tile.jpg',
@@ -22020,6 +22035,16 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay describes the evolving state of British health in the nineteenth century and considers how Livingstone’s perceptions of this health influenced his understanding of Africa and his writings.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#vm1">British Health in the Nineteenth Century</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#vm2">Transformations in British Health at Mid Century</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#vm3">Medical Practice in Mid-Victorian Britain</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#vm4">Science and the Rise of the Medical Profession</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#vm5">Further Reading</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -22034,7 +22059,7 @@ ornament their faces and heads (1871f:CVII)</p>
       0 => array(
         'value' => '<p>The role of British health in shaping Livingstone\'s understanding of Africa</p>
 ',
-        'format' => 'filtered_html',
+        'format' => 'full_html',
       ),
     ),
   ),
@@ -22048,7 +22073,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 00:42:51 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Location',
@@ -22156,7 +22181,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-06-05 17:07:16 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Acknowledgments',
@@ -22183,8 +22208,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/in-his-own-words/acknowledgments/liv_003007_0001-article1.jpg"><img alt="David Livingstone, Map of Central African Lakes, 1867-1872, detail. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/in-his-own-words/acknowledgments/liv_003007_0001-article1.jpg" title="David Livingstone, Map of Central African Lakes, 1867-1872, detail. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/in-his-own-words/acknowledgments/liv_003007_0001-article1.jpg"><img alt="David Livingstone, Map of Central African Lakes, 1867-1872, detail. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/in-his-own-words/acknowledgments/liv_003007_0001-article1.jpg" title="David Livingstone, Map of Central African Lakes, 1867-1872, detail. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">David Livingstone, Map of Central African Lakes, 1867-1872, detail. <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank">Creative Commons Share-alike 2.5 UK: Scotland</a></em>. Livingstone\'s maps typically combined observations he made first hand with data he collected from informants, often in an unacknowledged fashion.</span></p>
 
 <p>The production of the present critical edition required four years and the collective efforts of a project team numbering over twenty individuals. None of this work would have been possible without the support of the <a href="https://www.neh.gov/" target="_blank">National Endowment for the Humanities</a> (NEH), one of the greatest cultural funding organizations in the United States. The project team is grateful to the NEH and its officers for making this edition possible and, most importantly, for infusing our project with a positive and vibrant spirit that carried the project through every stage, however difficult.</p>
@@ -22230,7 +22254,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -22242,7 +22272,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-06-14 03:45:01 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Final Field Diaries: General Overview',
@@ -22269,30 +22299,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 370px;">
-	<tbody>
-		<tr>
-			<td>&nbsp;</td>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Scope of the Present Essay</a><br />
-			<a href="#link3">Ethnography</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link3.1">a. Areas of Interest</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link3.2">b. Forms of Representation</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link3.3">c. Philosophical Approach</a><br />
-			<a href="#link4">Religion</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link4.1">a. From Missionary to Abolitionist and Geographer</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link4.2">b. Comparative Religions</a><br />
-			<a href="#link5">Authority</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link5.1">a. African Leadership</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link5.2">b. Troubles with His Men</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#link5.3">c. Local Conflicts</a><br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#link5.4">d. Fluidity of Authority</a><br />
-			<a href="#link6">Conclusion</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
+        'value' => '
 <h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>Throughout his final journey, Livingstone took notes in a series of pocket-sized diaries, jotting down narrative accounts of daily life, scientific observations, lists, drawings, and various other kinds of observations. Rather than following predetermined topics, Livingstone used a scattershot approach in the diaries, documenting his experiences and ideas as they arose. As a result, the diaries offer a more immediate, less filtered look at Livingstone’s interests, particularly as he tended to revise and redevelop key ideas and events from the diaries when he copied them into the <a href="/his-own-words/unyanyembe-journal-overview">Unyanyembe Journal</a> or recorded some of his ideas in letters to his correspondents.</p>
@@ -22560,7 +22567,34 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay focuses on three of the key themes that emerge across the twelve Livingstone field diaries (1865-73) included in this edition: ethnography, religion, and authority. The essay also analyzes how Livingstone understands the slave trade in relation to each of these categories. Throughout, the essay discusses how Livingstone’s representations of African and Arab cultures are framed by his own cultural values and beliefs.</p>
-',
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link2">Scope of the Present Essay</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link3">Ethnography</a></span></span>
+	<ol>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link3.1">a. Areas of Interest</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link3.2">b. Forms of Representation</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link3.3">c. Philosophical Approach</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link4">Religion</a></span></span>
+	<ol>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;">​​​​​​​<a href="#link4.1">a. From Missionary to Abolitionist and Geographer</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link4.2">b. Comparative Religions</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;">​​​​​​​<a href="#link5">Authority</a></span></span>
+	<ol>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;">​​​​​​​<a href="#link5.1">a. African Leadership</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link5.2">b. Troubles with His Men</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link5.3">c. Local Conflicts</a></span></span></li>
+		<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link5.4">d. Fluidity of Authority</a></span></span></li>
+	</ol>
+	</li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;">​​​​​​​<a href="#link6">Conclusion</a></span></span></li>
+</ol>
+</div>',
         'format' => 'full_html',
       ),
     ),
@@ -22575,7 +22609,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -22587,7 +22627,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-06-14 18:22:51 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Global Sources',
@@ -22795,7 +22835,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s 1871 Field Diary',
@@ -22911,7 +22951,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Project History',
@@ -23210,7 +23250,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => '18th- and 19th-Century European Expeditions',
@@ -23237,20 +23277,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 350px;">
-	<tbody>
-		<tr>
-			<td><span style="font-family:crimson text;"><span style="font-size: 15px;"><a href="#eec1">Introduction</a><br />
-			<a href="#eec2">Background: Eighteenth-Century Expeditions</a><br />
-			<a href="#eec3">Widening Exploration in the Nineteenth Century</a><br />
-			<a href="#eec4">Sponsoring Exploration</a><br />
-			<a href="#eec5">Further Reading</a><a name="eec1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><br />
+        'value' => '<h4><br />
 <span style="font-family:crimson text;"><strong>Introduction</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>In David Livingstone\'s overland expeditions in Africa, as in most nineteenth-century expeditions, science and medicine played a key role in geographic exploration. In fact, many expeditions deliberately set out to acquire new scientific knowledge. Yet it should also be remembered that from the earliest times, exploration was regarded as a key element in economic development, directly tied up with naval and military operations and trade. Whether on land or sea, early expeditions were usually sponsored by governments eager for territorial expansion or by private trading companies, such as the Dutch East India Company, which traded in spices, commercial goods, curiosities and medicinal substances. Any scientific or medical information brought back was highly valued.</p>
@@ -23364,8 +23391,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_014001_0011-carousel.jpg',
@@ -23390,8 +23417,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 292,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 292,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_014001_0011-tile.jpg',
@@ -23410,6 +23437,16 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay offers an introduction to the development, sponsorship, and goals of European expeditions from the eighteenth to the nineteenth centuries.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-family:crimson text;"><span style="font-size: 15px;"><a href="#eec1">Introduction</a></span></span></li>
+	<li><span style="font-family:crimson text;"><span style="font-size: 15px;"><a href="#eec2">Background: Eighteenth-Century Expeditions</a></span></span></li>
+	<li><span style="font-family:crimson text;"><span style="font-size: 15px;"><a href="#eec3">Widening Exploration in the Nineteenth Century</a></span></span></li>
+	<li><span style="font-family:crimson text;"><span style="font-size: 15px;"><a href="#eec4">Sponsoring Exploration</a></span></span></li>
+	<li><span style="font-family:crimson text;"><span style="font-size: 15px;"><a href="#eec5">Further Reading</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -23438,7 +23475,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-26 20:11:56 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Design of Livingstone Online',
@@ -23465,18 +23502,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 300px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#dolo1">Introduction</a><br />
-			<a href="#dolo2">Key Site Components</a><br />
-			<a href="#dolo3">Our Aesthetic Vision and the Design Process</a></span></span><a id="dolo1" name="dolo1"></a></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>The present design of the <em>Livingstone Online</em> website pays tribute to the project’s scholarly heritage and offers a multifaceted means of encountering Livingstone’s extensive manuscripts, along with materials related to his imperial Victorian contexts. The design is the result of <a href="/about-site/what-leap-2013-2016">LEAP</a>, a four-year project development initiative funded by the National Endowment for the Humanities that has enabled us to rethink our project interface. Our goal has been to facilitate content navigation while engaging diverse audiences and offering new perspectives on Livingstone’s iconographic legacy. This essay outlines the key components of the redesigned site, the site’s aesthetic objectives, and the collaborative process that led to the redesign.</p>
 
@@ -23600,8 +23626,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013732_0001-carousel_0.jpg',
@@ -23626,8 +23652,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 292,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 292,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013732_0001-tile_0.jpg',
@@ -23646,6 +23672,13 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay provides an overview of the <em>Livingstone Online</em> site design. The essay outlines the key components of the site, the site’s aesthetic objectives, and the collaborative process that led to the development of the site.</p>
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#dolo1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#dolo2">Key Site Components</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#dolo3">Our Aesthetic Vision and the Design Process</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -23674,7 +23707,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-07-17 17:47:04 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => '1871 Field Diary Headers',
@@ -23950,7 +23983,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-10 00:09:44 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Edition Guide',
@@ -23977,21 +24010,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 280px;">
-	<tbody>
-		<tr>
-			<td>&nbsp;</td>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Prefatory Material</a><br />
-			<a href="#link2">Images and Texts</a><br />
-			<a href="#link3">Critical Essays</a><br />
-			<a href="#link4">Supporting Materials</a><br />
-			<a href="#link5">Basic Reading Copies for Download</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Prefatory Material</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Prefatory Material</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p><a href="/his-own-words/livingstones-final-manuscripts-1865-1873"><strong>Introduction to the Edition</strong></a></p>
 
@@ -24135,6 +24154,16 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s final manuscripts (1865-73). It enumerates all the main sections of the edition, including core data and critical materials.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Prefatory Material</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link2">Images and Texts</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link3">Critical Essays</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link4">Supporting Materials</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link5">Basic Reading Copies for Download</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -24150,7 +24179,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -24162,7 +24197,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-05-30 20:22:35 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Medical Education',
@@ -24189,21 +24224,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 350px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lme0">Introduction</a><br />
-			<a href="#lme1">Medical Education during the Nineteenth Century</a><br />
-			<a href="#lme2">Livingstone’s Medical Education in Scotland</a><br />
-			<a href="#lme3">Livingstone’s Medical Education in England</a><br />
-			<a href="#lme4">Livingstone’s Medical Records from Africa</a><br />
-			<a href="#lme5">Works Cited</a><a name="lme0"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>As is well known, Livingstone was born into a poor, deeply religious family at Blantyre, near Glasgow, Scotland. After rudimentary schooling he worked in the town\'s cotton mill. What set him apart from an early age was his voracious appetite for reading and his interest in natural history, which was in many ways the premier science of nineteenth-century Britain. At the age of twenty-one, he simultaneously determined to become a missionary and decided that a medical training would be invaluable in carrying out this plan, an unusual combination so early in the century.</p>
 
@@ -24391,8 +24412,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013430_0001-carousel.jpg',
@@ -24417,8 +24438,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013430_0001-tile.jpg',
@@ -24437,6 +24458,17 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay provides a detailed description of Livingstone’s medical education as well as an overview of how his education affected his recording strategies in Africa.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lme0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lme1">Medical Education during the Nineteenth Century</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lme2">Livingstone’s Medical Education in Scotland</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lme3">Livingstone’s Medical Education in England</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lme4">Livingstone’s Medical Records from Africa</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lme5">Works Cited</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -24465,7 +24497,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 00:35:02 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary XV: An Overview',
@@ -24492,8 +24524,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000015?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xv-overview/liv_000015_reading_copy.zip">basic reading copy</a> of Field Diary XV.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000015?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xv-overview/liv_000015_reading_copy.zip">basic reading copy</a> of Field Diary XV.]</p>
 
 <p>Field Diary XV begins before the previous field diary (<a href="/his-own-words/field-diary-xiv-overview">XIV</a>) ends, while Livingstone is still in Unyanyembe. The two diaries cover about two months of the same time period, July-September 1872. It is not clear why Livingstone kept two diaries, though Field Diary XV contains longer narrative passages. During this time, Livingstone waits for his men to return from guiding Stanley to the coast and then finally leaves Unyanyembe on 25 August 1872, heading west to Lake Tanganyika. From there, he and his men travel south around the lake.</p>
 
@@ -24598,7 +24629,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -24610,7 +24647,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-22 14:36:11 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Project History (1)',
@@ -25117,7 +25154,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-02-09 23:58:10 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Manuscripts in the Digital Age',
@@ -25144,8 +25181,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>Until the 1970s, no one knew the full extent of Livingstone’s surviving manuscripts. A number of particularly well known libraries and archives in Britain and Africa had substantial holdings of original Livingstone manuscripts. In addition, a handful of collections of letters and other items had emerged over the years, notably a series edited by Isaac Schapera, who focused on Livingstone’s writings from his first sojourn in Africa (1959, 1960, 1961, 1963, 1974). Some letters had also appeared in print in a variety of sources that went back to the nineteenth century. Yet Livingstone had been one of the most prolific travelers to visit nineteenth-century Africa. Anyone who took a serious interest in his legacy recognized the need for a full enumeration of his manuscripts.</p>
+        'value' => '<p>Until the 1970s, no one knew the full extent of Livingstone’s surviving manuscripts. A number of particularly well known libraries and archives in Britain and Africa had substantial holdings of original Livingstone manuscripts. In addition, a handful of collections of letters and other items had emerged over the years, notably a series edited by Isaac Schapera, who focused on Livingstone’s writings from his first sojourn in Africa (1959, 1960, 1961, 1963, 1974). Some letters had also appeared in print in a variety of sources that went back to the nineteenth century. Yet Livingstone had been one of the most prolific travelers to visit nineteenth-century Africa. Anyone who took a serious interest in his legacy recognized the need for a full enumeration of his manuscripts.</p>
 
 <p>The Livingstone Documentation Project (LDP) emerged to meet this need. Although LDP did not originate at a single moment, it first took substantial shape at a 1973 University of Edinburgh seminar marking the centenary of Livingstone’s death. At that seminar, scholars noted the need for a catalogue of all Livingstone manuscripts, the creation of a central collection of original and photocopied materials, and, over time, the publication of critically-edited collections. Work focusing on the first two objectives got underway in earnest over the next few years. The project’s efforts resulted, ultimately, in the monumental publication of <em>David Livingstone: A Catalogue of Documents</em> (1979) edited by Gary Clendennen and Ian Cunningham, followed by a supplement a few years later (Cunningham 1985) plus a history of the project (Clendennen and Casada 1981).</p>
 
@@ -25205,8 +25241,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/DLC297b_157-138_008r_0_A_ratio_by_0940-carousel.jpg',
@@ -25231,8 +25267,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 292,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 292,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/DLC297b_157-138_008r_0_A_ratio_by_0940-tile.jpg',
@@ -25279,7 +25315,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 19:40:12 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Final Manuscripts: Three Bonus Texts',
@@ -25306,21 +25342,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 410px;">
-	<tbody>
-		<tr>
-			<td>&nbsp;</td>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a><br />
-			<a href="#link2">Fragment of Field Diary XII (24-28 Dec. 1868)</a><br />
-			<a href="#link3">Second Unyanyembe Journal (14-24 Aug. 1872)</a><br />
-			<a href="#link4">Notes and Calculations for Field Diary XVII (7-9 Apr. 1873)</a><br />
-			<a href="#link5">Works Cited</a><a id="link1" name="link1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
 <p>Our critical edition of Livingstone\'s final manuscripts includes three bonus texts: a two-page fragment of Field Diary XII, the full text of the second Unyanyembe Journal, and two pages notes and calculations for Field Diary XVII. Our project team has critically encoded and edited each of these texts because they complement the main texts encoded for our edition, the <a href="/his-own-words/unyanyembe-journal-overview">Unyanyembe Journal</a> (1866-72) and <a href="/his-own-words/final-field-diaries-general-overview">twelve of the final field diaries</a> (1865-73). We see the bonus texts as representing, in miniature, Livingstone\'s composition process during his final travels because the texts encompass three distinct stages of production: notes for a field diary, part of a field diary, and a journal Livingstone wrote up based on one of his field diaries. Together, these documents offer a snapshot of the final manuscripts as a whole.</p>
 
@@ -25452,6 +25474,16 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p class="normal">This page provides a set of short introductions to the three bonus texts included in our critical edition of Livingstone’s final manuscripts (1865-73). The page discusses the value of the three texts collectively, then provides an overview of the content and form of each individual text. The page also provides access to a hidden fourth bonus text.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link2">Fragment of Field Diary XII (24-28 Dec. 1868)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link3">Second Unyanyembe Journal (14-24 Aug. 1872)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link4">Notes and Calculations for Field Diary XVII (7-9 Apr. 1873)</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#link5">Works Cited</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -25467,7 +25499,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -25479,7 +25517,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-06-14 03:57:45 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Diary across Hands, Space, and Time (1)',
@@ -25793,7 +25831,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'David Livingstone: A Bibliography',
@@ -25820,20 +25858,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 400px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lab1">Books by David Livingstone</a><br />
-			<a href="#lab2">Edited Collections of Primary Livingstone Works</a><br />
-			<a href="#lab3">Bibliographies of Livingstone Works</a><br />
-			<a href="#lab4">Biographies of and Critical Sources on Livingstone</a><br />
-			<a href="#lab5">Select Websites on David Livingstone</a><a name="lab1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Books by David Livingstone</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Books by David Livingstone</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>Livingstone, David. 1857. <em>Missionary Travels and Researches in South Africa</em>. London: John Murray.</p>
 
@@ -26176,8 +26201,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013494_0001-carousel.jpg',
@@ -26202,8 +26227,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013494_0001-tile.jpg',
@@ -26222,6 +26247,16 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This section enumerates books by Livingstone, edited collections of his primary works, bibliographies, and biographies and critical sources. We encourage authors of new works to submit publication information to us so that it can be included in the lists below. Our <a href="/islandora/search/*%3A*?type=edismax">digital catalogue</a> also includes publication information for a vast array of individual items, particularly letters.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lab1">Books by David Livingstone</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lab2">Edited Collections of Primary Livingstone Works</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lab3">Bibliographies of Livingstone Works</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lab4">Biographies of and Critical Sources on Livingstone</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lab5">Select Websites on David Livingstone</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -26250,7 +26285,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 00:52:26 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Theory Behind Livingstone Online',
@@ -26277,8 +26312,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>David Livingstone stands at the intersection of many of the most controversial events of the past two centuries. He was a missionary who helped introduce European religious and cultural values to Africans. He was an abolitionist who fought for the end of the East African slave trade. He was an explorer whose records of life in Africa helped inform the imperialist “scramble” for the continent in the decades after his death. In all these guises, Livingstone’s life continues to resonate into the postcolonial present. The vicissitudes of his <a href="/life-and-times/livingstone’s-posthumous-reputation">posthumous reputation</a> reflect changes in Western society’s understandings of race, culture, religion, and nationhood over the past century and a half.</p>
+        'value' => '<p>David Livingstone stands at the intersection of many of the most controversial events of the past two centuries. He was a missionary who helped introduce European religious and cultural values to Africans. He was an abolitionist who fought for the end of the East African slave trade. He was an explorer whose records of life in Africa helped inform the imperialist “scramble” for the continent in the decades after his death. In all these guises, Livingstone’s life continues to resonate into the postcolonial present. The vicissitudes of his <a href="/life-and-times/livingstone’s-posthumous-reputation">posthumous reputation</a> reflect changes in Western society’s understandings of race, culture, religion, and nationhood over the past century and a half.</p>
 
 <p>We have not entered lightly into the task of preserving the legacy of such a controversial figure. We attempt neither to vilify nor lionize but rather to rethink Livingstone, his iconography, and the western and non-western environments in which he did his work as a traveler, missionary, abolitionist, and scientist. As a result, we engage the many dimensions of Livingstone’s legacy by publishing <a href="/islandora/search">digital editions</a> of original Livingstone manuscripts (what historian Roy C. Bridges calls the “‘raw’ record” of exploration [1998:7]) and by providing <a href="/life-and-times">critical essays</a> that locate Livingstone\'s life and work at the intersection of diverse competing historical forces. Likewise, we emphasize the dependent nature of Livingstone’s travels with and among non-western groups, while our site design complicates reigning visual and textual representations of Livingstone.</p>
 
@@ -26346,8 +26380,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013807_0001-carousel.jpg',
@@ -26372,8 +26406,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013807_0001-tile.jpg',
@@ -26420,7 +26454,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-07-01 22:58:38 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Imaging the Letter',
@@ -26595,7 +26629,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2017-01-17 03:16:38 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Fever in the Tropics',
@@ -26622,23 +26656,12 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 250px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#ft0">Introduction</a><br />
-			<a href="#ft1">Then and Now: Understanding Fever</a><br />
-			<a href="#ft2">Fevers from Africa to London</a><br />
-			<a href="#ft3">Treating Fever</a><br />
-			<a href="#ft4">Further Reading</a><a name="ft0"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><span style="font-family:crimson text;"><strong>Introduction</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>Introduction</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>Livingstone\'s writings recurrently return to the problem of fever as the greatest threat to the health of travellers in Africa. Livingstone died shortly before modern germ theory was developed and well before tropical medicine was established as a medical discipline. His accounts of the causes and cure of fever differ considerably from those given today. In addition, in Livingstone\'s time, there was great difference of opinion within the medical and scientific community as to the nature of fever.</p>
+
 <p><a name="ft1"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Then and Now: Understanding Fever</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -26685,7 +26708,9 @@ ornament their faces and heads (1871f:CVII)</p>
 </table>
 
 <p>From Livingstone’s perspective there were no such things as tropical diseases, merely varieties of fever encountered in Africa provoked by local conditions. The same set of causes in a healthy, robust individual might produce a common cold and in a sickly person lead to fatal fever. In the 12 May 1859 entry in his Zambesi journal, Livingstone noted: "The attacks [of fever] however were so modified by our being well provided for [... they] have resembled greatly common colds."</p>
+
 <p><a name="ft2"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><span style="font-family:crimson text;"><strong>Fevers from Africa to London</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -26741,7 +26766,9 @@ ornament their faces and heads (1871f:CVII)</p>
 </table>
 
 <p>His remedy was "composed of from six to eight grains of resin of jalap, the same of rhubarb, and three each of calomel and quinine, made up into four pills, with tincture of cardamoms, usually relieved all the symptoms in five or six hours. Four pills are a full dose for a man – one will suffice for a woman. They received from our men the name of \'rousers,\' from their efficacy in rousing up even those most prostrated” (Livingstone and Livingstone 1865:83).</p>
+
 <p><a name="ft4"></a></p>
+
 <p>&nbsp;</p>
 
 <h4><strong><span style="font-family:crimson text;">Further Reading</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
@@ -26793,8 +26820,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013402_0001-carousel.jpg',
@@ -26819,8 +26846,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013402_0001-tile.jpg',
@@ -26839,6 +26866,16 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay contrasts nineteenth-century ideas (including Livingstone’s own) about fever with modern ideas about the causes and appropriate treatment for fever.</p>
+
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#ft0">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#ft1">Then and Now: Understanding Fever</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#ft2">Fevers from Africa to London</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#ft3">Treating Fever</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#ft4">Further Reading</a></span></span></li>
+</ol>
+</div>
 ',
         'format' => 'full_html',
       ),
@@ -26853,7 +26890,7 @@ ornament their faces and heads (1871f:CVII)</p>
       0 => array(
         'value' => '<p>Ideas past and present about fever and its treatment</p>
 ',
-        'format' => 'filtered_html',
+        'format' => 'full_html',
       ),
     ),
   ),
@@ -26867,7 +26904,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-01-27 00:51:12 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'LEAP (2013-2017): A Project History, Part I',
@@ -26894,25 +26931,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<table align="center" cellpadding="1" cellspacing="1" style="width: 450px;">
-	<tbody>
-		<tr>
-			<td><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.1">Introduction</a><br />
-			<a href="#lph1.2">Prelude to a Grant</a><br />
-			<a href="#lph1.3">LEAP: The <em>Livingstone Online</em> Enrichment and Access Project</a><br />
-			<a href="#lph1.4">Project Launch</a><br />
-			<a href="#lph1.5">LA Kickoff</a><br />
-			<a href="#lph1.6">UK Kickoff</a><br />
-			<a href="#lph1.7">Digitizing All Those Livingstone Manuscripts</a><br />
-			<a href="#lph1.8">Data, Data Everywhere</a><br />
-			<a href="#lph1.9">Transcriptions Old and New, and to One Standard</a><br />
-			<a href="#lph1.10">The New, Improved, and Expanded Core Digital Collection</a><a name="lph1.1"></a></span></span></td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>LEAP: The <em>Livingstone Online</em> Enrichment and Access Project is a four-year initiative (2013-17) to develop <em>Livingstone Online</em> and create a critical edition of Livingstone\'s final diaries and journals (1866-73). The present history focuses on the first year and a half of LEAP (September 2013-June 2015), when the project team completed a significant portion of the work related to the redevelopment and expansion of the original <em>Livingstone Online</em> site (2005-12). The project\'s goals are detailed below. The critical edition of the diaries and journals will appear in a discrete site section when complete in 2017.</p>
 
@@ -27139,8 +27158,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013027_0001-carousel.jpg',
@@ -27165,8 +27184,8 @@ ornament their faces and heads (1871f:CVII)</p>
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013027_0001-tile.jpg',
@@ -27185,6 +27204,21 @@ ornament their faces and heads (1871f:CVII)</p>
     'und' => array(
       0 => array(
         'value' => '<p>This essay sets out the first part of a history of LEAP: The <em>Livingstone Online</em> Enrichment and Access Project, the NEH-funded initiative that resulted in the development of the present <em>Livingstone Online</em> site and our critical edition of <a href="/his-own-words/livingstones-final-manuscripts-1865-1873">Livingstone\'s Final Manuscripts (1865-73)</a>. The essay combines text, images, and access to downloadable project documents to provide an intimate, behind-the-scenes look into project.</p>
+<div class="section-page-toc-links">
+<ol style="list-style-type:none">
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.1">Introduction</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.2">Prelude to a Grant</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.3">LEAP: The <em>Livingstone Online</em> Enrichment and Access Project</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.4">Project Launch</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.5">LA Kickoff</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.6">UK Kickoff</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.7">Digitizing All Those Livingstone Manuscripts</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.8">Data, Data Everywhere</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.9">Transcriptions Old and New, and to One Standard</a></span></span></li>
+	<li><span style="font-size:15px;"><span style="font-family: crimson text;"><a href="#lph1.10">The New, Improved, and Expanded Core Digital Collection</a></span></span></li>
+</ol>
+</div>
+
 ',
         'format' => 'full_html',
       ),
@@ -27213,7 +27247,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2015-04-01 22:03:05 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Three Versions of the 1870 Field Diary',
@@ -27295,7 +27329,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Diary across Hands, Space, and Time (3)',
@@ -27644,7 +27678,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary IV: An Overview',
@@ -27671,8 +27705,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000004?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-iv-overview/liv_000004_reading_copy.zip">basic reading copy</a> of Field Diary IV.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000004?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-iv-overview/liv_000004_reading_copy.zip">basic reading copy</a> of Field Diary IV.]</p>
 
 <p>Field Diary IV further develops two of Livingstone\'s main concerns: his relationship with his men and the Arab slave trade. The account is riddled with concerns over his authority and complaints about his porters\' behavior, including instances of rebellion and illnesses that Livingstone deems fake.</p>
 
@@ -27781,7 +27814,13 @@ ornament their faces and heads (1871f:CVII)</p>
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -27793,7 +27832,7 @@ ornament their faces and heads (1871f:CVII)</p>
     ),
   ),
   'date' => '2016-11-22 14:05:58 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'TEI P5 Encoding Guidelines',
@@ -28640,7 +28679,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2017-02-09 23:49:23 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone Online Outreach Program',
@@ -28667,8 +28706,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>The <em>Livingstone Online</em> Outreach Program is a web-based educational resource situated within <em>Livingstone Online</em><em>.</em> It provides materials for teachers to guide students aged 9 to 13 in learning about the life and work of David Livingstone. Through Livingstone’s writings, students can explore many important nineteenth-century issues that continue to resonate in our own time.</p>
+        'value' => '<p>The <em>Livingstone Online</em> Outreach Program is a web-based educational resource situated within <em>Livingstone Online</em><em>.</em> It provides materials for teachers to guide students aged 9 to 13 in learning about the life and work of David Livingstone. Through Livingstone’s writings, students can explore many important nineteenth-century issues that continue to resonate in our own time.</p>
 
 <p>Using our series of <a href="/resources/livingstone-online-outreach-worksheets">eleven educational worksheets</a>, teachers can cover topics ranging from abolition and global citizenship to the industrial revolution and African animals. The materials also encourage students to explore <em>Livingstone Online</em><em> </em>on their own. Through these resources, students can better understand the historical and cultural impact of David Livingstone’s nineteenth-century life and travels in Britain, Africa, and elsewhere.</p>
 
@@ -28705,8 +28743,8 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_014081_0001-carousel.jpg',
@@ -28731,8 +28769,8 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
           'height' => 292,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 292,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_014081_0001-tile.jpg',
@@ -28779,7 +28817,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2015-04-30 02:05:09 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'The Letter with Annotations',
@@ -28871,7 +28909,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2017-01-24 00:01:11 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Composition Practices',
@@ -29197,7 +29235,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone in 1871',
@@ -29891,7 +29929,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2017-02-09 23:40:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Final Manuscripts (1865-1873)',
@@ -29918,8 +29956,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<h4><strong><span style="font-family:crimson text;">Introduction to the edition</span></strong></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction to the edition</span></strong></h4>
 
 <p>The materials published through this critical edition of Livingstone’s final manuscripts (1865-1873) open a new phase in the study of nineteenth-century European exploration of Africa. Manuscripts resulting from David Livingstone’s final journey to Africa survive in abundance but have been difficult to access for almost a century and a half. This edition, for the first time, makes publicly available the full collection of final manuscripts held by the David Livingstone Centre in Blantyre, Scotland.</p>
 
@@ -30004,20 +30041,20 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
         'filename' => 'liv_000016_0003-tile-v2.jpg',
         'uri' => 'public://section_page/grid_images/liv_000016_0003-tile-v2.jpg',
         'filemime' => 'image/jpeg',
-        'filesize' => 5180,
+        'filesize' => 59469,
         'status' => 1,
         'type' => 'image',
         'uuid' => '9706653b-1092-421a-b047-df2c590d8776',
         'field_file_image_alt_text' => array(),
         'field_file_image_title_text' => array(),
         'metadata' => array(
-          'height' => 180,
-          'width' => 180,
+          'height' => 293,
+          'width' => 390,
         ),
         'alt' => NULL,
         'title' => NULL,
-        'height' => 180,
-        'width' => 180,
+        'height' => 293,
+        'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_000016_0003-tile-v2.jpg',
       ),
     ),
@@ -30075,7 +30112,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2016-11-22 15:20:29 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Addressee',
@@ -30199,7 +30236,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
     ),
   ),
   'date' => '2015-06-01 16:36:22 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Field Diary XVII: An Overview',
@@ -30226,8 +30263,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>[View the <a href="/islandora/search/liv_000017?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xvii-overview/liv_000017_reading_copy.zip">basic reading copy</a> of Field Diary XVII.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000017?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xvii-overview/liv_000017_reading_copy.zip">basic reading copy</a> of Field Diary XVII.]</p>
 
 <p>Field Diary XVII – just 32 pages long – chronicles the eighteen days leading up to Livingstone’s death. In the opening pages he writes that he is “pale bloodless and weak from bleeding profusely ever since the 31st March,” but notes that he still wishes to continue: “Oh how I long to be permitted by the Overpower to finish my work” (Livingstone 1873b:[15]). He continues to hope for a recovery, believing that his illness may be fever and dosing himself with quinine.</p>
 
@@ -30319,7 +30355,13 @@ The page immediately following Livingstone’s final entry records a note by Jac
       ),
     ),
   ),
-  'field_section_table_of_contents' => array(),
+  'field_section_table_of_contents' => array(
+    'und' => array(
+      0 => array(
+        'menu_name' => 'menu-final-manuscripts',
+      ),
+    ),
+  ),
   'field_section_teaser' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -30331,7 +30373,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
     ),
   ),
   'date' => '2016-11-22 15:08:15 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Spectral Imaging: Overview',
@@ -30358,8 +30400,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span></h4>
+        'value' => '<h4><span style="font-family:crimson text;"><strong>Section Guide</strong></span></h4>
 
 <p><a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction"><strong>The Livingstone Spectral Imaging Project: An Introduction</strong></a> - introduces the project by citing both its historical contexts and the groundbreaking modern technology that has made the project possible.</p>
 
@@ -30401,8 +30442,8 @@ The page immediately following Livingstone’s final entry records a note by Jac
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_000202_0002_IC1_(liv_000204_0001_trans)-new-carousel_0.jpg',
@@ -30427,8 +30468,8 @@ The page immediately following Livingstone’s final entry records a note by Jac
           'height' => 292,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 292,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_000202_0002_IC1_(liv_000204_0001_trans)-new-tile_0.jpg',
@@ -30475,7 +30516,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
     ),
   ),
   'date' => '2016-11-14 22:39:50 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Livingstone\'s Manuscript Structure',
@@ -30828,7 +30869,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
     ),
   ),
   'date' => '2017-02-09 23:46:43 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   $nodes[] = array(
   'title' => 'Who is Livingstone Online\'s Audience?',
@@ -30855,8 +30896,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<hr />
-<p>David Livingstone traveled widely and recorded many of his experiences. His manuscripts are an ideal place to start learning about the nineteenth century or to continue engaging in highly specialized scholarly work. As a result, <em>Livingstone Online</em> appeals to a wide range of users. Our intended audience includes:</p>
+        'value' => '<p>David Livingstone traveled widely and recorded many of his experiences. His manuscripts are an ideal place to start learning about the nineteenth century or to continue engaging in highly specialized scholarly work. As a result, <em>Livingstone Online</em> appeals to a wide range of users. Our intended audience includes:</p>
 
 <p><strong>Members of the general public.</strong> Reading Livingstone’s manuscripts can help us better understand our globalized world by seeing its formation in ways that might be surprising, such as through missionary travel, exploration, and scientific pursuits. In addition to learning about Livingstone himself, reading his manuscripts provides fascinating information for anyone interested in British imperial history, colonialism in Africa, or the conditions of exploration in the nineteenth century.</p>
 
@@ -30898,8 +30938,8 @@ The page immediately following Livingstone’s final entry records a note by Jac
           'height' => 65,
           'width' => 65,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 65,
         'width' => 65,
         'uuid_features_packaged_file_path' => 'assets/liv_013005_0001-carousel_0.jpg',
@@ -30924,8 +30964,8 @@ The page immediately following Livingstone’s final entry records a note by Jac
           'height' => 293,
           'width' => 390,
         ),
-        'alt' => '',
-        'title' => '',
+        'alt' => NULL,
+        'title' => NULL,
         'height' => 293,
         'width' => 390,
         'uuid_features_packaged_file_path' => 'assets/liv_013005_0001-tile.jpg',
@@ -30972,7 +31012,7 @@ The page immediately following Livingstone’s final entry records a note by Jac
     ),
   ),
   'date' => '2015-03-20 18:09:55 +0000',
-  'user_uuid' => 'b1abefbb-2435-4277-941a-93e618200618',
+  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
 );
   return $nodes;
 }

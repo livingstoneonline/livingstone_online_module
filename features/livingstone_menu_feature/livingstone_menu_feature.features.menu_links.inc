@@ -2119,31 +2119,6 @@ function livingstone_menu_feature_menu_default_menu_links() {
     'weight' => -46,
     'customized' => 1,
   );
-  // Exported menu link: menu-final-manuscripts_tei-p5-encoding-guidelines:http://livingstoneonline.github.io/LEAP-ODD/leap.html.
-  $menu_links['menu-final-manuscripts_tei-p5-encoding-guidelines:http://livingstoneonline.github.io/LEAP-ODD/leap.html'] = array(
-    'menu_name' => 'menu-final-manuscripts',
-    'link_path' => 'http://livingstoneonline.github.io/LEAP-ODD/leap.html',
-    'router_path' => '',
-    'link_title' => 'TEI P5 Encoding Guidelines',
-    'options' => array(
-      'attributes' => array(
-        'target' => '_blank',
-      ),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => '',
-        'style' => '',
-      ),
-      'identifier' => 'menu-final-manuscripts_tei-p5-encoding-guidelines:http://livingstoneonline.github.io/LEAP-ODD/leap.html',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -25,
-    'customized' => 1,
-  );
   // Exported menu link: menu-final-manuscripts_the-aftermath-of-livingstones-death:uuid/node/535bf1aa-5479-42de-984f-7048ec054e4c.
   $menu_links['menu-final-manuscripts_the-aftermath-of-livingstones-death:uuid/node/535bf1aa-5479-42de-984f-7048ec054e4c'] = array(
     'menu_name' => 'menu-final-manuscripts',
