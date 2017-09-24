@@ -23,28 +23,37 @@ function livingstone_transcript_menu() {
  * Callback.
  */
 function livingstone_transcript_callback($pid, $dsid) {
+  module_load_include('inc', 'livingstone', 'includes/utilities');
   module_load_include('inc', 'livingstone_transcript', 'transcript');
+  $project_id = livingstone_pid_to_project_id($pid);
   $object = islandora_object_load($pid);
   if ($object === FALSE || !isset($object[$dsid])) {
-    $content = t('No Transcript available.');
+    drupal_json_output(array(
+      'css' => array(),
+      'html' => "<div class=\"transcription-viewer-content {$project_id}\">" . t('No Transcript available.') . '</div>',
+    ));
+    drupal_exit();
   }
   else {
-    $transcript = livingstone_transcript_saxon_transform_embedded($object[$dsid], array());
-    $css = isset($transcript['#attached']['css']) ? $transcript['#attached']['css'] : array();
-    $content = drupal_render($transcript);
-    if ($content === FALSE) {
-      $project_id = livingstone_pid_to_project_id($pid);
-      $content = "<div class=\"transcription-viewer-content {$project_id}\">" . t('Failed to generate transcript.') . '</div>';
+    $content = livingstone_transcript_saxon_transform_embedded($object[$dsid], array());
+    if ($content) {
+      $css = isset($content['#attached']['css']) ? $content['#attached']['css'] : array();
+      $content = drupal_render($content);
+      $xml = simplexml_load_string($content);
+      $style = $xml->xpath('/@style');
+      if ($style) {
+        $xml->addAttribute('style', $style[0]);
+      }
+      drupal_json_output(array(
+        'css' => $css,
+        'html' => $xml->saveXML(),
+      ));
+      drupal_exit();
     }
   }
-  $xml = simplexml_load_string($content);
-  $style = $xml->xpath('/@style');
-  if ($style) {
-    $xml->addAttribute('style', $style[0]);
-  }
   drupal_json_output(array(
-    'css' => $css,
-    'html' => $xml->saveXML(),
+    'css' => array(),
+    'html' => "<div class=\"transcription-viewer-content {$project_id}\">" . t('Failed to generate transcript.') . '</div>',
   ));
   drupal_exit();
 }
@@ -98,10 +107,12 @@ function theme_livingstone_transcript(array &$variables) {
   }
   else {
     $content = livingstone_transcript_saxon_transform_embedded($object[$dsid], $classes);
-    $content = drupal_render($content);
     if ($content === FALSE) {
       $project_id = livingstone_pid_to_project_id($pid);
       $content = "<div class=\"transcription-viewer-content {$project_id}\">" . t('Failed to generate transcript.') . '</div>';
+    }
+    else {
+      $content = drupal_render($content);
     }
   }
   $module_path = drupal_get_path('module', 'livingstone_transcript');

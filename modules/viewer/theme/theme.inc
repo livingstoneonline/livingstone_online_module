@@ -443,7 +443,7 @@ function theme_livingstone_manuscript_viewer_transcript(array &$variables) {
 </html>
 EOT;
   }
-  $markup = livingstone_transcript_saxon_transform($manuscript['TEI']->content);
+  $markup = livingstone_transcript_saxon_transform($manuscript->id, $manuscript['TEI']->content);
   if ($markup === FALSE) {
     $error = t('Failed to generate transcript.') ;
     return <<<EOT

@@ -149,7 +149,45 @@ function livingstone_transcript_transform_preprocess_tei($tei) {
  * @return string|bool
  *   The transformed TEI as HTML if successful FALSE otherwise.
  */
-function livingstone_transcript_saxon_transform($tei) {
+function livingstone_transcript_saxon_transform($id, $tei) {
+  $data = &drupal_static(__FUNCTION__);
+  if (!isset($data)) {
+    // Fetch cache or create it.
+    if ($cache = cache_get('livingstone_transcript')) {
+      $data = $cache->data;
+    }
+    else {
+      cache_set('livingstone_transcript', array(), 'cache');
+    }
+  }
+  if (isset($data[$id]) && file_exists($data[$id])) {
+    return file_get_contents($data[$id]);
+  }
+  else {
+    $html = _livingstone_transcript_saxon_transform($id, $tei);
+    if (!$html) {
+      return FALSE;
+    }
+    $output = file_save_data($html, file_default_scheme() . '://');
+    // File is temporary.
+    $output->status = 0;
+    file_save($output);
+    $data[$id] = $output->uri;
+    cache_set('livingstone_transcript', $data, 'cache');
+    return $html;
+  }
+}
+
+/**
+ * Attempts to transform the given TEI to HTML using Saxon.
+ *
+ * @param string $tei
+ *   The TEI Document to be transformed into HTML.
+ *
+ * @return string|bool
+ *   The transformed TEI as HTML if successful FALSE otherwise.
+ */
+function _livingstone_transcript_saxon_transform($id, $tei) {
   $transform = livingstone_transcript_transform_get_xslt($tei);
   $tei = livingstone_transcript_transform_preprocess_tei($tei);
   $source = file_save_data($tei, file_default_scheme() . '://');
@@ -188,7 +226,7 @@ function livingstone_transcript_saxon_transform($tei) {
  */
 function livingstone_transcript_saxon_transform_embedded($datastream, array $classes) {
   module_load_include('inc', 'livingstone', 'includes/utilities');
-  $content = livingstone_transcript_saxon_transform($datastream->content);
+  $content = livingstone_transcript_saxon_transform($datastream->parent->id, $datastream->content);
   if ($content == FALSE) {
     return FALSE;
   }
