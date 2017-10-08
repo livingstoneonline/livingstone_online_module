@@ -56,7 +56,7 @@ function livingstone_settings_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'gmap_api_key';
-  $strongarm->value = '';
+  $strongarm->value = 'AIzaSyBVQruRtb-fJgk5kWM6vlEfGbMIxw4lJ6g';
   $export['gmap_api_key'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -65,7 +65,7 @@ function livingstone_settings_feature_strongarm() {
   $strongarm->name = 'gmap_default';
   $strongarm->value = array(
     'width' => '100%',
-    'height' => '700px',
+    'height' => '600px',
     'latlong' => '14.702826619885062,27.94921875',
     'zoom' => '3',
     'maxzoom' => '14',
