@@ -90,12 +90,12 @@ function livingstone_settings_feature_strongarm() {
     'pancontrol' => 1,
     'streetviewcontrol' => 0,
     'mtc' => 'standard',
-    'maptype' => 'Map',
+    'maptype' => 'Hybrid',
     'baselayers' => array(
       'Map' => 1,
       'Satellite' => 1,
       'Hybrid' => 1,
-      'Physical' => 0,
+      'Physical' => 1,
     ),
     'behavior' => array(
       'locpick' => FALSE,
@@ -234,7 +234,7 @@ function livingstone_settings_feature_strongarm() {
   $strongarm->name = 'imce_profiles';
   $strongarm->value = array(
     1 => array(
-      'name' => 'User-1',
+      'name' => 'Administrator',
       'usertab' => 1,
       'filesize' => '0',
       'quota' => '0',
@@ -248,70 +248,81 @@ function livingstone_settings_feature_strongarm() {
           'subnav' => 1,
           'browse' => 1,
           'upload' => 1,
-          'thumb' => 1,
+          'thumb' => 0,
           'delete' => 1,
-          'resize' => 1,
+          'resize' => 0,
           'mkdir' => 1,
           'rmdir' => 1,
         ),
       ),
-      'thumbnails' => array(
-        0 => array(
-          'name' => 'Small',
-          'dimensions' => '90x90',
-          'prefix' => 'small_',
-          'suffix' => '',
-        ),
-        1 => array(
-          'name' => 'Medium',
-          'dimensions' => '120x120',
-          'prefix' => 'medium_',
-          'suffix' => '',
-        ),
-        2 => array(
-          'name' => 'Large',
-          'dimensions' => '180x180',
-          'prefix' => 'large_',
-          'suffix' => '',
-        ),
-      ),
+      'thumbnails' => array(),
       'mkdirnum' => '0',
-      'uploader' => 'plupload',
-    ),
-    2 => array(
-      'name' => 'Sample profile',
-      'usertab' => 1,
-      'filesize' => 1,
-      'quota' => 2,
-      'tuquota' => 0,
-      'extensions' => 'gif png jpg jpeg',
-      'dimensions' => '800x600',
-      'filenum' => 1,
-      'directories' => array(
-        0 => array(
-          'name' => 'u%uid',
-          'subnav' => 0,
-          'browse' => 1,
-          'upload' => 1,
-          'thumb' => 1,
-          'delete' => 0,
-          'resize' => 0,
-          'mkdir' => 0,
-          'rmdir' => 0,
-        ),
-      ),
-      'thumbnails' => array(
-        0 => array(
-          'name' => 'Thumb',
-          'dimensions' => '90x90',
-          'prefix' => 'thumb_',
-          'suffix' => '',
-        ),
-      ),
-      'mkdirnum' => 2,
     ),
   );
   $export['imce_profiles'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imce_roles_profiles';
+  $strongarm->value = array(
+    4 => array(
+      'weight' => '0',
+      'public_pid' => 0,
+    ),
+    5 => array(
+      'weight' => '0',
+      'public_pid' => 0,
+    ),
+    3 => array(
+      'weight' => '0',
+      'public_pid' => '1',
+    ),
+    2 => array(
+      'weight' => 11,
+      'public_pid' => 0,
+    ),
+    1 => array(
+      'weight' => 12,
+      'public_pid' => 0,
+    ),
+  );
+  $export['imce_roles_profiles'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imce_settings_absurls';
+  $strongarm->value = 0;
+  $export['imce_settings_absurls'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imce_settings_disable_private';
+  $strongarm->value = 1;
+  $export['imce_settings_disable_private'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imce_settings_replace';
+  $strongarm->value = '0';
+  $export['imce_settings_replace'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imce_settings_textarea';
+  $strongarm->value = '';
+  $export['imce_settings_textarea'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imce_settings_thumb_method';
+  $strongarm->value = 'scale_and_crop';
+  $export['imce_settings_thumb_method'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

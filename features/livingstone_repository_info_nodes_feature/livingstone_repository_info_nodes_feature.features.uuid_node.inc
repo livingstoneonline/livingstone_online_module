@@ -4079,7 +4079,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   ),
   'url_alias' => array(),
   'date' => '2017-08-09 18:18:57 +0000',
-  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Yale University. Divinity School. Library',
@@ -4757,7 +4757,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   ),
   'url_alias' => array(),
   'date' => '2017-08-09 18:17:37 +0000',
-  'user_uuid' => '0cc5ad10-41fb-49df-88e3-7debaf8b5d19',
+  'user_uuid' => '22a82bbc-8b0b-4c39-99e4-a242ac324e01',
 );
   $nodes[] = array(
   'title' => 'Natural History Museum (London, England). General Library',
