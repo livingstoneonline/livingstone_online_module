@@ -54,13 +54,15 @@ function livingstone_geolocation_view_feature_views_default_views() {
     'offset' => '',
   );
   $handler->display->display_options['style_options']['field_purposes'] = array(
+    'field_manuscript_pid' => '',
+    'field_manuscript_places_created' => '',
     'title' => 'text',
     'field_manuscript_coordinates' => '',
     'regex_rewrite' => 'longitude',
     'regex_rewrite_1' => 'latitude',
-    'field_manuscript_addressees' => 'text',
     'field_manuscript_creators' => 'text',
     'field_manuscript_dates' => 'text',
+    'edit_node' => 'text',
   );
   $handler->display->display_options['style_options']['datasource'] = 'fields';
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -71,6 +73,12 @@ function livingstone_geolocation_view_feature_views_default_views() {
   $handler->display->display_options['fields']['field_manuscript_pid']['label'] = '';
   $handler->display->display_options['fields']['field_manuscript_pid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_manuscript_pid']['element_label_colon'] = FALSE;
+  /* Field: Content: Place(s) Created */
+  $handler->display->display_options['fields']['field_manuscript_places_created']['id'] = 'field_manuscript_places_created';
+  $handler->display->display_options['fields']['field_manuscript_places_created']['table'] = 'field_data_field_manuscript_places_created';
+  $handler->display->display_options['fields']['field_manuscript_places_created']['field'] = 'field_manuscript_places_created';
+  $handler->display->display_options['fields']['field_manuscript_places_created']['label'] = '';
+  $handler->display->display_options['fields']['field_manuscript_places_created']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -114,12 +122,6 @@ function livingstone_geolocation_view_feature_views_default_views() {
   $handler->display->display_options['fields']['regex_rewrite_1']['alter']['text_patterns'] = '/^([^,]*),([^,]*)$/';
   $handler->display->display_options['fields']['regex_rewrite_1']['alter']['text_replacements'] = '$1';
   $handler->display->display_options['fields']['regex_rewrite_1']['element_label_colon'] = FALSE;
-  /* Field: Content: Addressee(s) */
-  $handler->display->display_options['fields']['field_manuscript_addressees']['id'] = 'field_manuscript_addressees';
-  $handler->display->display_options['fields']['field_manuscript_addressees']['table'] = 'field_data_field_manuscript_addressees';
-  $handler->display->display_options['fields']['field_manuscript_addressees']['field'] = 'field_manuscript_addressees';
-  $handler->display->display_options['fields']['field_manuscript_addressees']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_manuscript_addressees']['hide_empty'] = TRUE;
   /* Field: Content: Creator(s) */
   $handler->display->display_options['fields']['field_manuscript_creators']['id'] = 'field_manuscript_creators';
   $handler->display->display_options['fields']['field_manuscript_creators']['table'] = 'field_data_field_manuscript_creators';
@@ -132,6 +134,14 @@ function livingstone_geolocation_view_feature_views_default_views() {
   $handler->display->display_options['fields']['field_manuscript_dates']['field'] = 'field_manuscript_dates';
   $handler->display->display_options['fields']['field_manuscript_dates']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_manuscript_dates']['hide_empty'] = TRUE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['edit_node']['alter']['text'] = 'Edit';
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -156,7 +166,6 @@ function livingstone_geolocation_view_feature_views_default_views() {
   $handler->display->display_options['filters']['field_manuscript_dates_value']['field'] = 'field_manuscript_dates_value';
   $handler->display->display_options['filters']['field_manuscript_dates_value']['operator'] = 'word';
   $handler->display->display_options['filters']['field_manuscript_dates_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_manuscript_dates_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_manuscript_dates_value']['expose']['operator_id'] = 'field_manuscript_dates_value_op';
   $handler->display->display_options['filters']['field_manuscript_dates_value']['expose']['operator'] = 'field_manuscript_dates_value_op';
   $handler->display->display_options['filters']['field_manuscript_dates_value']['expose']['identifier'] = 'field_manuscript_dates_value';
@@ -170,7 +179,6 @@ function livingstone_geolocation_view_feature_views_default_views() {
   $handler->display->display_options['filters']['title']['field'] = 'title';
   $handler->display->display_options['filters']['title']['operator'] = 'word';
   $handler->display->display_options['filters']['title']['group'] = 1;
-  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
   $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
@@ -184,7 +192,6 @@ function livingstone_geolocation_view_feature_views_default_views() {
   $handler->display->display_options['filters']['field_manuscript_creators_value']['field'] = 'field_manuscript_creators_value';
   $handler->display->display_options['filters']['field_manuscript_creators_value']['operator'] = 'word';
   $handler->display->display_options['filters']['field_manuscript_creators_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_manuscript_creators_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_manuscript_creators_value']['expose']['operator_id'] = 'field_manuscript_creators_value_op';
   $handler->display->display_options['filters']['field_manuscript_creators_value']['expose']['operator'] = 'field_manuscript_creators_value_op';
   $handler->display->display_options['filters']['field_manuscript_creators_value']['expose']['identifier'] = 'field_manuscript_creators_value';
@@ -216,9 +223,9 @@ function livingstone_geolocation_view_feature_views_default_views() {
     t('[field_manuscript_coordinates] '),
     t('$2'),
     t('$1'),
-    t('Addressee(s)'),
     t('Creator(s)'),
     t('Date(s)'),
+    t('Edit'),
     t('Block'),
   );
   $export['geolocation'] = $view;
