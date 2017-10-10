@@ -143,7 +143,7 @@ function livingstone_nodequeue_items_feature_uuid_features_default_nodequeue_ite
   $nodequeue_items[] = array(
     'queue_name' => 'in_his_own_words',
     'node_uuid' => 'ef7677b7-0212-4c34-bb8e-ce826eefb0af',
-    'position' => 7,
+    'position' => 8,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'in_his_own_words',

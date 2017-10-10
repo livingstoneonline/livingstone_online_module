@@ -1073,6 +1073,7 @@ function livingstone_user_feature_user_default_permissions() {
   $permissions['export nodes'] = array(
     'name' => 'export nodes',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
     ),
     'module' => 'node_export',
@@ -1082,6 +1083,7 @@ function livingstone_user_feature_user_default_permissions() {
   $permissions['export own nodes'] = array(
     'name' => 'export own nodes',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
     ),
     'module' => 'node_export',

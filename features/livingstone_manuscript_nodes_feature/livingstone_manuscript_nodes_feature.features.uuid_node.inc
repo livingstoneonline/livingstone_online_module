@@ -46,6 +46,10 @@ function livingstone_manuscript_nodes_feature_uuid_features_default_content() {
         'value' => '-2.95,25.95',
         'format' => NULL,
       ),
+      1 => array(
+        'value' => '-4.9,29.683333',
+        'format' => NULL,
+      ),
     ),
   ),
   'field_manuscript_copy_of_item' => array(),
@@ -4030,12 +4034,12 @@ Ujiji
 
 
 23rd March 1871 Left Kasongo - he gave a
-goat &amp; guns &amp;c - country gently undulating
+goat & guns &c - country gently undulating
 shewing green slopes fringed with wood
 Grass from 4 to 6 feet = Luamba or
 cotton meadow grass - Nyassi in patches
 reached Katenga\'s about 6 miles off
-many villages &amp; people passed us
+many villages & people passed us
 carrying loads of provisions - cassava
 from the 
 chitoka
@@ -4045,7 +4049,7 @@ a little sandy - allows good drainage
 
 
 24th
- = Great rain in the night &amp;
+ = Great rain in the night &
 morning - and sickness of
 men prevented our march
 
@@ -4065,7 +4069,7 @@ Patches of Arum at every
 village and cassava far
 off on account of the pigs
 which are now plenty - a
-black ugly pig - crossed a rivulet &amp;
+black ugly pig - crossed a rivulet &
 the 
 Lohemba
  -
@@ -4093,14 +4097,14 @@ low hills appear in the North - We
 met a party from the traders at 
 Kasongo
 
-chiefly Matereka\'s people - Salem &amp; 
+chiefly Matereka\'s people - Salem & 
 
 Seyd
 Syde
 
 bin Sultan- They had eighty two captives
 say they fought ten days to secure
-them and two Malongwana &amp; two of the 
+them and two Malongwana & two of the 
 
 
 
@@ -4199,7 +4203,7 @@ Liya
  about twenty yards and
 going into 
 Kunda
- &amp; 
+ & 
 Lualaba
 
 
@@ -4234,7 +4238,7 @@ sea coast - We crossed the river
 CIV - The MolembeThe 
 Moangor
  by two 27
-well made wattle bridges - It is 20 yards &amp; a
+well made wattle bridges - It is 20 yards & a
 very strong current and is feared on that
 account - 
 the
@@ -4242,7 +4246,7 @@ then
  the 
 Molembe
  in a canoe -
-swelled by rains to 15 yards &amp; many rills and
+swelled by rains to 15 yards & many rills and
 much mud - Came about 7
 ½
 1/2
@@ -4260,7 +4264,7 @@ Lualaba
  - they pass thither
 by night and come away about midday
 having disposed most of their goods
-by Barter - country open &amp; dotted
+by Barter - country open & dotted
 over with villages - Trees along the 
 watercourses chiefly - Grass not very
 long - four to six feet - Pigs abundant
@@ -4281,7 +4285,7 @@ housewifes
 housewife\'s
  little
 conveniences in the shape of forty
-pots - dishes baskets - knives &amp;c &amp;c
+pots - dishes baskets - knives &c &c
 mats all which the wife removed
 to another house I gave four strings
 of beads and go on tomorrow
@@ -4334,7 +4338,7 @@ one
 miles
 mile
 
-Banks here are steep &amp;
+Banks here are steep &
 deep - The banks of the other
 rivers are of gravel - It flows
 fast towards the North - people
@@ -4415,7 +4419,7 @@ it
  is 2 miles or 4000
 yards - I sounded across yesterday
 Near the bank it is nine feet. The
-rest 15 feet &amp; one cast in the middle
+rest 15 feet & one cast in the middle
 was 20 feet - Between the islands
 12 feet and nine feet again inshore
 
@@ -4498,9 +4502,9 @@ I sent my people over to the other side
 to cut wood to build a house for me
 The borrowed one I live in had
 s mud
-walls &amp; floors which are damp foul
+walls & floors which are damp foul
 smelling and unwholesome - I shall
-have grass walls and grass &amp; reeds
+have grass walls and grass & reeds
 on the floor - of my own house - the
 free ventilation will keep it sweet
 This is the season called 
@@ -4521,7 +4525,7 @@ these insects sleeping on a high stage
 when they were very numerous -
 
 
-The Manyema are not trustworthy &amp;
+The Manyema are not trustworthy &
 they bring evil on themselves often
 Paid one yesterday to bring a large
 canoe - He brought one capable only of
@@ -4561,7 +4565,7 @@ men taking them by force - they are
 unreasonable and bloodyminded to-
 -wards each other - Every Manyema would
 like every other headman slain - They are
-subjected to bitter lessons &amp; sore experience
+subjected to bitter lessons & sore experience
 
 
 
@@ -4591,9 +4595,9 @@ Loeki
 by slaves to be larger than this
 but we expect Abed\'s party back
 from it in a few days with correct
-information on that &amp; other
+information on that & other
 points - people said to be
-very fierce &amp; dangerous
+very fierce & dangerous
 to the 
 Ujijians
 
@@ -4610,8 +4614,8 @@ CIX.
 
  10th April 1871 Market today -
 over 700 market people passed my door
-It seems a pleasure of life to haggle &amp; joke
-and laugh &amp; cheat - many go away with
+It seems a pleasure of life to haggle & joke
+and laugh & cheat - many go away with
 care worn countenances - many are
 old and carry heavy loads of dried
 cassava earthenpots which they dispose
@@ -4620,7 +4624,7 @@ food -  The men go flaunting in
 gaudy 
 lambas
  and carry little save
-their iron wares fowls &amp; grass cloth
+their iron wares fowls & grass cloth
 Bought two fishes with long snouts
 very good eating
 	
@@ -4643,7 +4647,7 @@ Suez
 
 
 Lower Tanganyika
- &amp; living on an
+ & living on an
 island - Took ivory by force and
 then 
 -
@@ -4656,7 +4660,7 @@ when powder was spent
 Afterwards ^ all ran away leaving all
 their ill gotten ivory - 
 Mteza said
-to be circumcised &amp; to order his people
+to be circumcised & to order his people
 to undergo the rite but so many
 lies are told one can believe nothing
 The idea of a mission seems first
@@ -4681,7 +4685,7 @@ vary
  from Mteza walking in
 white and reading the Koran in
 Arabic to the missionary getting
-500 slaves &amp; 500 
+500 slaves & 500 
 frasilahs
  of ivory
 
@@ -4696,7 +4700,7 @@ and nothing else being done
 CX. 13 April 1871 came into my new 35
 house yesterday the first of the 4th Arab
 a great comfort for the other was foul
-full of vermin &amp; bad smelling -  Bugs
+full of vermin & bad smelling -  Bugs
 and 
 
 
@@ -4753,7 +4757,7 @@ Gaboon
  at 
 Loeki
 
-but the canoe affair is slow &amp; tedious
+but the canoe affair is slow & tedious
 The people think only of war - getting
 up a war against some one else as
 price of it! They are a bloody minded
@@ -4788,7 +4792,7 @@ e
 Lualaba
  a short distance below this but
 on the Western bank - a spring of brine
-rises in its bed &amp; the people cook it
+rises in its bed & the people cook it
 down and sell the salt - The 
 Lomam
 o
@@ -4798,7 +4802,7 @@ e
 
 is deep and is crossed by canoes of
 
-Rashid &amp; people call it the 
+Rashid & people call it the 
 
 
 Lofubu
@@ -4883,7 +4887,7 @@ One line of Hebrew text and four lines of Arabic. The first three lines of Arabi
 19th
  Dreary waiting but Abed
 
-proposes to come &amp; trade along
+proposes to come & trade along
 
 with me this will render
 
@@ -4945,7 +4949,7 @@ Lualaba
 another which they call the 
 Lomame
 
-is very much larger &amp; joins 
+is very much larger & joins 
 Lualaba
  too
 but further down - Rapids reported
@@ -5014,7 +5018,7 @@ Kanayumbe
 
 R.
 River
- &amp; island)
+ & island)
 
 	
 
@@ -5033,7 +5037,7 @@ Kimburu
 
 
 came over but I did not see him - He is
-said to be very handsome &amp; light coloured
+said to be very handsome & light coloured
 	
 
 Calculation in the lower left-hand corner of this page.
@@ -5139,7 +5143,7 @@ They
 Then
  a fray takes
 place inspite of all traders can do -
-The Manyema are bloodminded &amp; no
+The Manyema are bloodminded & no
 mistake - I refused to send my men
 to bring back Abed and Hassani\'s
 people they would only add to the con-
@@ -5248,7 +5252,7 @@ say
 saying
  that the typical negroe is
 not the West Coast African on whose
-form &amp; features an unhealthy climate
+form & features an unhealthy climate
 has told injuriously for ages but the
 ancient Egyptian is the true negro
 though all our ideas of Africans 
@@ -5326,7 +5330,7 @@ The Malobo tribe is under
 Yuñga
 
 
-&amp; 
+& 
 Lomadyo
  - another ^ toothless slave a mere boy
 said he came from 
@@ -5448,11 +5452,11 @@ Nile
 which the  ancients may not have
 known - The watershed situated between
 ten and twelve degrees South Latitude is between
-700 &amp; 800 miles in length - the general
-height is between 4000 &amp; 5000 feet above
+700 & 800 miles in length - the general
+height is between 4000 & 5000 feet above
 the level of the sea but mountains rise
 stand at various parts of it which
-are between 6000 &amp; 7000 feet above
+are between 6000 & 7000 feet above
 
 
 the ocean - These are what Ptolemy
@@ -5469,7 +5473,7 @@ with slightly depressed valleys
 one or two miles apart on the stems
 
 shew by their branches and the lichens ^
-that the prevailing winds &amp; rains are
+that the prevailing winds & rains are
 from the South East - 
 
 Their
@@ -5533,7 +5537,7 @@ Africa
 CXVII note
  The valleys into which the water is 40
 led are covered with a thick sward of wiry
-damp loving grass &amp; other aquatic plants up
+damp loving grass & other aquatic plants up
 to the verge of the forest - no bushes or trees
 can live on the oozing earthen mantle
 which supports the long grass and is
@@ -5549,7 +5553,7 @@ is formed - The earthen sponge is a
 great specific gravity and though
 constantly pouring out clear what
 water ^ which descends into the centre of the
-valley &amp; forms a perennial rill = it is
+valley & forms a perennial rill = it is
 only when the rains have supersat
 urated
 the flats and the slopes of the valleys
@@ -5577,7 +5581,7 @@ or a hundred yards of oozing sponge
 
 
 Branches ^ rills enter it on all its course
-down and these rills &amp; rivulets
+down and these rills & rivulets
 are almost innumerable - that
 is it would require more than half
 a 
@@ -5833,14 +5837,14 @@ Kansari a
 man of Kimburu here today
 these chiefs were visited by Rashid
 who returned today - country
-extremely muddy &amp; full of rills - The
+extremely muddy & full of rills - The
 
 
 Lofubu
  is a large river 300 
 yds
 yards
- &amp; deep
+ & deep
 crossed by canoes - The 
 Nganze
  is
@@ -6056,7 +6060,7 @@ s
  search
 trip up 
 Shire
- &amp; 
+ & 
 Nyassa
  till February 1871 
 36
@@ -6214,7 +6218,7 @@ women look careworn and anxious
 
 The
 They
- carry large loads to &amp; from the 
+ carry large loads to & from the 
 market The men wear a very
 long 
 lamba
@@ -6243,7 +6247,7 @@ R.
 River
  
 Lindi
- &amp; reached the 
+ & reached the 
 
 Babira
 Bira
@@ -6370,7 +6374,7 @@ CXXV. Journal
 Kasongo\'s people were struck of a great 
 Friend
 -
--ship with me came to the market of today &amp;
+-ship with me came to the market of today &
 brought 60 pieces of 
 lambas
  = They go
@@ -6403,7 +6407,7 @@ yester
 day with my letters to 
 to
 
- Kirk &amp; Agnes
+ Kirk & Agnes
 
 	
 
@@ -6414,7 +6418,7 @@ to
 me that men had come for goats to
 enable them to secure people to drag a
 large canoe from the forest where it
-has been cut &amp; hollowed out to the
+has been cut & hollowed out to the
 
 
 Lualaba
@@ -6469,7 +6473,7 @@ He has eighty
 
 frasilahs
  of the
-Matunda beads &amp;c strings
+Matunda beads &c strings
 
 
 
@@ -6505,7 +6509,7 @@ people went off today homewards -
 
 
 9th
- River rising steadily &amp; covering an island
+ River rising steadily & covering an island
 
 
 10th
@@ -6523,7 +6527,7 @@ with cowries = many white birds pass
 
 11th
  River rising fast and bringing
-great quantities of aquatic grass &amp; duckweed
+great quantities of aquatic grass & duckweed
 colour of water a little darker than at Cairo
 People leaving islands for the higher forest
 lands - men brought one canoe down to the 
@@ -6590,7 +6594,7 @@ Lomame
 
 Lualaba
  below this - People smelt copper
-and it is very cheap = They were very civil &amp;
+and it is very cheap = They were very civil &
 kind to the strangers but terrible fellows among
 themselves and at last provoked
 an attack in which many of the Bakuss
@@ -6640,7 +6644,7 @@ It is a perfect haul of slaves for all -
 13th
  people were shot down
 though standing in amazement at
-the guns as thunder &amp; lightning -
+the guns as thunder & lightning -
 great numbers fell - they refused
 passage through their country -
 They have coffee plantations and
@@ -6671,15 +6675,15 @@ I wrote to
 Moenemokaia
 Moenemokia
 
- to be sure &amp; take all my
+ to be sure & take all my
 goods out of Shereef
 
 s
 \'s
- hands &amp; deliver them to 
+ hands & deliver them to 
 Moenye-
 -ghere
- &amp; 
+ & 
 
 Syd
 Syde
@@ -6707,7 +6711,7 @@ is done - an armring of copper 1
  thick
 for one string of beads - ! Dura Pennis-
 -etum
- &amp; maize grown largely - among
+ & maize grown largely - among
 the Bakuss - who make 
 wale
  but not
@@ -6715,13 +6719,13 @@ porridge of them - they wash regularly
 Houses of two stories - little clothing
 used - women slaves here have rather
 rounded compressed heads but very
-pleasant faces - &amp; ancient Egyptian 
+pleasant faces - & ancient Egyptian 
 round eyes = When they saw guns
 they thought that they were the insignia
 of the 
 strangers
 strangers\'
- chiefs - a long staff &amp;
+ chiefs - a long staff &
 a knob on the lower end blackened
 with some medicine being the usual
 official staff of chiefs = they feared
@@ -6793,7 +6797,7 @@ Lomame
  from the confluence - He
 will be nearer the copper mines
 than we are now, and be buying ivory
-all the time I was up at the copper &amp;
+all the time I was up at the copper &
 exploring - the canoe is to come to
 me today and Abed delivers it to me
 
@@ -6834,7 +6838,7 @@ that they were deserting me to be
 recieved
 received
 
-by him This alarmed him &amp; made
+by him This alarmed him & made
 him earnest in declaring that they
 should not remain with him - This
 is now blown over -
@@ -6929,7 +6933,7 @@ for a treble string of beads
 Small squiggle that appears to be Livingstone\'s way of signalling that the succeeding text should be inserted earlier in the sentence.
  fattened with
 dura 
-&amp; pennisetum &amp; given in the village
+& pennisetum & given in the village
 	
 
 
@@ -7080,7 +7084,7 @@ Thundu
 Lualaba
 : size of a 
 large goat = lokolia colour or skin - Horns
-straight &amp; tapering about 4 inches ---
+straight & tapering about 4 inches ---
 
 
 
@@ -7189,7 +7193,7 @@ Lolinde
 
 
 Benya
- with bows &amp; arrows
+ with bows & arrows
 
 are on other side
 	
@@ -7200,7 +7204,7 @@ Bagenya on other side of
 
 
 Lualaba
- &amp; 
+ & 
 Lindi
  - 
 Lualaba
@@ -7214,7 +7218,7 @@ Congo
 
 but then both 
 Lualaba
- &amp; 
+ & 
 Lomame
 
 take a vast sweep back to the Eastward
@@ -7341,7 +7345,7 @@ chitoka
 dead earnest = little time is lost in friendly greetings
 Then the vendors of fish run about with potsherds
 full of snails or small fishes or clarias dried or
-fresh and exchange for cassava steeped &amp; dried -
+fresh and exchange for cassava steeped & dried -
 potatoes - vegetables - grain - bananas - flour -
 palm oil - fowls - Each is intensely in
 earnest for food or relishes as salt -
@@ -7353,7 +7357,7 @@ in beads on the face and body - ^
 squeeling
 squealing
 
- pigs &amp; iron
+ pigs & iron
 
 ^ 
 knives
@@ -7368,7 +7372,7 @@ cassava
  which was shivered into twenty pieces
 then demanded another piece I looked at
 her and it was so manifestly unjust that
-she laughed as I told her to take up her load &amp;
+she laughed as I told her to take up her load &
 
 be gone - They appeal to each other in these
 
@@ -7410,7 +7414,7 @@ is not  the property of the vendor
 
 and the real owner refuses the
 slave of Kalenga so the affair stands still =
-and excuses are made of sickness &amp;c -
+and excuses are made of sickness &c -
 
 Hassani recommends seizure of
 
@@ -7464,7 +7468,7 @@ he came here not a banana or bit of
 cassava had even been presented to him
 Market I generally visit to see the fish
 and people one man offered me a few
-small fish - another a sweet potato &amp;
+small fish - another a sweet potato &
 piece of cassava - then a third 2 small
 fishes - but 
 
@@ -7490,10 +7494,10 @@ roasted white ants -
  
 
 Mologhwe
- Dambo &amp; two others
+ Dambo & two others
 came to mix blood with Hassani - It is
 simply a small incision made on the
-arm &amp; blood from each rubbed on the spot
+arm & blood from each rubbed on the spot
 He says that he has promised him ten
 canoes to be brought as soon as the copper
 party under Manilla comes back to us
@@ -7686,8 +7690,8 @@ wet and muddy -
 
 8th
  River rose again six inches and
-then fell three = water very dark brown &amp;
-much wreck - duckweed &amp; grassy islands
+then fell three = water very dark brown &
+much wreck - duckweed & grassy islands
 float down = Rain nearly ceased = Great
 masses of cloud float down from 
 Nor
@@ -7742,7 +7746,7 @@ prevents
 safari
  from starting tomorrow - 20
 It is dangerous for a small party to go if
-like mine cowardly &amp; mutinous = No
+like mine cowardly & mutinous = No
 one visits villages three miles off on account
 of floods 
 
@@ -7787,7 +7791,7 @@ to me is not be endured - It is the most
 childish impertinence because he thinks
 nothing will be done to him but talk as
 
-Manyema do &amp; have done for ages -
+Manyema do & have done for ages -
 I send my men tomorrow to demand
 either canoe or goods and to bind
 him in case of refusal till he delivers
@@ -7833,7 +7837,7 @@ Safari
  off this morning
 High winds have begun from South East and
 shew cessation of the rains = Every thing
-is drying as soap sugar mud &amp;c
+is drying as soap sugar mud &c
 	
 
 
@@ -7882,7 +7886,7 @@ Palamotto says letters have come by Governor
 for me and are at 
 Ujiji
  = If I get a little
-powder from Dugumbe &amp; the canoe comes
+powder from Dugumbe & the canoe comes
 I shall be ready to run down the river
 	
 
@@ -7990,7 +7994,7 @@ caused a feast
 
 26th
  Hassani\'s boat party foiled by narrows
-4 days down - a canoe tilted over &amp; 5 lives lost
+4 days down - a canoe tilted over & 5 lives lost
 
 
 Banian slaves come back - people all
@@ -7999,7 +8003,7 @@ killing and stealing their relations - p
 
 follow another te for Hassani\'s men
 
-were shot at in the rapids with arrows &amp;
+were shot at in the rapids with arrows &
 
 Kolokolo\'s deeds blamed - Oh horrible!!
 	
@@ -8028,11 +8032,11 @@ been mercifully prevented from going
 down river for I would have been the
 leading canoe into the narrows and it
 is said cataract beyond the entrance
-a dyke of rock cuts across country &amp;
+a dyke of rock cuts across country &
 the two points of it a little ajar cause
 the enormous mass of water to wheel
 behind one and make a whirlpool
-in which canoes are carried round &amp; round
+in which canoes are carried round & round
 helplessly - Had we gone down 
 Luamo
 
@@ -8096,7 +8100,7 @@ of brandy for his own use and made
 my porters carry it so I paid for the drunk-
 ards swill = I asked also why he had
 destroyed the consult\'s packet containing
-the list of goods &amp; notice of the watch - 
+the list of goods & notice of the watch - 
 I shall send by Dugumbe\'s people for my 
 goods and will come back here to 
 recieve
@@ -8139,7 +8143,7 @@ Zonady
 Kisingite above as well as below this
 so I go west to 
 Lomame
- &amp; probably
+ & probably
 escape the basaltic dyke if it goes so far
 West
 	
@@ -8176,7 +8180,7 @@ sorely needed to be employed him-
 -self in something else than penny
 a lining = The Bagenya
 are fishermen by taste and sell
-the produce of their nets &amp; weirs
+the produce of their nets & weirs
 to the other tribes who cultivate
 the soil at the different markets
 	
@@ -8237,7 +8241,7 @@ slander and did not know of Manilla
 s
 \'s
 
-foray = pointing up to Heaven = &amp;c &amp;c
+foray = pointing up to Heaven = &c &c
 The falsehood of Muhamad has been
 transmitted to his followers -
 
@@ -8273,7 +8277,7 @@ of Pasha Baker
 
 s
 \'s
- expedition &amp; not flee -
+ expedition & not flee -
 	
 
 
@@ -8331,7 +8335,7 @@ since the 27th June = dark brown
 
 
 6th
- consult Dugumbe &amp; offer
+ consult Dugumbe & offer
 1000 dollars for other attendants =
 kill a Tassa goat = I am unable to
 buy any by Shereef
@@ -8395,7 +8399,7 @@ seems anxious for peace and friendship
  Dugumbe advised explaining
 my plan of going to 
 Lomame
- &amp; thence to
+ & thence to
 
 
 Katanga
@@ -8497,7 +8501,7 @@ his plunder going to the coast
 Lord help me - When told that
 they would lose all their pay they
 said they would not lose their lives
-and would be employed by others &amp; get
+and would be employed by others & get
 more pay = Dugumbe will speak to 
 them -
 	
@@ -8548,7 +8552,7 @@ to me your slaves are very bad shewing
 that Dugumbe had given a truthful
 account of them = I am distressed
 
-&amp; perplexed what to do so as not
+& perplexed what to do so as not
 to be foiled but all seems against me
 			
 			
@@ -8572,7 +8576,7 @@ saw in flames - He is meeting his doom
 in spite of mixing blood and giving
 nine slaves for the operation =
 
-Moenemgunga was his victim = &amp; so
+Moenemgunga was his victim = & so
 it goes on making me fear to go
 with Dugumbe\'s people to be partakers
 in their blood guiltiness
@@ -8640,7 +8644,7 @@ in danger of swamping - no one
 will ever know how many perished
 in this bright summer morning
 All the camp people set on the land
-comers &amp; plundered them = Women
+comers & plundered them = Women
 were carrying loads for hours of what
 the water comers had thrown down
 
@@ -8648,7 +8652,7 @@ Manilla\'s brother was over at one
 village of a friend - I sent men to
 rescue him with our flag to
 protect them for Dugumbe\'s
-people are shooting right and left &amp;
+people are shooting right and left &
 without a flag they might have been
 victims - I count twelve villages
  burned this morning = this with
@@ -8759,7 +8763,7 @@ Dugumbe says that he did not send
 this foray - and Tagamoio the head of
 it says that he went to punish the
 friends of Manilla who being a slave
-had no right to make war &amp; burn
+had no right to make war & burn
 villages - 
 Manilla confesses to me
 that he did wrong in that and loses
@@ -8802,7 +8806,7 @@ to be sold to relations
 
 
 CL Journal 16 July
-drowned 5 men &amp; women ^ of 
+drowned 5 men & women ^ of 
 Ñomba
 
  numbers unknown
@@ -8980,7 +8984,7 @@ fine blue beads and 230 cowries
 as good in the way = I proposed
 to leave a doti 
 merikano
- &amp; one of
+ & one of
 
 
 Kanike
@@ -9270,7 +9274,7 @@ Kahembai
 and then along a level country
 Met 4 men in hot haste to
 announce a woman\'s death.
-Two died lately North &amp; two South
+Two died lately North & two South
 of this of dysentery or some
 disease of Abdomen = Pleurisy
 common from cold winds of the
@@ -9279,7 +9283,7 @@ with large shields came to carry
 the woman\'s body and all her
 gear to her own home for burial
 about twenty women followed
-them &amp; the men waited under the
+them & the men waited under the
 trees till they had wound up the
 body - The women of Kama
 in large numbers went to weep
@@ -9319,7 +9323,7 @@ Kasongo is off in the forest
 N.
 North
 
-of this guiding a party &amp; buying
+of this guiding a party & buying
 ivory when he can for himself
 			
 			
@@ -9363,7 +9367,7 @@ clave indulging in merciless vi-
 -tuperation against Louis Napoleon
 who in spite of the extremest
 abuse which could be raked up
-against him in ^ specimens ancient &amp; modern
+against him in ^ specimens ancient & modern
 
 railing has proved himself to be
 a wise and able ruler - a true friend
@@ -9481,7 +9485,7 @@ CLIX
 
 Note Journal Note
  The foregoing
-Note to be amplified &amp; sent to the 21
+Note to be amplified & sent to the 21
 "Times" in laughing forebodings of his
 awful-ire-Jupiter 
 tonans
@@ -9698,7 +9702,7 @@ right and it glanced past my
 back heavily into the soil about
 20 feet beyond me = the two men
 from whom it came were about
-30 feet off only &amp; bolted - I 
+30 feet off only & bolted - I 
 dont
 don\'t
 
@@ -9716,7 +9720,7 @@ the guilt is
 h Bogharib\'s - a little
 way on a gigantic tree burned off
 so as to fall with a fearful crash
-one yard from my body &amp; covered
+one yard from my body & covered
 me with dust thank God
 			
 			
@@ -9884,7 +9888,7 @@ to
 ru
 shing away of the enemy - I
 be
-came sick &amp; weary &amp; careless
+came sick & weary & careless
 of me taunted us but we could
 
 ein = Heartsore reached
@@ -9962,7 +9966,7 @@ Gulu
 Mamvu
  = earth = 
 Gulu
- is personal &amp;
+ is personal &
 men on death go to him - 
 Nkoba
  lightning
@@ -10202,12 +10206,12 @@ side of mountain range = a little rain fell
 after dark - near 
 Luamo
  it ran in paths
-&amp; some burns and caused dew -
+& some burns and caused dew -
 
 
 15th
  to Muanambongo\'s - Golungo
-bush buck with stripes across body &amp; spots
+bush buck with stripes across body & spots
 along all the side in a ^ two rows
 
 
@@ -10229,7 +10233,7 @@ at Moenengoi\'s = sent present of food back
 18th 
 Aug.
 August
- 1871 on to Katomba&amp; welcome 37 by
+ 1871 on to Katomba& welcome 37 by
 all the heavily laden ivory Arabs = 3 relays take on
 the spoil = 
 Kenyengere
@@ -10272,7 +10276,7 @@ barre
 
 
 28th
- better &amp; thankful = to Monandenda\'s on the
+ better & thankful = to Monandenda\'s on the
 
 
 R
@@ -10290,7 +10294,7 @@ Map.
 
 
 Frasilahs
- &amp; Muhamad
+ & Muhamad
 
 s
 \'s
@@ -10298,7 +10302,7 @@ s
 	
 
 
-29 ill all night &amp; remain
+29 ill all night & remain
 
 
 30 attendant ill remain at
@@ -10325,7 +10329,7 @@ and sleep in dense forest
 
 
 2d
- over range &amp; down
+ over range & down
 onto marble capped
 	
 
@@ -10405,9 +10409,9 @@ philosophers\'
 been in it twice once on the 
 Shire
  where we
-had to clear the paddle wheels &amp; chain cable of the
+had to clear the paddle wheels & chain cable of the
 dead every morning before we could start
-and the horrible scenes of crocodiles &amp; carrion are
+and the horrible scenes of crocodiles & carrion are
 unbearable to be even glanced at by the imagination
 again - on the 
 Kilwa
@@ -10419,7 +10423,7 @@ Then the Hell scenes I dare ^ not commit to paper
 or even think on - I drive them from my
 thoughts if even they intrude as intrude in
 part they will do on suddenly awaking at
-dead of night - getting up &amp; walking about
+dead of night - getting up & walking about
 sometimes relieves me but writing about
 them in constrained oppressed style as hinted
 above jaded
@@ -10429,7 +10433,7 @@ rather think of nothing else or
 I could not think on
 necessary things and neglected all my own
 and family interests - Lord Palmerston\'s offer of
-service to me fell flat on my ear &amp; heart
+service to me fell flat on my ear & heart
 
 
 
@@ -10461,7 +10465,7 @@ Series of calculations.
 
 
 
-Five lines of text: three in Arabic and two in Nagari. These are not in Livingstone\'s hand. The Arabic corresponds to the English undertext on this page (“Dr David Livingstone HRM Consul Ujiji &amp; Elsewhere”), and the first two lines can be translated thus: “This is to the most honorable Doctor Livingstone, consul of the Glorious [or Great] Queen, in Ujiji.” The last Arabic line reads simply, “Amen.” However, this is not an absolute translation. “This is to” can also be read as “the one who writes this informs,” while “most honorable” can also be read as “may his glory be eternal.”
+Five lines of text: three in Arabic and two in Nagari. These are not in Livingstone\'s hand. The Arabic corresponds to the English undertext on this page (“Dr David Livingstone HRM Consul Ujiji & Elsewhere”), and the first two lines can be translated thus: “This is to the most honorable Doctor Livingstone, consul of the Glorious [or Great] Queen, in Ujiji.” The last Arabic line reads simply, “Amen.” However, this is not an absolute translation. “This is to” can also be read as “the one who writes this informs,” while “most honorable” can also be read as “may his glory be eternal.”
 
 
 
@@ -10477,7 +10481,7 @@ HRM
 His Royal Majesty\'s
  Consul 
 Ujiji
- &amp; Elsewhere
+ & Elsewhere
 
 	
 	
@@ -10490,7 +10494,7 @@ River
 Kanayumbe
 
 
-&amp; islands
+& islands
 	
 
 
@@ -10647,7 +10651,7 @@ Mount
 
 Ngoilu = fruit plum
 = good = rapid current
-of forty yards &amp; knee
+of forty yards & knee
 deep = 21st camp -
 
 
@@ -10847,21 +10851,21 @@ October
 Ujiji
  = and 172a
 found that Shereef had sold off
-all my goods for slaves &amp; ivory
+all my goods for slaves & ivory
 in spite of remonstrance by
 the chief men here - came impudently
 and offered me his hand !!!
 
 
 24th
- Rest dispirited &amp; sore
+ Rest dispirited & sore
 
 
 25th
- call Shereef &amp; demand my
+ call Shereef & demand my
 goods - said Ludha had ordered him
-to stay a month &amp; then leave
-Had divined on Koran &amp; found
+to stay a month & then leave
+Had divined on Koran & found
 I was dead - then sold all = write letter
 
 
@@ -12775,7 +12779,7 @@ Moenekuss whose village is
 
 	
 	   
-near this - killed 3 women &amp; a child and
+near this - killed 3 women & a child and
 that a ^ 
 
 trading
@@ -12867,16 +12871,18 @@ I wished to go Northwards along the
 
 
 Lualaba
- &amp; buy a canoe but my
+ & buy a canoe but my
 
 attendants professed fear of the water
 
 I then promised not to buy a canoe
+
+
     
 	
 	
 but this elicited that they were determined
-not to go at all- the head Arabs told
+not to go at all - the head Arabs told
 me that they were in the habit of going
 to the women whose husbands were
 away and getting food and spending
@@ -12891,7 +12897,7 @@ inquiried
  the reason = they replied 
 that the beads were not enough - the
 
-Arabs said "they are about to desert" &amp;
+Arabs said "they are about to desert" &
 
 
 \'
@@ -12907,7 +12913,7 @@ I spo
 
 k
 e long to them advising them
-earnestly not to desert &amp; lose all their
+earnestly not to desert & lose all their
 arrears of pay - - But on going out
 from me one called out "Who
 will he get to carry his
@@ -12918,7 +12924,7 @@ things" - then a loud "Ha ha ha" to make
 me hear it. On telling them that Seyed
 Majid had punished those who deserted
 
-Speke &amp; the consul would certainly be
+Speke & the consul would certainly be
 angry to hear that I had been thrown
 away by them in the middle of the cannibal
     
@@ -12929,19 +12935,22 @@ as the Manyema will not go to the next
 village - Simon said "give me a bit
 of paper to tell that I am a very bad
 boy" - This was supposed to be witty
-&amp; he added "let Seyed Majid chain
+& he added "let Seyed Majid chain
 
 	
 	
 me - beat me - shoot me
 \'
 "
- I want to go to 
+ I 
+want
+wanted
+ to go to 
 Lualaba
 
 
 Abram said the others intended to throw down my
-bundles &amp; run away in the forest - "He was tired
+bundles & run away in the forest - "He was tired
 with seven 
 years
 years\'
@@ -12956,7 +12965,7 @@ Katomba at whose voice they trembled spel
 in 
 
 ly
- &amp; they said they would go but seeing
+ & they said they would go but seeing
 
 
 
@@ -13006,7 +13015,7 @@ up
     
 	
 But now these worthless slaves had me
-at their mercy &amp; wished to be masters - to take
+at their mercy & wished to be masters - to take
 what beads they chose and go or remain just
 as it suited their fancy - they thought that
 
@@ -13019,7 +13028,7 @@ and dainties - With three Susi - Chuma
 
     
 	
-and GardnerI set off - intending to join 
+and Gardner I set off - intending to join 
 
 M-
 Muhamad
@@ -13027,8 +13036,8 @@ Muhamad
 Bogharib or Josuf on 
 Lualaba
  -  We went
-with three deputies from the head Arabs &amp;
-their slaves - but they hated me &amp; tried to get
+with three deputies from the head Arabs &
+their slaves - but they hated me & tried to get
 
 
 			
@@ -13045,7 +13054,7 @@ met with
 
 Mohamad
 Muhamad
- Bogharib &amp; 
+ Bogharib & 
 
 Josuph
 Josuf
@@ -13055,7 +13064,7 @@ back from
 
 Kasongo\'s
  - I slept at a village
-a little way from them &amp; was met in morning
+a little way from them & was met in morning
 with the news that a man of the party which
 
     
@@ -13065,7 +13074,7 @@ any
 my
  company had been stabbed by
 night in revenge for the slaughter of relatives
-&amp; burning of nine villages - 
+& burning of nine villages - 
 
 Mohamad
 Muhamad
@@ -13076,8 +13085,8 @@ refused to engage in a wholesale manner
     
 	
 to revenge the dead one and seeing that I had no
-friend &amp; only three people I turned back - the
-mud was grievous &amp; as I waded it all
+friend & only three people I turned back - the
+mud was grievous & as I waded it all
 my feet were torn to pieces and irritable
 
     
@@ -13093,10 +13102,10 @@ Luamo
 
     
 	
-I explained that merely to see &amp; measure
+I explained that merely to see & measure
 its depth would not do - I must see whither
 it went - This would require a number of his
-people in lieu of my deserters &amp; to take
+people in lieu of my deserters & to take
 
     
 	
@@ -13105,8 +13114,8 @@ at present is like gold digging -
 To
 ^ I must
  make
-amends &amp; I offered him two thousands
-Rupees &amp; a gun worth seven hundred
+amends & I offered him two thousands
+Rupees & a gun worth seven hundred
 
     
 	
@@ -13114,11 +13123,11 @@ Rupees &amp; a gun worth seven hundred
 
 Rs.
 Rupees
- 2700 in all on £270. He agreed &amp; should
+ 2700 in all on £270. He agreed & should
 he enable me to finish up my work in one
 trip down 
 Lualaba
- &amp; round to 
+ & round to 
 Lualaba West
 
 it would be a great favour - The severe
@@ -13131,7 +13140,7 @@ Marungu
  - the choleraic
 complaint in 
 Manyema
- &amp; now irritable
+ & now irritable
 ulcers warn me to retire while life lasts -
 
 
@@ -13139,7 +13148,7 @@ Muhamad
 
 s
 \'s
- people went North &amp; East &amp; West 
+ people went North & East & West 
 
     
 	
@@ -13156,14 +13165,14 @@ Do
 
 Ditto
  
-E. &amp; SE.
-East &amp; South-East
+E. & SE.
+East & South-East
 
  - The average march
 was 6
 ½
 1/2
- hours say 12\' about 200\' North &amp; 
+ hours say 12\' about 200\' North & 
 W
 West
 
@@ -13198,9 +13207,9 @@ Lega
 Legaland
 
 
- &amp; turned - It was all
+ & turned - It was all
 dense forest - never saw ^ the sun except when
-at a village &amp; then the villages were 
+at a village & then the villages were 
 
     
 	
@@ -13209,7 +13218,7 @@ they call
 Ngombe
   or ox - tusks never used -
 They went off to where an elephant had formerly
-been killed &amp; brought the tusks rotted and eaten
+been killed & brought the tusks rotted and eaten
 
     
 	
@@ -13230,18 +13239,18 @@ caudatus
 
  swindermanus
  - Three ^ large rivers
-were crossed breast &amp; chin deep - In one
+were crossed breast & chin deep - In one
 they were five hours and a man in a
  
     
 	
 small canoe went ahead sounding for water
-capable of being waded - much water &amp; mud
+capable of being waded - much water & mud
 in the forest = 
 
  This report makes me thankful
 I did not go for I should have seen nothing -
-and been worn out by fatigue &amp; mud
+and been worn out by fatigue & mud
 
     
 	
@@ -13281,7 +13290,7 @@ crossed about 40 smaller rivers
 	
 All along 
 Lualaba
- &amp; 
+ & 
 
 
 
@@ -13312,7 +13321,10 @@ A
 trees lies along 
 Lualaba
  - Beyond that it
-is all dense forest. and trees so large
+is all dense forest
+.
+ -
+ and trees so large
 one lying across path is breast high
 clearances exist only around villages
 
@@ -13343,7 +13355,7 @@ Luba
 of the other bank come daily in large
 canoes bringing grass cloth, salt, flour,
 
-cassava, fowls - goats - pigs &amp; slaves =
+cassava, fowls - goats - pigs & slaves =
 Women beautiful with straight noses
 and well clothed When the men
 
@@ -13353,7 +13365,7 @@ of districts are at war the women take
 their goods to market as if at peace and
 are never molested - all are very keen
 
-traders buying one thing with another &amp;
+traders buying one thing with another &
 changing back again and any gain
 made is one of the enjoyments of life -
 
@@ -13367,13 +13379,13 @@ Mamohela
 
 but he told them that he would not
 have them - This took them aback -
-but they went &amp; lifted his ivory
+but they went & lifted his ivory
 
     
 	
 for him and when a parley was thus
 brought about talked him over saying
-that they would go to me &amp; do all I
+that they would go to me & do all I
 desired - never came - but as no
 one else would take them I gave
 them three loads to go to 
@@ -13383,12 +13395,12 @@ Bambarre
     
 	
 There they told Muhamad that I would
-not give them their beads &amp; They did not like
+not give them their beads & They did not like
 to steal 
 
  - They were now trying to get
 his food by lies - I invited them 3
-times to come &amp; take beads but having
+times to come & take beads but having
 supplies of food from the camp
 
     
@@ -13411,7 +13423,7 @@ spokesman is afraid fo them - They
 
 they
 
- kept away from my work &amp;
+ kept away from my work &
 would fain join Muhamad\'s but he
 
 
@@ -13430,9 +13442,9 @@ Nassick
 
 
 African Asylum where they had been
-clothed fed &amp; taught for years they
+clothed fed & taught for years they
 sent an anonymous note to me abusing
-all the teachers &amp; complaining of
+all the teachers & complaining of
 
     
 	
@@ -13452,7 +13464,7 @@ will be because they were taught
 to work - These might either work play
 or do nothing at 
 Nassick
- &amp; not one of
+ & not one of
 them could handle a tool = they hoped
 for long to get back to a life of idleness
 and such as they described would have
@@ -13461,7 +13473,7 @@ and such as they described would have
 	
 any English boys - the teacher feared
 that if punished for idleness they
-would run away &amp; bring discredit
+would run away & bring discredit
 on the Asylum They were of the lowest
 or criminal class in 
 Africa
@@ -13472,8 +13484,8 @@ Africa
 and boasted in my hearing that
 when fed to the full they stole pigs - kept
 
- &amp; fattened them with their extra food
-them ^ at the school &amp; killed &amp; 
+ & fattened them with their extra food
+them ^ at the school & killed & 
 eat
 ate
  them
@@ -13487,12 +13499,12 @@ people of Moenemokia
 
     
 	
-they were drunk &amp; fled as soon as they
+they were drunk & fled as soon as they
 saw resistance - no danger of being
 turned up ^ on made my good boys rush
-off unbidden &amp; capture women &amp;
+off unbidden & capture women &
 
-goats - another case occurred &amp;
+goats - another case occurred &
 
     
 	
@@ -13525,7 +13537,7 @@ our guns not one of us would return
 to our own country". Moenemokia
 killed 2 
 Arab agents
- &amp; took their guns
+ & took their guns
 
     
 	
@@ -13551,7 +13563,7 @@ like fighting but my men were filled
 with "
 malofu
 " or 
-palm toddy &amp; refused 
+palm toddy & refused 
 
 "to their hurt" Elsewhere they
 made regular preparation to have a
@@ -13561,7 +13573,7 @@ made regular preparation to have a
 fight with 
 Dugumbe\'s people just to
 see who was strongest. They with their 
-spears &amp; wooden shields or the Arabs
+spears & wooden shields or the Arabs
 with what in derision they called tobacco
 pipes (guns) They killed eight or nine Arabs.
 
@@ -13570,7 +13582,7 @@ pipes (guns) They killed eight or nine Arabs.
 The Manyema villages are situated on
 slopes - often on the spurs of mountains
 for the sake of quick drainage - The
-streets run nearly East &amp; West to catch
+streets run nearly East & West to catch
 the full influence of the Sun - The huts
 
     
@@ -13588,7 +13600,7 @@ having form 20 to 30 neatly made bas-
 kets and as many earthen pots hung
 to the ceiling - A raised platform of
 clay is the sleeping place - a fire at its
-side gives light &amp; heat - while a wall
+side gives light & heat - while a wall
 
     
 	
@@ -13608,7 +13620,7 @@ back by the same route on our return
 
     
 	
-went back - fear of being killed &amp; eaten
+went back - fear of being killed & eaten
 was the reason assigned or simply 
 they were at war with their next neighbours
 no traders seem ever to have come in
@@ -13627,7 +13639,7 @@ Babira
 Bira
 
 
-&amp; Baguha coarse beads - The 
+& Baguha coarse beads - The 
 
 
 
@@ -13649,7 +13661,7 @@ and
 recieved
 received
  weight for weight in beads
-thick brass wire &amp; loads of calico
+thick brass wire & loads of calico
 
 To be copied into Journal
  
@@ -13679,7 +13691,7 @@ David Livingstone
 I
  
 Bambarre
- 18 August 1870 – I learn from Josuf &amp; Moenepembe
+ 18 August 1870 – I learn from Josuf & Moenepembe
 
 who have been to 
 Katanga
@@ -13695,8 +13707,8 @@ Chibungo
 said to be large – seven days West of 
 Katanga
 
- flows another 
-Lualaba
+ flows 
+another Lualaba
 
 
 the dividing line between 
@@ -13750,7 +13762,7 @@ are only about 10 miles distant from
 
 
 Lualaba West
- &amp; 
+ & 
 Lufira
  fountains
 .
@@ -13853,7 +13865,7 @@ Nile
 
 irritable ulcers hedge me in now as did my attendants in June
 
-but all will be for the best for it is in Providence &amp; not in me 
+but all will be for the best for it is in Providence & not in me 
 
 
 	
@@ -13949,7 +13961,7 @@ Nile
 
 and so every step of their splendid achievement of following
 
-the river down took them further &amp; further away from the 
+the river down took them further & further away from the 
 
 
 Caput
@@ -14111,7 +14123,7 @@ In 1841 the ^
 2nd
  expedition ^ 
 
- under D\'Arnauld &amp; Sabatier 
+ under D\'Arnauld & Sabatier 
 
 reached North 
 Lat.
@@ -14287,7 +14299,7 @@ Saint
  Stephen
  that "he was learned in all 
 the wisdom of the Egyptians, and was mighty
-in words &amp; in deeds." The deeds must have 
+in words & in deeds." The deeds must have 
 been well known in 
 Egypt
  for "he supposed 
@@ -14360,8 +14372,8 @@ Meroe
 of confirmatory of sacred history does remain 
 I pray to be guided thereunto. If the sacred
 chronology would thereby be confirmed, I would 
-not grudge the toil &amp; hardships, hunger 
-&amp; pain, I have endured - the 
+not grudge the toil & hardships, hunger 
+& pain, I have endured - the 
 
 irritable ulcers would only be discipline. -
 
@@ -14376,7 +14388,7 @@ indigestion. This general weakness is ascribed
 by some to maize being the common food. It  	
 
 	
-shows itself in weakness of bowels &amp; choleraic  
+shows itself in weakness of bowels & choleraic  
 purging. This may be owing to bad water, 
 there is no scarcity, but it is so impregnated 
 with dead vegetable matter, as to have the  
@@ -14423,13 +14435,13 @@ Tape-
 worm
 
  is frequently met with - No remedy 
-is known among the Arabs &amp; natives for it. 
+is known among the Arabs & natives for it. 
 
 Syphilitic 
 
  skin diseases are common among 
 
-Manyema - large scabs on face &amp; body, 
+Manyema - large scabs on face & body, 
 even among children. The Arabs increase 
 them by impure intercourse. Filthy takers all.   	
 
@@ -14471,9 +14483,8 @@ yards
  but from 
 2000 to 6000 yards and 
 always deep - this  near the bottom of the 
-trough, and then further West another 
-
-
+trough, and then further West 
+another 
 Lualaba
 , a worthy companion to that in 
 the centre. The 
@@ -14524,7 +14535,7 @@ Lufira
 
 . Three 
 names of men who have done more to 
-abolish slavery &amp; the slave-trade than 
+abolish slavery & the slave-trade than 
 any of their contemporaries.
 
 
@@ -14547,9 +14558,9 @@ North West
 days afterwards. Report an epidemic raging 
 between 
 coast
- &amp; 
+ & 
 Ujiji
- &amp; very fatal. Syde bin 
+ & very fatal. Syde bin 
 Habib and Dugumbe coming - they have letters
 
 	
@@ -14616,13 +14627,13 @@ Chambeze
 some seventy years before I did, but to them 
 it was a branch of the 
 Zambesi
- &amp; nothing 
+ & nothing 
 more. Cooley put it down as the 
 New Zambesi
  
 and made it run backwards, uphill
 between 
-3000 &amp; 4000 feet
+3000 & 4000 feet
 ! I was misled by 
 the similarity of names and a map to think 
 it the 
@@ -14675,7 +14686,7 @@ Chambeze
 , the same in 
 Moero
  
-&amp; 
+& 
 Lualaba
  and one piece of water is just 
 like another.  Will you draw out calico 
@@ -14704,7 +14715,7 @@ Octr
 October
  1870
 . - 
-Mbarawa &amp; party came yesterday
+Mbarawa & party came yesterday
 from Katomba at 
 Mamohela
 . Reports that 
@@ -14735,7 +14746,7 @@ got fifty tusks. Abdullah had got two tusks
 also been fighting, and Katomba had sent 
 a fighting party down to 
 Lolinde
-. Plunder &amp; 
+. Plunder & 
 murder is Ujijian trading
 . Mbarawa got 
 his ivory on the 
@@ -14821,7 +14832,7 @@ food caused
 n
 ausea
 
- &amp; vomiting – purging took place of
+ & vomiting – purging took place of
 
 profuse sweating – I am thankful to feel myself well – 
 
@@ -14903,7 +14914,7 @@ gets 25 of the 50 tusks brought by his people
 XI. 
 we
 We
- expect letters &amp; perhaps men by Syde 
+ expect letters & perhaps men by Syde 
 Bin
 bin
  Habib.
@@ -14927,7 +14938,7 @@ Bagamoyo
 but whether French or English no one can say – possibly 
 
 the Mission urged on by 
-Colonel Playfair &amp; Dr Kirk 
+Colonel Playfair & Dr Kirk 
 
 
 Tozer curiously enough follows the policy of 
@@ -14949,7 +14960,7 @@ the young thus obtained is the great secret of mission work
 
 He does not know that the especial instruction 
 
-of the young has been advocated &amp; acted on for the last 
+of the young has been advocated & acted on for the last 
 
 30 years in 
 Africa
@@ -14959,7 +14970,7 @@ India
 
 South Seas
 
- &amp; elsewhere – Possibly 
+ & elsewhere – Possibly 
 
 the erection of a huge establishment on the 
 mainland
@@ -14969,7 +14980,7 @@ may be a way of laboriously proving that it is more healthy
 
 than the island to which he was driven by fear of death 
 
-It will take a long time to prove by stone &amp; lime that the higher 
+It will take a long time to prove by stone & lime that the higher 
 
 lands 200 miles inland 
 ar
@@ -14999,16 +15010,16 @@ XII. The Manyema hoeing is little better than scraping the
 
 
 
-soil &amp; cutting through the roots of grass &amp; weeds by a horizontal
+soil & cutting through the roots of grass & weeds by a horizontal
  
 motion of the hoe or knife – They leave the roots of maize
 
 
-groundnuts – sweet potatoes &amp; dura to find their way into 
+groundnuts – sweet potatoes & dura to find their way into 
 
 the rich soft soil, and well they succeed so there is no need
 
-for deep ploughing - The groundnuts &amp; 
+for deep ploughing - The groundnuts & 
 
 cassave
 cassava
@@ -15024,7 +15035,7 @@ just outside the camp without any advantage being secured
 
 by the vicinity of a rivulet and it yielded for one measure 
 
-of seed one hundred &amp; twenty measures of increase – This 
+of seed one hundred & twenty measures of increase – This 
 
 season he plants and on the damp soil
  
@@ -15161,176 +15172,8 @@ me an iron ring and seemed inclined to be friendly –
 yet they are undoubtedly bloodthirsty to other Manyema 
 
 
-&amp; kill each other
+& kill each other
        
-            
-
-            
-
-  	
-
-	
-
-	
-
-
-
-
-
-
-
-16th 
-Octr
-
-October
- 1870
- - Moenemgoi 
-the chief came to tell me that Monamyembo 
-had sent five goats to 
-Lohombo
- to get a charm 
-to kill him. "Would the English and Kolokolo 
-(Muhamad) allow him to be killed while 
-they were here?" I said that it was a false 
-report but he believes it firmly. Monamyembo 
-sent his son to assure us that he was 
-slandered, but thus quarrels and bloodshed 
-feuds arise. The great want of the Manyema 
-is national life. Of this they have none. 
-Each headman is independent of every other. 
-Of industry they have no lack, and the villagers 
-are orderly towards each other, but they go 
-no further. If a man of another district ventures 
-among them it is at his peril. He is not 
-regarded with more favour as a Manyema 
-than one of a herd of buffaloes is by the 
-rest. He is almost sure to be killed. 
-
-
-
-Moenekus
-Moenekuss
-
- had more wisdom than his 
-countrymen. His eldest son went over to 
-
-
-
-Monamyembo\'s
- who was subject to the father
-was killed by five spear wounds. The old 
-
-chief went and asked "Who had kllled slain 
-his son"? "None knew, perhaps the Bahombo." 
-
-
-he
-He
- went thither - They denied it - Then they 
-said "Perhaps Monamdenda" - he denied. 
-
-
-question
-Question
- repeated, received same answer - 
-"
-didn\'t
-Didn\'t
- know." The old man ^ then died - This,   	
-
-	
-
-
-8.
- 15
-though he was heartbroken was called witch-
-craft by Monamyembo. Eleven people were 
-murdered, and after this cruel man was 
-punished he sent a goat with the confession 
-that he had killed 
-
-Moenekus
-Moenekuss
-
-\' son. This 
-son had some of the father\'s 
-
- wisdom. 
-The others he never could get to act like men 
-of sense.
-
-
-
-The sites chosen for some of the most signal 
-
-Grecian oracles were marked by the rushing 
-forth of a living spring from the recesses of 
-the native rocks of 
-Greece
-, the 
-Castalian 
-springs
- at 
-Delphi
-, the rushing stream of 
-the 
-Hercynia
- at 
-Lebadea
-. It was felt that 
-nothing could so well express the Divine voice
-speaking from the hidden abysses of the 
-unseen world as those inarticulate but lively 
-ebullitions of the life giving element from its 
-unknown mysterious sources. The prophetic 
-utterances in the remoter 
-East
- were the 
-bubbling, teeming springs of life in those hard 
-primitive rocks, in those dry parched levels. 
-"My heart is inditing" - is bursting, bubbling 
-over with a good matter. This image would be 
-drawn from the abundant crystal fountains
-which all along the valley of the 
-Jordan
- pour 
-forth their full grown streams, - scattering 
-fertility and verdure as they flow over the 
-rough ground, - "boiling or bubbling over" of 
-the "Divine fountain of Inspiration within 
-the Soul." 
-
-"The words of Judgment bursting out one by 
-one, slowly, heavily, condensed, abrupt from 
-the prophet\'s heavy and shrinking soul; each   	
-
-	
-sentence wrung forth with a groan, as though 
-he had anew to take breath before he uttered a  
-renewed woe; each word forming a whole for 
-itself, like one heavy toll of a funeral knell." 
-(Pusey) - - (Jowett) "At the time when our 
-Saviour came into the world the Greek language 
-was in a state of degeneracy &amp; decay. But that  
-degeneracy may be ranked among the causes 
-that fanned the growth of Christianity. It was 
-a preparation for the Gospel, the decaying soil 
-in which the new elements of life were to come 
-forth, the one common speech of the then 
-civilized nations of the world. The definiteness 
-of earlier forms of human speech would have 
-imposed a limit on the freedom of the Gospel. 
-A religion which was to be universal required
-that the division of languages, no less than 
-of nations should be broken down. It pleased 
-God through broken and hestitating forms of 
-speech to reveal the universal truth for which 
-the Greek of Plato would have been no fitting temple". - 
-
-
-  
-   
-
             
 
             
@@ -15396,7 +15239,7 @@ Nyembe
 
 6 
 Nyamgore
- &amp; then South to 
+ & then South to 
 
 Merere’s
 
@@ -15410,14 +15253,14 @@ Merere’s
 
 the straight way to Merere but no cattle live in her land – 
 
-another insect lights on the animals &amp; when licked off bites the tongue
+another insect lights on the animals & when licked off bites the tongue
 
-or breeds &amp; is fatal as well – as tsetse – It is large in size – 
-
-
+or breeds & is fatal as well – as tsetse – It is large in size – 
 
 
-Tipotipo &amp; Syde bin Ali come to 
+
+
+Tipotipo & Syde bin Ali come to 
 Nyembe
  – thence
 
@@ -15445,7 +15288,7 @@ Mpweto\'s
 
 of that river till they cross the next 
 Lualaba
- &amp; so into 
+ & so into 
 
 
 
@@ -15453,7 +15296,7 @@ Lunda
  of 
 Matiamvo – much ivory may be obtained
 
-by this course &amp; it 
+by this course & it 
 shews
 shows
  enterprise –-
@@ -15461,7 +15304,7 @@ shows
 
 
 
-Syde bin Habib &amp; Dugumbe will open up the
+Syde bin Habib & Dugumbe will open up the
 
 
 
@@ -15483,7 +15326,7 @@ Young\'s
 
 
 Katanga
- – The Lord be my guide &amp; helper – I feel the 
+ – The Lord be my guide & helper – I feel the 
 3
 
 
@@ -15544,7 +15387,7 @@ Unyanyembe
  North
 
 
-market &amp; many Arabs live there
+market & many Arabs live there
 
 
 
@@ -15725,7 +15568,7 @@ say 200 miles
 
  Rivers crossed
 
-by Ramadan &amp;
+by Ramadan &
 
 
 Hassani August
@@ -15783,6 +15626,174 @@ or what a
 
             
 
+  	
+
+	
+
+	
+
+
+
+
+
+
+
+16th 
+Octr
+
+October
+ 1870
+ - Moenemgoi 
+the chief came to tell me that Monamyembo 
+had sent five goats to 
+Lohombo
+ to get a charm 
+to kill him. "Would the English and Kolokolo 
+(Muhamad) allow him to be killed while 
+they were here?" I said that it was a false 
+report but he believes it firmly. Monamyembo 
+sent his son to assure us that he was 
+slandered, but thus quarrels and bloodshed 
+feuds arise. The great want of the Manyema 
+is national life. Of this they have none. 
+Each headman is independent of every other. 
+Of industry they have no lack, and the villagers 
+are orderly towards each other, but they go 
+no further. If a man of another district ventures 
+among them it is at his peril. He is not 
+regarded with more favour as a Manyema 
+than one of a herd of buffaloes is by the 
+rest. He is almost sure to be killed. 
+
+
+
+Moenekus
+Moenekuss
+
+ had more wisdom than his 
+countrymen. His eldest son went over to 
+
+
+
+Monamyembo\'s
+ who was subject to the father
+was killed by five spear wounds. The old 
+
+chief went and asked "Who had kllled slain 
+his son"? "None knew, perhaps the Bahombo." 
+
+
+he
+He
+ went thither - They denied it - Then they 
+said "Perhaps Monamdenda" - he denied. 
+
+
+question
+Question
+ repeated, received same answer - 
+"
+didn\'t
+Didn\'t
+ know." The old man ^ then died - This,   	
+
+	
+
+
+8.
+ 15
+though he was heartbroken was called witch-
+craft by Monamyembo. Eleven people were 
+murdered, and after this cruel man was 
+punished he sent a goat with the confession 
+that he had killed 
+
+Moenekus
+Moenekuss
+
+\' son. This 
+son had some of the father\'s 
+
+ wisdom. 
+The others he never could get to act like men 
+of sense.
+
+
+
+The sites chosen for some of the most signal 
+
+Grecian oracles were marked by the rushing 
+forth of a living spring from the recesses of 
+the native rocks of 
+Greece
+, the 
+Castalian 
+springs
+ at 
+Delphi
+, the rushing stream of 
+the 
+Hercynia
+ at 
+Lebadea
+. It was felt that 
+nothing could so well express the Divine voice
+speaking from the hidden abysses of the 
+unseen world as those inarticulate but lively 
+ebullitions of the life giving element from its 
+unknown mysterious sources. The prophetic 
+utterances in the remoter 
+East
+ were the 
+bubbling, teeming springs of life in those hard 
+primitive rocks, in those dry parched levels. 
+"My heart is inditing" - is bursting, bubbling 
+over with a good matter. This image would be 
+drawn from the abundant crystal fountains
+which all along the valley of the 
+Jordan
+ pour 
+forth their full grown streams, - scattering 
+fertility and verdure as they flow over the 
+rough ground, - "boiling or bubbling over" of 
+the "Divine fountain of Inspiration within 
+the Soul." 
+
+"The words of Judgment bursting out one by 
+one, slowly, heavily, condensed, abrupt from 
+the prophet\'s heavy and shrinking soul; each   	
+
+	
+sentence wrung forth with a groan, as though 
+he had anew to take breath before he uttered a  
+renewed woe; each word forming a whole for 
+itself, like one heavy toll of a funeral knell." 
+(Pusey) - - (Jowett) "At the time when our 
+Saviour came into the world the Greek language 
+was in a state of degeneracy & decay. But that  
+degeneracy may be ranked among the causes 
+that fanned the growth of Christianity. It was 
+a preparation for the Gospel, the decaying soil 
+in which the new elements of life were to come 
+forth, the one common speech of the then 
+civilized nations of the world. The definiteness 
+of earlier forms of human speech would have 
+imposed a limit on the freedom of the Gospel. 
+A religion which was to be universal required
+that the division of languages, no less than 
+of nations should be broken down. It pleased 
+God through broken and hestitating forms of 
+speech to reveal the universal truth for which 
+the Greek of Plato would have been no fitting temple". - 
+
+
+  
+   
+
+            
+
+            
+
 	
 
  
@@ -15833,11 +15844,11 @@ Metamba
 
 
 
- which on deserting they said they so much feared &amp; left
+ which on deserting they said they so much feared & left
 
 me to go with only three attendants and get my feet torn to
 
-pieces in mud &amp; sand = They probably meant to go back to the
+pieces in mud & sand = They probably meant to go back to the
 
 women at 
 Mamohela
@@ -15845,13 +15856,13 @@ Mamohela
 
 They were told by Muhamad - that they must not follow his 
 
-people and he gave orders to bind them &amp; send them back if
+people and he gave orders to bind them & send them back if
 
 they did – They think that no punishment will reach them
 
-whatever they do – They are freemen &amp; need not work or do any
+whatever they do – They are freemen & need not work or do any
 
-thing but beg. "English" they call themselves &amp; the Arabs fear
+thing but beg. "English" they call themselves & the Arabs fear
 
 them though the eagerness with which they engaged in 
 slave
@@ -15867,7 +15878,7 @@ Indian
 
 said "that I told him to beg"! and Simon said that I had spoken
 
-to him only once &amp; he would 
+to him only once & he would 
 
 
 
@@ -15882,7 +15893,7 @@ Katomba
 
  spoke
 
-persuasively several times &amp; he refused to go – The gun would
+persuasively several times & he refused to go – The gun would
 
 have been used to steal from the Manyema as it was when we
 
@@ -15902,7 +15913,7 @@ It is observable that the permanent halt to which the Manyema
 
 have come is not affected by the appearance of superior men among
 
-them - They are stationary &amp; improvement unknown - 
+them - They are stationary & improvement unknown - 
 
 Moenekus
 Moenekuss
@@ -15910,7 +15921,7 @@ Moenekuss
  paid
 
 
-smiths to teach his sons and they learned to work in copper &amp; iron
+smiths to teach his sons and they learned to work in copper & iron
 
 but he never could get them to imitate his own generous and
 
@@ -16000,11 +16011,11 @@ Kanyin
 gere
 ’s
  – and went 
-N. &amp; N.N.E.
-North &amp; North North-East
+N. & N.N.E.
+North & North North-East
  – They found the country
 
-becoming more &amp; more mountainous till at last when
+becoming more & more mountainous till at last when
 
 
 
@@ -16024,7 +16035,7 @@ Uerere
 
 
 
- it was perpetually up &amp; down
+ it was perpetually up & down
 
 
 
@@ -16032,7 +16043,7 @@ They slept at a village on the top They could send for
 
 water to the bottom only once. It took so much time to
 
-descend &amp; ascend – Rivers all flowed into 
+descend & ascend – Rivers all flowed into 
 
 
 
@@ -16065,7 +16076,7 @@ friendly – collected in thousands – we
 
 came to buy ivory -
 
-said Hassani &amp; if
+said Hassani & if
 
 there is none we       
 
@@ -16093,7 +16104,7 @@ shot with arrows - when
 
 shot was returned they
 
-fled &amp; would not come
+fled & would not come
 
 to receive the captives
  
@@ -16130,7 +16141,7 @@ been an even one turning neither to the right hand
 
 nor the left though my route has been tortuous
 
-enough = All the hardship hunger &amp; toil were met
+enough = All the hardship hunger & toil were met
 
 with the full conviction that I was right in persever-
 
@@ -16192,7 +16203,7 @@ Young\'s
 
 Katanga
  head waters
- &amp; then 
+ & then 
 
 retire – I pray that it may be to my native home
 
@@ -16202,11 +16213,11 @@ Syde bin Habib – Dugumbe – Juma Merikano
 
 Abdullah Masudi are coming in with 700 muskets
 
-and immense store of beads copper &amp;c They will
+and immense store of beads copper &c They will
 
 cross 
 Lualaba
- &amp; trade West of it – I wait for them
+ & trade West of it – I wait for them
 
 because they may have letters for me – I have had no
 
@@ -16267,7 +16278,7 @@ by unjustly stopping mine – The only annoyances
 
 I have suffered were from this as Lord Clarendon
 
-called it an "ungracious &amp; unjust" letter. and from a 
+called it an "ungracious & unjust" letter - and from a 
 
 
 letter of busybody instructions from the 
@@ -16338,12 +16349,7 @@ Octr
 October
 
 
- 
-
-Moenemokaia
-Moenemokia
-
- who has travelled further
+ Moenemokaia who has travelled further
 
 than most Arabs said to me "If one goes with a good
 
@@ -16418,7 +16424,7 @@ Moenemgoi
 
 chief here offered two tusks to effect the same thing
 
-on refusal he sends the tusks to Katomba &amp; may get 
+on refusal he sends the tusks to Katomba & may get 
 
 his countryman spoiled by him – "He is bad" is all they 
 
@@ -16435,7 +16441,7 @@ caught a slave who escaped = a prisoner from
 Moenemokia\'s
  and sold him or her to Moenemokia 
 
-for 30 spears &amp; some knives – When asked about this 
+for 30 spears & some knives – When asked about this 
 
 
 captive he said "she died" – It was simply theft - but 
@@ -16479,13 +16485,13 @@ person without scruple – The dead is easily concealed
 while on the plain all would become aware of it
 
 
-I long with intense desire to move on &amp; finish 
+I long with intense desire to move on & finish 
 
 my work – I have also an excessive wish to find 
 
 any thing that may exist proving the visit of the 
 
-great Moses &amp; the ancient 
+great Moses & the ancient 
 Kingdom of Tirhaka
 
 
@@ -16826,7 +16832,8 @@ Arab\'s
 Arabs
 
  very good -
-He is very sensible and upright besides - XXI
+He is very sensible and upright besides - 
+XXI
 
 
     
@@ -16948,7 +16955,7 @@ copied
 Soko
 
  is represented by some to be extremely
-cunning stalking succesfully men &amp; women
+cunning stalking succesfully men & women
 while at their work - kidnapping children -
 and running up trees with them - He seems
 to be amused by the sight of the young native
@@ -16966,7 +16973,7 @@ was cutting out honey from a tree and naked a
 
 Soko
 
- suddenly appeared &amp; caught by 
+ suddenly appeared & caught by 
 by
 
  the privates 
@@ -16984,7 +16991,7 @@ Soko
 Soko
 
  seized
-the spear &amp; broke it then grappled with the man who
+the spear & broke it then grappled with the man who
 called to his companions "
 
 
@@ -17004,7 +17011,8 @@ Soko
 
 
 is so cunning and has such sharp eyes that no
-one can stalk him in front with ^ out being seen by
+one can stalk him in front with^
+out being seen by
 his small sharp eyes, hence when shot it is
 always in the back - When surrounded by men
 and nets he is generally speared in the back too
@@ -17018,7 +17026,7 @@ and formidable -
 Sokos
 
  come down in the 
-forest within a hundred yards of our camp &amp; would be  
+forest within a hundred yards of our camp & would be  
 unknown but for giving tongue Like fox hounds
 This is his nearest approach to speech -
 
@@ -17038,13 +17046,13 @@ roared out but
 
 Soko
 
- giggled &amp; grinned &amp; left him
+ giggled & grinned & left him
 as if he had done it in play - a child caught up
 by 
 
 Soko
 
- is often abused by being pinched &amp; scratched 
+ is often abused by being pinched & scratched 
 and let fall He is said sometimes to use a 
 spear drawn out of his own body but this is denied
 by some - 
@@ -17052,18 +17060,18 @@ by some -
 Soko
 
  kills the Leopard occasionally by
-seizing both paws &amp; biting them so as to disable
+seizing both paws & biting them so as to disable
 them - 
 
 Soko
 
  goes up a tree groans over his 
-wounds &amp; sometimes recovers - while Leopard
+wounds & sometimes recovers - while Leopard
 dies - At other times both 
 
 Soko
 
- &amp; Leopard die -
+ & Leopard die -
 
 Lion kills him at once and sometimes tears his
 limbs off but does not eat him - 
@@ -17083,7 +17091,7 @@ Stafene
  or 
 Manyema mamwa
  is
-like large sweet sop but indifferent in taste &amp; flesh
+like large sweet sop but indifferent in taste & flesh
 
 
 
@@ -17139,7 +17147,7 @@ the earth also shall cast out her dead" This taken
 with the sublime spectacle of Hades in the XIV chap
 seems a forecast of the future but Jesus instructed
 
-Mary and her sister and Lazarus &amp; Martha without
+Mary and her sister and Lazarus & Martha without
 hesitation spoke of the resurrection at the last
 day  as a familiar doctrine far in advance of its
 
@@ -17204,7 +17212,7 @@ Zanzibar
 Kills many of his people says they are so bad if
 not killed they would murder strangers - Unruly
 ordered some of them to give their huts to Muhamad
-refusing he put fire to them &amp; they soon called
+refusing he put fire to them & they soon called
 out "let them alone we will retire" - He dresses
 like Arabs has ten loaded guns at his sitting place
 four pistols - two swords several spears and
@@ -17245,7 +17253,7 @@ Sangu
 
  on the other hand consider their chief
 as a deity and fear to say aught wrong lest he should hear
-them = They fear both before him &amp; when out of sight = The
+them = They fear both before him & when out of sight = The
 Father of 
 
 
@@ -17290,7 +17298,7 @@ Young
 Webb
 
 
-but wait only for Syde &amp; Dugumbe who may
+but wait only for Syde & Dugumbe who may
 
 have letters and as I do not intend to return
 
@@ -17398,7 +17406,7 @@ Loinde
 The reason of this outbreak by men who have
 been so peaceable is not divulged but anyone
 seeing the wholesale plunder to which the houses
-&amp; gardens were subject can easily guess the rest
+& gardens were subject can easily guess the rest
                 
     
                 
@@ -17526,7 +17534,7 @@ the relations were told either to bring the goat or let the
 boy die - This was hard hearted - at 
 Mamohela
 
-ten goats are demanded for a captive &amp; given too
+ten goats are demanded for a captive & given too
 Here three are demanded "He that is higher than the
 
 
@@ -17566,7 +17574,7 @@ Salem
 
  he kept the other thief Kamaals by
 him for the same purpose - Muhamad writes
-to Bin Saleh to say that I am here &amp; well - that I
+to Bin Saleh to say that I am here & well - that I
 sent a large packet of letters in June/69 - with money
 received no answer - nor my box from 
 
@@ -17679,7 +17687,7 @@ opments of Providence - When He who is
 higher than the highest accomplishes his purposes
 This will be a wonderful country and again
 something like what it was of old - When Zerah
-and Tirhaka flourished &amp; were great
+and Tirhaka flourished & were great
 
     
 	
@@ -17697,7 +17705,7 @@ Bambarre
  people
 are indifferent cultivators planting maize
 
-Bananas &amp; plantains and groundnuts only
+Bananas & plantains and groundnuts only
 No dura a little cassava - no perisetum
 or 
 meleda
@@ -17708,7 +17716,7 @@ though they all flourish in other districts
 a few sweet potatoes appear but elsewhere
 all these nature grains and roots are abundant
 and cheap - No one would choose this as a 
-residence except for the sake of Moenekuss &amp;
+residence except for the sake of Moenekuss &
 The people are honest never steal though
 stolen from by our people as Simon and
 
@@ -17772,7 +17780,7 @@ Lohombo
 large 
 trading party coming and not far off, This may be
 
-Syde &amp; Dugumbe but reports are often false
+Syde & Dugumbe but reports are often false
 
     
 	
@@ -17780,17 +17788,17 @@ Syde &amp; Dugumbe but reports are often false
 
 XXXVIII When 
 Katomba\'s men were on the late foray
-they were completely overpowered &amp; compelled by the 
+they were completely overpowered & compelled by the 
 Man-
 -yema
  to lay down their guns and powder horns on 
 pain of being instantly despatched by bowshot - they were
-mostly slaves who could only draw the trigger &amp; make
+mostly slaves who could only draw the trigger & make
 a noise 
 Katomba had to rouse and all the Arabs
 who could shoot and when they came they killed many
 and gained the lost day - The Manyema did not
-kill anyone who laid down his gun &amp; powder horn
+kill anyone who laid down his gun & powder horn
 This is the beginning of an end which was easily
 
 
@@ -17803,7 +17811,7 @@ and then sell the captives back for ten goats each
 
 
 Buceros cristata
- - screams &amp; picks at his
+ - screams & picks at his
 tail till he discharges the contents of his bowel Then
 leaves him - It is called "play" by the natives and
 in the 
@@ -17824,7 +17832,7 @@ Msaha
 12
 
 
-merciless way - screaming &amp; pecking to produce purging
+merciless way - screaming & pecking to produce purging
 
 Manyema call it "Mambambwa" - The Buffalo bird
 warns its big friend of danger - calling Chāchāchā
@@ -17908,7 +17916,10 @@ but Ntulungope is not near this
 The foray above mentioned was undertaken by 
 
 Katomba for twenty goats from 
+
 Kassessa
+Kasessa
+
 !
 Ten men lost for twenty goats but they will think
 twice before they try another foray
@@ -17963,7 +17974,7 @@ Amu
  is wealthy
 and well supplied with everything as grapes
 
-peaches wheat cattle camels &amp;c - The trade
+peaches wheat cattle camels &c - The trade
 is chiefly with 
 
 Madagascar
@@ -18196,7 +18207,7 @@ must be his brother" The worst the men did
 to
 
  XLIV to us was to turn out in force armed
-with their large spears &amp; wooden shields and 
+with their large spears & wooden shields and 
 shew
 show
 
@@ -18271,7 +18282,7 @@ into an adhesive
 compoundcompound - By placing
 a foot on each side of the narrow footway one
 may waddle a little way along but the rank
-crop of grass gingers &amp; bushes  cannot spare
+crop of grass gingers & bushes  cannot spare
 the few inches required for the side of the foot and
 
 
@@ -18310,7 +18321,7 @@ groan
 grown
 
 
-compelling and deep Every now &amp; then the
+compelling and deep Every now & then the
 
 traders with rueful 
 facesfaces
@@ -18375,7 +18386,7 @@ risesrises on the leg - At every step the foot
 has to be lifted high enough to place it on the
 
 unbent mass in front and this fatigues
-like walking on deep snow - Here &amp; there  
+like walking on deep snow - Here & there  
 holes appear which we could not sound with
 a stick six feet long - They gave the impression
 that any where one might plump through
@@ -18420,7 +18431,7 @@ elephants
 elephants\'
  feet and the dead leaves
 decay on the damp soil and make the
-water of the numerous rills &amp; rivulets of the 
+water of the numerous rills & rivulets of the 
 colour of strong tea - The climbing plants
 from the size of 
 whipwhipcord to that of a man
@@ -18475,7 +18486,7 @@ for shelter - Bad water and frequent wettings
 	
 
 
-L. told on us all by choleraic symptoms &amp; loss
+L. told on us all by choleraic symptoms & loss
 of flesh -  Meanwhile the news of cheap ivory
 caused a sort 
 Californian gold fever at 
@@ -18567,6 +18578,7 @@ Lewale
 
 Two English guns in the box are surely not
 
+
     
 	
 
@@ -18609,7 +18621,7 @@ into the arms of prostitutes six times over - But in
 
 Manyema
  no one can be induced to go into the
-next district for fear they say of being killed &amp;
+next district for fear they say of being killed &
 eaten - I was at their mercy and entreaty was
 answered by calling when out of sight "who
 will carry his things" and a loud laugh to make
@@ -18956,7 +18968,7 @@ Ethiopia
 
 
 "
-I heard of this remarkable mound &amp; fountains
+I heard of this remarkable mound & fountains
 some 200 miles distant on the South West - again
 on the South East 150 miles off - again on
 the North East 180 miles distant and
@@ -18976,13 +18988,13 @@ anticipation - I shall write no
 other
  letter
 till I have either succeeded or fallen - The
-names of Palmerston Lincoln &amp; Frere I wish
+names of Palmerston Lincoln & Frere I wish
 to honour as of men who have done more
 
     
 	
 
-LIX for the abolition of the slave trade &amp; slavery
+LIX for the abolition of the slave trade & slavery
 than any of their 
 cotemporaries
 contemporaries
@@ -19083,7 +19095,7 @@ Had I left at the end of two years I could have
 given little more light on the country than the
 
 Portuguese who in their three slaving visits
-to Cazembe asked for slaves &amp; ivory alone
+to Cazembe asked for slaves & ivory alone
 and heard of nothing else - I 
 enquired
 inquired
@@ -19121,7 +19133,7 @@ Ptolemy\'s
 
 
  - The length of
-this watershed is between 700 &amp; 800 miles from 
+this watershed is between 700 & 800 miles from 
 West to East - Here the 
 fountains of the 
 Nile
@@ -19129,7 +19141,7 @@ Nile
 
  do
 unquestionably arise - The mountains on it 
-are between 600 &amp; 700 feet above the sea
+are between 600 & 700 feet above the sea
 The idea of melting snow is if I remember
 rightly is not Ptolemy\'s 
 
@@ -19138,11 +19150,11 @@ Kenia
 Kenya
 
 
- &amp; 
+ & 
 Kilimanjaro
  
 are said to be snow capped but no one
-even reached the snow - They send no water to
+ever reached the snow - They send no water to
 any part of the 
 Nile
  and never could have
@@ -19174,11 +19186,7 @@ Govt
 Government
 
 from allowing me any claim no matter what
-services I may render 
-
-
-David Livingstone
-
+services I may render David Livingstone
 
 
       
@@ -19220,8 +19228,8 @@ November
 in 
 Zanzibar
  but the close crowding of the houses
-in the town they think prevents it. The lips &amp;
-mouth are affected &amp; constipation sets in for 3
+in the town they think prevents it. The lips &
+mouth are affected & constipation sets in for 3
 days - cured by going over to mainland
 Affections of the lungs are cured by residence at
 
@@ -19285,7 +19293,7 @@ Zanzibar
 Lt
 
 Lieutenant
- Kinnaird &amp; 
+ Kinnaird & 
 
 B
 Bevan
@@ -19353,7 +19361,7 @@ two
 vinegar or cocoa trees put into a large 
 bason
 basin
- &amp;
+ &
 old slag made red hot cast into it - Then "Mbuye ^ 
 asofoetida
 "
@@ -19365,16 +19373,16 @@ Do
 
 Ditto
  
-a small glass of this fasting morning &amp; evening
+a small glass of this fasting morning & evening
 
 	
 	
 
 
 LXIV
- produces vomiting &amp; purging of black dejections - 
+ produces vomiting & purging of black dejections - 
 This is continued for seven days - no meat eaten but
-only old rice or dura &amp; water - a fowl
+only old rice or dura & water - a fowl
  in course of time
 no ^ 
 fish
@@ -19386,7 +19394,7 @@ above is his prescription -
 Safura
 
  is thus a 
-disease per se - It is common in Manyema &amp; 
+disease per se - It is common in Manyema & 
 makes me in a measure content to wait for
 my medicines - from the description inspiss-
 ated bile seems to be the agent of blocking up the
@@ -19414,9 +19422,9 @@ Safura
 scarcely able to walk - He took it at 
 Lualaba
  where
-food is abundant &amp; he is contented with his lot -
+food is abundant & he is contented with his lot -
 
-squeeze a fingernail &amp; if no blood appears beneath it
+squeeze a fingernail & if no blood appears beneath it
 
 
 
@@ -19460,7 +19468,7 @@ skin - draws out a spear but never uses
 it - takes some leaves and stuffs them into
 his wound to stanch the blood = Does not
 wish an encounter with an armed man = He 
-sees women do him no harm &amp; never molests them
+sees women do him no harm & never molests them
 a man without a spear is nearly safe from him
 They beat hollow trees as drums with hands
 and then scream as music to it. When men
@@ -19478,12 +19486,12 @@ goes to men with hostility - Manyema say "
 Sokos
 
 
-is a man" "&amp; nothing bad in him" a 
+is a man" "& nothing bad in him" a 
 
-Sokos
+Soko
 
  was killed
-near this with holes in his ears - He had died a man &amp; 
+near this with holes in his ears - He had died a man & 
 risen
 rose
  a 
@@ -19557,7 +19565,7 @@ but this delay may all be for the best.
 	
 
 
-LXVII. The Parrots all seize their food &amp; hold it with the
+LXVII. The Parrots all seize their food & hold it with the
 left hand - the Lion too is left handed - He strikes with
 his left - so are all animals - left handed save man.
 
@@ -19620,7 +19628,7 @@ Sokos
  live in communities of about ten each having his 
 own female - an intruder from another camp is beaten off with 
 their fists and loud yells - If one tries to seize the female of another
-he is  caught on the ground and all unite in boxing &amp;
+he is  caught on the ground and all unite in boxing &
 biting the offender - a male often carries a child
 especially if they are passing from one patch of forest
 to another over a grassy space - He then gives it to the
@@ -19648,8 +19656,7 @@ nothing was done to him - !
 
 
 LXIX
-
-8 
+ 8 
 Decr
 
 December
@@ -19663,14 +19670,14 @@ Zanzibar
  - It is impossible to deny his
 power of foresight except by rejecting all evidence - He
 frequently foretold the deaths of great men among Arabs
-and he was preeminently a good man upright &amp; sincere
+and he was preeminently a good man upright & sincere
 "
 shirti
 " none like him now for goodness or 
 skill - He said that two middle sized white
-men with straight noses &amp; flowing hair down to
-the girdle behind came at times &amp; told him things
-to come - He died ^ 12 years ago lately &amp; left no successors 
+men with straight noses & flowing hair down to
+the girdle behind came at times & told him things
+to come - He died ^ 12 years ago lately & left no successors 
 told his own disease three days beforehand
 by cholera
 
@@ -19678,7 +19685,7 @@ by cholera
 
 Heresi a ball of hair rolled in stomach of a
 
-lion is a grand charm to the animal &amp; to 
+lion is a grand charm to the animal & to 
 
 Arabs - 
 
@@ -19702,7 +19709,7 @@ Manyema
  - Rain every day and often at night
 I could not travel now even if I had men but
 I could make some progress - this is the sorest delay
-I ever had - I look above for help &amp; mercy
+I ever had - I look above for help & mercy
 
             
 
@@ -19758,7 +19765,7 @@ Lohombo
  was the furthest point of traders
 for many a day - slaves returning with ivory
 were speared mercilessly by Manyema because
-they did not know guns could kill &amp; their
+they did not know guns could kill & their
 spears could - Katomba coming to Moenekuss
 was a great feat three or four years ago
 Then Dugumbe went on to 
@@ -19766,10 +19773,10 @@ Lualaba
  and fought his
 way - So I may be restrained now in mercy
 till men come - those I had were not men nor
-yet slaves - Hybrids between bond &amp; free
+yet slaves - Hybrids between bond & free
  so petted 
 
-&amp; coddled as to think the English feared them
+& coddled as to think the English feared them
 
 	
 	
@@ -19778,7 +19785,7 @@ yet slaves - Hybrids between bond &amp; free
 LXXI The Neggeri an African animal attacks the
 testicles of man and beast - cuts them off and retires
 contented - Buffaloes are often castrated by him -
-Men who know it squat down &amp; kill him with knife
+Men who know it squat down & kill him with knife
 or gun - 
 Lions fear 
 
@@ -19817,7 +19824,7 @@ Bees die or escape from his droppings
 
 or urine and he eats the honey in safety -
 
-Lions &amp; all other animals fear his attacks of the heel
+Lions & all other animals fear his attacks of the heel
 
 
 about 25 to a measure
@@ -19953,7 +19960,7 @@ malofu
  or Palm toddy - Rice all coming into ear
 but Manyema planted more 
 Maize ripening - mice a pest
-a strong man among Manyema does as he pleases &amp;
+a strong man among Manyema does as he pleases &
 no chief inteferes - a man\'s wife of ten goats was
 given off to a Mene man and his child now grown
 is given away too - comes to Muhamad for redress
@@ -19972,7 +19979,7 @@ Sangu
  country
  - tusks full
 in the hollows weigh very heavy - animals fat
-&amp; good in flesh Eleven goats for the flesh
+& good in flesh Eleven goats for the flesh
 
 
 24th
@@ -20037,7 +20044,7 @@ viramba
  - a man was speared belonging to
 
 Kasongo - these three then fired into a mass of 
-men who collected one killed two another three &amp; so on 
+men who collected one killed two another three & so on 
 So now that place is shut up from traders -
 and all this country will be so as soon as the
 
@@ -20050,9 +20057,9 @@ Swahili
 
 
 are the most cruel and bloodthirsty missionaries in
-existence and withal so impure in talk &amp; acts - spreading
+existence and withal so impure in talk & acts - spreading
 
-syphilis Buboes &amp; chancres- The Lord sees it.
+syphilis Buboes & chancres - The Lord sees it.
 
 	
 	
@@ -20066,9 +20073,9 @@ Moenekus
 Moenekuss
 
  in power told us that a man was
-killed &amp; eaten a few miles from this yesterday - Hunger the reason
+killed & eaten a few miles from this yesterday - Hunger the reason
 assigned = on speaking of tainted meat he said that the Manyema
-put meat in water two days to make it putrid &amp; smell high = The
+put meat in water two days to make it putrid & smell high = The
 love of high meat is the only reason I know for their cannibalism
 but the practice is now hidden on account of the disgust that
 the traders expressed against open man eating when they
@@ -20086,7 +20093,7 @@ that the Manyema think falls from lightning.
 
 30th
  Rain daily - a woman murdered without cause
-close by the camp - murderer said she is a witch &amp; speare
+close by the camp - murderer said she is a witch & speare
 d
 
 
@@ -20122,7 +20129,7 @@ from killing us all - and for no reason either.
 LXXVI 16th January 1871 Ramadan ended last 
 4
 
-night and it is probable my people &amp; others from the
+night and it is probable my people & others from the
 
 cohort will begin to travel 
 
@@ -20173,7 +20180,7 @@ will believe
 
  them as for
 instance 
-Mr Tozer &amp; Co
+Mr Tozer & Co
 
 
     
@@ -20222,7 +20229,7 @@ Tanganyika
 
 There is no desert in all the
 country said to be travelled over
-It is every where fertile &amp; covered
+It is every where fertile & covered
 with rank vegetation = this is the
 most unlikely part of the tale
 
@@ -20242,12 +20249,7 @@ most unlikely part of the tale
 LXXVIII 24th January 1871 - Muhamad mentioned 
 27
 
-this morning that 
-
-Moenemokaia
-Moenemokia
-
- &amp; Moeneghere his
+this morning that Moenemokaia & Moeneghere his
 brother brought about thirty slaves from 
 Katanga
 
@@ -20315,7 +20317,7 @@ Ujiji
 my whereabouts - When told by 
 Katomba\'s men 
 they will come here - and bring my much longed
-for letters &amp; goods - 70,000 thousand victims in
+for letters & goods - 70,000 thousand victims in
 
 
 Zanzibar
@@ -20387,7 +20389,7 @@ filth - nothing was done to prevent the place being
 made a perfect cesspool of 
 animals
 animals\'
- guts &amp; ordure of men
+ guts & ordure of men
 
     
                 
@@ -20403,7 +20405,7 @@ LXXX --
  
 a
 A
- piece of skin bound round chest of an arm &amp; half of 
+ piece of skin bound round chest of an arm & half of 
 28
 
 
@@ -20414,10 +20416,10 @@ forgets and fattens ----
 
 Abed\'s party bring 200 
 Frasilahs
- of all sorts of beads &amp;
+ of all sorts of beads &
 They will cross 
 Lualaba
- &amp; open a new field in the
+ & open a new field in the
 other or 
 
 Young\'s Lualaba
@@ -20446,7 +20448,7 @@ coast
 recieve
 receive
  loads of goods for 500 men - He
-looks as if insane &amp; probably is so - He will soon be
+looks as if insane & probably is so - He will soon be
 killed - His insanity may be the effect of Pombe of
 which he drinks largely - and his people may have
 told him that the Arabs were plotting with 
@@ -20490,7 +20492,7 @@ Ngoni
 Banyamwezi
 Nyamwezi
 
- cattle &amp; 
+ cattle & 
 Mteza\'s men went out to them
 and twenty two were killed The 
 
@@ -20516,7 +20518,7 @@ is the author of the do nothing policy - Sent away all the
 
 
 Sepoys
- as too expensive an old man &amp; avaricious
+ as too expensive an old man & avaricious
 The 
 
 
@@ -20536,17 +20538,14 @@ turks
 Turks
 
 
- came up &amp; attacked
+ came up & attacked
 
 Mteza but lost many people and fled - A Moslem
 mission to Mteza was a falsehood though the
 details given were circumstantial - Falsehood
 is so common one can believe nothing the Arabs
 say unless confirmed of other evidence - They are
-followers of the Prince of lies Muhamad
-
-
-- His cool
+followers of the Prince of lies Muhamad - His cool
 appropriation of the knowledge gained at 
 Damascus
 
@@ -20562,7 +20561,7 @@ LXXXII. It is worth noticing that all admit the decadence
 29
 
 of the Moslem power and they ask how it is fallen -
-they seem sincere in their devotions &amp; reading the Koran
+they seem sincere in their devotions & reading the Koran
 but its meaning is comparatively hid from most of the
 
 
@@ -20666,7 +20665,7 @@ London
  - We English
  if naked would
 make but a poor figure beside the strapping forms and
-finely shaped limbs of Manyema men &amp; women - their
+finely shaped limbs of Manyema men & women - their
 cannibalism is doubtful but my observations raise
 grave suspicions a Scotch jury would say "not proven"
 The women are not guilty -
@@ -20746,7 +20745,7 @@ Sherreef
 Shereef
 
  the head man stopped wth four and
-is now feasting &amp; drinking on my goods though
+is now feasting & drinking on my goods though
 he knows me to be here -
 
 
@@ -20755,7 +20754,7 @@ he knows me to be here -
 probably 
 be
 by
- Shereef &amp; my two ringleaders who
+ Shereef & my two ringleaders who
 
 
 
@@ -20772,7 +20771,7 @@ The
 murder of James came here drawn by the pretence that he
 was needed to lead a party against the villages which he
 led to commit the outrage - His thirst for blood is awful
-He was bound &amp; word sent to bring the actual 
+He was bound & word sent to bring the actual 
 murders
 murderers
  within
@@ -20792,7 +20791,7 @@ to start tomorrow - another mutiny quelled by
 M
 Muhamad
 
- &amp; me
+ & me
 
 
 
@@ -20804,7 +20803,7 @@ The
  men sent are all 
 slaves of the Banians
 
- &amp;
+ &
 came with a lie in their mouths - They were 
 
 lascars
@@ -20878,7 +20877,7 @@ Do
 Ditto
  
 Kanike
- &amp; 2 
+ & 2 
 frasilahs
  
 samsam
@@ -20912,15 +20911,15 @@ Nassick
  coddling school 
 do 
 Muhamad roused him out by telling how I travelled
-when much worse - chief gave me a goat &amp; Muhamad an-
+when much worse - chief gave me a goat & Muhamad an-
 
 
 go
 other
 
  but in coming through the forest on the neck of the
-mountain the men lost three &amp; have to go back for them
-and return tomorrow - Simon &amp; Ibram were bundled on
+mountain the men lost three & have to go back for them
+and return tomorrow - Simon & Ibram were bundled on
 
 
 
@@ -20948,16 +20947,16 @@ slav
 es
 
 with their want of respect for all English and total
-disregard of honesty &amp; honour - They came after me
+disregard of honesty & honour - They came after me
 with inimitable effrontery believing that though I said
 that I would not take them - they were so valuable I
 was only saying what I knew to be false - I warned
 them off and they went away among Manyema -
 
 The goats were brought by a Manyema man who
-found one fallen in a pitfall &amp; dead - He ate it &amp; brought
+found one fallen in a pitfall & dead - He ate it & brought
 one of his own in lieu of it - I gave him 10 strings of
-beads &amp; he presented a 
+beads & he presented a 
 fowl in token of good willl -
 
 
@@ -20981,14 +20980,14 @@ to
 To
  ford only one canoe now as 2 men of
 
-Katomba were swept away in the other &amp; drowned
+Katomba were swept away in the other & drowned
 They would not sell the remaining canoe so I go
 
 
 N W
 North West
  on foot to Moene Lualaba where five large
-canoes are abundant - grass &amp; mud grievous but
+canoes are abundant - grass & mud grievous but
 my men lift me over 
 the waters 21st
  
@@ -21049,8 +21048,8 @@ village
 32
 
 
-situated on a high ridge between two deep &amp; difficult
-gullies - People obliging &amp; kind = chief\'s wife made a 
+situated on a high ridge between two deep & difficult
+gullies - People obliging & kind = chief\'s wife made a 
 fire for me in the evening unbidden - 
 
 22nd
@@ -21087,7 +21086,7 @@ and undulating - light green grass covers it all
 save at the brooks where the eye is relieved by
 the dark green of lines of trees - grass tears the
 hands and wets the extremities constantly - soil
-formed of debris --&gt; of granite rocks - rough &amp;
+formed of debris of granite rocks - rough &
 stoney but everywhere fertile - one can rarely
 get a bare spot to sit down and rest
 
@@ -21107,7 +21106,7 @@ River
  then
 cross 
 Loengadze
- &amp; sleep on bank of 
+ & sleep on bank of 
 Luha
  
 
@@ -21146,12 +21145,12 @@ Karagwe
  
 all anxious to be kind Katomba gave
 
-flour - nuts fowl &amp; goat - a new way
+flour - nuts fowl & goat - a new way
 opened to 
 
 Kasongo\'s
  much shorter than
-that I followed - I rest a few days &amp;
+that I followed - I rest a few days &
 then go on -
 
 
@@ -21172,7 +21171,7 @@ accepted - I gave a note to Katomba
 to take my double barrelled gun at 
 Ujiji
 
-I pay him this for all his services &amp;
+I pay him this for all his services &
 he gives me a young she 
 
 Soko
@@ -21188,12 +21187,12 @@ little beast came up to me at once making
 	
 
 XC her chirrup of welcome - smelled my clothing
-&amp; held out her hand to be shaken - I slapped her
+& held out her hand to be shaken - I slapped her
 palm without offence though she winced - She
 began to untie the cord with which she was
-afterwards bound with fingers &amp; thumbs
+afterwards bound with fingers & thumbs
 in quite a systematic way and on being 
-interfered with by a man looked daggers &amp;
+interfered with by a man looked daggers &
 screaming tried to beat him with her hands
 she was afraid of his stick and faced him
 putting her back to me as a friend = When
@@ -21201,7 +21200,7 @@ allowed to unloose herself she walked away
 using the hands as crutches - treading on the 
 backs of the fingers on the spaces between
 the first joint from the nail to the second
-the knuckles &amp; back of the hand being held
+the knuckles & back of the hand being held
 perpendicularly - sometimes she walks 
 upright but the crutch movement in
 which the feet are lifted forward together
@@ -21211,7 +21210,7 @@ out her hand for people to lift her up and
 carry her quite like a spoiled child then
 bursts into a passionate cry somewhat
 like that of a kite wrings her hands quite
-naturally as if in despair &amp; sometimes adds
+naturally as if in despair & sometimes adds
 a foot to make the appeal more tender -
 she sits eighteen inches high - Her black
 long hair was beautiful while she was tended
@@ -21271,7 +21270,7 @@ Munanbunda\'s
 seven of 
 Moene
 l
-a
+o
 kila\'s people go with
 us and serve as guides - on the 3rd
 
@@ -21323,11 +21322,11 @@ sit
 sits
  in
 the enjoyment of the delicious air talking
-over their little domestic affairs &amp; waiting
+over their little domestic affairs & waiting
 till the sun warms them - the leaves of the 
 forest trees around and near them are
 bespangled with thousands of dew drops
-the cocks crow &amp; strut - the kids gambol &amp;
+the cocks crow & strut - the kids gambol &
 leap - The older goats make believe fighting
 the fairy scene is no doubt one never
 forgotten by the young whose infamy is 
@@ -21338,7 +21337,7 @@ indescribable - Thrifty winces often make
 the heap of grass roots which bake their
 clay pots ^ or make salt serve as the morning fire - In some
 cases all the village is deserted as we come
-near - doors are shut &amp; a bunch of leaves
+near - doors are shut & a bunch of leaves
 
 
 	
@@ -21353,7 +21352,7 @@ while all the fowls and goats are carried off
 w
 e
 a
-il for the hens &amp; tell like the smoking fires
+il for the hens & tell like the smoking fires
 of flight from the 
 slave traders
 
@@ -21387,8 +21386,8 @@ Zanzibar
 
 
 Manyema women we should get beautiful 
-children" Many women are very pretty &amp; the men
-handsome. Hands feet &amp; limbs perfect - orifices
+children" Many women are very pretty & the men
+handsome. Hands feet & limbs perfect - orifices
 of the nose widened by snufftakers - teeth not
 filed except a little space between two front incisors
 
@@ -21418,7 +21417,7 @@ we
 dont
 don\'t
  know who are enemies so many
-have been maltreated &amp; had relatives killed - The
+have been maltreated & had relatives killed - The
 
 rain of yesterday
  made paths so slippery that
@@ -21445,7 +21444,7 @@ Kimari
 Kimazi
 
 
- - gave a cloth &amp; beads in lieu
+ - gave a cloth & beads in lieu
 of a fine fat goat from chief a clever good man
                
                 
@@ -21475,7 +21474,7 @@ Mbuga
 The torrid sun nearly vertical sent his fierce rays down
 and fatigued us all - crossed two ^ 
 Sokoye
- streams by bridges &amp;
+ streams by bridges &
 slept at a village on a ridge of woodland overlooking
 
 
@@ -21488,9 +21487,9 @@ Kasongo
 
 
  - After two hours this morning we came
-to a villages of this chief &amp; at one were welcomed
+to a villages of this chief & at one were welcomed
 by the safari of Salem Mokadam
- &amp; I was given 
+ & I was given 
 a house - 
 
 Kasonga
@@ -21580,7 +21579,7 @@ with Abed
 
 11th
  Had a long fierce oration from Amur in
-which I was told again &amp; again that I should be
+which I was told again & again that I should be
 killed and eaten - people wanted a white one
 to eat = I needed 200 guns - must not go to die - 
 I told him that I was thankful for advice if given by
@@ -21593,8 +21592,8 @@ one who had knowledge but his vehement threats
 XCVII were dreams of one who had never gone
 anywhere but sent his slaves to kill people = He
 was only frightening my people and doing me an
-injury - Baker had only twelve people &amp; came
-near to this. "Were the people cannibals" &amp;c &amp;c
+injury - Baker had only twelve people & came
+near to this. "Were the people cannibals" &c &c
 I left this noisy demagogue after saying I thanked
 him for this warnings but saw he knew not 
 what he was saying - The 
@@ -21625,7 +21624,7 @@ Abed
  declared to me that he would
 not begin hostilities but he began nothing
 else. The propsect of getting slaves over -
--powers all else &amp; blood 
+-powers all else & blood 
 blood
 
  flows
@@ -21658,8 +21657,8 @@ Kasonga
 Kasongo
 
  says that he has
-but one tongue &amp; never lies - He is a contrast
-to the Arabs who are nearly all liars - Musa &amp;
+but one tongue & never lies - He is a contrast
+to the Arabs who are nearly all liars - Musa &
 party are fair average opennness of Moslem
 falsehood - The only difference between their religion
 
@@ -21670,7 +21669,7 @@ countrymen to give up idolatry - The impudence
 of his lies is their chief feature - As a trader he 
 went to 
 Damascus
- &amp; heard of 
+ & heard of 
 
 St
 
@@ -21719,7 +21718,7 @@ Kasongo
 afraid because their 
 Headman Kasongo
 gave 
-Hassani &amp; Muhamad\'s people ivory
+Hassani & Muhamad\'s people ivory
 to assault the people at 
 
 Moene Lualaba\'s
@@ -21731,7 +21730,7 @@ They killed many and captured many more
 and hope not to return here
 for no reason but to get slaves ^ -  they
 were market people famed by all as 
-good &amp; civil - Kasongo\'s goodness extends
+good & civil - Kasongo\'s goodness extends
 only to the traders - I told him that they
 would attack him too when they had finished
 all about him and he would go yet in a
@@ -21802,7 +21801,7 @@ North
 
 
 
-Musa was terrified &amp; though I offered to go due
+Musa was terrified & though I offered to go due
 West till far past the beat of the 
 
 Batuta
@@ -21819,7 +21818,7 @@ Ngoni
  - The
 
 Sultan who knows his people better than anyone
-else entrusts all his reverence &amp; money affairs to
+else entrusts all his reverence & money affairs to
 
 
 Banians from 
@@ -21877,7 +21876,7 @@ Manyema
  - Filthy talkers all their
 speech to the natives is too disgusting to 
 noticed - to avoid provoking ill will
-I listened as if I heart it not -
+I listened as if I heard it not -
 
 
 16th
@@ -21885,7 +21884,7 @@ I listened as if I heart it not -
 Kasongo\'s people
 
 yesterday and killed three men capturing as
-usual women &amp; children - My men not come 
+usual women & children - My men not come 
 back - I fear engaged in some broil
 
 
@@ -21944,13 +21943,13 @@ Kanayumbe
 
 
 
-which is a loop formed by the river &amp; is large
+which is a loop formed by the river & is large
 
 
 
 
 Kanayumbe loop
- &amp; river
+ & river
 Small map of the river and the region encircled by it.
  He is believed to possess great power
 of divination and even of killing

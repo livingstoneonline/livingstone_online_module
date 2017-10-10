@@ -8906,8 +8906,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>Finally, given the shape and potential liquid substance, it seems quite likely that Livingstone or someone else placed a cup or other such container with water onto the page, and the water from this vessel saturated the page to produce the pattern we see today.</p>
 
-<p>The location of the circle relative to the more subtle oval impression (i.e., in the center of the oval) – which our raking images show to be present even on the two sides of the leaf in question – further suggests that the oval impression on all the relevant diary pages may be due to this vessel, but that for whatever reason the vessel only saturated this page.</p>
-
+<p>The location of the circle relative to the more subtle oval impression (i.e., in the center of the oval) – which our raking images show to be present even oc301ad6d-8a42-4467-854c-5ba54a7f63ad\'
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/the-diary-across-hands-space-and-time-2/liv_000205_0015_raking_irdiff-article.jpg"><img alt="A spectral image of a page from the 1870 Field Diary (Livingstone 1870i:XXXV raking). Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/the-diary-across-hands-space-and-time-2/liv_000205_0015_raking_irdiff-article.jpg" title="A spectral image of a page from the 1870 Field Diary (Livingstone 1870i:XXXV raking). Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Another spectral image of that same page from the 1870 Field Diary (Livingstone 1870i:XXXV raking). <em>Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. The dramatic circular topography, visible in this image due to the use of raking lights, distinguishes this leaf from all the others that constitute the 1870 Field Diary.</span></p>
 
@@ -22050,7 +22049,7 @@ ornament their faces and heads (1871f:CVII)</p>
   $nodes[] = array(
   'title' => 'Location',
   'log' => '',
-  'status' => 0,
+  'status' => 1,
   'comment' => 0,
   'promote' => 0,
   'sticky' => 0,
