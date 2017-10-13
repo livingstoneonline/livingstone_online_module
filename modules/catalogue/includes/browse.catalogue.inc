@@ -249,9 +249,9 @@ function livingstone_browse_catalogue_form(array $form, array &$form_state, $que
 }
 
 function livingstone_browse_catalogue_form_download_markup() {
-  $pdf_files = file_create_url(file_build_uri('/Livingstone-Online-Complete-PDF-transcriptions.zip'));
-  $tei_files = file_create_url(file_build_uri('/Livingstone-Online-Complete-TEI-transcriptions.zip'));
-  $mods_files = file_create_url(file_build_uri('/Livingstone-Online-Complete-MODS-records.zip'));
+  $pdf_files = file_create_url(file_build_uri('/shared/Livingstone-Online-Complete-PDF-transcriptions.zip'));
+  $tei_files = file_create_url(file_build_uri('/shared/Livingstone-Online-Complete-TEI-transcriptions.zip'));
+  $mods_files = file_create_url(file_build_uri('/shared/Livingstone-Online-Complete-MODS-records.zip'));
   return <<<EOT
 <span>Download: </span><a href="$pdf_files">PDF transcriptions</a> – <a href="$tei_files">TEI transcriptions</a> – <a href="$mods_files">MODS Records</a>
 EOT;

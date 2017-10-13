@@ -41,7 +41,7 @@ function livingstone_section_page_nodes_feature_uuid_features_default_content() 
 
 <p>To assist our users, we outline below the standardized system that we have adopted for, first, citing specific manuscript pages and spectral images and, second, naming spectral image files. In the appendices that follow, we provide all necessary supporting information, including overviews of each manuscript; author and date details, page numbers, and project file names for each page of each manuscript; and all processed spectral image names.</p>
 
-<p><strong><u>Bonus</u>: </strong>Download a <a href="/sites/default/files/spectral-imaging/manuscript-citation-and-file-naming-practices/1870-Diary-Layout.zip">spreadsheet</a> that sets out the relationship of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts to their underlying source texts in detail.</p>
+<p><strong><u>Bonus</u>: </strong>Download a <a href="/sites/default/files/shared/1870-Diary-Layout.zip">spreadsheet</a> that sets out the relationship of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts to their underlying source texts in detail.</p>
 
 <p><a id="link2" name="link2"></a></p>
 
@@ -2313,15 +2313,15 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <p class="space-1"><strong>Transcriptions.</strong> We have produced all our transcriptions in XML in conformance with the <a href="http://www.tei-c.org/Guidelines/P5/" target="_blank">TEI P5 encoding guidelines</a>. We have recorded our custom use of these guidelines in a special TEI document called an <a href="http://www.tei-c.org/Guidelines/Customization/odds.xml" target="_blank">ODD</a> (One Document Does-it-all). We use this ODD to generate both an HTML-based encoding manual to direct all our transcription efforts and an RNG schema to ensure that all our XML-based transcriptions are valid within the scope of our TEI customization.</p>
 
-<p class="space-1"><strong><u>Bonus:</u></strong> Download our <a href="/sites/default/files/behind-the-scenes/practices-standards-and-arrangements/Livingstone-Online-Complete-TEI-transcriptions.zip">complete TEI transcription files</a> (497 files).</p>
+<p class="space-1"><strong><u>Bonus:</u></strong> Download our <a href="/sites/default/files/shared/Livingstone-Online-Complete-TEI-transcriptions.zip">complete TEI transcription files</a> (497 files).</p>
 
-<p class="space-1"><strong><u>Double-Bonus:</u></strong> Download <a href="/sites/default/files/behind-the-scenes/practices-standards-and-arrangements/Livingstone-Online-Complete-PDF-transcriptions.zip">PDF reading copies</a> of our TEI transcription files.<a id="metadata" name="metadata"></a></p>
+<p class="space-1"><strong><u>Double-Bonus:</u></strong> Download <a href="/sites/default/files/shared/Livingstone-Online-Complete-PDF-transcriptions.zip">PDF reading copies</a> of our TEI transcription files.<a id="metadata" name="metadata"></a></p>
 
-<p class="space1"><strong><u>Triple-Bonus:</u></strong> Download our <a href="/sites/default/files/behind-the-scenes/practices-standards-and-arrangements/Livingstone_Online-Complete-TEI-Transcription-Materials.zip">complete TEI transcription materials</a>, which include our coding manual, transcription templates, ODD, and RNG schema.</p>
+<p class="space1"><strong><u>Triple-Bonus:</u></strong> Download our <a href="/sites/default/files/shared/Livingstone_Online-Complete-TEI-Transcription-Materials.zip">complete TEI transcription materials</a>, which include our coding manual, transcription templates, ODD, and RNG schema.</p>
 
 <p class="space-1"><strong>Metadata.</strong> We build detailed metadata for each item in our digital collection in an XML file created according to Version 3 of the <a href="http://www.loc.gov/standards/mods/v3/" target="_blank">Metadata Object Description Schema </a>(MODS). Click <a href="#psa6">here</a> for more detail on how we use the MODS format.</p>
 
-<p class="space1"><strong><u>Bonus:</u></strong> Download our <a href="/sites/default/files/behind-the-scenes/practices-standards-and-arrangements/Livingstone-Online-Complete-MODS-records.zip">complete MODS files</a>, which include additional metadata not available elsewhere in our site.</p>
+<p class="space1"><strong><u>Bonus:</u></strong> Download our <a href="/sites/default/files/shared/Livingstone-Online-Complete-MODS-records.zip">complete MODS files</a>, which include additional metadata not available elsewhere in our site.</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/behind-the-scenes/practices-standards-and-arrangements/liv_013071_0001-article.jpg"><img alt="Index of Culpeper\'s Complete Herbal (London 1815), by Richard Evans. Copyright Livingstone Online (Gary Li, photographer). May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/behind-the-scenes/practices-standards-and-arrangements/liv_013071_0001-article.jpg" title="Index of Culpeper\'s Complete Herbal (London 1815), by Richard Evans. Copyright Livingstone Online (Gary Li, photographer). May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Index of <em>Culpeper\'s Complete Herbal</em> (London 1815), by Richard Evans. <em>Copyright </em>Livingstone Online<em> (Gary Li, photographer). May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre). </em></span></p>
@@ -2571,7 +2571,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000001?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-i-overview/liv_000001_reading_copy.zip">basic reading copy</a> of Field Diary I.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000001?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000001_reading_copy.zip">basic reading copy</a> of Field Diary I.]</p>
 
 <p>The first of Livingstone’s field diaries from his final expedition to Africa (1866-73) begins with Livingstone’s departure for Africa from France. Livingstone opens with a series of addresses in French, noting that his daughter Agnes will remain in Paris to practice her French. Livingstone travels from Marseilles to Malta, where the ship is quarantined due to cholera. They then sail to Alexandria, Egypt, then overland to Cairo, then on to the Gulf of Aden and from there to Bombay, India.</p>
 <!--<p class="space2">-->
@@ -2714,7 +2714,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <h4><strong><span style="font-family:crimson text;">Complete Project Documentation</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>Download <a href="/sites/default/files/spectral-imaging/1870-project-documentation/Spectral-Imaging-Project-Documentation-Phase-2.zip">all curated project documents</a> (1.21 GB) organized as a series of subdirectories containing several hundred files that together encompass every aspect of development.</p>
+<p>Download <a href="/sites/default/files/shared/Spectral-Imaging-Project-Documentation-Phase-2.zip">all curated project documents</a> (1.21 GB) organized as a series of subdirectories containing several hundred files that together encompass every aspect of development.</p>
 
 <p><a id="link3" name="link3"></a></p>
 
@@ -2725,18 +2725,18 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p>Download project documentation by discrete areas of endeavor:</p>
 
 <ol>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/01-Grant-Application.zip">NEH Grant Application</a> (1.3 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/02-Planning-Notes-and-Docs.zip">Planning notes and documents</a> (128 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/03-Processing-Notes-and-Feedback-Easton+Team.zip">Spectral image processing notes (PCA and ICA)</a> (988 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/04-Processing-Notes-and-Feedback-Knox+Team.zip">Spectral image processing notes (pseudocolor and animation)</a> (206.7 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/05-Manuscript-and-Image-Notes-Ward-Wisnicki.zip">Manuscript and image notes</a> (25.9 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/06-Meeting-and-Other-Notes.zip">Meeting and other notes</a> (529 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/07-Critical-Essay-Notes.zip">Critical essay and supporting materials notes</a> (691 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/08-Animated-Spectral-Image-(ASI)-Testing.zip">Animated Spectral Image (ASI) testing</a> (538.6 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/09-Image-Integration-and-Metadata-Addition.zip">Image integration and metadata-addition files</a> (5.4 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/10-Dissemination.zip">Dissemination</a> (331.2 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/11-Spectral-Image-Packet-Support-Files.zip">Spectral image archival packet supporting files</a> (3 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/12-1870-FD-Beta-Launch-UK-Tour.zip">Beta launch of critical edition</a> (93.8 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/01-Grant-Application.zip">NEH Grant Application</a> (1.3 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/02-Planning-Notes-and-Docs.zip">Planning notes and documents</a> (128 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/03-Processing-Notes-and-Feedback-Easton+Team.zip">Spectral image processing notes (PCA and ICA)</a> (988 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/04-Processing-Notes-and-Feedback-Knox+Team.zip">Spectral image processing notes (pseudocolor and animation)</a> (206.7 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/05-Manuscript-and-Image-Notes-Ward-Wisnicki.zip">Manuscript and image notes</a> (25.9 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/06-Meeting-and-Other-Notes.zip">Meeting and other notes</a> (529 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/07-Critical-Essay-Notes.zip">Critical essay and supporting materials notes</a> (691 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/08-Animated-Spectral-Image-(ASI)-Testing.zip">Animated Spectral Image (ASI) testing</a> (538.6 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/09-Image-Integration-and-Metadata-Addition.zip">Image integration and metadata-addition files</a> (5.4 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/10-Dissemination.zip">Dissemination</a> (331.2 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/11-Spectral-Image-Packet-Support-Files.zip">Spectral image archival packet supporting files</a> (3 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/12-1870-FD-Beta-Launch-UK-Tour.zip">Beta launch of critical edition</a> (93.8 MB)</li>
 </ol>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
@@ -2968,7 +2968,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000002?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-ii-overview/liv_000002_reading_copy.zip">basic reading copy</a> of Field Diary II.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000002?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000002_reading_copy.zip">basic reading copy</a> of Field Diary II.]</p>
 
 <p>Field Diary II picks up where the <a href="/his-own-words/field-diary-i-overview">previous diary</a> left off, as Livingstone and his men leave the eastern coast of Africa and begin their trek inland. As in the previous diary, an opening note (c. late 1940s-early 1950s) from Rev. James McNair indicates that he has assessed the similarity between this account and the one published in Horace Waller\'s edited <em>Last Journals</em> (1874). This diary is "the basis for the entries in the \'Last Journal,\'" writes McNair; divergences "have been penciled where noticed" (Livingstone 1866a:[3]). The note suggests that even from this early date Livingstone scholars and enthusiasts were interested in how his account has been shaped by the publication process.</p>
 
@@ -3687,7 +3687,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <p><a href="/islandora/search/1874 NOT large?access=all&amp;limit=catalogue&amp;f[3]=genre_ms%3A&quot;maps (documents)&quot;"><strong>A Map of the Forest Plateau of Africa</strong></a> from the <em>Last Journals </em>(Livingstone 1874).</p>
 
-<p><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_The-Standard-Reconstructed.zip"><strong><em>The Standard</em> Reconstructed</strong></a> – front page of the 24 November 1869 issue of <em>The Standard</em> reconstructed from the folia of the 1871 Field Diary and showing Livingstone\'s overtext.</p>
+<p><a href="/sites/default/files/shared/1871FD_The-Standard-Reconstructed.zip"><strong><em>The Standard</em> Reconstructed</strong></a> – front page of the 24 November 1869 issue of <em>The Standard</em> reconstructed from the folia of the 1871 Field Diary and showing Livingstone\'s overtext.</p>
 
 <p><a href="/islandora/search/liv_014099"><strong><em>The Standard</em> (London)</strong></a> – 24 November 1869 issue, clean copy of the entire newspaper without Livingstone\'s writing.</p>
 
@@ -3697,7 +3697,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <h4><strong>Ink Spectra PowerPoint Files&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>Imaging scientist Roger L. Easton, Jr. has produced a series of <a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">PowerPoint files</a> exclusively for the present critical edition. The files track the ink spectra in a selection of the DLC and NLS folia of the 1871 Field Diary.</p>
+<p>Imaging scientist Roger L. Easton, Jr. has produced a series of <a href="/sites/default/files/shared/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">PowerPoint files</a> exclusively for the present critical edition. The files track the ink spectra in a selection of the DLC and NLS folia of the 1871 Field Diary.</p>
 
 <p><a id="link10" name="link10"></a></p>
 
@@ -3705,7 +3705,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <h4><strong>Livingstone Spectral Image Archive Files</strong>&nbsp;&nbsp;&nbsp; <span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>The entire original <a href="http://livingstone.library.ucla.edu/livingstone_archive/" target="_blank">Livingstone Spectral Image Archive</a> (external link) from 2012 –&nbsp;except for archival images and MD5 checksum files – is now available for download as a <a href="/sites/default/files/spectral-imaging/1871-edition-guide/Livingstone_Spectral_Image_Archive.zip">single ZIP file</a> (588 MB). The archive includes full documentation, all supporting files, and all the website files that constitute the Archive itself as well as the first editions of <em>Livingstone\'s 1871 Field Diary</em> (UCLA Digital Library, 2011-13) and <em>Letter from Bambarre</em> (UCLA Digital Library, 2010-11). The missing archival images and MD5 files are now available in enhanced versions through our <a href="/islandora/search?access=view_spectral">spectral image collection</a>.</p>
+<p>The entire original <a href="http://livingstone.library.ucla.edu/livingstone_archive/" target="_blank">Livingstone Spectral Image Archive</a> (external link) from 2012 –&nbsp;except for archival images and MD5 checksum files – is now available for download as a <a href="/sites/default/files/shared/Livingstone_Spectral_Image_Archive.zip">single ZIP file</a> (588 MB). The archive includes full documentation, all supporting files, and all the website files that constitute the Archive itself as well as the first editions of <em>Livingstone\'s 1871 Field Diary</em> (UCLA Digital Library, 2011-13) and <em>Letter from Bambarre</em> (UCLA Digital Library, 2010-11). The missing archival images and MD5 files are now available in enhanced versions through our <a href="/islandora/search?access=view_spectral">spectral image collection</a>.</p>
 
 <p><a id="link11" name="link11"></a></p>
 
@@ -3713,25 +3713,25 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <h4><strong>Project Documents&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>Our project documents, grouped below by area of project endeavor, collectively provide a comprehensive look into the production of the 1871 Field Diary critical edition and the <a href="/islandora/search?access=view_spectral">Livingstone Spectral Image Collection</a>. Users can also download a single ZIP file containing <a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD-Documentation-Complete.zip">all curated project documents</a> (346 MB).</p>
+<p>Our project documents, grouped below by area of project endeavor, collectively provide a comprehensive look into the production of the 1871 Field Diary critical edition and the <a href="/islandora/search?access=view_spectral">Livingstone Spectral Image Collection</a>. Users can also download a single ZIP file containing <a href="/sites/default/files/shared/1871FD-Documentation-Complete.zip">all curated project documents</a> (346 MB).</p>
 
 <ol style="margin-bottom: 12px;">
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_01_Locating-the-Manuscript.zip">Locating the Manuscript</a> (2.7 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_02_Project-Funding.zip">Project Funding</a> (131 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_03_Conservation.zip">Conservation</a> (24.9 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_04_Project-Planning.zip">Project Planning</a> (521 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_05_Imaging-Set-Up.zip">Imaging Set-Up</a> (640 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_06_Imaging-Schedule-and-Objectives.zip">Imaging Schedule and Objectives</a> (2.4 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_07_Spectral-Image-Processing.zip">Spectral Image Processing</a> (289 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_08_Principal-Component-Analysis-(PCA).zip">Principal Component Analysis (PCA)</a> (154 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip">Spectral Ratio and Pseudocolor Rendering</a> (42 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_10_Processing-Results.zip">Processing Results</a> (2 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_11_Data-Scrubbing.zip">"Data Scrubbing"</a> (79.6 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_12_Creating-the-Data-Archive.zip">Creating the Data Archive</a> (238 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip">Creating a Publication Template / XML Encoding</a> (181 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_14_The-Electronic-Edition.zip">The Electronic Edition</a> (771 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_15_Preliminary-Data-Analysis.zip">Preliminary Data Analysis</a> (69.5 KB)<a name="losg5"></a></li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip">Dissemination, Results Release, and the "UK Tour"</a> (35.5 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_01_Locating-the-Manuscript.zip">Locating the Manuscript</a> (2.7 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_02_Project-Funding.zip">Project Funding</a> (131 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_03_Conservation.zip">Conservation</a> (24.9 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_04_Project-Planning.zip">Project Planning</a> (521 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_05_Imaging-Set-Up.zip">Imaging Set-Up</a> (640 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_06_Imaging-Schedule-and-Objectives.zip">Imaging Schedule and Objectives</a> (2.4 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_07_Spectral-Image-Processing.zip">Spectral Image Processing</a> (289 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_08_Principal-Component-Analysis-(PCA).zip">Principal Component Analysis (PCA)</a> (154 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip">Spectral Ratio and Pseudocolor Rendering</a> (42 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_10_Processing-Results.zip">Processing Results</a> (2 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_11_Data-Scrubbing.zip">"Data Scrubbing"</a> (79.6 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_12_Creating-the-Data-Archive.zip">Creating the Data Archive</a> (238 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip">Creating a Publication Template / XML Encoding</a> (181 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_14_The-Electronic-Edition.zip">The Electronic Edition</a> (771 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_15_Preliminary-Data-Analysis.zip">Preliminary Data Analysis</a> (69.5 KB)<a name="losg5"></a></li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip">Dissemination, Results Release, and the "UK Tour"</a> (35.5 MB)</li>
 </ol>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
@@ -5941,7 +5941,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000006?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-vi-overview/liv_000006_reading_copy.zip">basic reading copy</a> of Field Diary VI.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000006?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000006_reading_copy.zip">basic reading copy</a> of Field Diary VI.]</p>
 
 <p>In Field Diary VI, Livingstone travels through the Zalamyama Mountains and then across the Loangwa River valley. Throughout, he records the threat of violence from the Mazitu people, an African ethnic group descended from the Nguni of kwaZulu-Natal who migrated north due to the Mfecane of the early nineteenth century.</p>
 
@@ -6463,7 +6463,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000010?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-x-overview/liv_000010_reading_copy.zip">basic reading copy</a> of Field Diary X.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000010?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000010_reading_copy.zip">basic reading copy</a> of Field Diary X.]</p>
 
 <p>In Field Diary X, Livingstone finds himself hampered by local politics, ill health, and rain, as he travels westward to Lake Moero. The diary can be broken up roughly into two halves, each concerned with Livingstone\'s navigation of local conflicts between and among Africans and Arabs.</p>
 
@@ -7043,7 +7043,7 @@ Elizabeth Maxwell</span></p>
 
 <h4><strong><span style="font-family:crimson text;">David Livingstone: A Catalogue of Documents - Credits and Permissions</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p>G.W. Clendennen and I.C. Cunningham, <em>David Livingstone: A Catalogue of Documents</em> (Edinburgh: National Library of Scotland for the David Livingstone Documentation Project, 1979) and I.C. Cunningham, <em>David Livingstone: A Catalogue of Documents Supplement</em> (Edinburgh: National Library of Scotland for the David Livingstone Documentation Project, 1985) together form the basis – now considerably modified, enhanced, and expanded – of our <a href="/islandora/search">digital catalogue</a> of Livingstone documents and underlying&nbsp;<a href="/sites/default/files/behind-the-scenes/credits-and-permissions/Livingstone-Online-Complete-MODS-records.zip">MODS records</a>. Our site, therefore, contains public sector information licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government License v3.0</a>. These publications are reused here under this license.</p>
+<p>G.W. Clendennen and I.C. Cunningham, <em>David Livingstone: A Catalogue of Documents</em> (Edinburgh: National Library of Scotland for the David Livingstone Documentation Project, 1979) and I.C. Cunningham, <em>David Livingstone: A Catalogue of Documents Supplement</em> (Edinburgh: National Library of Scotland for the David Livingstone Documentation Project, 1985) together form the basis – now considerably modified, enhanced, and expanded – of our <a href="/islandora/search">digital catalogue</a> of Livingstone documents and underlying&nbsp;<a href="/sites/default/files/shared/Livingstone-Online-Complete-MODS-records.zip">MODS records</a>. Our site, therefore, contains public sector information licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government License v3.0</a>. These publications are reused here under this license.</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
@@ -8325,9 +8325,9 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
 
 <p>(For additional discussion of Livingstone’s reuse of source texts for his own texts during 1870 and 1871, see Clendennan and Cunningham 1979:346-47 and our critical edition of Livingstone\'s <a href="/spectral-imaging/livingstone’s-composition-methods#link2">1871 Field Diary</a>.)</p>
 
-<p class="space-1"><strong><u>Bonus</u>: </strong>Download a <a href="/sites/default/files/spectral-imaging/creating-the-1870-field-diary/1870-Diary-Layout.zip">spreadsheet</a> that sets out the relationship of Livingstone’s diary to its underlying source texts in detail.</p>
+<p class="space-1"><strong><u>Bonus</u>: </strong>Download a <a href="/sites/default/files/shared/1870-Diary-Layout.zip">spreadsheet</a> that sets out the relationship of Livingstone’s diary to its underlying source texts in detail.</p>
 
-<p><strong><u>Double-bonus</u>: </strong>Download unmarked <a href="/sites/default/files/spectral-imaging/creating-the-1870-field-diary/Unmarked-Undertexts-for-1870-Field-Diary.zip">PDF copies</a> (50.7 MB) of source texts #1, 3, and 5.</p>
+<p><strong><u>Double-bonus</u>: </strong>Download unmarked <a href="/sites/default/files/shared/Unmarked-Undertexts-for-1870-Field-Diary.zip">PDF copies</a> (50.7 MB) of source texts #1, 3, and 5.</p>
 
 <p><a id="link4" name="link4"></a></p>
 
@@ -8513,7 +8513,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>On a significant portion of pages the annotations are in gray pencil (1870i:XXI, XXIV-XXVIII, XXXIII-XXXV, XXXVII, XLVI, XLVIII, L, LI, LIV, LV [v.1], LV [v.2]); a few pages have annotations in red pencil (1870i:LXI; 1870j:LXVI, LXVIII; 1870k:LXX).&nbsp;1870i:XXVIII also has several lines of printed text underlined. The general thematic unity of the annotated passages provides insights into Livingstone’s interests as a reader of this text.</p>
 
-<p class="space2"><strong><u>Bonus</u>: </strong>Download a <a href="/sites/default/files/spectral-imaging/creating-the-1870-field-diary/1870-Marked-Passages-from-Stanley.zip">transcription</a> of all the passages annotated by Livingstone from Stanley’s <em>The Bible: Its Form and Substance</em>.<a id="link15" name="link15"></a></p>
+<p class="space2"><strong><u>Bonus</u>: </strong>Download a <a href="/sites/default/files/shared/1870-Marked-Passages-from-Stanley.zip">transcription</a> of all the passages annotated by Livingstone from Stanley’s <em>The Bible: Its Form and Substance</em>.<a id="link15" name="link15"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a><strong> Additional notes on the undertexts.</strong> Concurrently with marginal annotations or, at least, in advance of writing the main text of the 1870 Field Diary, Livingstone also appears to have made notes on a few of the source texts. For instance, 1871a:LXXVI [v.1] includes a series of calculations (more than any other page in the diary) made in pencil and in a number of different inks. Some of these calculations clearly run under the main diary text. (For another example of an underlying calculation, see 1870i:LII.) Indeed, the diary text on 1871a:LXXVI [v.1] uncharacteristically stops before the bottom of the page – just before the part of the page where the majority of calculations lie.</p>
 
@@ -8674,9 +8674,9 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <h4><strong><span style="font-family:crimson text;">Complete Project Documentation</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p>Download <a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD-Documentation-Complete.zip">all curated project documents</a> (346 MB) related to the production of the critical edition of Livingstone\'s 1871 Field Diary organized as a series of subdirectories that together encompass every aspect of development.</p>
+<p>Download <a href="/sites/default/files/shared/1871FD-Documentation-Complete.zip">all curated project documents</a> (346 MB) related to the production of the critical edition of Livingstone\'s 1871 Field Diary organized as a series of subdirectories that together encompass every aspect of development.</p>
 
-<p><u><strong>Bonus:</strong></u> Download the entire original <a href="http://livingstone.library.ucla.edu/livingstone_archive/" target="_blank">Livingstone Spectral Image Archive</a> (external link) from 2012 –&nbsp;except for archival images and MD5 checksum files – as a <a href="/sites/default/files/spectral-imaging/1871-project-documentation/Livingstone_Spectral_Image_Archive.zip">single ZIP file</a> (588 MB). The archive includes full documentation, all supporting files, and all the website files that constitute the Archive itself as well as the first editions of <em>Livingstone\'s 1871 Field Diary</em> (UCLA Digital Library, 2011-13) and <em>Letter from Bambarre</em> (UCLA Digital Library, 2010-11). The missing archival images and MD5 files are now available in enhanced versions through our <a href="http://livingstoneonline.org/islandora/search?access=view_spectral">spectral image collection</a>.</p>
+<p><u><strong>Bonus:</strong></u> Download the entire original <a href="http://livingstone.library.ucla.edu/livingstone_archive/" target="_blank">Livingstone Spectral Image Archive</a> (external link) from 2012 –&nbsp;except for archival images and MD5 checksum files – as a <a href="/sites/default/files/shared/Livingstone_Spectral_Image_Archive.zip">single ZIP file</a> (588 MB). The archive includes full documentation, all supporting files, and all the website files that constitute the Archive itself as well as the first editions of <em>Livingstone\'s 1871 Field Diary</em> (UCLA Digital Library, 2011-13) and <em>Letter from Bambarre</em> (UCLA Digital Library, 2010-11). The missing archival images and MD5 files are now available in enhanced versions through our <a href="http://livingstoneonline.org/islandora/search?access=view_spectral">spectral image collection</a>.</p>
 
 <p><a id="link2" name="link2"></a></p>
 
@@ -8687,22 +8687,22 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p>Download project documentation by discrete areas of endeavor:</p>
 
 <ol style="margin-bottom: 12px;">
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_01_Locating-the-Manuscript.zip">Locating the Manuscript</a> (2.7 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_02_Project-Funding.zip">Project Funding</a> (131 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_03_Conservation.zip">Conservation</a> (24.9 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_04_Project-Planning.zip">Project Planning</a> (521 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_05_Imaging-Set-Up.zip">Imaging Set-Up</a> (640 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_06_Imaging-Schedule-and-Objectives.zip">Imaging Schedule and Objectives</a> (2.4 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_07_Spectral-Image-Processing.zip">Spectral Image Processing</a> (289 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_08_Principal-Component-Analysis-(PCA).zip">Principal Component Analysis (PCA)</a> (154 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip">Spectral Ratio and Pseudocolor Rendering</a> (42 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_10_Processing-Results.zip">Processing Results</a> (2 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_11_Data-Scrubbing.zip">"Data Scrubbing"</a> (79.6 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_12_Creating-the-Data-Archive.zip">Creating the Data Archive</a> (238 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip">Creating a Publication Template / XML Encoding</a> (181 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_14_The-Electronic-Edition.zip">The Electronic Edition</a> (771 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_15_Preliminary-Data-Analysis.zip">Preliminary Data Analysis</a> (69.5 KB)<a name="losg5"></a></li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip">Dissemination, Results Release, and the "UK Tour"</a> (35.5 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_01_Locating-the-Manuscript.zip">Locating the Manuscript</a> (2.7 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_02_Project-Funding.zip">Project Funding</a> (131 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_03_Conservation.zip">Conservation</a> (24.9 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_04_Project-Planning.zip">Project Planning</a> (521 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_05_Imaging-Set-Up.zip">Imaging Set-Up</a> (640 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_06_Imaging-Schedule-and-Objectives.zip">Imaging Schedule and Objectives</a> (2.4 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_07_Spectral-Image-Processing.zip">Spectral Image Processing</a> (289 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_08_Principal-Component-Analysis-(PCA).zip">Principal Component Analysis (PCA)</a> (154 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip">Spectral Ratio and Pseudocolor Rendering</a> (42 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_10_Processing-Results.zip">Processing Results</a> (2 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_11_Data-Scrubbing.zip">"Data Scrubbing"</a> (79.6 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_12_Creating-the-Data-Archive.zip">Creating the Data Archive</a> (238 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip">Creating a Publication Template / XML Encoding</a> (181 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_14_The-Electronic-Edition.zip">The Electronic Edition</a> (771 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_15_Preliminary-Data-Analysis.zip">Preliminary Data Analysis</a> (69.5 KB)<a name="losg5"></a></li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip">Dissemination, Results Release, and the "UK Tour"</a> (35.5 MB)</li>
 </ol>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
@@ -9655,7 +9655,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000003?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-iii-overview/liv_000003_reading_copy.zip">basic reading copy</a> of Field Diary III.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000003?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000003_reading_copy.zip">basic reading copy</a> of Field Diary III.]</p>
 
 <p>As Livingstone and his men travel further away from the coast and begin to head towards Lake Nyassa, Livingstone first encounters the problems that would dog him for the remainder of his last journey: food scarcity, the slave trade, and mutiny among his men. Although Livingstone first notes the group’s hunger early in the diary, they receive food from a friendly chief. As men trek further into the interior of Africa, however, it becomes more and more difficult to procure enough food. Though Livingstone repeatedly sends his men off to buy food with cloth, they often come back empty-handed or with inadequate supplies.</p>
 
@@ -9943,7 +9943,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>Learn more about spectral image processing in the related section from <a href="/spectral-imaging/spectral-image-processing">Livingstone’s Letter from Bambarre</a>.</p>
 
-<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-2/1871FD_07_Spectral-Image-Processing.zip"><strong>Spectral Image Processing</strong></a> project documents</em></span><a id="link16" name="link16"></a></p>
+<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_07_Spectral-Image-Processing.zip"><strong>Spectral Image Processing</strong></a> project documents</em></span><a id="link16" name="link16"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Principal Component Analysis (PCA).</strong> Onsite processing in Scotland by [qtip:Easton|Roger L. Easton, Jr. (Rochester Institute of Technology). Imaging scientist for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] and [qtip:Christens-Barry|Bill Christens-Barry (Equipoise Imaging, LLC). Imaging scientist for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] relied primarily on applying principal component analysis (PCA) to the raw image sets. In addition, Easton and his student [qtip:Caroline Houston|Caroline Houston (Rochester Institute of Technology). Research assistant for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] continued to experiment with this technique after the initial imaging phase. The PCA technique uses combinations of an original set of images to construct an equivalent set of images ordered by statistical variance. The first principal component is a combination of the original images with the largest variance; the second principal component is the combination of the original with the next largest variance orthogonal to the first, etc. Images from initial PC bands ("high order" bands) correspond to the smallest data variances. If the images contain objects that differ in color, they may be distinguished ("segmented") in the set of principal components.</p>
 
@@ -9952,7 +9952,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>Once the PC images are produced, the scientists examine the images to identify those that show different inks and insert these images into the red, green, and blue channels (RGB) of a "pseudocolor" (false color) image. If the handwritten ink appears as "light" in one of the PC images and "dark" in another, then the corresponding pixels may exhibit a color tone in the pseudocolor image that allows easier differentiation between the handwritten and printed texts. If necessary, the scientists further manipulate the pseudocolor image by using appropriate software to rotate the hue angle of the pseudocolor image to generate new combinations of the principal components. However, the process is not conducive to automation because of the manual steps involved and so is most feasible for the study of exceptionally illegible portions of text.</p>
 
-<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-2/1871FD_08_Principal-Component-Analysis-(PCA).zip"><strong>Principal Component Analysis (PCA)</strong></a> project documents</em></span><a id="link17" name="link17"></a></p>
+<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_08_Principal-Component-Analysis-(PCA).zip"><strong>Principal Component Analysis (PCA)</strong></a> project documents</em></span><a id="link17" name="link17"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Spectral Ratio and Pseudocolor Rendering.</strong> [qtip:Knox|Keith Knox. Imaging scientist for the multispectral critical edition of Livingstone\'s 1871 Field Diary.], who remained in Hawaii during the onsite imaging phase, supplemented both initial and follow-up PCA processing with techniques previously developed and/or refined for the <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> (also see <a href="/spectral-imaging/notes-processed-spectral-images">Notes on Processed Spectral Images</a>). In subsequent months, after the team and the data returned from Scotland, Knox also developed two additional techniques that proved instrumental to deciphering Livingstone’s writing.</p>
 
@@ -9966,7 +9966,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>A second technique, which could be partly automated, focused on minimizing ink bleedthrough. This technique involved rendering pseudocolor images using combinations of raw spectral images. In this case, [qtip:Knox|Keith Knox. Imaging scientist for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] selected two images of the recto side of a given leaf (the 505 nm and 780 nm illuminations), and one image of the verso (505 nm) that he flipped horizontally. He performed a spatially local normalization of contrast and brightness on each image, then inserted these three images into, respectively, the red, green, and blue channels of a pseudocolor image. The resulting image displayed the recto text in cyan-blue and the verso text in green-yellow, a combination that significantly enhanced the legibility of the recto text.</p>
 
-<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-2/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip"><strong>Spectral Ratio and Pseudocolor Rendering</strong></a> project documents</em></span><a id="link18" name="link18"></a></p>
+<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip"><strong>Spectral Ratio and Pseudocolor Rendering</strong></a> project documents</em></span><a id="link18" name="link18"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Processing Objectives and Results.</strong> The Livingstone team developed a list of leaves for processing after the preliminary processing in June 2010, which established the viability of recovering Livingstone’s text. This list prioritized the most challenging images (those under the identifiers 297b and 297c [Livingstone 1871f]), while suggesting only color rendering for the most legible folia, the latter of which would be produced using a text file script with an executable program. The subsequent months of processing entailed a high degree of collaboration between imaging scientists and [qtip: Wisnicki|Adrian S. Wisnicki (Indiana University of Pennsylvania). Director, lead scholar, and principal writer for the multispectral critical edition of Livingstone\'s 1871 Field Diary.], who assessed whether processing results met scholarly needs and who suggested further possibilities for experimentation.</p>
 
@@ -9982,7 +9982,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>Ultimately, the work of the scientists resulted in the creation of a variety of spectral image processing techniques to recover the text of Livingstone’s 1871 Field Diary (see <a href="/spectral-imaging/notes-processed-spectral-images">Notes on Processed Spectral Images</a> for the full list). The imaging scientists applied nearly all of these techniques to the diary and, where possible, used automation to extend their work to the other Livingstone manuscript leaves captured in Scotland.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-2/1871FD_10_Processing-Results.zip"><strong>Processing Results</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_10_Processing-Results.zip"><strong>Processing Results</strong></a> project documents</em></span></p>
 
 <p><a id="link19" name="link19"></a></p>
 
@@ -10066,7 +10066,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>The process – which required many, many hours due to the complexity of the files names – lasted from August to December 2010, significantly longer than anticipated.</p>
 
-<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-2/1871FD_11_Data-Scrubbing.zip"><strong>"Data Scrubbing"</strong></a> project documents</em></span><a id="link22" name="link22"></a></p>
+<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_11_Data-Scrubbing.zip"><strong>"Data Scrubbing"</strong></a> project documents</em></span><a id="link22" name="link22"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Creating the Data Archive.</strong> The need for extensive data correction pushed the spectral image processing phase to the spring of 2011. This development, in turn, delayed [qtip: Wisnicki|Adrian S. Wisnicki (Indiana University of Pennsylvania). Director, lead scholar, and principal writer for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] and [qtip:Simpson|Kate Simpson (Edinburgh Napier University). Research assistant for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] from beginning XML transcription until late February 2011. As a result, the team continued to produce significant new primary data (images and transcriptions) well into June 2011 and so prevented final work on the archive [i.e., <a href="/islandora/search?access=view_spectral">spectral image collection</a>] until mid June.</p>
 
@@ -10084,9 +10084,9 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p class="space-1"><strong><u>Bonus</u>:</strong> Study the original first edition of <a href="http://livingstone.library.ucla.edu/livingstone_archive/home.htm" target="_blank">Livingstone Spectral Image Archive</a> (external link)</p>
 
-<p class="space-1"><u><strong>Double-bonus:</strong></u> Download the entire Livingstone Spectral Image Archive (except for archival images and MD5 checksum files) as a <a href="/sites/default/files/spectral-imaging/project-history-2/Livingstone_Spectral_Image_Archive.zip">single ZIP file</a> (588 MB). The archive includes full documentation, all supporting files, and all the website files that constitute the Archive itself as well as the first editions of <em>Livingstone\'s 1871 Field Diary</em> (UCLA Digital Library, 2011-13) and <em>Letter from Bambarre</em> (UCLA Digital Library, 2010-11). The missing archival images and MD5 files are now available in enhanced versions through our <a href="/islandora/search?access=view_spectral">spectral image collection</a>.</p>
+<p class="space-1"><u><strong>Double-bonus:</strong></u> Download the entire Livingstone Spectral Image Archive (except for archival images and MD5 checksum files) as a <a href="/sites/default/files/shared/Livingstone_Spectral_Image_Archive.zip">single ZIP file</a> (588 MB). The archive includes full documentation, all supporting files, and all the website files that constitute the Archive itself as well as the first editions of <em>Livingstone\'s 1871 Field Diary</em> (UCLA Digital Library, 2011-13) and <em>Letter from Bambarre</em> (UCLA Digital Library, 2010-11). The missing archival images and MD5 files are now available in enhanced versions through our <a href="/islandora/search?access=view_spectral">spectral image collection</a>.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-2/1871FD_12_Creating-the-Data-Archive.zip"><strong>Creating the Data Archive</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_12_Creating-the-Data-Archive.zip"><strong>Creating the Data Archive</strong></a> project documents</em></span></p>
 
 <p><a id="link23" name="link23"></a></p>
 
@@ -10125,7 +10125,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>The decision to encode each folio of Livingstone’s diary separately represented one of the Livingstone team’s most important encoding decisions. With some exceptions, each folio of Livingstone’s diary contains two diary pages, one on the left-hand side, one on the right-hand side. Adjacent pages are almost never continuous because Livingstone stacked, then folded the leaves of the diary to make two copy-books (now disassembled). As a result, the team chose to represent the physical artifact (the manuscript as it is) rather than the semantic artifact (what Livingstone "intended") in order to reflect the current state of the diary and to coordinate with the structure of the data archive, where the images for each folio would reside in a separate directory. [Note: the <a href="/islandora/search?access=view_spectral">spectral image collection</a>, which replaces the data archive in the present edition of <em>Livingstone Online</em>, now provides integrated access to XML-based transcriptions of all the folia of the <a href="/islandora/search/&quot;1871 Field Diary&quot; NOT integrated NOT segment?access=all&amp;limit=catalogue">1871 Field Diary</a> in a manner that reflects the features of the diary as <em>both</em> physical and semantic artifact.]</p>
 
-<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-2/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip"><strong>Creating a Publication Template / XML Encoding</strong></a> project documents</em></span><a id="link26" name="link26"></a></p>
+<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip"><strong>Creating a Publication Template / XML Encoding</strong></a> project documents</em></span><a id="link26" name="link26"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Transcription Outcomes.</strong> Livingstone’s words had taken an exceptionally long detour in their travels, but now had almost reached their destination. [qtip: Wisnicki|Adrian S. Wisnicki (Indiana University of Pennsylvania). Director, lead scholar, and principal writer for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] and [qtip:Simpson|Kate Simpson (Edinburgh Napier University). Research assistant for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] completed the transcription and encoding of the diary in early August 2011. They succeeded in transcribing – and so making accessible – 99% of the diary’s original text for the first time since Livingstone wrote the document 140 years ago. Issues such as fading, blotting, bad handwriting, or missing pieces of the manuscript prevented the remaining 1% from being deciphered.</p>
 
@@ -10160,7 +10160,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p class="space-1"><strong><u>Bonus</u>:</strong> Study the features enumerated above in the first edition of <a href="http://livingstone.library.ucla.edu/1871diary/index.htm" target="_blank">Livingstone\'s 1871 Field Diary</a> (external link)</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-2/1871FD_14_The-Electronic-Edition.zip"><strong>The Electronic Edition</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_14_The-Electronic-Edition.zip"><strong>The Electronic Edition</strong></a> project documents</em></span></p>
 
 <p><a id="link28" name="link28"></a></p>
 
@@ -10190,7 +10190,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>During this phase, [qtip:Harrison|Debbie Harrison (Birkbeck, University of London). Contributing editor and outreach director for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] carried out detailed comparative analysis of the 1871, 1872, and 1874 versions of the text. This work would become the basis of both future research and the press campaign (see below), while [qtip:Simpson|Kate Simpson (Edinburgh Napier University). Research assistant for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] heroically assisted Wisnicki in completing numerous tasks related to the diary’s critical apparatus. Wisnicki also carried out further analysis of the three texts to develop the <a href="/spectral-imaging/livingstone-1871">Livingstone in 1871</a> section, which overviews some of the key new information revealed by the 1871 Field Diary. In addition, Simpson consulted with Ulrike Al-Khamis, a specialist in Arab/Islamic Art and Culture at the University of Edinburgh, and Paul Dundas, a Sanskrit specialist also at Edinburgh, to discuss a number of questions related to the Arab traders with whom Livingstone had travelled and to explore the issue of dating in Livingstone’s diary.</p>
 
-<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-2/1871FD_15_Preliminary-Data-Analysis.zip"><strong>Preliminary Data Analysis</strong></a> project documents</em></span><a id="link30" name="link30"></a></p>
+<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_15_Preliminary-Data-Analysis.zip"><strong>Preliminary Data Analysis</strong></a> project documents</em></span><a id="link30" name="link30"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Dissemination, Results Release, and the "UK Tour."</strong> The Livingstone team\'s dissemination strategy focused on both general and academic audiences. To reach academics, team members delivered a series of talks while the project was developing. These included conference presentations, lectures, and a "lightning round" presentation (two minutes, three images) on the project at the 2010 NEH Project Directors Meeting in Washington, D.C., on 28 September 2010. Alongside these presentations, the team also distributed an announcement to academic sites to mark the publication of the revised edition of the <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> in May 2011.</p>
 
@@ -10211,7 +10211,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>The team marked the beta release of project results with a British Academy-funded "UK tour" that included meetings with stakeholders and presentations at the National Library of Scotland on 1 November, the David Livingstone Centre on 3 November, the University of Oxford on 4 November, and Birkbeck, University of London on 5 November 2011. The team gave the presentations as panel lectures in which team members representing scholarship ([qtip:Wisnicki|Adrian S. Wisnicki (Indiana University of Pennsylvania). Director, lead scholar, and principal writer for the multispectral critical edition of Livingstone\'s 1871 Field Diary.]), science ([qtip:Knox|Keith Knox. Imaging scientist for the multispectral critical edition of Livingstone\'s 1871 Field Diary.]), technology and conservation ([qtip:Toth|Michael B. Toth (R.B. Toth Associates). Program manager for the multispectral critical edition of Livingstone\'s 1871 Field Diary.]), outreach ([qtip:Harrison|Debbie Harrison (Birkbeck, University of London). Contributing editor and outreach director for the multispectral critical edition of Livingstone\'s 1871 Field Diary.]), and postgraduate research ([qtip:Simpson|Kate Simpson (Edinburgh Napier University). Research assistant for the multispectral critical edition of Livingstone\'s 1871 Field Diary.]) described their roles on the project. These presentations solidified the project accomplishments for team members, stakeholders, and the public. By the last presentation, the team felt that they had decisively conveyed the significance of being the first people to restore and read Livingstone\'s diary since the nineteenth century.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-2/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip"><strong>Dissemination, Results Release, and the "UK Tour"</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip"><strong>Dissemination, Results Release, and the "UK Tour"</strong></a> project documents</em></span></p>
 
 <p><a id="link31" name="link31"></a></p>
 
@@ -13005,13 +13005,13 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><a href="/islandora/search">Archival Packets</a> (via the Browse by Digital Catalogue page)</p>
 
-<p><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Livingstone-Online-Complete-MODS-records.zip">Complete MODS records</a></p>
+<p><a href="/sites/default/files/shared/Livingstone-Online-Complete-MODS-records.zip">Complete MODS records</a></p>
 
-<p><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Livingstone-Online-Complete-TEI-transcriptions.zip">Complete TEI transcriptions</a></p>
+<p><a href="/sites/default/files/shared/Livingstone-Online-Complete-TEI-transcriptions.zip">Complete TEI transcriptions</a></p>
 
-<p><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Livingstone-Online-Complete-PDF-transcriptions.zip">Complete PDF transcriptions</a></p>
+<p><a href="/sites/default/files/shared/Livingstone-Online-Complete-PDF-transcriptions.zip">Complete PDF transcriptions</a></p>
 
-<p><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Livingstone_Online-Complete-TEI-Transcription-Materials.zip">Complete Transcription Materials</a></p>
+<p><a href="/sites/default/files/shared/Livingstone_Online-Complete-TEI-Transcription-Materials.zip">Complete Transcription Materials</a></p>
 
 <p class="space1"><a href="https://github.com/livingstoneonline/" target="_blank">Github Repo</a> (external link)<a name="losg3"></a></p>
 
@@ -13020,44 +13020,44 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><em>A curated collection of files produced by the </em>Livingstone Online<em> Enrichment and Access Project (LEAP)</em></p>
 
-<p class="space2"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_LEAP_Complete_Collection.zip">Entire LEAP Document Collection</a> (1 GB)<a name="losg3.1"></a></p>
+<p class="space2"><a href="/sites/default/files/shared/Documents_LEAP_Complete_Collection.zip">Entire LEAP Document Collection</a> (1 GB)<a name="losg3.1"></a></p>
 
 <p><strong>1) LEAP Documentation: Area Specific Subsets</strong>&nbsp;&nbsp;&nbsp; <span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></p>
 
 <p><em>Files from the </em>Livingstone Online<em> Enrichment and Access Project (LEAP) organized by area of activity</em></p>
 
 <ul style="padding-bottom: 1.5em;">
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_01_LEAP_NEH_Grant_Application.zip">NEH Grant Application</a> (549 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_02_LEAP_Project_Launch.zip">Project Launch</a> (273 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_03_LEAP_Planning_and_LA_Kickoff.zip">Planning and LA Kickoff</a> (2.5 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_04_LEAP_UK_Kickoff.zip">UK Kickoff</a> (490 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_05_LEAP_Digitization_at_University_of_Glasgow.zip">Digitization at the University of Glasgow</a> (811 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_06a_LEAP_Legacy_Data_Development.zip">Legacy Data Development</a> (13.3 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_06b_LEAP_Legacy_Data_Conversion_Scripts.zip">Legacy Data Conversion Scripts</a> (392 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_06c_LEAP_MODS_Development.zip">MODS Development</a> (14.2 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_07a_LEAP_TEI_Transcription_Conversion.zip">TEI Transcription Conversion</a> (4.1 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_07b_LEAP_TEI_Transcription_Encoding.zip">TEI Transcription Encoding</a> (1.0 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_08_LEAP_Core_Digital_Collection.zip">Documenting the Core Digital Collection</a> (798 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_09a_LEAP_New_Livingstone_Online_Site_Development_at_UNL.zip">The New <em>Livingstone Online</em> - Site Development at UNL</a> (26.7 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_09b_LEAP_New_Livingstone_Online_Site_Mockups.zip">The New <em>Livingstone Online</em> - Site Mockups</a> (364 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_10_LEAP_Critical_Materials_and_Permissions.zip">Critical Materials and Permissions</a> (331 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_11a_LEAP_Dissemination_Scholars_Stakeholders_Social_Media.zip">Dissemination - Scholars, Stakeholders, Social Media</a> (86.2 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_11b_LEAP_Dissemination_Schools_Outreach.zip">Dissemination - Outreach for Schools</a> (2.9 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_12a_LEAP_New_Livingstone_Online_Site_Development_at_UCLA.zip">The New <em>Livingstone Online</em> - Site Development at UCLA</a> (2.0 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_12b_LEAP_New_Livingstone_Online_Site_Development_XSLT.zip">The New <em>Livingstone Online</em> - Site Development: XSLT</a> (381 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_14_LEAP_Beta_Launch_Results.zip">Beta Launch - Results</a> (1.7 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_15_LEAP_Beta_Launch_Press_Release.zip">Beta Launch - Press Release</a> (67.0 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_16_LEAP_Beta_Launch_Presentations_NLS.zip">Beta Launch - Presentations, National Library of Scotland</a> (148 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_17_LEAP_New_UMD_Site_Dev_Notes.zip">University of Maryland - Site Development Notes</a> (225 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_18_LEAP_Google_Docs_UMD_Site_Dev_Files.zip">University of Maryland - Site Development Files (Google Docs)</a> (11.7 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_19_LEAP_UMD_Site_Mockups_Wireframes_Feedback.zip">University of Maryland - Site Mockups and Feedback</a> (86.3 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_20_LEAP_Islandora_Development_Schedules_Banks.zip">Islandora Development Schedules</a> (2.3 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_21_LEAP_Major_Milestone_Emails.zip">Major Milestone Emails (LEAP Years 3 &amp; 4)</a> (259 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_22_LEAP_Site_Closeout_Files.zip">LEAP Site Close Out Files</a> (2.7 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_23_LEAP_Sample_Academic_Presentations.zip">Sample Academic Presentations</a> (196 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_24_LEAP_Final_Manuscripts_Transcription+Encoding.zip">Final Manuscripts - Transcription and Encoding</a> (440 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_12c_LEAP_Archival_Image_Download_Documentation.zip">Archival Image Download Documentation</a> (170 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Documents_00_Livingstone_Online_2004-2010_Project_Documents.zip"><u>Bonus:</u> <em>Livingstone Online</em> 2004-2010 Project Documents</a> (14.2 MB)<a name="losg3.2"></a></li>
+	<li><a href="/sites/default/files/shared/Documents_01_LEAP_NEH_Grant_Application.zip">NEH Grant Application</a> (549 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_02_LEAP_Project_Launch.zip">Project Launch</a> (273 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_03_LEAP_Planning_and_LA_Kickoff.zip">Planning and LA Kickoff</a> (2.5 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_04_LEAP_UK_Kickoff.zip">UK Kickoff</a> (490 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_05_LEAP_Digitization_at_University_of_Glasgow.zip">Digitization at the University of Glasgow</a> (811 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_06a_LEAP_Legacy_Data_Development.zip">Legacy Data Development</a> (13.3 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_06b_LEAP_Legacy_Data_Conversion_Scripts.zip">Legacy Data Conversion Scripts</a> (392 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_06c_LEAP_MODS_Development.zip">MODS Development</a> (14.2 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_07a_LEAP_TEI_Transcription_Conversion.zip">TEI Transcription Conversion</a> (4.1 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_07b_LEAP_TEI_Transcription_Encoding.zip">TEI Transcription Encoding</a> (1.0 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_08_LEAP_Core_Digital_Collection.zip">Documenting the Core Digital Collection</a> (798 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_09a_LEAP_New_Livingstone_Online_Site_Development_at_UNL.zip">The New <em>Livingstone Online</em> - Site Development at UNL</a> (26.7 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_09b_LEAP_New_Livingstone_Online_Site_Mockups.zip">The New <em>Livingstone Online</em> - Site Mockups</a> (364 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_10_LEAP_Critical_Materials_and_Permissions.zip">Critical Materials and Permissions</a> (331 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_11a_LEAP_Dissemination_Scholars_Stakeholders_Social_Media.zip">Dissemination - Scholars, Stakeholders, Social Media</a> (86.2 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_11b_LEAP_Dissemination_Schools_Outreach.zip">Dissemination - Outreach for Schools</a> (2.9 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_12a_LEAP_New_Livingstone_Online_Site_Development_at_UCLA.zip">The New <em>Livingstone Online</em> - Site Development at UCLA</a> (2.0 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_12b_LEAP_New_Livingstone_Online_Site_Development_XSLT.zip">The New <em>Livingstone Online</em> - Site Development: XSLT</a> (381 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_14_LEAP_Beta_Launch_Results.zip">Beta Launch - Results</a> (1.7 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_15_LEAP_Beta_Launch_Press_Release.zip">Beta Launch - Press Release</a> (67.0 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_16_LEAP_Beta_Launch_Presentations_NLS.zip">Beta Launch - Presentations, National Library of Scotland</a> (148 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_17_LEAP_New_UMD_Site_Dev_Notes.zip">University of Maryland - Site Development Notes</a> (225 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_18_LEAP_Google_Docs_UMD_Site_Dev_Files.zip">University of Maryland - Site Development Files (Google Docs)</a> (11.7 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_19_LEAP_UMD_Site_Mockups_Wireframes_Feedback.zip">University of Maryland - Site Mockups and Feedback</a> (86.3 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_20_LEAP_Islandora_Development_Schedules_Banks.zip">Islandora Development Schedules</a> (2.3 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_21_LEAP_Major_Milestone_Emails.zip">Major Milestone Emails (LEAP Years 3 &amp; 4)</a> (259 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_22_LEAP_Site_Closeout_Files.zip">LEAP Site Close Out Files</a> (2.7 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_23_LEAP_Sample_Academic_Presentations.zip">Sample Academic Presentations</a> (196 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_24_LEAP_Final_Manuscripts_Transcription+Encoding.zip">Final Manuscripts - Transcription and Encoding</a> (440 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_12c_LEAP_Archival_Image_Download_Documentation.zip">Archival Image Download Documentation</a> (170 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_00_Livingstone_Online_2004-2010_Project_Documents.zip"><u>Bonus:</u> <em>Livingstone Online</em> 2004-2010 Project Documents</a> (14.2 MB)<a name="losg3.2"></a></li>
 </ul>
 
 <p><strong>2) LEAP Documentation: Highlights</strong>&nbsp;&nbsp;&nbsp; <span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></p>
@@ -13065,19 +13065,19 @@ The Livingstone Spectral Imaging Project<br />
 <p><em>A selection of key project files from the </em>Livingstone Online<em> Enrichment and Access Project (LEAP)</em></p>
 
 <ul>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_Livingstone_Online_Documents_Complete_Collection.zip">Complete Documentation Highlights</a> (36.6 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_A_LEAP_NEH_Grant_Narrative_Revised.zip">Revised NEH Grant Narrative</a> (237 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_B_LEAP_Documents_for_Digitization.zip">Items for Digitization</a> (221 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_C_LEAP_Program_Plans_2013-10_to_2015-03.zip">LEAP Project Plans, October 2013 to March 2015</a> (2.1 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_D_LEAP_Legacy_Data_Development.zip">Legacy Data Documentation</a> (819 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_E_LEAP_MODS_Files.zip">MODS Files</a> (12.4 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_F_LEAP_TEI_Conversion_and_Encoding_Materials.zip">TEI Conversion and Encoding</a> (3.1 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_G_LEAP_Website_Mockups_and_Documentation.zip">Website Mockups and Documentation</a> (13.1 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_H_LEAP_Report_on_Fall_2014_UK_Collaborator_Meetings.zip">Report on Fall 2014 UK Collaborator Meetings</a> (151 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_I_LEAP_Outreach_Final_Report.zip">Outreach Program Final Report</a> (1.0 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_J_Livingstone_Online_Archival_Packet_README.zip"><em>Livingstone Online</em> Archival Packet README</a> (170 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_K_Drupal_Islandora_Dev_UMD.zip">Drupal and Islandora Development at University of Maryland</a> (2.4 MB)</li>
-	<li class="space1"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Highlights_L_Final_Manuscripts_Workflow.zip">Workflow for Encoding Final Manuscripts in TEI</a> (175 KB)<a name="losg4"></a></li>
+	<li><a href="/sites/default/files/shared/Highlights_Livingstone_Online_Documents_Complete_Collection.zip">Complete Documentation Highlights</a> (36.6 MB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_A_LEAP_NEH_Grant_Narrative_Revised.zip">Revised NEH Grant Narrative</a> (237 KB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_B_LEAP_Documents_for_Digitization.zip">Items for Digitization</a> (221 KB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_C_LEAP_Program_Plans_2013-10_to_2015-03.zip">LEAP Project Plans, October 2013 to March 2015</a> (2.1 MB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_D_LEAP_Legacy_Data_Development.zip">Legacy Data Documentation</a> (819 KB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_E_LEAP_MODS_Files.zip">MODS Files</a> (12.4 MB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_F_LEAP_TEI_Conversion_and_Encoding_Materials.zip">TEI Conversion and Encoding</a> (3.1 MB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_G_LEAP_Website_Mockups_and_Documentation.zip">Website Mockups and Documentation</a> (13.1 MB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_H_LEAP_Report_on_Fall_2014_UK_Collaborator_Meetings.zip">Report on Fall 2014 UK Collaborator Meetings</a> (151 KB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_I_LEAP_Outreach_Final_Report.zip">Outreach Program Final Report</a> (1.0 MB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_J_Livingstone_Online_Archival_Packet_README.zip"><em>Livingstone Online</em> Archival Packet README</a> (170 KB)</li>
+	<li><a href="/sites/default/files/shared/Highlights_K_Drupal_Islandora_Dev_UMD.zip">Drupal and Islandora Development at University of Maryland</a> (2.4 MB)</li>
+	<li class="space1"><a href="/sites/default/files/shared/Highlights_L_Final_Manuscripts_Workflow.zip">Workflow for Encoding Final Manuscripts in TEI</a> (175 KB)<a name="losg4"></a></li>
 </ul>
 
 <hr />
@@ -13090,12 +13090,12 @@ The Livingstone Spectral Imaging Project<br />
 <p><strong>i) Miscellaneous Files for Download&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></p>
 
 <ul>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Last-Journals-of-David-Livingstone-vol-II.zip">Livingstone\'s <em>Last Journals</em> (1874), volume II</a> (25.1 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Last-Journals-Page-Proofs-1870-FD-Segment.zip">Livingstone\'s <em>Last Journals</em> (1874), volume II, corrected proofs</a> (21 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1870-Diary-Layout.zip">Structure of the 1870 Field Diary &amp; 1870-71 Manuscripts</a> (66 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1870-Field-Diary-Extracted-Dates.zip">Dates for the 1870 Field Diary</a> (47 KB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Unmarked-Undertexts-for-1870-Field-Diary.zip">Livingstone\'s Undertexts</a> (50.7 MB)</li>
-	<li><span class="space2"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1870-Marked-Passages-from-Stanley.zip">Annotations of <em>The Bible: Its Form and Substance</em></a> (72 KB)<a id="losg4.1.2" name="losg4.1.2"></a></span></li>
+	<li><a href="/sites/default/files/shared/Last-Journals-of-David-Livingstone-vol-II.zip">Livingstone\'s <em>Last Journals</em> (1874), volume II</a> (25.1 MB)</li>
+	<li><a href="/sites/default/files/shared/Last-Journals-Page-Proofs-1870-FD-Segment.zip">Livingstone\'s <em>Last Journals</em> (1874), volume II, corrected proofs</a> (21 MB)</li>
+	<li><a href="/sites/default/files/shared/1870-Diary-Layout.zip">Structure of the 1870 Field Diary &amp; 1870-71 Manuscripts</a> (66 KB)</li>
+	<li><a href="/sites/default/files/shared/1870-Field-Diary-Extracted-Dates.zip">Dates for the 1870 Field Diary</a> (47 KB)</li>
+	<li><a href="/sites/default/files/shared/Unmarked-Undertexts-for-1870-Field-Diary.zip">Livingstone\'s Undertexts</a> (50.7 MB)</li>
+	<li><span class="space2"><a href="/sites/default/files/shared/1870-Marked-Passages-from-Stanley.zip">Annotations of <em>The Bible: Its Form and Substance</em></a> (72 KB)<a id="losg4.1.2" name="losg4.1.2"></a></span></li>
 </ul>
 
 <p class="space-2">&nbsp;</p>
@@ -13108,33 +13108,33 @@ The Livingstone Spectral Imaging Project<br />
 	<li><em>Presentations</em>
 
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><em>Flipbook:</em> <a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1870-Field-Diary-flipbook-PPTX.zip">PowerPoint</a> (141.2 MB) or <a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1870-Field-Diary-flipbook-PDF.zip">PDF</a> (141.2 MB)</li>
-		<li><em>Overlaid:</em> <a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1870-Field-Diary-overlaid-PPTX.zip">PowerPoint</a> (110.5 MB) or <a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1870-Field-Diary-overlaid-PDF.zip">PDF</a> (110.6 MB)</li>
-		<li><u>Bonus:</u> <a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Flipbook-and-Overlaid-Complete.zip">Complete flipbook and overlaid PowerPoint and PDF presentations</a> (503.5 MB)</li>
+		<li><em>Flipbook:</em> <a href="/sites/default/files/shared/1870-Field-Diary-flipbook-PDF.zip">PDF</a> (141.2 MB)</li>
+		<li><em>Overlaid:</em> <a href="/sites/default/files/shared/1870-Field-Diary-overlaid-PDF.zip">PDF</a> (110.6 MB)</li>
+		<li><u>Bonus:</u> <a href="/sites/default/files/shared/Flipbook-and-Overlaid-Complete.zip">Complete flipbook and overlaid PowerPoint and PDF presentations</a> (503.5 MB)</li>
 	</ul>
 	</li>
 	<li><em>Animated Sequences</em>
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><em>Flipbook:</em> <a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000205_0019-0036_flipbook.zip">all pages of Livingstone 1870i:XXXIX-LV [v.2]</a> (158.4 MB)</li>
-		<li><em>Various:</em> <a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000205_0019-0036_recto.zip">page rectos of Livingstone 1870i:XXXIX-LV [v.2]</a> (73.6 MB) or <a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000205_0019-0036_verso.zip">page versos of Livingstone 1870i:XXXIX-LV [v.2]</a> (75.9 MB)</li>
-		<li><u>Bonus:</u> <a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Animated-Sequences-Complete.zip">Complete flipbook and various animated sequences</a> (308 MB)</li>
+		<li><em>Flipbook:</em> <a href="/sites/default/files/shared/liv_000205_0019-0036_flipbook.zip">all pages of Livingstone 1870i:XXXIX-LV [v.2]</a> (158.4 MB)</li>
+		<li><em>Various:</em> <a href="/sites/default/files/shared/liv_000205_0019-0036_verso.zip">page versos of Livingstone 1870i:XXXIX-LV [v.2]</a> (75.9 MB)</li>
+		<li><u>Bonus:</u> <a href="/sites/default/files/shared/Animated-Sequences-Complete.zip">Complete flipbook and various animated sequences</a> (308 MB)</li>
 	</ul>
 	</li>
 </ul>
 
-<p><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Animated-Spectral-Images-(ASIs)-Complete.zip"><strong>Complete Prototype ASIs</strong></a> (685.9 MB)</p>
+<p><a href="/sites/default/files/shared/Animated-Spectral-Images-(ASIs)-Complete.zip"><strong>Complete Prototype ASIs</strong></a> (685.9 MB)</p>
 
 <p><strong>Sample Prototype ASIs</strong></p>
 
 <ol>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000209_0003_inkshift.zip">Changes in the visual character of ink</a> (59.1 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000205_0030_reinking.zip">Reinking with an alternate ink</a> (68.1 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000209_0001_folds.zip">Folds</a> (41.6 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000205_0015_impressions.zip">Impressions</a> (41.8 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000205_0036_holes.zip">Holes</a> (33.1 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000205_0010_edge-discolor.zip">Page discolor</a> (46.5 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000205_0035_big-stain.zip">The big stain</a> (58.8 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000202_0001_red-stains.zip">Red stains</a> (40.2 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000209_0003_inkshift.zip">Changes in the visual character of ink</a> (59.1 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0030_reinking.zip">Reinking with an alternate ink</a> (68.1 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000209_0001_folds.zip">Folds</a> (41.6 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0015_impressions.zip">Impressions</a> (41.8 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0036_holes.zip">Holes</a> (33.1 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0010_edge-discolor.zip">Page discolor</a> (46.5 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0035_big-stain.zip">The big stain</a> (58.8 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000202_0001_red-stains.zip">Red stains</a> (40.2 MB)</li>
 </ol>
 
 <p><strong>Page-specific Prototype ASIs</strong></p>
@@ -13143,16 +13143,16 @@ The Livingstone Spectral Imaging Project<br />
 	<li><em>Livingstone 1870h:XVII</em>
 
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000204_0001_misc-v1.zip">Version 1</a> (29 MB)</li>
-		<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000204_0001_misc-v2.zip">Version 2</a> (33.6 MB)</li>
-		<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000204_0001_misc-v3.zip">Version 3</a> (51.3 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000204_0001_misc-v1.zip">Version 1</a> (29 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000204_0001_misc-v2.zip">Version 2</a> (33.6 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000204_0001_misc-v3.zip">Version 3</a> (51.3 MB)</li>
 	</ul>
 	</li>
 	<li><em>Livingstone 1871a:LXXVI [v.1]</em>
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000208_0001_layers.zip">Layers of text</a> (65.1 MB)</li>
-		<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000208_0001_reverse-layers.zip">Layers of text (reverse order)</a> (42.2 MB)</li>
-		<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000208_0001_stains.zip">Stains</a> (75.5 MB)<a id="losg4.1.3" name="losg4.1.3"></a></li>
+		<li><a href="/sites/default/files/shared/liv_000208_0001_layers.zip">Layers of text</a> (65.1 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000208_0001_reverse-layers.zip">Layers of text (reverse order)</a> (42.2 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000208_0001_stains.zip">Stains</a> (75.5 MB)<a id="losg4.1.3" name="losg4.1.3"></a></li>
 	</ul>
 	</li>
 </ul>
@@ -13161,23 +13161,23 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><strong>iii) Project Documentation&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></p>
 
-<p><strong><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Spectral-Imaging-Project-Documentation-Phase-2.zip">Complete Project Documentation</a></strong> (1.21 GB)</p>
+<p><strong><a href="/sites/default/files/shared/Spectral-Imaging-Project-Documentation-Phase-2.zip">Complete Project Documentation</a></strong> (1.21 GB)</p>
 
 <p><strong>Area-specific Subsets of Project Documentation</strong></p>
 
 <ol style="margin-bottom: 26px;">
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/01-Grant-Application.zip">NEH Grant Application</a> (1.3 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/02-Planning-Notes-and-Docs.zip">Planning notes and documents</a> (128 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/03-Processing-Notes-and-Feedback-Easton+Team.zip">Spectral image processing notes (PCA and ICA)</a> (988 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/04-Processing-Notes-and-Feedback-Knox+Team.zip">Spectral image processing notes (pseudocolor and animation)</a> (206.7 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/05-Manuscript-and-Image-Notes-Ward-Wisnicki.zip">Manuscript and image notes</a> (25.9 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/06-Meeting-and-Other-Notes.zip">Meeting and other notes</a> (529 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/07-Critical-Essay-Notes.zip">Critical essay and supporting materials notes</a> (691 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/08-Animated-Spectral-Image-(ASI)-Testing.zip">Animated Spectral Image (ASI) testing</a> (538.6 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/09-Image-Integration-and-Metadata-Addition.zip">Image integration and metadata-addition files</a> (5.4 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/10-Dissemination.zip">Dissemination</a> (331.2 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/11-Spectral-Image-Packet-Support-Files.zip">Spectral image archival packet supporting files</a> (3 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/12-1870-FD-Beta-Launch-UK-Tour.zip">Beta launch of critical edition</a> (93.8 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/01-Grant-Application.zip">NEH Grant Application</a> (1.3 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/02-Planning-Notes-and-Docs.zip">Planning notes and documents</a> (128 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/03-Processing-Notes-and-Feedback-Easton+Team.zip">Spectral image processing notes (PCA and ICA)</a> (988 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/04-Processing-Notes-and-Feedback-Knox+Team.zip">Spectral image processing notes (pseudocolor and animation)</a> (206.7 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/05-Manuscript-and-Image-Notes-Ward-Wisnicki.zip">Manuscript and image notes</a> (25.9 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/06-Meeting-and-Other-Notes.zip">Meeting and other notes</a> (529 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/07-Critical-Essay-Notes.zip">Critical essay and supporting materials notes</a> (691 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/08-Animated-Spectral-Image-(ASI)-Testing.zip">Animated Spectral Image (ASI) testing</a> (538.6 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/09-Image-Integration-and-Metadata-Addition.zip">Image integration and metadata-addition files</a> (5.4 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/10-Dissemination.zip">Dissemination</a> (331.2 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/11-Spectral-Image-Packet-Support-Files.zip">Spectral image archival packet supporting files</a> (3 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/12-1870-FD-Beta-Launch-UK-Tour.zip">Beta launch of critical edition</a> (93.8 MB)</li>
 </ol>
 
 <p><a id="losg4.2" name="losg4.2"></a></p>
@@ -13189,41 +13189,41 @@ The Livingstone Spectral Imaging Project<br />
 <p><strong>i) Miscellaneous Files for Download&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></p>
 
 <ul>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_The-Standard-Reconstructed.zip"><em>The Standard</em> Reconstructed</a> (30 MB)</li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">Ink Spectra PowerPoint Files</a> (19.5 MB)<a id="losg4.2.2" name="losg4.2.2"></a></li>
+	<li><a href="/sites/default/files/shared/1871FD_The-Standard-Reconstructed.zip"><em>The Standard</em> Reconstructed</a> (30 MB)</li>
+	<li><a href="/sites/default/files/shared/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">Ink Spectra PowerPoint Files</a> (19.5 MB)<a id="losg4.2.2" name="losg4.2.2"></a></li>
 </ul>
 
 <p class="space-2">&nbsp;</p>
 
 <p><strong>ii) Livingstone Spectral Image Archive Files&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></p>
 
-<p>Entire <a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Livingstone_Spectral_Image_Archive.zip">Livingstone Spectral Image Archive</a> (588 MB) except for archival images and MD5 checksum files<a id="losg4.2.3" name="losg4.2.3"></a></p>
+<p>Entire <a href="/sites/default/files/shared/Livingstone_Spectral_Image_Archive.zip">Livingstone Spectral Image Archive</a> (588 MB) except for archival images and MD5 checksum files<a id="losg4.2.3" name="losg4.2.3"></a></p>
 
 <p class="space-2">&nbsp;</p>
 
 <p><strong>iii) Project Documentation&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></p>
 
-<p><strong><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD-Documentation-Complete.zip">Complete Project Documentation</a></strong> (346 MB)</p>
+<p><strong><a href="/sites/default/files/shared/1871FD-Documentation-Complete.zip">Complete Project Documentation</a></strong> (346 MB)</p>
 
 <p><strong>Area-specific Subsets of Project Documentation</strong></p>
 
 <ol style="margin-bottom: 12px;">
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_01_Locating-the-Manuscript.zip">Locating the Manuscript</a> (2.7 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_02_Project-Funding.zip">Project Funding</a> (131 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_03_Conservation.zip">Conservation</a> (24.9 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_04_Project-Planning.zip">Project Planning</a> (521 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_05_Imaging-Set-Up.zip">Imaging Set-Up</a> (640 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_06_Imaging-Schedule-and-Objectives.zip">Imaging Schedule and Objectives</a> (2.4 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_07_Spectral-Image-Processing.zip">Spectral Image Processing</a> (289 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_08_Principal-Component-Analysis-(PCA).zip">Principal Component Analysis (PCA)</a> (154 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip">Spectral Ratio and Pseudocolor Rendering</a> (42 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_10_Processing-Results.zip">Processing Results</a> (2 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_11_Data-Scrubbing.zip">"Data Scrubbing"</a> (79.6 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_12_Creating-the-Data-Archive.zip">Creating the Data Archive</a> (238 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip">Creating a Publication Template / XML Encoding</a> (181 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_14_The-Electronic-Edition.zip">The Electronic Edition</a> (771 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_15_Preliminary-Data-Analysis.zip">Preliminary Data Analysis</a> (69.5 KB)<a name="losg5"></a></li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip">Dissemination, Results Release, and the "UK Tour"</a> (35.5 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_01_Locating-the-Manuscript.zip">Locating the Manuscript</a> (2.7 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_02_Project-Funding.zip">Project Funding</a> (131 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_03_Conservation.zip">Conservation</a> (24.9 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_04_Project-Planning.zip">Project Planning</a> (521 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_05_Imaging-Set-Up.zip">Imaging Set-Up</a> (640 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_06_Imaging-Schedule-and-Objectives.zip">Imaging Schedule and Objectives</a> (2.4 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_07_Spectral-Image-Processing.zip">Spectral Image Processing</a> (289 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_08_Principal-Component-Analysis-(PCA).zip">Principal Component Analysis (PCA)</a> (154 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip">Spectral Ratio and Pseudocolor Rendering</a> (42 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_10_Processing-Results.zip">Processing Results</a> (2 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_11_Data-Scrubbing.zip">"Data Scrubbing"</a> (79.6 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_12_Creating-the-Data-Archive.zip">Creating the Data Archive</a> (238 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip">Creating a Publication Template / XML Encoding</a> (181 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_14_The-Electronic-Edition.zip">The Electronic Edition</a> (771 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_15_Preliminary-Data-Analysis.zip">Preliminary Data Analysis</a> (69.5 KB)<a name="losg5"></a></li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip">Dissemination, Results Release, and the "UK Tour"</a> (35.5 MB)</li>
 </ol>
 
 <hr />
@@ -13232,19 +13232,19 @@ The Livingstone Spectral Imaging Project<br />
 <p class="space-1"><em>Core Texts</em></p>
 
 <ul>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000019_reading_copy.zip">Unyanyembe Journal</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000001_reading_copy.zip">Field Diary I</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000002_reading_copy.zip">Field Diary II</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000003_reading_copy.zip">Field Diary III</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000004_reading_copy.zip">Field Diary IV</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000005_reading_copy.zip">Field Diary V</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000006_reading_copy.zip">Field Diary VI</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000007_reading_copy.zip">Field Diary VII</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000010_reading_copy.zip">Field Diary X</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000014_reading_copy.zip">Field Diary XIV</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000015_reading_copy.zip">Field Diary XV</a></span></li>
-	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000016_reading_copy.zip">Field Diary XVI</a></span></li>
-	<li><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000017_reading_copy.zip">Field Diary XVII</a></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000019_reading_copy.zip">Unyanyembe Journal</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000001_reading_copy.zip">Field Diary I</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000002_reading_copy.zip">Field Diary II</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000003_reading_copy.zip">Field Diary III</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000004_reading_copy.zip">Field Diary IV</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000005_reading_copy.zip">Field Diary V</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000006_reading_copy.zip">Field Diary VI</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000007_reading_copy.zip">Field Diary VII</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000010_reading_copy.zip">Field Diary X</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000014_reading_copy.zip">Field Diary XIV</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000015_reading_copy.zip">Field Diary XV</a></span></li>
+	<li><span class="space2"><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000016_reading_copy.zip">Field Diary XVI</a></span></li>
+	<li><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000017_reading_copy.zip">Field Diary XVII</a></li>
 </ul>
 
 <p class="space-2">&nbsp;</p>
@@ -13252,10 +13252,10 @@ The Livingstone Spectral Imaging Project<br />
 <p class="space-1"><em>Bonus Texts</em></p>
 
 <ul>
-	<li><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000066_reading_copy.zip">Fragment of Field Diary XII</a></li>
-	<li><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000050_reading_copy.zip">Second Unyanyembe Journal</a></li>
-	<li><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000049_reading_copy.zip">Calculations and Geographical and Cultural Notes</a></li>
-	<li><a href="http://livingstoneonline.org/sites/default/files/about-this-site/livingstone-online-site-guide/liv_000073_reading_copy.zip">Notes and Calculations for Field Diary XVII</a></li>
+	<li><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000066_reading_copy.zip">Fragment of Field Diary XII</a></li>
+	<li><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000050_reading_copy.zip">Second Unyanyembe Journal</a></li>
+	<li><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000049_reading_copy.zip">Calculations and Geographical and Cultural Notes</a></li>
+	<li><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000073_reading_copy.zip">Notes and Calculations for Field Diary XVII</a></li>
 </ul>
 
 <p><a name="losg6"></a></p>
@@ -13265,28 +13265,28 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><em>Worksheets designed to bring Livingstone and the </em>Livingstone Online<em> project into the classroom</em></p>
 
-<p><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_Complete_Livingstone_Online_Worksheets.zip">Complete Outreach Worksheets</a></p>
+<p><a href="/sites/default/files/shared/Outreach_Complete_Livingstone_Online_Worksheets.zip">Complete Outreach Worksheets</a></p>
 
-<p><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_Bonus_Livingstone_Online_Program_Summary.pdf" target="_blank">Outreach Program Summary</a></p>
+<p><a href="/sites/default/files/shared/Outreach_Bonus_Livingstone_Online_Program_Summary.pdf" target="_blank">Outreach Program Summary</a></p>
 
-<p class="space2"><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_Bonus_Livingstone_Online_Who_was_David_Livingstone_Information_Sheet.pdf" target="_blank">Who was David Livingstone? Information Sheet</a><a name="losg6.1"></a></p>
+<p class="space2"><a href="/sites/default/files/shared/Outreach_Bonus_Livingstone_Online_Who_was_David_Livingstone_Information_Sheet.pdf" target="_blank">Who was David Livingstone? Information Sheet</a><a name="losg6.1"></a></p>
 
 <p><strong>1) Outreach Materials: Individual Worksheets</strong>&nbsp;&nbsp;&nbsp; <span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></p>
 
 <p><em>The individual worksheets produced by </em>Livingstone Online\'<em>s outreach program</em></p>
 
 <ul>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_01_Livingstone_Online_Mill_Boy.pdf" target="_blank">David Livingstone: Mill Boy</a></li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_02_Livingstone_Online_Doctor.pdf" target="_blank">David Livingstone: Doctor</a></li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_03_Livingstone_Online_Crossing_Cultures.pdf" target="_blank">David Livingstone: Crossing Cultures</a></li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_04_Livingstone_Online_African_Animals.pdf" target="_blank">David Livingstone: African Animals</a></li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_05_Livingstone_Online_Global_Citizen.pdf" target="_blank">David Livingstone: Global Citizen</a></li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_06_Livingstone_Online_Reading_His_Words.pdf" target="_blank">David Livingstone: Reading His Words</a></li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_07_Livingstone_Online_Missionary.pdf" target="_blank">David Livingstone: Missionary</a></li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_08_Livingstone_Online_Geographer.pdf" target="_blank">David Livingstone: Geographer</a></li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_09_Livingstone_Online_Victorian.pdf" target="_blank">David Livingstone: Victorian</a></li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_10_Livingstone_Online_America.pdf" target="_blank">David Livingstone and America</a></li>
-	<li><a href="/sites/default/files/about-this-site/livingstone-online-site-guide/Outreach_11_Livingstone_Online_Abolitionist.pdf" target="_blank">David Livingstone: Abolitionist</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_01_Livingstone_Online_Mill_Boy.pdf" target="_blank">David Livingstone: Mill Boy</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_02_Livingstone_Online_Doctor.pdf" target="_blank">David Livingstone: Doctor</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_03_Livingstone_Online_Crossing_Cultures.pdf" target="_blank">David Livingstone: Crossing Cultures</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_04_Livingstone_Online_African_Animals.pdf" target="_blank">David Livingstone: African Animals</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_05_Livingstone_Online_Global_Citizen.pdf" target="_blank">David Livingstone: Global Citizen</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_06_Livingstone_Online_Reading_His_Words.pdf" target="_blank">David Livingstone: Reading His Words</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_07_Livingstone_Online_Missionary.pdf" target="_blank">David Livingstone: Missionary</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_08_Livingstone_Online_Geographer.pdf" target="_blank">David Livingstone: Geographer</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_09_Livingstone_Online_Victorian.pdf" target="_blank">David Livingstone: Victorian</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_10_Livingstone_Online_America.pdf" target="_blank">David Livingstone and America</a></li>
+	<li><a href="/sites/default/files/shared/Outreach_11_Livingstone_Online_Abolitionist.pdf" target="_blank">David Livingstone: Abolitionist</a></li>
 </ul>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
@@ -13944,7 +13944,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000007?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-vii-overview/liv_000007_reading_copy.zip">basic reading copy</a> of Field Diary VII.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000007?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000007_reading_copy.zip">basic reading copy</a> of Field Diary VII.]</p>
 
 <p>Field Diary VII chronicles Livingstone’s journey westward through the Chikokwe Mountains and across the Movoche River (a tributary of the Loangwa River). The diary also represents the last of the field diaries from 1866; no other year of Livingsotne’s final travels (1866-73) will receive this much coverage. All the while, Livingstone is dogged by extreme hunger. What begins as an attempt to hunt a rhinoceros for Christmas dinner in face of the “exorbitant prices” of Kavimba’s village turns into a full-scale famine by the following month (Livingstone 1866f:[5]).</p>
 
@@ -14336,17 +14336,17 @@ The Livingstone Spectral Imaging Project<br />
 
 <h4><strong><span style="font-family:crimson text;">Files for Download</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/Last-Journals-of-David-Livingstone-vol-II.zip"><strong>Livingstone\'s <em>Last Journals</em> (1874), volume II</strong></a> (25.1 MB) - a PDF copy of the original edition of Livingstone\'s Last Journals (1874), volume II. Pages 48-109 of this volume correspond to the 1870 Field Diary.</p>
+<p><a href="/sites/default/files/shared/a> (25.1 MB) - a PDF copy of the original edition of Livingstone\'s Last Journals (1874), volume II. Pages 48-109 of this volume correspond to the 1870 Field Diary.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/Last-Journals-Page-Proofs-1870-FD-Segment.zip"><strong>Livingstone\'s <em>Last Journals</em> (1874), volume II, corrected proofs</strong></a> (21 MB) - a PDF copy of a photocopy of the corrected proofs of Livingstone\'s Last Journals (1874), volume II. This segment of the proofs corresponds to the 1870 Field Diary. The photocopy has been marked with Roman numerals by the present editorial team to correlate the proofs with Livingstone\'s original manuscript pages.</p>
+<p><a href="/sites/default/files/shared/a> (21 MB) - a PDF copy of a photocopy of the corrected proofs of Livingstone\'s Last Journals (1874), volume II. This segment of the proofs corresponds to the 1870 Field Diary. The photocopy has been marked with Roman numerals by the present editorial team to correlate the proofs with Livingstone\'s original manuscript pages.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Diary-Layout.zip"><strong>Structure of the 1870 Field Diary &amp; 1870-71 Manuscripts</strong></a> (66 KB) - a spreadsheet that sets out the relationship of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts to their underlying source texts in detail.</p>
+<p><a href="/sites/default/files/shared/1870-Diary-Layout.zip"><strong>Structure of the 1870 Field Diary &amp; 1870-71 Manuscripts</strong></a> (66 KB) - a spreadsheet that sets out the relationship of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts to their underlying source texts in detail.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Field-Diary-Extracted-Dates.zip"><strong>Dates for the 1870 Field Diary</strong></a> (47 KB) - a document that presents, sequentially, all dates for dated diary entries as extracted from our transcription of the 1870 Field Diary.</p>
+<p><a href="/sites/default/files/shared/1870-Field-Diary-Extracted-Dates.zip"><strong>Dates for the 1870 Field Diary</strong></a> (47 KB) - a document that presents, sequentially, all dates for dated diary entries as extracted from our transcription of the 1870 Field Diary.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/Unmarked-Undertexts-for-1870-Field-Diary.zip"><strong>Livingstone\'s Undertexts</strong></a> (50.7 MB) - unmarked PDF copies of three sources texts used by Livingstone in creating the 1870 Field Diary.</p>
+<p><a href="/sites/default/files/shared/a> (50.7 MB) - unmarked PDF copies of three sources texts used by Livingstone in creating the 1870 Field Diary.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Marked-Passages-from-Stanley.zip"><strong>Annotations of <em>The Bible: Its Form and Substance</em></strong></a> (72 KB) - transcriptions of all the passages annotated by Livingstone from Arthur Penrhyn Stanley’s <em>The Bible: Its Form and Substance</em> (1863).</p>
+<p><a href="/sites/default/files/shared/1870-Marked-Passages-from-Stanley.zip"><strong>Annotations of <em>The Bible: Its Form and Substance</em></strong></a> (72 KB) - transcriptions of all the passages annotated by Livingstone from Arthur Penrhyn Stanley’s <em>The Bible: Its Form and Substance</em> (1863).</p>
 
 <p><a id="link7" name="link7"></a></p>
 
@@ -14360,33 +14360,33 @@ The Livingstone Spectral Imaging Project<br />
 	<li><em>Presentations</em>
 
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><em>Flipbook:</em> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Field-Diary-flipbook-PPTX.zip">PowerPoint</a> (141.2 MB) or <a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Field-Diary-flipbook-PDF.zip">PDF</a> (141.2 MB)</li>
-		<li><em>Overlaid:</em> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Field-Diary-overlaid-PPTX.zip">PowerPoint</a> (110.5 MB) or <a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Field-Diary-overlaid-PDF.zip">PDF</a> (110.6 MB)</li>
-		<li><u>Bonus:</u> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/Flipbook-and-Overlaid-Complete.zip">Complete flipbook and overlaid PowerPoint and PDF presentations</a> (503.5 MB)</li>
+		<li><em>Flipbook:</em> <a href="/sites/default/files/shared/1870-Field-Diary-flipbook-PDF.zip">PDF</a> (141.2 MB)</li>
+		<li><em>Overlaid:</em> <a href="/sites/default/files/shared/1870-Field-Diary-overlaid-PDF.zip">PDF</a> (110.6 MB)</li>
+		<li><u>Bonus:</u> <a href="/sites/default/files/shared/Flipbook-and-Overlaid-Complete.zip">Complete flipbook and overlaid PowerPoint and PDF presentations</a> (503.5 MB)</li>
 	</ul>
 	</li>
 	<li><em>Animated Sequences</em>
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><em>Flipbook:</em> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0019-0036_flipbook.zip">all pages of Livingstone 1870i:XXXIX-LV [v.2]</a> (158.4 MB)</li>
-		<li><em>Various:</em> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0019-0036_recto.zip">page rectos of Livingstone 1870i:XXXIX-LV [v.2]</a> (73.6 MB) or <a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0019-0036_verso.zip">page versos of Livingstone 1870i:XXXIX-LV [v.2]</a> (75.9 MB)</li>
-		<li><u>Bonus:</u> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/Animated-Sequences-Complete.zip">Complete flipbook and various animated sequences</a> (308 MB)</li>
+		<li><em>Flipbook:</em> <a href="/sites/default/files/shared/liv_000205_0019-0036_flipbook.zip">all pages of Livingstone 1870i:XXXIX-LV [v.2]</a> (158.4 MB)</li>
+		<li><em>Various:</em> <a href="/sites/default/files/shared/liv_000205_0019-0036_verso.zip">page versos of Livingstone 1870i:XXXIX-LV [v.2]</a> (75.9 MB)</li>
+		<li><u>Bonus:</u> <a href="/sites/default/files/shared/Animated-Sequences-Complete.zip">Complete flipbook and various animated sequences</a> (308 MB)</li>
 	</ul>
 	</li>
 </ul>
 
-<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/Animated-Spectral-Images-(ASIs)-Complete.zip"><strong>Complete Prototype ASIs</strong></a> (685.9 MB) - all the prototype ASIs of Livingstone\'s 1870 Field Diary developed for the present edition by Ashanka Kumari in a single ZIP file.</p>
+<p><a href="/sites/default/files/shared/a> (685.9 MB) - all the prototype ASIs of Livingstone\'s 1870 Field Diary developed for the present edition by Ashanka Kumari in a single ZIP file.</p>
 
 <p><strong>Sample Prototype ASIs</strong> - prototype ASIs that enhance one or more manuscript features of interest.</p>
 
 <ol>
-	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000209_0003_inkshift.zip">Changes in the visual character of ink</a> (59.1 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0030_reinking.zip">Reinking with an alternate ink</a> (68.1 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000209_0001_folds.zip">Folds</a> (41.6 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0015_impressions.zip">Impressions</a> (41.8 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0036_holes.zip">Holes</a> (33.1 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0010_edge-discolor.zip">Page discolor</a> (46.5 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0035_big-stain.zip">The big stain</a> (58.8 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000202_0001_red-stains.zip">Red stains</a> (40.2 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000209_0003_inkshift.zip">Changes in the visual character of ink</a> (59.1 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0030_reinking.zip">Reinking with an alternate ink</a> (68.1 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000209_0001_folds.zip">Folds</a> (41.6 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0015_impressions.zip">Impressions</a> (41.8 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0036_holes.zip">Holes</a> (33.1 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0010_edge-discolor.zip">Page discolor</a> (46.5 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0035_big-stain.zip">The big stain</a> (58.8 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000202_0001_red-stains.zip">Red stains</a> (40.2 MB)</li>
 </ol>
 
 <p><strong>Page-specific Prototype ASIs</strong> - ASIs that target two specific pages of the manuscript, each of which combines a range of features of interest, including layered text and staining.</p>
@@ -14395,16 +14395,16 @@ The Livingstone Spectral Imaging Project<br />
 	<li><em>Livingstone 1870h:XVII</em>
 
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000204_0001_misc-v1.zip">Version 1</a> (29 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000204_0001_misc-v2.zip">Version 2</a> (33.6 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000204_0001_misc-v3.zip">Version 3</a> (51.3 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000204_0001_misc-v1.zip">Version 1</a> (29 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000204_0001_misc-v2.zip">Version 2</a> (33.6 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000204_0001_misc-v3.zip">Version 3</a> (51.3 MB)</li>
 	</ul>
 	</li>
 	<li><em>Livingstone 1871a:LXXVI [v.1]</em>
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000208_0001_layers.zip">Layers of text</a> (65.1 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000208_0001_reverse-layers.zip">Layers of text (reverse order)</a> (42.2 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000208_0001_stains.zip">Stains</a> (75.5 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000208_0001_layers.zip">Layers of text</a> (65.1 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000208_0001_reverse-layers.zip">Layers of text (reverse order)</a> (42.2 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000208_0001_stains.zip">Stains</a> (75.5 MB)</li>
 	</ul>
 	</li>
 </ul>
@@ -14415,23 +14415,23 @@ The Livingstone Spectral Imaging Project<br />
 
 <h4><strong><span style="font-family:crimson text;">Project Documentation</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p><strong><a href="/sites/default/files/spectral-imaging/1870-edition-guide/Spectral-Imaging-Project-Documentation-Phase-2.zip">Complete Project Documentation</a></strong> (1.21 GB) - all curated project documents organized as a series of subdirectories containing several hundred files that together encompass every aspect of development.</p>
+<p><strong><a href="/sites/default/files/shared/Spectral-Imaging-Project-Documentation-Phase-2.zip">Complete Project Documentation</a></strong> (1.21 GB) - all curated project documents organized as a series of subdirectories containing several hundred files that together encompass every aspect of development.</p>
 
 <p><strong>Area-specific Subsets of Project Documentation</strong></p>
 
 <ol>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/01-Grant-Application.zip">NEH Grant Application</a> (1.3 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/02-Planning-Notes-and-Docs.zip">Planning notes and documents</a> (128 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/03-Processing-Notes-and-Feedback-Easton+Team.zip">Spectral image processing notes (PCA and ICA)</a> (988 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/04-Processing-Notes-and-Feedback-Knox+Team.zip">Spectral image processing notes (pseudocolor and animation)</a> (206.7 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/05-Manuscript-and-Image-Notes-Ward-Wisnicki.zip">Manuscript and image notes</a> (25.9 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/06-Meeting-and-Other-Notes.zip">Meeting and other notes</a> (529 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/07-Critical-Essay-Notes.zip">Critical essay and supporting materials notes</a> (691 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/08-Animated-Spectral-Image-(ASI)-Testing.zip">Animated Spectral Image (ASI) testing</a> (538.6 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/09-Image-Integration-and-Metadata-Addition.zip">Image integration and metadata-addition files</a> (5.4 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/10-Dissemination.zip">Dissemination</a> (331.2 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/11-Spectral-Image-Packet-Support-Files.zip">Spectral image archival packet supporting files</a> (3 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/12-1870-FD-Beta-Launch-UK-Tour.zip">Critical edition beta launch UK "tour"</a> (93.8 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/01-Grant-Application.zip">NEH Grant Application</a> (1.3 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/02-Planning-Notes-and-Docs.zip">Planning notes and documents</a> (128 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/03-Processing-Notes-and-Feedback-Easton+Team.zip">Spectral image processing notes (PCA and ICA)</a> (988 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/04-Processing-Notes-and-Feedback-Knox+Team.zip">Spectral image processing notes (pseudocolor and animation)</a> (206.7 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/05-Manuscript-and-Image-Notes-Ward-Wisnicki.zip">Manuscript and image notes</a> (25.9 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/06-Meeting-and-Other-Notes.zip">Meeting and other notes</a> (529 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/07-Critical-Essay-Notes.zip">Critical essay and supporting materials notes</a> (691 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/08-Animated-Spectral-Image-(ASI)-Testing.zip">Animated Spectral Image (ASI) testing</a> (538.6 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/09-Image-Integration-and-Metadata-Addition.zip">Image integration and metadata-addition files</a> (5.4 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/10-Dissemination.zip">Dissemination</a> (331.2 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/11-Spectral-Image-Packet-Support-Files.zip">Spectral image archival packet supporting files</a> (3 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/shared/12-1870-FD-Beta-Launch-UK-Tour.zip">Critical edition beta launch UK "tour"</a> (93.8 MB)</li>
 </ol>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
@@ -14598,7 +14598,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>During the years 2010-13, consequently, the <em>Livingstone Online</em> team remained quite active, despite the project’s public silence and the lack of significant funding for the site itself. The team itself took on an ever-expanding international character that reflected the continuing international interest in Livingstone’s manuscript legacy. Moreover, the team’s work began to lay the groundwork for the long-term sustainability of the site and ensured that the stage remained set for a significant grant to support the next phase of the project’s development.</p>
 
-<p><span style="font-size:14px;"><em>Bonus: Download a curated set of </em><a href="/sites/default/files/about-this-site/brief-history-livingstone-online-2004-2013/Documents_00_Livingstone_Online_2004-2010_Project_Documents.zip">Livingstone Online</a><em><a href="/sites/default/files/about-this-site/brief-history-livingstone-online-2004-2013/Documents_00_Livingstone_Online_2004-2010_Project_Documents.zip"> 2004-10 Project Documents</a>, see previous versions of </em>Livingstone Online<em> as captured by the </em><a href="https://web.archive.org/web/*/http:/www.livingstoneonline.ucl.ac.uk/" target="_blank">Internet Archive Wayback Machine</a> or by the British Library\'s <a href="http://www.webarchive.org.uk/ukwa/target/119700/source/search" target="_blank">UK Web Archive</a>, or watch a <a href="https://www.youtube.com/watch?v=0kDNXJeKpw4" target="_blank">lecture delivered by Chris Lawrence and Michael Hawkins</a> on <em>Livingstone Online</em> at The Royal Society on 9 November 2007</span></p>
+<p><span style="font-size:14px;"><em>Bonus: Download a curated set of </em><a href="/sites/default/files/shared/Documents_00_Livingstone_Online_2004-2010_Project_Documents.zip"> 2004-10 Project Documents</a>, see previous versions of </em>Livingstone Online<em> as captured by the </em><a href="https://web.archive.org/web/*/http:/www.livingstoneonline.ucl.ac.uk/" target="_blank">Internet Archive Wayback Machine</a> or by the British Library\'s <a href="http://www.webarchive.org.uk/ukwa/target/119700/source/search" target="_blank">UK Web Archive</a>, or watch a <a href="https://www.youtube.com/watch?v=0kDNXJeKpw4" target="_blank">lecture delivered by Chris Lawrence and Michael Hawkins</a> on <em>Livingstone Online</em> at The Royal Society on 9 November 2007</span></p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
@@ -14740,7 +14740,7 @@ The Livingstone Spectral Imaging Project<br />
       0 => array(
         'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span> &nbsp;&nbsp; </strong><span style="font-family:crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p><a href="/resources/livingstone-online-outreach-program"><em>Livingstone Online</em>’s Outreach Program</a> (2013-15) resulted in the production of <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_Complete_Livingstone_Online_Worksheets.zip">eleven educational worksheets</a> for children aged 9-13.</p>
+<p><a href="/resources/livingstone-online-outreach-program"><em>Livingstone Online</em>’s Outreach Program</a> (2013-15) resulted in the production of <a href="/sites/default/files/shared/Outreach_Complete_Livingstone_Online_Worksheets.zip">eleven educational worksheets</a> for children aged 9-13.</p>
 
 <p>Each of the worksheets uses a single letter, diary entry, or piece of text written by David Livingstone to encourage students to reflect on an aspect of Livingstone’s life and/or world.</p>
 
@@ -14770,33 +14770,33 @@ The Livingstone Spectral Imaging Project<br />
 
 <h4><strong><span style="font-family:crimson text;">Outreach Program Worksheets</span> &nbsp;&nbsp; </strong><span style="font-family:crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p class="space1">Click <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_Complete_Livingstone_Online_Worksheets.zip"><strong>here</strong></a> to download all eleven worksheets plus the two bonus documents in a single .zip file. Free programs for extracting .zip files can be easily found on the internet.</p>
+<p class="space1">Click <a href="/sites/default/files/shared/a> to download all eleven worksheets plus the two bonus documents in a single .zip file. Free programs for extracting .zip files can be easily found on the internet.</p>
 
-<p><u>Bonus:</u> <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_Bonus_Livingstone_Online_Program_Summary.pdf" target="_blank"><strong>Outreach Program Summary</strong></a></p>
+<p><u>Bonus:</u> <a href="/sites/default/files/shared/Outreach_Bonus_Livingstone_Online_Program_Summary.pdf" target="_blank"><strong>Outreach Program Summary</strong></a></p>
 
-<p class="space1"><u>Bonus:</u> <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_Bonus_Livingstone_Online_Who_was_David_Livingstone_Information_Sheet.pdf" target="_blank"><strong>Who was David Livingstone? Information Sheet</strong></a></p>
+<p class="space1"><u>Bonus:</u> <a href="/sites/default/files/shared/Outreach_Bonus_Livingstone_Online_Who_was_David_Livingstone_Information_Sheet.pdf" target="_blank"><strong>Who was David Livingstone? Information Sheet</strong></a></p>
 
-<p>1) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_01_Livingstone_Online_Mill_Boy.pdf" target="_blank"><strong>David Livingstone: Mill Boy</strong></a> - allows students to explore what life was like for Livingstone as a child working in a factory in Victorian Scotland. It provides them with a passage from <em>Missionary Travels</em> to practice their deep reading and analysis skills.</p>
+<p>1) <a href="/sites/default/files/shared/Outreach_01_Livingstone_Online_Mill_Boy.pdf" target="_blank"><strong>David Livingstone: Mill Boy</strong></a> - allows students to explore what life was like for Livingstone as a child working in a factory in Victorian Scotland. It provides them with a passage from <em>Missionary Travels</em> to practice their deep reading and analysis skills.</p>
 
-<p>2) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_02_Livingstone_Online_Doctor.pdf" target="_blank"><strong>David Livingstone: Doctor</strong></a> - introduces the history of diseases such as malaria. Students can use Livingstone’s letter to practice their deep reading skills and understand how diseases were treated with limited resources.</p>
+<p>2) <a href="/sites/default/files/shared/Outreach_02_Livingstone_Online_Doctor.pdf" target="_blank"><strong>David Livingstone: Doctor</strong></a> - introduces the history of diseases such as malaria. Students can use Livingstone’s letter to practice their deep reading skills and understand how diseases were treated with limited resources.</p>
 
-<p>3) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_03_Livingstone_Online_Crossing_Cultures.pdf" target="_blank"><strong>David Livingstone: Crossing Cultures</strong></a> - facilitates student discussion on different cultures and what happens when those cultures meet. Analysing the letter included will allow students to understand exploration in the nineteenth century.</p>
+<p>3) <a href="/sites/default/files/shared/Outreach_03_Livingstone_Online_Crossing_Cultures.pdf" target="_blank"><strong>David Livingstone: Crossing Cultures</strong></a> - facilitates student discussion on different cultures and what happens when those cultures meet. Analysing the letter included will allow students to understand exploration in the nineteenth century.</p>
 
-<p>4) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_04_Livingstone_Online_African_Animals.pdf" target="_blank"><strong>David Livingstone: African Animals</strong></a> - encourages students to explore conservation issues around endangered animals. This worksheet introduces students to one of the most well-known incidents in Livingstone’s life, that of being attacked and bitten by a lion.</p>
+<p>4) <a href="/sites/default/files/shared/Outreach_04_Livingstone_Online_African_Animals.pdf" target="_blank"><strong>David Livingstone: African Animals</strong></a> - encourages students to explore conservation issues around endangered animals. This worksheet introduces students to one of the most well-known incidents in Livingstone’s life, that of being attacked and bitten by a lion.</p>
 
-<p>5) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_05_Livingstone_Online_Global_Citizen.pdf" target="_blank"><strong>David Livingstone: Global Citizen</strong></a> - urges students to explore the term global citizenship and what it means to them. Students can use Livingstone’s letter to practice their deep reading skills, finding out what the letter reveals about nineteenth-century perspectives on global life.</p>
+<p>5) <a href="/sites/default/files/shared/Outreach_05_Livingstone_Online_Global_Citizen.pdf" target="_blank"><strong>David Livingstone: Global Citizen</strong></a> - urges students to explore the term global citizenship and what it means to them. Students can use Livingstone’s letter to practice their deep reading skills, finding out what the letter reveals about nineteenth-century perspectives on global life.</p>
 
-<p>6) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_06_Livingstone_Online_Reading_His_Words.pdf" target="_blank"><strong>David Livingstone: Reading His Words </strong></a>- enables students to explore the process used by the Livingstone team to read some of Livingstone’s most faded diaries. The worksheet introduces multi-spectral imaging and its use in the field of humanities to students and encourages them to think about different ways of studying the past.</p>
+<p>6) <a href="/sites/default/files/shared/Outreach_06_Livingstone_Online_Reading_His_Words.pdf" target="_blank"><strong>David Livingstone: Reading His Words </strong></a>- enables students to explore the process used by the Livingstone team to read some of Livingstone’s most faded diaries. The worksheet introduces multi-spectral imaging and its use in the field of humanities to students and encourages them to think about different ways of studying the past.</p>
 
-<p>7) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_07_Livingstone_Online_Missionary.pdf" target="_blank"><strong>David Livingstone: Missionary</strong></a> - facilitates student discussion around Christian missionaries and specifically Livingstone. This worksheet encourages students to use their deep reading skills to explore Livingstone’s beliefs.</p>
+<p>7) <a href="/sites/default/files/shared/Outreach_07_Livingstone_Online_Missionary.pdf" target="_blank"><strong>David Livingstone: Missionary</strong></a> - facilitates student discussion around Christian missionaries and specifically Livingstone. This worksheet encourages students to use their deep reading skills to explore Livingstone’s beliefs.</p>
 
-<p>8) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_08_Livingstone_Online_Geographer.pdf" target="_blank"><strong>David Livingstone: Geographer</strong></a> - allows students to discover part of one of the journey’s Livingstone took. It encourages students to practice deep reading and textual analysis to explore Livingstone’s letter, which covers questions of geographical distance and time.</p>
+<p>8) <a href="/sites/default/files/shared/Outreach_08_Livingstone_Online_Geographer.pdf" target="_blank"><strong>David Livingstone: Geographer</strong></a> - allows students to discover part of one of the journey’s Livingstone took. It encourages students to practice deep reading and textual analysis to explore Livingstone’s letter, which covers questions of geographical distance and time.</p>
 
-<p>9) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_09_Livingstone_Online_Victorian.pdf" target="_blank"><strong>David Livingstone: Victorian</strong></a> - encourages students to explore Victorian culture and the influence of Britain on certain African countries in the nineteenth century. Through the letter students can analyse how goods and people moved around the globe before airplanes.</p>
+<p>9) <a href="/sites/default/files/shared/Outreach_09_Livingstone_Online_Victorian.pdf" target="_blank"><strong>David Livingstone: Victorian</strong></a> - encourages students to explore Victorian culture and the influence of Britain on certain African countries in the nineteenth century. Through the letter students can analyse how goods and people moved around the globe before airplanes.</p>
 
-<p>10) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_10_Livingstone_Online_America.pdf" target="_blank"><strong>David Livingstone and America</strong></a> - introduces the American journalist Henry Morton Stanley, who famously met Livingstone in November 1871, in what is now Tanzania. The letter included enables students to practice deep reading and textual analysis to explore Livingstone’s feelings towards the African slave trade.</p>
+<p>10) <a href="/sites/default/files/shared/Outreach_10_Livingstone_Online_America.pdf" target="_blank"><strong>David Livingstone and America</strong></a> - introduces the American journalist Henry Morton Stanley, who famously met Livingstone in November 1871, in what is now Tanzania. The letter included enables students to practice deep reading and textual analysis to explore Livingstone’s feelings towards the African slave trade.</p>
 
-<p>11) <a href="/sites/default/files/resources/livingstone-online-outreach-worksheets/Outreach_11_Livingstone_Online_Abolitionist.pdf" target="_blank"><strong>David Livingstone: Abolitionist</strong></a> - offers a new way to understand the slave trade and abolition. Students can also explore the nineteenth-century British Christian ideas of morality and how morality may change over time.</p>
+<p>11) <a href="/sites/default/files/shared/Outreach_11_Livingstone_Online_Abolitionist.pdf" target="_blank"><strong>David Livingstone: Abolitionist</strong></a> - offers a new way to understand the slave trade and abolition. Students can also explore the nineteenth-century British Christian ideas of morality and how morality may change over time.</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
@@ -14867,7 +14867,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_overview' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>This page introduces the <a href="/sites/default/files/Outreach_Complete_Livingstone_Online_Worksheets.zip">eleven educational worksheets</a> for children aged 9-13 created by the <a href="/resources/livingstone-online-outreach-program"><em>Livingstone Online</em>’s Outreach Program</a>. The page also allows users to download the worksheets or to view them online.</p>
+        'value' => '<p>This page introduces the <a href="/sites/default/files/shared/Outreach_Complete_Livingstone_Online_Worksheets.zip">eleven educational worksheets</a> for children aged 9-13 created by the <a href="/resources/livingstone-online-outreach-program"><em>Livingstone Online</em>’s Outreach Program</a>. The page also allows users to download the worksheets or to view them online.</p>
 
 <div class="section-page-toc-links">
 <ol style="list-style-type:none">
@@ -15680,7 +15680,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000005?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-v-overview/liv_000005_reading_copy.zip">basic reading copy</a> of Field Diary V.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000005?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000005_reading_copy.zip">basic reading copy</a> of Field Diary V.]</p>
 
 <p>In Field Diary V, Livingstone journeys from the shores of Lake Nyassa west through mountains in modern-day Malawi. Along the way, he finds plentiful food, most of it given to them by local populations. Perhaps as a result, in this diary Livingstone records far fewer instances of mutiny or struggles for authority among his men.</p>
 
@@ -16285,7 +16285,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/in-his-own-words/the-livingstone-online-digital-collection/liv_012043_0001-article.jpg"><img alt="Ivory Lip Ring, May 1859, from the Maganja ethnic group in Africa, with an inscription from David Livingstone. Copyright David Livingstone Centre, Dr. Neil Imray Livingstone Wilson (as relevant), and Roddy Simpson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)" class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/in-his-own-words/the-livingstone-online-digital-collection/liv_012043_0001-article.jpg" title="Ivory Lip Ring, May 1859, from the Maganja ethnic group in Africa, with an inscription from David Livingstone. Copyright David Livingstone Centre, Dr. Neil Imray Livingstone Wilson (as relevant), and Roddy Simpson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)" typeof="foaf:Image" width="716" /></a><br />
 <span style="font-size:12px;">Ivory Lip Ring, May 1859, from the Maganja ethnic group in Africa, with an inscription from David Livingstone. <em>Copyright David Livingstone Centre, Dr. Neil Imray Livingstone Wilson (as relevant), and Roddy Simpson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
 
-<p>For items published in our digital collection, users can <a href="/islandora/search?access=view">view images and transcriptions online</a> or <a href="/islandora/search?access=download">download archival packets</a>. These packets, which contain high-resolution JPEG images, critically encoded transcriptions, and a variety of supporting files, enable users to study our materials on their computers or to engage in advanced computational analysis of our files. We also allow users to download our complete set of <a href="/sites/default/files/in-his-own-words/the-livingstone-online-digital-collection/Livingstone-Online-Complete-MODS-records.zip">MODS item records</a>, all our critically edited and encoded <a href="/sites/default/files/in-his-own-words/the-livingstone-online-digital-collection/Livingstone-Online-Complete-TEI-transcriptions.zip">TEI transcription files</a>, or user-friendly <a href="/sites/default/files/in-his-own-words/the-livingstone-online-digital-collection/Livingstone-Online-Complete-PDF-transcriptions.zip">PDF reading copies</a> of individual items based on those TEI files. Scholars and others with research needs can also <a href="mailto:awisnicki@yahoo.com">contact us</a> for direct access to many of the archival-quality TIFF images from which our site images derive.</p>
+<p>For items published in our digital collection, users can <a href="/islandora/search?access=view">view images and transcriptions online</a> or <a href="/islandora/search?access=download">download archival packets</a>. These packets, which contain high-resolution JPEG images, critically encoded transcriptions, and a variety of supporting files, enable users to study our materials on their computers or to engage in advanced computational analysis of our files. We also allow users to download our complete set of <a href="/sites/default/files/shared/Livingstone-Online-Complete-PDF-transcriptions.zip">PDF reading copies</a> of individual items based on those TEI files. Scholars and others with research needs can also <a href="mailto:awisnicki@yahoo.com">contact us</a> for direct access to many of the archival-quality TIFF images from which our site images derive.</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
@@ -17205,7 +17205,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <h4><strong><span style="font-family:crimson text;">The Entire LEAP Document Collection</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family:crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p>Download <a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_LEAP_Complete_Collection.zip">The Entire LEAP Document Collection</a> (1 GB) of a series of organized subdirectories containing hundreds of files that together encompass every aspect of LEAP research.</p>
+<p>Download <a href="/sites/default/files/shared/Documents_LEAP_Complete_Collection.zip">The Entire LEAP Document Collection</a> (1 GB) of a series of organized subdirectories containing hundreds of files that together encompass every aspect of LEAP research.</p>
 
 <p><a name="lopd1.2"></a></p>
 
@@ -17216,37 +17216,37 @@ The Livingstone Spectral Imaging Project<br />
 <p>Download the LEAP document collection by discrete areas of endeavor:</p>
 
 <ul>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_01_LEAP_NEH_Grant_Application.zip">NEH Grant Application</a> (549 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_02_LEAP_Project_Launch.zip">Project Launch</a> (273 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_03_LEAP_Planning_and_LA_Kickoff.zip">Planning and LA Kickoff</a> (2.5 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_04_LEAP_UK_Kickoff.zip">UK Kickoff</a> (490 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_05_LEAP_Digitization_at_University_of_Glasgow.zip">Digitization at the University of Glasgow</a> (811 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_06a_LEAP_Legacy_Data_Development.zip">Legacy Data Development</a> (13.3 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_06b_LEAP_Legacy_Data_Conversion_Scripts.zip">Legacy Data Conversion Scripts</a> (392 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_06c_LEAP_MODS_Development.zip">MODS Development</a> (14.2 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_07a_LEAP_TEI_Transcription_Conversion.zip">TEI Transcription Conversion</a> (4.1 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_07b_LEAP_TEI_Transcription_Encoding.zip">TEI Transcription Encoding</a> (1.0 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_08_LEAP_Core_Digital_Collection.zip">Documenting the Core Digital Collection</a> (798 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_09a_LEAP_New_Livingstone_Online_Site_Development_at_UNL.zip">The New <em>Livingstone Online</em> - Site Development at UNL</a> (26.7 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_09b_LEAP_New_Livingstone_Online_Site_Mockups.zip">The New <em>Livingstone Online</em> - Site Mockups</a> (364 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_10_LEAP_Critical_Materials_and_Permissions.zip">Critical Materials and Permissions</a> (331 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_11a_LEAP_Dissemination_Scholars_Stakeholders_Social_Media.zip">Dissemination - Scholars, Stakeholders, Social Media</a> (86.2 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_11b_LEAP_Dissemination_Schools_Outreach.zip">Dissemination - Outreach for Schools</a> (2.9 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_12a_LEAP_New_Livingstone_Online_Site_Development_at_UCLA.zip">The New <em>Livingstone Online</em> - Site Development at UCLA</a> (2.0 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_12b_LEAP_New_Livingstone_Online_Site_Development_XSLT.zip">The New <em>Livingstone Online</em> - Site Development: XSLT</a> (381 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_14_LEAP_Beta_Launch_Results.zip">Beta Launch - Results</a> (1.7 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_15_LEAP_Beta_Launch_Press_Release.zip">Beta Launch - Press Release</a> (67.0 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_16_LEAP_Beta_Launch_Presentations_NLS.zip">Beta Launch - Presentations, National Library of Scotland</a> (148 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_17_LEAP_New_UMD_Site_Dev_Notes.zip">University of Maryland - Site Development Notes</a> (225 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_18_LEAP_Google_Docs_UMD_Site_Dev_Files.zip">University of Maryland - Site Development Files (Google Docs)</a> (11.7 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_19_LEAP_UMD_Site_Mockups_Wireframes_Feedback.zip">University of Maryland - Site Mockups and Feedback</a> (86.3 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_20_LEAP_Islandora_Development_Schedules_Banks.zip">Islandora Development Schedules</a> (2.3 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_21_LEAP_Major_Milestone_Emails.zip">Major Milestone Emails (LEAP Years 3 &amp; 4)</a> (259 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_22_LEAP_Site_Closeout_Files.zip">LEAP Site Close Out Files</a> (2.7 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_23_LEAP_Sample_Academic_Presentations.zip">Sample Academic Presentations</a> (196 MB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_24_LEAP_Final_Manuscripts_Transcription+Encoding.zip">Final Manuscripts - Transcription and Encoding</a> (440 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_12c_LEAP_Archival_Image_Download_Documentation.zip">Archival Image Download Documentation</a> (170 KB)</li>
-	<li><a href="/sites/default/files/resources/livingstone-online-project-documents/Documents_00_Livingstone_Online_2004-2010_Project_Documents.zip"><u>Bonus:</u> <em>Livingstone Online</em> 2004-2010 Project Documents</a> (14.2 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_01_LEAP_NEH_Grant_Application.zip">NEH Grant Application</a> (549 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_02_LEAP_Project_Launch.zip">Project Launch</a> (273 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_03_LEAP_Planning_and_LA_Kickoff.zip">Planning and LA Kickoff</a> (2.5 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_04_LEAP_UK_Kickoff.zip">UK Kickoff</a> (490 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_05_LEAP_Digitization_at_University_of_Glasgow.zip">Digitization at the University of Glasgow</a> (811 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_06a_LEAP_Legacy_Data_Development.zip">Legacy Data Development</a> (13.3 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_06b_LEAP_Legacy_Data_Conversion_Scripts.zip">Legacy Data Conversion Scripts</a> (392 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_06c_LEAP_MODS_Development.zip">MODS Development</a> (14.2 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_07a_LEAP_TEI_Transcription_Conversion.zip">TEI Transcription Conversion</a> (4.1 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_07b_LEAP_TEI_Transcription_Encoding.zip">TEI Transcription Encoding</a> (1.0 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_08_LEAP_Core_Digital_Collection.zip">Documenting the Core Digital Collection</a> (798 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_09a_LEAP_New_Livingstone_Online_Site_Development_at_UNL.zip">The New <em>Livingstone Online</em> - Site Development at UNL</a> (26.7 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_09b_LEAP_New_Livingstone_Online_Site_Mockups.zip">The New <em>Livingstone Online</em> - Site Mockups</a> (364 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_10_LEAP_Critical_Materials_and_Permissions.zip">Critical Materials and Permissions</a> (331 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_11a_LEAP_Dissemination_Scholars_Stakeholders_Social_Media.zip">Dissemination - Scholars, Stakeholders, Social Media</a> (86.2 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_11b_LEAP_Dissemination_Schools_Outreach.zip">Dissemination - Outreach for Schools</a> (2.9 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_12a_LEAP_New_Livingstone_Online_Site_Development_at_UCLA.zip">The New <em>Livingstone Online</em> - Site Development at UCLA</a> (2.0 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_12b_LEAP_New_Livingstone_Online_Site_Development_XSLT.zip">The New <em>Livingstone Online</em> - Site Development: XSLT</a> (381 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_14_LEAP_Beta_Launch_Results.zip">Beta Launch - Results</a> (1.7 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_15_LEAP_Beta_Launch_Press_Release.zip">Beta Launch - Press Release</a> (67.0 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_16_LEAP_Beta_Launch_Presentations_NLS.zip">Beta Launch - Presentations, National Library of Scotland</a> (148 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_17_LEAP_New_UMD_Site_Dev_Notes.zip">University of Maryland - Site Development Notes</a> (225 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_18_LEAP_Google_Docs_UMD_Site_Dev_Files.zip">University of Maryland - Site Development Files (Google Docs)</a> (11.7 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_19_LEAP_UMD_Site_Mockups_Wireframes_Feedback.zip">University of Maryland - Site Mockups and Feedback</a> (86.3 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_20_LEAP_Islandora_Development_Schedules_Banks.zip">Islandora Development Schedules</a> (2.3 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_21_LEAP_Major_Milestone_Emails.zip">Major Milestone Emails (LEAP Years 3 &amp; 4)</a> (259 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_22_LEAP_Site_Closeout_Files.zip">LEAP Site Close Out Files</a> (2.7 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_23_LEAP_Sample_Academic_Presentations.zip">Sample Academic Presentations</a> (196 MB)</li>
+	<li><a href="/sites/default/files/shared/Documents_24_LEAP_Final_Manuscripts_Transcription+Encoding.zip">Final Manuscripts - Transcription and Encoding</a> (440 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_12c_LEAP_Archival_Image_Download_Documentation.zip">Archival Image Download Documentation</a> (170 KB)</li>
+	<li><a href="/sites/default/files/shared/Documents_00_Livingstone_Online_2004-2010_Project_Documents.zip"><u>Bonus:</u> <em>Livingstone Online</em> 2004-2010 Project Documents</a> (14.2 MB)</li>
 </ul>
 
 <p><a name="lopd1.3"></a></p>
@@ -17257,31 +17257,31 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>View 10 selected highlights from the LEAP document collection:</p>
 
-<p><u>Bonus:</u> Download the <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_Livingstone_Online_Documents_Complete_Collection.zip">complete highlights</a> (36.6 MB) of the LEAP document collection.</p>
+<p><u>Bonus:</u> Download the <a href="/sites/default/files/shared/Highlights_Livingstone_Online_Documents_Complete_Collection.zip">complete highlights</a> (36.6 MB) of the LEAP document collection.</p>
 
-<p>1. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_A_LEAP_NEH_Grant_Narrative_Revised.zip"><strong>Revised NEH Grant Narrative</strong></a> (237 KB) - The award from the National Endowment for the Humanities (NEH) for LEAP came with a caveat: a request that the LEAP team reduce its budget by 21% and submit a revised workplan. This revised grant narrative, which grew out of that revised workplan, ultimately became the basis of the work done by the LEAP team.</p>
+<p>1. <a href="/sites/default/files/shared/Highlights_A_LEAP_NEH_Grant_Narrative_Revised.zip"><strong>Revised NEH Grant Narrative</strong></a> (237 KB) - The award from the National Endowment for the Humanities (NEH) for LEAP came with a caveat: a request that the LEAP team reduce its budget by 21% and submit a revised workplan. This revised grant narrative, which grew out of that revised workplan, ultimately became the basis of the work done by the LEAP team.</p>
 
-<p>2. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_B_LEAP_Documents_for_Digitization.zip"><strong>Items for Digitization</strong></a> (221 KB) - LEAP led to the addition of some 5000 images of items from the David Livingstone Centre (DLC) and the National Library of Scotland (NLS). Staff at the DLC ([qtip: Anne Martin|Anne Martin (Archivist, David Livingstone Centre). Associate director of <em>Livingstone Online</em>.]) and the NLS ([qtip: David McClay|David McClay (Manuscripts Curator, John Murray Archive, National Library of Scotland). Institutional contact for <em>Livingstone Online</em>.]) produced detailed lists of the items to be delivered to <em>Livingstone Online</em>.</p>
+<p>2. <a href="/sites/default/files/shared/Highlights_B_LEAP_Documents_for_Digitization.zip"><strong>Items for Digitization</strong></a> (221 KB) - LEAP led to the addition of some 5000 images of items from the David Livingstone Centre (DLC) and the National Library of Scotland (NLS). Staff at the DLC ([qtip: Anne Martin|Anne Martin (Archivist, David Livingstone Centre). Associate director of <em>Livingstone Online</em>.]) and the NLS ([qtip: David McClay|David McClay (Manuscripts Curator, John Murray Archive, National Library of Scotland). Institutional contact for <em>Livingstone Online</em>.]) produced detailed lists of the items to be delivered to <em>Livingstone Online</em>.</p>
 
-<p>3. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_C_LEAP_Program_Plans_2013-10_to_2015-03.zip"><strong>LEAP Project Plans, October 2013 to March 2015</strong></a> (2.1 MB) - LEAP brought together a project team of over 20 individuals plus a global set of collaborating institutions. A series of comprehensive Gantt charts created by [qtip: Michael B. Toth|Michael B. Toth (President, R.B. Toth Associates). Program manager for LEAP and the Livingstone Spectral Imaging Project.] in collaboration with [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] and [qtip: Lisa McAulay|Lisa McAulay (Librarian, UCLA Digital Library Program). Institutional co-lead for LEAP.] helped coordinate the project\'s myriad tasks. In evolving detail, the charts capture how real-life variables can impact and transform abstract project plans.</p>
+<p>3. <a href="/sites/default/files/shared/Highlights_C_LEAP_Program_Plans_2013-10_to_2015-03.zip"><strong>LEAP Project Plans, October 2013 to March 2015</strong></a> (2.1 MB) - LEAP brought together a project team of over 20 individuals plus a global set of collaborating institutions. A series of comprehensive Gantt charts created by [qtip: Michael B. Toth|Michael B. Toth (President, R.B. Toth Associates). Program manager for LEAP and the Livingstone Spectral Imaging Project.] in collaboration with [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] and [qtip: Lisa McAulay|Lisa McAulay (Librarian, UCLA Digital Library Program). Institutional co-lead for LEAP.] helped coordinate the project\'s myriad tasks. In evolving detail, the charts capture how real-life variables can impact and transform abstract project plans.</p>
 
-<p>4. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_D_LEAP_Legacy_Data_Development.zip"><strong>Legacy Data Documentation</strong></a> (819 KB) - [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] and [qtip: Ashanka Kumari|Ashanka Kumari (Graduate Student, University of Louisville). Research assistant for <em>Livingstone Online.</em>] reviewed and organized some 10,000 images and other documents in developing the <em>Livingstone Online</em> legacy data collection. This work is captured in two file lists, which enumerate the legacy data in its original and final forms, and in a formal essay written by Kumari. Preliminary, interim, and final reports sent by Wisnicki to the project team document how the team\'s knowledge of the legacy collection evolved over time.</p>
+<p>4. <a href="/sites/default/files/shared/Highlights_D_LEAP_Legacy_Data_Development.zip"><strong>Legacy Data Documentation</strong></a> (819 KB) - [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] and [qtip: Ashanka Kumari|Ashanka Kumari (Graduate Student, University of Louisville). Research assistant for <em>Livingstone Online.</em>] reviewed and organized some 10,000 images and other documents in developing the <em>Livingstone Online</em> legacy data collection. This work is captured in two file lists, which enumerate the legacy data in its original and final forms, and in a formal essay written by Kumari. Preliminary, interim, and final reports sent by Wisnicki to the project team document how the team\'s knowledge of the legacy collection evolved over time.</p>
 
-<p>5. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_E_LEAP_MODS_Files.zip"><strong>MODS Files</strong></a> (12.4 MB) - The previous phase of <em>Livingstone Online</em> (2004-2010) resulted in the creation of a comprehensive MySQL database of original Livingstone items. The LEAP team, led by [qtip: Claudia Horning|Claudia Horning (Metadata Specialist, UCLA Library). Metadata specialist for LEAP.], [qtip: Lisa McAulay|Lisa McAulay (Librarian, UCLA Digital Library Program). Institutional co-lead for LEAP.], and [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] and with support from [qtip: Frank Smutniak|Frank Smutniak (Web Developer, Center for Digital Research in the Humanities, University of Nebraska-Lincoln). Web developer for LEAP.], converted this database into a series of enhanced and expanded <a href="http://www.loc.gov/standards/mods/v3/" target="_blank">MODS</a> records.</p>
+<p>5. <a href="/sites/default/files/shared/Highlights_E_LEAP_MODS_Files.zip"><strong>MODS Files</strong></a> (12.4 MB) - The previous phase of <em>Livingstone Online</em> (2004-2010) resulted in the creation of a comprehensive MySQL database of original Livingstone items. The LEAP team, led by [qtip: Claudia Horning|Claudia Horning (Metadata Specialist, UCLA Library). Metadata specialist for LEAP.], [qtip: Lisa McAulay|Lisa McAulay (Librarian, UCLA Digital Library Program). Institutional co-lead for LEAP.], and [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] and with support from [qtip: Frank Smutniak|Frank Smutniak (Web Developer, Center for Digital Research in the Humanities, University of Nebraska-Lincoln). Web developer for LEAP.], converted this database into a series of enhanced and expanded <a href="http://www.loc.gov/standards/mods/v3/" target="_blank">MODS</a> records.</p>
 
-<p>6. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_F_LEAP_TEI_Conversion_and_Encoding_Materials.zip"><strong>TEI Conversion and Encoding</strong></a> (3.1 MB) - [qtip: James Cummings|James Cummings (Senior Academic Research Technology Specialist, IT Services, University of Oxford). TEI specialist for <em>Livingstone Online</em> and the Livingstone Spectral Imaging Project.], one of the world\'s leading <a href="http://www.tei-c.org/index.xml" target="_blank">Text Encoding Initiative (TEI)</a> specialists, produced a comprehensive report on <em>Livingstone Online</em> legacy transcriptions (over 650 files), converted these files from the <a href="http://www.tei-c.org/Vault/P4/" target="_blank">P4</a> to <a href="http://www.tei-c.org/Guidelines/P5/" target="_blank">P5</a> standard, and collaborated with the LEAP team to develop a new transcription manual and set of supporting documents and templates.</p>
+<p>6. <a href="/sites/default/files/shared/Highlights_F_LEAP_TEI_Conversion_and_Encoding_Materials.zip"><strong>TEI Conversion and Encoding</strong></a> (3.1 MB) - [qtip: James Cummings|James Cummings (Senior Academic Research Technology Specialist, IT Services, University of Oxford). TEI specialist for <em>Livingstone Online</em> and the Livingstone Spectral Imaging Project.], one of the world\'s leading <a href="http://www.tei-c.org/index.xml" target="_blank">Text Encoding Initiative (TEI)</a> specialists, produced a comprehensive report on <em>Livingstone Online</em> legacy transcriptions (over 650 files), converted these files from the <a href="http://www.tei-c.org/Vault/P4/" target="_blank">P4</a> to <a href="http://www.tei-c.org/Guidelines/P5/" target="_blank">P5</a> standard, and collaborated with the LEAP team to develop a new transcription manual and set of supporting documents and templates.</p>
 
-<p>7. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_G_LEAP_Website_Mockups_and_Documentation.zip"><strong>Website Mockups and Documentation</strong></a> (13.1 MB) - LEAP led to the redesign of the <em>Livingstone Online</em> website to cater to modern aesthetic and political sensibilities. Led by [qtip: Angela Aliff|Angela Aliff (Graduate Student, Indiana University of Pennsylvania). Research assistant and interface designer for <em>Livingstone Online</em>.], the "LEAP Aesthetic Action Team"&nbsp;produced a series of full mockups (plus documentation) to guide the work of implementing the new site.</p>
+<p>7. <a href="/sites/default/files/shared/Highlights_G_LEAP_Website_Mockups_and_Documentation.zip"><strong>Website Mockups and Documentation</strong></a> (13.1 MB) - LEAP led to the redesign of the <em>Livingstone Online</em> website to cater to modern aesthetic and political sensibilities. Led by [qtip: Angela Aliff|Angela Aliff (Graduate Student, Indiana University of Pennsylvania). Research assistant and interface designer for <em>Livingstone Online</em>.], the "LEAP Aesthetic Action Team"&nbsp;produced a series of full mockups (plus documentation) to guide the work of implementing the new site.</p>
 
-<p>8. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_H_LEAP_Report_on_Fall_2014_UK_Collaborator_Meetings.zip"><strong>Report on Fall 2014 UK Collaborator Meetings</strong></a> (151 KB) - To mark LEAP\'s one-year anniversary, [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] made a one-week trip to the UK for&nbsp;meeting with collaborators and stakeholders in Edinburgh, Glasgow, and London to review ongoing&nbsp;project results and to solicit feedback. Wisnicki\'s report to the project team captures the many outcomes of this visit and highlights the importance of face-to-face collaboration in projects such as LEAP.</p>
+<p>8. <a href="/sites/default/files/shared/Highlights_H_LEAP_Report_on_Fall_2014_UK_Collaborator_Meetings.zip"><strong>Report on Fall 2014 UK Collaborator Meetings</strong></a> (151 KB) - To mark LEAP\'s one-year anniversary, [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] made a one-week trip to the UK for&nbsp;meeting with collaborators and stakeholders in Edinburgh, Glasgow, and London to review ongoing&nbsp;project results and to solicit feedback. Wisnicki\'s report to the project team captures the many outcomes of this visit and highlights the importance of face-to-face collaboration in projects such as LEAP.</p>
 
-<p>9. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_I_LEAP_Outreach_Final_Report.zip"><strong>Outreach Program Final Report</strong></a> (1.0 MB) - [qtip: Kate Simpson|Kate Simpson (Graduate Student, Edinburgh Napier University). Project scholar and UK outreach coordinator for <em>Livingstone Online</em>.]<span id="yui_3_16_0_1_1433886731108_8727" style="color:rgb(51,51,51);"> and </span>[qtip: Megan Ward|Megan Ward (Assistant Professor, Oregon State University). Co-director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.]<span style="color:rgb(51,51,51);"> worked together with the David Livingstone Center and the National Library of Scotland to create a web-based educational resource for <em>Livingstone Online</em>. Using a series of eleven worksheets, teachers can guide students aged 9 to 13 in learning about the life and work of David Livingstone. This report details the process of creating an education resource that will help students explore many important nineteenth-century issues that continue to resonate in our own time.</span></p>
+<p>9. <a href="/sites/default/files/shared/Highlights_I_LEAP_Outreach_Final_Report.zip"><strong>Outreach Program Final Report</strong></a> (1.0 MB) - [qtip: Kate Simpson|Kate Simpson (Graduate Student, Edinburgh Napier University). Project scholar and UK outreach coordinator for <em>Livingstone Online</em>.]<span id="yui_3_16_0_1_1433886731108_8727" style="color:rgb(51,51,51);"> and </span>[qtip: Megan Ward|Megan Ward (Assistant Professor, Oregon State University). Co-director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.]<span style="color:rgb(51,51,51);"> worked together with the David Livingstone Center and the National Library of Scotland to create a web-based educational resource for <em>Livingstone Online</em>. Using a series of eleven worksheets, teachers can guide students aged 9 to 13 in learning about the life and work of David Livingstone. This report details the process of creating an education resource that will help students explore many important nineteenth-century issues that continue to resonate in our own time.</span></p>
 
-<p>10. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_J_Livingstone_Online_Archival_Packet_README.zip"><strong><em>Livingstone Online</em> Archival Packet README</strong></a> (170 KB) - One of <em>Livingstone Online\'</em>s most distinct features is its collection of manuscript images (15,000 by late 2017), the largest digital collection dedicated to any British explorer of Africa. To encourage the broad, non-commercial use of our site materials, we enable users to download "archival packets" of images, transcriptions, and metadata whenever possible. Our READ_THIS_FILE file sets out the contents of each such packet and enumerates some of the international archival standards according to which we have produced the data in the packets.</p>
+<p>10. <a href="/sites/default/files/shared/Highlights_J_Livingstone_Online_Archival_Packet_README.zip"><strong><em>Livingstone Online</em> Archival Packet README</strong></a> (170 KB) - One of <em>Livingstone Online\'</em>s most distinct features is its collection of manuscript images (15,000 by late 2017), the largest digital collection dedicated to any British explorer of Africa. To encourage the broad, non-commercial use of our site materials, we enable users to download "archival packets" of images, transcriptions, and metadata whenever possible. Our READ_THIS_FILE file sets out the contents of each such packet and enumerates some of the international archival standards according to which we have produced the data in the packets.</p>
 
-<p>11. <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_K_Drupal_Islandora_Dev_UMD.zip"><strong>Drupal and Islandora Development at University of Maryland</strong></a> (2.4 MB) - [qtip: Kathy Chavez|Kathy Chavez (Web Developer, KappaLuppa, Inc.). Web developer for LEAP.] and [qtip: Nigel Banks|Nigel Banks (Independent programmer). Web developer for LEAP.] worked with [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] to install the new <em>Livingstone Online</em> site at the University of Maryland, to finish the tasks left undone by the beta launch, and to complete the full site development required by LEAP. This series of documents scopes out and tracks the development of that work.</p>
+<p>11. <a href="/sites/default/files/shared/Highlights_K_Drupal_Islandora_Dev_UMD.zip"><strong>Drupal and Islandora Development at University of Maryland</strong></a> (2.4 MB) - [qtip: Kathy Chavez|Kathy Chavez (Web Developer, KappaLuppa, Inc.). Web developer for LEAP.] and [qtip: Nigel Banks|Nigel Banks (Independent programmer). Web developer for LEAP.] worked with [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] to install the new <em>Livingstone Online</em> site at the University of Maryland, to finish the tasks left undone by the beta launch, and to complete the full site development required by LEAP. This series of documents scopes out and tracks the development of that work.</p>
 
-<p>12.<strong> <a href="/sites/default/files/resources/livingstone-online-project-documents/Highlights_L_Final_Manuscripts_Workflow.zip"><strong>Workflow for Encoding Final Manuscripts in TEI</strong></a></strong> (175 KB) - [qtip: Megan Ward|Megan Ward (Assistant Professor, Oregon State University). Co-director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.]<span id="yui_3_16_0_1_1433886731108_8727" style="color:rgb(51,51,51);"> </span> led the LEAP team over a three-year period in transcribing and encoding in 2000+ manuscripts pages from Livingstone\'s final diaries (1866-73), the massive Unyanyembe Journal (1866-72), and all the Livingstone letters held by the David Livingstone Centre. This workflow documents the process and schedule by which this work was accomplished.</p>
+<p>12.<strong> <a href="/sites/default/files/shared/Highlights_L_Final_Manuscripts_Workflow.zip"><strong>Workflow for Encoding Final Manuscripts in TEI</strong></a></strong> (175 KB) - [qtip: Megan Ward|Megan Ward (Assistant Professor, Oregon State University). Co-director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.]<span id="yui_3_16_0_1_1433886731108_8727" style="color:rgb(51,51,51);"> </span> led the LEAP team over a three-year period in transcribing and encoding in 2000+ manuscripts pages from Livingstone\'s final diaries (1866-73), the massive Unyanyembe Journal (1866-72), and all the Livingstone letters held by the David Livingstone Centre. This workflow documents the process and schedule by which this work was accomplished.</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
@@ -17500,7 +17500,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>Most often, especially after 8 February 1871, when the dating becomes nearly continuous, he uses only the date: “17th [February 1871]” (1871b:LXXXVII), “3d [March 1871]” (1871e:XCI). With only one exception – “Decr 23d 1870” (1870k:LXXIII) – he always follows the order of day, month, year; the month may be written in full or abbreviated. Finally, in one instance he includes the day of the week – “16th Friday [February 1871]” (1871b:LXXXVI) – and in one instance he gives a date range rather than a single date for a dated entry: “17th -18th [March 1871]" (1871e:CI).</p>
 
-<p class="space2"><a id="link5" name="link5"></a><strong><u>Bonus</u>: </strong>Download a <a href="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/1870-Field-Diary-Extracted-Dates.zip">document</a> that presents, sequentially, all dates for dated diary entries as extracted from our transcription of the 1870 Field Diary.</p>
+<p class="space2"><a id="link5" name="link5"></a><strong><u>Bonus</u>: </strong>Download a <a href="/sites/default/files/shared/1870-Field-Diary-Extracted-Dates.zip">document</a> that presents, sequentially, all dates for dated diary entries as extracted from our transcription of the 1870 Field Diary.</p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Sequencing by Roman numerals.</strong> In addition to dates, Livingstone orders the pages of the second gathering by using Roman numerals. Usually these numerals appear in the upper left-hand corner of the page, directly preceding the text (XXXVI which appears in the upper-right margin of the relevant page [1870i:XXXVI] is the only exception) and are often of a slightly larger size than the rest of the text on the page. Sometimes a period or a dash follows the numeral, sometimes not. The numerals may be underlined, overlined, both, or neither.</p>
 
@@ -17767,7 +17767,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000016?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xvi-overview/liv_000016_reading_copy.zip">basic reading copy</a> of Field Diary XVI.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000016?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000016_reading_copy.zip">basic reading copy</a> of Field Diary XVI.]</p>
 
 <p>Field Diary XVI is the last diary Livingstone completed in his life, and its almost 200 pages record his struggles with ill health, heavy rains, hunger, and misdirection. Livingstone and his men head south to Lake Bangweolo and then circle around the lake to the south-east. Throughout, they are plagued with difficult travel due to the extensive marshy region, made worse by the "wet wet wet sloppy weather" (Livingstone 1872h:[67]). In addition, Livingstone mistrusts local directions, which do not jibe with his previous calculations, resulting in confusion that is made worse by his anal bleeding and scarcity of food.</p>
 
@@ -17940,7 +17940,7 @@ The Livingstone Spectral Imaging Project<br />
 <p>The set of folia comprising this segment is complete: Livingstone’s numbering is continuous and the individual folia can be reassembled to form the entire eight-page newspaper. Each of the folia, with four exceptions, contains two adjacent, but not continuous pages of the diary. All together there are 64 numbered diary pages. Livingstone has numbered the diary pages consecutively in Roman numerals from CII to CLXIII (both CXXXII and CXXXIII are repeated).</p>
 
 <p class="space1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/the-manuscript-the-1871-field-diary/liv_016051_0001.jpg"><img alt="The first page of The Standard (24 Nov. 1869), reconstructed from the folia of the 1871 Field Diary and showing Livingstone\'s overtext. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/the-manuscript-the-1871-field-diary/liv_016051_0001.jpg" style="max-width: 90%;" title="The first page of The Standard (24 Nov. 1869), reconstructed from the folia of the 1871 Field Diary and showing Livingstone\'s overtext. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a><br />
-<span style="font-size:12px;display:inline-block;text-align:left;max-width:90%">The first page of <em>The Standard</em> (24 Nov. 1869), reconstructed from the folia of the 1871 Field Diary and showing Livingstone\'s overtext. <em>Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> The entry covering the Nyangwe massacre is the second page up from the lower left-hand corner. Download a <a href="/sites/default/files/spectral-imaging/the-manuscript-the-1871-field-diary/1871FD_The-Standard-Reconstructed.zip">high-resolution image</a> of this reconstruction.</span></p>
+<span style="font-size:12px;display:inline-block;text-align:left;max-width:90%">The first page of <em>The Standard</em> (24 Nov. 1869), reconstructed from the folia of the 1871 Field Diary and showing Livingstone\'s overtext. <em>Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> The entry covering the Nyangwe massacre is the second page up from the lower left-hand corner. Download a <a href="/sites/default/files/shared/1871FD_The-Standard-Reconstructed.zip">high-resolution image</a> of this reconstruction.</span></p>
 
 <p>Although the leaves of this segment are now disassembled, their layout sequence indicates that Livingstone originally assembled the leaves into two "copy-books" (Waller, in Livingstone 1874,2:114n.). Each copy-book consisted of eight leaves (with two diary pages per folio, or four diary pages per leaf) placed one on top of the other, then folded along the middle to make a 32-page copy-book. It is not clear if Livingstone pre-numbered all the diary pages, but there is evidence that he pre-numbered at least some of them (see <a href="/spectral-imaging/livingstone’s-composition-methods">Livingstone\'s Composition Methods</a>). Whatever the case, at some point the leaf containing CXIX-CXVI (recto) and CXVII-CXVIII (verso) was torn along the middle, and one leaf became two, each with only a single diary page per side:</p>
 
@@ -18680,7 +18680,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>Given the broad audience of <em>Livingstone Online,</em> the team envisioned a site for a range of users and drew inspiration from a variety of model sites (e.g., <a href="http://www.nytimes.com/" target="_blank">The New York Times</a>, <a href="http://www.apple.com/" target="_blank">Apple</a>, <a href="http://www.cast83.com/" target="_blank">CAST83</a>), not just other academic websites. Lead by Wisnicki and Aliff, a new site began to emerge, with more images, vibrant colors, and visually-guided navigation. A series of detailed mockups laid out the specifications for this new site.</p>
 
-<p><em><span style="font-size:14px;">Download sets of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_09a_LEAP_New_Livingstone_Online_Site_Development_at_UNL.zip"><strong>The New </strong></a></span></em><span style="font-size:14px;"><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_09a_LEAP_New_Livingstone_Online_Site_Development_at_UNL.zip"><strong>Livingstone Online</strong></a></span><em><span style="font-size:14px;"><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_09a_LEAP_New_Livingstone_Online_Site_Development_at_UNL.zip"><strong> - Site Development at UNL</strong></a> and <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_09b_LEAP_New_Livingstone_Online_Site_Mockups.zip"><strong>The New </strong></a></span></em><span style="font-size:14px;"><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_09b_LEAP_New_Livingstone_Online_Site_Mockups.zip"><strong>Livingstone Online</strong></a></span><em><span style="font-size:14px;"><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_09b_LEAP_New_Livingstone_Online_Site_Mockups.zip"><strong> - Site Mockups</strong></a> project documents</span></em></p>
+<p><em><span style="font-size:14px;">Download sets of curated <a href="/sites/default/files/shared/Documents_09b_LEAP_New_Livingstone_Online_Site_Mockups.zip"><strong> - Site Mockups</strong></a> project documents</span></em></p>
 
 <p><a name="lph2.2"></a></p>
 
@@ -18697,7 +18697,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>As part of the legacy essay review, [qtip: Kumari|Ashanka Kumari (Graduate Student, University of Louisville). Research assistant for <em>Livingstone Online</em>.] also worked with Wisnicki and original <em>Livingstone Online</em> team members to draft a <a href="/about-site/brief-history-livingstone-online-2004-2013">history of the project</a> for the years 2004-13. Finally, Wisnicki and Ward, with assistance from Kumari, also expanded and updated the <em>Livingstone Online</em> <a href="/resources/david-livingstone-bibliography">bibliography</a> to encompass a variety of primary, secondary, and tertiary materials. They then created a custom Zotero library of these materials in order to facilitate collaborative development, while enabling future export of this bibliographic data in a variety of formats, such as TEI, MODS, and RDF.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_10_LEAP_Critical_Materials_and_Permissions.zip"><strong>Critical Materials and Permissions</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/Documents_10_LEAP_Critical_Materials_and_Permissions.zip"><strong>Critical Materials and Permissions</strong></a> project documents</em></span></p>
 
 <p><a name="lph2.3"></a></p>
 
@@ -18720,7 +18720,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>The LEAP team also began to reach out to new audiences through the newly created <a href="https://livingstoneonline.wordpress.com/" target="_blank">Wordpress blog</a> and <a href="https://twitter.com/livingstone13d" target="_blank">Twitter account</a>. Regular tweets covered all aspects of the project while a range of blog posts sought to define the <em>Livingstone Online</em> site, its goals, and its content for a broad audience.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_11a_LEAP_Dissemination_Scholars_Stakeholders_Social_Media.zip"><strong>Dissemination - Scholars, Stakeholders, Social Media</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/Documents_11a_LEAP_Dissemination_Scholars_Stakeholders_Social_Media.zip"><strong>Dissemination - Scholars, Stakeholders, Social Media</strong></a> project documents</em></span></p>
 
 <p><a name="lph2.4"></a></p>
 
@@ -18734,7 +18734,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>The worksheets were tested at the DLC with school groups and revised with the goal of making them freely available via <em>Livingstone Online</em>. In addition, Simpson also reached out to [qtip: Lynne Robertson|Lynne Robertson (Senior Education Officer, Education Scotland)] at Education Scotland, a Scottish governmental body responsible for supporting teaching and learning. Robertson agreed to link to and endorse the <em>Livingstone Online</em> worksheets. With work on the pilot complete, Ward and [qtip: Samantha Fitch|Samantha Fitch (Graduate Student, Indiana University of Pennsylvania). Research assistant for <em>Livingstone Online</em>.], another member of the LEAP team, then took the first steps towards designing a US version of the outreach program.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_11b_LEAP_Dissemination_Schools_Outreach.zip"><strong>Dissemination - Outreach for Schools</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/Documents_11b_LEAP_Dissemination_Schools_Outreach.zip"><strong>Dissemination - Outreach for Schools</strong></a> project documents</em></span></p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/liv_013229_0001-article.jpg"><img alt="Model of the Blantyre Mill, detail, by Pilkington Jackson. Copyright Livingstone Online. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/liv_013229_0001-article.jpg" title="Model of the Blantyre Mill, detail, by Pilkington Jackson. Copyright Livingstone Online. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Model of the Blantyre Mills, detail, by Pilkington Jackson. Livingstone worked in these mills as a boy. <em>Copyright </em>Livingstone Online<em>. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust (David Livingstone Centre). </em></span></p>
@@ -18754,7 +18754,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>In early 2015, Wisnicki and Davison set target dates of mid spring for the internal alpha release of the site and early summer for the public beta site release. A final shift in workflow accompanied this last phase of development. To enable UCLA to work to its strength of back-end development, [qtip: Kathy Chavez|Kathy Chavez (Web Developer, KappaLuppa, Inc.). Web developer for LEAP.] of KappaLuppa, Inc. joined the project team to collaborate directly with Wisnicki on refinement of the Drupal interface, while UCLA set out an internal project plan to ensure the timely delivery of the alpha release....</p>
 
-<p><span style="font-size:14px;"><em>Download sets of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_12a_LEAP_New_Livingstone_Online_Site_Development_at_UCLA.zip"><strong>The New </strong></a></em><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_12a_LEAP_New_Livingstone_Online_Site_Development_at_UCLA.zip"><strong>Livingstone Online</strong></a><em><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_12a_LEAP_New_Livingstone_Online_Site_Development_at_UCLA.zip"><strong> - Site Development at UCLA</strong></a>, <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_12b_LEAP_New_Livingstone_Online_Site_Development_XSLT.zip"><strong>The New </strong></a></em><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_12b_LEAP_New_Livingstone_Online_Site_Development_XSLT.zip"><strong>Livingstone Online</strong></a><em><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_12b_LEAP_New_Livingstone_Online_Site_Development_XSLT.zip"><strong> - Site Development: XSLT</strong></a>, and <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-ii/Documents_12c_LEAP_Archival_Image_Download_Documentation.zip"><strong>Archival Image Download Documentation</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download sets of curated <a href="/sites/default/files/shared/Documents_12c_LEAP_Archival_Image_Download_Documentation.zip"><strong>Archival Image Download Documentation</strong></a> project documents</em></span></p>
 
 <p><a name="lph2.6"></a></p>
 
@@ -19225,7 +19225,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000014?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xiv-overview/liv_000014_reading_copy.zip">basic reading copy</a> of Field Diary XIV.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000014?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000014_reading_copy.zip">basic reading copy</a> of Field Diary XIV.]</p>
 
 <p>Field Diary XIV starts in late 1871 in Ujiji, where Livingstone has returned after failing to sail down the Lualaba River in central Congo and having witnessed a significant massacre led by slave traders in the village of Nyangwe. Starting from Ujiji, Livingstone circumnavigates Lake Tanganyika, determines that the Rusizi River flows into the lake (and so proves that the lake from its northern end cannot be a direct feeder of the Nile), returns to Ujiji, then travels east to Unyanyembe, where he rests for several months before leaving at the end of the summer to travel west yet again to the regions south of the lake.</p>
 
@@ -19452,7 +19452,7 @@ ornament their faces and heads (1871f:CVII)</p>
 	</tbody>
 </table>
 
-<p>An analysis of the ink spectra for this portion of the diary offers further insights into Livingstone’s writing practices during this period. Imaging scientist Roger L. Easton, Jr. has produced <a href="/sites/default/files/spectral-imaging/livingstone-s-composition-methods/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">graphs of the relevant ink spectra</a> by mapping the reflectance curves of select ink pixels across the spectral image set of a given folio.</p>
+<p>An analysis of the ink spectra for this portion of the diary offers further insights into Livingstone’s writing practices during this period. Imaging scientist Roger L. Easton, Jr. has produced <a href="/sites/default/files/shared/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">graphs of the relevant ink spectra</a> by mapping the reflectance curves of select ink pixels across the spectral image set of a given folio.</p>
 
 <p class="space-1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/livingstone-s-composition-methods/liv_016008_0001.jpg"><img alt="Spectral profile of a page of the 1871 Field Diary (Livingstone 1871f:CVI). Copyright Roger L. Easton, Jr. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/livingstone-s-composition-methods/liv_016008_0001.jpg" style="max-width: 70%;" title="Spectral profile of a page of the 1871 Field Diary (Livingstone 1871f:CVI). Copyright Roger L. Easton, Jr. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></p>
 
@@ -19626,12 +19626,12 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>Livingstone’s use of ink in the additional diary pages covered by this critical edition is much more complex, due partly to the different kinds of paper employed. In natural light, ink hue across the different folia and between these folia (1871k, 1871l, 1871m) and those under 1871f seems not to be consistent.</p>
 
-<p>Visual examination suggests that Livingstone has covered the folia under 1871k with a variety of inks. The heterogeneous nature of the material here – including diary entries that follow directly from 1871f:CLXIII, astronomical calculations (10 Mar. to 15 July 1871), the summary of "Total Rainfall in Manyema 1870-71" (Oct. 1870 to 15 Nov. 1871), and one brief set of undated notes in pencil – also indicates that Livingstone may have written the text on these folia over a long period of time. The <a href="/sites/default/files/spectral-imaging/livingstone-s-composition-methods/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">ink spectra</a> for these folia reinforce this point.</p>
+<p>Visual examination suggests that Livingstone has covered the folia under 1871k with a variety of inks. The heterogeneous nature of the material here – including diary entries that follow directly from 1871f:CLXIII, astronomical calculations (10 Mar. to 15 July 1871), the summary of "Total Rainfall in Manyema 1870-71" (Oct. 1870 to 15 Nov. 1871), and one brief set of undated notes in pencil – also indicates that Livingstone may have written the text on these folia over a long period of time. The <a href="/sites/default/files/shared/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">ink spectra</a> for these folia reinforce this point.</p>
 
 <p class="space1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/livingstone-s-composition-methods/liv_016017_0001.jpg"><img alt="Spectral profile of a page of the 1871 Field Diary (Livingstone 1871k:[8]-[1]). Copyright Roger L. Easton, Jr. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/livingstone-s-composition-methods/liv_016017_0001.jpg" style="max-width: 70%;" title="Spectral profile of a page of the 1871 Field Diary (Livingstone 1871k:[8]-[1]). Copyright Roger L. Easton, Jr. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a><br />
 <span style="font-size:12px;display:inline-block;text-align:left;max-width:70%">Spectral profile of a page of the 1871 Field Diary (Livingstone 1871k:[8]-[1]). <em>Copyright Roger L. Easton, Jr. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> The brown lines represent individual spectra. The blue line shows the mean of the individual spectra.</span></p>
 
-<p>Conversely, study of the spectral and natural light images, and analysis of the <a href="/sites/default/files/spectral-imaging/livingstone-s-composition-methods/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">ink spectra</a> of the folia under 1871l shows that Livingstone wrote the diary entries on these folia with Zingifure ink. The single calculation on 1871l:[2] is in iron gall ink, but the seemingly random position of this calculation suggests that it may have been written at an earlier or later date.</p>
+<p>Conversely, study of the spectral and natural light images, and analysis of the <a href="/sites/default/files/shared/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">ink spectra</a> of the folia under 1871l shows that Livingstone wrote the diary entries on these folia with Zingifure ink. The single calculation on 1871l:[2] is in iron gall ink, but the seemingly random position of this calculation suggests that it may have been written at an earlier or later date.</p>
 
 <p class="space-1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/livingstone-s-composition-methods/liv_016018_0001.jpg"><img alt="Spectral profile of a page of the 1871 Field Diary (Livingstone 1871l:[1]-[2]). Copyright Roger L. Easton, Jr. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/livingstone-s-composition-methods/liv_016018_0001.jpg" style="max-width: 70%;" title="Spectral profile of a page of the 1871 Field Diary (Livingstone 1871l:[1]-[2]). Copyright Roger L. Easton, Jr. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></p>
 
@@ -19832,30 +19832,30 @@ ornament their faces and heads (1871f:CVII)</p>
 <p>Knox laid the groundwork for our development of ASIs by creating animations that linked text and topography of individual manuscript pages (forthcoming in January 2017) and by producing PowerPoint and PDF presentations that allowed for comparative study of features such as staining, smearing, and page surface:</p>
 
 <ul style="padding-bottom:1em; padding-left:1em;">
-	<li><em>Flipbook:</em> <a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/1870-Field-Diary-flipbook-PPTX.zip">PowerPoint</a> (141.2 MB) or <a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/1870-Field-Diary-flipbook-PDF.zip">PDF</a> (141.2 MB)</li>
-	<li><em>Overlaid:</em> <a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/1870-Field-Diary-overlaid-PPTX.zip">PowerPoint</a> (110.5 MB) or <a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/1870-Field-Diary-overlaid-PDF.zip">PDF</a> (110.6 MB)</li>
-	<li><u>Bonus:</u> <a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/Flipbook-and-Overlaid-Complete.zip">Complete flipbook and overlaid PowerPoint and PDF presentations</a> (503.5 MB)</li>
+	<li><em>Flipbook:</em> <a href="/sites/default/files/shared/1870-Field-Diary-flipbook-PDF.zip">PDF</a> (141.2 MB)</li>
+	<li><em>Overlaid:</em> <a href="/sites/default/files/shared/1870-Field-Diary-overlaid-PDF.zip">PDF</a> (110.6 MB)</li>
+	<li><u>Bonus:</u> <a href="/sites/default/files/shared/Flipbook-and-Overlaid-Complete.zip">Complete flipbook and overlaid PowerPoint and PDF presentations</a> (503.5 MB)</li>
 </ul>
 
 <p>Knox also developed animations based on the presentations and, separately, created new animations that targeted material processes in relation to longer sequences of pages:</p>
 
 <ul style="padding-bottom:1em; padding-left:1em;">
-	<li><em>Flipbook:</em> <a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000205_0019-0036_flipbook.zip">all pages of Livingstone 1870i:XXXIX-LV [v.2]</a> (158.4 MB)</li>
-	<li><em>Various:</em> <a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000205_0019-0036_recto.zip">page rectos of Livingstone 1870i:XXXIX-LV [v.2]</a> (73.6 MB) or <a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000205_0019-0036_verso.zip">page versos of Livingstone 1870i:XXXIX-LV [v.2]</a> (75.9 MB)</li>
-	<li><u>Bonus:</u> <a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/Animated-Sequences-Complete.zip">Complete flipbook and various animated sequences</a> (308 MB)</li>
+	<li><em>Flipbook:</em> <a href="/sites/default/files/shared/liv_000205_0019-0036_flipbook.zip">all pages of Livingstone 1870i:XXXIX-LV [v.2]</a> (158.4 MB)</li>
+	<li><em>Various:</em> <a href="/sites/default/files/shared/liv_000205_0019-0036_verso.zip">page versos of Livingstone 1870i:XXXIX-LV [v.2]</a> (75.9 MB)</li>
+	<li><u>Bonus:</u> <a href="/sites/default/files/shared/Animated-Sequences-Complete.zip">Complete flipbook and various animated sequences</a> (308 MB)</li>
 </ul>
 
 <p>Kumari successfully developed a repeatable technique for prototyping ASIs and produced a series of such images, each of which enhanced one or more manuscript features of interest as follows:</p>
 
 <ol class="rteindent1">
-	<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000209_0003_inkshift.zip">Changes in the visual character of ink</a> (59.1 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000205_0030_reinking.zip">Reinking with an alternate ink</a> (68.1 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000209_0001_folds.zip">Folds</a> (41.6 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000205_0015_impressions.zip">Impressions</a> (41.8 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000205_0036_holes.zip">Holes</a> (33.1 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000205_0010_edge-discolor.zip">Page discolor</a> (46.5 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000205_0035_big-stain.zip">The big stain</a> (58.8 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000202_0001_red-stains.zip">Red stains</a> (40.2 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000209_0003_inkshift.zip">Changes in the visual character of ink</a> (59.1 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0030_reinking.zip">Reinking with an alternate ink</a> (68.1 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000209_0001_folds.zip">Folds</a> (41.6 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0015_impressions.zip">Impressions</a> (41.8 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0036_holes.zip">Holes</a> (33.1 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0010_edge-discolor.zip">Page discolor</a> (46.5 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000205_0035_big-stain.zip">The big stain</a> (58.8 MB)</li>
+	<li><a href="/sites/default/files/shared/liv_000202_0001_red-stains.zip">Red stains</a> (40.2 MB)</li>
 </ol>
 
 <p>Kumari also created additional sets of ASIs that focus on two specific pages of the manuscript, each of which combine a range of features of interest, including layered text and staining:</p>
@@ -19864,21 +19864,21 @@ ornament their faces and heads (1871f:CVII)</p>
 	<li><em>Livingstone 1870h:XVII</em>
 
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000204_0001_misc-v1.zip">Version 1</a> (29 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000204_0001_misc-v2.zip">Version 2</a> (33.6 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000204_0001_misc-v3.zip">Version 3</a> (51.3 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000204_0001_misc-v1.zip">Version 1</a> (29 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000204_0001_misc-v2.zip">Version 2</a> (33.6 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000204_0001_misc-v3.zip">Version 3</a> (51.3 MB)</li>
 	</ul>
 	</li>
 	<li><em>Livingstone 1871a:LXXVI [v.1]</em>
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000208_0001_layers.zip">Layers of text</a> (65.1 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000208_0001_reverse-layers.zip">Layers of text (reverse order)</a> (42.2 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/liv_000208_0001_stains.zip">Stains</a> (75.5 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000208_0001_layers.zip">Layers of text</a> (65.1 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000208_0001_reverse-layers.zip">Layers of text (reverse order)</a> (42.2 MB)</li>
+		<li><a href="/sites/default/files/shared/liv_000208_0001_stains.zip">Stains</a> (75.5 MB)</li>
 	</ul>
 	</li>
 </ul>
 
-<p><strong><u>Bonus:</u> </strong>Download all the ASIs of Livingstone\'s 1870 Field Diary developed by Kumari in a <a href="/sites/default/files/spectral-imaging/prototyping-animated-spectral-images-asis/Animated-Spectral-Images-(ASIs)-Complete.zip">single ZIP file</a> (685.9 MB).</p>
+<p><strong><u>Bonus:</u> </strong>Download all the ASIs of Livingstone\'s 1870 Field Diary developed by Kumari in a <a href="/sites/default/files/shared/Animated-Spectral-Images-(ASIs)-Complete.zip">single ZIP file</a> (685.9 MB).</p>
 
 <p>The presentations and initial animations set the stage for creating the ASIs, which, in turn, are able to foreground manuscript feature(s) of interest while relying on only a handful of original static images. The ASIs also demonstrate the importance of the original spectral images – both individually and in combination – in highlighting the given feature. Finally, because of duration, the ASIs help underscore the role of change over time in producing the given feature.</p>
 
@@ -20946,7 +20946,7 @@ ornament their faces and heads (1871f:CVII)</p>
       0 => array(
         'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p>[View the <a href="/islandora/search/liv_000019?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/the-unyanyembe-journal-overview/liv_000019_reading_copy.zip">basic reading copy</a> of the Unyanyembe Journal.]</p>
+<p>[View the <a href="/islandora/search/liv_000019?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000019_reading_copy.zip">basic reading copy</a> of the Unyanyembe Journal.]</p>
 
 <p>Livingstone’s Unyanyembe Journal (1866-72) gets its name from the town of Unyanyembe, in present-day Tanzania. In this journal (UJ for short), Livingstone records highlights of his final trip to Africa, from 1865 until 1872. Often he copies these highlights over, in revised and/or expanded form, from his <a href="/his-own-words/final-field-diaries-general-overview">field diaries</a>. The Unyanyembe Journal is the record upon which Horace Waller based the posthumously-published <em>Last Journals</em> (Livingstone 1874; also see Helly 1987). In it, Livingstone records his journey from Bombay to Zanzibar, up the river Rovuma to Lake N’Yassa and then north to Lake Tanganyika. From there, he travels west to Lake Moero and, from there, south to Lake Bangweolo. At this point, he makes his way back to Lake Tanganyika, travelling up the eastern shore and making a detour to the Taboro region and leaving the journal in the town of Unyanyembe.</p>
 
@@ -23950,45 +23950,45 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <h4><strong><span style="font-family:crimson text;">Basic Reading Copies for Download</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p class="space2">Download basic reading copies of&nbsp;<a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/Livingstone-Final-Manuscripts_reading_copies.zip">all manuscripts</a> (4 MB) in one ZIP file or select a specific text.</p>
+<p class="space2">Download basic reading copies of&nbsp;<a href="http://livingstoneonline.org/sites/default/files/shared/a> (4 MB) in one ZIP file or select a specific text.</p>
 
 <p><em>Core Texts</em></p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000019_reading_copy.zip">Unyanyembe Journal</a></strong> - 28 Jan. 1866-5 Mar. 1872</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000019_reading_copy.zip">Unyanyembe Journal</a></strong> - 28 Jan. 1866-5 Mar. 1872</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000001_reading_copy.zip">Field Diary I</a></strong> - 4 Aug. 1865-31 Mar. 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000001_reading_copy.zip">Field Diary I</a></strong> - 4 Aug. 1865-31 Mar. 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000002_reading_copy.zip">Field Diary II</a></strong> - 4 Apr.-14 May 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000002_reading_copy.zip">Field Diary II</a></strong> - 4 Apr.-14 May 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000003_reading_copy.zip">Field Diary III</a></strong> - 14 May-30 June 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000003_reading_copy.zip">Field Diary III</a></strong> - 14 May-30 June 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000004_reading_copy.zip">Field Diary IV</a></strong> - 1 July-5 Sept. 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000004_reading_copy.zip">Field Diary IV</a></strong> - 1 July-5 Sept. 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000005_reading_copy.zip">Field Diary V</a></strong> - 5 Sept-23 Oct. 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000005_reading_copy.zip">Field Diary V</a></strong> - 5 Sept-23 Oct. 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000006_reading_copy.zip">Field Diary VI</a></strong> - 24 Oct.-23 Dec. 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000006_reading_copy.zip">Field Diary VI</a></strong> - 24 Oct.-23 Dec. 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000007_reading_copy.zip">Field Diary VII</a></strong> - 26 Dec. 1866-1 Mar. 1867</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000007_reading_copy.zip">Field Diary VII</a></strong> - 26 Dec. 1866-1 Mar. 1867</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000010_reading_copy.zip">Field Diary X</a></strong> - 9 Sept. 1867-2 Jan. 1868</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000010_reading_copy.zip">Field Diary X</a></strong> - 9 Sept. 1867-2 Jan. 1868</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000014_reading_copy.zip">Field Diary XIV</a></strong> - 14 Nov. 1871-14 Sept. 1872</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000014_reading_copy.zip">Field Diary XIV</a></strong> - 14 Nov. 1871-14 Sept. 1872</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000015_reading_copy.zip">Field Diary XV</a></strong> - 7 July-1 Dec. 1872</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000015_reading_copy.zip">Field Diary XV</a></strong> - 7 July-1 Dec. 1872</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000016_reading_copy.zip">Field Diary XVI</a></strong> - 1 Dec. 1872-6 Apr. 1873</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000016_reading_copy.zip">Field Diary XVI</a></strong> - 1 Dec. 1872-6 Apr. 1873</p>
 
-<p class="space2"><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000017_reading_copy.zip">Field Diary XVII</a></strong> - 9-28 April 1873</p>
+<p class="space2"><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000017_reading_copy.zip">Field Diary XVII</a></strong> - 9-28 April 1873</p>
 
 <p><em>Bonus Texts</em></p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000066_reading_copy.zip">Fragment of Field Diary XII</a></strong> - 24-28 Dec. 1868</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000066_reading_copy.zip">Fragment of Field Diary XII</a></strong> - 24-28 Dec. 1868</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000050_reading_copy.zip">Second Unyanyembe Journal</a></strong> - 14-24 Aug. 1872</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000050_reading_copy.zip">Second Unyanyembe Journal</a></strong> - 14-24 Aug. 1872</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000049_reading_copy.zip">Calculations and Geographical and Cultural Notes</a></strong> - 4-6 Nov. 1872</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000049_reading_copy.zip">Calculations and Geographical and Cultural Notes</a></strong> - 4-6 Nov. 1872</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000073_reading_copy.zip">Notes and Calculations for Field Diary XVII</a></strong> - 7-9 Apr. 1873</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/shared/liv_000073_reading_copy.zip">Notes and Calculations for Field Diary XVII</a></strong> - 7-9 Apr. 1873</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
@@ -24382,7 +24382,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000015?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xv-overview/liv_000015_reading_copy.zip">basic reading copy</a> of Field Diary XV.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000015?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000015_reading_copy.zip">basic reading copy</a> of Field Diary XV.]</p>
 
 <p>Field Diary XV begins before the previous field diary (<a href="/his-own-words/field-diary-xiv-overview">XIV</a>) ends, while Livingstone is still in Unyanyembe. The two diaries cover about two months of the same time period, July-September 1872. It is not clear why Livingstone kept two diaries, though Field Diary XV contains longer narrative passages. During this time, Livingstone waits for his men to return from guiding Stanley to the coast and then finally leaves Unyanyembe on 25 August 1872, heading west to Lake Tanganyika. From there, he and his men travel south around the lake.</p>
 
@@ -24553,7 +24553,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The <em>Catalogue</em> also noted that the museum based at Livingstone’s childhood home in Blantyre, the <a href="http://www.nts.org.uk/Property/David-Livingstone-Centre/" target="_blank">Scottish National Memorial to David Livingstone</a> (also known as the <a href="http://www.nts.org.uk/Property/David-Livingstone-Centre/" target="_blank">David Livingstone Centre</a> [DLC]), had previously owned the manuscript. As a result, [qtip: Wisnicki|Adrian S. Wisnicki (Indiana University of Pennsylvania). Director, lead scholar, and principal writer for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] next visited the DLC in June 2009 and – thanks to the efforts of [qtip:Anne Martin|Anne Martin (David Livingstone Centre). Institutional contact for the multispectral critical edition of Livingstone\'s 1871 Field Diary.], volunteer archivist at the DLC – located the second half of the manuscript, those pages held under DLC identifier 297b. The whereabouts of the remaining pages remained a mystery. Wisnicki also discovered that the manuscript was illegible, with only some 15% of Livingstone’s text being visible. Livingstone\'s improvised ink had faded, while the newsprint over which he had written remained prominent, thereby obscuring the handwritten text. Despite these issues, Wisnicki had a hunch that the text could be recovered.</p>
 
-<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-1/1871FD_01_Locating-the-Manuscript.zip"><strong>Locating the Manuscript</strong></a> project documents</em></span></p>
+<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_01_Locating-the-Manuscript.zip"><strong>Locating the Manuscript</strong></a> project documents</em></span></p>
 
 <p class="space-1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/project-history-1/liv_016069_0001.jpg"><img alt="David Livingstone Centre card index entry 297a and 297b (recto), 2008. Copyright David Livingstone Centre. Object images used by permission. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/project-history-1/liv_016069_0001.jpg" style="border: 1px solid rgb(0, 0, 0); max-width: 80%;" title="David Livingstone Centre card index entry 297a and 297b (recto), 2008. Copyright David Livingstone Centre. Object images used by permission. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></p>
 
@@ -24601,7 +24601,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>During late 2009 and early 2010, [qtip:Martin|Anne Martin (David Livingstone Centre). Institutional contact for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] continued her efforts at the DLC in locating the remaining pages of the 1871 Field Diary. The pages had not been catalogued properly, but Martin’s perseverance resulted not only in the rediscovery of the missing pages (those now under DLC identifier 297c) but also in the recovery of several pages of Livingstone\'s <a href="/spectral-imaging/livingstones-1870-field-diary">1870 Field Diary</a>, which she and [qtip: Wisnicki|Adrian S. Wisnicki (Indiana University of Pennsylvania). Director, lead scholar, and principal writer for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] had not been able to locate during Wisnicki’s initial visit to Blantyre in June 2009 (the pages now under 297d and 297e).</p>
 
-<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-1/1871FD_02_Project-Funding.zip"><strong>Project Funding</strong></a> project documents</em></span><a id="link5" name="link5"></a></p>
+<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_02_Project-Funding.zip"><strong>Project Funding</strong></a> project documents</em></span><a id="link5" name="link5"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Livingstone’s Letter from Bambarre.</strong> Simultaneously, in late 2009 Elizabeth Upper, a graduate student of Cambridge University, contacted Livingstone Online on behalf of Peter Beard, the American photographer. Beard and his wife Nejma offered to make available for study a previously unpublished Livingstone letter from their personal collection in New York City. By a striking coincidence, Livingstone had composed this letter during the same period as the 1870 and 1871 Field Diaries, using the same improvised techniques.</p>
 
@@ -24632,7 +24632,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The National Trust for Scotland, in turn, arranged for Helen Creasy, Paper and Photograph Conservator at the Scottish Conservation Studio, to prepare the DLC materials for imaging, an activity covered by the team’s NEH grant. Creasy’s work included stabilizing documents for handling, repairing all edge tears and tears along central fold lines, reattaching a detached page, and supporting manuscript weaknesses using very light-weight Japanese tissue and wheat starch paste. She also photographed the documents before and after treatment, and secured and packed them for transportation. Kate Kidd, conservator at the NLS, evaluated the related NLS materials and found that they needed only minimal conservation, which the NLS provided pro bono.</p>
 
-<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-1/1871FD_03_Conservation.zip"><strong>Conservation</strong></a> project documents</em></span><a id="link9" name="link9"></a></p>
+<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_03_Conservation.zip"><strong>Conservation</strong></a> project documents</em></span><a id="link9" name="link9"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Project Planning.</strong> Project planning took up the majority of time prior to the team’s departure for Scotland. [qtip:Michael B. Toth|Michael B. Toth (R.B. Toth Associates). Program manager for the multispectral critical edition of Livingstone\'s 1871 Field Diary.], program manager for the Livingstone project, supervised this planning with strategic support from [qtip: Wisnicki|Adrian S. Wisnicki (Indiana University of Pennsylvania). Director, lead scholar, and principal writer for the multispectral critical edition of Livingstone\'s 1871 Field Diary.], [qtip:Metcalfe|Alison Metcalfe (National Library of Scotland). Institutional contact for the multispectral critical edition of Livingstone\'s 1871 Field Diary.], Robert Jackson (Preservation and Conservation Manager at the NLS), and other team members. Toth’s work included developing a detailed imaging plan that outlined 1) an Assessment and Pilot Phase, 2) a Planning Phase, 3) an Imaging and Processing Phase, and 4) a Data Management Phase. Toth broke up each of these phases into discrete tasks, determined how many days would be required for each, and allocated work accordingly. Toth also prepared a series of documents for team members that foregrounded the relationships between the different tasks.</p>
 
@@ -24659,7 +24659,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>Just prior to departure, Toth developed a plan for transporting equipment to Scotland, and created a site survey checklist for team members who intended to visit the NLS in advance of the imaging sessions. In addition, days before the team left, the British Academy announced that it had awarded the team a Small Research Grant, which provided both for an enhanced site survey and helped defray other travel costs.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-1/1871FD_04_Project-Planning.zip"><strong>Project Planning</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_04_Project-Planning.zip"><strong>Project Planning</strong></a> project documents</em></span></p>
 
 <p><a id="link10" name="link10"></a></p>
 
@@ -24753,7 +24753,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The team chose to use a monochrome camera, without color or infrared filters, because doing so allows: 1) lower light levels for illumination, 2) no interpolation or preprocessing of the filtered image, minimizing collection artifacts, and 3) unfiltered light from all spectral bands to reach the camera sensor. Such a camera yields very pure, high-resolution, registered images of each spectral band and facilitates processing not only for text enhancement, but also for very accurate color reproduction.</p>
 
-<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-1/1871FD_05_Imaging-Set-Up.zip"><strong>Imaging Set-Up</strong></a> project documents</em></span><a id="link12" name="link12"></a></p>
+<p class="space2"><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_05_Imaging-Set-Up.zip"><strong>Imaging Set-Up</strong></a> project documents</em></span><a id="link12" name="link12"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Data Logging, Collection, and Copying</strong>. The camera operator and the data logger collaborated in running the EurekaVision™ system, while a representative of the NLS or the NTS handled the primary documents and set and flipped them on the copy stand. A variety of locally-recruited personnel took part in the camera operation and data logging, including [qtip:Anne Martin|Anne Martin (David Livingstone Centre). Institutional contact for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] (DLC), Karen Carruthers (DLC), Suzanne Lamb (NTS), [qtip:Alison Metcalfe|Alison Metcalfe (National Library of Scotland). Institutional contact for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] (NLS), and [qtip:Kate Simpson|Kate Simpson (Edinburgh Napier University). Research assistant for the multispectral critical edition of Livingstone\'s 1871 Field Diary.] (Edinburgh Napier University). Several Livingstone team members also actively participated. The process required constant rotation of personnel due to the long hours, continuous concentration required, and complexity of the data to be logged.</p>
 
@@ -24916,7 +24916,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The success and scope of this spectral imaging effort, therefore, which depended on a combination of foresight, preparation, team discipline, risk management, and luck, represents one of the major accomplishments of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/spectral-imaging/project-history-1/1871FD_06_Imaging-Schedule-and-Objectives.zip"><strong>Imaging Schedule and Objectives</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/1871FD_06_Imaging-Schedule-and-Objectives.zip"><strong>Imaging Schedule and Objectives</strong></a> project documents</em></span></p>
 
 <p class="rtecenter"><a href="/spectral-imaging/project-history-2">Project History (2)</a></p>
 
@@ -25224,7 +25224,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <h4><strong><span style="font-family:crimson text;">Fragment of Field Diary XII (24-28 Dec. 1868)</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>[View the <a href="/islandora/search/liv_000066" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/the-final-manuscripts-three-bonus-texts/liv_000066_reading_copy.zip">basic reading copy</a> of the fragment of Field Diary XII.]</p>
+<p>[View the <a href="/islandora/search/liv_000066" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000066_reading_copy.zip">basic reading copy</a> of the fragment of Field Diary XII.]</p>
 
 <p>The fragment details a short period in Livingstone\'s travels as his party journeys in central Africa between Lakes Moero and Tanganyika en route to Ujiji. The fragment takes up topics that surface throughout the final field diaries. For instance, Livingstone complains of his inability to obtain food on Christmas day. He records rumors that have reached him in his present location by way of Ujiji. He reflects on and describes the country around him as he travels. Finally, he mentions the beating of a slave who tried to escape and notes his disagreement with some Arab traders as to the current day of the week, <a href="/spectral-imaging/date-livingstone-stanley-meeting">a problem that would resurface</a> when he came to write the 1871 Field Diary.</p>
 
@@ -25236,7 +25236,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <h4><strong><span style="font-family:crimson text;">Second Unyanyembe Journal (14-24 Aug. 1872)</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>[View the <a href="/islandora/search/liv_000050" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/the-final-manuscripts-three-bonus-texts/liv_000050_reading_copy.zip">basic reading copy</a> of the second Unyanyembe Journal.]</p>
+<p>[View the <a href="/islandora/search/liv_000050" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000050_reading_copy.zip">basic reading copy</a> of the second Unyanyembe Journal.]</p>
 
 <p>When Henry M. Stanley parted with Livingstone in March 1872, the former took away the original <a href="/islandora/search/liv_000019?access=all&amp;limit=catalogue" target="_blank">Unyanyembe Journal</a> (1866-72) for transport to Britain. Livingstone remained at Unyanyembe awaiting men and supplies that Stanley had promised to send. These arrived in August 1872, shortly before Livingstone began the second Unyanyembe Journal. This journal, therefore, opens with a short note from Stanley describing some of the ammunitions sent to Livingstone. The presence of the note suggests that Stanley sent the journal to Livingstone in the first place.</p>
 
@@ -25264,7 +25264,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <h4><strong><span style="font-family:crimson text;">Notes and Calculations for Field Diary XVII (7-9 Apr. 1873)</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>[View the <a href="/islandora/search/liv_000073" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/the-final-manuscripts-three-bonus-texts/liv_000073_reading_copy.zip">basic reading copy</a> of the notes and calculations for Field Diary XVII.]</p>
+<p>[View the <a href="/islandora/search/liv_000073" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000073_reading_copy.zip">basic reading copy</a> of the notes and calculations for Field Diary XVII.]</p>
 
 <p>Livingstone produced these notes and calculations in the final days of his life. The three dated entries detail the efforts of Livingstone and his party to traverse the marshes near the Monikazi River in the vicinity of Lake Bangweolo. The narrative captures the immense challenges the party faced during this period due to the inhospitable terrain: "went East &amp; lost our way in stiff grassy prairies which could scarcely be got through = in 5 hours" (1873a:[2]). The addition of two local guides fails to improve matters as the water remains "about 15 inches in spots and thigh deep in others." However, even amidst such troubles Livingstone still documents some of the local flora: "Papyrus arum = wild rice &amp; stiff grasses aquatic" (1873a:[2]).</p>
 
@@ -25275,7 +25275,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>One side of the leaf (the side with the printed text) contains only Livingstone\'s calculations. The other side contains two columns of notes (chronologically, the first column is in the center, the second column at left) plus some more calculations. The narrative passages here reappear in considerably revised and expanded form in <a href="/islandora/search/liv_000017?access=all&amp;limit=catalogue" target="_blank">Field Diary XVII</a> (see 1873b:[9]-[13]). Like the second Unyanyembe Journal (see above), this fragment remained uncatalogued till it turned up at the David Livingstone Centre during preparations for <a href="/about-site/what-leap-2013-2017">LEAP</a>, the <em>Livingstone Online</em> Enrichment and Access Project, in the early 2010s.</p>
 
-<p class="rtecenter"><span class="hidden-link-wrapper"><span class="hidden-link">[View the </span><a class="hidden-link" href="/islandora/search/liv_000049" target="_blank">critical edition</a><span class="hidden-link"> or download a </span><a class="hidden-link" href="/sites/default/files/in-his-own-words/the-final-manuscripts-three-bonus-texts/liv_000049_reading_copy.zip">basic reading copy</a><span class="hidden-link"> of a secret fourth bonus text.]</span></span><a id="link5" name="link5"></a></p>
+<p class="rtecenter"><span class="hidden-link-wrapper"><span class="hidden-link">[View the </span><a class="hidden-link" href="/islandora/search/liv_000049" target="_blank">critical edition</a><span class="hidden-link"> or download a </span><a class="hidden-link" href="/sites/default/files/shared/liv_000049_reading_copy.zip">basic reading copy</a><span class="hidden-link"> of a secret fourth bonus text.]</span></span><a id="link5" name="link5"></a></p>
 
 <h4><strong><span style="font-family:crimson text;">Works Cited</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
@@ -26188,7 +26188,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/about-this-site/the-theory-behind-livingstone-online/liv_013803_0001-article.jpg"><img alt="Megan Ward lectures on the new Livingstone Online at the British Library, 2015. Copyright Angela Aliff. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)" class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/about-this-site/the-theory-behind-livingstone-online/liv_013803_0001-article.jpg" width="716" title="Megan Ward lectures on the new Livingstone Online at the British Library, 2015. Copyright Angela Aliff. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)" typeof="foaf:Image&quot;" /></a><br />
 <span style="font-size:12px;">Megan Ward lectures on the new <em>Livingstone Online</em> at the British Library, 2015. <em>Copyright Angela Aliff. <a href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
 
-<p>In this spirit, we provide <a href="/about-site/leap-2013-2017-project-history-part-i">narratives and visual representations</a> of the project team at work and enable users to download <a href="/resources/livingstone-online-project-documents">hundreds of unedited documents</a> produced in the course of project research. In addition, we offer access to our <a href="/sites/default/files/about-this-site/the-theory-behind-livingstone-online/Livingstone_Online-Complete-TEI-Transcription-Materials.zip">transcriptions and encoding guidelines</a>, the many <a href="/behind-scenes/practices-standards-and-arrangements">standards</a> by which we have developed our data, and <a href="/islandora/search">self-documenting downloadable archival packets</a> for over 1,100 items that allow users to work directly with our core digital data.</p>
+<p>In this spirit, we provide <a href="/about-site/leap-2013-2017-project-history-part-i">narratives and visual representations</a> of the project team at work and enable users to download <a href="/resources/livingstone-online-project-documents">hundreds of unedited documents</a> produced in the course of project research. In addition, we offer access to our <a href="/sites/default/files/shared/Livingstone_Online-Complete-TEI-Transcription-Materials.zip">transcriptions and encoding guidelines</a>, the many <a href="/behind-scenes/practices-standards-and-arrangements">standards</a> by which we have developed our data, and <a href="/islandora/search">self-documenting downloadable archival packets</a> for over 1,100 items that allow users to work directly with our core digital data.</p>
 
 <p>Such transparency promotes knowledge transfer, but also opens every step of our digital development process to outside critical interrogation. In our provision of such documentation, we hope to initiate a conversation about the value of open-access digital museums and archives, the limitations of site creation, the biases and assumptions inherent in our own work, and the ways that technological advances shape our knowledge of the past. We encourage users to think of <em>Livingstone Online</em> not as a static source of information, but rather as a series of self-reflexive interventions into critical discourse and as a polyphonic digital project of continued meaning making.</p>
 
@@ -26829,7 +26829,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The team thus set out an ambitious agenda, one that would take <em>Livingstone Online</em> and the <em>Livingstone Spectral Imaging Project</em>, already well-established projects, to new levels.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_01_LEAP_NEH_Grant_Application.zip"><strong>NEH Grant Application</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/Documents_01_LEAP_NEH_Grant_Application.zip"><strong>NEH Grant Application</strong></a> project documents</em></span></p>
 
 <p><a name="lph1.4"></a></p>
 
@@ -26841,7 +26841,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>These developments had four consequences. First, the team scaled back the project to exclude the planned integration of a handful of analytical tools into <em>Livingstone Online</em>. Second, the project team moved the start date from 1 May 2013 to 1 September 2013 to allow for Wisnicki\'s change of locale. Third, a number of staff from UNL\'s Center for Digital Research in the Humanities (CDRH) joined the LEAP team to provide local support on the project. Finally, Wisnicki transferred the grant from IUP to UNL, a move not without significant challenges due to the combination of reduced funding and differing F&amp;A rules between IUP and UNL.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_02_LEAP_Project_Launch.zip"><strong>Project Launch</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/Documents_02_LEAP_Project_Launch.zip"><strong>Project Launch</strong></a> project documents</em></span></p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/liv_013557_0001-crop-article.jpg"><img alt="Adrian Wisnicki and Ashanka Kumari on the grounds of the University of Nebraska-Lincoln, 2014. Copyright Angela Aliff. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/liv_013557_0001-crop-article.jpg" title="Adrian Wisnicki and Ashanka Kumari on the grounds of the University of Nebraska-Lincoln, 2014. Copyright Angela Aliff. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Adrian Wisnicki and Ashanka Kumari on the grounds of the University of Nebraska-Lincoln, 2014. <em>Copyright Angela Aliff. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported </a></em></span></p>
@@ -26858,7 +26858,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>In addition, the LA kickoff gave Wisnicki the chance to meet with the UCLA Digital Library Program staff face-to-face. Incredibly, the opportunity for such an encounter had never arisen during two years of sustained and coordinated work on the <em>Livingstone Spectral Imaging Project.</em> The meeting, everyone agreed, underscored the value of personal contact in projects such as LEAP.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_03_LEAP_Planning_and_LA_Kickoff.zip"><strong>Planning and LA Kickoff</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/Documents_03_LEAP_Planning_and_LA_Kickoff.zip"><strong>Planning and LA Kickoff</strong></a> project documents</em></span></p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/liv_013513_0001-article.jpg"><img alt="UCLA Digital Library, 2013. Copyright Livingstone Online. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/liv_013513_0001-article.jpg" title="UCLA Digital Library, 2013. Copyright Livingstone Online. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">UCLA Digital Library, 2013. <em>Copyright </em>Livingstone Online<em>. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported </a></em></span></p>
@@ -26880,7 +26880,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The week\'s last meetings with archivists [qtip: David McClay|David McClay (Manuscripts Curator, John Murray Archive, National Library of Scotland). Institutional contact for <em>Livingstone Online.</em>] and [qtip: Alison Metcalfe|Alison Metcalfe (Manuscripts Curator, National Library of Scotland). Institutional contact for <em>Livingstone Online</em>.] helped to finalize the number of digitized manuscripts that the NLS would provide to <em>Livingstone Online</em>, the intellectual property issues, and metadata used by the NLS. The meetings concluded with the surprise news that the NLS would also be willing to provide <em>Livingstone Online</em> with a trove of images created as part of the NLS bicentenary exhibit "Picturing Africa: Illustrating Livingstone\'s travels." This was an exciting development, as the provision of the materials would significantly enhance contextual study of Livingstone\'s life through the new <em>Livingstone Online</em> site.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_04_LEAP_UK_Kickoff.zip"><strong>UK Kickoff</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/Documents_04_LEAP_UK_Kickoff.zip"><strong>UK Kickoff</strong></a> project documents</em></span></p>
 
 <p><a name="lph1.7"></a></p>
 
@@ -26899,7 +26899,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>GU production of digital images lasted until the end of 2014. Once received in the US via FTP, each image underwent rigorous quality control. [qtip: Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] and [qtip: Ward|Megan Ward (Assistant Professor, Oregon State University). Co-director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.], in collaboration with Wisnicki\'s research assistants [qtip: Ashanka Kumari|Ashanka Kumari (Graduate Student, University of Louisville). Research assistant for <em>Livingstone Online</em>.] and [qtip: Erin Cheatham|Erin Cheatham (Graduate Student, University of Nebraska-Lincoln). Research assistant for <em>Livingstone Online</em>.], reviewed all images and delivered the QC results to the Photo Unit for correction and reshooting as required. Corrected images received the same level of QC. Finally, Wisnicki\'s follow up visit to the UK (fall 2014) served to resolve in-person imaging questions that proved intractable by other means.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_05_LEAP_Digitization_at_University_of_Glasgow.zip"><strong>Digitization at the University of Glasgow</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/Documents_05_LEAP_Digitization_at_University_of_Glasgow.zip"><strong>Digitization at the University of Glasgow</strong></a> project documents</em></span></p>
 
 <p><a name="lph1.8"></a></p>
 
@@ -26929,7 +26929,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>Finally, [qtip: McAulay|Lisa McAulay (Librarian, UCLA Digital Library Program). Institutional co-lead for LEAP.] led UCLA students in cropping legacy image data so as to facilitate and enhance the online display of manuscript images, while [qtip: Smutniak|Frank Smutniak (Web Developer, Center for Digital Research in the Humanities, University of Nebraska-Lincoln). Web developer for LEAP.] wrote a series of Groovy, JSON, and Ruby scripts to convert all images and transcriptions to a uniform file naming standard that would be applied across the <em>Livingstone Online</em> digital collection. Smutniak also created scripts to add Dublin Core metadata to all legacy images and, in the interests of facilitating discovery, to generate standalone XMP and TXT metadata files to accompany each image. The overall process of data development lasted nearly a year and a half and would resume in the final phase of LEAP.</p>
 
-<p><span style="font-size:14px;"><em>Download sets of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_06a_LEAP_Legacy_Data_Development.zip"><strong>Legacy Data Development</strong></a>, <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_06b_LEAP_Legacy_Data_Conversion_Scripts.zip"><strong>Legacy Data Conversion Scripts</strong></a>, and <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_06c_LEAP_MODS_Development.zip"><strong>MODS Development</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download sets of curated <a href="/sites/default/files/shared/Documents_06c_LEAP_MODS_Development.zip"><strong>MODS Development</strong></a> project documents</em></span></p>
 
 <p><a name="lph1.9"></a></p>
 
@@ -26960,7 +26960,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>Each transcription underwent six stages of production, review, and quality control. A Google Drive-based project workflow coordinated the team efforts and streamlined scheduling, while recourse to the Spacely server at the University of Nebraska-Lincoln facilitated the exchange of transcription files among team members. As transcription practices evolved, Wisnicki and Ball updated the encoding manual and worked closely with LEAP team members to address, resolve, and track all encoding issues. A year and a half after starting, the LEAP transcription team had thus successfully transcribed and encoded nearly all of the final field diaries, some 350 (of 700 pages) of the Unyanyembe Journal, and all of the DLC letters.</p>
 
-<p><span style="font-size:14px;"><em>Download sets of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_07a_LEAP_TEI_Transcription_Conversion.zip"><strong>TEI Transcription Conversion</strong></a> and <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_07b_LEAP_TEI_Transcription_Encoding.zip"><strong>TEI Transcription Encoding</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download sets of curated <a href="/sites/default/files/shared/Documents_07b_LEAP_TEI_Transcription_Encoding.zip"><strong>TEI Transcription Encoding</strong></a> project documents</em></span></p>
 
 <p><a name="lph1.10"></a></p>
 
@@ -26977,7 +26977,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The collective result of these efforts meant that the new <em>Livingstone Online</em> would enhance the study of Livingstone and his life and times through the provision of a broadly expanded collection of items, while providing more information about these items than ever before.</p>
 
-<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/about-this-site/leap-2013-2017-project-history-part-i/Documents_08_LEAP_Core_Digital_Collection.zip"><strong>Documenting the Core Digital Collection</strong></a> project documents</em></span></p>
+<p><span style="font-size:14px;"><em>Download a set of curated <a href="/sites/default/files/shared/Documents_08_LEAP_Core_Digital_Collection.zip"><strong>Documenting the Core Digital Collection</strong></a> project documents</em></span></p>
 
 <p align="center"><a href="/about-site/leap-2013-2016-project-history-part-ii">LEAP (2013-2017): A Project History, Part II</a></p>
 
@@ -27560,7 +27560,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000004?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-iv-overview/liv_000004_reading_copy.zip">basic reading copy</a> of Field Diary IV.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000004?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000004_reading_copy.zip">basic reading copy</a> of Field Diary IV.]</p>
 
 <p>Field Diary IV further develops two of Livingstone\'s main concerns: his relationship with his men and the Arab slave trade. The account is riddled with concerns over his authority and complaints about his porters\' behavior, including instances of rebellion and illnesses that Livingstone deems fake.</p>
 
@@ -28832,9 +28832,9 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
 
 <p>After his death, Livingstone’s final writings were edited by his friend Horace Waller and published in two volumes as the <em>Last Journals</em> (1874). For this period, however, Waller primarily relied on the 1870 Field Diary rather than the Unyanyembe Journal (his default text in preparing the <em>Last Journals</em>). As a result, when we take the 1870 Field Diary, the Unyanyembe Journal, and Field Diary XIII together, we can create a more diverse, patchworked record of the period July 1870 - March 1871, the time when Livingstone was stranded in Bambarre and also the time directly pre-dating his <a href="http://livingstone.library.ucla.edu/1871diary/livingstone2.htm" target="_blank">visit to Nyangwe</a>.</p>
 
-<p class="space-1"><strong><u>Bonus:</u></strong> Download a PDF copy of the <a href="/sites/default/files/spectral-imaging/livingstones-composition-practices/Last-Journals-of-David-Livingstone-vol-II.zip">original edition</a> (25.1 MB) of Livingstone\'s <em>Last Journals</em> (1874), volume II. Pages 48-109 of this volume correspond to the 1870 Field Diary.</p>
+<p class="space-1"><strong><u>Bonus:</u></strong> Download a PDF copy of the <a href="/sites/default/files/shared/Last-Journals-of-David-Livingstone-vol-II.zip">original edition</a> (25.1 MB) of Livingstone\'s <em>Last Journals</em> (1874), volume II. Pages 48-109 of this volume correspond to the 1870 Field Diary.</p>
 
-<p><u><strong>Double-bonus:</strong></u> Download a PDF copy of a <a href="/sites/default/files/spectral-imaging/livingstones-composition-practices/Last-Journals-Page-Proofs-1870-FD-Segment.zip">photocopy of the corrected proofs</a> (21 MB) of Livingstone\'s <em>Last Journals</em> (1874), volume II. This segment of the proofs corresponds to the 1870 Field Diary. The photocopy has been marked with Roman numerals by the present editorial team to correlate the proofs with Livingstone\'s original manuscript pages.</p>
+<p><u><strong>Double-bonus:</strong></u> Download a PDF copy of a <a href="/sites/default/files/shared/Last-Journals-Page-Proofs-1870-FD-Segment.zip">photocopy of the corrected proofs</a> (21 MB) of Livingstone\'s <em>Last Journals</em> (1874), volume II. This segment of the proofs corresponds to the 1870 Field Diary. The photocopy has been marked with Roman numerals by the present editorial team to correlate the proofs with Livingstone\'s original manuscript pages.</p>
 
 <p><a id="link2" name="link2"></a></p>
 
@@ -30104,7 +30104,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>[View the <a href="/islandora/search/liv_000017?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/in-his-own-words/field-diary-xvii-overview/liv_000017_reading_copy.zip">basic reading copy</a> of Field Diary XVII.]</p>
+        'value' => '<p>[View the <a href="/islandora/search/liv_000017?access=all&amp;limit=catalogue" target="_blank">critical edition</a> or download a <a href="/sites/default/files/shared/liv_000017_reading_copy.zip">basic reading copy</a> of Field Diary XVII.]</p>
 
 <p>Field Diary XVII – just 32 pages long – chronicles the eighteen days leading up to Livingstone’s death. In the opening pages he writes that he is “pale bloodless and weak from bleeding profusely ever since the 31st March,” but notes that he still wishes to continue: “Oh how I long to be permitted by the Overpower to finish my work” (Livingstone 1873b:[15]). He continues to hope for a recovery, believing that his illness may be fever and dosing himself with quinine.</p>
 

@@ -112,6 +112,8 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
     $wrapper->title->set($title);
   }
   $field_settings = livingstone_node_import_field_settings();
+  drupal_mkdir('public://manuscript');
+  drupal_mkdir('public://manuscript/images');
   try {
     foreach ($fields as $field_name => $value) {
       $type = $field_settings[$field_name]['type'];
@@ -125,7 +127,7 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
             $save = TRUE;
             $object = islandora_object_load($fields['field_manuscript_pid']);
             if (isset($object['TN'])) {
-              $uri = file_create_filename($object['TN']->label, 'public://');
+              $uri = file_create_filename($object['TN']->label, 'public://manuscript/images');
               $object['TN']->getContent(drupal_realpath($uri));
               $file = new stdClass();
               $file->uid = 1;
