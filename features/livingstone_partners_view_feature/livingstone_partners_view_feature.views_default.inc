@@ -32,6 +32,21 @@ function livingstone_partners_view_feature_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'span2';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'partners' => 'partners',
+    'about_this_site' => 0,
+    'behind_the_scenes' => 0,
+    'in_his_own_words' => 0,
+    'life_times' => 0,
+    'our_technology' => 0,
+    'resouces' => 0,
+    'slides' => 0,
+  );
   /* Field: Content: Partner Link */
   $handler->display->display_options['fields']['field_partner_link']['id'] = 'field_partner_link';
   $handler->display->display_options['fields']['field_partner_link']['table'] = 'field_data_field_partner_link';
@@ -53,10 +68,11 @@ function livingstone_partners_view_feature_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Sort criterion: Content: Order (field_order) */
-  $handler->display->display_options['sorts']['field_order_value']['id'] = 'field_order_value';
-  $handler->display->display_options['sorts']['field_order_value']['table'] = 'field_data_field_order';
-  $handler->display->display_options['sorts']['field_order_value']['field'] = 'field_order_value';
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -84,6 +100,7 @@ function livingstone_partners_view_feature_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('queue'),
     t('Block'),
     t('Partners Block'),
   );
