@@ -198,27 +198,27 @@ function livingstone_nodequeue_items_feature_uuid_features_default_nodequeue_ite
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '58a3243f-182c-4d5a-b174-293eaaf2129b',
-    'position' => 10,
+    'position' => 9,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '686d8c7f-1386-4692-b780-cfc9081e3872',
-    'position' => 7,
+    'position' => 6,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '749fac17-d2c6-49e7-bfed-0aca417379b5',
-    'position' => 8,
+    'position' => 7,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '75c25c6c-c491-4059-b446-3562d7518c95',
-    'position' => 4,
+    'position' => 3,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '7fbeae31-b1a8-46f0-9529-67f90d0e36f5',
-    'position' => 6,
+    'position' => 5,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
@@ -228,17 +228,12 @@ function livingstone_nodequeue_items_feature_uuid_features_default_nodequeue_ite
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '8229df32-720a-4447-82e1-9f17f8de0d71',
-    'position' => 5,
+    'position' => 4,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => 'b33a7f9f-edeb-4611-a294-8d92020bf9f0',
-    'position' => 9,
-  );
-  $nodequeue_items[] = array(
-    'queue_name' => 'our_technology',
-    'node_uuid' => 'c7b7f847-291e-4122-8f80-0727f8336b81',
-    'position' => 3,
+    'position' => 8,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',

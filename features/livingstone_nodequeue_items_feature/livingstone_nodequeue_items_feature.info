@@ -53,7 +53,6 @@ features[uuid_nodequeue_item][] = our_technology - 7fbeae31-b1a8-46f0-9529-67f90
 features[uuid_nodequeue_item][] = our_technology - 8082ba50-e1cb-47bb-b5b8-18c9d2aeb395
 features[uuid_nodequeue_item][] = our_technology - 8229df32-720a-4447-82e1-9f17f8de0d71
 features[uuid_nodequeue_item][] = our_technology - b33a7f9f-edeb-4611-a294-8d92020bf9f0
-features[uuid_nodequeue_item][] = our_technology - c7b7f847-291e-4122-8f80-0727f8336b81
 features[uuid_nodequeue_item][] = our_technology - f2928a2c-8998-407f-beab-43aaa7679c45
 features[uuid_nodequeue_item][] = resouces - 08cc1752-d8e8-4f69-a2f5-b9b89d734f88
 features[uuid_nodequeue_item][] = resouces - 255bf215-fc27-4341-8695-a0a7b4a38d6f
