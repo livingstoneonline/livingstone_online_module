@@ -2701,7 +2701,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <p>Research for our critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts has resulted in the production of a considerable amount of supporting documentation. This documentation encompasses all aspects of the project and, as a whole, offers an intimate glimpse into project development. The documentation takes a variety of forms, from emails among project team members, grant application files, project plans, and spreadsheets of processing objectives, to meeting and research notes, test images, metadata-addition scripts, and PowerPoint presentations. Altogether, we provide curated access to some 300 project documents (broadly defined) spanning three years of research activities (2013-16) among an internationally distributed team of collaborators and supporting institutions.</p>
 
-<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/project-documentation/liv_000211_0003_ICA_pseudo_(liv_000204_0001_trans).jpg"><img alt="A processed spectral image of a two-page spread from the 10 March 1870 \'Retrospect\' (Livingstone 1870a:[3]). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/project-documentation/liv_000211_0003_ICA_pseudo_(liv_000204_0001_trans).jpg" title="A processed spectral image of a two-page spread from the 10 March 1870 \'Retrospect\' (Livingstone 1870a:[3]). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/liv_000211_0003_ICA_pseudo_(liv_000204_0001_trans).jpg"><img alt="A processed spectral image of a two-page spread from the 10 March 1870 \'Retrospect\' (Livingstone 1870a:[3]). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/1870-project-documentation/liv_000211_0003_ICA_pseudo_(liv_000204_0001_trans).jpg" title="A processed spectral image of a two-page spread from the 10 March 1870 \'Retrospect\' (Livingstone 1870a:[3]). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A processed spectral image of a two-page spread from the 10 March 1870 \'Retrospect\' (Livingstone 1870a:[3]). <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank&quot;">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. The kaleidoscopic colors foreground and differentiate the wide range of substances that have left traces on the manuscript\'s pages over its 145-year history.</span></p>
 
 <p>The directors have curated this documentation in a handful of ways. First, we have organized the documentation into categories of project endeavor in order to facilitate study of individual files or file sequences. As part of this, we have removed duplicate or variant files with the goal of being representative (rather than exhaustive) about our research. Second, documentation files have been renamed to reflect the contents and actual order of research activities (although, as users will find, research activities did not always take an organized form and involved much trial and error). Finally, we have lightly edited the documentation to remove personal information or other sensitive material such as passwords.</p>
@@ -2714,7 +2714,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <h4><strong><span style="font-family:crimson text;">Complete Project Documentation</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>Download <a href="/sites/default/files/spectral-imaging/project-documentation/Spectral-Imaging-Project-Documentation-Phase-2.zip">all curated project documents</a> (1.21 GB) organized as a series of subdirectories containing several hundred files that together encompass every aspect of development.</p>
+<p>Download <a href="/sites/default/files/spectral-imaging/1870-project-documentation/Spectral-Imaging-Project-Documentation-Phase-2.zip">all curated project documents</a> (1.21 GB) organized as a series of subdirectories containing several hundred files that together encompass every aspect of development.</p>
 
 <p><a id="link3" name="link3"></a></p>
 
@@ -2725,18 +2725,18 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <p>Download project documentation by discrete areas of endeavor:</p>
 
 <ol>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/01-Grant-Application.zip">NEH Grant Application</a> (1.3 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/02-Planning-Notes-and-Docs.zip">Planning notes and documents</a> (128 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/03-Processing-Notes-and-Feedback-Easton+Team.zip">Spectral image processing notes (PCA and ICA)</a> (988 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/04-Processing-Notes-and-Feedback-Knox+Team.zip">Spectral image processing notes (pseudocolor and animation)</a> (206.7 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/05-Manuscript-and-Image-Notes-Ward-Wisnicki.zip">Manuscript and image notes</a> (25.9 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/06-Meeting-and-Other-Notes.zip">Meeting and other notes</a> (529 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/07-Critical-Essay-Notes.zip">Critical essay and supporting materials notes</a> (691 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/08-Animated-Spectral-Image-(ASI)-Testing.zip">Animated Spectral Image (ASI) testing</a> (538.6 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/09-Image-Integration-and-Metadata-Addition.zip">Image integration and metadata-addition files</a> (5.4 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/10-Dissemination.zip">Dissemination</a> (331.2 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/11-Spectral-Image-Packet-Support-Files.zip">Spectral image archival packet supporting files</a> (3 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation/12-1870-FD-Beta-Launch-UK-Tour.zip">Beta launch of critical edition</a> (93.8 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/01-Grant-Application.zip">NEH Grant Application</a> (1.3 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/02-Planning-Notes-and-Docs.zip">Planning notes and documents</a> (128 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/03-Processing-Notes-and-Feedback-Easton+Team.zip">Spectral image processing notes (PCA and ICA)</a> (988 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/04-Processing-Notes-and-Feedback-Knox+Team.zip">Spectral image processing notes (pseudocolor and animation)</a> (206.7 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/05-Manuscript-and-Image-Notes-Ward-Wisnicki.zip">Manuscript and image notes</a> (25.9 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/06-Meeting-and-Other-Notes.zip">Meeting and other notes</a> (529 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/07-Critical-Essay-Notes.zip">Critical essay and supporting materials notes</a> (691 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/08-Animated-Spectral-Image-(ASI)-Testing.zip">Animated Spectral Image (ASI) testing</a> (538.6 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/09-Image-Integration-and-Metadata-Addition.zip">Image integration and metadata-addition files</a> (5.4 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/10-Dissemination.zip">Dissemination</a> (331.2 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/11-Spectral-Image-Packet-Support-Files.zip">Spectral image archival packet supporting files</a> (3 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-project-documentation/12-1870-FD-Beta-Launch-UK-Tour.zip">Beta launch of critical edition</a> (93.8 MB)</li>
 </ol>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
@@ -3687,7 +3687,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <p><a href="/islandora/search/1874 NOT large?access=all&amp;limit=catalogue&amp;f[3]=genre_ms%3A&quot;maps (documents)&quot;"><strong>A Map of the Forest Plateau of Africa</strong></a> from the <em>Last Journals </em>(Livingstone 1874).</p>
 
-<p><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_The-Standard-Reconstructed.zip"><strong><em>The Standard</em> Reconstructed</strong></a> – front page of the 24 November 1869 issue of <em>The Standard</em> reconstructed from the folia of the 1871 Field Diary and showing Livingstone\'s overtext.</p>
+<p><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_The-Standard-Reconstructed.zip"><strong><em>The Standard</em> Reconstructed</strong></a> – front page of the 24 November 1869 issue of <em>The Standard</em> reconstructed from the folia of the 1871 Field Diary and showing Livingstone\'s overtext.</p>
 
 <p><a href="/islandora/search/liv_014099"><strong><em>The Standard</em> (London)</strong></a> – 24 November 1869 issue, clean copy of the entire newspaper without Livingstone\'s writing.</p>
 
@@ -3697,7 +3697,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <h4><strong>Ink Spectra PowerPoint Files&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>Imaging scientist Roger L. Easton, Jr. has produced a series of <a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">PowerPoint files</a> exclusively for the present critical edition. The files track the ink spectra in a selection of the DLC and NLS folia of the 1871 Field Diary.</p>
+<p>Imaging scientist Roger L. Easton, Jr. has produced a series of <a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_Ink-Spectra-PowerPoint-files-Easton.zip">PowerPoint files</a> exclusively for the present critical edition. The files track the ink spectra in a selection of the DLC and NLS folia of the 1871 Field Diary.</p>
 
 <p><a id="link10" name="link10"></a></p>
 
@@ -3705,7 +3705,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <h4><strong>Livingstone Spectral Image Archive Files</strong>&nbsp;&nbsp;&nbsp; <span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>The entire original <a href="http://livingstone.library.ucla.edu/livingstone_archive/" target="_blank">Livingstone Spectral Image Archive</a> (external link) from 2012 –&nbsp;except for archival images and MD5 checksum files – is now available for download as a <a href="/sites/default/files/spectral-imaging/edition-guide/Livingstone_Spectral_Image_Archive.zip">single ZIP file</a> (588 MB). The archive includes full documentation, all supporting files, and all the website files that constitute the Archive itself as well as the first editions of <em>Livingstone\'s 1871 Field Diary</em> (UCLA Digital Library, 2011-13) and <em>Letter from Bambarre</em> (UCLA Digital Library, 2010-11). The missing archival images and MD5 files are now available in enhanced versions through our <a href="/islandora/search?access=view_spectral">spectral image collection</a>.</p>
+<p>The entire original <a href="http://livingstone.library.ucla.edu/livingstone_archive/" target="_blank">Livingstone Spectral Image Archive</a> (external link) from 2012 –&nbsp;except for archival images and MD5 checksum files – is now available for download as a <a href="/sites/default/files/spectral-imaging/1871-edition-guide/Livingstone_Spectral_Image_Archive.zip">single ZIP file</a> (588 MB). The archive includes full documentation, all supporting files, and all the website files that constitute the Archive itself as well as the first editions of <em>Livingstone\'s 1871 Field Diary</em> (UCLA Digital Library, 2011-13) and <em>Letter from Bambarre</em> (UCLA Digital Library, 2010-11). The missing archival images and MD5 files are now available in enhanced versions through our <a href="/islandora/search?access=view_spectral">spectral image collection</a>.</p>
 
 <p><a id="link11" name="link11"></a></p>
 
@@ -3713,25 +3713,25 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <h4><strong>Project Documents&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>Our project documents, grouped below by area of project endeavor, collectively provide a comprehensive look into the production of the 1871 Field Diary critical edition and the <a href="/islandora/search?access=view_spectral">Livingstone Spectral Image Collection</a>. Users can also download a single ZIP file containing <a href="/sites/default/files/spectral-imaging/edition-guide/1871FD-Documentation-Complete.zip">all curated project documents</a> (346 MB).</p>
+<p>Our project documents, grouped below by area of project endeavor, collectively provide a comprehensive look into the production of the 1871 Field Diary critical edition and the <a href="/islandora/search?access=view_spectral">Livingstone Spectral Image Collection</a>. Users can also download a single ZIP file containing <a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD-Documentation-Complete.zip">all curated project documents</a> (346 MB).</p>
 
 <ol style="margin-bottom: 12px;">
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_01_Locating-the-Manuscript.zip">Locating the Manuscript</a> (2.7 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_02_Project-Funding.zip">Project Funding</a> (131 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_03_Conservation.zip">Conservation</a> (24.9 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_04_Project-Planning.zip">Project Planning</a> (521 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_05_Imaging-Set-Up.zip">Imaging Set-Up</a> (640 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_06_Imaging-Schedule-and-Objectives.zip">Imaging Schedule and Objectives</a> (2.4 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_07_Spectral-Image-Processing.zip">Spectral Image Processing</a> (289 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_08_Principal-Component-Analysis-(PCA).zip">Principal Component Analysis (PCA)</a> (154 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip">Spectral Ratio and Pseudocolor Rendering</a> (42 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_10_Processing-Results.zip">Processing Results</a> (2 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_11_Data-Scrubbing.zip">"Data Scrubbing"</a> (79.6 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_12_Creating-the-Data-Archive.zip">Creating the Data Archive</a> (238 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip">Creating a Publication Template / XML Encoding</a> (181 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_14_The-Electronic-Edition.zip">The Electronic Edition</a> (771 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_15_Preliminary-Data-Analysis.zip">Preliminary Data Analysis</a> (69.5 KB)<a name="losg5"></a></li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip">Dissemination, Results Release, and the "UK Tour"</a> (35.5 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_01_Locating-the-Manuscript.zip">Locating the Manuscript</a> (2.7 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_02_Project-Funding.zip">Project Funding</a> (131 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_03_Conservation.zip">Conservation</a> (24.9 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_04_Project-Planning.zip">Project Planning</a> (521 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_05_Imaging-Set-Up.zip">Imaging Set-Up</a> (640 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_06_Imaging-Schedule-and-Objectives.zip">Imaging Schedule and Objectives</a> (2.4 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_07_Spectral-Image-Processing.zip">Spectral Image Processing</a> (289 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_08_Principal-Component-Analysis-(PCA).zip">Principal Component Analysis (PCA)</a> (154 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip">Spectral Ratio and Pseudocolor Rendering</a> (42 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_10_Processing-Results.zip">Processing Results</a> (2 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_11_Data-Scrubbing.zip">"Data Scrubbing"</a> (79.6 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_12_Creating-the-Data-Archive.zip">Creating the Data Archive</a> (238 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip">Creating a Publication Template / XML Encoding</a> (181 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_14_The-Electronic-Edition.zip">The Electronic Edition</a> (771 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_15_Preliminary-Data-Analysis.zip">Preliminary Data Analysis</a> (69.5 KB)<a name="losg5"></a></li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-edition-guide/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip">Dissemination, Results Release, and the "UK Tour"</a> (35.5 MB)</li>
 </ol>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
@@ -6077,7 +6077,7 @@ Elizabeth Maxwell</span></p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p class="space1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/project-team/Raking_Light_Set_Up_Toth_28_June_2010-article.jpg"><img alt="Sketch diagram of the raking light setup used for spectrally imaging both the 1870 and 1871 Field Diaries at the National Library of Scotland, 28 June 2010. Copyright Michael B. Toth. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/project-team/Raking_Light_Set_Up_Toth_28_June_2010-article.jpg" style="max-width: 80%; border-width: 1px; border-style: solid; border-color: #000000;" title="Sketch diagram of the raking light setup used for spectrally imaging both the 1870 and 1871 Field Diaries at the National Library of Scotland, 28 June 2010. Copyright Michael B. Toth. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a><br />
+        'value' => '<p class="space1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/1871-project-team/Raking_Light_Set_Up_Toth_28_June_2010-article.jpg"><img alt="Sketch diagram of the raking light setup used for spectrally imaging both the 1870 and 1871 Field Diaries at the National Library of Scotland, 28 June 2010. Copyright Michael B. Toth. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/1871-project-team/Raking_Light_Set_Up_Toth_28_June_2010-article.jpg" style="max-width: 80%; border-width: 1px; border-style: solid; border-color: #000000;" title="Sketch diagram of the raking light setup used for spectrally imaging both the 1870 and 1871 Field Diaries at the National Library of Scotland, 28 June 2010. Copyright Michael B. Toth. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a><br />
 <span style="font-size:12px;display:inline-block;text-align:left;max-width:80%">Sketch diagram of the raking light setup used for spectrally imaging both the 1870 and 1871 Field Diaries at the National Library of Scotland, 28 June 2010. <em>Copyright Michael B. Toth. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> Learn more about the imaging set-up in our <a href="/spectral-imaging/project-history-1">project history</a>.</span></p>
 
 <p><em>Scholarship and Science</em></p>
@@ -8674,9 +8674,9 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <h4><strong><span style="font-family:crimson text;">Complete Project Documentation</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p>Download <a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD-Documentation-Complete.zip">all curated project documents</a> (346 MB) related to the production of the critical edition of Livingstone\'s 1871 Field Diary organized as a series of subdirectories that together encompass every aspect of development.</p>
+<p>Download <a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD-Documentation-Complete.zip">all curated project documents</a> (346 MB) related to the production of the critical edition of Livingstone\'s 1871 Field Diary organized as a series of subdirectories that together encompass every aspect of development.</p>
 
-<p><u><strong>Bonus:</strong></u> Download the entire original <a href="http://livingstone.library.ucla.edu/livingstone_archive/" target="_blank">Livingstone Spectral Image Archive</a> (external link) from 2012 –&nbsp;except for archival images and MD5 checksum files – as a <a href="/sites/default/files/spectral-imaging/project-documentation-0/Livingstone_Spectral_Image_Archive.zip">single ZIP file</a> (588 MB). The archive includes full documentation, all supporting files, and all the website files that constitute the Archive itself as well as the first editions of <em>Livingstone\'s 1871 Field Diary</em> (UCLA Digital Library, 2011-13) and <em>Letter from Bambarre</em> (UCLA Digital Library, 2010-11). The missing archival images and MD5 files are now available in enhanced versions through our <a href="http://livingstoneonline.org/islandora/search?access=view_spectral">spectral image collection</a>.</p>
+<p><u><strong>Bonus:</strong></u> Download the entire original <a href="http://livingstone.library.ucla.edu/livingstone_archive/" target="_blank">Livingstone Spectral Image Archive</a> (external link) from 2012 –&nbsp;except for archival images and MD5 checksum files – as a <a href="/sites/default/files/spectral-imaging/1871-project-documentation/Livingstone_Spectral_Image_Archive.zip">single ZIP file</a> (588 MB). The archive includes full documentation, all supporting files, and all the website files that constitute the Archive itself as well as the first editions of <em>Livingstone\'s 1871 Field Diary</em> (UCLA Digital Library, 2011-13) and <em>Letter from Bambarre</em> (UCLA Digital Library, 2010-11). The missing archival images and MD5 files are now available in enhanced versions through our <a href="http://livingstoneonline.org/islandora/search?access=view_spectral">spectral image collection</a>.</p>
 
 <p><a id="link2" name="link2"></a></p>
 
@@ -8687,22 +8687,22 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p>Download project documentation by discrete areas of endeavor:</p>
 
 <ol style="margin-bottom: 12px;">
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_01_Locating-the-Manuscript.zip">Locating the Manuscript</a> (2.7 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_02_Project-Funding.zip">Project Funding</a> (131 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_03_Conservation.zip">Conservation</a> (24.9 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_04_Project-Planning.zip">Project Planning</a> (521 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_05_Imaging-Set-Up.zip">Imaging Set-Up</a> (640 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_06_Imaging-Schedule-and-Objectives.zip">Imaging Schedule and Objectives</a> (2.4 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_07_Spectral-Image-Processing.zip">Spectral Image Processing</a> (289 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_08_Principal-Component-Analysis-(PCA).zip">Principal Component Analysis (PCA)</a> (154 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip">Spectral Ratio and Pseudocolor Rendering</a> (42 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_10_Processing-Results.zip">Processing Results</a> (2 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_11_Data-Scrubbing.zip">"Data Scrubbing"</a> (79.6 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_12_Creating-the-Data-Archive.zip">Creating the Data Archive</a> (238 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip">Creating a Publication Template / XML Encoding</a> (181 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_14_The-Electronic-Edition.zip">The Electronic Edition</a> (771 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_15_Preliminary-Data-Analysis.zip">Preliminary Data Analysis</a> (69.5 KB)<a name="losg5"></a></li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/project-documentation-0/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip">Dissemination, Results Release, and the "UK Tour"</a> (35.5 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_01_Locating-the-Manuscript.zip">Locating the Manuscript</a> (2.7 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_02_Project-Funding.zip">Project Funding</a> (131 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_03_Conservation.zip">Conservation</a> (24.9 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_04_Project-Planning.zip">Project Planning</a> (521 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_05_Imaging-Set-Up.zip">Imaging Set-Up</a> (640 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_06_Imaging-Schedule-and-Objectives.zip">Imaging Schedule and Objectives</a> (2.4 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_07_Spectral-Image-Processing.zip">Spectral Image Processing</a> (289 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_08_Principal-Component-Analysis-(PCA).zip">Principal Component Analysis (PCA)</a> (154 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_09_Spectral-Ratio-and-Pseudocolor-Rendering.zip">Spectral Ratio and Pseudocolor Rendering</a> (42 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_10_Processing-Results.zip">Processing Results</a> (2 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_11_Data-Scrubbing.zip">"Data Scrubbing"</a> (79.6 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_12_Creating-the-Data-Archive.zip">Creating the Data Archive</a> (238 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_13_Creating-a-Publication-Template-and-XML-Encoding.zip">Creating a Publication Template / XML Encoding</a> (181 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_14_The-Electronic-Edition.zip">The Electronic Edition</a> (771 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_15_Preliminary-Data-Analysis.zip">Preliminary Data Analysis</a> (69.5 KB)<a name="losg5"></a></li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1871-project-documentation/1871FD_16_Dissemination-Results-Release-and-the-UK-Tour.zip">Dissemination, Results Release, and the "UK Tour"</a> (35.5 MB)</li>
 </ol>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
@@ -9534,7 +9534,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/project-team-0/liv_000209_0007_pseudoBY_940_by_592-article.jpg"><img alt="A processed spectral image of a page from the 1870 Field Diary (1871b:LXXXIV pseudo_v4_BY). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/project-team-0/liv_000209_0007_pseudoBY_940_by_592-article.jpg" title="A processed spectral image of a page from the 1870 Field Diary (1871b:LXXXIV pseudo_v4_BY). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/bambarre-project-team/liv_000209_0007_pseudoBY_940_by_592-article.jpg"><img alt="A processed spectral image of a page from the 1870 Field Diary (1871b:LXXXIV pseudo_v4_BY). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/bambarre-project-team/liv_000209_0007_pseudoBY_940_by_592-article.jpg" title="A processed spectral image of a page from the 1870 Field Diary (1871b:LXXXIV pseudo_v4_BY). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A processed spectral image of a page from the 1870 Field Diary (1871b:LXXXIV pseudo_v4_BY). <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. This page contains the entries Livingstone wrote just before (4 February 1871) and after (8 February 1871) he composed the <em>Letter from Bambarre</em>. In the former entry, Livingstone notes the imminent arrival of the freed Banian slaves that would deliver the letters from Horace Waller that inspired Livingstone to write his letter.</span></p>
 
 <p><em>Scholarship</em></p>
@@ -15547,7 +15547,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/the-project-team/liv_002568_0002_pseudo_0780_by_0940-article.jpg"><img alt="A spectral image of a page from Livingstone\'s Letter to John Kirk 2, 13 Feb. 1871 (Livingstone 1871d:[2] pseudo_v3). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/the-project-team/liv_002568_0002_pseudo_0780_by_0940-article.jpg" title="A spectral image of a page from Livingstone\'s Letter to John Kirk 2, 13 Feb. 1871 (Livingstone 1871d:[2] pseudo_v3). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/1870-project-team/liv_002568_0002_pseudo_0780_by_0940-article.jpg"><img alt="A spectral image of a page from Livingstone\'s Letter to John Kirk 2, 13 Feb. 1871 (Livingstone 1871d:[2] pseudo_v3). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/1870-project-team/liv_002568_0002_pseudo_0780_by_0940-article.jpg" title="A spectral image of a page from Livingstone\'s Letter to John Kirk 2, 13 Feb. 1871 (Livingstone 1871d:[2] pseudo_v3). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A spectral image of a page from Livingstone\'s Letter to John Kirk 2, 13 Feb. 1871 (Livingstone 1871d:[2] pseudo_v3). <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
 
 <p><em>Leadership</em></p>
@@ -16419,7 +16419,7 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/in-his-own-words/project-team/liv_000073_0002-article.jpg"><img alt="Notes and Calculations for Field Diary XVII, 7-9 April 1873 (Livingstone 1873a:[2]). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/in-his-own-words/project-team/liv_000073_0002-article.jpg" title="Notes and Calculations for Field Diary XVII, 7-9 April 1873 (Livingstone 1873a:[2]). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/in-his-own-words/final-project-team/liv_000073_0002-article.jpg"><img alt="Notes and Calculations for Field Diary XVII, 7-9 April 1873 (Livingstone 1873a:[2]). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/in-his-own-words/final-project-team/liv_000073_0002-article.jpg" title="Notes and Calculations for Field Diary XVII, 7-9 April 1873 (Livingstone 1873a:[2]). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Notes and Calculations for Field Diary XVII, 7-9 April 1873 (Livingstone 1873a:[2]). <em>Copyright David Livingstone Centre. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. This previously undoucmented fragment came to light in 2013 as the project team prepared to image the Livingstone manuscripts held by the David Livingstone Centre. The dated entries span 7 to 9 April 1873, the last month of Livingstone\'s life, and are similar to the entries for the same dates in Field Diary XVII (see Livingstone 1873:[9]-[13]). The fragment indicates that even at this late date in his life, Livingstone continued to take his manuscripts through multiple stages of revision.</span></p>
 
 <p><em>Leadership</em></p>
@@ -22187,7 +22187,7 @@ ornament their faces and heads (1871f:CVII)</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/in-his-own-words/acknowledgments/liv_003007_0001-article1.jpg"><img alt="David Livingstone, Map of Central African Lakes, 1867-1872, detail. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/in-his-own-words/acknowledgments/liv_003007_0001-article1.jpg" title="David Livingstone, Map of Central African Lakes, 1867-1872, detail. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/in-his-own-words/final-acknowledgments/liv_003007_0001-article1.jpg"><img alt="David Livingstone, Map of Central African Lakes, 1867-1872, detail. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/in-his-own-words/final-acknowledgments/liv_003007_0001-article1.jpg" title="David Livingstone, Map of Central African Lakes, 1867-1872, detail. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">David Livingstone, Map of Central African Lakes, 1867-1872, detail. <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank">Creative Commons Share-alike 2.5 UK: Scotland</a></em>. Livingstone\'s maps typically combined observations he made first hand with data he collected from informants, often in an unacknowledged fashion.</span></p>
 
 <p>The production of the present critical edition required four years and the collective efforts of a project team numbering over twenty individuals. None of this work would have been possible without the support of the <a href="https://www.neh.gov/" target="_blank">National Endowment for the Humanities</a> (NEH), one of the greatest cultural funding organizations in the United States. The project team is grateful to the NEH and its officers for making this edition possible and, most importantly, for infusing our project with a positive and vibrant spirit that carried the project through every stage, however difficult.</p>
@@ -22924,7 +22924,7 @@ ornament their faces and heads (1871f:CVII)</p>
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'spectral-imaging/livingstones-1871-field-diary-0',
+      'alias' => 'spectral-imaging/livingstones-1871-field-diary',
       'language' => 'und',
     ),
   ),
@@ -24066,45 +24066,45 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <h4><strong><span style="font-family:crimson text;">Basic Reading Copies for Download</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p class="space2">Download basic reading copies of&nbsp;<a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/Livingstone-Final-Manuscripts_reading_copies.zip">all manuscripts</a> (4 MB) in one ZIP file or select a specific text.</p>
+<p class="space2">Download basic reading copies of&nbsp;<a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/Livingstone-Final-Manuscripts_reading_copies.zip">all manuscripts</a> (4 MB) in one ZIP file or select a specific text.</p>
 
 <p><em>Core Texts</em></p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000019_reading_copy.zip">Unyanyembe Journal</a></strong> - 28 Jan. 1866-5 Mar. 1872</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000019_reading_copy.zip">Unyanyembe Journal</a></strong> - 28 Jan. 1866-5 Mar. 1872</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000001_reading_copy.zip">Field Diary I</a></strong> - 4 Aug. 1865-31 Mar. 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000001_reading_copy.zip">Field Diary I</a></strong> - 4 Aug. 1865-31 Mar. 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000002_reading_copy.zip">Field Diary II</a></strong> - 4 Apr.-14 May 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000002_reading_copy.zip">Field Diary II</a></strong> - 4 Apr.-14 May 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000003_reading_copy.zip">Field Diary III</a></strong> - 14 May-30 June 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000003_reading_copy.zip">Field Diary III</a></strong> - 14 May-30 June 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000004_reading_copy.zip">Field Diary IV</a></strong> - 1 July-5 Sept. 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000004_reading_copy.zip">Field Diary IV</a></strong> - 1 July-5 Sept. 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000005_reading_copy.zip">Field Diary V</a></strong> - 5 Sept-23 Oct. 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000005_reading_copy.zip">Field Diary V</a></strong> - 5 Sept-23 Oct. 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000006_reading_copy.zip">Field Diary VI</a></strong> - 24 Oct.-23 Dec. 1866</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000006_reading_copy.zip">Field Diary VI</a></strong> - 24 Oct.-23 Dec. 1866</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000007_reading_copy.zip">Field Diary VII</a></strong> - 26 Dec. 1866-1 Mar. 1867</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000007_reading_copy.zip">Field Diary VII</a></strong> - 26 Dec. 1866-1 Mar. 1867</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000010_reading_copy.zip">Field Diary X</a></strong> - 9 Sept. 1867-2 Jan. 1868</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000010_reading_copy.zip">Field Diary X</a></strong> - 9 Sept. 1867-2 Jan. 1868</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000014_reading_copy.zip">Field Diary XIV</a></strong> - 14 Nov. 1871-14 Sept. 1872</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000014_reading_copy.zip">Field Diary XIV</a></strong> - 14 Nov. 1871-14 Sept. 1872</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000015_reading_copy.zip">Field Diary XV</a></strong> - 7 July-1 Dec. 1872</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000015_reading_copy.zip">Field Diary XV</a></strong> - 7 July-1 Dec. 1872</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000016_reading_copy.zip">Field Diary XVI</a></strong> - 1 Dec. 1872-6 Apr. 1873</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000016_reading_copy.zip">Field Diary XVI</a></strong> - 1 Dec. 1872-6 Apr. 1873</p>
 
-<p class="space2"><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000017_reading_copy.zip">Field Diary XVII</a></strong> - 9-28 April 1873</p>
+<p class="space2"><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000017_reading_copy.zip">Field Diary XVII</a></strong> - 9-28 April 1873</p>
 
 <p><em>Bonus Texts</em></p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000066_reading_copy.zip">Fragment of Field Diary XII</a></strong> - 24-28 Dec. 1868</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000066_reading_copy.zip">Fragment of Field Diary XII</a></strong> - 24-28 Dec. 1868</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000050_reading_copy.zip">Second Unyanyembe Journal</a></strong> - 14-24 Aug. 1872</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000050_reading_copy.zip">Second Unyanyembe Journal</a></strong> - 14-24 Aug. 1872</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000049_reading_copy.zip">Calculations and Geographical and Cultural Notes</a></strong> - 4-6 Nov. 1872</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000049_reading_copy.zip">Calculations and Geographical and Cultural Notes</a></strong> - 4-6 Nov. 1872</p>
 
-<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/edition-guide/liv_000073_reading_copy.zip">Notes and Calculations for Field Diary XVII</a></strong> - 7-9 Apr. 1873</p>
+<p><strong><a href="http://livingstoneonline.org/sites/default/files/in-his-own-words/final-edition-guide/liv_000073_reading_copy.zip">Notes and Calculations for Field Diary XVII</a></strong> - 7-9 Apr. 1873</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
