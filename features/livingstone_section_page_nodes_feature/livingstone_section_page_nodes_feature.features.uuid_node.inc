@@ -2283,7 +2283,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 <ul>
 	<li>Our <a href="/behind-scenes/livingstone-onlines-staff">staff</a> page identifies and cites the roles of the core members of the <em>Livingstone Online</em> initiative as a whole.</li>
 	<li>Our <a href="/behind-scenes/project-teams">project team</a> pages list the participants responsible for developing <em>Livingstone Online</em>\'s editions and other projects.</li>
-	<li>Our main <a href="/behind-scenes/acknowledgments">acknowledgments</a> page enumerates the many individuals who are not <em>Livingstone Online</em> core or project team members, but who nonetheless have made important contributions to our work. There are also acknowledgment pages for the <a href="/spectral-imaging/acknowledgments">1870</a> and <a href="/spectral-imaging/acknowledgments-1">1871</a> Field Diaries and the <a href="/spectral-imaging/acknowledgments-0">Letter from Bambarre</a>.</li>
+	<li>Our main <a href="/behind-scenes/acknowledgments">acknowledgments</a> page enumerates the many individuals who are not <em>Livingstone Online</em> core or project team members, but who nonetheless have made important contributions to our work. There are also acknowledgment pages for the <a href="/spectral-imaging/1870-acknowledgments">1870</a> and <a href="/spectral-imaging/1871-acknowledgments">1871</a> Field Diaries and the <a href="/spectral-imaging/bambarre-acknowledgments">Letter from Bambarre</a>.</li>
 	<li>Our project histories describe and define collaborator contributions in more detail (see sub-section on "Documentation," above).</li>
 </ul>
 
@@ -2706,7 +2706,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <p>The directors have curated this documentation in a handful of ways. First, we have organized the documentation into categories of project endeavor in order to facilitate study of individual files or file sequences. As part of this, we have removed duplicate or variant files with the goal of being representative (rather than exhaustive) about our research. Second, documentation files have been renamed to reflect the contents and actual order of research activities (although, as users will find, research activities did not always take an organized form and involved much trial and error). Finally, we have lightly edited the documentation to remove personal information or other sensitive material such as passwords.</p>
 
-<p>Our practices in curating the documentation thus reflect those applied to <a href="/about-site/what-leap-2013-2017">LEAP: The <em>Livingstone Online</em> Enrichment and Access Project</a> and our prior spectral imaging research project on <a href="/spectral-imaging/livingstones-1871-field-diary-0">Livingstone\'s 1871 Field Diary</a>. We release this documentation under a <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a> license in keeping with <em>Livingstone Online</em>\'s general mission of promoting knowledge transfer and conducting transparent, publicly-accountable research.</p>
+<p>Our practices in curating the documentation thus reflect those applied to <a href="/about-site/what-leap-2013-2017">LEAP: The <em>Livingstone Online</em> Enrichment and Access Project</a> and our prior spectral imaging research project on <a href="/spectral-imaging/livingstones-1871-field-diary">Livingstone\'s 1871 Field Diary</a>. We release this documentation under a <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a> license in keeping with <em>Livingstone Online</em>\'s general mission of promoting knowledge transfer and conducting transparent, publicly-accountable research.</p>
 
 <p><a id="link2" name="link2"></a></p>
 
@@ -2768,13 +2768,15 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>This page provides curated access to some 300 project documents spanning three years of research activities&nbsp;(2013-16) for our critical edition of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts.</p>
+
 <div class="section-page-toc-links">
 <ol style="list-style-type:none">
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Introduction</a></span></span></li>
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Complete Project Documentation</a></span></span></li>
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Area-specific Subsets of Project Documentation</a></span></span></li>
 </ol>
-</div>',
+</div>
+',
         'format' => 'full_html',
       ),
     ),
@@ -2798,11 +2800,11 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'spectral-imaging/project-documentation',
+      'alias' => 'spectral-imaging/1870-project-documentation',
       'language' => 'und',
     ),
   ),
@@ -3103,7 +3105,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 	</tbody>
 </table>
 
-<p>In addition, we would like to express our warmest thanks to the individuals listed below and on the acknowledgments pages for our multispectral critical editions of Livingstone\'s <a href="/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871</a> Field Diaries, each of whom – despite the long list – we ask that our users consider as being specially singled out by the <em>Livingstone Online</em> team. In terms of <a href="/about-site/what-leap-2013-2016">LEAP</a>, we wish particularly to recognize <strong>Yaw Asamoah</strong> (Indiana University of Pennsylvania) and <strong>Kay Walter</strong> (University of Nebraska-Lincoln) for their support.</p>
+<p>In addition, we would like to express our warmest thanks to the individuals listed below and on the acknowledgments pages for our multispectral critical editions of Livingstone\'s <a href="/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary">1871</a> Field Diaries, each of whom – despite the long list – we ask that our users consider as being specially singled out by the <em>Livingstone Online</em> team. In terms of <a href="/about-site/what-leap-2013-2016">LEAP</a>, we wish particularly to recognize <strong>Yaw Asamoah</strong> (Indiana University of Pennsylvania) and <strong>Kay Walter</strong> (University of Nebraska-Lincoln) for their support.</p>
 
 <p>It has been our incredible privilege to collaborate with these individuals and in many, many instances to gain friends through our shared work whom we might not otherwise have even met. We have named a few individuals as honorary members in the project team lists for <a href="/behind-scenes/project-teams#pt1">LEAP</a> and the <a href="/behind-scenes/project-teams#pt3" target="_blank">Livingstone Spectral Imaging Project</a> in an effort to underscore their outstanding contributions to our project.</p>
 
@@ -3593,13 +3595,13 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <h4><strong>Prefatory Materials &nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p><strong><a href="/spectral-imaging/livingstones-1871-field-diary-0">Introduction to the Edition</a></strong> – introduces Livingstone’s 1871 Field Diary; discusses the diary\'s significance; overviews the work of the first phase <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> (2010-13); and provides a brief review of the key features of the present critical edition.</p>
+<p><strong><a href="/spectral-imaging/livingstones-1871-field-diary">Introduction to the Edition</a></strong> – introduces Livingstone’s 1871 Field Diary; discusses the diary\'s significance; overviews the work of the first phase <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> (2010-13); and provides a brief review of the key features of the present critical edition.</p>
 
-<p><strong><a href="/spectral-imaging/edition-guide-1">Edition Guide</a></strong> – the current page.</p>
+<p><strong><a href="/spectral-imaging/1871-edition-guide">Edition Guide</a></strong> – the current page.</p>
 
-<p><a href="/spectral-imaging/project-team-1"><strong>Project Team</strong></a> – introduces the project team that developed the critical edition of Livingstone\'s 1871 Field Diary in 2010-13.</p>
+<p><a href="/spectral-imaging/1871-project-team"><strong>Project Team</strong></a> – introduces the project team that developed the critical edition of Livingstone\'s 1871 Field Diary in 2010-13.</p>
 
-<p><a href="/spectral-imaging/acknowledgments-1"><strong>Acknowledgments</strong></a> – cites the individuals who made a special contribution to supporting our work in developing the multispectral critical edition of Livingstone\'s 1871 Field Diary in 2010-13.</p>
+<p><a href="/spectral-imaging/1871-acknowledgments"><strong>Acknowledgments</strong></a> – cites the individuals who made a special contribution to supporting our work in developing the multispectral critical edition of Livingstone\'s 1871 Field Diary in 2010-13.</p>
 
 <p><a id="link3" name="link3"></a></p>
 
@@ -3651,7 +3653,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <p><strong><a href="/spectral-imaging/project-history-1">Project History (1)</a> </strong>and <strong><a href="/spectral-imaging/project-history-2">Project History (2)</a></strong> – two-part essay that sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary; provides an overview of all significant phases of project endeavor and for each phase describes all key project activities.</p>
 
-<p><a href="/spectral-imaging/project-documentation-0"><strong>Project Documentation</strong></a> – provides download access to some 70 project documents or document sets produced during the course of primary research activities (2010-13) for our critical edition of Livingstone’s 1871 Field Diary; offers the documents as a single comprehensive collection and grouped by area of project endeavor; also offers the entire Livingstone Spectral Image Archive (except for archival images and MD5 checksum files) as a single ZIP file.</p>
+<p><a href="/spectral-imaging/1871-project-documentation"><strong>Project Documentation</strong></a> – provides download access to some 70 project documents or document sets produced during the course of primary research activities (2010-13) for our critical edition of Livingstone’s 1871 Field Diary; offers the documents as a single comprehensive collection and grouped by area of project endeavor; also offers the entire Livingstone Spectral Image Archive (except for archival images and MD5 checksum files) as a single ZIP file.</p>
 
 <p><a id="link7" name="link7"></a></p>
 
@@ -4034,14 +4036,14 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <h4><strong><span style="font-family:crimson text;">Previously Documented History of the 1870 Field Diary</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p>The <a href="/spectral-imaging/livingstones-1871-field-diary-0" target="_blank">first phase</a> of the Livingstone Spectral Imaging Project (2010-13) documented most of the known history of the 1870 Field Diary (a.k.a. Bambarre Field Diary) along with that of the 1871 Field Diary (a.k.a. Nyangwe Field Diary), both of which might also be grouped under a single heading (Manyema Field Diary). As a result, that history need not be repeated here other than a brief recap and, as relevant, the addition of a few bits of information specific to the 1870 Field Diary.</p>
+<p>The <a href="/spectral-imaging/livingstones-1871-field-diary" target="_blank">first phase</a> of the Livingstone Spectral Imaging Project (2010-13) documented most of the known history of the 1870 Field Diary (a.k.a. Bambarre Field Diary) along with that of the 1871 Field Diary (a.k.a. Nyangwe Field Diary), both of which might also be grouped under a single heading (Manyema Field Diary). As a result, that history need not be repeated here other than a brief recap and, as relevant, the addition of a few bits of information specific to the 1870 Field Diary.</p>
 
 <p>Roughly speaking, the field diaries and journals from Livingstone final expedition (1866-73) followed one of three trajectories before their arrival in Britain. Livingstone entrusted the massive Unyanyembe Journal (1866-72) to Henry Morton Stanley in March 1872, and Stanley carried that journal back to Britain where it became the basis for Horace Waller’s edition of the <em>Last Journals</em> (1874). Livingstone kept another fourteen field diaries from the final expedition (field diaries I-XIII [1866-71] plus one from a previous expedition) in a box at Ujiji, where the British explorer Verney Lovett Cameron recovered them in February 1874, after Livingstone’s death. These arrived too late to be of use to Waller. Finally, Livingstone carried the 1870 and 1871 Field Diaries plus a handful of other diaries (field diaries XIV-XVII [1871-73]) with him until his death in present-day Zambia in 1873. These diaries also accompanied Livingstone’s body back to Britain.</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/history-chronology-the-1870-field-diary/liv_014028_0002-article.jpg"><img alt="\'Visit of Arabs to Livingstone and Stanley at Unyanyembe,\' from a review of Henry M. Stanley\'s \'How I Found Livingstone,\' Illustrated London News, 20 (1872), 485. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/history-chronology-the-1870-field-diary/liv_014028_0002-article.jpg" title="\'Visit of Arabs to Livingstone and Stanley at Unyanyembe,\' from a review of Henry M. Stanley\'s \'How I Found Livingstone,\' Illustrated London News, 20 (1872), 485. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">"Visit of Arabs to Livingstone and Stanley at Unyanyembe," from a review of Henry M. Stanley\'s "How I Found Livingstone," <em>Illustrated London News</em>, 20 (1872), 485. <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank&quot;">Creative Commons Share-alike 2.5 UK: Scotland</a></em>. It was in Unyanyembe that Livingstone parted with Stanley and entrusted to him the massive journal that now bears the name of the village.</span></p>
 
-<p>Once back in Britain, the 1870 Field Diary (and at least a part of the <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a>) passed to Livingstone’s daughter Agnes. Agnes then transcribed these materials – including portions of the 1870 Field Diary that seem no longer to survive in the original (Livingstone 1870d, 1870g) – for Horace Waller, Livingstone’s friend and editor, who later recognized her efforts (Waller, in Livingstone 1874,1:iv). Agnes’s handwritten transcription was typeset, revised, and soon became the basis for the relevant portion of the <em>Last Journals</em>. Recourse to the 1870 Field Diary, in this case, occurred in part because the diary – in contrast to Livingstone’s other final field diaries – offers a more detailed account of the given period than the Unyanyembe Journal, which Waller usually used in the first instance.</p>
+<p>Once back in Britain, the 1870 Field Diary (and at least a part of the <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a>) passed to Livingstone’s daughter Agnes. Agnes then transcribed these materials – including portions of the 1870 Field Diary that seem no longer to survive in the original (Livingstone 1870d, 1870g) – for Horace Waller, Livingstone’s friend and editor, who later recognized her efforts (Waller, in Livingstone 1874,1:iv). Agnes’s handwritten transcription was typeset, revised, and soon became the basis for the relevant portion of the <em>Last Journals</em>. Recourse to the 1870 Field Diary, in this case, occurred in part because the diary – in contrast to Livingstone’s other final field diaries – offers a more detailed account of the given period than the Unyanyembe Journal, which Waller usually used in the first instance.</p>
 
 <p>After preparation and publication of the <em>Last Journals</em>, the pages of the 1870 Field Diary passed to the Livingstone family, where they were held, apparently, before being distributed to various repositories. The first four pages of the second gathering (Livingstone 1870c), for instance, remained with the branch of the Livingstone family that descends from Agnes Livingstone and that includes Diana Livingstone Bruce, great-granddaughter of David Livingstone. Diana Livingstone Bruce gifted these pages (along with a variety of Livingstone letters addressed to Agnes, Mary Moffat [Agnes’s mother and Livingstone’s wife], and Robert Moffat [Agnes’s maternal grandfather]) to the British Library in 1860, where the pages have remained ever since.</p>
 
@@ -4073,7 +4075,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 	<li>Prior to his last journey (1866-73), Livingstone obtained at least two of the printed texts (see 1870a and 1870e/1870i/1870j/1870k) that he would assemble into the 1870 Field Diary. The second of these texts dates to 1863, but it is unknown when Livingstone acquired his copy.</li>
 	<li>Individuals other than Livingstone wrote on and folded two of the source texts (see 1870c, 1870h) that would eventually become part of the 1870 Field Diary, then sent these documents to Livingstone in central Africa. This process included the addition of stamps and postmarks to the first of these.</li>
 	<li>Individuals other than Livingstone folded or otherwise assembled two other printed source texts (1871a/1871b and 1871e), then also sent these on to Livingstone in Africa.</li>
-	<li>Livingstone received the handwritten and printed texts cited above while traveling in central Africa during his last expedition (1866-73), the last of the texts (1871e) potentially arriving in February 1871 along with the copy of <em>The Standard</em> over which Livingstone wrote the <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a> (see 1871f).</li>
+	<li>Livingstone received the handwritten and printed texts cited above while traveling in central Africa during his last expedition (1866-73), the last of the texts (1871e) potentially arriving in February 1871 along with the copy of <em>The Standard</em> over which Livingstone wrote the <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a> (see 1871f).</li>
 	<li>Livingstone read and, in one case, used gray then red pencil to annotate one of the source texts (see 1870e/1870i/1870j/1870k).</li>
 	<li>Livingstone used a smattering of other source text pages for various ad hoc calculations and maps made in pencil and brown and black iron gall ink.</li>
 	<li>As Livingstone made his ad hoc notes, he (or perhaps one or more individuals who handled the relevant texts before him) also dropped or spilled various unknown substances onto the leaves of the texts. Today these substances appear as brown, red, and other stains (some not visible to the naked eye) beneath Livingstone’s handwritten 1870 Field Diary text.</li>
@@ -4113,7 +4115,7 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 	<li>One or more additional substances were spilled on the pages of the diary, now falling on top of Livingstone’s handwritten text so as to smear or otherwise obscure that text. Livingstone did not attempt to remedy this damage either so it too may have occurred after his death in April 1873.</li>
 	<li>The edges of a few pages of the 1870 Field Diary (1870k:LXXIV, LXXV) were torn off, taking Livingstone writing with them. Again, Livingstone did not restore this writing, so this damage too may have occurred after his death.</li>
 	<li>As the manuscript of the 1870 Field Diary aged and circulated through various kinds of environments, its pages started to become discolored in various places.</li>
-	<li>The manuscript of 1870 Field Diary accompanied Livingstone’s body and some of his other final field diaries (including the <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a>) from central Africa to Britain.</li>
+	<li>The manuscript of 1870 Field Diary accompanied Livingstone’s body and some of his other final field diaries (including the <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a>) from central Africa to Britain.</li>
 	<li>Once in Britain, the 1870 Field Diary along with other diaries and journals from Livingstone final expedition to Africa became the basis for the <em>Last Journals</em> (1874) edited by Horace Waller. Agnes Livingstone transcribed the 1870 Field Diary manuscript as part of this process.</li>
 </ul>
 
@@ -4361,9 +4363,9 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<div class="doubleimg">
-<div class="doubleleft"><a href="/sites/default/files/spectral-imaging/acknowledgments/liv_003125_0001-article.jpg"><img alt="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/spectral-imaging/acknowledgments/liv_003125_0001-article.jpg" style="height: 318px; margin-right: 10px" title="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></div>
+<div class="doubleleft"><a href="/sites/default/files/spectral-imaging/bambarre-acknowledgments/liv_003125_0001-article.jpg"><img alt="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/spectral-imaging/bambarre-acknowledgments/liv_003125_0001-article.jpg" style="height: 318px; margin-right: 10px" title="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></div>
 
-<div class="doubleright"><a href="/sites/default/files/spectral-imaging/acknowledgments/liv_003125_0002-article.jpg"><img alt="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/spectral-imaging/acknowledgments/liv_003125_0002-article.jpg" style="height: 318px;" title="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></div>
+<div class="doubleright"><a href="/sites/default/files/spectral-imaging/bambarre-acknowledgments/liv_003125_0002-article.jpg"><img alt="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/spectral-imaging/bambarre-acknowledgments/liv_003125_0002-article.jpg" style="height: 318px;" title="Royal Geographical Society Silver medal, awarded retrospectively to each of the Africans who carried David Livingstone\'s body to the east coast of Africa, 1874. Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></div>
 </div>
 
 <table>
@@ -4432,11 +4434,11 @@ Elizabeth Maxwell</span></p>
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'spectral-imaging/acknowledgments',
+      'alias' => 'spectral-imaging/bambarre-acknowledgments',
       'language' => 'und',
     ),
   ),
@@ -5103,7 +5105,7 @@ Elizabeth Maxwell</span></p>
 
 <p>Sheriff, Abdul. 1987. <em>Slaves, Spices and Ivory in Zanzibar: Integration of an East African Commercial Empire into the World Economy, 1770-1873</em>. London: James Currey.</p>
 
-<p>Wisnicki, Adrian S., ed. 2017. <a href="http://livingstoneonline.org/spectral-imaging/livingstones-1871-field-diary-0">Livingstone’s 1871 Field Diary: A Multispectral Critical Edition</a>. Updated Edition. College Park: University of Maryland Libraries.</p>
+<p>Wisnicki, Adrian S., ed. 2017. <a href="http://livingstoneonline.org/spectral-imaging/livingstones-1871-field-diary">Livingstone’s 1871 Field Diary: A Multispectral Critical Edition</a>. Updated Edition. College Park: University of Maryland Libraries.</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
@@ -5375,29 +5377,29 @@ Elizabeth Maxwell</span></p>
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/behind-the-scenes/project-teams/NLS10703_056_021r_0940_by_0592_pseudoBY-article.jpg"><img alt="A processed spectral image of a page from David Livingstone\'s 1870 Field Diary. Copyright National Library of Scotland and Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/behind-the-scenes/project-teams/NLS10703_056_021r_0940_by_0592_pseudoBY-article.jpg" title="A processed spectral image of a page from David Livingstone\'s 1870 Field Diary. Copyright National Library of Scotland and Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A processed spectral image of a page from David Livingstone\'s 1870 Field Diary. <em>Copyright National Library of Scotland and Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported </a></em></span></p>
 
-<p>To see the members of the project team for the multispectral edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts, please visit the <a href="/spectral-imaging/project-team">dedicated page</a>.</p>
+<p>To see the members of the project team for the multispectral edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts, please visit the <a href="/spectral-imaging/1870-project-team">dedicated page</a>.</p>
 
 <p><a name="pt3"></a></p>
 
 <p>&nbsp;</p>
 
-<h4><span style="font-family:crimson text;"><a href="/spectral-imaging/livingstones-1871-field-diary-0"><strong>Livingstone\'s 1871 Field Diary - A Multispectral Critical Edition (2010-13)</strong></a></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+<h4><span style="font-family:crimson text;"><a href="/spectral-imaging/livingstones-1871-field-diary"><strong>Livingstone\'s 1871 Field Diary - A Multispectral Critical Edition (2010-13)</strong></a></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/behind-the-scenes/project-teams/1874_map_large-crop-article.jpg"><img alt="The Last Journals of David Livingstone, Large Map, detail, 1874. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland(https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/behind-the-scenes/project-teams/1874_map_large-crop-article.jpg" title="The Last Journals of David Livingstone, Large Map, detail, 1874. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland(https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Large Map from the <em>Last Journals</em> (Livingstone 1874), detail. Livingstone wrote the 1871 Field Diary in Nyangwe, which lies at the center of the image here. <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank">Creative Commons Share-alike 2.5 UK: Scotland</a></em></span></p>
 
-<p>To see the members of the project team for the multispectral edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts, please visit the <a href="/spectral-imaging/project-team-1">dedicated page</a>.</p>
+<p>To see the members of the project team for the multispectral edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts, please visit the <a href="/spectral-imaging/1870-project-team">dedicated page</a>.</p>
 
 <p><a name="pt4"></a></p>
 
 <p>&nbsp;</p>
 
-<h4><span style="font-family:crimson text;"><a href="/spectral-imaging/livingstones-letter-bambarre-0"><strong>Livingstone\'s Letter from Bambarre - A Multispectral Critical Edition (2010-11)</strong></a></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
+<h4><span style="font-family:crimson text;"><a href="/spectral-imaging/livingstones-letter-bambarre"><strong>Livingstone\'s Letter from Bambarre - A Multispectral Critical Edition (2010-11)</strong></a></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/behind-the-scenes/project-teams/04_02v_pseudoratio-article.jpg"><img alt="A processed spectral image of a page from Livingstone\'s Letter from Bambarre. Copyright Peter Beard Studio. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/behind-the-scenes/project-teams/04_02v_pseudoratio-article.jpg" title="A processed spectral image of a page from Livingstone\'s Letter from Bambarre. Copyright Peter Beard Studio. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A processed spectral image of a page from Livingstone\'s Letter from Bambarre. <em>Copyright Peter Beard Studio. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported </a></em></span></p>
 
-<p>To see the members of the project team for the multispectral edition of <em>Livingstone\'s Letter from Bambarre</em>, please visit the <a href="/spectral-imaging/project-team-0">dedicated page</a>.</p>
+<p>To see the members of the project team for the multispectral edition of <em>Livingstone\'s Letter from Bambarre</em>, please visit the <a href="/spectral-imaging/bambarre-project-team">dedicated page</a>.</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
@@ -6180,11 +6182,11 @@ Elizabeth Maxwell</span></p>
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'spectral-imaging/project-team',
+      'alias' => 'spectral-imaging/1871-project-team',
       'language' => 'und',
     ),
   ),
@@ -6778,13 +6780,13 @@ Elizabeth Maxwell</span></p>
       0 => array(
         'value' => '<h4><strong><span style="font-family:crimson text;">Prefatory Material</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p><strong><a href="/spectral-imaging/livingstones-letter-bambarre-0">Introduction to the Edition</a></strong></p>
+<p><strong><a href="/spectral-imaging/livingstones-letter-bambarre">Introduction to the Edition</a></strong></p>
 
-<p><strong><a href="/spectral-imaging/edition-guide-0">Edition Guide</a></strong> - the present page: provides a skeletal outline of the entire multispectral critical edition of <em>Livingstone\'s Letter from Bambarre</em>, enumerates the main sections of the edition, and provides short descriptions of each section.</p>
+<p><strong><a href="/spectral-imaging/bambarre-edition-guide">Edition Guide</a></strong> - the present page: provides a skeletal outline of the entire multispectral critical edition of <em>Livingstone\'s Letter from Bambarre</em>, enumerates the main sections of the edition, and provides short descriptions of each section.</p>
 
-<p><strong><a href="/spectral-imaging/project-team-0">The Project Team</a></strong> - introduces the project team that developed the critical edition of <em>Livingstone\'s Letter from Bambarre</em>.</p>
+<p><strong><a href="/spectral-imaging/bambarre-project-team">The Project Team</a></strong> - introduces the project team that developed the critical edition of <em>Livingstone\'s Letter from Bambarre</em>.</p>
 
-<p><strong><a href="/spectral-imaging/acknowledgments-0">Acknowledgments</a></strong> - cites the individuals who have made a special contribution to supporting the work of developing the multispectral critical edition of <em>Livingstone\'s Letter from Bambarre</em>.</p>
+<p><strong><a href="/spectral-imaging/bambarre-acknowledgments">Acknowledgments</a></strong> - cites the individuals who have made a special contribution to supporting the work of developing the multispectral critical edition of <em>Livingstone\'s Letter from Bambarre</em>.</p>
 
 <p><strong><a href="/spectral-imaging/background-edition">Background of the Edition</a></strong> - details the history of the <em>Letter from Bambarre</em>; begins by outlining the circumstances that led Livingstone to compose the letter, then describes the subsequent history of the letter, particularly after its purchase at a Sotheby\'s auction in 1966 by Peter Beard.</p>
 
@@ -6850,6 +6852,7 @@ Elizabeth Maxwell</span></p>
     'und' => array(
       0 => array(
         'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of <em>Livingstone\'s Letter from Bambarre</em>. It enumerates the main sections of the edition and provides short descriptions of each section.</p>
+
 <div class="section-page-toc-links">
 <ol style="list-style-type:none">
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Prefatory Material</a></span></span></li>
@@ -6857,7 +6860,8 @@ Elizabeth Maxwell</span></p>
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link3">Critical Materials</a></span></span></li>
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link4">Project History</a></span></span></li>
 </ol>
-</div>',
+</div>
+',
         'format' => 'full_html',
       ),
     ),
@@ -6881,11 +6885,11 @@ Elizabeth Maxwell</span></p>
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'spectral-imaging/edition-guide-0',
+      'alias' => 'spectral-imaging/bambarre-edition-guide',
       'language' => 'und',
     ),
   ),
@@ -7177,7 +7181,7 @@ Elizabeth Maxwell</span></p>
       0 => array(
         'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p>Our work on the critical editions of Livingstone’s <a href="/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871</a> Field Diaries and the <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> has resulted in a range of processed spectral images. Below, we enumerate the processed spectral image types, GIF animations, and PowerPoint presentations developed by our scientists (Roger Easton, Keith Knox, and Caroline Houston) in close collaboration with our scholars (Adrian S. Wisnicki, Megan Ward, Debbie Harrison, and Kate Simpson) to address our research goals. In a separate section of the site, we also out set out the objectives of the <a href="/spectral-imaging/prototyping-animated-spectral-images-asis">animated spectral images (ASIs)</a> developed by one of our junior project scholars (Ashanka Kumari).</p>
+<p>Our work on the critical editions of Livingstone’s <a href="/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary">1871</a> Field Diaries and the <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> has resulted in a range of processed spectral images. Below, we enumerate the processed spectral image types, GIF animations, and PowerPoint presentations developed by our scientists (Roger Easton, Keith Knox, and Caroline Houston) in close collaboration with our scholars (Adrian S. Wisnicki, Megan Ward, Debbie Harrison, and Kate Simpson) to address our research goals. In a separate section of the site, we also out set out the objectives of the <a href="/spectral-imaging/prototyping-animated-spectral-images-asis">animated spectral images (ASIs)</a> developed by one of our junior project scholars (Ashanka Kumari).</p>
 
 <div class="doubleimg">
 <div class="doubleleft"><a href="/sites/default/files/spectral-imaging/notes-processed-spectral-images/liv_000209_0001_color-article.jpg"><img alt="A natural image of David Livingstone\'s 1870 Field Diary, second gathering (Livingstone 1871b:LXXVIII). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/spectral-imaging/notes-processed-spectral-images/liv_000209_0001_color-article.jpg" style="margin-right: 10px" title="A natural image of David Livingstone\'s 1870 Field Diary, second gathering (Livingstone 1871b:LXXVIII). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></div>
@@ -7318,7 +7322,7 @@ Elizabeth Maxwell</span></p>
 
 <p class="space-2">&nbsp;</p>
 
-<p>* = developed for the first phase of the Livingstone Spectral Imaging Project (2010-13), which included the development of critical editions of Livingstone’s <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> and <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a>.</p>
+<p>* = developed for the first phase of the Livingstone Spectral Imaging Project (2010-13), which included the development of critical editions of Livingstone’s <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> and <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a>.</p>
 
 <p>** = developed for the first phase of the Livingstone Spectral Imaging Project (2010-13) and repurposed for the second phase (2013-17), which includes the development of critical editions of Livingstone’s <a href="/spectral-imaging/livingstones-1870-field-diary">1870 Field Diary and select 1871 manuscripts</a>.</p>
 
@@ -7914,7 +7918,7 @@ Elizabeth Maxwell</span></p>
 
 <p><a href="/islandora/search/%2A%3A%2A?type=edismax"><em><strong>Browse by</strong></em></a><strong><a href="/islandora/search/%2A%3A%2A?type=edismax"> Digital Catalogue Record</a> </strong>- allows users to browse and sort our full digital database of nearly 3000 Livingstone and Livingstone-related items. In many cases, users can also view images and transcriptions online or download archival packets of individual items.</p>
 
-<p><strong><a href="/browse/addressee"><em>Browse by </em>Addressee</a> </strong>- allows users to browse images and transcriptions of Livingstone\'s manuscripts according to the individuals to whom Livingstone addressed these items. Note: this section does not provide access to all the items in our digital collections as Livingstone did not address some of these items (e.g., maps, diaries, etc.) to particular individuals.</p>
+<p><strong><a href="/in-his-own-words/addressee"><em>Browse by </em>Addressee</a> </strong>- allows users to browse images and transcriptions of Livingstone\'s manuscripts according to the individuals to whom Livingstone addressed these items. Note: this section does not provide access to all the items in our digital collections as Livingstone did not address some of these items (e.g., maps, diaries, etc.) to particular individuals.</p>
 
 <p><strong><a href="/his-own-words/repository"><em>Browse by </em>Repository</a> </strong>- allows users to browse images and transcriptions of Livingstone\'s manuscripts by the libraries, archives, museums, and other institutions where these manuscripts reside.</p>
 
@@ -8291,7 +8295,7 @@ but when I went to Tagamoio to ask back the wives and daughters of the headmen h
 
 <p>The first two parts in our study of the "state of the manuscript" foreground Livingstone’s choices in creating the manuscript, with spectral images used only as necessary to illustrate key points. The last four parts, in turn, spotlight the diary’s long-term history and rely on spectral images to a much greater degree in order to outline Livingstone’s decisions in revising the text and the subsequent confluence of events that have resulted in the configuration and preservation of the manuscript as it stands today.</p>
 
-<p>(<em>Note:</em> The name "1870 Field Diary" is a slight misnomer as the dates of the diary actually run from 17 August 1870 to 22 March 1871. However, there is no accepted collective name for the sequence of fragmentary texts that constitutes this diary, so we have used the name "1870 Field Diary" in order to distinguish this diary from the "1871 Field Diary," which is the subject of separate <a href="/spectral-imaging/livingstones-1871-field-diary-0">critical edition</a> by the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>.)</p>
+<p>(<em>Note:</em> The name "1870 Field Diary" is a slight misnomer as the dates of the diary actually run from 17 August 1870 to 22 March 1871. However, there is no accepted collective name for the sequence of fragmentary texts that constitutes this diary, so we have used the name "1870 Field Diary" in order to distinguish this diary from the "1871 Field Diary," which is the subject of separate <a href="/spectral-imaging/livingstones-1871-field-diary">critical edition</a> by the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>.)</p>
 
 <p><a id="link3" name="link3"></a></p>
 
@@ -8489,7 +8493,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 <p class="space1 rtecenter" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/creating-the-1870-field-diary/liv_000211_0004_color-article.jpg"><img alt="An image of a page of the 10 March 1870 \'Retrospect\' (Livingstone 1870a:[7]), detail. Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/creating-the-1870-field-diary/liv_000211_0004_color-article.jpg" title="An image of a page of the 10 March 1870 \'Retrospect\' (Livingstone 1870a:[7]), detail. Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="80%" /></a><br />
 <span style="font-size:12px;display:inline-block;text-align:left;max-width:80%">An image of a page of the 10 March 1870 \'Retrospect\' (Livingstone 1870a:[7]), detail. <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. In this segment, Livingstone directly refers to the anonymous review of books on Irish Chursh History from the <em>Quarterly Review</em> that he uses as the source text for the first gathering of the 1870 Field Diary (Livingstone 1870b).</span></p>
 
-<p class="space2">From the <a href="/spectral-imaging/livingstones-letter-bambarre-0">Letter from Bambarre</a> (Livingstone 1871c), for instance, we know that Horace Waller sent Livingstone the copy of <em>The Standard</em> (24 November 1869) upon which the latter eventually wrote the <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a> (Livingstone 1871f). The near contemporaneous dating of the <em>Pall Mall Budget</em> leaves of 21 August 1869 (Livingstone 1871e) suggests that Livingstone received this document from Waller as well. Additionally, the 10 March 1870 “Retrospect” references the <em>Quarterly Review</em> essay (see Livingstone 1870a:[7]) so Livingstone clearly had the essay by that date.<a id="link14" name="link14"></a></p>
+<p class="space2">From the <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> (Livingstone 1871c), for instance, we know that Horace Waller sent Livingstone the copy of <em>The Standard</em> (24 November 1869) upon which the latter eventually wrote the <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a> (Livingstone 1871f). The near contemporaneous dating of the <em>Pall Mall Budget</em> leaves of 21 August 1869 (Livingstone 1871e) suggests that Livingstone received this document from Waller as well. Additionally, the 10 March 1870 “Retrospect” references the <em>Quarterly Review</em> essay (see Livingstone 1870a:[7]) so Livingstone clearly had the essay by that date.<a id="link14" name="link14"></a></p>
 
 <p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a><strong> Annotation of one undertext.</strong> As a first step to using the undertext documents, Livingstone appears to have annotated at least one of them. Multiple pages from Stanley’s&nbsp;<em>The Bible: Its Form and Substance</em> bear marginal annotations in the form of a straight penciled line alongside several lines from the printed text.</p>
 
@@ -8730,13 +8734,15 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
     'und' => array(
       0 => array(
         'value' => '<p>This page provides download access to some 70 project documents or document sets produced during the course of primary research activities (2010-13) for our critical edition of Livingstone’s 1871 Field Diary. We offer the documents as a single comprehensive collection and grouped by area of project endeavor. As a bonus, we also offer the entire Livingstone Spectral Image Archive (except for archival images and MD5 checksum files) as a single ZIP file.</p>
+
 <div class="section-page-toc-links">
 <ol style="list-style-type:none">
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link0">Introduction</a></span></span></li>
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Complete Project Documentation</a></span></span></li>
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Area-specific Subsets of Project Documentation</a></span></span></li>
 </ol>
-</div>',
+</div>
+',
         'format' => 'full_html',
       ),
     ),
@@ -8760,11 +8766,11 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'spectral-imaging/project-documentation-0',
+      'alias' => 'spectral-imaging/1871-project-documentation',
       'language' => 'und',
     ),
   ),
@@ -9437,7 +9443,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p>Due to these challenges, the team took as its primary processing objectives, first, suppressing the printed text, and, second, enhancing Livingstone’s handwritten text. Additional objectives included developing the "intercept" processing method to clarify indecipherable text and processing with raking light images to highlight manuscript topography (in the latter case, limited to those folia that had not been laminated, see <a href="/spectral-imaging/manuscript">The Manuscript</a>; for topographical processing also see <a href="/spectral-imaging/livingstones-1870-field-diary">Livingstone\'s 1870 Field Diary</a>). The team also used raw spectral image data to produce highly accurate color images of each diary page.</p>
 
-<p>A <a href="/spectral-imaging/notes-processed-spectral-images">separte section</a> provides details of the many processing methods developed for Livingstone\'s <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> and the <a href="/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871</a> Field Diaries, each of which is the subject of a separate multispectral critical edition. Further information on the processing of Livingstone\'s 1871 Field Diary also appears in the <a href="/spectral-imaging/project-history-2#link15">relevant part</a> of the project history.</p>
+<p>A <a href="/spectral-imaging/notes-processed-spectral-images">separte section</a> provides details of the many processing methods developed for Livingstone\'s <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> and the <a href="/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary">1871</a> Field Diaries, each of which is the subject of a separate multispectral critical edition. Further information on the processing of Livingstone\'s 1871 Field Diary also appears in the <a href="/spectral-imaging/project-history-2#link15">relevant part</a> of the project history.</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
@@ -9613,11 +9619,11 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'spectral-imaging/project-team-0',
+      'alias' => 'spectral-imaging/bambarre-project-team',
       'language' => 'und',
     ),
   ),
@@ -9914,7 +9920,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
       0 => array(
         'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>This page, the second part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary and complements the <a href="http://livingstoneonline.org/spectral-imaging/project-documentation-0">documentation</a> related to the development of our critical edition. In doing so, the essay extends <a href="/behind-scenes/livingstone-online-code">our efforts</a> to conduct publicly-funded research in a transparent manner that promotes knowledge transfer and that opens all aspects of our research to critical review. Read the first part of the essay <a href="/spectral-imaging/project-history-1">here</a>.</p>
+<p>This page, the second part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary and complements the <a href="http://livingstoneonline.org/spectral-imaging/1870-project-documentation">documentation</a> related to the development of our critical edition. In doing so, the essay extends <a href="/behind-scenes/livingstone-online-code">our efforts</a> to conduct publicly-funded research in a transparent manner that promotes knowledge transfer and that opens all aspects of our research to critical review. Read the first part of the essay <a href="/spectral-imaging/project-history-1">here</a>.</p>
 
 <p><a id="link15" name="link15"></a></p>
 
@@ -10150,7 +10156,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 
 <p class="rteindent1"><u>Search Page</u> [not available in the updated edition] – Enables users to search through and sort the full text of the 1871 Field Diary by keyword and significant XML-tagged content</p>
 
-<p>Finally, the electronic edition includes a Project History &amp; Archive section [the present Project History page plus the <a href="/spectral-imaging/project-documentation-0">Project Documentation</a> page], which offers a detailed and, at times, intimate look into the inner workings of the [first phase of the] <a href="/spectral-imaging/spectral-imaging-overview">Livingstone Spectral Imaging Project</a>. Users can now not only overview the different stages by which the project evolved, but also download a representative selection of raw working documents produced in the course of the team’s efforts. As a result, the Project History &amp; Archive section both catalogues the extent of people and resources required to undertake a significant spectral imaging and publication project and offers a roadmap for teams wishing to undertake similar projects in the future.</p>
+<p>Finally, the electronic edition includes a Project History &amp; Archive section [the present Project History page plus the <a href="/spectral-imaging/1871-project-documentation">Project Documentation</a> page], which offers a detailed and, at times, intimate look into the inner workings of the [first phase of the] <a href="/spectral-imaging/spectral-imaging-overview">Livingstone Spectral Imaging Project</a>. Users can now not only overview the different stages by which the project evolved, but also download a representative selection of raw working documents produced in the course of the team’s efforts. As a result, the Project History &amp; Archive section both catalogues the extent of people and resources required to undertake a significant spectral imaging and publication project and offers a roadmap for teams wishing to undertake similar projects in the future.</p>
 
 <p class="space-1"><strong><u>Bonus</u>:</strong> Study the features enumerated above in the first edition of <a href="http://livingstone.library.ucla.edu/1871diary/index.htm" target="_blank">Livingstone\'s 1871 Field Diary</a> (external link)</p>
 
@@ -11825,7 +11831,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>Wisnicki, Adrian S. 2009. “Interstitial Cartographer: David Livingstone and T He Invention of South Central Africa.” <em>Victorian Literature and Culture</em> 37 (1): 255-71.</p>
 
-<p>Wisnicki, Adrian S. 2011. “<a href="/spectral-imaging/livingstone-1871">Livingstone in 1871</a>.” In <a href="http://livingstoneonline.org/spectral-imaging/livingstones-1871-field-diary-0">Livingstone’s 1871 Field Diary: A Multispectral Critical Edition</a>, edited by Adrian S. Wisnicki. Updated Edition. College Park: University of Maryland Libraries.</p>
+<p>Wisnicki, Adrian S. 2011. “<a href="/spectral-imaging/livingstone-1871">Livingstone in 1871</a>.” In <a href="http://livingstoneonline.org/spectral-imaging/livingstones-1871-field-diary">Livingstone’s 1871 Field Diary: A Multispectral Critical Edition</a>, edited by Adrian S. Wisnicki. Updated Edition. College Park: University of Maryland Libraries.</p>
 
 <p>Wolffe, John. 2000. <em>Great Deaths: Grieving, Religion, and Nationhood in Victorian and Edwardian Britain</em>. Oxford: Oxford University Press.</p>
 
@@ -12732,7 +12738,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><a href="/islandora/search">Browse by Digital Catalogue Record</a></p>
 
-<p><a href="/browse/addressee">Browse by Addressee</a></p>
+<p><a href="/in-his-own-words/addressee">Browse by Addressee</a></p>
 
 <p><a href="/his-own-words/repository">Browse by Repository</a></p>
 
@@ -12744,9 +12750,9 @@ The Livingstone Spectral Imaging Project<br />
 
 <p class="rteindent1"><a href="">Edition Guide</a></p>
 
-<p class="rteindent1"><a href="/his-own-words/project-team">Project Team</a></p>
+<p class="rteindent1"><a href="/his-own-words/final-project-team">Project Team</a></p>
 
-<p class="rteindent1"><a href="/his-own-words/acknowledgments">Acknowledgments</a></p>
+<p class="rteindent1"><a href="/his-own-words/final-acknowledgments">Acknowledgments</a></p>
 
 <p class="rteindent1"><a href="/his-own-words/scope-edition">Scope of the Edition</a></p>
 
@@ -12806,13 +12812,13 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>Livingstone\'s 1871 Field Diary</p>
 
-<p class="rteindent1"><a href="/spectral-imaging/livingstones-1871-field-diary-0">Introduction to the Edition</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/livingstones-1871-field-diary">Introduction to the Edition</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/edition-guide-1">Edition Guide</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/1871-edition-guide">Edition Guide</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/project-team-1">Project Team</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/1871-project-team">Project Team</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/acknowledgments-1">Acknowledgments</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/1871-acknowledgments">Acknowledgments</a></p>
 
 <p class="rteindent1"><a href="/islandora/search/%221871%20Field%20Diary%22%20NOT%20integrated%20NOT%20segment?access=all&amp;limit=catalogue">Images and Transcriptions</a></p>
 
@@ -12838,7 +12844,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p class="rteindent1"><a href="/spectral-imaging/project-history-2">Project History (2)</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/project-documentation-0">Project Documentation</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/1871-project-documentation">Project Documentation</a></p>
 
 <p class="rteindent1"><a href="/spectral-imaging/1871-field-diary-headers">1871 Field Diary Headers</a></p>
 
@@ -12850,13 +12856,13 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>Livingstone\'s Letter from Bambarre</p>
 
-<p class="rteindent1"><a href="/spectral-imaging/livingstones-letter-bambarre-0">Introduction to the Edition</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/livingstones-letter-bambarre">Introduction to the Edition</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/edition-guide-0">Edition Guide</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/bambarre-edition-guide">Edition Guide</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/project-team-0">The Project Team</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/bambarre-project-team">The Project Team</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/acknowledgments-0">Acknowledgments</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/bambarre-acknowledgments">Acknowledgments</a></p>
 
 <p class="rteindent1"><a href="/spectral-imaging/background-edition">Background of the Edition</a></p>
 
@@ -12880,11 +12886,11 @@ The Livingstone Spectral Imaging Project<br />
 
 <p class="rteindent1"><a href="/spectral-imaging/livingstones-1870-field-diary">Introduction to the Edition</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/edition-guide">Edition Guide</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/1870-edition-guide">Edition Guide</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/project-team">The Project Team</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/1870-project-team">The Project Team</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/acknowledgments">Acknowledgments</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/1870-acknowledgments">Acknowledgments</a></p>
 
 <p class="rteindent1"><a href="/islandora/search/%221870%20Field%20Diary%22?f[]=genre_ms:%22spectral+color%22">Images &amp; Transcriptions of the 1870 Field Diary</a></p>
 
@@ -12916,7 +12922,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p class="rteindent1"><a href="/spectral-imaging/project-history">Project History</a></p>
 
-<p class="rteindent1"><a href="/spectral-imaging/project-documentation">Project Documentation</a></p>
+<p class="rteindent1"><a href="/spectral-imaging/1870-project-documentation">Project Documentation</a></p>
 
 <p><a href="/islandora/search?access=view_spectral">The Livingstone Spectral Image Collection</a></p>
 
@@ -13493,7 +13499,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>The final year of the project (1 August 2016 - 31 August 2017) will result in:</p>
 
-<p class="rteindent1">1) the integration of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>, including the multispectral critical edition of <a href="/spectral-imaging/livingstones-1871-field-diary-0">Livingstone’s 1871 Field Diary</a>, into <em>Livingstone Online</em>; and</p>
+<p class="rteindent1">1) the integration of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>, including the multispectral critical edition of <a href="/spectral-imaging/livingstones-1871-field-diary">Livingstone’s 1871 Field Diary</a>, into <em>Livingstone Online</em>; and</p>
 
 <p class="rteindent1">2) a critical edition of Livingstone\'s final diaries and journals (1866-73), possibly the most comprehensive surviving collection of manuscript documents related to any single nineteenth-century British expedition to Africa.</p>
 
@@ -13644,7 +13650,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/livingstones-1870-field-diary/liv_000210_0001_color_raking_small.gif"><img alt="Animated spectral image of four pages from the 1870 Field Diary, second gathering, as written over a leaf from the Pall Mall Budget (Livingstone 1871b:LXXXII color raking). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/livingstones-1870-field-diary/liv_000210_0001_color_raking_smallest-webpage.gif" title="Animated spectral image of four pages from the 1870 Field Diary, second gathering, as written over a leaf from the Pall Mall Budget (Livingstone 1871b:LXXXII color_raking). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Animated spectral image of four pages from the 1870 Field Diary, second gathering, as written over a leaf from the <em>Pall Mall Budget</em> (Livingstone 1871b:LXXXII color_raking).&nbsp;<em>Copyright National Library of Scotland. </em> <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank&quot;">Creative Commons Attribution-NonCommercial 3.0 Unported</a>. The image shows the relationship between visible page features and underlying folds and creases. </span></p>
 
-<p>The text of the 1870 Field Diary is not difficult to read with the naked eye and so does not require spectral image processing for legibility like Livingstone\'s <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a> did. Rather a variety of other features make the 1870 Field Diary manuscript worth studying with processed spectral images, including a) Livingstone\'s decision to construct the diary out of multiple distinct printed and handwritten source texts, b) the presence of diverse inks and pencil marks (from Livingstone and others) on the diary\'s pages, c) unique elements of manuscript topography tied to events in the life of the diary, and d) environmental traces left on the diary\'s pages thanks to its complex history.</p>
+<p>The text of the 1870 Field Diary is not difficult to read with the naked eye and so does not require spectral image processing for legibility like Livingstone\'s <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a> did. Rather a variety of other features make the 1870 Field Diary manuscript worth studying with processed spectral images, including a) Livingstone\'s decision to construct the diary out of multiple distinct printed and handwritten source texts, b) the presence of diverse inks and pencil marks (from Livingstone and others) on the diary\'s pages, c) unique elements of manuscript topography tied to events in the life of the diary, and d) environmental traces left on the diary\'s pages thanks to its complex history.</p>
 
 <p>The second phase of our project, in contrast to the first, has therefore accomplished not one spectral image processing goal (the recovery of lost text), but several while producing a range of new spectral imaging techniques and <a href="/islandora/search/&quot;1870 Field Diary&quot; retrospect letters NOT beard?f[]=genre_ms%3A&quot;spectral+color&quot;" target="_blank">new processed spectral images</a>. The images offer insights into Livingstone’s creation of his text and the impact of both single moments and long-term processes in determining the manuscript’s current material state. These insights promise to enhance our understanding of the British empire, Victorian travel writing, Livingstone’s biography, and the history of the African cultures among which Livingstone worked and traveled. In using spectral imaging to analyze these features, we hope to open up new possibilities for the technological study of nineteenth-century manuscripts produced by British and other travelers around the globe.</p>
 
@@ -14108,7 +14114,7 @@ The Livingstone Spectral Imaging Project<br />
 <p><a href="/sites/default/files/spectral-imaging/livingstones-letter-bambarre/liv_002564_0004_pseudoratio_0505-0780-article1.jpg"><img alt="A processed spectral image of a page of the Letter from Bambarre (Livingstone 1871c:[4] pseudoratio). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/spectral-imaging/livingstones-letter-bambarre/liv_002564_0004_pseudoratio_0505-0780-article1.jpg" width="716" title="A processed spectral image of a page of the Letter from Bambarre (Livingstone 1871c:[4] pseudoratio). Copyright Peter and Nejma Beard. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." /></a><br />
 <span style="font-size:12px">A processed spectral image of a page of the <em>Letter from Bambarre</em> (Livingstone 1871c:[4] pseudoratio). <em>Copyright Peter and Nejma Beard. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. This page is the same one as above, but this image has been enhanced with spectral image processing to minimize the underlying printed text (page center) and to reveal Livingstone\'s writing.</span></p>
 
-<p>The edition of the letter also served as the pilot phase for an eighteen-month spectral imaging project (2010-11) on <a href="/spectral-imaging/livingstones-1871-field-diary-0">Livingstone\'s 1871 Field Diary</a>, an iconic document that captures Livingstone\'s first-hand impressions of a horric slave-trading massacre in Central Africa and that documents the months leading up to his famous meeting with Henry M. Stanley.</p>
+<p>The edition of the letter also served as the pilot phase for an eighteen-month spectral imaging project (2010-11) on <a href="/spectral-imaging/livingstones-1871-field-diary">Livingstone\'s 1871 Field Diary</a>, an iconic document that captures Livingstone\'s first-hand impressions of a horric slave-trading massacre in Central Africa and that documents the months leading up to his famous meeting with Henry M. Stanley.</p>
 
 <p><em>Livingstone\'s Letter from Bambarre</em> laid the groundwork for the 1871 Field Diary project because analysis of the letter – which was composed by the same methods and during the same period as the diary – demonstrated that spectral imaging could be applied effectively to study nineteenth-century paper-based British manuscripts.</p>
 
@@ -14256,11 +14262,11 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><strong><a href="/spectral-imaging/livingstones-1870-field-diary">Introduction to the Edition</a></strong></p>
 
-<p><strong><a href="/spectral-imaging/edition-guide">Edition Guide</a></strong> - the present page: provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts; also enumerates all the main sections of the edition and provides links to all embedded files and documentation.</p>
+<p><strong><a href="/spectral-imaging/1870-edition-guide">Edition Guide</a></strong> - the present page: provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts; also enumerates all the main sections of the edition and provides links to all embedded files and documentation.</p>
 
-<p><strong><a href="/spectral-imaging/project-team">The Project Team</a></strong> - introduces the project team that developed the critical edition of Livingstone\'s 1870 Field Diary and select 1870-1871 manuscripts.</p>
+<p><strong><a href="/spectral-imaging/1870-project-team">The Project Team</a></strong> - introduces the project team that developed the critical edition of Livingstone\'s 1870 Field Diary and select 1870-1871 manuscripts.</p>
 
-<p><strong><a href="/spectral-imaging/acknowledgments">Acknowledgments</a></strong> - cites the individuals who have made a special contribution to supporting our work in developing the multispectral critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 letters.</p>
+<p><strong><a href="/spectral-imaging/1870-acknowledgments">Acknowledgments</a></strong> - cites the individuals who have made a special contribution to supporting our work in developing the multispectral critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 letters.</p>
 
 <p><a id="link2" name="link2"></a></p>
 
@@ -14320,7 +14326,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><strong><a href="/spectral-imaging/project-history">Project History</a></strong> - set outs the history of our work to develop a multispectral critical edition of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts. It provides an overview of all significant periods of project endeavor and for each period describes all key project activities.</p>
 
-<p><strong><a href="/spectral-imaging/project-documentation">Project Documentation</a></strong> - provides curated access to some 300 project documents spanning three years of research activities (2013-16) for our critical edition of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts.</p>
+<p><strong><a href="/spectral-imaging/1870-project-documentation">Project Documentation</a></strong> - provides curated access to some 300 project documents spanning three years of research activities (2013-16) for our critical edition of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts.</p>
 
 <p><strong><a href="/spectral-imaging/integrated-project-bibliography" target="_blank">An Integrated Bibliography</a></strong> - presents a comprehensive, integrated bibliography of the primary texts and literary, historical, cultural, and scientific sources that serve as the basis of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>.</p>
 
@@ -14330,17 +14336,17 @@ The Livingstone Spectral Imaging Project<br />
 
 <h4><strong><span style="font-family:crimson text;">Files for Download</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p><a href="/sites/default/files/spectral-imaging/edition-guide-1/Last-Journals-of-David-Livingstone-vol-II.zip"><strong>Livingstone\'s <em>Last Journals</em> (1874), volume II</strong></a> (25.1 MB) - a PDF copy of the original edition of Livingstone\'s Last Journals (1874), volume II. Pages 48-109 of this volume correspond to the 1870 Field Diary.</p>
+<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/Last-Journals-of-David-Livingstone-vol-II.zip"><strong>Livingstone\'s <em>Last Journals</em> (1874), volume II</strong></a> (25.1 MB) - a PDF copy of the original edition of Livingstone\'s Last Journals (1874), volume II. Pages 48-109 of this volume correspond to the 1870 Field Diary.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/edition-guide-1/Last-Journals-Page-Proofs-1870-FD-Segment.zip"><strong>Livingstone\'s <em>Last Journals</em> (1874), volume II, corrected proofs</strong></a> (21 MB) - a PDF copy of a photocopy of the corrected proofs of Livingstone\'s Last Journals (1874), volume II. This segment of the proofs corresponds to the 1870 Field Diary. The photocopy has been marked with Roman numerals by the present editorial team to correlate the proofs with Livingstone\'s original manuscript pages.</p>
+<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/Last-Journals-Page-Proofs-1870-FD-Segment.zip"><strong>Livingstone\'s <em>Last Journals</em> (1874), volume II, corrected proofs</strong></a> (21 MB) - a PDF copy of a photocopy of the corrected proofs of Livingstone\'s Last Journals (1874), volume II. This segment of the proofs corresponds to the 1870 Field Diary. The photocopy has been marked with Roman numerals by the present editorial team to correlate the proofs with Livingstone\'s original manuscript pages.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/edition-guide-1/1870-Diary-Layout.zip"><strong>Structure of the 1870 Field Diary &amp; 1870-71 Manuscripts</strong></a> (66 KB) - a spreadsheet that sets out the relationship of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts to their underlying source texts in detail.</p>
+<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Diary-Layout.zip"><strong>Structure of the 1870 Field Diary &amp; 1870-71 Manuscripts</strong></a> (66 KB) - a spreadsheet that sets out the relationship of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts to their underlying source texts in detail.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/edition-guide-1/1870-Field-Diary-Extracted-Dates.zip"><strong>Dates for the 1870 Field Diary</strong></a> (47 KB) - a document that presents, sequentially, all dates for dated diary entries as extracted from our transcription of the 1870 Field Diary.</p>
+<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Field-Diary-Extracted-Dates.zip"><strong>Dates for the 1870 Field Diary</strong></a> (47 KB) - a document that presents, sequentially, all dates for dated diary entries as extracted from our transcription of the 1870 Field Diary.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/edition-guide-1/Unmarked-Undertexts-for-1870-Field-Diary.zip"><strong>Livingstone\'s Undertexts</strong></a> (50.7 MB) - unmarked PDF copies of three sources texts used by Livingstone in creating the 1870 Field Diary.</p>
+<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/Unmarked-Undertexts-for-1870-Field-Diary.zip"><strong>Livingstone\'s Undertexts</strong></a> (50.7 MB) - unmarked PDF copies of three sources texts used by Livingstone in creating the 1870 Field Diary.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/edition-guide-1/1870-Marked-Passages-from-Stanley.zip"><strong>Annotations of <em>The Bible: Its Form and Substance</em></strong></a> (72 KB) - transcriptions of all the passages annotated by Livingstone from Arthur Penrhyn Stanley’s <em>The Bible: Its Form and Substance</em> (1863).</p>
+<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Marked-Passages-from-Stanley.zip"><strong>Annotations of <em>The Bible: Its Form and Substance</em></strong></a> (72 KB) - transcriptions of all the passages annotated by Livingstone from Arthur Penrhyn Stanley’s <em>The Bible: Its Form and Substance</em> (1863).</p>
 
 <p><a id="link7" name="link7"></a></p>
 
@@ -14354,33 +14360,33 @@ The Livingstone Spectral Imaging Project<br />
 	<li><em>Presentations</em>
 
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><em>Flipbook:</em> <a href="/sites/default/files/spectral-imaging/edition-guide-1/1870-Field-Diary-flipbook-PPTX.zip">PowerPoint</a> (141.2 MB) or <a href="/sites/default/files/spectral-imaging/edition-guide-1/1870-Field-Diary-flipbook-PDF.zip">PDF</a> (141.2 MB)</li>
-		<li><em>Overlaid:</em> <a href="/sites/default/files/spectral-imaging/edition-guide-1/1870-Field-Diary-overlaid-PPTX.zip">PowerPoint</a> (110.5 MB) or <a href="/sites/default/files/spectral-imaging/edition-guide-1/1870-Field-Diary-overlaid-PDF.zip">PDF</a> (110.6 MB)</li>
-		<li><u>Bonus:</u> <a href="/sites/default/files/spectral-imaging/edition-guide-1/Flipbook-and-Overlaid-Complete.zip">Complete flipbook and overlaid PowerPoint and PDF presentations</a> (503.5 MB)</li>
+		<li><em>Flipbook:</em> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Field-Diary-flipbook-PPTX.zip">PowerPoint</a> (141.2 MB) or <a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Field-Diary-flipbook-PDF.zip">PDF</a> (141.2 MB)</li>
+		<li><em>Overlaid:</em> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Field-Diary-overlaid-PPTX.zip">PowerPoint</a> (110.5 MB) or <a href="/sites/default/files/spectral-imaging/1870-edition-guide/1870-Field-Diary-overlaid-PDF.zip">PDF</a> (110.6 MB)</li>
+		<li><u>Bonus:</u> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/Flipbook-and-Overlaid-Complete.zip">Complete flipbook and overlaid PowerPoint and PDF presentations</a> (503.5 MB)</li>
 	</ul>
 	</li>
 	<li><em>Animated Sequences</em>
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><em>Flipbook:</em> <a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000205_0019-0036_flipbook.zip">all pages of Livingstone 1870i:XXXIX-LV [v.2]</a> (158.4 MB)</li>
-		<li><em>Various:</em> <a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000205_0019-0036_recto.zip">page rectos of Livingstone 1870i:XXXIX-LV [v.2]</a> (73.6 MB) or <a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000205_0019-0036_verso.zip">page versos of Livingstone 1870i:XXXIX-LV [v.2]</a> (75.9 MB)</li>
-		<li><u>Bonus:</u> <a href="/sites/default/files/spectral-imaging/edition-guide-1/Animated-Sequences-Complete.zip">Complete flipbook and various animated sequences</a> (308 MB)</li>
+		<li><em>Flipbook:</em> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0019-0036_flipbook.zip">all pages of Livingstone 1870i:XXXIX-LV [v.2]</a> (158.4 MB)</li>
+		<li><em>Various:</em> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0019-0036_recto.zip">page rectos of Livingstone 1870i:XXXIX-LV [v.2]</a> (73.6 MB) or <a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0019-0036_verso.zip">page versos of Livingstone 1870i:XXXIX-LV [v.2]</a> (75.9 MB)</li>
+		<li><u>Bonus:</u> <a href="/sites/default/files/spectral-imaging/1870-edition-guide/Animated-Sequences-Complete.zip">Complete flipbook and various animated sequences</a> (308 MB)</li>
 	</ul>
 	</li>
 </ul>
 
-<p><a href="/sites/default/files/spectral-imaging/edition-guide-1/Animated-Spectral-Images-(ASIs)-Complete.zip"><strong>Complete Prototype ASIs</strong></a> (685.9 MB) - all the prototype ASIs of Livingstone\'s 1870 Field Diary developed for the present edition by Ashanka Kumari in a single ZIP file.</p>
+<p><a href="/sites/default/files/spectral-imaging/1870-edition-guide/Animated-Spectral-Images-(ASIs)-Complete.zip"><strong>Complete Prototype ASIs</strong></a> (685.9 MB) - all the prototype ASIs of Livingstone\'s 1870 Field Diary developed for the present edition by Ashanka Kumari in a single ZIP file.</p>
 
 <p><strong>Sample Prototype ASIs</strong> - prototype ASIs that enhance one or more manuscript features of interest.</p>
 
 <ol>
-	<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000209_0003_inkshift.zip">Changes in the visual character of ink</a> (59.1 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000205_0030_reinking.zip">Reinking with an alternate ink</a> (68.1 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000209_0001_folds.zip">Folds</a> (41.6 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000205_0015_impressions.zip">Impressions</a> (41.8 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000205_0036_holes.zip">Holes</a> (33.1 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000205_0010_edge-discolor.zip">Page discolor</a> (46.5 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000205_0035_big-stain.zip">The big stain</a> (58.8 MB)</li>
-	<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000202_0001_red-stains.zip">Red stains</a> (40.2 MB)</li>
+	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000209_0003_inkshift.zip">Changes in the visual character of ink</a> (59.1 MB)</li>
+	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0030_reinking.zip">Reinking with an alternate ink</a> (68.1 MB)</li>
+	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000209_0001_folds.zip">Folds</a> (41.6 MB)</li>
+	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0015_impressions.zip">Impressions</a> (41.8 MB)</li>
+	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0036_holes.zip">Holes</a> (33.1 MB)</li>
+	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0010_edge-discolor.zip">Page discolor</a> (46.5 MB)</li>
+	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000205_0035_big-stain.zip">The big stain</a> (58.8 MB)</li>
+	<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000202_0001_red-stains.zip">Red stains</a> (40.2 MB)</li>
 </ol>
 
 <p><strong>Page-specific Prototype ASIs</strong> - ASIs that target two specific pages of the manuscript, each of which combines a range of features of interest, including layered text and staining.</p>
@@ -14389,16 +14395,16 @@ The Livingstone Spectral Imaging Project<br />
 	<li><em>Livingstone 1870h:XVII</em>
 
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000204_0001_misc-v1.zip">Version 1</a> (29 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000204_0001_misc-v2.zip">Version 2</a> (33.6 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000204_0001_misc-v3.zip">Version 3</a> (51.3 MB)</li>
+		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000204_0001_misc-v1.zip">Version 1</a> (29 MB)</li>
+		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000204_0001_misc-v2.zip">Version 2</a> (33.6 MB)</li>
+		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000204_0001_misc-v3.zip">Version 3</a> (51.3 MB)</li>
 	</ul>
 	</li>
 	<li><em>Livingstone 1871a:LXXVI [v.1]</em>
 	<ul style="padding-bottom:1em; padding-left:1em;">
-		<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000208_0001_layers.zip">Layers of text</a> (65.1 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000208_0001_reverse-layers.zip">Layers of text (reverse order)</a> (42.2 MB)</li>
-		<li><a href="/sites/default/files/spectral-imaging/edition-guide-1/liv_000208_0001_stains.zip">Stains</a> (75.5 MB)</li>
+		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000208_0001_layers.zip">Layers of text</a> (65.1 MB)</li>
+		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000208_0001_reverse-layers.zip">Layers of text (reverse order)</a> (42.2 MB)</li>
+		<li><a href="/sites/default/files/spectral-imaging/1870-edition-guide/liv_000208_0001_stains.zip">Stains</a> (75.5 MB)</li>
 	</ul>
 	</li>
 </ul>
@@ -14409,23 +14415,23 @@ The Livingstone Spectral Imaging Project<br />
 
 <h4><strong><span style="font-family:crimson text;">Project Documentation</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p><strong><a href="/sites/default/files/spectral-imaging/edition-guide-1/Spectral-Imaging-Project-Documentation-Phase-2.zip">Complete Project Documentation</a></strong> (1.21 GB) - all curated project documents organized as a series of subdirectories containing several hundred files that together encompass every aspect of development.</p>
+<p><strong><a href="/sites/default/files/spectral-imaging/1870-edition-guide/Spectral-Imaging-Project-Documentation-Phase-2.zip">Complete Project Documentation</a></strong> (1.21 GB) - all curated project documents organized as a series of subdirectories containing several hundred files that together encompass every aspect of development.</p>
 
 <p><strong>Area-specific Subsets of Project Documentation</strong></p>
 
 <ol>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/01-Grant-Application.zip">NEH Grant Application</a> (1.3 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/02-Planning-Notes-and-Docs.zip">Planning notes and documents</a> (128 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/03-Processing-Notes-and-Feedback-Easton+Team.zip">Spectral image processing notes (PCA and ICA)</a> (988 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/04-Processing-Notes-and-Feedback-Knox+Team.zip">Spectral image processing notes (pseudocolor and animation)</a> (206.7 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/05-Manuscript-and-Image-Notes-Ward-Wisnicki.zip">Manuscript and image notes</a> (25.9 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/06-Meeting-and-Other-Notes.zip">Meeting and other notes</a> (529 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/07-Critical-Essay-Notes.zip">Critical essay and supporting materials notes</a> (691 KB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/08-Animated-Spectral-Image-(ASI)-Testing.zip">Animated Spectral Image (ASI) testing</a> (538.6 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/09-Image-Integration-and-Metadata-Addition.zip">Image integration and metadata-addition files</a> (5.4 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/10-Dissemination.zip">Dissemination</a> (331.2 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/11-Spectral-Image-Packet-Support-Files.zip">Spectral image archival packet supporting files</a> (3 MB)</li>
-	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/edition-guide-1/12-1870-FD-Beta-Launch-UK-Tour.zip">Critical edition beta launch UK "tour"</a> (93.8 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/01-Grant-Application.zip">NEH Grant Application</a> (1.3 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/02-Planning-Notes-and-Docs.zip">Planning notes and documents</a> (128 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/03-Processing-Notes-and-Feedback-Easton+Team.zip">Spectral image processing notes (PCA and ICA)</a> (988 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/04-Processing-Notes-and-Feedback-Knox+Team.zip">Spectral image processing notes (pseudocolor and animation)</a> (206.7 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/05-Manuscript-and-Image-Notes-Ward-Wisnicki.zip">Manuscript and image notes</a> (25.9 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/06-Meeting-and-Other-Notes.zip">Meeting and other notes</a> (529 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/07-Critical-Essay-Notes.zip">Critical essay and supporting materials notes</a> (691 KB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/08-Animated-Spectral-Image-(ASI)-Testing.zip">Animated Spectral Image (ASI) testing</a> (538.6 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/09-Image-Integration-and-Metadata-Addition.zip">Image integration and metadata-addition files</a> (5.4 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/10-Dissemination.zip">Dissemination</a> (331.2 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/11-Spectral-Image-Packet-Support-Files.zip">Spectral image archival packet supporting files</a> (3 MB)</li>
+	<li style="margin-bottom: 6px;"><a href="/sites/default/files/spectral-imaging/1870-edition-guide/12-1870-FD-Beta-Launch-UK-Tour.zip">Critical edition beta launch UK "tour"</a> (93.8 MB)</li>
 </ol>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
@@ -14450,6 +14456,7 @@ The Livingstone Spectral Imaging Project<br />
     'und' => array(
       0 => array(
         'value' => '<p>This page provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts. It enumerates all the main sections of the edition and provides links to all embedded files and documentation.</p>
+
 <div class="section-page-toc-links">
 <ol style="list-style-type:none">
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Prefatory Material</a></span></span></li>
@@ -14461,7 +14468,8 @@ The Livingstone Spectral Imaging Project<br />
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link7">Animated Spectral Images for Download</a></span></span></li>
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link8">Project Documentation</a></span></span></li>
 </ol>
-</div>',
+</div>
+',
         'format' => 'full_html',
       ),
     ),
@@ -14485,11 +14493,11 @@ The Livingstone Spectral Imaging Project<br />
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'spectral-imaging/edition-guide-1',
+      'alias' => 'spectral-imaging/1870-edition-guide',
       'language' => 'und',
     ),
   ),
@@ -14576,7 +14584,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>However, since inception, <em>Livingstone Online</em> had placed special emphasis on its collaborative relationships. These relationships extended from institutions with major and minor Livingstone holdings to individual scholars, whom director [qtip: Chris Lawrence|Chris Lawrence (Professor Emeritus, University College London). Former director of <em>Livingstone Online</em>; now director emeritus of the project.] encouraged to contribute to <em>Livingstone Online</em> and otherwise assisted by means of the project. One such scholar, [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.] (then at Birkbeck, University of London), had joined the team in 2009. Wisnicki found the archive in his search of letters from the last phase of Livingstone’s career and, in doing so, also found an intellectual community in Lawrence and the other team members.</p>
 
-<p>Once on board, Wisnicki began to discuss with Lawrence a project to publish Livingstone’s final field diaries (1866-1873). Full, unabridged publication of these diaries had eluded scholars for decades. Wisnicki hoped to begin this project by focusing on a particularly damaged diary, Livingstone’s <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a>. Research on this diary, in collaboration with [qtip: Debbie Harrison|Debbie Harrison (Senior Visiting Fellow, The Pensions Institute, Cass Business School). Former scholar for the Livingstone Spectral Imaging Project; now advisory board member for <em>Livingstone Online</em>.] (Wisnicki’s colleague at Birkbeck), an American team of spectral imaging scientists, and the UCLA Digital Library eventually resulted in the <em>Livingstone Spectral Imaging Project</em> (2010-present), a major <em>Livingstone Online</em>-affiliated initiative funded by the National Endowment for the Humanities (USA) and the British Academy.</p>
+<p>Once on board, Wisnicki began to discuss with Lawrence a project to publish Livingstone’s final field diaries (1866-1873). Full, unabridged publication of these diaries had eluded scholars for decades. Wisnicki hoped to begin this project by focusing on a particularly damaged diary, Livingstone’s <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a>. Research on this diary, in collaboration with [qtip: Debbie Harrison|Debbie Harrison (Senior Visiting Fellow, The Pensions Institute, Cass Business School). Former scholar for the Livingstone Spectral Imaging Project; now advisory board member for <em>Livingstone Online</em>.] (Wisnicki’s colleague at Birkbeck), an American team of spectral imaging scientists, and the UCLA Digital Library eventually resulted in the <em>Livingstone Spectral Imaging Project</em> (2010-present), a major <em>Livingstone Online</em>-affiliated initiative funded by the National Endowment for the Humanities (USA) and the British Academy.</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/about-this-site/brief-history-livingstone-online-2004-2013/liv_013630_0001-crop-article.jpg"><img alt="Chris Lawrence and Adrian Wisnicki, 2014. Copyright Livingstone Online. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/about-this-site/brief-history-livingstone-online-2004-2013/liv_013630_0001-crop-article.jpg" title="Chris Lawrence and Adrian Wisnicki, 2014. Copyright Livingstone Online. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Chris Lawrence and Adrian S. Wisnicki, 2014. <em>Copyright </em>Livingstone Online<em>. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported </a></em></span></p>
@@ -15636,11 +15644,11 @@ The Livingstone Spectral Imaging Project<br />
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'spectral-imaging/the-project-team',
+      'alias' => 'spectral-imaging/1870-project-team',
       'language' => 'und',
     ),
   ),
@@ -15806,10 +15814,10 @@ The Livingstone Spectral Imaging Project<br />
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p class="space1 rtecenter" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/acknowledgments-0/liv_002571_0001_ratio_by_0940_hue-46.jpg"><img alt="A custom processed spectral image of a page from Livingstone\'s letter to John Kirk 2, 14 May 1871  (Livingstone 1871i:[1] spectral_ratio, with hue rotated to -46). Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/acknowledgments-0/liv_002571_0001_ratio_by_0940_hue-46.jpg" title="A custom processed spectral image of a page from Livingstone\'s letter to John Kirk 2, 14 May 1871  (Livingstone 1871i:[1] spectral_ratio, with hue rotated to -46). Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="90%" /></a><br />
+        'value' => '<p class="space1 rtecenter" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/1870-acknowledgments/liv_002571_0001_ratio_by_0940_hue-46.jpg"><img alt="A custom processed spectral image of a page from Livingstone\'s letter to John Kirk 2, 14 May 1871  (Livingstone 1871i:[1] spectral_ratio, with hue rotated to -46). Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/1870-acknowledgments/liv_002571_0001_ratio_by_0940_hue-46.jpg" title="A custom processed spectral image of a page from Livingstone\'s letter to John Kirk 2, 14 May 1871  (Livingstone 1871i:[1] spectral_ratio, with hue rotated to -46). Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="90%" /></a><br />
 <span style="font-size:12px;display:inline-block;text-align:left;max-width:90%">A custom processed spectral image of a page from Livingstone\'s letter to John Kirk 2, 14 May 1871 (Livingstone 1871i:[1] spectral_ratio, with hue rotated to -46). <em>Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. Livingstone wrote this letter over a piece of paper that Kirk used to send Livingstone quinine. The processing suppresses nearly all of Livingstone\'s letter and instead foregrounds Kirk\'s original text: "Quinine" and "JK".</span></p>
 
-<p>It has been an immense privilege to work on this phase (2013-17) of the Livingstone Spectral Imaging Project. The members of the <a href="/spectral-imaging/project-team">project team</a> are grateful to the individuals below who have supported our work and to those individuals who supported the <a href="http://livingstone.library.ucla.edu/1871diary/acknowledgments.htm" target="_blank">first phase of the project</a> (2010-13), as that phase laid some of the groundwork for the current phase.</p>
+<p>It has been an immense privilege to work on this phase (2013-17) of the Livingstone Spectral Imaging Project. The members of the <a href="/spectral-imaging/1870-project-team">project team</a> are grateful to the individuals below who have supported our work and to those individuals who supported the <a href="http://livingstone.library.ucla.edu/1871diary/acknowledgments.htm" target="_blank">first phase of the project</a> (2010-13), as that phase laid some of the groundwork for the current phase.</p>
 
 <p>We also wish to acknowledge the <a href="http://www.neh.gov/" target="_blank">National Endowment for the Humanties</a> (USA), our collaborating institutions, and the extraordinary staff at these institutions, particularly the <a href="http://www.nts.org.uk/property/david-livingstone-centre/" target="_blank">David Livingstone Centre</a>, the <a href="http://www.nls.uk/" target="_blank">National Library of Scotland</a>, <a href="http://www.unl.edu/" target="_blank">University of Nebraska-Lincoln</a>, and the <a href="http://www.lib.umd.edu/" target="_blank">University of Maryland Libraries</a>. Without the generous assistance of these individuals and institutions, the project would not have gone forward.</p>
 
@@ -15913,11 +15921,11 @@ The Livingstone Spectral Imaging Project<br />
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'spectral-imaging/acknowledgments-0',
+      'alias' => 'spectral-imaging/1870-acknowledgments',
       'language' => 'und',
     ),
   ),
@@ -16015,7 +16023,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><a href="/islandora/search/*%3A*?type=edismax"><strong>Browse by Digital Catalogue Record</strong></a> - David Livingstone manuscripts at the University of Cape Town, 2013, by Angela Aliff. Copyright Angela Aliff. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
 
-<p><strong><a href="/browse/addressee">Browse by Addressee</a></strong> - Photograph of David Livingstone and Anna M. Livingstone, c.1857-1866. Copyright Wellcome Library, London.&nbsp;<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
+<p><strong><a href="/in-his-own-words/addressee">Browse by Addressee</a></strong> - Photograph of David Livingstone and Anna M. Livingstone, c.1857-1866. Copyright Wellcome Library, London.&nbsp;<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
 
 <p><a href="/his-own-words/repository"><strong>Browse by Repository</strong></a> - Wooden box of David Livingstone\'s letters at SOAS, University of London. Copyright <em>Livingstone Online </em> (Gary Li, photographer). <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
 
@@ -16031,9 +16039,9 @@ The Livingstone Spectral Imaging Project<br />
 
 <p><a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction"><strong>The Livingstone Spectral Imaging Project: An Introduction</strong></a> - Kate Simpson preparing a page of David Livingstone\'s 1871 Field Diary for spectral imaging at the National Library of Scotland, June 2010. Copyright Callum Bennetts - Maverick Photo Agency. Used by permission.</p>
 
-<p><a href="/spectral-imaging/livingstones-1871-field-diary-0"><strong>Livingstone\'s 1871 Field Diary</strong></a> - A folio of David Livingstone\'s 1871 Field Diary (Livingstone 1871f:CLI, CXLIV) on display at the David Livingstone Centre. Copyright Angela Aliff, David Livingstone Centre, and Dr. Neil Imray Livingstone Wilson (as relevant). <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
+<p><a href="/spectral-imaging/livingstones-1871-field-diary"><strong>Livingstone\'s 1871 Field Diary</strong></a> - A folio of David Livingstone\'s 1871 Field Diary (Livingstone 1871f:CLI, CXLIV) on display at the David Livingstone Centre. Copyright Angela Aliff, David Livingstone Centre, and Dr. Neil Imray Livingstone Wilson (as relevant). <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
 
-<p><a href="/spectral-imaging/livingstones-letter-bambarre-0"><strong>Livingstone\'s Letter from Bambarre</strong></a> - Debbie Harrison examines a page of David Livingstone\'s 1871 Field Diary at the National Library of Scotland, June 2010. Copyright Callum Bennetts - Maverick Photo Agency. Used by permission.</p>
+<p><a href="/spectral-imaging/livingstones-letter-bambarre"><strong>Livingstone\'s Letter from Bambarre</strong></a> - Debbie Harrison examines a page of David Livingstone\'s 1871 Field Diary at the National Library of Scotland, June 2010. Copyright Callum Bennetts - Maverick Photo Agency. Used by permission.</p>
 
 <p><strong><a href="/spectral-imaging/livingstones-1870-field-diary">Livingstone\'s 1870 Field Diary and Select 1870-71 Manuscripts</a></strong> - A processed spectral image of a page from David Livingstone\'s 1870 Field Diary (Livingstone 1870i:XLIV spectral_ratio with hue rotated). Copyright David Livingstone Centre and Dr. Neil Imray Livingstone Wilson (as relevant). <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></p>
 
@@ -16263,7 +16271,7 @@ The Livingstone Spectral Imaging Project<br />
 <ul>
 	<li>The 1,100 page manuscript of <em><a href="/islandora/search/Missionary travels?full_record=0&amp;order=Title&amp;access=download&amp;f[]=genre_ms%3A%22manuscripts+for+publication%22">Missionary Travels and Researches in South Africa</a></em> (1857), the book that established Livingstone’s reputation as one of the leading explorers of his day;</li>
 	<li>Nearly all the surviving field diaries, journals, notebooks, and maps (over 2,000 pages) related to Livingstone’s last expedition to Africa (1866-73), among the largest such manuscript collections related to any nineteenth-century British expedition to Africa (forthcoming in 2017);</li>
-	<li>Livingstone\'s <a href="/spectral-imaging/livingstones-letter-bambarre-0">Letter from Bambarre</a> and the <a href="http://livingstoneonline.org/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871</a> Field Diaries, the first nineteenth-century British manuscripts to be studied with <a href="/spectral-imaging/introducing-livingstone-spectral-imaging-project">spectral imaging technology</a>; and</li>
+	<li>Livingstone\'s <a href="/spectral-imaging/livingstones-letter-bambarre">Letter from Bambarre</a> and the <a href="http://livingstoneonline.org/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary">1871</a> Field Diaries, the first nineteenth-century British manuscripts to be studied with <a href="/spectral-imaging/introducing-livingstone-spectral-imaging-project">spectral imaging technology</a>; and</li>
 	<li>Collections of Livingstone\'s letters to key individuals in his life such as <a href="/islandora/search?f[]=addressee_ms%3A%22Livingstone%2C+Agnes+3%2C+1847-1912%22">Agnes Livingstone</a>, <a href="/islandora/search?f[]=addressee_ms%3A%22Moffat%2C+Robert+1%2C+1795-1883%22">Robert Moffat</a>, <a href="/islandora/search?f[]=addressee_ms%3A%22Murray%2C+John+III%2C+1808-1892%22">John Murray III</a>, <a href="/islandora/search?f[]=addressee_ms%3A%22Murchison%2C+Roderick+I.%2C+1792-1871%22">Roderick Murchison</a>, and <a href="/islandora/search?f[]=addressee_ms%3A%22Kirk%2C+John+2%2C+1832-1922%22">John Kirk</a>.</li>
 </ul>
 
@@ -16272,7 +16280,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>Additionally, we publish curated images of unique contextual materials such as painted magic lantern slides, publisher estimate books and trade advertisements, nineteenth-century illustrations of Livingstone\'s travels, promotional materials from films based on Livingstone\'s life, Livingstone\'s pocket Bible, and even Mary Moffat\'s wedding ring.</p>
 
-<p>Our <a href="/islandora/search">digital catalogue</a> – the largest catalogue of Livingstone and Livingstone-related items ever created – encompasses nearly 3,000 items and serves as the gateway to our digital collection. Users can also search any combination of images, transcription, and item records from the search bar in all our page headers or browse our digital collection by <a href="/browse/addressee">Livingstone\'s correspondents</a>, the diverse <a href="/his-own-words/repository">repositories</a> with Livingstone materials, a <a href="/his-own-words/timeline">timeline</a> that plots all items chronologically, and a map that links items to the geographical locations where Livingstone and others created them (coming fall 2017).<o:p></o:p></p>
+<p>Our <a href="/islandora/search">digital catalogue</a> – the largest catalogue of Livingstone and Livingstone-related items ever created – encompasses nearly 3,000 items and serves as the gateway to our digital collection. Users can also search any combination of images, transcription, and item records from the search bar in all our page headers or browse our digital collection by <a href="/in-his-own-words/addressee">Livingstone\'s correspondents</a>, the diverse <a href="/his-own-words/repository">repositories</a> with Livingstone materials, a <a href="/his-own-words/timeline">timeline</a> that plots all items chronologically, and a map that links items to the geographical locations where Livingstone and others created them (coming fall 2017).<o:p></o:p></p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/in-his-own-words/the-livingstone-online-digital-collection/liv_012043_0001-article.jpg"><img alt="Ivory Lip Ring, May 1859, from the Maganja ethnic group in Africa, with an inscription from David Livingstone. Copyright David Livingstone Centre, Dr. Neil Imray Livingstone Wilson (as relevant), and Roddy Simpson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)" class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/in-his-own-words/the-livingstone-online-digital-collection/liv_012043_0001-article.jpg" title="Ivory Lip Ring, May 1859, from the Maganja ethnic group in Africa, with an inscription from David Livingstone. Copyright David Livingstone Centre, Dr. Neil Imray Livingstone Wilson (as relevant), and Roddy Simpson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)" typeof="foaf:Image" width="716" /></a><br />
 <span style="font-size:12px;">Ivory Lip Ring, May 1859, from the Maganja ethnic group in Africa, with an inscription from David Livingstone. <em>Copyright David Livingstone Centre, Dr. Neil Imray Livingstone Wilson (as relevant), and Roddy Simpson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
@@ -16522,11 +16530,11 @@ The Livingstone Spectral Imaging Project<br />
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'in-his-own-words/project-team',
+      'alias' => 'in-his-own-words/final-project-team',
       'language' => 'und',
     ),
   ),
@@ -17447,7 +17455,7 @@ The Livingstone Spectral Imaging Project<br />
 	</tbody>
 </table>
 
-<p>As a result, the 1870 Field Diary, like Livingstone’s other final field diaries, is a relational document, i.e., a text Livingstone used and conceived of in relation to the journal. Moreover, the 1870 Field Diary makes repeated references to this relational status, as does the <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a>.</p>
+<p>As a result, the 1870 Field Diary, like Livingstone’s other final field diaries, is a relational document, i.e., a text Livingstone used and conceived of in relation to the journal. Moreover, the 1870 Field Diary makes repeated references to this relational status, as does the <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a>.</p>
 
 <p>For instance, the first gathering of the 1870 Field Diary ends with a note that it is “[t]o be copied into the Journal” (1870b:[70]). 1870e:X of the second gathering opens with this same note, while 1870h:XVII and XVIII begin by making the point more briefly: “to be copied.” Lastly, on 1870i:XXIII Livingstone has added the single word “copied” between two paragraphs, again apparently referencing the diary’s relational status.</p>
 
@@ -17456,7 +17464,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p>In at least one significant instance, Livingstone also uses the 1870 Field Diary in a different relational manner – to serve as a draft copy of a despatch to Lord Stanley (15 Nov. 1870). This despatch occupies a significant portion of the second gathering (1870i:XLI-LXI), begins with a note that it is a “copy” (page 1870i:XLI), and ends with Livingstone recording that he “copied the foregoing despatch” (1870i:LXII).</p>
 
-<p>The presence of this letter, therefore, distinguishes the 1870 Field Diary from most of Livingstone’s other final diaries (excepting the <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a>, which contains a draft of an unsent letter), but reiterates a practice seen in the Unyanyembe Journal, which contains copies of multiple letters. From a broader perspective, the letter thus underscores that Livingstone uses the 1870 Field Diary to store multiple kinds of information: it is a place to record observations that exist nowhere else; it serves as a temporary repository for notes that would be expanded and revised in the Unyanyembe Journal; and, at least in this instance, it also provides a backup copy of an important letter that might be lost in transit (also see <a href="/spectral-imaging/diary-across-hands-space-and-time-3#link6">The big stain</a>).</p>
+<p>The presence of this letter, therefore, distinguishes the 1870 Field Diary from most of Livingstone’s other final diaries (excepting the <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a>, which contains a draft of an unsent letter), but reiterates a practice seen in the Unyanyembe Journal, which contains copies of multiple letters. From a broader perspective, the letter thus underscores that Livingstone uses the 1870 Field Diary to store multiple kinds of information: it is a place to record observations that exist nowhere else; it serves as a temporary repository for notes that would be expanded and revised in the Unyanyembe Journal; and, at least in this instance, it also provides a backup copy of an important letter that might be lost in transit (also see <a href="/spectral-imaging/diary-across-hands-space-and-time-3#link6">The big stain</a>).</p>
 
 <p style="line-height:110%"><a href="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000206_0001_color-detail-article.jpg"><img alt="An image of a page of the 1870 Field Diary (Livingstone 1870j:LXII), detail. Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000206_0001_color-detail-article.jpg" title="An image of a page of the 1870 Field Diary (Livingstone 1870j:LXII), detail. Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">An image of a page of the 1870 Field Diary (Livingstone 1870j:LXII), detail. <em>Copyright David Livingstone Centre. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. This segment alludes to the fact that Livingstone copied over the Letter to Lord Stanley, which directly preceds this page in the 1870 Field Diary (Livingstone 1870i:XLI-LXI).</span></p>
@@ -17476,7 +17484,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="space1 rtecenter" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000200_0007_color-article.jpg"><img alt="An image of a page of the 1870 Field Diary (Livingstone 1870j:LXII pseudo_v4_BY), detail. Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000200_0007_color-article.jpg" title="An image of a page of the 1870 Field Diary (Livingstone 1870j:LXII pseudo_v4_BY), detail. Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="80%" /></a><br />
 <span style="font-size:12px;display:inline-block;text-align:left;max-width:80%">An image of a page of the 1870 Field Diary (Livingstone 1870b:[7]), detail. <em>Copyright David Livingstone Centre. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. A rare instance of a dated entry in the first gathering of the 1870 Field Diary (Livingstone 1870b).</span></p>
 
-<p>Livingstone dates the pages of the second gathering with a range of dates running from 18 August 1870 to 22 March 1871. (Note: the <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a> picks up the thread directly afterward, with its first entry dated 23 March 1871.) In other words, there is an overlap between the dating of the first and second gatherings. The overlap suggests that the first gathering might be treated as a separate document, one intermediate between Field Diary XIII and the 1870 Field Diary – although we have not taken this course in the present edition.</p>
+<p>Livingstone dates the pages of the second gathering with a range of dates running from 18 August 1870 to 22 March 1871. (Note: the <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a> picks up the thread directly afterward, with its first entry dated 23 March 1871.) In other words, there is an overlap between the dating of the first and second gatherings. The overlap suggests that the first gathering might be treated as a separate document, one intermediate between Field Diary XIII and the 1870 Field Diary – although we have not taken this course in the present edition.</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000209_0010_pseudoBY_940_by_592-article.jpg"><img alt="A spectral image of a page of the 1870 Field Diary (Livingstone 1871b:LXXXVII  pseudo_v4_BY). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000209_0010_pseudoBY_940_by_592-article.jpg" title="A spectral image of a page of the 1870 Field Diary (Livingstone 1871b:LXXXVII  pseudo_v4_BY). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A spectral image of a page of the 1870 Field Diary (Livingstone 1871b:LXXXVII pseudo_v4_BY). <em>Copyright David Livingstone Centre. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. By this point, Livingstone had run out of space in Field Diary XIII (Livingstone 1869) and so was using the 1870 Field Diary both for reflection and to record each passing day. As a result, this page contains entries for all the dates in the following sequence: 17-20 February 1871.</span></p>
@@ -17501,7 +17509,7 @@ The Livingstone Spectral Imaging Project<br />
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000205_0001_color-article.jpg"><img alt="An image of a page of the 1870 Field Diary (Livingstone 1870i:XXI). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000205_0001_color-article.jpg" title="An image of a page of the 1870 Field Diary (Livingstone 1870i:XXI). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">An image of a page of the 1870 Field Diary (Livingstone 1870i:XXI). <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. The page is the only one in the 1870 Field Diary where Livingstone writes a Roman numeral both at the beginning and at the end of the text.</span></p>
 
-<p>The numerals in the second gathering run from I to CI, with a few exceptions (the pages of the <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a>, therefore, follow directly, being numbered CII to CLXIII). Livingstone has not numbered the first page of the second gathering (1870c:I), although its placement on the manuscript leaf that includes pages II, III, and IV suggests that the relevant page is indeed page I. The numeral LV appears twice, on both the recto and verso of the given leaf (1870i:LV [v.1], LV [v.2]), although the number on the verso appears to be an after-the-fact addition (see below). Uniquely, numeral XXI appears both at the beginning of the relevant page (1870i:XXI; upper left-hand corner, in a form that suggests Livingstone forgot it initially, then wrote it into the available space) and at the end (lower right-hand corner).</p>
+<p>The numerals in the second gathering run from I to CI, with a few exceptions (the pages of the <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a>, therefore, follow directly, being numbered CII to CLXIII). Livingstone has not numbered the first page of the second gathering (1870c:I), although its placement on the manuscript leaf that includes pages II, III, and IV suggests that the relevant page is indeed page I. The numeral LV appears twice, on both the recto and verso of the given leaf (1870i:LV [v.1], LV [v.2]), although the number on the verso appears to be an after-the-fact addition (see below). Uniquely, numeral XXI appears both at the beginning of the relevant page (1870i:XXI; upper left-hand corner, in a form that suggests Livingstone forgot it initially, then wrote it into the available space) and at the end (lower right-hand corner).</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000205_0034_PCA_pseudo_(liv_000205_0034_stats)-article.jpg"><img alt="A spectral image of a page of the 1870 Field Diary (Livingstone 1870i:LIV PCA_pseudo_34I). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000205_0034_PCA_pseudo_(liv_000205_0034_stats)-article.jpg" title="A spectral image of a page of the 1870 Field Diary (Livingstone 1870i:LIV PCA_pseudo_34I). Copyright National Library of Scotland. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A spectral image of a page of the 1870 Field Diary (Livingstone 1870i:LIV PCA_pseudo_34I). <em>Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. As the spectral image shows, this page experienced significant saturation that wiped away some of the text, especially in the upper left-hand corner. To compensate, Livingstone reinked some of the text in that spot, including his Roman numeral.</span></p>
@@ -17566,7 +17574,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p class="space2">As subsequent text indicates, Livingstone handed the final version of the letter to the Arab trader Muhammad Bogarib for delivery “into the consul’s hands at Zanzibar” (1870j:LXII). <a id="link9" name="link9"></a>Livingstone’s decision to draft the letter in the diary underscores the letters significance to Livingstone, as it was the only letter thus drafted although concurrently Livingstone wrote other letters to “Tom Agnes - Young Webb Oswell Dr Hamilton Sir Roderick Sir Bartle Frere - Tracey - Stearns of Bombay - Maclear = Bleek Brother John In Canada” (1870j:LXII).</p>
 
-<p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Field notes.</strong> In composing the other field diaries from his last journey, Livingstone’s practice was to place random series of field notes at the end of his diaries. The <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a>, for instance, which continues directly from the 1870 Field Diary and might be considered the second half of the latter, has such notes at the end. These field notes, often dated, might include lists of porters, rainfall measurements, vocabularies, stations on routes, illustrations, and a diverse range of other materials. Four pages of the 1870 Field Diary also contain these field notes.</p>
+<p><a href="#TOP" title="Go to table of contents" xmlns:html="http://www.w3.org/1999/xhtml">▲</a> <strong>Field notes.</strong> In composing the other field diaries from his last journey, Livingstone’s practice was to place random series of field notes at the end of his diaries. The <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a>, for instance, which continues directly from the 1870 Field Diary and might be considered the second half of the latter, has such notes at the end. These field notes, often dated, might include lists of porters, rainfall measurements, vocabularies, stations on routes, illustrations, and a diverse range of other materials. Four pages of the 1870 Field Diary also contain these field notes.</p>
 
 <p class="space1 rtecenter" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000204_0001_color-detail-s-article.jpg"><img alt="An image of a page of the 1870 Field Diary (Livingstone 1870h:XVII), detail. Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/structuring-the-1870-field-diary/liv_000204_0001_color-detail-s-article.jpg" title="An image of a page of the 1870 Field Diary (Livingstone 1870h:XVII), detail. Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="90%" /></a><br />
 <span style="font-size:12px;display:inline-block;text-align:left;max-width:90%">An image of a page of the 1870 Field Diary (Livingstone 1870h:XVII), detail. <em>Copyright David Livingstone Centre. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. In the middle of a diary entry, Livingstone boxes off a segment where he notes the names of three rivers.</span></p>
@@ -18337,12 +18345,12 @@ Livingstone 1871m: 23 Oct.-3 Nov. 1871</p>
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/acknowledgments-1/liv_000097_0001_pseudo_0505-0780-article.jpg"><img alt="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871l:[1]-[2] pseudo_v1). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/acknowledgments-1/liv_000097_0001_pseudo_0505-0780-article.jpg" title="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871l:[1]-[2] pseudo_v1). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
+        'value' => '<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/1871-acknowledgments/liv_000097_0001_pseudo_0505-0780-article.jpg"><img alt="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871l:[1]-[2] pseudo_v1). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/1871-acknowledgments/liv_000097_0001_pseudo_0505-0780-article.jpg" title="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871l:[1]-[2] pseudo_v1). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871l:[1]-[2] pseudo_v1). <em>Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> Livingstone has written this fragment over an envelope sent to him (care of John Kirk) by the Royal Geographical Society (RGS). The seal of the RGS appears at right, while the vertical undertext on the left is the original address to Livingstone in another hand.</span></p>
 
 <p>The opportunity to work on this project has been both amazing and humbling – amazing because it has brought me into contact with so many wonderful people in so many fields, at so many different institutions; humbling because throughout the project I have never ceased to marvel at the kindness of these individuals (including the tireless members of my team), at the generosity of these institutions, and at the willingness of all to help and give their time selflessly whenever I contacted them. Please consider this project to be yours also. It will help me discharge the lifetime’s debt I’ve now built up with many of you.</p>
 
-<p>If your name does not appear below and it should, please let me know. A few obvious names are missing, but that’s because I’ve named you Honorary Members of our <a href="/spectral-imaging/project-team-1">project team</a> in recognition of the exceptional support you’ve provided to our work.</p>
+<p>If your name does not appear below and it should, please let me know. A few obvious names are missing, but that’s because I’ve named you Honorary Members of our <a href="/spectral-imaging/1871-project-team">project team</a> in recognition of the exceptional support you’ve provided to our work.</p>
 
 <p>Thank you very much to everyone. I am grateful beyond words. You have let me dream my biggest dream yet.</p>
 
@@ -18720,7 +18728,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <h4><span style="font-family:crimson text;"><strong>Getting the Word Out: Into Schools</strong></span><strong>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p>LEAP\'s outreach program comprised the final element of the dissemination work, led jointly by LEAP team members ([qtip: Kate Simpson|Kate Simpson (Graduate Student, Edinburgh Napier University). Project scholar and UK outreach coordinator for <em>Livingstone Online</em>.], [qtip: Megan Ward|Megan Ward (Assistant Professor, Oregon State University). Co-director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.]), staff of the David Livingstone Centre ([qtip: Martha B. Findlay|Martha B. Findlay (Learning Officer, David Livingstone Centre).], [qtip: Alison Ritchie|Alison Ritchie (Property Manager, David Livingstone Centre). Institutional contact for <em>Livingstone Online</em>.]), and schools local to the David Livingstone Centre in Blantyre. In the fall of 2013, Simpson and Findlay began work on this program with a "pre-pilot" that encouraged local school children to interact with Livingstone\'s <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a>.</p>
+<p>LEAP\'s outreach program comprised the final element of the dissemination work, led jointly by LEAP team members ([qtip: Kate Simpson|Kate Simpson (Graduate Student, Edinburgh Napier University). Project scholar and UK outreach coordinator for <em>Livingstone Online</em>.], [qtip: Megan Ward|Megan Ward (Assistant Professor, Oregon State University). Co-director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.]), staff of the David Livingstone Centre ([qtip: Martha B. Findlay|Martha B. Findlay (Learning Officer, David Livingstone Centre).], [qtip: Alison Ritchie|Alison Ritchie (Property Manager, David Livingstone Centre). Institutional contact for <em>Livingstone Online</em>.]), and schools local to the David Livingstone Centre in Blantyre. In the fall of 2013, Simpson and Findlay began work on this program with a "pre-pilot" that encouraged local school children to interact with Livingstone\'s <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a>.</p>
 
 <p>Based on the experience of the pre-pilot, Ward and Simpson developed a <a href="/resources/livingstone-online-outreach-worksheets">series of worksheets</a> that would encourage students to explore relevant historical themes (e.g., slavery, global citizenship, African culture) through <em>Livingstone Online</em>. In this they were assisted by volunteer [qtip: Alastair Simpson|Alastair Simpson (Volunteer, David Livingstone Centre).] who provided worksheet design and layout support.</p>
 
@@ -22186,7 +22194,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The project team would also like to acknowledge the considerable direct-cost contribution that the University of Nebraska-Lincoln (UNL) made to the development of our edition. Beyond this contribution, the staff of the UNL\'s <a href="http://www.unl.edu/english/home" target="_blank">English Department</a>, <a href="http://research.unl.edu/" target="_blank">Office for Research and Economic Development</a> (ORED), <a href="http://libraries.unl.edu/love-library" target="_blank">Love Library</a>, and the <a href="http://cdrh.unl.edu/" target="_blank">Center for Digital Research in the Humanities</a> (CDRH) provided extensive administrative support that allowed for the smooth functioning of the project from end to end.</p>
 
-<p>Finally, the project directors would like to thank our team of encoders (listed by name on our <a href="/his-own-words/project-team">project team</a> page). The encoding of <a href="/islandora/search/NOT letter NOT spectral NOT shire NOT rumor NOT blotting NOT signatures?access=both_transcription&amp;f[]=dateRangeYear_mi%3A[1866+TO+1873]" target="_blank">over 2200 manuscript pages</a> required endurance, perseverance, and unflagging goodwill. Our encoders manifested these qualities in abundance and became the bedrock for all our accomplishments.</p>
+<p>Finally, the project directors would like to thank our team of encoders (listed by name on our <a href="/in-his-own-words/final-project-team">project team</a> page). The encoding of <a href="/islandora/search/NOT letter NOT spectral NOT shire NOT rumor NOT blotting NOT signatures?access=both_transcription&amp;f[]=dateRangeYear_mi%3A[1866+TO+1873]" target="_blank">over 2200 manuscript pages</a> required endurance, perseverance, and unflagging goodwill. Our encoders manifested these qualities in abundance and became the bedrock for all our accomplishments.</p>
 
 <p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>
 ',
@@ -22234,11 +22242,11 @@ ornament their faces and heads (1871f:CVII)</p>
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'in-his-own-words/acknowledgments',
+      'alias' => 'in-his-own-words/final-acknowledgments',
       'language' => 'und',
     ),
   ),
@@ -22950,7 +22958,7 @@ ornament their faces and heads (1871f:CVII)</p>
       0 => array(
         'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>This essay provides a narrative of our collaborative, interdisciplinary research process and complements the <a href="/spectral-imaging/project-documentation">documentation</a> related to the development of the critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts. In doing so, the essay extends <a href="/behind-scenes/livingstone-online-code">our efforts</a> to conduct publicly-funded research in a transparent manner that promotes knowledge transfer and that opens all aspects of our research to critical review.</p>
+<p>This essay provides a narrative of our collaborative, interdisciplinary research process and complements the <a href="/spectral-imaging/1870-project-documentation">documentation</a> related to the development of the critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts. In doing so, the essay extends <a href="/behind-scenes/livingstone-online-code">our efforts</a> to conduct publicly-funded research in a transparent manner that promotes knowledge transfer and that opens all aspects of our research to critical review.</p>
 
 <p><a id="link2" name="link2"></a></p>
 
@@ -22958,7 +22966,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <h4><strong><span style="font-family:crimson text;">Groundwork (2010-13)</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>The <a href="/spectral-imaging/livingstones-1871-field-diary-0">first phase</a> (2010-13) of the Livingstone Spectral Imaging Project demonstrated that spectral imaging could recover faded nineteenth-century text written over the pages of a newspaper. Image capture work <a href="/spectral-imaging/project-history-1#link10">in 2010</a> produced not only all the images of Livingstone’s 1871 Field Diary required for the first phase, but also all the images of the 1870 Field Diary, five 1871 letters, and the 1870 “Retrospect” necessary for a separate, second phase project on these texts.</p>
+<p>The <a href="/spectral-imaging/livingstones-1871-field-diary">first phase</a> (2010-13) of the Livingstone Spectral Imaging Project demonstrated that spectral imaging could recover faded nineteenth-century text written over the pages of a newspaper. Image capture work <a href="/spectral-imaging/project-history-1#link10">in 2010</a> produced not only all the images of Livingstone’s 1871 Field Diary required for the first phase, but also all the images of the 1870 Field Diary, five 1871 letters, and the 1870 “Retrospect” necessary for a separate, second phase project on these texts.</p>
 
 <p>However, since the latter three texts appeared fairly legible under natural light, [qtip: Adrian S. Wisnicki|Adrian S. Wisnicki (Assistant Professor, University of Nebraska-Lincoln). Director of <em>Livingstone Online</em>, LEAP, and the Livingstone Spectral Imaging Project.], the director of the Livingstone Spectral Imaging Project, gradually decided to turn the work of the second phase in a new direction by investigating whether spectral imaging could help scholars study the material features of these manuscripts.</p>
 
@@ -22990,7 +22998,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The NEH grant narrative called for two principal deliverables:</p>
 
-<p class="rteindent1">1) [A c]omplete, interoperable electronic edition of Livingstone’s 1870 Field Diary and select 1871 manuscripts that reflects the scholarly, scientific, archival, and documentation standards established by the NEH funded electronic edition of <a href="/spectral-imaging/livingstones-1871-field-diary-0">Livingstone’s 1871 Field Diary</a>.<br />
+<p class="rteindent1">1) [A c]omplete, interoperable electronic edition of Livingstone’s 1870 Field Diary and select 1871 manuscripts that reflects the scholarly, scientific, archival, and documentation standards established by the NEH funded electronic edition of <a href="/spectral-imaging/livingstones-1871-field-diary">Livingstone’s 1871 Field Diary</a>.<br />
 2) All proposed edition underlying TIFF images, XML transcriptions, and metadata provided separately as “flat” files and integrated into the <a href="/islandora/search?access=view_spectral">Livingstone Spectral Image Collection</a>.</p>
 
 <p>In other words, this new phase of the Livingstone Spectral Imaging Project would publish the relevant digital materials in a manner consistent with and at a level of quality comparable to the <a href="http://livingstone.library.ucla.edu/1871diary/index.htm" target="_blank">first phase</a>.</p>
@@ -23074,7 +23082,7 @@ ornament their faces and heads (1871f:CVII)</p>
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/project-history/03e-Feedback-on-NLS-images-8-Apr-2014-article.png"><img alt="Spreadsheet recording feedback from Adrian S. Wisnicki and Megan Ward on a series of spectral images produced by Roger L. Easton Jr. Copyright Livingstone Online. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/project-history/03e-Feedback-on-NLS-images-8-Apr-2014-article.png" title="Spreadsheet recording feedback from Adrian S. Wisnicki and Megan Ward on a series of spectral images produced by Roger L. Easton Jr. Copyright Livingstone Online. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Spreadsheet recording feedback from Adrian S. Wisnicki and Megan Ward on a series of spectral images produced by Roger L. Easton Jr. <em>Copyright Livingstone Online. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em></span></p>
 
-<p>Consequently, despite the need for an extension, the spectral imaging project team continued to make solid progress during the second year of the grant, especially in areas such as image processing, critical encoding, developing critical materials, building core data, and disseminating results to stakeholders and specialists. This work both advanced project goals considerably and, in all cases, met or exceeded the standards of scholarship set by the first project phase on <a href="/spectral-imaging/livingstones-1871-field-diary-0">Livingstone’s 1871 Field Diary</a>.</p>
+<p>Consequently, despite the need for an extension, the spectral imaging project team continued to make solid progress during the second year of the grant, especially in areas such as image processing, critical encoding, developing critical materials, building core data, and disseminating results to stakeholders and specialists. This work both advanced project goals considerably and, in all cases, met or exceeded the standards of scholarship set by the first project phase on <a href="/spectral-imaging/livingstones-1871-field-diary">Livingstone’s 1871 Field Diary</a>.</p>
 
 <p><a id="link5" name="link5"></a></p>
 
@@ -23094,7 +23102,7 @@ ornament their faces and heads (1871f:CVII)</p>
 6. a <a href="/spectral-imaging/integrated-project-bibliography">comprehensive bibliography</a> for both phases of the Livingstone Spectral Imaging Project; and<br />
 7. an <a href="/spectral-imaging/livingstones-1870-field-diary">introduction</a> to the second phase of the Livingstone Spectral Imaging Project as a whole.</p>
 
-<p>In addition, Wisnicki developed the XSL and CSS files needed to display all edited and encoded texts online, assembled all <a href="/spectral-imaging/project-documentation">project documentation</a>, and worked with Ward to write an introduction to the documentation and to draft the present project history. During this time, [qtip: Anne Martin|Anne Martin (Archivist, David Livingstone Centre). Associate director of <em>Livingstone Online</em>.] (David Livingstone Centre) and [qtip: Alison Metcalfe|Alison Metcalfe (Manuscripts Curator, National Library of Scotland). Institutional contact for <em>Livingstone Online</em>.] (National Library of Scotland) also helped the team with questions related to the documented archival history of the 1870 Field Diary and 1870-71 manuscripts.</p>
+<p>In addition, Wisnicki developed the XSL and CSS files needed to display all edited and encoded texts online, assembled all <a href="/spectral-imaging/1870-project-documentation">project documentation</a>, and worked with Ward to write an introduction to the documentation and to draft the present project history. During this time, [qtip: Anne Martin|Anne Martin (Archivist, David Livingstone Centre). Associate director of <em>Livingstone Online</em>.] (David Livingstone Centre) and [qtip: Alison Metcalfe|Alison Metcalfe (Manuscripts Curator, National Library of Scotland). Institutional contact for <em>Livingstone Online</em>.] (National Library of Scotland) also helped the team with questions related to the documented archival history of the 1870 Field Diary and 1870-71 manuscripts.</p>
 
 <div class="doubleimg">
 <div class="doubleleft"><a href="/sites/default/files/spectral-imaging/project-history/Twitter3b-article.png"><img alt="Twitter post on Ashanka Kumari and Adrian S. Wisnicki\'s presentation at DH2016 in Krakow, Poland. Copyright Ashanka Kumari. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" src="/sites/default/files/spectral-imaging/project-history/Twitter3b-article.png" style="margin-right: 10px; border:1px solid #000000;  height:371px;" title="Twitter post on Ashanka Kumari and Adrian S. Wisnicki\'s presentation at DH2016 in Krakow, Poland. Copyright Ashanka Kumari. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" /></a></div>
@@ -23112,7 +23120,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>[qtip: Kumari|Ashanka Kumari (Doctoral Student, University of Louisville). Research assistant for <em>Livingstone Online</em>.] and Wisnicki also delivered talks on the project at DH2016, the major conference in the field of digital humanities. These talks set out project results to a broad range of digital humanists and introduced the animated spectral image production methodology that Kumari had developed and subsequently wrote up for the current edition.</p>
 
-<p>Concurrently with this stream of critical activity, [qtip: Easton|Roger L. Easton Jr. (Professor, Chester F. Carlson Center for Imaging Science, Rochester Institute of Technology). One of the lead scientists for both phases of the Livingstone Spectral Imaging Project.] and [qtip: Knox|Keith Knox (Early Manuscripts Electronic Library). One of the lead scientists for both phases of the Livingstone Spectral Imaging Project.] completed the vast majority of processing tasks and collaborated with the scholars on an extensive, <a href="/spectral-imaging/notes-processed-spectral-images">annotated enumeration of all processed spectral images</a> produced for the two phases of the Livingstone Spectral Imaging Project plus the pilot project on <a href="/spectral-imaging/livingstones-letter-bambarre-0">Livingstone’s Letter from Bambarre</a> (2010-12).</p>
+<p>Concurrently with this stream of critical activity, [qtip: Easton|Roger L. Easton Jr. (Professor, Chester F. Carlson Center for Imaging Science, Rochester Institute of Technology). One of the lead scientists for both phases of the Livingstone Spectral Imaging Project.] and [qtip: Knox|Keith Knox (Early Manuscripts Electronic Library). One of the lead scientists for both phases of the Livingstone Spectral Imaging Project.] completed the vast majority of processing tasks and collaborated with the scholars on an extensive, <a href="/spectral-imaging/notes-processed-spectral-images">annotated enumeration of all processed spectral images</a> produced for the two phases of the Livingstone Spectral Imaging Project plus the pilot project on <a href="/spectral-imaging/livingstones-letter-bambarre">Livingstone’s Letter from Bambarre</a> (2010-12).</p>
 
 <p>As spectral image data came in, Wisnicki led the integration of all spectral images and transcriptions, added detailed metadata to image headers, and built downloadable archival packets that would allow users to interact with this data independently of the project. In this work, Wisnicki received key assistance from [qtip: Doug Emery|Doug Emery (Programmer, Schoenberg Institute of Manuscript Studies, University of Pennsylvania). Data manager for the first phase of the Livingstone Spectral Imaging Project; honorary team member of the second project phase.] (who continued to advise the project despite having formally left it) and was also aided by [qtip: Jessica Dussault|Jessica Dussault (Programmer/Analyst II, Center for Digital Research in the Humanities, University of Nebraska-Lincoln). Data developer for the critical edition of Livingstone\'s 1870 Field Diary and select 1870-71 manuscripts.] who developed a series of scripts to refine and manipulate the metadata.</p>
 
@@ -23534,7 +23542,7 @@ ornament their faces and heads (1871f:CVII)</p>
 	</tbody>
 </table>
 
-<p>Finally, Level 5 (browse and search pages, “In His Own Words” section only) presents a variety of ways to find specific items in our digital collection. Users can search collection items by <a href="/browse/addressee">addressee</a>, <a href="/his-own-words/repository">repository</a>, or <a href="/his-own-words/timeline">timeline</a>, or browse our extensive <a href="/islandora/search">digital catalogue</a> of nearly 3,000 Livingstone and Livingstone-related item records. Our goal in providing these options is to cater to diverse audience needs and expectations, while also offering multiple paths into our collection and highlighting the many connections that exist among different Livingstone manuscripts.</p>
+<p>Finally, Level 5 (browse and search pages, “In His Own Words” section only) presents a variety of ways to find specific items in our digital collection. Users can search collection items by <a href="/in-his-own-words/addressee">addressee</a>, <a href="/his-own-words/repository">repository</a>, or <a href="/his-own-words/timeline">timeline</a>, or browse our extensive <a href="/islandora/search">digital catalogue</a> of nearly 3,000 Livingstone and Livingstone-related item records. Our goal in providing these options is to cater to diverse audience needs and expectations, while also offering multiple paths into our collection and highlighting the many connections that exist among different Livingstone manuscripts.</p>
 
 <p><a id="dolo3" name="dolo3"></a></p>
 
@@ -23982,9 +23990,9 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p><a href=""><strong>Edition Guide</strong></a> - the present page: provides a skeletal outline of the entire multispectral critical edition of Livingstone\'s final manuscripts (1865-73); also enumerates all the main sections of the edition, including core data and critical materials.</p>
 
-<p><a href="/his-own-words/project-team"><strong>Project Team</strong></a> - introduces the project team that developed the critical edition of Livingstone\'s final manuscripts (1865-73).</p>
+<p><a href="/his-own-words/final-project-team"><strong>Project Team</strong></a> - introduces the project team that developed the critical edition of Livingstone\'s final manuscripts (1865-73).</p>
 
-<p><a href="/his-own-words/acknowledgments"><strong>Acknowledgments</strong></a> - cites the individuals and institutions that have made a special contribution to supporting our work in developing the critical edition of Livingstone\'s final manuscripts (1865-73).</p>
+<p><a href="/his-own-words/final-acknowledgments"><strong>Acknowledgments</strong></a> - cites the individuals and institutions that have made a special contribution to supporting our work in developing the critical edition of Livingstone\'s final manuscripts (1865-73).</p>
 
 <p><a href="/his-own-words/scope-edition"><strong>Scope of the Edition</strong></a> - defines the scope of our critical edition of Livingstone’s final manuscripts (1865-73); overviews the importance and content of the manuscripts, then enumerates the items published through our edition as high-resolution images with critically encoded text and full metadata; as high-resolution images with full metadata; or in encoded facsimile; closes with a synopsis of the critical materials included in the edition.</p>
 
@@ -24154,11 +24162,11 @@ ornament their faces and heads (1871f:CVII)</p>
   ),
   'field_section_teaser' => array(),
   'path' => array(
-    'pathauto' => 1,
+    'pathauto' => 0,
   ),
   'url_alias' => array(
     0 => array(
-      'alias' => 'in-his-own-words/edition-guide',
+      'alias' => 'in-his-own-words/final-edition-guide',
       'language' => 'und',
     ),
   ),
@@ -24642,7 +24650,7 @@ ornament their faces and heads (1871f:CVII)</p>
       0 => array(
         'value' => '<h4><strong><span style="font-family:crimson text;">Introduction</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p>This page, the first part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary and complements the <a href="http://livingstoneonline.org/spectral-imaging/project-documentation-0">documentation</a> related to the development of our critical edition. In doing so, the essay extends <a href="/behind-scenes/livingstone-online-code">our efforts</a> to conduct publicly-funded research in a transparent manner that promotes knowledge transfer and that opens all aspects of our research to critical review. Read the second part of the essay <a href="/spectral-imaging/project-history-2">here</a>.</p>
+<p>This page, the first part of a two-part essay, sets out the history of our work to develop a multispectral critical edition of Livingstone’s 1871 Field Diary and complements the <a href="http://livingstoneonline.org/spectral-imaging/1871-project-documentation">documentation</a> related to the development of our critical edition. In doing so, the essay extends <a href="/behind-scenes/livingstone-online-code">our efforts</a> to conduct publicly-funded research in a transparent manner that promotes knowledge transfer and that opens all aspects of our research to critical review. Read the second part of the essay <a href="/spectral-imaging/project-history-2">here</a>.</p>
 
 <p><a id="link1" name="link1"></a></p>
 
@@ -24976,7 +24984,7 @@ ornament their faces and heads (1871f:CVII)</p>
 		</tr>
 		<tr>
 			<td colspan="5" style="border-top: 1px solid gray; border-left: 1px solid gray; border-right: 1px solid gray; border-bottom: 1px solid gray;" width="100"><span style="font-size:14px;">* Folia marked with square brackets are non-Livingstone manuscripts imaged at the request of the NLS.</span><br />
-			<span style="font-size:14px;">** For full names of personnel, see the <a href="/spectral-imaging/project-team-1">project team</a> page.</span></td>
+			<span style="font-size:14px;">** For full names of personnel, see the <a href="/spectral-imaging/1871-project-team">project team</a> page.</span></td>
 		</tr>
 	</tbody>
 </table>
@@ -25165,7 +25173,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The <em>Catalogue</em> for the first time brought a number of key points to light. First, it confirmed that Livingstone had indeed been a prolific writer, probably more so than anyone had imagined. Second, it revealed that his original manuscripts as well as published versions of manuscripts that no longer survived still existed in vast abundance. The original <em>Catalogue</em> enumerated the following: over 2000 letters, 11 substantial journals, 39 field diaries of various sorts, 18 notebooks, 30 papers and reports, and almost 200 other miscellaneous items. Third, the <em>Catalogue</em> showed that these manuscripts were indeed scattered around the world, with some ninety repositories being listed between the <em>Catalogue</em> and its supplement that encompassed Britain, Portugal, France, New Zealand, the United States, and several countries in Africa. Many, many other items remained in unknown private hands. The project, which continued until April 1985, resulted in a significant portion of these manuscripts, either in original or copy, being brought together at the National Library of Scotland.</p>
 
-<p>In 2004, <em>Livingstone Online</em> took up the work of the documentation project. Although <em>Livingstone Online</em> began with modest aims, each successive project stage enlarged the scope and objectives of the site. Between 2004 and 2013, the team of <em>Livingstone Online</em> acquired digital image copies (5000 image files) and/or created rigorous scholarly transcriptions of some 700 letters and and a variety of other items as well as multispectral editions of Livingstone’s <a href="/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871</a> Field Diaries. The team also identified some thirty previously uncatalogued items, produced an integrated digital version of the original print <em>Catalogue</em> and its supplement, and acquired nearly 500 images of objects related to Livingstone’s travels or of repositories holding his manuscripts.</p>
+<p>In 2004, <em>Livingstone Online</em> took up the work of the documentation project. Although <em>Livingstone Online</em> began with modest aims, each successive project stage enlarged the scope and objectives of the site. Between 2004 and 2013, the team of <em>Livingstone Online</em> acquired digital image copies (5000 image files) and/or created rigorous scholarly transcriptions of some 700 letters and and a variety of other items as well as multispectral editions of Livingstone’s <a href="/spectral-imaging/livingstones-1870-field-diary">1870</a> and <a href="/spectral-imaging/livingstones-1871-field-diary">1871</a> Field Diaries. The team also identified some thirty previously uncatalogued items, produced an integrated digital version of the original print <em>Catalogue</em> and its supplement, and acquired nearly 500 images of objects related to Livingstone’s travels or of repositories holding his manuscripts.</p>
 
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/about-this-site/livingstones-manuscripts-in-the-digital-age/DLC297b_157-138_008r_0_A_ratio_by_0940-article.jpg"><img alt="A processed spectral image of a page from David Livingstone\'s 1871 Field Diary. Copyright David Livingstone Centre and Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)" class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/about-this-site/livingstones-manuscripts-in-the-digital-age/DLC297b_157-138_008r_0_A_ratio_by_0940-article.jpg" title="A processed spectral image of a page from David Livingstone\'s 1871 Field Diary. Copyright David Livingstone Centre and Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)" typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">A processed spectral image of a page from David Livingstone\'s 1871 Field Diary. <em>Copyright David Livingstone Centre and, as relevant, Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported </a></em></span></p>
@@ -25681,7 +25689,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>The specific dating of the saturation remains uncertain, but it occurred in Livingstone’s lifetime because reference to both the natural light and processed spectral images indicates that Livingstone sought to counter the damage from the saturation (and subsequent blotting of his ink) by reinking some of the most smeared words.</p>
 
-<p>He did this in two ways. On portions of 1870i:LXIX-LV [v.2], he apparently reinked the most damaged text at the top and bottom of the pages in iron gall ink, although our spectral images prevent reaching any definitive conclusions about this iron gall reinking because, as noted, the thickening of ink can produce visual results similar to more minute shifts in the material character of the ink. More interestingly, Livingstone also turned to Zingifure ink to re-ink some of the most smeared words on 1870i:XLII-LVII (and perhaps elsewhere). Since Livingstone did not create Zingifure ink until April 1871 (see <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a>), he could not have carried out the reinking in the 1870 Field Diary until after that date.</p>
+<p>He did this in two ways. On portions of 1870i:LXIX-LV [v.2], he apparently reinked the most damaged text at the top and bottom of the pages in iron gall ink, although our spectral images prevent reaching any definitive conclusions about this iron gall reinking because, as noted, the thickening of ink can produce visual results similar to more minute shifts in the material character of the ink. More interestingly, Livingstone also turned to Zingifure ink to re-ink some of the most smeared words on 1870i:XLII-LVII (and perhaps elsewhere). Since Livingstone did not create Zingifure ink until April 1871 (see <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a>), he could not have carried out the reinking in the 1870 Field Diary until after that date.</p>
 
 <p class="space1 rtecenter" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/the-diary-across-hands-space-and-time-1/liv_000205_0038_pseudo_0505-0780-article.jpg"><img alt="A processed spectral image of a page from the 1870 Field Diary (Livingstone 1870i:LVII pseudo_v1), detail. Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/the-diary-across-hands-space-and-time-1/liv_000205_0038_pseudo_0505-0780-article.jpg" title="A processed spectral image of a page from the 1870 Field Diary (Livingstone 1870i:LVII pseudo_v1), detail. Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="70%" /></a><br />
 <span style="font-size:12px;display:inline-block;text-align:left;max-width:70%">A processed spectral image of a page from the 1870 Field Diary (Livingstone 1870i:LVII pseudo_v1), detail. <em>Copyright National Library of Scotland and, as relevant, Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. Here, uniquely, Livingstone has rewritten several smeared words on the last two lines of page directly below in Zingifure ink. The rewritten words are quite faint and even in this processed image are barely visible.</span></p>
@@ -25877,11 +25885,11 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <p>Wisnicki, Adrian S., ed. 2010. <a href="http://livingstone.library.ucla.edu/bambarre/index.htm" target="_blank">Livingstone’s Letter from Bambarre: A Multispectral Critical Edition</a>. Beta Edition; First Edition. Los Angeles: UCLA Digital Library.</p>
 
-<p>Wisnicki, Adrian S., ed. 2017. <a href="/spectral-imaging/livingstones-letter-bambarre-0">Livingstone’s Letter from Bambarre: A Multispectral Critical Edition</a>. Updated Edition. College Park: University of Maryland Libraries.</p>
+<p>Wisnicki, Adrian S., ed. 2017. <a href="/spectral-imaging/livingstones-letter-bambarre">Livingstone’s Letter from Bambarre: A Multispectral Critical Edition</a>. Updated Edition. College Park: University of Maryland Libraries.</p>
 
 <p>Wisnicki, Adrian S., ed. 2011. <a href="http://livingstone.library.ucla.edu/1871diary/index.htm" target="_blank">Livingstone’s 1871 Field Diary: A Multispectral Critical Edition</a>. Beta Edition; First Edition; Corrections. Los Angeles: UCLA Digital Library.</p>
 
-<p>Wisnicki, Adrian S., ed. 2017. <a href="/spectral-imaging/livingstones-1871-field-diary-0">Livingstone’s 1871 Field Diary: A Multispectral Critical Edition</a>. Updated Edition. College Park: University of Maryland Libraries.</p>
+<p>Wisnicki, Adrian S., ed. 2017. <a href="/spectral-imaging/livingstones-1871-field-diary">Livingstone’s 1871 Field Diary: A Multispectral Critical Edition</a>. Updated Edition. College Park: University of Maryland Libraries.</p>
 
 <p><a name="lab3"></a></p>
 
@@ -28903,7 +28911,7 @@ palm oil - fowls - &lt;space dim="horizontal" extent="2" unit="chars"/&gt;Each i
 <p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/livingstones-composition-practices/liv_000204_0002_color-article.jpg"><img alt="Samuel White Baker\'s map of the Albert N\'yanza (Lake Albert), over which Livingstone wrote a segment of the 1870 Field Diary (Livingstone 1870h:[map]). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="media-image attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original attr__format__media_original" data-popupalt-original-title="null" src="/sites/default/files/spectral-imaging/livingstones-composition-practices/liv_000204_0002_color-article.jpg" title="Samuel White Baker\'s map of the Albert N\'yanza (Lake Albert), over which Livingstone wrote a segment of the 1870 Field Diary (Livingstone 1870h:[map]). Copyright David Livingstone Centre. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." typeof="foaf:Image&quot;" width="716" /></a><br />
 <span style="font-size:12px;">Samuel White Baker\'s map of the Albert N\'yanza (Lake Albert), over which Livingstone wrote a segment of the 1870 Field Diary (Livingstone 1870h:[map]). <em>Copyright David Livingstone Centre. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a></em>. Livingstone covered the back of the map with text, but left the map itself unmarked except for a small segment with calculations in the lower left-hand corner. The segment also includes an addition (upside-down) in another hand.</span></p>
 
-<p>To create the 1870 Field Diary, Livingstone first cut off the margins a periodical article and fastened these together to create a little booklet of 35 leaves. Then, with no paper forthcoming, he wrote over an old letter, three leaves from a printed book, and one or more texts that have not survived. He then turned to a large map as his source of paper. Finally, he tore out 34 leaves from a variety of publications and wrote crosswise over the printed text. In February 1871, Livingstone finally received supplies from the coast, including food and some new publications. The 1870 Field Diary thus concludes with some pages written over the Pall Mall Budget, while the <a href="/spectral-imaging/livingstones-1871-field-diary-0">1871 Field Diary</a> continues on a copy of <em>The Standard</em>.</p>
+<p>To create the 1870 Field Diary, Livingstone first cut off the margins a periodical article and fastened these together to create a little booklet of 35 leaves. Then, with no paper forthcoming, he wrote over an old letter, three leaves from a printed book, and one or more texts that have not survived. He then turned to a large map as his source of paper. Finally, he tore out 34 leaves from a variety of publications and wrote crosswise over the printed text. In February 1871, Livingstone finally received supplies from the coast, including food and some new publications. The 1870 Field Diary thus concludes with some pages written over the Pall Mall Budget, while the <a href="/spectral-imaging/livingstones-1871-field-diary">1871 Field Diary</a> continues on a copy of <em>The Standard</em>.</p>
 
 <p>It was not until much later that Livingstone once more gained access to his third record, one that gives us our final account of this period. The Unyanyembe Journal (28 Jan. 1866-5 Mar. 1872), a large volume with ruled pages and bound in leather, was stored in the village of Ujiji. When Livingstone returned to Ujiji (as he did in the fall of 1871), he copied over entries from the first two records, Field Diary XIII and the 1870 Field Diary, into the Unyanyembe Journal.</p>
 
@@ -30353,9 +30361,9 @@ The page immediately following Livingstone’s final entry records a note by Jac
 
 <p><a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction"><strong>The Livingstone Spectral Imaging Project: An Introduction</strong></a> - introduces the project by citing both its historical contexts and the groundbreaking modern technology that has made the project possible.</p>
 
-<p><a href="/spectral-imaging/livingstones-1871-field-diary-0"><strong>Livingstone\'s 1871 Field Diary</strong></a> - multispectral critical edition of the iconic Livingstone diary that captures both his account of the Nyangwe slave trading massacre (1871) and the months leading up to the famous meeting with Henry Morton Stanley (1871). The edition draws on dramatic spectral image processing to reveal Livingstone\'s original words for the first time in 140 years.</p>
+<p><a href="/spectral-imaging/livingstones-1871-field-diary"><strong>Livingstone\'s 1871 Field Diary</strong></a> - multispectral critical edition of the iconic Livingstone diary that captures both his account of the Nyangwe slave trading massacre (1871) and the months leading up to the famous meeting with Henry Morton Stanley (1871). The edition draws on dramatic spectral image processing to reveal Livingstone\'s original words for the first time in 140 years.</p>
 
-<p><a href="/spectral-imaging/livingstones-letter-bambarre-0"><strong>Livingstone\'s Letter from Bambarre</strong></a> - pilot project; a multispectral critical edition of a harrowing letter that sets out Livingstone\'s first-hand experiences of the East African slave trade. This was the first nineteenth-century British manuscript to be studied with spectral imaging.</p>
+<p><a href="/spectral-imaging/livingstones-letter-bambarre"><strong>Livingstone\'s Letter from Bambarre</strong></a> - pilot project; a multispectral critical edition of a harrowing letter that sets out Livingstone\'s first-hand experiences of the East African slave trade. This was the first nineteenth-century British manuscript to be studied with spectral imaging.</p>
 
 <p><strong><a href="/spectral-imaging/livingstones-1870-field-diary">Livingstone\'s 1870 Field Diary and Select 1870-71 Manuscripts</a></strong> - multispectral critical edition of manuscripts that Livingstone composed over various scraps of paper while stranded in Central Africa and used to capture first-hand impressions of the Central African slave trade, local social dynamics, and geographical information gathered through travel and from informants. The edition uses spectral imaging to recover the hidden material history of these manuscripts and reveals the story of their passage through multiple hands and spaces over the last 145 years.</p>
 
