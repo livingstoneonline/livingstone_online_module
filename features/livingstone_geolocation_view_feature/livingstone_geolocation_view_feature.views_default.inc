@@ -88,6 +88,7 @@ function livingstone_geolocation_view_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['text'] = '[title]';
   $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['path'] = '/in-his-own-words/catalogue?query="[field_manuscript_pid]"&view_pid=[field_manuscript_pid]';
+  $handler->display->display_options['fields']['title']['alter']['prefix'] = 'Title:&nbsp;';
   $handler->display->display_options['fields']['title']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
@@ -220,6 +221,7 @@ function livingstone_geolocation_view_feature_views_default_views() {
     t('next ›'),
     t('last »'),
     t('[title]'),
+    t('Title:&nbsp;'),
     t('[field_manuscript_coordinates] '),
     t('$2'),
     t('$1'),
