@@ -15,11 +15,8 @@
     <li>
       <a href="/in-his-own-words/timeline"><?php print t('by Timeline'); ?></a>
     </li>
-      <!-- Temporary hack needs to be removed -->
-      <?php if ($user->uid > 0) : ?>
     <li>
       <a href="/in-his-own-words/location"><?php print t('by Location'); ?></a>
     </li>
-      <?php endif; ?>
   </ul>
 </div>

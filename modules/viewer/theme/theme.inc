@@ -42,7 +42,7 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
 
   // Adds the library making it available for use.
   drupal_add_library('system', 'ui.slider');
-  drupal_add_js("$lib_path/openseadragon/2.2.0/openseadragon.js");
+  drupal_add_js("$lib_path/openseadragon/2.3.1/openseadragon.js");
   drupal_add_js("$js_path/djatoka-tile-source.js");
   drupal_add_js("$lib_path/URI.js");
   drupal_add_js("$js_path/livingstone-manuscript-viewer.js");
@@ -381,7 +381,7 @@ function template_preprocess_livingstone_manuscript_viewer_downloads(array &$var
     );
   }
   $sort = function($a, $b) {
-    return strcmp($a['label'], $a['label']);
+    return strcmp($a['label'], $b['label']);
   };
   usort($variables['downloads']['archival'], $sort);
   usort($variables['downloads']['gif'], $sort);
@@ -443,7 +443,7 @@ function theme_livingstone_manuscript_viewer_transcript(array &$variables) {
 </html>
 EOT;
   }
-  $markup = livingstone_transcript_saxon_transform($manuscript['TEI']->content);
+  $markup = livingstone_transcript_saxon_transform($manuscript->id, $manuscript['TEI']->content);
   if ($markup === FALSE) {
     $error = t('Failed to generate transcript.') ;
     return <<<EOT

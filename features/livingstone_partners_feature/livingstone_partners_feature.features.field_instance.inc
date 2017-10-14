@@ -10,52 +10,6 @@
 function livingstone_partners_feature_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-partners-field_order'.
-  $field_instances['node-partners-field_order'] = array(
-    'bundle' => 'partners',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_order',
-    'label' => 'Order',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => -2,
-    ),
-  );
-
   // Exported field_instance: 'node-partners-field_partner_link'.
   $field_instances['node-partners-field_partner_link'] = array(
     'bundle' => 'partners',
@@ -148,7 +102,6 @@ function livingstone_partners_feature_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Order');
   t('Partner Link');
   t('Partner Logos');
 

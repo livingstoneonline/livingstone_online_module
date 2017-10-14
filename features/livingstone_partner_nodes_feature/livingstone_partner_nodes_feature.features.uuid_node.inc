@@ -23,13 +23,6 @@ function livingstone_partner_nodes_feature_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '4d36a3d3-48b0-409e-a0bf-eb1cd66e9197',
-  'field_order' => array(
-    'und' => array(
-      0 => array(
-        'value' => 5,
-      ),
-    ),
-  ),
   'field_partner_link' => array(
     'und' => array(
       0 => array(
@@ -83,13 +76,6 @@ function livingstone_partner_nodes_feature_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '6df94311-37d8-46b4-bd72-03ac1445606c',
-  'field_order' => array(
-    'und' => array(
-      0 => array(
-        'value' => 3,
-      ),
-    ),
-  ),
   'field_partner_link' => array(
     'und' => array(
       0 => array(
@@ -143,13 +129,6 @@ function livingstone_partner_nodes_feature_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '9e2f85f7-417c-4eff-b728-5012e055ceef',
-  'field_order' => array(
-    'und' => array(
-      0 => array(
-        'value' => 4,
-      ),
-    ),
-  ),
   'field_partner_link' => array(
     'und' => array(
       0 => array(
@@ -203,13 +182,6 @@ function livingstone_partner_nodes_feature_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'b98f27c1-7a2f-4150-9a5f-b960be7deb60',
-  'field_order' => array(
-    'und' => array(
-      0 => array(
-        'value' => 2,
-      ),
-    ),
-  ),
   'field_partner_link' => array(
     'und' => array(
       0 => array(
@@ -263,13 +235,6 @@ function livingstone_partner_nodes_feature_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'e30bfc8e-9d79-4642-812e-f44ba2d7798b',
-  'field_order' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1,
-      ),
-    ),
-  ),
   'field_partner_link' => array(
     'und' => array(
       0 => array(

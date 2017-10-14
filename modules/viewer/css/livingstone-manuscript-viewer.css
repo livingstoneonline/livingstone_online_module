@@ -1,4 +1,3 @@
-/* line 38, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_mixins.less */
 .flex-display {
   display: -webkit-box;
   display: -webkit-flex;
@@ -32,7 +31,6 @@
   background-position: right !important;
   font-family: Source Sans Pro, sans-serif;
 }*/
-/* line 1, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_loading.less */
 .loading-modal {
   display: none;
   position: fixed;
@@ -43,15 +41,12 @@
   width: 100%;
   background: #000000 url('../images/loading.gif') 50% 50% no-repeat;
 }
-/* line 14, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_loading.less */
 body.loading {
   overflow: hidden;
 }
-/* line 17, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_loading.less */
 body.loading .loading-modal {
   display: block;
 }
-/* line 9, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -161,31 +156,25 @@ body.loading .loading-modal {
   }*/
 }
 @media (min-width: 480px) {
-  /* line 12, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
   #toolbar {
     padding-right: 25px;
   }
 }
-/* line 15, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar a,
 #toolbar a:hover,
 #toolbar a:focus {
   text-decoration: none;
 }
-/* line 20, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .slideout-menu-toggle {
   margin: 10px 5px;
 }
-/* line 24, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .links a {
   font-size: 25px;
   margin: 10px 5px;
 }
-/* line 31, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .zoom {
   margin: 10px 5px;
 }
-/* line 33, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .zoom .ui-state-hover,
 #toolbar .zoom .ui-widget-content .ui-state-hover,
 #toolbar .zoom .ui-widget-header .ui-state-hover,
@@ -197,14 +186,12 @@ body.loading .loading-modal {
   font-weight: bold;
   color: #c77405;
 }
-/* line 44, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .zoom .ui-slider {
   display: inline-block;
   width: 150px;
   margin: 0 10px;
   top: 0.1em;
 }
-/* line 51, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .zoom a {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -214,38 +201,30 @@ body.loading .loading-modal {
   padding: 4px 8px;
   color: black;
 }
-/* line 55, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .page-select {
   max-width: 80px;
   margin: 10px 5px;
 }
-/* line 58, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .page-select .filter-option {
   width: 80%;
 }
-/* line 62, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .page-select button {
   font-size: 14px;
   padding: 2px 12px;
   border-radius: 7px;
 }
-/* line 68, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .panes {
   margin: 10px 5px;
 }
-/* line 70, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .panes .fa {
   display: inline;
 }
-/* line 74, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .panes .disabled {
   color: darkgray !important;
 }
-/* line 77, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .panes .depressed {
   background-color: #999;
 }
-/* line 80, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .panes a {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -256,17 +235,14 @@ body.loading .loading-modal {
   color: black;
   text-decoration: none;
 }
-/* line 85, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .search {
   margin: 10px 5px;
 }
 @media screen and (max-width: 575px) {
-  /* line 87, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
   #toolbar .search {
     display: none;
   }
 }
-/* line 91, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .close {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -282,7 +258,6 @@ body.loading .loading-modal {
   opacity: 1;
   z-index: 1;
 }
-/* line 101, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 #toolbar .item-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -303,7 +278,6 @@ body.loading .loading-modal {
   align-items: center;
 }
 @media only screen and (max-width: 767px) {
-  /* line 107, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
   #toolbar .compare {
     display: none;
   }
@@ -325,7 +299,6 @@ body.loading .loading-modal {
   color: #333;
   font-size: 14px;
 }*/
-/* line 222, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 .transcription-tooltip .transcription-tooltip-text {
   visibility: hidden;
   font-size: 0.85em;
@@ -341,106 +314,88 @@ body.loading .loading-modal {
   top: 43px;
 }
 @media only screen and (max-width: 1146px) {
-  /* line 235, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
   .transcription-tooltip .transcription-tooltip-text {
     top: 75px;
   }
 }
 @media only screen and (max-width: 605px) {
-  /* line 240, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
   .transcription-tooltip .transcription-tooltip-text {
     top: 110px;
   }
 }
 @media only screen and (max-width: 583px) {
-  /* line 245, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
   .transcription-tooltip .transcription-tooltip-text {
     top: 140px;
   }
 }
-/* line 252, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_toolbar.less */
 .transcription-tooltip.hover .transcription-tooltip-text {
   visibility: visible;
 }
-/* line 3, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 #panels {
   border-top: 1px solid black;
 }
-/* line 7, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 #panels.compare .pane-right {
   border-left: 1px solid white;
 }
-/* line 10, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 #panels.compare .pane-left {
   border-left: 1px solid white;
 }
-/* line 16, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane {
   height: 100%;
 }
-/* line 18, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane:not(.pane-open) {
   display: none;
 }
-/* line 21, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane.pane-left,
 .pane.pane-right {
   width: 50%;
 }
-/* line 25, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane.pane-right {
   float: right;
   border-left: 1px solid black;
 }
-/* line 29, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane.pane-left {
   float: left;
   border-left: 1px solid black;
 }
-/* line 33, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane.item-details {
   -webkit-overflow-scrolling: touch;
   overflow: auto;
 }
-/* line 37, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane.transcription-pane {
   -webkit-overflow-scrolling: touch;
   overflow: auto;
 }
-/* line 41, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
+.pane.transcription-pane .transcription-viewer-content {
+  min-height: 100%;
+}
 .pane.main-image,
 .pane.compare-image,
 .pane.restricted {
   height: 100%;
   background-color: black;
 }
-/* line 47, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
 .pane.compare-image {
   border-left: 2px solid white;
 }
 @media only screen and (max-width: 850px) {
-  /* line 52, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
   .pane .page-download {
     display: none;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 58, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
   .pane.pane-left,
   .pane.pane-right {
     width: 100%;
     float: none;
   }
-  /* line 66, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
   .pane.pane-open ~ .pane.pane-open {
     display: none;
   }
-  /* line 69, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_pane.less */
   .pane .spectral-image-toolbar {
     text-align: center;
   }
 }
-/* line 3, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -448,47 +403,39 @@ body.loading .loading-modal {
   display: inline-block;
   background-color: #ffffff;
 }
-/* line 13, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details .item-details-content {
   padding: 1em 1em 1em;
 }
 @media only screen and (min-width: 768px) {
-  /* line 112, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_utilities.less */
   #item-details .item-details-content {
     padding: 1em 2em 2em;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 118, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_utilities.less */
   #item-details .item-details-content {
     padding: 1em 3em 3em;
   }
 }
-/* line 16, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details h1 {
   font-family: Crimson Text, serif;
   font-size: 1.75em;
   font-weight: 600;
   margin: 0.5em 0 0;
 }
-/* line 22, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details h1:nth-of-type(2) {
   margin: 1.5em 0 0;
 }
-/* line 25, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details hr {
   border: solid rgba(0, 0, 0, 0.2);
   border-width: 1px 0 0;
   margin: 0.5em 0 0.5em;
 }
-/* line 30, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details dt,
 #item-details dd {
   font-family: Source Sans Pro, sans-serif;
   font-size: 0.9em;
   padding: 0.5em 0 0 0;
 }
-/* line 36, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details dt.download a,
 #item-details dd.download a,
 #item-details dt.download .open-download-model,
@@ -498,14 +445,12 @@ body.loading .loading-modal {
   color: #428bca;
   cursor: pointer;
 }
-/* line 42, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details dt.download a:hover,
 #item-details dd.download a:hover,
 #item-details dt.download .open-download-model:hover,
 #item-details dd.download .open-download-model:hover {
   color: #428bca;
 }
-/* line 46, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details dt.download .download-size,
 #item-details dd.download .download-size {
   display: inline-block;
@@ -513,42 +458,33 @@ body.loading .loading-modal {
   font-size: 0.8em;
   vertical-align: middle;
 }
-/* line 54, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details dt {
   font-weight: bold;
 }
-/* line 56, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details dt::after {
   content: ":";
 }
-/* line 61, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details dl dt {
   display: inline-block;
 }
-/* line 64, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details dl dd {
   display: inline;
   word-break: break-word;
 }
-/* line 67, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details dl dd:after {
   display: block;
   content: '';
 }
-/* line 73, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details i {
   font-style: italic;
 }
-/* line 76, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_item-details.less */
 #item-details a {
   text-decoration: none;
 }
-/* line 3, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image,
 #compare-image {
   height: 100%;
 }
-/* line 6, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar,
 #compare-image .image-toolbar {
   position: absolute;
@@ -557,36 +493,30 @@ body.loading .loading-modal {
   text-align: center;
   z-index: 1;
 }
-/* line 12, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar > *,
 #compare-image .image-toolbar > * {
   vertical-align: middle;
 }
-/* line 15, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar .spectral-image,
 #compare-image .image-toolbar .spectral-image {
   max-width: 30%;
 }
 @media only screen and (max-width: 900px) {
-  /* line 18, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
   #main-image .image-toolbar .spectral-image,
   #compare-image .image-toolbar .spectral-image {
     max-width: 60%;
   }
 }
 @media only screen and (max-width: 400px) {
-  /* line 22, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
   #main-image .image-toolbar .spectral-image,
   #compare-image .image-toolbar .spectral-image {
     max-width: 30%;
   }
 }
-/* line 25, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar .spectral-image .filter-option,
 #compare-image .image-toolbar .spectral-image .filter-option {
   width: 80%;
 }
-/* line 29, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar .spectral-image button,
 #compare-image .image-toolbar .spectral-image button {
   display: inline-block;
@@ -594,7 +524,6 @@ body.loading .loading-modal {
   border-radius: 7px;
   font-size: 14px;
 }
-/* line 36, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar a.button,
 #compare-image .image-toolbar a.button,
 #main-image .image-toolbar a.button:hover,
@@ -612,24 +541,20 @@ body.loading .loading-modal {
   padding: 0 8px;
   display: inline-block;
 }
-/* line 46, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar .dropdown-menu,
 #compare-image .image-toolbar .dropdown-menu {
   font-size: 14px;
 }
 @media only screen and (max-width: 900px) {
-  /* line 51, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
   #main-image .image-toolbar .download,
   #compare-image .image-toolbar .download {
-    display: none;
+    display: none !important;
   }
 }
-/* line 56, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .image-toolbar .download .fa,
 #compare-image .image-toolbar .download .fa {
   font-size: 0.85em;
 }
-/* line 72, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .prev-icon,
 #compare-image .prev-icon {
   position: absolute;
@@ -645,7 +570,6 @@ body.loading .loading-modal {
   background-position: 0 0;
   border-radius: 0px 6px 6px 0px;
 }
-/* line 78, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #main-image .next-icon,
 #compare-image .next-icon {
   position: absolute;
@@ -661,15 +585,12 @@ body.loading .loading-modal {
   background-position: 100% 0;
   border-radius: 6px 0px 0px 6px;
 }
-/* line 88, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #panels.compare #main-image .next-icon {
   display: none;
 }
-/* line 93, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 #panels.compare #compare-image .prev-icon {
   display: none;
 }
-/* line 99, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 .image-selector-tooltip .image-selector-tooltip-text {
   visibility: hidden;
   font-size: 0.85em;
@@ -685,12 +606,10 @@ body.loading .loading-modal {
   top: 40px;
   margin-left: 4px;
 }
-/* line 115, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_image.less */
 .image-selector-tooltip.hover .image-selector-tooltip-text,
 .image-selector-tooltip:hover {
   visibility: visible;
 }
-/* line 1, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_restricted.less */
 #restricted-message-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -713,7 +632,6 @@ body.loading .loading-modal {
   height: 100%;
   padding: 1em;
 }
-/* line 7, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_restricted.less */
 #restricted-message-wrapper #restricted-message {
   position: relative;
   background-color: white;
@@ -721,7 +639,6 @@ body.loading .loading-modal {
   max-width: 500px;
   padding: 1.5em;
 }
-/* line 13, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_restricted.less */
 #restricted-message-wrapper #restricted-message h1 {
   font-family: Crimson Text, serif;
   font-size: 1.75em;
@@ -729,42 +646,35 @@ body.loading .loading-modal {
   margin: 0;
   line-height: normal;
 }
-/* line 20, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_restricted.less */
 #restricted-message-wrapper #restricted-message hr {
   border: solid rgba(0, 0, 0, 0.2);
   border-width: 1px 0 0;
   margin: 0.5em 0 0.5em;
 }
-/* line 25, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_restricted.less */
 #restricted-message-wrapper #restricted-message p {
   font-family: Source Sans Pro, sans-serif;
   font-size: 0.9em;
   padding: 0.5em 0 0 0;
   margin: 0;
 }
-/* line 3, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_modal.less */
 body.modal-open {
   overflow: hidden;
   position: fixed;
   width: 100%;
 }
-/* line 7, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_modal.less */
 body.modal-open div.livingstone-manuscript-viewer-modal {
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* line 12, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_modal.less */
 body.download-modal-open {
   overflow: hidden;
   position: fixed;
   width: 100%;
 }
-/* line 16, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_modal.less */
 body.download-modal-open div.livingstone-manuscript-viewer-download-modal {
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* line 22, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_modal.less */
 div.livingstone-manuscript-viewer-modal,
 div.livingstone-manuscript-viewer-download-modal {
   display: none;
@@ -777,7 +687,6 @@ div.livingstone-manuscript-viewer-download-modal {
   height: 100%;
   z-index: 1000;
 }
-/* line 33, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_modal.less */
 div.livingstone-manuscript-viewer-modal iframe,
 div.livingstone-manuscript-viewer-download-modal iframe {
   -webkit-border-radius: 3px;
@@ -800,12 +709,10 @@ div.livingstone-manuscript-viewer-download-modal iframe {
   background-color: black;
 }
 @media screen and (max-width: 568px) {
-  /* line 49, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_modal.less */
   div.livingstone-manuscript-viewer-modal,
   div.livingstone-manuscript-viewer-download-modal {
     padding: 0;
   }
-  /* line 51, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_modal.less */
   div.livingstone-manuscript-viewer-modal iframe,
   div.livingstone-manuscript-viewer-download-modal iframe {
     -webkit-border-radius: 0;
@@ -814,7 +721,6 @@ div.livingstone-manuscript-viewer-download-modal iframe {
     border-width: 0;
   }
 }
-/* line 3, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads {
   position: fixed;
   overflow-y: auto;
@@ -823,25 +729,21 @@ div.livingstone-manuscript-viewer-download-modal iframe {
   height: 100%;
   z-index: 200;
 }
-/* line 10, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads .downloads-content {
   padding: 3em 1em 1em;
   max-width: 800px;
   margin: auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 112, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_utilities.less */
   #downloads .downloads-content {
     padding: 3em 2em 2em;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 118, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_utilities.less */
   #downloads .downloads-content {
     padding: 3em 4em 3em;
   }
 }
-/* line 15, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads .downloads-lists {
   display: -webkit-box;
   display: -webkit-flex;
@@ -853,8 +755,9 @@ div.livingstone-manuscript-viewer-download-modal iframe {
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  width: 75%;
+  margin: 0 auto;
 }
-/* line 18, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads .close {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -870,25 +773,21 @@ div.livingstone-manuscript-viewer-download-modal iframe {
   opacity: 1;
   z-index: 1;
 }
-/* line 29, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads h1,
 #downloads h2 {
   color: #000;
   font-family: 'Crimson Text', serif;
   text-align: center;
 }
-/* line 34, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads h1 {
   font-size: 2em;
   font-weight: 600;
   line-height: 120%;
 }
-/* line 39, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads h2 {
   font-size: 1em;
   font-style: italic;
 }
-/* line 43, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads hr {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -897,7 +796,6 @@ div.livingstone-manuscript-viewer-download-modal iframe {
   font-family: "Crimson Text", serif;
   font-weight: bold;
 }
-/* line 51, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads p {
   font-family: "Crimson Text", serif;
   font-weight: bold;
@@ -905,39 +803,33 @@ div.livingstone-manuscript-viewer-download-modal iframe {
   margin: 0 auto;
   width: 95%;
 }
-/* line 58, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads ul {
   margin: 0 auto;
   padding: 0;
   list-style: none;
 }
-/* line 62, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads ul li {
   text-align: center;
   margin: 0 auto;
   font-family: 'Crimson Text', serif;
   font-size: 16px;
 }
-/* line 67, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads ul li a,
 #downloads ul li a:visited,
 #downloads ul li a:hover {
   color: #428bca;
   text-decoration: none;
 }
-/* line 71, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/_downloads.less */
 #downloads ul li span {
   color: #808080;
   font-size: 0.8em;
   vertical-align: text-bottom;
 }
-/* line 11, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/livingstone-manuscript-viewer.less */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 15, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/viewer/less/livingstone-manuscript-viewer.less */
 body {
   height: 100%;
   width: 100vw;

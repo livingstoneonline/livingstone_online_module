@@ -142,6 +142,16 @@ function livingstone_nodequeue_items_feature_uuid_features_default_nodequeue_ite
   );
   $nodequeue_items[] = array(
     'queue_name' => 'in_his_own_words',
+    'node_uuid' => 'c301ad6d-8a42-4467-854c-5ba54a7f63ad',
+    'position' => 7,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'in_his_own_words',
+    'node_uuid' => 'ef7677b7-0212-4c34-bb8e-ce826eefb0af',
+    'position' => 8,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'in_his_own_words',
     'node_uuid' => 'f08e9f08-303d-448e-8c8a-d09c5dfba96e',
     'position' => 3,
   );
@@ -193,27 +203,27 @@ function livingstone_nodequeue_items_feature_uuid_features_default_nodequeue_ite
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '58a3243f-182c-4d5a-b174-293eaaf2129b',
-    'position' => 10,
+    'position' => 9,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '686d8c7f-1386-4692-b780-cfc9081e3872',
-    'position' => 7,
+    'position' => 6,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '749fac17-d2c6-49e7-bfed-0aca417379b5',
-    'position' => 8,
+    'position' => 7,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '75c25c6c-c491-4059-b446-3562d7518c95',
-    'position' => 4,
+    'position' => 3,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '7fbeae31-b1a8-46f0-9529-67f90d0e36f5',
-    'position' => 6,
+    'position' => 5,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
@@ -223,21 +233,41 @@ function livingstone_nodequeue_items_feature_uuid_features_default_nodequeue_ite
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => '8229df32-720a-4447-82e1-9f17f8de0d71',
-    'position' => 5,
+    'position' => 4,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => 'b33a7f9f-edeb-4611-a294-8d92020bf9f0',
-    'position' => 9,
-  );
-  $nodequeue_items[] = array(
-    'queue_name' => 'our_technology',
-    'node_uuid' => 'c7b7f847-291e-4122-8f80-0727f8336b81',
-    'position' => 3,
+    'position' => 8,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
     'node_uuid' => 'f2928a2c-8998-407f-beab-43aaa7679c45',
+    'position' => 1,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'partners',
+    'node_uuid' => '4d36a3d3-48b0-409e-a0bf-eb1cd66e9197',
+    'position' => 5,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'partners',
+    'node_uuid' => '6df94311-37d8-46b4-bd72-03ac1445606c',
+    'position' => 3,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'partners',
+    'node_uuid' => '9e2f85f7-417c-4eff-b728-5012e055ceef',
+    'position' => 4,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'partners',
+    'node_uuid' => 'b98f27c1-7a2f-4150-9a5f-b960be7deb60',
+    'position' => 2,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'partners',
+    'node_uuid' => 'e30bfc8e-9d79-4642-812e-f44ba2d7798b',
     'position' => 1,
   );
   $nodequeue_items[] = array(
@@ -268,6 +298,41 @@ function livingstone_nodequeue_items_feature_uuid_features_default_nodequeue_ite
   $nodequeue_items[] = array(
     'queue_name' => 'resouces',
     'node_uuid' => 'e5b11e17-a894-4e30-b7fa-fabfc2177fdc',
+    'position' => 2,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'slides',
+    'node_uuid' => '172a1459-8c87-48ef-9720-b448bdec0cdb',
+    'position' => 7,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'slides',
+    'node_uuid' => '1f7f6ad8-9f18-469d-8f1f-61d041a457fd',
+    'position' => 1,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'slides',
+    'node_uuid' => '24eebd91-fc24-4900-b186-5e45650602f4',
+    'position' => 4,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'slides',
+    'node_uuid' => '51a98968-99a5-4951-bd65-5adbbae53fe6',
+    'position' => 5,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'slides',
+    'node_uuid' => '6854e5a4-251b-4647-95c6-7337d2664693',
+    'position' => 3,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'slides',
+    'node_uuid' => 'bb29c92f-d532-434e-8a8c-ea16b5117da5',
+    'position' => 6,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'slides',
+    'node_uuid' => 'd9adf31f-f3e8-4660-bc08-cb9bf6eeb2ea',
     'position' => 2,
   );
   return $nodequeue_items;

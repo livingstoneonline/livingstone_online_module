@@ -8,9 +8,80 @@
 /**
  * Implements hook_theme().
  */
+function livingstone_transcript_menu() {
+  return array(
+    'livingstone/transcript/%' => array(
+      'access arguments' => array('access content'),
+      'type' => MENU_CALLBACK,
+      'page callback' => 'livingstone_transcript_callback',
+      'page arguments' => array(2, 3),
+    ),
+  );
+}
+
+/**
+ * Callback.
+ */
+function livingstone_transcript_callback($pid, $dsid) {
+  module_load_include('inc', 'livingstone', 'includes/utilities');
+  module_load_include('inc', 'livingstone_transcript', 'transcript');
+  $project_id = livingstone_pid_to_project_id($pid);
+  $object = islandora_object_load($pid);
+  if ($object === FALSE || !isset($object[$dsid])) {
+    drupal_json_output(array(
+      'css' => array(),
+      'html' => "<div class=\"transcription-viewer-content {$project_id}\">" . t('No Transcript available.') . '</div>',
+    ));
+    drupal_exit();
+  }
+  else {
+    $content = livingstone_transcript_saxon_transform_embedded($object[$dsid], array());
+    if ($content) {
+      $css = isset($content['#attached']['css']) ? $content['#attached']['css'] : array();
+      $content = drupal_render($content);
+      $xml = simplexml_load_string($content);
+      $style = $xml->xpath('/@style');
+      if ($style) {
+        $xml->addAttribute('style', $style[0]);
+      }
+      drupal_json_output(array(
+        'css' => $css,
+        'html' => $xml->saveXML(),
+      ));
+      drupal_exit();
+    }
+  }
+  drupal_json_output(array(
+    'css' => array(),
+    'html' => "<div class=\"transcription-viewer-content {$project_id}\">" . t('Failed to generate transcript.') . '</div>',
+  ));
+  drupal_exit();
+}
+
+/**
+ * Implements hook_theme().
+ */
 function livingstone_transcript_theme() {
   return array(
     'livingstone_transcript' => array(
+      'variables' => array(
+        // PID of the object (Required).
+        'pid' => NULL,
+        // The Datastream of the transcript, defaults to TEI.
+        'dsid' => 'TEI',
+        'classes' => array(),
+      ),
+    ),
+    'livingstone_transcript_delayed' => array(
+      'variables' => array(
+        // PID of the object (Required).
+        'pid' => NULL,
+        // The Datastream of the transcript, defaults to TEI.
+        'dsid' => 'TEI',
+        'classes' => array(),
+      ),
+    ),
+    'livingstone_transcript_delayed_content' => array(
       'variables' => array(
         // PID of the object (Required).
         'pid' => NULL,
@@ -37,8 +108,40 @@ function theme_livingstone_transcript(array &$variables) {
   else {
     $content = livingstone_transcript_saxon_transform_embedded($object[$dsid], $classes);
     if ($content === FALSE) {
-      $content = t('Failed to generate transcript.');
+      $project_id = livingstone_pid_to_project_id($pid);
+      $content = "<div class=\"transcription-viewer-content {$project_id}\">" . t('Failed to generate transcript.') . '</div>';
     }
+    else {
+      $content = drupal_render($content);
+    }
+  }
+  $module_path = drupal_get_path('module', 'livingstone_transcript');
+  $element = array(
+    '#attached' => array(
+      'js' => array(
+        "{$module_path}/js/livingstone-transcript.js",
+      ),
+    ),
+    '#markup' => $content,
+  );
+  return drupal_render($element);
+}
+
+/**
+ * Implements hook_preprocess_theme().
+ */
+function theme_livingstone_transcript_delayed(array &$variables) {
+  module_load_include('inc', 'livingstone_transcript', 'transcript');
+  $pid = $variables['pid'];
+  $dsid = $variables['dsid'];
+  $classes = $variables['classes'];
+  $classes[] = 'livingstone-transcript-delayed-load';
+  $classes[] = 'transcription-viewer-content';
+  $classes[] = livingstone_pid_to_project_id($pid);
+  $classes = implode(' ', $classes);
+  $content = "<div class=\"{$classes}\" data-pid=\"$pid\" data-dsid=\"$dsid\">Loading...</div>";
+  if ($content === FALSE) {
+    $content = t('Failed to generate transcript.');
   }
   $module_path = drupal_get_path('module', 'livingstone_transcript');
   $element = array(
@@ -73,14 +176,19 @@ function livingstone_transcript_field_formatter_view($entity_type, $entity, $fie
   foreach ($items as $item) {
     $documents[$item['first']] = $item['second'];
   }
+  // Render the first two transcriptions the reset are fetch via ajax.
+  $count = 0;
   $transcriptions = array();
   foreach ($documents as $project_id => $label) {
     $transcriptions[] = array(
-      '#theme' => 'livingstone_transcript',
+      '#theme' => $count < 2 ? 'livingstone_transcript' : 'livingstone_transcript_delayed',
       '#pid' => livingstone_project_id_to_pid($project_id),
       '#classes' => array(),
     );
+    $count++;
   }
+  // Only render the first two server side.
+  $transcriptions = drupal_render($transcriptions);
   $panels = array();
   foreach(array_slice($documents, 0, 2) as $project_id => $label) {
     $panels[] = array(
@@ -113,7 +221,9 @@ function livingstone_transcript_field_formatter_view($entity_type, $entity, $fie
           '#options' => array('Select date'),
         ),
       ),
-      'content' => $transcriptions,
+      'content' => array(
+        '#markup' => $transcriptions,
+      ),
     );
   }
   $element = array(

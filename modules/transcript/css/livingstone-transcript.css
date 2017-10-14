@@ -1,14 +1,11 @@
-/* line 1, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/transcript/less/livingstone-transcript.less */
 .transcription-viewer-content {
   display: none !important;
   min-height: 600px !important;
   min-width: 100% !important;
 }
-/* line 5, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/transcript/less/livingstone-transcript.less */
 .transcription-viewer-content .highlight {
   background-color: lightgray;
 }
-/* line 9, /Users/nbanks/Projects/livingstoneonline.org/code/livingstone_online_module/modules/transcript/less/livingstone-transcript.less */
 .transcription-viewer-content.active {
   display: block !important;
 }
