@@ -12748,7 +12748,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <p class="rteindent1"><a href="/his-own-words/livingstones-final-manuscripts-1865-1873">Introduction to the Edition</a></p>
 
-<p class="rteindent1"><a href="">Edition Guide</a></p>
+<p class="rteindent1"><a href="/his-own-words/final-edition-guide">Edition Guide</a></p>
 
 <p class="rteindent1"><a href="/his-own-words/final-project-team">Project Team</a></p>
 
