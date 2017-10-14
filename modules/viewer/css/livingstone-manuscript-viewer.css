@@ -548,7 +548,7 @@ body.loading .loading-modal {
 @media only screen and (max-width: 900px) {
   #main-image .image-toolbar .download,
   #compare-image .image-toolbar .download {
-    display: none;
+    display: none !important;
   }
 }
 #main-image .image-toolbar .download .fa,
