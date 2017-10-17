@@ -501,18 +501,6 @@ body.loading .loading-modal {
 #compare-image .image-toolbar .spectral-image {
   max-width: 150px;
 }
-@media only screen and (max-width: 900px) {
-  #main-image .image-toolbar .spectral-image,
-  #compare-image .image-toolbar .spectral-image {
-    max-width: 60%;
-  }
-}
-@media only screen and (max-width: 400px) {
-  #main-image .image-toolbar .spectral-image,
-  #compare-image .image-toolbar .spectral-image {
-    max-width: 30%;
-  }
-}
 #main-image .image-toolbar .spectral-image .filter-option,
 #compare-image .image-toolbar .spectral-image .filter-option {
   width: 90%;
