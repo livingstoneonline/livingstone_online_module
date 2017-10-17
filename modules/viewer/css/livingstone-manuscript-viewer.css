@@ -499,7 +499,7 @@ body.loading .loading-modal {
 }
 #main-image .image-toolbar .spectral-image,
 #compare-image .image-toolbar .spectral-image {
-  max-width: 30%;
+  max-width: 150px;
 }
 @media only screen and (max-width: 900px) {
   #main-image .image-toolbar .spectral-image,
@@ -515,7 +515,7 @@ body.loading .loading-modal {
 }
 #main-image .image-toolbar .spectral-image .filter-option,
 #compare-image .image-toolbar .spectral-image .filter-option {
-  width: 80%;
+  width: 90%;
 }
 #main-image .image-toolbar .spectral-image button,
 #compare-image .image-toolbar .spectral-image button {
@@ -540,6 +540,10 @@ body.loading .loading-modal {
   line-height: 24px;
   padding: 0 8px;
   display: inline-block;
+}
+#main-image .image-toolbar .processing-details,
+#compare-image .image-toolbar .processing-details {
+  margin: 4px;
 }
 #main-image .image-toolbar .dropdown-menu,
 #compare-image .image-toolbar .dropdown-menu {
