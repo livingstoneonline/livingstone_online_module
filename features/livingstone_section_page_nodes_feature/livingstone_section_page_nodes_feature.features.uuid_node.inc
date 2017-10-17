@@ -2844,45 +2844,44 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <p>&nbsp;</p>
 
-<h4><strong><span style="font-family:crimson text">Institutional Acronyms</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px"><span style="font-family:source sans pro">Top</span></span> ⤴</a></span></h4>
+<h4><strong><span style="font-family:crimson text;">Institutional Acronyms</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>The following table provides the key institutions and institutional acronyms referenced in this critical edition.</p>
 
-<table align="center" class="tablefont" style="border:1px solid gray; height:254px; text-align:left; max-width:60%">
-	<tbody>
-		<tr>
-			<td style="text-align:left"><strong><span style="font-size:14px">Acronym </span></strong></td>
-			<td><strong><span style="font-size:14px">Institution or Organization </span></strong></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>NEH </strong></span></td>
-			<td><span style="font-size:14px">National Endowment for the Humanities</span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>DLC </strong></span></td>
-			<td><span style="font-size:14px">David Livingstone Centre, Blantyre, Scotland</span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>NLS </strong></span></td>
-			<td><span style="font-size:14px">National Library of Scotland, Edinburgh, Scotland</span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>NTS </strong></span></td>
-			<td><span style="font-size:14px">National Trust for Scotland</span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>UCLA </strong></span></td>
-			<td><span style="font-size:14px">University of California, Los Angeles, USA</span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>EMEL </strong></span></td>
-			<td><span style="font-size:14px">Early Manuscripts Electronic Library</span></td>
-		</tr>
-	</tbody>
+<table align="center" class="tablefont" height="254" style="border: 1px solid gray; text-align: left; width:60%">
+    <tbody>
+        <tr style="border-bottom: 1px solid gray;">
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray; text-align: left;" width="80"><strong><span style="font-size:14px;">Acronym </span></strong></td>
+            <td style="border-bottom: 1px solid gray;" width="334"><strong><span style="font-size:14px;">Institution or Organization </span></strong></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>NEH </b></span></td>
+            <td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">National Endowment for the Humanities</span></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>DLC </b></span></td>
+            <td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">David Livingstone Centre, Blantyre, Scotland</span></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>NLS </b></span></td>
+            <td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">National Library of Scotland, Edinburgh, Scotland</span></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>NTS </b></span></td>
+            <td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">National Trust for Scotland</span></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>UCLA </b></span></td>
+            <td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">University of California, Los Angeles, USA</span></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray;" width="80"><span style="font-size:14px;"><b>EMEL </b></span></td>
+            <td style="" width="296"><span style="font-size:14px;">Early Manuscripts Electronic Library</span></td>
+        </tr>
+    </tbody>
 </table>
 
-<p class="rtecenter"><span style="font-size:16px"><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-family:source sans pro">Return to top</span> ⤴</a></span></span></p>
-',
+<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>',
         'format' => 'full_html',
       ),
     ),
@@ -2903,12 +2902,14 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>This section explains the reference system used to indicate individual leaves, folia, and pages of Livingstone\'s 1871 Field Diary. The section also defines the key institutional acronyms employed in this edition.</p>
+
 <div class="section-page-toc-links">
 <ol style="list-style-type:none">
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Leaf, Folio, Page</a></span></span></li>
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Institutional Acronyms</a></span></span></li>
 </ol>
-</div>',
+</div>
+',
         'format' => 'full_html',
       ),
     ),
