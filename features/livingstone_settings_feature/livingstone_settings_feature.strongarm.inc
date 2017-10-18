@@ -135,7 +135,7 @@ function livingstone_settings_feature_strongarm() {
       'markerMaxZoom' => '0',
     ),
     'markerclusterer' => array(
-      'filename' => 'markerclusterer_packed.js',
+      'filename' => '../../../../themes/livingstone_online_theme/js/markerclusterer.js',
       'gridSize' => 60,
       'maxZoom' => 17,
       'styles' => array(),
@@ -164,7 +164,7 @@ function livingstone_settings_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'gmap_mm_type';
-  $strongarm->value = 'gmap';
+  $strongarm->value = 'markerclusterer';
   $export['gmap_mm_type'] = $strongarm;
 
   $strongarm = new stdClass();
