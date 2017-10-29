@@ -42,14 +42,33 @@ function livingstone_partner_nodes_feature_uuid_features_default_content() {
         'status' => 1,
         'type' => 'image',
         'uuid' => '1d3a3806-1cbf-4a22-8c62-a6a8f7dca656',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
+        'field_file_image_alt_text' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'University of Nebraska',
+              'format' => NULL,
+              'safe_value' => 'University of Nebraska',
+            ),
+          ),
+        ),
+        'field_file_image_title_text' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'University of Nebraska',
+              'format' => NULL,
+              'safe_value' => 'University of Nebraska',
+            ),
+          ),
+        ),
+        'path' => array(
+          'pathauto' => 1,
+        ),
+        'alt' => 'University of Nebraska',
+        'title' => 'University of Nebraska',
         'metadata' => array(
           'height' => 51,
           'width' => 127,
         ),
-        'alt' => '',
-        'title' => '',
         'height' => 51,
         'width' => 127,
         'uuid_features_packaged_file_path' => 'assets/nebraska.png',
@@ -95,14 +114,33 @@ function livingstone_partner_nodes_feature_uuid_features_default_content() {
         'status' => 1,
         'type' => 'image',
         'uuid' => 'ad69ba5d-489e-48a8-88d3-ef628752a031',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
+        'field_file_image_alt_text' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'NEH',
+              'format' => NULL,
+              'safe_value' => 'NEH',
+            ),
+          ),
+        ),
+        'field_file_image_title_text' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'NEH',
+              'format' => NULL,
+              'safe_value' => 'NEH',
+            ),
+          ),
+        ),
+        'path' => array(
+          'pathauto' => 1,
+        ),
+        'alt' => 'NEH',
+        'title' => 'NEH',
         'metadata' => array(
           'height' => 141,
           'width' => 531,
         ),
-        'alt' => 'NEH',
-        'title' => 'NEH',
         'height' => 141,
         'width' => 531,
         'uuid_features_packaged_file_path' => 'assets/neh.jpg',
@@ -148,14 +186,33 @@ function livingstone_partner_nodes_feature_uuid_features_default_content() {
         'status' => 1,
         'type' => 'image',
         'uuid' => '8376ad35-118d-4ebf-86f7-9ba88ffdedc4',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
+        'field_file_image_alt_text' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'National Library of Scotland',
+              'format' => NULL,
+              'safe_value' => 'National Library of Scotland',
+            ),
+          ),
+        ),
+        'field_file_image_title_text' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'National Library of Scotland',
+              'format' => NULL,
+              'safe_value' => 'National Library of Scotland',
+            ),
+          ),
+        ),
+        'path' => array(
+          'pathauto' => 1,
+        ),
+        'alt' => 'National Library of Scotland',
+        'title' => 'National Library of Scotland',
         'metadata' => array(
           'height' => 85,
           'width' => 154,
         ),
-        'alt' => '',
-        'title' => '',
         'height' => 85,
         'width' => 154,
         'uuid_features_packaged_file_path' => 'assets/nls.png',
@@ -201,14 +258,33 @@ function livingstone_partner_nodes_feature_uuid_features_default_content() {
         'status' => 1,
         'type' => 'image',
         'uuid' => '2086c6d2-1552-4751-811b-36ea57f1d35c',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
+        'field_file_image_alt_text' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'National Trust for Scotland',
+              'format' => NULL,
+              'safe_value' => 'National Trust for Scotland',
+            ),
+          ),
+        ),
+        'field_file_image_title_text' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'National Trust for Scotland',
+              'format' => NULL,
+              'safe_value' => 'National Trust for Scotland',
+            ),
+          ),
+        ),
+        'path' => array(
+          'pathauto' => 1,
+        ),
+        'alt' => 'National Trust for Scotland',
+        'title' => 'National Trust for Scotland',
         'metadata' => array(
           'height' => 85,
           'width' => 136,
         ),
-        'alt' => '',
-        'title' => '',
         'height' => 85,
         'width' => 136,
         'uuid_features_packaged_file_path' => 'assets/nts.png',
@@ -254,14 +330,33 @@ function livingstone_partner_nodes_feature_uuid_features_default_content() {
         'status' => 1,
         'type' => 'image',
         'uuid' => '8e591ded-4e16-4a06-8836-c855e39b04b0',
-        'field_file_image_alt_text' => array(),
-        'field_file_image_title_text' => array(),
+        'field_file_image_alt_text' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'UMD Libraries',
+              'format' => NULL,
+              'safe_value' => 'UMD Libraries',
+            ),
+          ),
+        ),
+        'field_file_image_title_text' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'UMD Libraries',
+              'format' => NULL,
+              'safe_value' => 'UMD Libraries',
+            ),
+          ),
+        ),
+        'path' => array(
+          'pathauto' => 1,
+        ),
+        'alt' => 'UMD Libraries',
+        'title' => 'UMD Libraries',
         'metadata' => array(
           'height' => 66,
           'width' => 211,
         ),
-        'alt' => 'UMD Libraries',
-        'title' => 'UMD Libraries',
         'height' => 66,
         'width' => 211,
         'uuid_features_packaged_file_path' => 'assets/umd_libraries.png',
