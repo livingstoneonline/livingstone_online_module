@@ -67,7 +67,7 @@ function livingstone_settings_feature_strongarm() {
     'width' => '100%',
     'height' => '600px',
     'latlong' => '14.702826619885062,27.94921875',
-    'zoom' => '3',
+    'zoom' => '2',
     'maxzoom' => '14',
     'styles' => array(
       'line_default' => array(
@@ -164,7 +164,7 @@ function livingstone_settings_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'gmap_mm_type';
-  $strongarm->value = 'markerclusterer';
+  $strongarm->value = 'gmap';
   $export['gmap_mm_type'] = $strongarm;
 
   $strongarm = new stdClass();
