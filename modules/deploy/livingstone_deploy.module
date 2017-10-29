@@ -81,7 +81,7 @@ function livingstone_deploy_admin_form_submit(array $form, array &$form_state) {
   drupal_set_message($output_module, "Update LEAP-XSLT");
   $output_module = shell_exec("cd $sites_all/modules/custom/livingstone_online_module; git checkout ${branch}; git pull 2>&1");
   drupal_set_message($output_module, "Update Module");
-  $output_cache = shell_exec("cd $sites_all; sudo s6-setuidgid apache /usr/local/bin/drush cc all 2>&1");
+  $output_cache = shell_exec("cd $sites_all; /usr/local/bin/drush cc all 2>&1");
   drupal_set_message($output_cache, "Clear Cache");
 }
 
