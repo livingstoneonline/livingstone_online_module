@@ -67,7 +67,7 @@ function livingstone_settings_feature_strongarm() {
     'width' => '100%',
     'height' => '600px',
     'latlong' => '14.702826619885062,27.94921875',
-    'zoom' => '3',
+    'zoom' => '2',
     'maxzoom' => '14',
     'styles' => array(
       'line_default' => array(
@@ -135,7 +135,7 @@ function livingstone_settings_feature_strongarm() {
       'markerMaxZoom' => '0',
     ),
     'markerclusterer' => array(
-      'filename' => 'markerclusterer_packed.js',
+      'filename' => '../../../../themes/livingstone_online_theme/js/markerclusterer.js',
       'gridSize' => 60,
       'maxZoom' => 17,
       'styles' => array(),

@@ -13,18 +13,10 @@
       vertical-align: middle;
     }
     .spectral-image {
-      max-width: 30%;
-      // Download button not displayed so more space.
-      @media only screen and (max-width : 900px) {
-        max-width: 60%;
-      }
-      // Small screen.
-      @media only screen and (max-width : 400px) {
-        max-width: 30%;
-      }
+      max-width: 150px;
       .filter-option {
         // Prevent text from overlapping the caret.
-        width: 80%;
+        width: 90%;
       }
       button {
         display: inline-block;
@@ -42,6 +34,9 @@
       line-height: 24px;
       padding: 0 8px;
       display: inline-block;
+    }
+    .processing-details {
+      margin: 4px;
     }
     .dropdown-menu {
       font-size: 14px;

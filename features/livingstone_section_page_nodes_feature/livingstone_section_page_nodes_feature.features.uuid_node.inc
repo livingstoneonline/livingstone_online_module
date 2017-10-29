@@ -2844,45 +2844,44 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
 
 <p>&nbsp;</p>
 
-<h4><strong><span style="font-family:crimson text">Institutional Acronyms</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px"><span style="font-family:source sans pro">Top</span></span> ⤴</a></span></h4>
+<h4><strong><span style="font-family:crimson text;">Institutional Acronyms</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
 <p>The following table provides the key institutions and institutional acronyms referenced in this critical edition.</p>
 
-<table align="center" class="tablefont" style="border:1px solid gray; height:254px; text-align:left; max-width:60%">
-	<tbody>
-		<tr>
-			<td style="text-align:left"><strong><span style="font-size:14px">Acronym </span></strong></td>
-			<td><strong><span style="font-size:14px">Institution or Organization </span></strong></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>NEH </strong></span></td>
-			<td><span style="font-size:14px">National Endowment for the Humanities</span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>DLC </strong></span></td>
-			<td><span style="font-size:14px">David Livingstone Centre, Blantyre, Scotland</span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>NLS </strong></span></td>
-			<td><span style="font-size:14px">National Library of Scotland, Edinburgh, Scotland</span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>NTS </strong></span></td>
-			<td><span style="font-size:14px">National Trust for Scotland</span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>UCLA </strong></span></td>
-			<td><span style="font-size:14px">University of California, Los Angeles, USA</span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:14px"><strong>EMEL </strong></span></td>
-			<td><span style="font-size:14px">Early Manuscripts Electronic Library</span></td>
-		</tr>
-	</tbody>
+<table align="center" class="tablefont" height="254" style="border: 1px solid gray; text-align: left; width:60%">
+    <tbody>
+        <tr style="border-bottom: 1px solid gray;">
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray; text-align: left;" width="80"><strong><span style="font-size:14px;">Acronym </span></strong></td>
+            <td style="border-bottom: 1px solid gray;" width="334"><strong><span style="font-size:14px;">Institution or Organization </span></strong></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>NEH </b></span></td>
+            <td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">National Endowment for the Humanities</span></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>DLC </b></span></td>
+            <td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">David Livingstone Centre, Blantyre, Scotland</span></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>NLS </b></span></td>
+            <td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">National Library of Scotland, Edinburgh, Scotland</span></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>NTS </b></span></td>
+            <td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">National Trust for Scotland</span></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray; border-bottom: 1px solid gray;" width="80"><span style="font-size:14px;"><b>UCLA </b></span></td>
+            <td style="border-bottom: 1px solid gray;" width="296"><span style="font-size:14px;">University of California, Los Angeles, USA</span></td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid gray;" width="80"><span style="font-size:14px;"><b>EMEL </b></span></td>
+            <td style="" width="296"><span style="font-size:14px;">Early Manuscripts Electronic Library</span></td>
+        </tr>
+    </tbody>
 </table>
 
-<p class="rtecenter"><span style="font-size:16px"><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-family:source sans pro">Return to top</span> ⤴</a></span></span></p>
-',
+<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a></span></span></p>',
         'format' => 'full_html',
       ),
     ),
@@ -2903,12 +2902,14 @@ Livingstone 1871i:[1] pseudo_v4_BY</p>
     'und' => array(
       0 => array(
         'value' => '<p>This section explains the reference system used to indicate individual leaves, folia, and pages of Livingstone\'s 1871 Field Diary. The section also defines the key institutional acronyms employed in this edition.</p>
+
 <div class="section-page-toc-links">
 <ol style="list-style-type:none">
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link1">Leaf, Folio, Page</a></span></span></li>
 	<li><span style="font-size:15px"><span style="font-family:crimson text"><a href="#link2">Institutional Acronyms</a></span></span></li>
 </ol>
-</div>',
+</div>
+',
         'format' => 'full_html',
       ),
     ),
@@ -11336,28 +11337,28 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
   'field_section_body' => array(
     'und' => array(
       0 => array(
-        'value' => '<h4><strong><span style="font-family:crimson text">Introduction to the edition</span></strong></h4>
+        'value' => '<h4><strong><span style="font-family:crimson text;">Introduction to the edition</span> </strong></h4>
 
 <p>The publication of Livingstone’s 1871 Field Diary reveals for the first time the original record of a remarkable and traumatic period in the life of David Livingstone, the celebrated British abolitionist, missionary, and explorer of Africa. The date of publication coincides almost exactly with the date Livingstone completed this diary in Central Africa 140 years ago. The original, previously unpublished text of the diary has remained inaccessible until now, due to the fragility of the paper and the near-illegible script. Thanks to cutting-edge spectral imaging and processing technology, the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> now makes all the surviving pages of the diary available through this electronic edition.</p>
 
-<p class="rtecenter"><a href="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016022_0001.jpg"><img alt="An image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016022_0001.jpg" style="" width="716" title="An image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." /></a></p>
-
-<p><a href="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016023_0001.jpg"><img alt="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII spectral_ratio). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016023_0001.jpg" width="716" title="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII spectral_ratio). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." /></a><br />
-<span style="font-size:12px">(Top) Natural light and (bottom) processed spectral images of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII color and spectral_ratio). <em>Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> These images demonstrate the dramatic ability of spectral image processing to reveal diary text that is otherwise nearly invisible to the naked eye. A portion of the printed newspaper title <em>The Standard</em> is visible at left.</span></p>
+<p class="space-1 rtecenter" style="line-height: 110%;"><a href="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016022_0001.jpg"><img alt="An image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016022_0001.jpg" style="" title="An image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." width="716" /> </a></p>
+a
+<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016023_0001.jpg"><img alt="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII spectral_ratio). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016023_0001.jpg" title="A processed spectral image of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII spectral_ratio). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." width="716" /> </a><br />
+<span style="font-size:12px;">(Top) Natural light and (bottom) processed spectral images of two pages of the 1871 Field Diary (Livingstone 1871f:CLVII-CXXXVIII color and spectral_ratio). <em>Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</em> These images demonstrate the dramatic ability of spectral image processing to reveal diary text that is otherwise nearly invisible to the naked eye. A portion of the printed newspaper title <em>The Standard</em> is visible at left.</span></p>
 
 <p>In 1871, David Livingstone spent five months stranded in a small village in the Congo called Nyangwe. He had run out of writing paper and had nearly run out of ink, so he improvised the materials for his diary by writing over an old copy of <em>The Standard</em> newspaper with ink made from the seeds of a local berry. On 15 July 1871, while still in Nyangwe, Livingstone witnessed a massacre of the local African population by Arab slave traders from Zanzibar. Some 400 or 500 Africans, the majority of them women, died in a single day – a scale of murder and death unprecedented in Livingstone’s experience.</p>
 
 <p>The massacre horrified Livingstone, leaving him too shattered to continue his mission to find the source of the Nile. He traveled 240 miles from Nyangwe – violently ill most of the way – back to Ujiji, an Arab settlement on the eastern shore of Lake Tanganyika. Here, Henry Morton Stanley, a reporter sent by <em>The</em> <em>New York Herald</em> to locate Livingstone (who had been "missing" for several years and presumed dead) found the Scottish explorer and purportedly greeted him with the iconic words, "Dr. Livingstone, I presume?"</p>
 
-<p><a href="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016024_0001.jpg"><img alt="Dr. Livingstone, I Presume? Illustration from Stanley 1872,2:opposite 412. Courtesy of Edinburgh University Library" class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016024_0001.jpg" width="716" title="Dr. Livingstone, I Presume? Illustration from Stanley 1872,2:opposite 412. Courtesy of Edinburgh University Library." /></a><br />
-<span style="font-size:12px">Dr. Livingstone, I Presume? Illustration from Stanley\'s <em>How I Found Livingstone</em> (1872,2:opposite 412). <em>Courtesy of Edinburgh University Library.</em></span></p>
+<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016024_0001.jpg"><img alt="Dr. Livingstone, I Presume? Illustration from Stanley 1872,2:opposite 412. Courtesy of Edinburgh University Library" class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016024_0001.jpg" title="Dr. Livingstone, I Presume? Illustration from Stanley 1872,2:opposite 412. Courtesy of Edinburgh University Library." width="716" /> </a><br />
+<span style="font-size:12px;">Dr. Livingstone, I Presume? Illustration from Stanley\'s <em>How I Found Livingstone</em> (1872,2:opposite 412). <em>Courtesy of Edinburgh University Library.</em></span></p>
 
 <p>The rest is history. The meeting – one of the most famous encounters in the nineteenth century – and Stanley’s published accounts of Livingstone’s crusade against slavery secured the latter a prominent and enduring place in the public imagination. The meeting also launched Stanley’s own career as an explorer and led him, ultimately, to found the Congo Free State on behalf of Leopold II, the King of Belgium.</p>
 
 <p>Yet despite its significance, Livingstone’s 1871 Field Diary – which chronicles both the months in Livingstone’s life leading up to the famous meeting and the Nyangwe massacre as it unfolds moment by moment before Livingstone’s eyes – has remained inaccessible to scholars and the public alike. The newspaper over which Livingstone wrote has deteriorated, and Livingstone’s improvised red ink has faded to the point of invisibility. From the time that the diary was returned to England after Livingstone’s death in Africa in 1873 to the present, it has not been possible to read and study Livingstone’s original words.</p>
 
-<p><a href="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016025_0001.jpg"><img alt="The Massacre of the Manyuema Women at Nyangwe. Illustration from Livingstone 1874,2:opposite 133. Courtesy of Edinburgh University Library" class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016025_0001.jpg" width="716" title="The Massacre of the Manyuema Women at Nyangwe. Illustration from Livingstone 1874,2:opposite 133. Courtesy of Edinburgh University Library." /></a><br />
-<span style="font-size:12px">The Massacre of the Manyuema Women at Nyangwe. Illustration from the <em>Last Journals</em> (Livingstone 1874,2:opposite 133). <em>Courtesy of Edinburgh University Library.</em></span></p>
+<p class="space1" style="line-height:110%"><a href="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016025_0001.jpg"><img alt="The Massacre of the Manyuema Women at Nyangwe. Illustration from Livingstone 1874,2:opposite 133. Courtesy of Edinburgh University Library" class="attr__format__media_original attr__typeof__foaf:Image img__fid__306 img__view_mode__media_original media-image" src="/sites/default/files/spectral-imaging/livingstones-1871-field-diary/liv_016025_0001.jpg" title="The Massacre of the Manyuema Women at Nyangwe. Illustration from Livingstone 1874,2:opposite 133. Courtesy of Edinburgh University Library." width="716" /> </a><br />
+<span style="font-size:12px;">The Massacre of the Manyuema Women at Nyangwe. Illustration from the <em>Last Journals</em> (Livingstone 1874,2:opposite 133). <em>Courtesy of Edinburgh University Library.</em></span></p>
 
 <p>Today, the first phase of the <a href="/spectral-imaging/livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a> – a unique transatlantic collaboration between scholars, scientists and educational and archival institutions – has completed its work on the diary. The complete original text is now made available worldwide as a free online resource. The diary, as those who read it will soon discover, offers an astonishing glimpse into Livingstone’s conflicted thoughts and actions during the most crucial period in his life. Instead of the saintly hero of Victorian mythology, the individual who emerges from the pages of the diary is passionate, vulnerable, and deeply torn about the violent events developing around him.</p>
 
@@ -11378,7 +11379,7 @@ The undertext pages thus do not run in sequence, and there is a gap between the 
 The Livingstone Spectral Imaging Project<br />
 1 November 2011, Edinburgh, Scotland</p>
 
-<p class="rtecenter"><span style="font-size:16px"><span style="font-family:crimson text"><a href="#TOP" title="Go to table of contents"><span style="font-family:source sans pro">Return to top</span> ⤴</a></span></span></p>
+<p class="rtecenter"><span style="font-size:16px;"><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-family: source sans pro;">Return to top</span> ⤴</a> </span> </span></p>
 ',
         'format' => 'full_html',
       ),
