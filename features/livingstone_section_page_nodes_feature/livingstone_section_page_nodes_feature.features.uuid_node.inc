@@ -14337,15 +14337,15 @@ The Livingstone Spectral Imaging Project<br />
 
 <h4><strong><span style="font-family:crimson text;">Files for Download</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p><a href="/sites/default/files/shared/a> (25.1 MB) - a PDF copy of the original edition of Livingstone\'s Last Journals (1874), volume II. Pages 48-109 of this volume correspond to the 1870 Field Diary.</p>
+<p><a href="/sites/default/files/shared/Last-Journals-of-David-Livingstone-vol-II.zip"><strong>Livingstone\'s <em>Last Journals</em> (1874), volume II</strong></a> (25.1 MB) - a PDF copy of the original edition of Livingstone\'s Last Journals (1874), volume II. Pages 48-109 of this volume correspond to the 1870 Field Diary.</p>
 
-<p><a href="/sites/default/files/shared/a> (21 MB) - a PDF copy of a photocopy of the corrected proofs of Livingstone\'s Last Journals (1874), volume II. This segment of the proofs corresponds to the 1870 Field Diary. The photocopy has been marked with Roman numerals by the present editorial team to correlate the proofs with Livingstone\'s original manuscript pages.</p>
+<p><a href="/sites/default/files/shared/Last-Journals-Page-Proofs-1870-FD-Segment.zip"><strong>Livingstone\'s <em>Last Journals</em> (1874), volume II, corrected proofs</strong></a> (21 MB) - a PDF copy of a photocopy of the corrected proofs of Livingstone\'s Last Journals (1874), volume II. This segment of the proofs corresponds to the 1870 Field Diary. The photocopy has been marked with Roman numerals by the present editorial team to correlate the proofs with Livingstone\'s original manuscript pages.</p>
 
 <p><a href="/sites/default/files/shared/1870-Diary-Layout.zip"><strong>Structure of the 1870 Field Diary &amp; 1870-71 Manuscripts</strong></a> (66 KB) - a spreadsheet that sets out the relationship of Livingstone’s 1870 Field Diary and select 1870-71 manuscripts to their underlying source texts in detail.</p>
 
 <p><a href="/sites/default/files/shared/1870-Field-Diary-Extracted-Dates.zip"><strong>Dates for the 1870 Field Diary</strong></a> (47 KB) - a document that presents, sequentially, all dates for dated diary entries as extracted from our transcription of the 1870 Field Diary.</p>
 
-<p><a href="/sites/default/files/shared/a> (50.7 MB) - unmarked PDF copies of three sources texts used by Livingstone in creating the 1870 Field Diary.</p>
+<p><a href="/sites/default/files/shared/Unmarked-Undertexts-for-1870-Field-Diary.zip"><strong>Livingstone\'s Undertexts</strong></a> (50.7 MB) - unmarked PDF copies of three sources texts used by Livingstone in creating the 1870 Field Diary.</p>
 
 <p><a href="/sites/default/files/shared/1870-Marked-Passages-from-Stanley.zip"><strong>Annotations of <em>The Bible: Its Form and Substance</em></strong></a> (72 KB) - transcriptions of all the passages annotated by Livingstone from Arthur Penrhyn Stanley’s <em>The Bible: Its Form and Substance</em> (1863).</p>
 
@@ -14375,7 +14375,7 @@ The Livingstone Spectral Imaging Project<br />
 	</li>
 </ul>
 
-<p><a href="/sites/default/files/shared/a> (685.9 MB) - all the prototype ASIs of Livingstone\'s 1870 Field Diary developed for the present edition by Ashanka Kumari in a single ZIP file.</p>
+<p><a href="/sites/default/files/shared/Animated-Spectral-Images-(ASIs)-Complete.zip"><strong>Complete Prototype ASIs</strong></a> (685.9 MB) - all the prototype ASIs of Livingstone\'s 1870 Field Diary developed for the present edition by Ashanka Kumari in a single ZIP file.</p>
 
 <p><strong>Sample Prototype ASIs</strong> - prototype ASIs that enhance one or more manuscript features of interest.</p>
 
@@ -14771,7 +14771,7 @@ The Livingstone Spectral Imaging Project<br />
 
 <h4><strong><span style="font-family:crimson text;">Outreach Program Worksheets</span> &nbsp;&nbsp; </strong><span style="font-family:crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span> ⤴</a></span></h4>
 
-<p class="space1">Click <a href="/sites/default/files/shared/a> to download all eleven worksheets plus the two bonus documents in a single .zip file. Free programs for extracting .zip files can be easily found on the internet.</p>
+<p class="space1">Click <a href="/sites/default/files/shared/Outreach_Complete_Livingstone_Online_Worksheets.zip"><strong>here</strong></a> to download all eleven worksheets plus the two bonus documents in a single .zip file. Free programs for extracting .zip files can be easily found on the internet.</p>
 
 <p><u>Bonus:</u> <a href="/sites/default/files/shared/Outreach_Bonus_Livingstone_Online_Program_Summary.pdf" target="_blank"><strong>Outreach Program Summary</strong></a></p>
 
@@ -23951,7 +23951,7 @@ ornament their faces and heads (1871f:CVII)</p>
 
 <h4><strong><span style="font-family:crimson text;">Basic Reading Copies for Download</span>&nbsp;&nbsp;&nbsp; </strong><span style="font-family: crimson text;"><a href="#TOP" title="Go to table of contents"><span style="font-size:16px;"><span style="font-family: source sans pro;">Top</span></span>⤴</a></span></h4>
 
-<p class="space2">Download basic reading copies of&nbsp;<a href="http://livingstoneonline.org/sites/default/files/shared/a> (4 MB) in one ZIP file or select a specific text.</p>
+<p class="space2">Download basic reading copies of&nbsp;<a href="http://livingstoneonline.org/sites/default/files/shared/Livingstone-Final-Manuscripts_reading_copies.zip">all manuscripts</a> (4 MB) in one ZIP file or select a specific text.</p>
 
 <p><em>Core Texts</em></p>
 
