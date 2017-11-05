@@ -25,6 +25,7 @@ dependencies[] = file_entity
 dependencies[] = flexslider
 dependencies[] = flexslider_views
 dependencies[] = gmap
+dependencies[] = googleanalytics
 dependencies[] = image
 dependencies[] = imagemagick
 dependencies[] = imce
