@@ -2078,7 +2078,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
   $nodes[] = array(
-  'title' => 'Institut de France. Bibliothèque',
+  'title' => 'Institut de France. Bibliothèque',
   'log' => 'Created by FeedsNodeProcessor',
   'status' => 1,
   'comment' => 1,
@@ -2125,7 +2125,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'field_repo_repository' => array(
     'und' => array(
       0 => array(
-        'value' => 'Institut de France. Bibliothèque',
+        'value' => 'Institut de France. Bibliothèque',
         'format' => NULL,
       ),
     ),
@@ -3371,7 +3371,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
   $nodes[] = array(
-  'title' => 'Musée royal de l\'Afrique centrale',
+  'title' => 'Musée royal de l\'Afrique centrale',
   'log' => 'Created by FeedsNodeProcessor',
   'status' => 1,
   'comment' => 1,
@@ -3418,7 +3418,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'field_repo_repository' => array(
     'und' => array(
       0 => array(
-        'value' => 'Musée royal de l\'Afrique centrale',
+        'value' => 'Musée royal de l\'Afrique centrale',
         'format' => NULL,
       ),
     ),
@@ -4638,7 +4638,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
   $nodes[] = array(
-  'title' => 'Arquivo Histórico Ultramarino (Portugal)',
+  'title' => 'Arquivo Histórico Ultramarino (Portugal)',
   'log' => 'Created by FeedsNodeProcessor',
   'status' => 1,
   'comment' => 1,
@@ -4685,7 +4685,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'field_repo_repository' => array(
     'und' => array(
       0 => array(
-        'value' => 'Arquivo Histórico Ultramarino (Portugal)',
+        'value' => 'Arquivo Histórico Ultramarino (Portugal)',
         'format' => NULL,
       ),
     ),
@@ -4935,74 +4935,6 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
     ),
   ),
   'field_repo_state' => array(),
-  'path' => array(
-    'pathauto' => 0,
-  ),
-  'url_alias' => array(),
-  'date' => '2017-03-28 17:51:17 +0000',
-  'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
-);
-  $nodes[] = array(
-  'title' => 'Michigan State University. Libraries',
-  'log' => 'Created by FeedsNodeProcessor',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'type' => 'repository_info',
-  'language' => 'und',
-  'created' => 1490723477,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => 'd56c31c2-df91-4218-bdb8-1ede9f9d82fb',
-  'field_repo_city' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'East Lansing',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_repo_country' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'United States',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_repo_lcnaf' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'http://id.loc.gov/authorities/names/n93024323',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_repo_link' => array(
-    'und' => array(
-      0 => array(
-        'value' => '/in-his-own-words/catalogue/?f[0]=repository_ms:"Michigan State University. Libraries"',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_repo_repository' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Michigan State University. Libraries',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_repo_state' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Michigan',
-        'format' => NULL,
-      ),
-    ),
-  ),
   'path' => array(
     'pathauto' => 0,
   ),
@@ -5356,7 +5288,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'user_uuid' => '0ff19f94-945c-48e1-bab1-4969fb58aea1',
 );
   $nodes[] = array(
-  'title' => 'Société de géographie (France). Bibliothèque',
+  'title' => 'Société de géographie (France). Bibliothèque',
   'log' => 'Created by FeedsNodeProcessor',
   'status' => 1,
   'comment' => 1,
@@ -5396,7 +5328,7 @@ function livingstone_repository_info_nodes_feature_uuid_features_default_content
   'field_repo_repository' => array(
     'und' => array(
       0 => array(
-        'value' => 'Société de géographie (France). Bibliothèque',
+        'value' => 'Société de géographie (France). Bibliothèque',
         'format' => NULL,
       ),
     ),
