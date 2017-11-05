@@ -979,6 +979,8 @@
     var that = this,
         element = $(selector);
 
+    $(element).parent().css('background-color', $(element).css('background-color'));
+
     function page_selector(page) {
       return 'span.pb-title:contains(' + page + ')';
     }
