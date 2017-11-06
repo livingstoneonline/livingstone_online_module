@@ -887,8 +887,8 @@ function livingstone_browse_catalogue_search_parameters(array &$form_state) {
     'rows' => LIVINGSTONE_BROWSE_CATALOGUE_LIMIT_RESULTS,
     'sort' => livingstone_browse_catalogue_sort_search_parameter($form_state),
     'facet' => 'true',
-    'facet.mincount' => variable_get('islandora_solr_facet_min_limit', '2'),
-    'facet.limit' => variable_get('islandora_solr_facet_max_limit', '20'),
+    'facet.mincount' => variable_get('islandora_solr_facet_min_limit', '1'),
+    'facet.limit' => variable_get('islandora_solr_facet_max_limit', '2000'),
     'facet.field' => array_values(livingstone_browse_catalogue_facet_fields()),
     'facet.range' => array_values(livingstone_browse_catalogue_facet_range_fields()),
     // Shouldn't be any dates before 1700's or after the current year.
