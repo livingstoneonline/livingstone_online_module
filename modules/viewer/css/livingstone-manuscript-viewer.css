@@ -336,9 +336,11 @@ body.loading .loading-modal {
 }
 #panels.compare .pane-right {
   border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 #panels.compare .pane-left {
   border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 .pane {
   height: 100%;
