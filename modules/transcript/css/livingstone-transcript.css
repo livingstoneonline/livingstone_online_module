@@ -1,6 +1,6 @@
 .transcription-viewer-content {
   display: none !important;
-  min-height: 600px !important;
+  min-height: 550px !important;
   min-width: 100% !important;
 }
 .transcription-viewer-content .highlight {
