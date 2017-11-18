@@ -3,7 +3,7 @@
     <h1>Restricted Item</h1>
     <hr/>
     <p>
-      Livingstone Online has images of the item you have selected, but we are either still preparing them for publication or do
+      Livingstone Online has images of the item you have selected, but we do
       not have permission to post them online.
       Time permitting, we may be able to consult the images for individuals with
       legitimate research needs or questions. Please
