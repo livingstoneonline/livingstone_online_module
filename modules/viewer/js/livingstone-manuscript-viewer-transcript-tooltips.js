@@ -23,6 +23,12 @@
           }
         });
       });
+      $(document).click(function () {
+        var api = $(this).find('[data-hasqtip]').qtip('api');
+        if (api) {
+          api.destroy();
+        }
+      });
       $(tei).find('[title][title!=""]').each(function () {
         $(this).once('livingstoneTranscriptToolTip', function () {
           $(this).on('mouseenter', function(event) {
@@ -83,6 +89,12 @@
           // Opened viewer, so attach qtip logic.
           var iframe = $('.livingstone-manuscript-viewer-modal').find('iframe');
           iframe.load(function() {
+            $(this).contents().find('body').click(function () {
+              var api = $(this).find('[data-hasqtip]').qtip('api');
+              if (api) {
+                api.destroy();
+              }
+            });
             $(this).contents().find('.transcription-viewer-content').each(function () {
               attachToolTips($(this));
             });
