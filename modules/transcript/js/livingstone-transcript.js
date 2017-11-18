@@ -272,7 +272,7 @@
      *   The index of the element to scroll to in the set of selected results.
      */
     function scrollTo(container, selector, offset) {
-      var element = $(selector).eq(offset);
+      var element = $(selector, container).eq(offset);
       if (element.length !== 0) {
         $(container).animate({
           scrollTop: Math.abs(element.position().top + container.scrollTop()) + 'px'
@@ -303,10 +303,11 @@
           return false;
         }
       });
-      scrollTo(getActiveTranscript(), date_selector, offset);
+      var container = getActiveTranscript();
+      scrollTo(container, date_selector, offset);
       // Add highlight.
       $('.highlight').removeClass('highlight');
-      $(date_selector).eq(offset).addClass('highlight');
+      $(date_selector, container).eq(offset).addClass('highlight');
     });
 
     // This is the first past so we must explicitly activate
