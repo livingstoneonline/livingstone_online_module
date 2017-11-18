@@ -39,7 +39,7 @@ namespace NINES {
     $object->text = preg_replace('/Return to top ⤴/', '', $object->text);
     $object->text = preg_replace("/([\r\n]{6,}|[\n]{3,}|[\r]{3,})/", "\n", $object->text);
     // Types.
-    $object->setTypes(array(
+    $object->setTypes([
       'Codex',
       'Collection',
       'Dataset',
@@ -49,9 +49,9 @@ namespace NINES {
       'Physical Object',
       'Sheet',
       'Still Image',
-    ));
+    ]);
     // Disciplines.
-    $object->setDisciplines(array(
+    $object->setDisciplines([
       'Anthropology',
       'Book History',
       'Ethnic Studies',
@@ -62,9 +62,9 @@ namespace NINES {
       'Political Science',
       'Religious Studies',
       'Science',
-    ));
+    ]);
     // Genres.
-    $object->setGenres(array(
+    $object->setGenres([
       'Bibliography',
       'Catalog',
       'Collection',
@@ -82,11 +82,27 @@ namespace NINES {
       'Religion',
       'Travel Writing',
       'Visual Art',
-    ));
+    ]);
     // Authors.
-    $object->roles['AUT'] = 'Wisnicki, Adrian S.';
+    $object->roles['AUT'][] = 'Wisnicki, Adrian S.';
+    if (isset($node->field_section_authors['und'][0]['value'])) {
+      $authors = $node->field_section_authors['und'][0]['value'];
+      $authors = explode('; ', $authors);
+      foreach ($authors as $author) {
+        $object->roles['AUT'][] = $author;
+      }
+    }
+    // Editors.
+    $object->roles['EDT'] = array();
+    if (isset($node->field_section_editors['und'][0]['value'])) {
+      $editors = $node->field_section_editors['und'][0]['value'];
+      $editors = explode('; ', $editors);
+      foreach ($editors as $editor) {
+        $object->roles['EDT'][] = $editor;
+      }
+    }
     // Publisher.
-    $object->roles['PBL'] = 'Livingstone Online (livignstoneonline.org)';
+    $object->roles['PBL'] = 'Livingstone Online (livingstoneonline.org)';
     // Full text.
     $object->full_text = TRUE;
     // See Also.
@@ -173,7 +189,7 @@ namespace NINES {
     $object->text = strip_tags($node->field_manuscript_tei['und'][0]['value']);
     $object->text = preg_replace("/([\r\n]{6,}|[\n]{3,}|[\r]{3,})/", "\n", $object->text);
     // Types.
-    $types = array();
+    $types = [];
     // Map genre to type.
     $genre = isset($node->field_manuscript_genres['und'][0]['value']) ? $node->field_manuscript_genres['und'][0]['value'] : '';
     if (preg_match('/map/i', $genre)) {
@@ -188,7 +204,7 @@ namespace NINES {
     if (preg_match('/drawing/i', $genre)) {
       $types[] = 'Drawing';
     }
-    $object->setTypes(array_unique(array_merge($types, array(
+    $object->setTypes(array_unique(array_merge($types, [
       'Codex',
       'Collection',
       'Dataset',
@@ -198,9 +214,9 @@ namespace NINES {
       'Physical Object',
       'Sheet',
       'Still Image',
-    ))));
+    ])));
     // Disciplines.
-    $object->setDisciplines(array(
+    $object->setDisciplines([
       'Anthropology',
       'Book History',
       'Ethnic Studies',
@@ -211,9 +227,9 @@ namespace NINES {
       'Political Science',
       'Religious Studies',
       'Science',
-    ));
+    ]);
     // Genres.
-    $object->setGenres(array(
+    $object->setGenres([
       'Bibliography',
       'Catalog',
       'Collection',
@@ -231,17 +247,24 @@ namespace NINES {
       'Religion',
       'Travel Writing',
       'Visual Art',
-    ));
+    ]);
     // Authors.
-    $authors = $node->field_manuscript_creators['und'][0]['value'];
-    $authors = explode('; ', $authors);
-    foreach ($authors as $author)  {
-      $object->roles['AUT'][] = $author;
+    $object->roles['AUT'] = array();
+    if (isset($node->field_manuscript_creators['und'][0]['value'])) {
+      $authors = $node->field_manuscript_creators['und'][0]['value'];
+      $authors = explode('; ', $authors);
+      foreach ($authors as $author) {
+        $object->roles['AUT'][] = $author;
+      }
     }
-    $addressees = $node->field_manuscript_addressees['und'][0]['value'];
-    $addressees = explode('; ', $addressees);
-    foreach ($addressees as $addressee)  {
-      $object->roles['RCP'][] = $addressee;
+    // Addressees.
+    $object->roles['RCP'] = array();
+    if (isset($node->field_manuscript_addressees['und'][0]['value'])) {
+      $addressees = $node->field_manuscript_addressees['und'][0]['value'];
+      $addressees = explode('; ', $addressees);
+      foreach ($addressees as $addressee) {
+        $object->roles['RCP'][] = $addressee;
+      }
     }
     // Publisher.
     $object->roles['PBL'] = 'Livingstone Online (livingstoneonline.org)';
