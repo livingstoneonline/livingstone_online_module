@@ -51,7 +51,9 @@ function template_preprocess_livingstone_manuscript_viewer(array &$variables) {
   drupal_add_css("$css_path/livingstone-manuscript-viewer.css", array(
     'group' => CSS_THEME,
   ));
-
+  drupal_add_css("$css_path/livingstone-manuscript-viewer-transcript.css", array(
+    'group' => CSS_THEME,
+  ));
   // Pass configuration settings to the manuscript viewer.
   $manuscript = $variables['manuscript'];
   $object = islandora_object_load($manuscript);
