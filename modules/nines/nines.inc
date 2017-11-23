@@ -84,7 +84,6 @@ namespace NINES {
       'Visual Art',
     ]);
     // Authors.
-    $object->roles['AUT'][] = 'Wisnicki, Adrian S.';
     if (isset($node->field_section_authors['und'][0]['value'])) {
       $authors = $node->field_section_authors['und'][0]['value'];
       $authors = explode('; ', $authors);
