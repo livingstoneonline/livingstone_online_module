@@ -121,6 +121,9 @@ function theme_livingstone_transcript(array &$variables) {
       'js' => array(
         "{$module_path}/js/livingstone-transcript.js",
       ),
+      'css' => array(
+        drupal_get_path('module', 'livingstone_transcript') . "/css/livingstone-transcript.css",
+      ),
     ),
     '#markup' => $content,
   );
