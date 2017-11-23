@@ -7,6 +7,12 @@
 .transcription-viewer-content * {
   box-sizing: initial;
 }
+.transcription-viewer-content .row:before,
+.transcription-viewer-content .row:after,
+.transcription-viewer-content .table:before,
+.transcription-viewer-content .table:after {
+  content: initial;
+}
 .transcription-viewer-content .highlight {
   background-color: lightgray;
 }
