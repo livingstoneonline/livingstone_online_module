@@ -2,6 +2,10 @@
   display: none !important;
   min-height: 600px !important;
   min-width: 100% !important;
+  -webkit-font-smoothing: initial;
+}
+.transcription-viewer-content * {
+  box-sizing: initial;
 }
 .transcription-viewer-content .highlight {
   background-color: lightgray;
