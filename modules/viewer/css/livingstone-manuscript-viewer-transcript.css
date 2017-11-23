@@ -1,5 +1,9 @@
 .transcription-pane .transcription-viewer-content {
   display: inline-block;
+  -webkit-font-smoothing: initial;
+}
+.transcription-pane .transcription-viewer-content * {
+  box-sizing: initial;
 }
 .highlight {
   background-color: lightgray;
