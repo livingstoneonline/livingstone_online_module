@@ -48,7 +48,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -93,7 +93,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'size' => 128,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 14,
     ),
   );
 
@@ -299,7 +299,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'size' => 128,
       ),
       'type' => 'text_textfield',
-      'weight' => 16,
+      'weight' => 15,
     ),
   );
 
@@ -334,7 +334,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_section_grid_image',
-    'label' => 'Grid Image',
+    'label' => 'Tile Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -367,7 +367,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 10,
+      'weight' => 8,
     ),
   );
 
@@ -415,7 +415,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -459,7 +459,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -574,7 +574,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
         ),
       ),
       'type' => 'textfield_&_textfield',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -766,7 +766,6 @@ function livingstone_section_page_feature_field_default_field_instances() {
   t('Byline');
   t('Carousel Image');
   t('Editor(s)');
-  t('Grid Image');
   t('Main Text');
   t('Open in New Tab');
   t('Outbound Link');
@@ -780,6 +779,7 @@ function livingstone_section_page_feature_field_default_field_instances() {
   t('The section this page belongs to.');
   t('This field is not displayed to the user, but used to populate &lt;role:AUT&gt; elements in the NINE\'s RDF Export. Please give the name in the last name, first name format: "Wisnicki, Adrian S."');
   t('This field is not displayed to the user, but used to populate &lt;role:EDT&gt; elements in the NINE\'s RDF Export. Please give the name in the last name, first name format: "Wisnicki, Adrian S."');
+  t('Tile Image');
   t('Transcriptions');
 
   return $field_instances;

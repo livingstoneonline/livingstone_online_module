@@ -86,10 +86,50 @@ function livingstone_user_feature_uuid_features_default_users() {
   'uuid' => '3df3f9e3-42c1-4d4a-916d-753fac884cda',
   'roles' => array(
     2 => 'authenticated user',
-    3 => 'administrator',
     5 => 'editor',
   ),
   'date' => '2016-11-20 20:52:02 +0000',
+);
+  $users[] = array(
+  'name' => 'awisnicki2',
+  'mail' => 'awisnicki2@unl.edu',
+  'theme' => '',
+  'signature' => '',
+  'signature_format' => 'full_html',
+  'created' => 1509806921,
+  'status' => 1,
+  'timezone' => 'UTC',
+  'language' => '',
+  'picture' => 0,
+  'init' => 'awisnicki2@unl.edu',
+  'data' => FALSE,
+  'uuid' => '4a3a95f1-0c0e-4a60-820c-112376f6be78',
+  'roles' => array(
+    2 => 'authenticated user',
+    3 => 'administrator',
+    5 => 'editor',
+  ),
+  'date' => '2017-11-04 14:48:41 +0000',
+);
+  $users[] = array(
+  'name' => 'ksimpson',
+  'mail' => 'kilmun@gmail.com',
+  'theme' => '',
+  'signature' => '',
+  'signature_format' => 'full_html',
+  'created' => 1510591697,
+  'status' => 1,
+  'timezone' => 'UTC',
+  'language' => '',
+  'picture' => 0,
+  'init' => 'kilmun@gmail.com',
+  'data' => FALSE,
+  'uuid' => '781822bf-d0ad-4b3a-a929-f9641502b22d',
+  'roles' => array(
+    2 => 'authenticated user',
+    5 => 'editor',
+  ),
+  'date' => '2017-11-13 16:48:17 +0000',
 );
   $users[] = array(
   'name' => 'hball',
@@ -169,32 +209,6 @@ function livingstone_user_feature_uuid_features_default_users() {
     5 => 'editor',
   ),
   'date' => '2014-12-12 19:13:32 +0000',
-);
-  $users[] = array(
-  'name' => 'akkumari',
-  'mail' => 'akkumari@crimson.ua.edu',
-  'theme' => '',
-  'signature' => '',
-  'signature_format' => 'filtered_html',
-  'created' => 1418411471,
-  'status' => 1,
-  'timezone' => 'America/Chicago',
-  'language' => '',
-  'picture' => 0,
-  'init' => 'akkumari@crimson.ua.edu',
-  'data' => array(
-    'ckeditor_default' => 't',
-    'ckeditor_show_toggle' => 't',
-    'ckeditor_width' => '100%',
-    'ckeditor_lang' => 'en',
-    'ckeditor_auto_lang' => 't',
-  ),
-  'uuid' => 'ee5cc42a-742c-4288-8d33-4b53e0cf2587',
-  'roles' => array(
-    2 => 'authenticated user',
-    5 => 'editor',
-  ),
-  'date' => '2014-12-12 19:11:11 +0000',
 );
   return $users;
 }

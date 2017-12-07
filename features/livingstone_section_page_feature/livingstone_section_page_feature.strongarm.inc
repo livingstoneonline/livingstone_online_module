@@ -44,10 +44,10 @@ function livingstone_section_page_feature_strongarm() {
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '17',
+          'weight' => '16',
         ),
         'redirect' => array(
-          'weight' => '18',
+          'weight' => '17',
         ),
       ),
       'display' => array(),

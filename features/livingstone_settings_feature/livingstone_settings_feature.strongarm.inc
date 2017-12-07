@@ -65,8 +65,8 @@ function livingstone_settings_feature_strongarm() {
   $strongarm->name = 'gmap_default';
   $strongarm->value = array(
     'width' => '100%',
-    'height' => '600px',
-    'latlong' => '14.702826619885062,27.94921875',
+    'height' => '550px',
+    'latlong' => '4.388952142035504,24.609375',
     'zoom' => '2',
     'maxzoom' => '14',
     'styles' => array(
@@ -458,7 +458,7 @@ user/*/*';
       'quota' => '0',
       'tuquota' => '0',
       'extensions' => '*',
-      'dimensions' => '1200x1200',
+      'dimensions' => '0',
       'filenum' => '0',
       'directories' => array(
         0 => array(
@@ -471,10 +471,13 @@ user/*/*';
           'resize' => 0,
           'mkdir' => 1,
           'rmdir' => 1,
+          'rename' => 1,
+          'rename_folder' => 1,
         ),
       ),
       'thumbnails' => array(),
       'mkdirnum' => '0',
+      'uploader' => 'plupload',
     ),
   );
   $export['imce_profiles'] = $strongarm;

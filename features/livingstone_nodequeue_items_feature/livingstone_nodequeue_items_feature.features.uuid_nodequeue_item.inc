@@ -27,13 +27,13 @@ function livingstone_nodequeue_items_feature_uuid_features_default_nodequeue_ite
   );
   $nodequeue_items[] = array(
     'queue_name' => 'about_this_site',
-    'node_uuid' => '7f02dba0-1cfc-468b-acf2-2092bda28149',
-    'position' => 10,
+    'node_uuid' => '85a0a40c-9dfc-4167-aff4-0797f78db4c0',
+    'position' => 7,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'about_this_site',
-    'node_uuid' => '85a0a40c-9dfc-4167-aff4-0797f78db4c0',
-    'position' => 7,
+    'node_uuid' => '87e5d1e8-7adf-4a5a-b17c-004b3ceac371',
+    'position' => 10,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'about_this_site',
@@ -202,6 +202,11 @@ function livingstone_nodequeue_items_feature_uuid_features_default_nodequeue_ite
   );
   $nodequeue_items[] = array(
     'queue_name' => 'our_technology',
+    'node_uuid' => '05c2bec5-31aa-4dde-b5e9-b3fdff8e3181',
+    'position' => 10,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'our_technology',
     'node_uuid' => '58a3243f-182c-4d5a-b174-293eaaf2129b',
     'position' => 9,
   );
@@ -289,6 +294,11 @@ function livingstone_nodequeue_items_feature_uuid_features_default_nodequeue_ite
     'queue_name' => 'resouces',
     'node_uuid' => '97fc9cb2-fc88-4a58-86b4-4cfaf7d4cf6e',
     'position' => 4,
+  );
+  $nodequeue_items[] = array(
+    'queue_name' => 'resouces',
+    'node_uuid' => '9d61e2f9-5afc-45c3-adc6-c2136a66936e',
+    'position' => 7,
   );
   $nodequeue_items[] = array(
     'queue_name' => 'resouces',

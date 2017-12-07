@@ -21,7 +21,7 @@ function livingstone_backup_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'backup_migrate_destination_id';
-  $strongarm->value = 'manual';
+  $strongarm->value = 'agnes_files';
   $export['backup_migrate_destination_id'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -35,7 +35,7 @@ function livingstone_backup_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'backup_migrate_source_id';
-  $strongarm->value = 'db';
+  $strongarm->value = 'files';
   $export['backup_migrate_source_id'] = $strongarm;
 
   $strongarm = new stdClass();

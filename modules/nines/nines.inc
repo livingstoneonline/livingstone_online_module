@@ -84,20 +84,17 @@ namespace NINES {
       'Visual Art',
     ]);
     // Authors.
-    if (isset($node->field_section_authors['und'][0]['value'])) {
-      $authors = $node->field_section_authors['und'][0]['value'];
-      $authors = explode('; ', $authors);
-      foreach ($authors as $author) {
-        $object->roles['AUT'][] = $author;
+    $object->roles['AUT'] = array();
+    if (is_array($node->field_section_authors['und'])) {
+      foreach ($node->field_section_authors['und'] as $author) {
+        $object->roles['AUT'][] = $author['value'];
       }
     }
     // Editors.
     $object->roles['EDT'] = array();
-    if (isset($node->field_section_editors['und'][0]['value'])) {
-      $editors = $node->field_section_editors['und'][0]['value'];
-      $editors = explode('; ', $editors);
-      foreach ($editors as $editor) {
-        $object->roles['EDT'][] = $editor;
+    if (is_array($node->field_section_editors['und'])) {
+      foreach ($node->field_section_editors['und'] as $editor) {
+        $object->roles['EDT'][] = $editor['value'];
       }
     }
     // Publisher.
