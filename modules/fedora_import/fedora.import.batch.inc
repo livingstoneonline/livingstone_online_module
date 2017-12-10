@@ -513,7 +513,7 @@ function livingstone_fedora_import_reindex_manuscripts_batch_operation(array $pi
       'query' => array(
         'operation' => 'updateIndex',
         'action' => 'fromPid',
-        'value' => $pid,
+        'value' => urlencode($pid),
       ),
     )));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
