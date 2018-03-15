@@ -510,10 +510,11 @@ function livingstone_fedora_import_reindex_manuscripts_batch_operation(array $pi
     curl_setopt($ch, CURLOPT_USERPWD, "{$info['user']}:{$info['password']}");
     curl_setopt($ch, CURLOPT_URL, url($info['url'], array(
       'absolute' => TRUE,
+      'external' => TRUE,
       'query' => array(
         'operation' => 'updateIndex',
         'action' => 'fromPid',
-        'value' => $pid,
+        'value' => urlencode($pid),
       ),
     )));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
