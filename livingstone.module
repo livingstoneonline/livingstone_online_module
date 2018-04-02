@@ -110,13 +110,13 @@ function livingstone_islandora_derivative_alter(array &$derivatives, AbstractObj
 function livingstone_apachesolr_index_document_build($document, $entity, $entity_type) {
   if ($entity_type == 'node' && $entity->type == 'manuscript') {
     if (isset($entity->field_manuscript_repository_shelfmark['und'][0]['value'])) {
-      $document->addField('ts_field_manuscript_repository_shelfmark', $entity->repository_shelfmark['und'][0]['value']);
+      $document->addField('ts_field_manuscript_repository_shelfmark', $entity->field_manuscript_repository_shelfmark['und'][0]['value']);
     }
     if (isset($entity->field_manuscript_other_versions['und'][0]['value'])) {
-      $document->addField('ts_field_manuscript_other_versions', $entity->other_versions['und'][0]['value']);
+      $document->addField('ts_field_manuscript_other_versions', $entity->field_manuscript_other_versions['und'][0]['value']);
     }
     if (isset($entity->field_manuscript_tei['und'][0]['value'])) {
-      $document->addField('ts_field_manuscript_tei', $entity->tei['und'][0]['value']);
+      $document->addField('ts_field_manuscript_tei', $entity->field_manuscript_tei['und'][0]['value']);
     }
   }
 }
