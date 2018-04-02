@@ -109,14 +109,14 @@ function livingstone_islandora_derivative_alter(array &$derivatives, AbstractObj
  */
 function livingstone_apachesolr_index_document_build($document, $entity, $entity_type) {
   if ($entity_type == 'node' && $entity->type == 'manuscript') {
-    if (isset($entity->repository_shelfmark['und'][0]['value'])) {
-      $document->addField('ts_repository_shelfmark', $entity->repository_shelfmark['und'][0]['value']);
+    if (isset($entity->field_manuscript_repository_shelfmark['und'][0]['value'])) {
+      $document->addField('ts_field_manuscript_repository_shelfmark', $entity->repository_shelfmark['und'][0]['value']);
     }
-    if (isset($entity->other_versions['und'][0]['value'])) {
-      $document->addField('ts_other_versions', $entity->other_versions['und'][0]['value']);
+    if (isset($entity->field_manuscript_other_versions['und'][0]['value'])) {
+      $document->addField('ts_field_manuscript_other_versions', $entity->other_versions['und'][0]['value']);
     }
-    if (isset($entity->tei['und'][0]['value'])) {
-      $document->addField('ts_tei', $entity->tei['und'][0]['value']);
+    if (isset($entity->field_manuscript_tei['und'][0]['value'])) {
+      $document->addField('ts_field_manuscript_tei', $entity->tei['und'][0]['value']);
     }
   }
 }
@@ -152,25 +152,25 @@ function livingstone_apachesolr_query_alter(DrupalSolrQueryInterface $query) {
   if ($catalogue) {
     $query->addParam('qf', array(
       'label^1.0',
-      'sm_project_id^1.0',
-      'sm_pid^1.0',
-      'sm_dates',
-      'sm_creators^0.5',
-      'sm_addressees^0.5',
-      'sm_places_created',
-      'sm_extent_pages',
-      'sm_extent_size',
-      'sm_genres',
-      'sm_copy_of_item',
-      'sm_catalogue_number',
-      'ts_repository_shelfmark',
-      'ts_other_versions',
-      'dm_date_range_start',
-      'dm_date_range_end',
+      'sm_field_manuscript_project_id^1.0',
+      'sm_field_manuscript_pid^1.0',
+      'sm_field_manuscript_dates',
+      'sm_field_manuscript_creators^0.5',
+      'sm_field_manuscript_addressees^0.5',
+      'sm_field_manuscript_places_created',
+      'sm_field_manuscript_extent_pages',
+      'sm_field_manuscript_extent_size',
+      'sm_field_manuscript_genres',
+      'sm_field_manuscript_copy_of_item',
+      'sm_field_manuscript_catalogue_number',
+      'ts_field_manuscript_repository_shelfmark',
+      'ts_field_manuscript_other_versions',
+      'dm_field_manuscript_date_range_start',
+      'dm_field_manuscript_date_range_end',
     ));
   }
   if ($transcriptions) {
-    $query->addParam('qf', array('ts_tei^1.0'));
+    $query->addParam('qf', array('ts_field_manuscript_tei^1.0'));
   }
 }
 
