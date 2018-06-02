@@ -360,7 +360,7 @@
                 hide: {
                   fixed: true,
                   delay: 1000,
-                  event: 'click unfocus'
+                  event: 'click unfocus mouseleave'
                 },
                 events: {
                   hide: function (event, api) {
