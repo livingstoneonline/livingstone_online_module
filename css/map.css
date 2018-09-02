@@ -1,0 +1,34 @@
+.leaflet-popup-content-wrapper {
+    border-radius: 0;
+}
+
+.leaflet-popup-content-wrapper a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.leaflet-popup-content-wrapper a:hover, .leaflet-popup-content-wrapper a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.views-field-field-manuscript-places-created {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+
+.views-field-title, .views-field-field-manuscript-creators, .views-field-field-manuscript-dates {
+    font-size: 14.4px !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    color: gray;
+    width: auto !important;
+    line-height: 1.5em;
+    margin: 0 !important;
+    width: 80%;
+}
+
+.field-content {
+    color: black;
+}
