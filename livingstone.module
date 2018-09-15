@@ -19,6 +19,12 @@ function livingstone_menu() {
       'access arguments' => array(LIVINGSTONE_ADMINISTER_PERMISSION),
       'type' => MENU_NORMAL_ITEM,
     ),
+    'livingstone/map' => array(
+      'access arguments' => array('access content'),
+      'type' => MENU_CALLBACK,
+      'page callback' => 'livingstone_map_view',
+      'page arguments' => array(2),
+    ),
   );
 }
 
@@ -57,6 +63,11 @@ function livingstone_theme() {
       'file' => 'theme/theme.inc',
       'render element' => 'element',
       'template' => 'theme/livingstone-slide-out-menu',
+    ),
+    'livingstone_map_html' => array(
+      'file' => 'theme/theme.inc',
+      'template' => 'theme/livingstone-map-html',
+      'render element' => 'page',
     ),
   );
 }
@@ -431,6 +442,13 @@ function livingstone_block_info() {
       'status' => 1,
       'weight' => 20,
     ),
+    'livingstone_browse_geolocation' => array(
+      'info' => t('Livingstone Browse Geolocation'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'region' => 'content',
+      'status' => 1,
+      'weight' => 20,
+    ),
   );
 }
 
@@ -479,8 +497,72 @@ function livingstone_block_view($delta = '') {
       $prefix = isset($_GET['prefix']) ? $_GET['prefix'] : NULL;
       $block['content'] = islandora_solr_facet_pages_callback('addressee', $prefix);
       break;
+
+    case 'livingstone_browse_geolocation':
+      $block['content'] = array(
+        '#markup' => "<iframe src='/livingstone/map' style='border: none;margin: auto;width: 100%;padding: 0 10%;height: 550px;' />",
+      );
+      break;
   }
   return $block;
+}
+
+/**
+ * Menu callback to render the map.
+ *
+ * @return array
+ *   A Drupal renderable array.
+ */
+function livingstone_map_view() {
+  global $language;
+  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
+  drupal_add_http_header('Content-Language', $language->language);
+  livingstone_create_markers_file();
+  return array(
+    '#type' => 'page',
+    '#theme_wrappers' => array('livingstone_map_html'),
+    'content' => array(),
+  );
+}
+
+function livingstone_create_markers_file() {
+  $data = &drupal_static(__FUNCTION__, NULL, $reset);
+  if (!$reset || ($cache = cache_get(__FUNCTION__) && REQUEST_TIME < $cache->expire)) {
+    return;
+  }
+  $path_parts = parse_url(variable_get('islandora_solr_url', 'localhost:8080/solr'));
+  $solr = new Apache_Solr_Service($path_parts['host'], $path_parts['port'], $path_parts['path'] . '/');
+  $solr->setCreateDocuments(0);
+  $query = "*:*";
+  $start = 0;
+  $limit = 10000;
+  $params = array(
+    'fl' => 'pid:PID,title:title_s,place:place_s,creator:creator_ms,date:date_ms,coordinates:coordinates_ms',
+    'fq' => 'RELS_EXT_hasModel_uri_s:("info:fedora/islandora:manuscriptCModel" OR "info:fedora/livingstone:spectralManuscriptCModel")',
+    'defType' => 'edismax',
+    'start' => $start,
+    'rows' => $limit,
+  );
+  try {
+    $results = $solr->search($query, $start, $limit, $params, 'GET');
+  }
+  catch (Exception $e) {
+    watchdog_exception('livingstone', $e->getMessage());
+    return;
+  }
+  if (!isset($results)) {
+    watchdog('livingstone', "Failed to get solr results for generating markers.js", array(), WATCHDOG_ERROR);
+    return;
+  }
+  $results = json_decode($results->getRawResponse(), TRUE);
+  // Sanity check to make sure we do not overwrite the file if somethings gone off with the index.
+  if ($results['response']['numFound'] < 3000) {
+    watchdog('livingstone', "Less solr results than expected when generating markers.js", array(), WATCHDOG_ERROR);
+    return;
+  }
+  $docs = $results['response']['docs'];
+  file_unmanaged_save_data("var global_markers = " . drupal_json_encode($docs), 'public://markers.js', FILE_EXISTS_REPLACE);
+  cache_set(__FUNCTION__, array(), 'cache',  REQUEST_TIME  + (3600 * 24 * 7)); // Stores in cache table and expires after 1 week.
 }
 
 // XXX. Hack do not check this in, it's just to regenerate the paths when pulling in the changes from production.
