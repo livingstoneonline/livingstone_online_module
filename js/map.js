@@ -53,7 +53,7 @@ function map(mapid) {
     setMapHeight();
 
     // instantiate Leaflet map
-    var mymap = L.map(mapid);
+    var mymap = L.map(mapid, {zoomDelta: 0.5, zoomSnap: 0.5});
 
 
     // create the tile layer with correct attribution
