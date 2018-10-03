@@ -500,7 +500,7 @@ function livingstone_block_view($delta = '') {
 
     case 'livingstone_browse_geolocation':
       $block['content'] = array(
-        '#markup' => "<iframe src='/livingstone/map' style='border: none;margin: auto;width: 100%;padding: 0 10%;height: 550px;' />",
+        '#markup' => "<iframe src='/livingstone/map' style='border: none;margin: auto;width: 100%;padding: 0 10%;height: 550px;'></iframe>",
       );
       break;
   }

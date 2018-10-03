@@ -44,9 +44,10 @@ function map(mapid) {
         return html;
     };
 
-    function setMapHeight(){
-        var height = window.innerHeight;
-        jQuery('#' + mapid).height(height);
+    function setMapHeight() {
+      var height = window.innerHeight;
+      // Subtract 2 for the borders.
+      jQuery('#' + mapid).height(Math.min(height - 2, 550));
     }
 
     // Leaflet needs a defined height for its container
