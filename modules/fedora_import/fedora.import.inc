@@ -266,7 +266,7 @@ function livingstone_fedora_import_get_ftp_connection($server = NULL, $user = NU
   $user = isset($user) ? $user : variable_get('livingstone_ftp_user', 'nbanks');
   $password = isset($password) ? $password : variable_get('livingstone_ftp_password', '');
   // Set up a connection.
-  $connection = ftp_connect($server);
+  $connection = ftp_ssl_connect($server);
   $result = ftp_login($connection, $user, $password);
   if ($result) {
     ftp_pasv($connection, TRUE);
@@ -318,7 +318,7 @@ function livingstone_fedora_import_start_ftp_download($remote_file_path) {
   $ftp_user = variable_get('livingstone_ftp_user', 'nbanks');
   $ftp_password = variable_get('livingstone_ftp_password', '');
   $output = array();
-  $process_id = exec('curl -u ' . escapeshellarg("{$ftp_user}:{$ftp_password}") . ' ' . escapeshellarg("ftp://{$ftp_server}{$remote_file_path}") . ' -o ' . escapeshellarg("$local_file_path") . ' -# > ' . escapeshellarg($output_file_path) . ' 2>&1 & echo $!', $output);
+  $process_id = exec('curl -u ' . escapeshellarg("{$ftp_user}:{$ftp_password}") . ' -k --ssl ' . escapeshellarg("ftp://{$ftp_server}{$remote_file_path}") . ' -o ' . escapeshellarg("$local_file_path") . ' -# > ' . escapeshellarg($output_file_path) . ' 2>&1 & echo $!', $output);
   $local_file = new stdClass;
   $local_file->uid = $user->uid;
   $local_file->filename = $basename;
