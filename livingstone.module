@@ -526,10 +526,6 @@ function livingstone_map_view() {
 }
 
 function livingstone_create_markers_file() {
-  $data = &drupal_static(__FUNCTION__, NULL, $reset);
-  if (!$reset || ($cache = cache_get(__FUNCTION__) && REQUEST_TIME < $cache->expire)) {
-    return;
-  }
   $path_parts = parse_url(variable_get('islandora_solr_url', 'localhost:8080/solr'));
   $solr = new Apache_Solr_Service($path_parts['host'], $path_parts['port'], $path_parts['path'] . '/');
   $solr->setCreateDocuments(0);
@@ -562,7 +558,6 @@ function livingstone_create_markers_file() {
   }
   $docs = $results['response']['docs'];
   file_unmanaged_save_data("var global_markers = " . drupal_json_encode($docs), 'public://markers.js', FILE_EXISTS_REPLACE);
-  cache_set(__FUNCTION__, array(), 'cache',  REQUEST_TIME  + (3600 * 24 * 7)); // Stores in cache table and expires after 1 week.
 }
 
 // XXX. Hack do not check this in, it's just to regenerate the paths when pulling in the changes from production.
