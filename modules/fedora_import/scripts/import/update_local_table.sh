@@ -73,72 +73,54 @@ function solr_fq_parameter() {
   echo "RELS_EXT_hasModel_uri_s%3A(*manuscript*%20OR%20*spectral*%20OR%20*sp_pdf%20OR%20*sp_large_image_cmodel)"
 }
 
-# Query solr for all all datastream checksums.
-function solr_query() {
-  local fl=$(solr_fl_parameter)
+function objects_file() {
   local fq=$(solr_fq_parameter)
+  local fl='PID%2CRELS_EXT_hasModel_uri_s%2Chidden_b%2Cchecksum_s%2CTYPE'
   local url="${HOST}/collection1/select?q=*%3A*&rows=100000&fq=${fq}&fl=${fl}&wt=csv&indent=true%27&sort=PID%20asc"
-  local output=${SCRATCH}/solr_results.csv
-  curl -L "${url}" -o ${output}
-  sed -i -e '1,1s/RELS_EXT_hasModel_uri_s/CONTENT_MODEL/g' ${output}
-  sed -i -e '1,1s/hidden_b/PRIVATE/g' ${output}
-  sed -i -e '1,1s/fedora_datastream_latest_//g' ${output}
-  sed -i -e '1,1s/_MD5_ms/_MD5/g' ${output}
+  local output=${INFILE_DIR}/local_object_table.csv
+  curl -sL "${url}" -o ${output}
   sed -i -e 's/info:fedora\///g' ${output}
   sed -i -e 's/true/1/g' ${output}
   sed -i -e 's/false/0/g' ${output}
-  sed -i -e ':a; s/,,/,\\N,/g; ta' ${output}
   sed -i -e 's/,$/,\\N/g' ${output}
-  # Insert 'MD5' column.
-  awk 'BEGIN{FS=OFS=","} {$4="MD5,"$4""; $0=$0""} 1' ${output} > ${SCRATCH}/solr_results.csv.tmp
-  cp ${SCRATCH}/solr_results.csv.tmp ${output}
-  # Insert 'TYPE' column.
-  awk 'BEGIN{FS=OFS=","} {$4="TYPE,"$4""; $0=$0""} 1' ${output} > ${SCRATCH}/solr_results.csv.tmp
-  cp ${SCRATCH}/solr_results.csv.tmp ${output}
-  cp ${output} /tmp/solr_results.csv
+  sed -i -e '1,1s/RELS_EXT_hasModel_uri_s/CONTENT_MODEL/g' ${output}
+  sed -i -e '1,1s/hidden_b/PRIVATE/g' ${output}
+  sed -i -e '1,1s/checksum_s/MD5/g' ${output}
+  [ -s ${output} ] || echo 'PID,CONTENT_MODEL,PRIVATE,MD5,TYPE' > ${output}
   chmod a+r ${output}
   echo ${output}
 }
 
-# Create import csv for local objects table.
-function objects_file() {
-  local file=${1};
-  local output=${INFILE_DIR}/local_object_table.csv
-  csvcut ${file} -c PID,CONTENT_MODEL,PRIVATE,TYPE,MD5 > ${output}
-  [ -s ${output} ] || echo 'PID,CONTENT_MODEL,PRIVATE,TYPE,MD5' > ${output}
-  chmod a+r ${output}
-  echo ${output}
+# Can't use environment variables or other functions here as parallel does not know about them.
+function get_datastream_checksums() {
+  local host=${1}
+  local pid=${2}
+  local fq="RELS_EXT_hasModel_uri_s%3A(*manuscript*%20OR%20*spectral*%20OR%20*sp_pdf%20OR%20*sp_large_image_cmodel)"
+  local fl='fedora_datastream_latest_*_MD5_ms'
+  local url="${host}/collection1/select?q=PID:\"${pid}\"&rows=100000&fq=${fq}&fl=${fl}&wt=json&indent=true%27&sort=PID%20asc"
+  curl -sL "${url}" | grep 'MD5_ms\":' | sed "s/.*latest_\(.*\)_MD5_ms\":\[\"\([^\"]*\).*/${pid},\1,\2/g"
 }
+# Make the function available to GNU parallel.
+export -f get_datastream_checksums 
 
-# Create import csv for local objects table.
 function datastreams_file() {
-  local file=${1};
-  local tmp=${SCRATCH}/local_datastream_table.tmp.csv
+  local input=${1}
   local output=${INFILE_DIR}/local_datastream_table.csv
-  csvcut ${file} -C PRIVATE,CONTENT_MODEL,TYPE,MD5 > ${tmp}
+  local fq=$(solr_fq_parameter)
+  local fl='fedora_datastream_latest_*_MD5_ms'
+  local pids=($(csvcut ${input} -c PID | tail +2))
   echo 'PID,DSID,MD5' > ${output}
-  local columns=$(head -n 1 ${tmp} | sed "s/PID//g" | sed "s/,/ /g")
-  for column in ${columns[@]};
-  do
-    local DSID=$(echo ${column} | sed "s/_MD5//g")
-    csvcut -c PID,${column} ${tmp} | grep -v '\\N' | grep -v ',$' | tail -n +2 | awk 'BEGIN{FS=OFS=","} {$2="'${DSID}',"$2""; $0=$0""} 1' > ${SCRATCH}/local_datastream_table.${DSID}.csv &
-  done
-  wait
-  for column in ${columns[@]};
-  do
-    local DSID=$(echo ${column} | sed "s/_MD5//g")
-    cat ${SCRATCH}/local_datastream_table.${DSID}.csv >> ${output}
-  done
+  SHELL=$(type -p bash) parallel get_datastream_checksums ${HOST} {} ::: ${pids[@]} >> ${output}
+  [ -s ${output} ] || echo 'PID,DSID,MD5' > ${output}
   chmod a+r ${output}
   echo ${output}
 }
 
 # Gather information about existing data and insert it into the batch_import.existing table.
 function update_local_tables() {
-  local file=$(solr_query)
-  local objects_file=$(objects_file ${file})
+  local objects_file=$(objects_file)
   local objects_headers=$(head -n 1 ${objects_file})
-  local datastreams_file=$(datastreams_file ${file})
+  local datastreams_file=$(datastreams_file ${objects_file})
   local datastreams_headers=$(head -n 1 ${datastreams_file})
   # Empty the table first.
   sql_query "TRUNCATE TABLE livingstone_fedora_local_objects;"
