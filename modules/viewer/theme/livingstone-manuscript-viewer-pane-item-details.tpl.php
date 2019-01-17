@@ -33,8 +33,8 @@
       <dd>Livingstone Online</dd>
       <dt>Directors</dt>
       <dd>Adrian S. Wisnicki (director), Megan Ward (co-director)</dd>
-      <dt>Project Host</dt>
-      <dd>University of Maryland Libraries</dd>
+      <dt>Site Host</dt>
+      <dd>So You Start</dd>
       <dt>Date</dt>
       <dd><?php echo date("Y"); ?></dd>
       <?php if (!empty($transcript_team)): ?>
