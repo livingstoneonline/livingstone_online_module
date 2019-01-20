@@ -186,13 +186,15 @@ EOQ;
   }
   $sizes = livingstone_manuscript_viewer_page_sizes($pid, $pages);
   // Add tokens and sizes, for use in Djatoka viewer for administrative access.
+  // Only administrators need tokens as all other users are blocked from viewing.
+  $needs_token = in_array('administrator', $user->roles) || $user->uid == 1;
   $index = 0;
   foreach ($pages as &$page) {
     $page_pid = $page['pid'];
     $page['labels'] = array();
     $page['size'] = isset($sizes[$page_pid]) ? (int) $sizes[$page_pid] : FALSE;
     foreach ($page['dsid'] as $dsid) {
-      $page['token'][$dsid] = islandora_get_object_token($page_pid, $dsid, 2);
+      $page['token'][$dsid] = $needs_token ? islandora_get_object_token($page_pid, $dsid, 2) : NULL;
     }
   }
   // Set the labels.
