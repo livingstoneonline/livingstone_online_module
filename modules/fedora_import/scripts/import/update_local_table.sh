@@ -95,9 +95,9 @@ function objects_file() {
 function get_datastream_checksums() {
   local host=${1}
   local pid=${2}
-  local fq="RELS_EXT_hasModel_uri_s%3A(*manuscript*%20OR%20*spectral*%20OR%20*sp_pdf%20OR%20*sp_large_image_cmodel)"
+  local fq="RELS_EXT_hasModel_uri_s:(*manuscript*%20OR%20*spectral*%20OR%20*sp_pdf%20OR%20*sp_large_image_cmodel)"
   local fl='fedora_datastream_latest_*_MD5_ms'
-  local url="${host}/collection1/select?q=PID:\"${pid}\"&rows=100000&fq=${fq}&fl=${fl}&wt=json&indent=true%27&sort=PID%20asc"
+  local url="${host}/collection1/select?q=PID:%22${pid}%22&rows=100000&fq=${fq}&fl=${fl}&wt=json&indent=true&sort=PID%20asc"
   curl -sL "${url}" | grep 'MD5_ms\":' | sed "s/.*latest_\(.*\)_MD5_ms\":\[\"\([^\"]*\).*/${pid},\1,\2/g"
 }
 # Make the function available to GNU parallel.
@@ -106,11 +106,9 @@ export -f get_datastream_checksums
 function datastreams_file() {
   local input=${1}
   local output=${INFILE_DIR}/local_datastream_table.csv
-  local fq=$(solr_fq_parameter)
-  local fl='fedora_datastream_latest_*_MD5_ms'
   local pids=($(csvcut ${input} -c PID | tail +2))
   echo 'PID,DSID,MD5' > ${output}
-  SHELL=$(type -p bash) parallel get_datastream_checksums ${HOST} {} ::: ${pids[@]} >> ${output}
+  SHELL=$(type -p bash) parallel --will-cite get_datastream_checksums ${HOST} {} ::: ${pids[@]} >> ${output}
   [ -s ${output} ] || echo 'PID,DSID,MD5' > ${output}
   chmod a+r ${output}
   echo ${output}
