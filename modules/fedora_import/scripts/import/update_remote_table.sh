@@ -70,7 +70,7 @@ function cmdline() {
 function download_import_objects_csv() {
   local output="${INFILE_DIR}/import.objects.csv"
   rm ${output}
-  lftp ftp://${HOST} -u ${USER},${PASS} -e "pget -n 2 /Livingstone-Directors/0_Core-Data/import.objects.csv -o ${output}; bye" 1>&2
+  lftp ftp://${HOST} -u ${USER},${PASS} -e "set ftp:ssl-allow true; set ftp:ssl-force true; set ftp:ssl-protect-data true; set ftp:ssl-protect-list true; set ssl:priority NORMAL:+VERS-TLS1.1:+VERS-TLS1.2; pget -n 2 /Livingstone-Directors/0_Core-Data/import.objects.csv -o ${output}; bye" 1>&2
   sed -i -e ':a; s/NULL/\\N/g; ta' ${output}
   echo ${output}
 }
@@ -79,7 +79,7 @@ function download_import_objects_csv() {
 function download_import_datastreams_csv() {
   local output="${INFILE_DIR}/import.datastreams.csv"
   rm ${output}
-  lftp ftp://${HOST} -u ${USER},${PASS} -e "pget -n 2 /Livingstone-Directors/0_Core-Data/import.datastreams.csv -o ${output}; bye" 1>&2
+  lftp ftp://${HOST} -u ${USER},${PASS} -e "set ftp:ssl-allow true; set ftp:ssl-force true; set ftp:ssl-protect-data true; set ftp:ssl-protect-list true; set ssl:priority NORMAL:+VERS-TLS1.1:+VERS-TLS1.2; pget -n 2 /Livingstone-Directors/0_Core-Data/import.datastreams.csv -o ${output}; bye" 1>&2
   sed -i -e ':a; s/NULL/\\N/g; ta' ${output}
   echo ${output}
 }
