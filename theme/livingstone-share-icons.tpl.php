@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "eaee7a62-d3e0-4e7d-bb34-6eb5073f5839", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 <ul class="links icon-group">
   <li class="icon-group-item"><a href="/" title="Home" displayText="Home" class="fa home icon">&#xf015;</a></li>

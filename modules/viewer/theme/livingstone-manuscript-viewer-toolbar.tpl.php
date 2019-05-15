@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "eaee7a62-d3e0-4e7d-bb34-6eb5073f5839", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 <div id="toolbar" unselectable="on" onselectstart="return false;">
   <span class="item-group">
