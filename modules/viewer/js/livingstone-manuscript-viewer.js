@@ -398,6 +398,7 @@
           break;
         case 'transcription':
           transcription_pane.addClass('pane-open').addClass('pane-right');
+          transcription.fixBackgroundColor();
           var page = toolbar.getPage();
           if (page) {
             transcription.setPage(page.pid, page.label);
@@ -1016,6 +1017,13 @@
           scroll_to(page_selector(label));
         }
       }
+    };
+
+    /**
+     * Makes the background of the panel match the background of the transcription document.
+     */
+    this.fixBackgroundColor = function() {
+      $(element).parent().css('background-color', $(element).css('background-color'));
     };
 
     // Expose some jQuery functions via a proxy.
