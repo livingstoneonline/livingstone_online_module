@@ -34,7 +34,7 @@
       <dt>Directors</dt>
       <dd>Adrian S. Wisnicki (director), Megan Ward (co-director)</dd>
       <dt>Site Host</dt>
-      <dd>So You Start</dd>
+      <dd>University of Nebraska-Lincoln</dd>
       <dt>Date</dt>
       <dd><?php echo date("Y"); ?></dd>
       <?php if (!empty($transcript_team)): ?>
