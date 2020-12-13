@@ -31,3 +31,4 @@ function main() {
     # Update last import date.
     /usr/local/bin/drush -r ${DRUPAL_ROOT} php-eval "variable_set('livingstone_import_table_updated', date('Y-m-d H:i:s'));"
 }
+main
