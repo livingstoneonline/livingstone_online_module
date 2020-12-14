@@ -6,6 +6,5 @@
   <!--<li class="icon-group-item"><a href="#" title="Email" displayText="Email" class="st_email_custom fa email icon">&#xf0e0;</a></li>-->
   <li class="icon-group-item"><a href="#" title="Facebook" displayText="Facebook" class="st_facebook_custom fa facebook icon">&#xf09a;</a></li>
   <li class="icon-group-item"><a href="#" title="Twitter" displayText="Twitter" class="st_twitter_custom fa twitter icon">&#xf099;</a></li>
-  <li class="icon-group-item"><a href="#" title="Google+" displayText="Google+" class="st_googleplus_custom fa google-plus icon">&#xf0d5;</a></li>
   <li class="icon-group-item"><a href="#" title="Pinterest" displayText="Pinterest" class="st_pinterest_custom fa pinterest icon">&#xf231;</a></li>
 </ul>
