@@ -26,7 +26,7 @@ function main() {
         --sql /var/lib/mysql-files/import-state.sql
 
     # Import State via SQL file.
-    /usr/local/bin/drush -r ${DRUPAL_ROOT}
+    `/usr/local/bin/drush -r ${DRUPAL_ROOT} sql-connect` < /var/lib/mysql-files/import-state.sql
 
     # Update last import date.
     /usr/local/bin/drush -r ${DRUPAL_ROOT} php-eval "variable_set('livingstone_import_table_updated', date('Y-m-d H:i:s'));"
