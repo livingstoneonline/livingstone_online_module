@@ -688,7 +688,7 @@ function livingstone_fedora_import_spectral_page_derivatives_missing() {
   foreach ($response['response']['docs'] as $doc) {
     // The number of datastreams should be divisible by 4.
     $datastreams = array_diff($doc['fedora_datastreams_ms'], array('AUDIT', 'DC', 'RELS-EXT', 'ZIP', 'GIF'));
-    $sources = array_filter($datastreams, function($datastream) { return strpos($datastream, '_JP2') !== FALSE; });
+    $sources = array_filter($datastreams, function($datastream) { return strpos($datastream, '_OBJ') !== FALSE; });
     $derivatives = array_filter($datastreams, function($datastream) { return strpos($datastream, '_JP2') !== FALSE; });
     if (count($sources) !== count($derivatives)) {
       $pids[] = $doc['PID'];
