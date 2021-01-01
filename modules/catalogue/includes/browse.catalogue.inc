@@ -1304,7 +1304,7 @@ function livingstone_browse_catalogue_default_value($element, $default, array $f
 function livingstone_browse_catalogue_facet_default($facet, array $form_state) {
   $facet_fields = livingstone_browse_catalogue_facet_fields();
   $facet_field = $facet_fields[$facet];
-  $filter_queries = isset($_GET['f']) ? $_GET['f'] : array();
+  $filter_queries = isset($_GET['f']) && is_array($_GET['f']) ? $_GET['f'] : array();
   if (isset($_GET['f%5B%5D'])) {
     $filter_queries[] = urldecode($_GET['f%5B%5D']);
   }

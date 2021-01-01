@@ -112,8 +112,12 @@ function livingstone_node_import_update_node($node, $title, array $fields) {
     $wrapper->title->set($title);
   }
   $field_settings = livingstone_node_import_field_settings();
-  drupal_mkdir('public://manuscript');
-  drupal_mkdir('public://manuscript/images');
+  if (!is_dir('public://manuscript')) {
+    drupal_mkdir('public://manuscript');
+  }
+  if (!is_dir('public://manuscript/images')) {
+    drupal_mkdir('public://manuscript/images');
+  }
   try {
     foreach ($fields as $field_name => $value) {
       $type = $field_settings[$field_name]['type'];
