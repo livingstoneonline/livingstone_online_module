@@ -992,10 +992,23 @@
       heading = $(selector).eq(offset);
       if (heading.length != 0) {
         var pane = $('.pane.transcription-pane');
-        var pos = heading.position();
-        var top = pane.scrollTop() + pos.top - $('#toolbar').height();
+        var offsetParents = function (el) { 
+          var parent = el.offsetParent();
+          if ($.contains(pane.get(0), parent.get(0))) {
+            return parent.add(offsetParents(parent))
+          }
+          else {
+            return $();
+          }
+        };
+        var pos = pane.scrollTop();
+        var parents = offsetParents(heading);
+        parents.each(function () {
+          pos += $(this).position().top  
+        });
+        pos += heading.position().top;
         pane.animate({
-          scrollTop: top + 'px'
+          scrollTop: pos + 'px'
         }, 1000);
       }
     }

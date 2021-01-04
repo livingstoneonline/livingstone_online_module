@@ -274,8 +274,23 @@
     function scrollTo(container, selector, offset) {
       var element = $(selector, container).eq(offset);
       if (element.length !== 0) {
+        var offsetParents = function (el) { 
+          var parent = el.offsetParent();
+          if ($.contains(container.get(0), parent.get(0))) {
+            return parent.add(offsetParents(parent))
+          }
+          else {
+            return $();
+          }
+        };
+        var pos = container.scrollTop();
+        var parents = offsetParents(element);
+        parents.each(function () {
+          pos += $(this).position().top  
+        });
+        pos += element.position().top;
         $(container).animate({
-          scrollTop: Math.abs(element.position().top + container.scrollTop()) + 'px'
+          scrollTop: pos + 'px'
         }, 1000);
       }
     }
